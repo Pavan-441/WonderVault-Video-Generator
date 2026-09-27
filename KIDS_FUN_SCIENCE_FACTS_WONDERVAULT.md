@@ -201,7 +201,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Cats are famous for making that cozy, vibrating purr sound when you cuddle them. But did you know cat purring is actually a healing superpower? A cat's purr vibrates at a special frequency between 25 and 150 Hertz. Scientists found that this exact vibration helps heal bones, soothes sore muscles, and calms down stress! So when your kitty purrs on your lap, they are sharing their healing power with you. Subscribe to Wonder Vault!
+Cats are famous for making that cozy, vibrating purr sound when you cuddle them. But did you know cat purring is actually a healing superpower? A cat's purr vibrates at a special frequency between twenty five and one hundred and fifty Hertz. Scientists found that this exact vibration helps heal bones, soothes sore muscles, and calms down stress! So when your kitty purrs on your lap, they are sharing their healing power with you. Subscribe to Wonder Vault!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -421,7 +421,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Can you turn your head all the way around to look behind your back? Owls can! An owl can rotate its head up to 270 degrees in both directions without moving its body! Owls have fourteen neck bones—twice as many as humans—and specialized blood vessels so blood keeps flowing even during extreme head turns. It helps them spot mice in total darkness! Subscribe to Wonder Vault for animal wonders!
+Can you turn your head all the way around to look behind your back? Owls can! An owl can rotate its head up to two hundred and seventy degrees in both directions without moving its body! Owls have fourteen neck bones—twice as many as humans—and specialized blood vessels so blood keeps flowing even during extreme head turns. It helps them spot mice in total darkness! Subscribe to Wonder Vault for animal wonders!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -439,7 +439,7 @@ Can you turn your head all the way around to look behind your back? Owls can! An
 
 - **YouTube Description**:
 ```text
-Can you turn your head all the way around to look behind your back? Owls can! An owl can rotate its head up to 270 degrees in both directions without moving its body! Owls have fourteen neck bones—twice as many as humans—and specialized blood vessels so blood keeps flowing even during extreme head turns.
+Can you turn your head all the way around to look behind your back? Owls can! An owl can rotate its head up to two hundred and seventy degrees in both directions without moving its body! Owls have fourteen neck bones—twice as many as humans—and specialized blood vessels so blood keeps flowing even during extreme head turns.
 
 Did you know this amazing fact? Explore the incredible secrets of nature, animals, and science with us!
 
@@ -863,7 +863,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Have you ever caught a glowing firefly on a warm summer evening? How do they light up without any batteries? Fireflies have special light organs in their bellies containing luciferin and oxygen. When they breathe in air, a chemical reaction creates 100 percent cold light with zero heat—the most efficient light in the entire universe! Fireflies flash their glowing bellies to say hello to their friends. Subscribe to Wonder Vault!
+Have you ever caught a glowing firefly on a warm summer evening? How do they light up without any batteries? Fireflies have special light organs in their bellies containing luciferin and oxygen. When they breathe in air, a chemical reaction creates one hundred percent cold light with zero heat—the most efficient light in the entire universe! Fireflies flash their glowing bellies to say hello to their friends. Subscribe to Wonder Vault!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -1085,7 +1085,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-What would happen if you tried to walk on the Sun? First of all, the Sun doesn't even have a solid ground! The Sun is a gargantuan ball of boiling, churning plasma gas that burns at ten thousand degrees Fahrenheit on its surface and twenty-seven million degrees at its core! If you got within a million miles, even the toughest spaceship would vaporize like an ice cube. The Sun gives us warmth and life from a safe 93 million miles away! Subscribe to Wonder Vault!
+What would happen if you tried to walk on the Sun? First of all, the Sun doesn't even have a solid ground! The Sun is a gargantuan ball of boiling, churning plasma gas that burns at ten thousand degrees Fahrenheit on its surface and twenty-seven million degrees at its core! If you got within a million miles, even the toughest spaceship would vaporize like an ice cube. The Sun gives us warmth and life from a safe ninety three million miles away! Subscribe to Wonder Vault!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -1217,7 +1217,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-When you look at the Sun in the sky, it looks about the size of a coin. But don't be fooled! The Sun is so gigantic that you could pack 1.3 million Earths inside it! If the Sun were a hollow basketball, Earth would be a tiny sesame seed! Even though it is 93 million miles away, its immense gravity holds all eight planets, dwarf planets, and millions of asteroids safely in orbit! Subscribe to Wonder Vault for cosmic size facts!
+When you look at the Sun in the sky, it looks about the size of a coin. But don't be fooled! The Sun is so gigantic that you could pack one point three million Earths inside it! If the Sun were a hollow basketball, Earth would be a tiny sesame seed! Even though it is ninety three million miles away, its immense gravity holds all eight planets, dwarf planets, and millions of asteroids safely in orbit! Subscribe to Wonder Vault for cosmic size facts!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -1261,7 +1261,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Why do we get warm summer holidays and cold snowy winters? It's NOT because Earth gets closer or farther from the Sun! It happens because Earth is tilted on its axis by 23.5 degrees! When your hemisphere is tilted toward the Sun, you get longer, hotter days of summer! When it tilts away, sunlight strikes at an angle, giving you cool, cozy winter! Nature's tilt is pure genius. Subscribe to Wonder Vault!
+Why do we get warm summer holidays and cold snowy winters? It's NOT because Earth gets closer or farther from the Sun! It happens because Earth is tilted on its axis by twenty three point five degrees! When your hemisphere is tilted toward the Sun, you get longer, hotter days of summer! When it tilts away, sunlight strikes at an angle, giving you cool, cozy winter! Nature's tilt is pure genius. Subscribe to Wonder Vault!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -1439,7 +1439,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Think the Great White Shark is scary? Meet Megalodon—the largest predatory shark that ever ruled Earth's oceans! Megalodon was sixty feet long—as long as three Great Whites lined up snout-to-tail! Its jaws were over seven feet wide, lined with 276 razor-sharp teeth as big as a human hand! It could swallow a killer whale whole! Luckily for us, it went extinct millions of years ago. Subscribe to Wonder Vault for ocean monsters!
+Think the Great White Shark is scary? Meet Megalodon—the largest predatory shark that ever ruled Earth's oceans! Megalodon was sixty feet long—as long as three Great Whites lined up snout-to-tail! Its jaws were over seven feet wide, lined with two hundred and seventy six razor-sharp teeth as big as a human hand! It could swallow a killer whale whole! Luckily for us, it went extinct millions of years ago. Subscribe to Wonder Vault for ocean monsters!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):
@@ -1455,7 +1455,7 @@ Think the Great White Shark is scary? Meet Megalodon—the largest predatory sha
 
 - **YouTube Description**:
 ```text
-Think the Great White Shark is scary? Meet Megalodon—the largest predatory shark that ever ruled Earth's oceans! Megalodon was sixty feet long—as long as three Great Whites lined up snout-to-tail! Its jaws were over seven feet wide, lined with 276 razor-sharp teeth as big as a human hand! It could swallow a killer whale whole! Luckily for us, it went extinct millions of years ago.
+Think the Great White Shark is scary? Meet Megalodon—the largest predatory shark that ever ruled Earth's oceans! Megalodon was sixty feet long—as long as three Great Whites lined up snout-to-tail! Its jaws were over seven feet wide, lined with two hundred and seventy six razor-sharp teeth as big as a human hand! It could swallow a killer whale whole! Luckily for us, it went extinct millions of years ago.
 
 Did you know this amazing fact? Explore the incredible secrets of nature, animals, and science with us!
 
@@ -1881,7 +1881,7 @@ Subscribe to @WonderVault-W for daily fun science facts and wonders for curious 
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Why do humans and animals have two ears on opposite sides of their heads? Having two ears gives you binaural hearing! When a sound happens—like a car honking or a friend whispering—the sound wave reaches the closer ear a fraction of a millisecond earlier than the farther ear. Your brain calculates that tiny time difference to pinpoint the exact 3D direction of the sound! You have built-in surround sound! Subscribe to Wonder Vault for body tricks!
+Why do humans and animals have two ears on opposite sides of their heads? Having two ears gives you binaural hearing! When a sound happens—like a car honking or a friend whispering—the sound wave reaches the closer ear a fraction of a millisecond earlier than the farther ear. Your brain calculates that tiny time difference to pinpoint the exact three-dimensional direction of the sound! You have built-in surround sound! Subscribe to Wonder Vault for body tricks!
 ```
 
 #### 🎯 YouTube Metadata (For Kids & Parents):

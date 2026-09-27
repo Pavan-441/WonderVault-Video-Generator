@@ -64,7 +64,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-There is a nightmare planet in deep space called HD 189733b. At first glance, it looks like a beautiful deep blue marble just like Earth. But don't be fooled. Its atmosphere is packed with silicate particles, and winds blow at over 5,400 miles per hour. That means it literally rains molten glass sideways at seven times the speed of sound. If you stood on its surface, you would be shredded in milliseconds. Subscribe to Wonder Vault for more cosmic wonders!
+There is a nightmare planet in deep space called HD one eight nine seven three three b. At first glance, it looks like a beautiful deep blue marble just like Earth. But don't be fooled. Its atmosphere is packed with silicate particles, and winds blow at over five thousand four hundred miles per hour. That means it literally rains molten glass sideways at seven times the speed of sound. If you stood on its surface, you would be shredded in milliseconds. Subscribe to Wonder Vault for more cosmic wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -216,7 +216,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Will the Moon ever crash into Earth? The surprising answer is: it's actually doing the exact opposite. Every single year, the Moon steals a tiny bit of Earth's rotational energy and drifts roughly 1.5 inches further away into deep space. That is about the same speed your fingernails grow. Hundreds of millions of years from now, total solar eclipses will be completely impossible because the Moon will be too small in our sky. Subscribe to Wonder Vault for more cosmic facts!
+Will the Moon ever crash into Earth? The surprising answer is: it's actually doing the exact opposite. Every single year, the Moon steals a tiny bit of Earth's rotational energy and drifts roughly one point five inches further away into deep space. That is about the same speed your fingernails grow. Hundreds of millions of years from now, total solar eclipses will be completely impossible because the Moon will be too small in our sky. Subscribe to Wonder Vault for more cosmic facts!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -254,7 +254,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Somewhere hundreds of millions of light-years away sits an invisible gravitational monster known as the Great Attractor. Our Milky Way, along with thousands of other nearby galaxies, is currently being pulled toward this mysterious region at an astonishing 1.3 million miles per hour. The craziest part? It lies directly behind the dense dust of our own galactic core, meaning we can't even see what is pulling us. Subscribe to Wonder Vault for more mysteries!
+Somewhere hundreds of millions of light-years away sits an invisible gravitational monster known as the Great Attractor. Our Milky Way, along with thousands of other nearby galaxies, is currently being pulled toward this mysterious region at an astonishing one point three million miles per hour. The craziest part? It lies directly behind the dense dust of our own galactic core, meaning we can't even see what is pulling us. Subscribe to Wonder Vault for more mysteries!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -292,7 +292,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-If there are trillions of glowing stars across the cosmos, why is the night sky completely black instead of glowing brightly? This famous puzzle is called Olbers' Paradox. The answer is twofold: first, the universe has a finite age of 13.8 billion years, so light from distant stars hasn't reached us yet. Second, the universe is expanding so fast that the light waves stretch out into invisible infrared frequencies. Subscribe to Wonder Vault to unlock the universe!
+If there are trillions of glowing stars across the cosmos, why is the night sky completely black instead of glowing brightly? This famous puzzle is called Olbers' Paradox. The answer is twofold: first, the universe has a finite age of thirteen point eight billion years, so light from distant stars hasn't reached us yet. Second, the universe is expanding so fast that the light waves stretch out into invisible infrared frequencies. Subscribe to Wonder Vault to unlock the universe!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -330,7 +330,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Forget gold and oil—the most expensive treasure in the galaxy is a planet called 55 Cancri e. Orbiting a star forty light-years away, this super-Earth is twice the size of our planet and eight times heavier. Because it is packed with carbon and subjected to insane temperatures and pressures, scientists believe at least one-third of its entire mass is pure diamond. It is worth twenty-six nonillion dollars! Subscribe to Wonder Vault for more crazy discoveries!
+Forget gold and oil—the most expensive treasure in the galaxy is a planet called Fifty Five Cancri e. Orbiting a star forty light-years away, this super-Earth is twice the size of our planet and eight times heavier. Because it is packed with carbon and subjected to insane temperatures and pressures, scientists believe at least one-third of its entire mass is pure diamond. It is worth twenty-six nonillion dollars! Subscribe to Wonder Vault for more crazy discoveries!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -338,7 +338,7 @@ Forget gold and oil—the most expensive treasure in the galaxy is a planet call
 
 - **YouTube Description**:
 ```text
-Forget gold and oil—the most expensive treasure in the galaxy is a planet called 55 Cancri e.
+Forget gold and oil—the most expensive treasure in the galaxy is a planet called Fifty Five Cancri e.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -368,7 +368,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-The coldest natural place known in the universe isn't Pluto or deep interstellar space—it is the Boomerang Nebula. Located five thousand light-years away, gas is blowing outward from its dying central star at over 300,000 miles per hour. This rapid expansion creates a cosmic refrigerator effect that drops the temperature to minus 458 degrees Fahrenheit. That is just one degree above absolute zero, colder than the background echo of the Big Bang itself. Subscribe to Wonder Vault for daily wonders!
+The coldest natural place known in the universe isn't Pluto or deep interstellar space—it is the Boomerang Nebula. Located five thousand light-years away, gas is blowing outward from its dying central star at over three hundred thousand miles per hour. This rapid expansion creates a cosmic refrigerator effect that drops the temperature to minus four hundred and fifty eight degrees Fahrenheit. That is just one degree above absolute zero, colder than the background echo of the Big Bang itself. Subscribe to Wonder Vault for daily wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -484,7 +484,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Ever walked into a room and felt an eerie, unshakable certainty that you’ve lived this exact second before? That is déjà vu, and it affects over 60 percent of people. Neurologists believe it is actually a temporary brain glitch. It happens when the part of your brain that processes real-time experiences accidentally misroutes the sensory information directly into your long-term memory vault first, tricking your conscious mind into feeling like an ancient memory. Subscribe to Wonder Vault for daily wonders!
+Ever walked into a room and felt an eerie, unshakable certainty that you’ve lived this exact second before? That is déjà vu, and it affects over sixty percent of people. Neurologists believe it is actually a temporary brain glitch. It happens when the part of your brain that processes real-time experiences accidentally misroutes the sensory information directly into your long-term memory vault first, tricking your conscious mind into feeling like an ancient memory. Subscribe to Wonder Vault for daily wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -492,7 +492,7 @@ Ever walked into a room and felt an eerie, unshakable certainty that you’ve li
 
 - **YouTube Description**:
 ```text
-Ever walked into a room and felt an eerie, unshakable certainty that you’ve lived this exact second before? That is déjà vu, and it affects over 60 percent of people.
+Ever walked into a room and felt an eerie, unshakable certainty that you’ve lived this exact second before? That is déjà vu, and it affects over sixty percent of people.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -866,7 +866,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-What happens if you refuse to sleep? After twenty-four hours, your reaction time drops as if your blood alcohol level is 0.10 percent. By day three, you begin experiencing vivid hallucinations, slurred speech, and paranoia. By day seven, your immune system crashes completely, your body temperature plummets, and your brain cells begin dying from toxic waste accumulation. Total sleep deprivation is 100 percent fatal. Subscribe to Wonder Vault for health and science!
+What happens if you refuse to sleep? After twenty-four hours, your reaction time drops as if your blood alcohol level is zero point one zero percent. By day three, you begin experiencing vivid hallucinations, slurred speech, and paranoia. By day seven, your immune system crashes completely, your body temperature plummets, and your brain cells begin dying from toxic waste accumulation. Total sleep deprivation is one hundred percent fatal. Subscribe to Wonder Vault for health and science!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -942,7 +942,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-What if oxygen levels on Earth suddenly jumped from 21 percent to 42 percent? First, you would feel superhuman—running faster, thinking clearer, and barely getting tired. But the downsides are terrifying. Insects like spiders, ants, and beetles would grow to the size of hawks, just like in prehistoric times. Worse, a single lightning strike could trigger uncontrollable wildfires that burn down entire continents. Balance is everything. Subscribe to Wonder Vault for more facts!
+What if oxygen levels on Earth suddenly jumped from twenty one percent to forty two percent? First, you would feel superhuman—running faster, thinking clearer, and barely getting tired. But the downsides are terrifying. Insects like spiders, ants, and beetles would grow to the size of hawks, just like in prehistoric times. Worse, a single lightning strike could trigger uncontrollable wildfires that burn down entire continents. Balance is everything. Subscribe to Wonder Vault for more facts!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -950,7 +950,7 @@ What if oxygen levels on Earth suddenly jumped from 21 percent to 42 percent? Fi
 
 - **YouTube Description**:
 ```text
-What if oxygen levels on Earth suddenly jumped from 21 percent to 42 percent? First, you would feel superhuman—running faster, thinking clearer, and barely getting tired.
+What if oxygen levels on Earth suddenly jumped from twenty one percent to forty two percent? First, you would feel superhuman—running faster, thinking clearer, and barely getting tired.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -1132,7 +1132,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-If all 1,500 active volcanoes erupted simultaneously, the immediate blasts would trigger global shockwaves and acid rain. Massive clouds of dense ash would blot out the sun for months, plunging Earth into an artificial volcanic winter. Crops would die, temperatures would plummet by thirty degrees, and civilization would face immediate starvation. Volcanic eruptions shaped our planet's past—and could end its future. Subscribe to Wonder Vault for more!
+If all fifteen hundred active volcanoes erupted simultaneously, the immediate blasts would trigger global shockwaves and acid rain. Massive clouds of dense ash would blot out the sun for months, plunging Earth into an artificial volcanic winter. Crops would die, temperatures would plummet by thirty degrees, and civilization would face immediate starvation. Volcanic eruptions shaped our planet's past—and could end its future. Subscribe to Wonder Vault for more!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -1140,7 +1140,7 @@ If all 1,500 active volcanoes erupted simultaneously, the immediate blasts would
 
 - **YouTube Description**:
 ```text
-If all 1,500 active volcanoes erupted simultaneously, the immediate blasts would trigger global shockwaves and acid rain.
+If all fifteen hundred active volcanoes erupted simultaneously, the immediate blasts would trigger global shockwaves and acid rain.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -1400,7 +1400,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-In the Karakum desert of Turkmenistan sits the Darvaza Gas Crater, nicknamed the Door to Hell. In 1971, Soviet geologists accidentally drilled into an underground natural gas pocket, causing the ground to collapse into a two-hundred-foot-wide crater. To prevent poisonous gas from spreading, they set it on fire, expecting it to burn out in a few weeks. It has been blazing non-stop for over fifty years! Subscribe to Wonder Vault for more crazy places!
+In the Karakum desert of Turkmenistan sits the Darvaza Gas Crater, nicknamed the Door to Hell. In nineteen seventy one, Soviet geologists accidentally drilled into an underground natural gas pocket, causing the ground to collapse into a two-hundred-foot-wide crater. To prevent poisonous gas from spreading, they set it on fire, expecting it to burn out in a few weeks. It has been blazing non-stop for over fifty years! Subscribe to Wonder Vault for more crazy places!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -1476,7 +1476,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-One thousand feet beneath the Naica mine in Mexico lies the Cave of the Crystals—a subterranean cavern holding the largest natural crystals ever discovered. Some selenite crystal beams measure over thirty-eight feet long and weigh fifty-five tons. But humans can only survive inside for ten minutes without specialized cooling gear, because temperatures exceed 136 degrees Fahrenheit with 99 percent humidity! Subscribe to Wonder Vault for earth wonders!
+One thousand feet beneath the Naica mine in Mexico lies the Cave of the Crystals—a subterranean cavern holding the largest natural crystals ever discovered. Some selenite crystal beams measure over thirty-eight feet long and weigh fifty-five tons. But humans can only survive inside for ten minutes without specialized cooling gear, because temperatures exceed one hundred and thirty six degrees Fahrenheit with ninety nine percent humidity! Subscribe to Wonder Vault for earth wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -1514,7 +1514,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-How deep can humans actually drill into the Earth? In the 1970s, Soviet scientists attempted to reach the Earth's mantle by drilling the Kola Superdeep Borehole. They reached an astonishing 40,230 feet—over seven miles deep! But they had to stop when temperatures reached 356 degrees Fahrenheit, turning the rock into gooey plastic. That incredible hole barely scratches one-third of one percent of Earth's crust! Subscribe to Wonder Vault for engineering wonders!
+How deep can humans actually drill into the Earth? In the nineteen seventies, Soviet scientists attempted to reach the Earth's mantle by drilling the Kola Superdeep Borehole. They reached an astonishing forty thousand two hundred and thirty feet—over seven miles deep! But they had to stop when temperatures reached three hundred and fifty six degrees Fahrenheit, turning the rock into gooey plastic. That incredible hole barely scratches one-third of one percent of Earth's crust! Subscribe to Wonder Vault for engineering wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -1592,7 +1592,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-If you are ever in an emergency in a crowded place, never yell 'Someone help me!' You will fall victim to the Bystander Effect. When in a crowd, responsibility is subconsciously diffused across everyone, meaning everyone assumes someone else will call 911. Instead, point directly at one single person and say: 'You in the blue shirt, call 911 right now!' Assigning responsibility triggers instant action. Subscribe to Wonder Vault for life-saving psychology!
+If you are ever in an emergency in a crowded place, never yell 'Someone help me!' You will fall victim to the Bystander Effect. When in a crowd, responsibility is subconsciously diffused across everyone, meaning everyone assumes someone else will call nine one one. Instead, point directly at one single person and say: 'You in the blue shirt, call nine one one right now!' Assigning responsibility triggers instant action. Subscribe to Wonder Vault for life-saving psychology!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2088,7 +2088,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-With three hearts, blue copper-based blood, and nine brains—one central brain and one miniature brain in each of its eight arms—the octopus is essentially an alien living in our oceans. Each arm can taste, touch, and make independent hunting decisions without checking with the head! Furthermore, they can alter the color and 3D texture of their skin in milliseconds to match any background. Subscribe to Wonder Vault for ocean wonders!
+With three hearts, blue copper-based blood, and nine brains—one central brain and one miniature brain in each of its eight arms—the octopus is essentially an alien living in our oceans. Each arm can taste, touch, and make independent hunting decisions without checking with the head! Furthermore, they can alter the color and three-dimensional texture of their skin in milliseconds to match any background. Subscribe to Wonder Vault for ocean wonders!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2202,7 +2202,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-You might think the cheetah is the fastest animal on Earth at seventy miles per hour, but the Peregrine Falcon crushes that record. When diving from the sky to hunt prey, this raptor reaches speeds exceeding 240 miles per hour! That is faster than a skydiving human and rivaling bullet trains. Specialized baffles in its nostrils allow it to breathe even against supersonic air pressure. Subscribe to Wonder Vault for wild facts!
+You might think the cheetah is the fastest animal on Earth at seventy miles per hour, but the Peregrine Falcon crushes that record. When diving from the sky to hunt prey, this raptor reaches speeds exceeding two hundred and forty miles per hour! That is faster than a skydiving human and rivaling bullet trains. Specialized baffles in its nostrils allow it to breathe even against supersonic air pressure. Subscribe to Wonder Vault for wild facts!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2432,7 +2432,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Philosopher Nick Bostrom and tech leaders like Elon Musk argue that the odds we are living in 'base reality' are one in billions. Think about it: fifty years ago we had Pong—two rectangles and a dot. Today we have photorealistic 3D worlds and VR. If technology continues advancing for thousands of years, civilizations will run billions of ancestor simulations. How do we know we aren't inside one right now? Subscribe to Wonder Vault to question reality!
+Philosopher Nick Bostrom and tech leaders like Elon Musk argue that the odds we are living in 'base reality' are one in billions. Think about it: fifty years ago we had Pong—two rectangles and a dot. Today we have photorealistic three-dimensional worlds and VR. If technology continues advancing for thousands of years, civilizations will run billions of ancestor simulations. How do we know we aren't inside one right now? Subscribe to Wonder Vault to question reality!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2622,7 +2622,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Launched back in 1977, NASA's Voyager 1 spacecraft is the farthest human-made object in history. Traveling at thirty-eight thousand miles per hour, it is now over fifteen billion miles away in the cold void of interstellar space. Powered by decaying plutonium, it still radios data back to Earth, carrying a golden phonograph record with sounds, songs, and images of humanity for alien civilizations! Subscribe to Wonder Vault for space exploration!
+Launched back in nineteen seventy seven, NASA's Voyager One spacecraft is the farthest human-made object in history. Traveling at thirty-eight thousand miles per hour, it is now over fifteen billion miles away in the cold void of interstellar space. Powered by decaying plutonium, it still radios data back to Earth, carrying a golden phonograph record with sounds, songs, and images of humanity for alien civilizations! Subscribe to Wonder Vault for space exploration!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2630,7 +2630,7 @@ Launched back in 1977, NASA's Voyager 1 spacecraft is the farthest human-made ob
 
 - **YouTube Description**:
 ```text
-Launched back in 1977, NASA's Voyager 1 spacecraft is the farthest human-made object in history.
+Launched back in nineteen seventy seven, NASA's Voyager One spacecraft is the farthest human-made object in history.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -2660,7 +2660,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Every day, people die waiting for organ transplants. But bioprinting is changing everything. Using 'bio-ink' made from a patient's own stem cells, medical 3D printers are now printing living heart valves, skin, and cartilage layer by layer. Because the organ is made from your own cells, your immune system will never reject it. In the future, replacement organs will be printed on demand! Subscribe to Wonder Vault for medical marvels!
+Every day, people die waiting for organ transplants. But bioprinting is changing everything. Using 'bio-ink' made from a patient's own stem cells, medical three-D printers are now printing living heart valves, skin, and cartilage layer by layer. Because the organ is made from your own cells, your immune system will never reject it. In the future, replacement organs will be printed on demand! Subscribe to Wonder Vault for medical marvels!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2700,7 +2700,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail? Most people swear they do—yet neither of them ever did! This collective false memory is called the Mandela Effect, named after millions remembering Nelson Mandela dying in prison in the 1980s. While psychologists attribute it to memory confabulation, quantum physicists playfully wonder if our reality slipped into a parallel timeline! Subscribe to Wonder Vault for reality glitches!
+Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail? Most people swear they do—yet neither of them ever did! This collective false memory is called the Mandela Effect, named after millions remembering Nelson Mandela dying in prison in the nineteen eighties. While psychologists attribute it to memory confabulation, quantum physicists playfully wonder if our reality slipped into a parallel timeline! Subscribe to Wonder Vault for reality glitches!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2708,7 +2708,7 @@ Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail?
 
 - **YouTube Description**:
 ```text
-Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail? Most people swear they do—yet neither of them ever did! This collective false memory is called the Mandela Effect, named after millions remembering Nelson Mandela dying in prison in the 1980s.
+Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail? Most people swear they do—yet neither of them ever did! This collective false memory is called the Mandela Effect, named after millions remembering Nelson Mandela dying in prison in the nineteen eighties.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -2738,7 +2738,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-On August 15, 1977, astronomer Jerry Ehman was scanning radio frequencies from deep space with the Big Ear radio telescope. Suddenly, the equipment recorded an intense, seventy-two-second burst of radio signal originating from the Sagittarius constellation, exactly at the 1420 megahertz frequency of hydrogen. Stunned, Ehman circled the data and wrote 'Wow!' in red pen. It has never repeated since. Subscribe to Wonder Vault for cosmic mysteries!
+On August fifteenth, nineteen seventy seven, astronomer Jerry Ehman was scanning radio frequencies from deep space with the Big Ear radio telescope. Suddenly, the equipment recorded an intense, seventy-two-second burst of radio signal originating from the Sagittarius constellation, exactly at the fourteen twenty megahertz frequency of hydrogen. Stunned, Ehman circled the data and wrote 'Wow!' in red pen. It has never repeated since. Subscribe to Wonder Vault for cosmic mysteries!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2776,7 +2776,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-The Voynich Manuscript is a six-hundred-year-old illustrated codex written in an entirely unknown alphabet and language that no cryptographer, linguist, or AI has ever deciphered. Carbon-dated to the early 1400s, it is packed with bizarre drawings of alien-looking plants that don't exist on Earth, astrological charts, and strange bathing nymphs. Is it lost ancient wisdom, an elaborate medieval hoax, or an alien botanical guide? Subscribe to Wonder Vault for history mysteries!
+The Voynich Manuscript is a six-hundred-year-old illustrated codex written in an entirely unknown alphabet and language that no cryptographer, linguist, or AI has ever deciphered. Carbon-dated to the early fourteen hundreds, it is packed with bizarre drawings of alien-looking plants that don't exist on Earth, astrological charts, and strange bathing nymphs. Is it lost ancient wisdom, an elaborate medieval hoax, or an alien botanical guide? Subscribe to Wonder Vault for history mysteries!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2852,7 +2852,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-In 1997, underwater microphones placed thousands of miles apart across the Pacific Ocean recorded an ultra-low frequency sound nicknamed 'The Bloop.' The acoustic profile was organic—it sounded like a living marine animal, but it was several times louder than the largest blue whale ever recorded! While scientists later linked it to giant Antarctic ice-quakes, legends of colossal deep-sea monsters still haunt the waters. Subscribe to Wonder Vault for ocean mysteries!
+In nineteen ninety seven, underwater microphones placed thousands of miles apart across the Pacific Ocean recorded an ultra-low frequency sound nicknamed 'The Bloop.' The acoustic profile was organic—it sounded like a living marine animal, but it was several times louder than the largest blue whale ever recorded! While scientists later linked it to giant Antarctic ice-quakes, legends of colossal deep-sea monsters still haunt the waters. Subscribe to Wonder Vault for ocean mysteries!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2860,7 +2860,7 @@ In 1997, underwater microphones placed thousands of miles apart across the Pacif
 
 - **YouTube Description**:
 ```text
-In 1997, underwater microphones placed thousands of miles apart across the Pacific Ocean recorded an ultra-low frequency sound nicknamed 'The Bloop.
+In nineteen ninety seven, underwater microphones placed thousands of miles apart across the Pacific Ocean recorded an ultra-low frequency sound nicknamed 'The Bloop.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -2890,7 +2890,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-The Mayan civilization built towering stone pyramids, mastered complex astronomy, and sustained millions of people across Mesoamerica. Then, around the 9th century, they suddenly abandoned their monumental stone cities to be swallowed by jungle vines. Was it severe prolonged mega-drought, environmental collapse from deforestation, or devastating internal warfare? The rapid collapse remains one of history's greatest enigmas. Subscribe to Wonder Vault for ancient history!
+The Mayan civilization built towering stone pyramids, mastered complex astronomy, and sustained millions of people across Mesoamerica. Then, around the ninth century, they suddenly abandoned their monumental stone cities to be swallowed by jungle vines. Was it severe prolonged mega-drought, environmental collapse from deforestation, or devastating internal warfare? The rapid collapse remains one of history's greatest enigmas. Subscribe to Wonder Vault for ancient history!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2966,7 +2966,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-In 1872, the British merchant ship Dei Gratia spotted the Mary Celeste drifting erratically in the Atlantic Ocean. When crew members boarded, they found the ship in completely seaworthy condition, with six months of food, cargo intact, and personal belongings in place. But the captain, his family, and the entire crew had vanished without a trace, leaving the lifeboat missing. What made them abandon ship? Subscribe to Wonder Vault for sea legends!
+In eighteen seventy two, the British merchant ship Dei Gratia spotted the Mary Celeste drifting erratically in the Atlantic Ocean. When crew members boarded, they found the ship in completely seaworthy condition, with six months of food, cargo intact, and personal belongings in place. But the captain, his family, and the entire crew had vanished without a trace, leaving the lifeboat missing. What made them abandon ship? Subscribe to Wonder Vault for sea legends!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -2974,7 +2974,7 @@ In 1872, the British merchant ship Dei Gratia spotted the Mary Celeste drifting 
 
 - **YouTube Description**:
 ```text
-In 1872, the British merchant ship Dei Gratia spotted the Mary Celeste drifting erratically in the Atlantic Ocean.
+In eighteen seventy two, the British merchant ship Dei Gratia spotted the Mary Celeste drifting erratically in the Atlantic Ocean.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -3004,7 +3004,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-In July 1518, a woman named Frau Troffea stepped into the streets of Strasbourg and began dancing fervently without music. Within a month, hundreds of citizens joined her, dancing day and night until their feet bled and their hearts stopped from exhaustion. Physicians thought it was hot blood, but modern historians suspect mass psychogenic hysteria or ergot fungus poisoning from rye bread! Subscribe to Wonder Vault for bizarre history!
+In July fifteen eighteen, a woman named Frau Troffea stepped into the streets of Strasbourg and began dancing fervently without music. Within a month, hundreds of citizens joined her, dancing day and night until their feet bled and their hearts stopped from exhaustion. Physicians thought it was hot blood, but modern historians suspect mass psychogenic hysteria or ergot fungus poisoning from rye bread! Subscribe to Wonder Vault for bizarre history!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -3012,7 +3012,7 @@ In July 1518, a woman named Frau Troffea stepped into the streets of Strasbourg 
 
 - **YouTube Description**:
 ```text
-In July 1518, a woman named Frau Troffea stepped into the streets of Strasbourg and began dancing fervently without music.
+In July fifteen eighteen, a woman named Frau Troffea stepped into the streets of Strasbourg and began dancing fervently without music.
 
 Did you know this unbelievable truth? Explore the deepest mysteries of space, the human brain, psychology, and science!
 
@@ -3082,7 +3082,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Inside your stomach right now is hydrochloric acid with a pH between 1.5 and 2.0—strong enough to dissolve metal razor blades, bones, and teeth! So why doesn't your stomach dissolve itself? Because your stomach lining secretes a thick, protective mucus barrier every few days, continuously regenerating fresh epithelial cells before the acid can burn through. Subscribe to Wonder Vault for human body facts!
+Inside your stomach right now is hydrochloric acid with a pH between one point five and two point zero—strong enough to dissolve metal razor blades, bones, and teeth! So why doesn't your stomach dissolve itself? Because your stomach lining secretes a thick, protective mucus barrier every few days, continuously regenerating fresh epithelial cells before the acid can burn through. Subscribe to Wonder Vault for human body facts!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -3424,7 +3424,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-The body you had seven years ago is virtually gone. Every second, your body produces around 3.8 million new cells to replace dying ones. Your skin renews every month, your red blood cells refresh every four months, and your skeleton replaces itself every decade. You are a continuously regenerating, living work of art! Subscribe to Wonder Vault for daily inspiration and science!
+The body you had seven years ago is virtually gone. Every second, your body produces around three point eight million new cells to replace dying ones. Your skin renews every month, your red blood cells refresh every four months, and your skeleton replaces itself every decade. You are a continuously regenerating, living work of art! Subscribe to Wonder Vault for daily inspiration and science!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -3464,7 +3464,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Roman Emperor Marcus Aurelius ruled the greatest empire on Earth, yet his secret to inner peace was simple: 'You have power over your mind—not outside events. Realize this, and you will find strength.' You cannot control traffic, the weather, or rude people. But you have 100 percent control over how you react. Master your reaction, and no one can disturb your peace. Subscribe to Wonder Vault for timeless wisdom!
+Roman Emperor Marcus Aurelius ruled the greatest empire on Earth, yet his secret to inner peace was simple: 'You have power over your mind—not outside events. Realize this, and you will find strength.' You cannot control traffic, the weather, or rude people. But you have one hundred percent control over how you react. Master your reaction, and no one can disturb your peace. Subscribe to Wonder Vault for timeless wisdom!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -3502,7 +3502,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Whenever you have an instinct to act on a goal—working out, studying, or making a call—your brain has a 5-second window before it floods you with excuses and hesitation. Count backwards: 5, 4, 3, 2, 1, and physically move! Counting backwards interrupts your brain's habit loop and engages your prefrontal cortex, turning intention into immediate action. Subscribe to Wonder Vault for life-changing hacks!
+Whenever you have an instinct to act on a goal—working out, studying, or making a call—your brain has a five-second window before it floods you with excuses and hesitation. Count backwards: five, four, three, two, one, and physically move! Counting backwards interrupts your brain's habit loop and engages your prefrontal cortex, turning intention into immediate action. Subscribe to Wonder Vault for life-changing hacks!
 ```
 
 #### 🎯 YouTube Upload Metadata:
@@ -3730,7 +3730,7 @@ Subscribe to @WonderVault-W for daily mind-expanding facts and wonders!
 
 #### 📝 Video Script (Paste into 'Video Script (Optional)' box):
 ```text
-Epictetus, born a Greek slave, achieved legendary wisdom by dividing all things in life into two categories: what is up to us, and what is not. Your thoughts, actions, and morals are up to you. Other people's opinions, outcomes, and the past are not. When you focus 100 percent of your energy on what you control and release the rest, anxiety evaporates. Subscribe to Wonder Vault for mental freedom!
+Epictetus, born a Greek slave, achieved legendary wisdom by dividing all things in life into two categories: what is up to us, and what is not. Your thoughts, actions, and morals are up to you. Other people's opinions, outcomes, and the past are not. When you focus one hundred percent of your energy on what you control and release the rest, anxiety evaporates. Subscribe to Wonder Vault for mental freedom!
 ```
 
 #### 🎯 YouTube Upload Metadata:
