@@ -1170,19 +1170,24 @@ def _task_manager_label(processing_count):
 
 
 def _build_video_download_name(subject, index, total):
-    """根据视频主题生成跨平台安全的下载文件名。"""
-    safe_subject = _DOWNLOAD_FILENAME_INVALID_PATTERN.sub(" ", str(subject or ""))
-    safe_subject = re.sub(r"\s+", " ", safe_subject).strip(" .")[:80].rstrip(" .")
-    if not safe_subject:
-        safe_subject = "video"
-    # Win32 在识别设备名时会忽略扩展名前的尾随空格和句点。与背景音乐上传
-    # 的现有规则保持一致，避免 ``CON .topic`` 绕过保留名保护。
-    windows_basename = safe_subject.split(".", 1)[0].rstrip(" .").upper()
-    if windows_basename in _WINDOWS_RESERVED_FILENAMES:
-        safe_subject = f"_{safe_subject}"
+    """根据视频主题生成跨平台安全的英文下载文件名。"""
+    try:
+        from app.services.task import generate_english_title
+        safe_subject = generate_english_title(video_subject=subject)
+    except Exception:
+        safe_subject = utils.sanitize_filename(subject)
+    if not safe_subject or safe_subject.lower() == "video":
+        safe_subject = _DOWNLOAD_FILENAME_INVALID_PATTERN.sub(" ", str(subject or ""))
+        safe_subject = re.sub(r"\s+", " ", safe_subject).strip(" .")[:80].rstrip(" .")
+        if not safe_subject:
+            safe_subject = "video"
+        windows_basename = safe_subject.split(".", 1)[0].rstrip(" .").upper()
+        if windows_basename in _WINDOWS_RESERVED_FILENAMES:
+            safe_subject = f"_{safe_subject}"
 
     suffix = f"-{index}" if total > 1 else ""
     return f"{safe_subject}{suffix}.mp4"
+
 
 
 def _render_task_table(filtered_tasks, key_prefix):
@@ -1817,8 +1822,33 @@ def get_all_songs():
     return songs
 
 
+def open_download_folder():
+    """打开存储最终重命名视频的 download 文件夹。"""
+    try:
+        download_dirs = utils.get_download_dirs(create=True)
+        primary = download_dirs[0] if download_dirs else os.path.join(root_dir, "download")
+        if not os.path.exists(primary):
+            os.makedirs(primary, exist_ok=True)
+        if sys.platform.startswith("win"):
+            os.startfile(primary)
+        else:
+            webbrowser.open(f"file://{os.path.abspath(primary)}")
+    except Exception as e:
+        logger.exception(f"failed to open download folder: {e}")
+
+
 def open_task_folder(task_id):
     try:
+        # 优先打开 download 目录，方便用户直接获取带有英文标题的最终成片
+        download_dirs = utils.get_download_dirs()
+        primary_download = download_dirs[0] if download_dirs else None
+        if primary_download and os.path.isdir(primary_download):
+            if sys.platform.startswith("win"):
+                os.startfile(primary_download)
+                return
+            webbrowser.open(f"file://{primary_download}")
+            return
+
         # task_id 应始终是服务端生成的 UUID。这里先做格式校验，避免异常值
         # 通过路径拼接访问任务目录之外的位置，也避免后续打开目录时触发
         # 平台 shell 对特殊字符的解释。
@@ -1836,6 +1866,7 @@ def open_task_folder(task_id):
             webbrowser.open(f"file://{path}")
     except Exception as e:
         logger.exception(f"failed to open task folder: task_id={task_id}, error={e}")
+
 
 
 @st.cache_resource
@@ -2030,12 +2061,27 @@ def _render_generation_task_snapshot(task_id, task):
             f"video_files={video_files}, error={exc}"
         )
 
+    try:
+        download_dirs = utils.get_download_dirs()
+        primary_download = download_dirs[0] if download_dirs else None
+        if primary_download:
+            d_col1, d_col2 = st.columns([3.5, 1.5], vertical_alignment="center")
+            d_col1.caption(f"📁 **Download Folder**: `{primary_download}`")
+            if d_col2.button(
+                "📂 Open Download Folder",
+                key=f"open_download_btn_{task_id}",
+                use_container_width=True,
+            ):
+                open_download_folder()
+    except Exception:
+        pass
+
     _render_generation_logs(task_id)
     if st.session_state.get("handled_generation_task_id") != task_id:
         # Fragment 可能重复渲染同一个完成任务。无论是否开启自动打开目录，
         # 每个任务都只处理一次完成事件，避免重复弹出资源管理器或重复写入日志。
         st.session_state["handled_generation_task_id"] = task_id
-        if config.ui.get("open_task_folder_on_completion", True):
+        if config.ui.get("open_task_folder_on_completion", False):
             open_task_folder(task_id)
         logger.info(f"{tr('Video Generation Completed')}: task_id={task_id}")
 

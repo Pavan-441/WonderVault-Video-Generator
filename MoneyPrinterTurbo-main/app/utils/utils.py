@@ -143,6 +143,57 @@ def public_dir(sub_dir: str = ""):
     return d
 
 
+def download_dir(create: bool = True) -> str:
+    """Return the single download directory where final videos are stored."""
+    from app.config import config
+
+    configured = str(config.app.get("download_directory", "") or "").strip()
+    if configured:
+        d = os.path.abspath(configured)
+    else:
+        # Save directly in the workspace root download folder (D:\MoneyPrinterTurbo\download)
+        parent_dir = os.path.dirname(root_dir())
+        if os.path.exists(os.path.join(parent_dir, "start_webui.bat")) or os.path.basename(root_dir()).lower() in ("moneyprinterturbo-main", "moneyprinterturbo"):
+            d = os.path.abspath(os.path.join(parent_dir, "download"))
+        else:
+            d = os.path.abspath(os.path.join(root_dir(), "download"))
+
+    if create and not os.path.exists(d):
+        try:
+            os.makedirs(d, exist_ok=True)
+        except Exception:
+            pass
+    return d
+
+
+def get_download_dirs(create: bool = True) -> list[str]:
+    """Return the single download directory as a list for multi-target compatibility."""
+    return [download_dir(create=create)]
+
+
+
+def sanitize_filename(name: str, max_length: int = 80) -> str:
+    """Sanitize title into a safe Windows/cross-platform filename."""
+    safe = re.sub(r'[<>:"/\\|?*\x00-\x1f]', " ", str(name or ""))
+    safe = re.sub(r"\s+", " ", safe).strip(" .")
+    safe = re.sub(r"[^A-Za-z0-9\s\-_\'\(\)\[\]]", "", safe).strip(" .")
+    safe = re.sub(r"\s+", " ", safe)
+    if not safe:
+        safe = "video"
+    _WINDOWS_RESERVED = frozenset(
+        {
+            "CON", "PRN", "AUX", "NUL",
+            "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
+            "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"
+        }
+    )
+    windows_basename = safe.split(".", 1)[0].rstrip(" .").upper()
+    if windows_basename in _WINDOWS_RESERVED:
+        safe = f"_{safe}"
+    return safe[:max_length].rstrip(" .")
+
+
+
 def get_ffmpeg_binary() -> str:
     """
     解析当前进程应该使用的 FFmpeg 可执行文件。

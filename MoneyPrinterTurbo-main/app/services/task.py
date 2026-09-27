@@ -1029,6 +1029,137 @@ def generate_final_videos(
     return final_video_paths, combined_video_paths, warnings
 
 
+def generate_english_title(
+    video_subject: str,
+    video_script: str = "",
+    video_terms: str | list = "",
+    app_config=None,
+) -> str:
+    """
+    Generate a clean English title suitable for video filenames and sharing.
+    - If subject is already English, sanitizes and returns it.
+    - If subject is in Telugu or non-English, translates it using LLM if available,
+      or falls back to English words in subject or video terms.
+    """
+    subject = str(video_subject or "").strip()
+
+    # Check if subject is already predominantly English ASCII
+    ascii_letters = [c for c in subject if c.isascii() and c.isalpha()]
+    non_ascii_letters = [c for c in subject if not c.isascii() and c.isalpha()]
+
+    # If already pure English letters (no non-ASCII letters) and has at least 2 letters
+    if not non_ascii_letters and len(ascii_letters) >= 2:
+        clean = utils.sanitize_filename(subject)
+        if clean and clean.lower() != "video":
+            return clean
+
+    # If it has non-ASCII letters or empty, try LLM translation to English
+    candidate_text = subject or video_script[:200]
+    if candidate_text:
+        try:
+            prompt = (
+                "Translate the following video subject into a concise, clean English video title "
+                "(3 to 7 words). Output ONLY the plain English title, with no quotation marks, "
+                "no punctuation at the end, and no introductory text:\n\n"
+                f"Subject: {candidate_text.strip()}"
+            )
+            response = llm._generate_response(prompt, app_config=app_config)
+            if response and not response.startswith("Error:"):
+                first_line = response.strip().splitlines()[0].strip('"\'`*# ')
+                clean = utils.sanitize_filename(first_line)
+                if clean and clean.lower() != "video" and any(c.isalpha() for c in clean):
+                    logger.info(f"LLM translated title to English: '{clean}'")
+                    return clean
+        except Exception as exc:
+            logger.warning(f"failed to translate title to English with LLM: {exc}")
+
+    # Fallback 1: Extract English words from subject if any
+    english_words = re.findall(r"[A-Za-z0-9]+", subject)
+    if english_words and len(" ".join(english_words)) >= 4:
+        clean = utils.sanitize_filename(" ".join(english_words))
+        if clean and clean.lower() != "video":
+            return clean
+
+    # Fallback 2: Use video terms (terms are always English stock keywords)
+    terms_list = []
+    if isinstance(video_terms, list):
+        terms_list = [str(t).strip() for t in video_terms if str(t).strip()]
+    elif isinstance(video_terms, str) and video_terms.strip():
+        terms_list = [t.strip() for t in video_terms.split(",") if t.strip()]
+
+    if terms_list:
+        first_term = terms_list[0].title()
+        clean = utils.sanitize_filename(first_term)
+        if clean and clean.lower() != "video":
+            return clean
+
+    return "Video"
+
+
+def export_final_videos(
+    task_id: str,
+    params: VideoParams,
+    video_paths: list[str],
+    video_terms="",
+    video_script="",
+) -> list[str]:
+    """
+    Store generated final video(s) into the download folder renamed with English title.
+    Returns list of paths of the exported files.
+    """
+    import shutil
+
+    if not video_paths:
+        return []
+
+    target_dirs = utils.get_download_dirs(create=True)
+    if not target_dirs:
+        return []
+
+    english_title = generate_english_title(
+        video_subject=params.video_subject,
+        video_script=video_script or params.video_script,
+        video_terms=video_terms or params.video_terms,
+    )
+
+    total = len(video_paths)
+    exported_paths = []
+
+    for index, src_path in enumerate(video_paths, start=1):
+        if not os.path.isfile(src_path):
+            logger.warning(f"final video file not found for export: {src_path}")
+            continue
+
+        suffix = f"-{index}" if total > 1 else ""
+        base_name = f"{english_title}{suffix}"
+
+        for d in target_dirs:
+            try:
+                dest_file = os.path.join(d, f"{base_name}.mp4")
+                # If file exists from another run, avoid collision
+                if os.path.exists(dest_file):
+                    try:
+                        if os.path.getsize(dest_file) == os.path.getsize(src_path):
+                            if dest_file not in exported_paths:
+                                exported_paths.append(dest_file)
+                            continue
+                    except Exception:
+                        pass
+                    counter = 1
+                    while os.path.exists(dest_file):
+                        dest_file = os.path.join(d, f"{base_name} ({counter}).mp4")
+                        counter += 1
+
+                shutil.copy2(src_path, dest_file)
+                logger.success(f"exported video to download folder: {dest_file}")
+                if dest_file not in exported_paths:
+                    exported_paths.append(dest_file)
+            except Exception as e:
+                logger.error(f"failed to copy video to download dir '{d}': {e}")
+
+    return exported_paths
+
+
 def _patch_cross_post_state(task_id: str, **kwargs) -> bool | None:
     """安全更新发布字段；短暂状态后端故障时有限重试。"""
     for attempt in range(1, _CROSS_POST_STATE_WRITE_ATTEMPTS + 1):
@@ -1635,6 +1766,19 @@ def _run_pipeline(
         f"task {task_id} finished, generated {len(final_video_paths)} videos."
     )
 
+    # Export final videos to download folder renamed with English title
+    exported_video_paths = []
+    try:
+        exported_video_paths = export_final_videos(
+            task_id=task_id,
+            params=params,
+            video_paths=final_video_paths,
+            video_terms=video_terms,
+            video_script=video_script,
+        )
+    except Exception as exc:
+        logger.warning(f"failed to export videos to download folder: {exc}")
+
     # 7. 先完成视频生成任务，再按需提交跨平台发布。第三方上传可能耗时
     # 数分钟，不应阻塞视频结果返回，也不能反向影响已经生成的成片。
     cross_post_enabled = (
@@ -1653,6 +1797,7 @@ def _run_pipeline(
 
     kwargs = {
         "videos": final_video_paths,
+        "download_videos": exported_video_paths,
         "combined_videos": combined_video_paths,
         "script": video_script,
         "terms": video_terms,

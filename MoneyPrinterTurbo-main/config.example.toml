@@ -459,6 +459,11 @@ endpoint = ""
 # Example: material_directory = "/path/to/videos"
 material_directory = ""
 
+# Final video export directory: "" stores final videos in ./download with English titles.
+# You can set an absolute path, e.g. "D:\\MoneyPrinterTurbo\\download".
+download_directory = ""
+
+
 # Optional Redis-backed task state. Keep Redis private to this application;
 # untrusted writers must not be able to modify serialized task records.
 enable_redis = false
