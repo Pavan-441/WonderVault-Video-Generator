@@ -5,6 +5,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 from time import perf_counter
 from typing import List
@@ -259,7 +260,7 @@ def _generate_response(prompt: str, app_config=None) -> str:
         # WebUI 在视频生成期间允许用户准备下一条文案。调用方可以传入提交瞬间
         # 的配置快照，确保模型请求重试期间不会因为后台任务结束并应用新配置，
         # 而切换到另一个 Provider、Base URL 或模型。
-        runtime_app_config = app_config if app_config is not None else config.app
+        runtime_app_config = getattr(app_config, "app", app_config) if app_config is not None else config.app
         llm_provider = str(
             runtime_app_config.get("llm_provider", DEFAULT_LLM_PROVIDER_ID)
         ).lower()
@@ -385,17 +386,65 @@ def _generate_response(prompt: str, app_config=None) -> str:
             )
 
             try:
+                # 候选模型列表：优先使用配置的模型，遇到临时过载 (503) 或不可用时自动回退到可靠模型
+                gemini_fallback_models = [
+                    model_name,
+                    "gemini-3.5-flash-lite",
+                    "gemini-flash-lite-latest",
+                    "gemini-3.8-flash",
+                ]
+                models_to_try = []
+                for m in gemini_fallback_models:
+                    m_clean = str(m or "").strip()
+                    if m_clean and m_clean not in models_to_try:
+                        models_to_try.append(m_clean)
+
+                last_exception = None
+                response = None
+
                 # 新版 google-genai 通过统一 Client 暴露模型服务。上下文管理器
                 # 会在请求结束后关闭底层 HTTP 连接，避免频繁生成时积累连接资源。
                 with genai.Client(
                     api_key=api_key,
                     http_options=http_options,
                 ) as client:
-                    response = client.models.generate_content(
-                        model=model_name,
-                        contents=prompt,
-                        config=generation_config,
-                    )
+                    for try_model in models_to_try:
+                        try:
+                            response = client.models.generate_content(
+                                model=try_model,
+                                contents=prompt,
+                                config=generation_config,
+                            )
+                            if try_model != model_name:
+                                logger.info(
+                                    f"gemini model '{model_name}' fell back to '{try_model}' successfully"
+                                )
+                            break
+                        except Exception as exc:
+                            last_exception = exc
+                            exc_str = str(exc)
+                            if any(
+                                pattern in exc_str
+                                for pattern in (
+                                    "503",
+                                    "UNAVAILABLE",
+                                    "high demand",
+                                    "404",
+                                    "NOT_FOUND",
+                                    "429",
+                                    "RESOURCE_EXHAUSTED",
+                                    "quota",
+                                )
+                            ):
+                                logger.warning(
+                                    f"gemini model '{try_model}' unavailable, trying fallback: {exc_str[:120]}"
+                                )
+                                continue
+                            raise exc
+
+                if response is None and last_exception is not None:
+                    raise last_exception
+
                 generated_text = response.text
             except (AttributeError, IndexError, ValueError) as e:
                 logger.warning(f"gemini returned invalid response content: {str(e)}")
@@ -721,8 +770,39 @@ def build_script_prompt(
 - video subject: {video_subject}
 - number of paragraphs: {paragraph_number}
 """.rstrip()
-    if language:
+    lang_lower = str(language or "").strip().lower()
+    if lang_lower in ("te-in-mix", "tenglish", "telugu-mix"):
+        prompt += """
+- language: Conversational Telugu mixed naturally with English (Tenglish)
+- tone and style:
+  1. Write in natural, spoken conversational Telugu (NOT formal or textbook Telugu).
+  2. Hook the viewer immediately in the first sentence with an intriguing question or statement ending in 'తెలుసా?' or 'ఏమవుతుందో తెలుసా?'.
+  3. Keep all scientific, technical, medical, and key conceptual terms in plain English (e.g., Brain, LED bulb, Watts, neurons, signals, supercomputer).
+  4. Write all numbers and quantities as spelled-out English words (e.g. 'twenty Watts', 'eighty six billion') so voiceover text-to-speech pronounces them clearly.
+  5. Right before ending, ask an intriguing curiosity question connected to the topic (e.g., 'మరి ఇంత పవర్ ఉన్న మన బ్రెయిన్ కి నిద్ర లేకపోతే ఏమవుతుందో తెలుసా?') and ask the audience to comment: 'తెలిస్తే కామెంట్ చేయండి!' (or 'తెలిస్తే comment చేయండి!').
+  6. Always conclude with a fresh, creative, and UNIQUE call to action tailored to the video topic specifically inviting viewers to subscribe to Wonder Vault. NEVER repeat the exact generic phrase 'ఇలాంటి సైన్స్ నిజాల కోసం Wonder Vault ని సబ్స్క్రైబ్ చేసుకోండి!'. Instead, craft an exciting, unique closing hook every time (e.g., 'మన శరీరం గురించిన ఇలాంటి మైండ్ బ్లోయింగ్ మిస్టరీల కోసం Wonder Vault ని ఇప్పుడే సబ్స్క్రైబ్ చేసుకోండి!', 'ఇంకా మరెన్నో అన్టోల్డ్ సైన్స్ సీక్రెట్స్ కోసం Wonder Vault ని వెంటనే సబ్స్క్రైబ్ చేయండి!', 'ఇలాంటి క్రేజీ సైన్స్ ఫ్యాక్ట్స్ మిస్ అవ్వకూడదంటే Wonder Vault ని ఫాలో అవ్వండి!').
+""".rstrip()
+    elif lang_lower in ("en-us", "en", "english"):
+        prompt += """
+- language: English
+- tone and style:
+  1. Write a fast-paced, high-retention YouTube Shorts voiceover script.
+  2. Hook the viewer immediately in the opening sentence.
+  3. Right before ending, ask an engaging follow-up curiosity question and prompt the audience to comment (e.g., 'Do you know why? Let us know in the comments!').
+  4. Always conclude the script with a fresh, creative, and UNIQUE call to action tailored to the topic inviting viewers to subscribe to Wonder Vault (do not repeat the same phrase across videos; e.g., 'Subscribe to Wonder Vault to unlock more crazy secrets of the human body!', 'Hit subscribe on Wonder Vault for your daily dose of mind-bending science mysteries!').
+""".rstrip()
+    elif lang_lower in ("te-in", "telugu"):
+        prompt += """
+- language: Telugu
+- tone and style:
+  1. Write in natural Telugu.
+  2. Always end the script with a unique, creative call to action tailored to the topic asking the audience to subscribe to Wonder Vault.
+""".rstrip()
+    elif language:
         prompt += f"\n- language: {language}"
+        prompt += "\n- Always end the script with an engaging call to action to subscribe to Wonder Vault."
+    else:
+        prompt += "\n- Always end the script with an engaging call to action to subscribe to Wonder Vault."
     if video_script_prompt:
         prompt += f"""
 
@@ -756,9 +836,10 @@ def generate_script(
         custom_system_prompt=custom_system_prompt,
     )
     final_script = ""
+    safe_subj = str(video_subject or "").encode("ascii", "backslashreplace").decode("ascii")
     logger.info(
         "generating video script: "
-        f"subject={video_subject}, paragraph_number={paragraph_number}, "
+        f"subject={safe_subj}, paragraph_number={paragraph_number}, "
         f"has_custom_prompt={bool(video_script_prompt.strip())}, "
         f"has_custom_system_prompt={bool(custom_system_prompt.strip())}"
     )
@@ -809,7 +890,9 @@ def generate_script(
     if "Error: " in final_script:
         logger.error(f"failed to generate video script: {final_script}")
     else:
-        logger.success(f"completed: \n{final_script}")
+        enc = getattr(sys.stdout, "encoding", None) or "utf-8"
+        safe_script_log = final_script.encode(enc, errors="backslashreplace").decode(enc)
+        logger.success(f"completed: \n{safe_script_log}")
     return final_script.strip()
 
 
@@ -892,7 +975,8 @@ def generate_terms(
 Please note that you must use English for generating video search terms; Chinese is not accepted.
 """.strip()
 
-    logger.info(f"subject: {video_subject}, match_script_order: {match_script_order}")
+    safe_terms_subj = str(video_subject or "").encode("ascii", "backslashreplace").decode("ascii")
+    logger.info(f"subject: {safe_terms_subj}, match_script_order: {match_script_order}")
 
     search_terms = []
     response = ""

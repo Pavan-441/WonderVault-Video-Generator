@@ -253,10 +253,10 @@ LLM_PROVIDER_REGISTRY = (
         "Google Gemini",
         adapter="gemini",
         api_key_url="https://aistudio.google.com/app/apikey",
-        default_model="gemini-3.1-pro-preview",
+        default_model="gemini-3.5-flash-lite",
         requires_base_url=False,
         show_base_url=False,
-        deprecated_models=("gemini-pro", "gemini-1.0-pro"),
+        deprecated_models=("gemini-pro", "gemini-1.0-pro", "gemini-2.5-flash", "gemini-2.5-flash-lite"),
     ),
     LLMProviderSpec(
         "deepseek",

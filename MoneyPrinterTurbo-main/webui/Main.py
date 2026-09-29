@@ -4963,10 +4963,14 @@ def _render_script_settings(panel, params):
                 ).strip()
 
             video_languages = [
+                ("Telugu & English Mix (Tenglish - WonderVault)", "te-IN-Mix"),
+                ("English (WonderVault Shorts)", "en-US"),
+                ("Telugu (Formal)", "te-IN"),
                 (tr("Auto Detect"), ""),
             ]
             for code in support_locales:
-                video_languages.append((code, code))
+                if code not in ("en-US", "te-IN", "te-IN-Mix"):
+                    video_languages.append((code, code))
 
             selected_language_code = stable_selectbox(
                 tr("Script Language"),
@@ -4974,12 +4978,12 @@ def _render_script_settings(panel, params):
                 default_value=_saved_ui_choice(
                     "video_language",
                     [value for _, value in video_languages],
-                    "",
+                    "te-IN-Mix",
                 ),
                 key="script_language_select",
                 format_func=lambda value: dict(
                     (v, label) for label, v in video_languages
-                )[value],
+                ).get(value, value),
             )
             params.video_language = selected_language_code
             _set_runtime_config("ui", "video_language", params.video_language)
