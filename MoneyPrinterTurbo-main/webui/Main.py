@@ -8872,6 +8872,189 @@ def _render_audio_generator_studio():
                     st.rerun()
 
 
+def _render_thumbnail_studio():
+    """渲染缩略图工坊：支持 16:9 / 9:16、人物抠图叠加、泰卢固语/英语标题排版以及 Google Flow 提示词集成。"""
+    from app.services import thumbnail
+
+    st.subheader(f"🎨 {tr('Thumbnail Studio')}")
+    st.caption(tr("Thumbnail Studio Subtitle"))
+
+    col_left, col_right = st.columns([1.1, 0.9])
+
+    with col_left:
+        # Consume any pending updates before widget instantiation to avoid StreamlitAPIException
+        if "thumb_script_pending" in st.session_state:
+            st.session_state["thumb_script_input"] = st.session_state.pop("thumb_script_pending")
+        if "thumb_title_pending" in st.session_state:
+            st.session_state["thumb_title_text"] = st.session_state.pop("thumb_title_pending")
+
+        # Script input with Sync button
+        sync_cols = st.columns([0.75, 0.25])
+        with sync_cols[0]:
+            st.markdown(f"**{tr('Narration Script')}**")
+        with sync_cols[1]:
+            if st.button(
+                f"🔄 {tr('Sync')}",
+                key="thumb_sync_script_btn",
+                help=tr("Sync Script from Video Studio"),
+            ):
+                vid_script = st.session_state.get("video_script", "")
+                if vid_script:
+                    st.session_state["thumb_script_pending"] = vid_script
+                    st.toast(tr("Script synced from Video Studio"), icon="🔄")
+                    st.rerun()
+
+        thumb_script = st.text_area(
+            label=tr("Narration Script"),
+            value=st.session_state.get("thumb_script_input", ""),
+            height=100,
+            key="thumb_script_input",
+            placeholder=tr("Enter script or topic for thumbnail..."),
+            label_visibility="collapsed",
+        ).strip()
+
+        # Aspect Ratio & Title Style
+        opt_cols = st.columns(2)
+        with opt_cols[0]:
+            aspect_ratio_options = [
+                ("16:9", "16:9 (YouTube Landscape)"),
+                ("9:16", "9:16 (Shorts / Reels Vertical)"),
+            ]
+            selected_ratio = st.selectbox(
+                tr("Thumbnail Aspect Ratio"),
+                options=[opt[0] for opt in aspect_ratio_options],
+                index=0 if st.session_state.get("thumb_aspect_ratio", "16:9") == "16:9" else 1,
+                format_func=lambda val: dict(aspect_ratio_options)[val],
+                key="thumb_aspect_ratio",
+            )
+        with opt_cols[1]:
+            style_options = [
+                ("yellow_black", "Vibrant Yellow"),
+                ("fire_red", "Fire Red"),
+                ("neon_cyan", "Neon Cyan"),
+                ("crisp_white", "Crisp White"),
+            ]
+            selected_style = st.selectbox(
+                tr("Title Style"),
+                options=[opt[0] for opt in style_options],
+                index=0,
+                format_func=lambda val: dict(style_options)[val],
+                key="thumb_style_select",
+            )
+
+        # Title Hook with "Suggest Title" button
+        title_cols = st.columns([0.72, 0.28])
+        with title_cols[0]:
+            title_text = st.text_input(
+                tr("Thumbnail Title"),
+                value=st.session_state.get("thumb_title_text", ""),
+                key="thumb_title_text",
+                placeholder="e.g. షాకింగ్ నిజం! or MUST WATCH!",
+                help=tr("Thumbnail Title Help"),
+            ).strip()
+        with title_cols[1]:
+            st.write("")
+            if st.button(
+                f"✨ {tr('Suggest')}",
+                key="thumb_suggest_title_btn",
+                use_container_width=True,
+            ):
+                if thumb_script:
+                    suggested = thumbnail.generate_hook_title(thumb_script)
+                    st.session_state["thumb_title_pending"] = suggested
+                    st.rerun()
+                else:
+                    st.warning(tr("Narration Script Required"))
+
+        # Character cutout uploader
+        cutout_cols = st.columns([0.65, 0.35])
+        with cutout_cols[0]:
+            uploaded_cutout = st.file_uploader(
+                tr("Character Cutout"),
+                type=["png", "webp"],
+                key="thumb_cutout_uploader",
+                help=tr("Character Cutout Help"),
+            )
+        with cutout_cols[1]:
+            cutout_pos_options = [
+                ("right", tr("Right")),
+                ("left", tr("Left")),
+                ("center", tr("Center")),
+            ]
+            selected_cutout_pos = st.selectbox(
+                tr("Cutout Position"),
+                options=[opt[0] for opt in cutout_pos_options],
+                index=0,
+                format_func=lambda val: dict(cutout_pos_options)[val],
+                key="thumb_cutout_pos",
+            )
+
+        # Flow Prompt Generator Expander
+        with st.expander(f"✨ {tr('Google Flow / Nano Banana Prompt')}", expanded=True):
+            st.caption(tr("Flow Prompt Help"))
+            flow_prompt = thumbnail.craft_flow_prompt(
+                script=thumb_script,
+                aspect_ratio=selected_ratio,
+                has_cutout=bool(uploaded_cutout),
+            )
+            st.code(flow_prompt, language="text")
+
+        # Background image uploader
+        uploaded_bg = st.file_uploader(
+            f"🖼️ {tr('Upload Background Image')}",
+            type=["png", "jpg", "jpeg", "webp"],
+            key="thumb_bg_uploader",
+            help=tr("Upload Background Help"),
+        )
+
+        compose_clicked = st.button(
+            f"🎨 {tr('Generate Thumbnail')}",
+            key="thumb_compose_btn",
+            type="primary",
+            use_container_width=True,
+        )
+
+    with col_right:
+        st.markdown(f"**{tr('Thumbnail Preview')}**")
+        if compose_clicked:
+            if not uploaded_bg:
+                st.error(tr("Background Image Required"))
+            else:
+                try:
+                    with st.spinner(tr("Compositing Thumbnail...")):
+                        composed = thumbnail.compose_thumbnail(
+                            background_image=uploaded_bg.getvalue(),
+                            title_text=title_text,
+                            cutout_image=uploaded_cutout.getvalue() if uploaded_cutout else None,
+                            aspect_ratio=selected_ratio,
+                            style_key=selected_style,
+                            cutout_position=selected_cutout_pos,
+                        )
+                        import io
+
+                        buf = io.BytesIO()
+                        composed.save(buf, format="PNG", quality=95)
+                        thumb_bytes = buf.getvalue()
+                        st.session_state["thumb_generated_bytes"] = thumb_bytes
+                        st.toast(tr("Thumbnail Generated Successfully"), icon="🎨")
+                except Exception as e:
+                    st.error(f"Failed to generate thumbnail: {e}")
+
+        # Display preview if available
+        if "thumb_generated_bytes" in st.session_state:
+            st.image(st.session_state["thumb_generated_bytes"], use_container_width=True)
+            st.download_button(
+                f"⬇️ {tr('Download Thumbnail (PNG)')}",
+                data=st.session_state["thumb_generated_bytes"],
+                file_name=f"thumbnail_{selected_ratio.replace(':', '_')}.png",
+                mime="image/png",
+                use_container_width=True,
+                key="thumb_download_btn",
+            )
+        else:
+            st.info(tr("Upload a background image and click Generate Thumbnail to see the result."))
+
+
 def _render_video_generator_studio():
     """渲染四栏视频生成工作室。"""
     with st.container(key="main_settings_grid"):
@@ -8929,6 +9112,7 @@ def _render_application():
     main_tab_labels = [
         f"🎬 {tr('Video Generator')}",
         f"🎙️ {tr('Audio Generator & Downloader')}",
+        f"🎨 {tr('Thumbnail Studio')}",
     ]
     main_tabs_key = localized_widget_key("main_studio_tabs")
     target_tab = st.session_state.pop("main_studio_target_tab", None)
@@ -8936,14 +9120,19 @@ def _render_application():
         st.session_state[main_tabs_key] = main_tab_labels[0]
     elif target_tab == "audio":
         st.session_state[main_tabs_key] = main_tab_labels[1]
+    elif target_tab == "thumbnail":
+        st.session_state[main_tabs_key] = main_tab_labels[2]
 
-    video_tab, audio_tab = st.tabs(main_tab_labels, key=main_tabs_key)
+    video_tab, audio_tab, thumb_tab = st.tabs(main_tab_labels, key=main_tabs_key)
 
     with video_tab:
         _render_video_generator_studio()
 
     with audio_tab:
         _render_audio_generator_studio()
+
+    with thumb_tab:
+        _render_thumbnail_studio()
 
 
 _render_application()
