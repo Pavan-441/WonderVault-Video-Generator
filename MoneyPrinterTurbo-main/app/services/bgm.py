@@ -391,3 +391,116 @@ def resolve_bgm_file(unsafe_path: str) -> str:
             except ValueError as exc:
                 last_error = exc
     raise ValueError(str(last_error)) from last_error
+
+
+def download_bgm_from_url(url: str, timeout_seconds: int = 60) -> tuple[str, str]:
+    """
+    Download an audio file from a URL and persist it as uploaded BGM.
+
+    Returns a tuple of (display_name, saved_path). The file is validated via
+    FFmpeg full decode, same as local uploads. Raises BgmUploadError for
+    invalid audio, BgmServiceError for network/filesystem failures.
+    """
+    import re
+    import urllib.error
+    import urllib.parse
+    import urllib.request
+
+    url = (url or "").strip()
+    if not url or not re.match(r"^https?://", url, re.IGNORECASE):
+        raise BgmUploadError("URL must start with http:// or https://")
+
+    # Derive a display name from the URL path
+    parsed = urllib.parse.urlparse(url)
+    url_filename = os.path.basename(urllib.parse.unquote(parsed.path or ""))
+    if not url_filename or "." not in url_filename:
+        url_filename = "downloaded_bgm.mp3"
+
+    # Check extension
+    ext = Path(url_filename).suffix.lower()
+    if ext not in SUPPORTED_BGM_EXTENSIONS:
+        # Try to use a generic extension if URL doesn't have one
+        ext = ".mp3"
+        url_filename = Path(url_filename).stem + ext
+
+    target_dir = uploaded_bgm_dir(create=True)
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "*/*",
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        response = urllib.request.urlopen(req, timeout=timeout_seconds)
+    except urllib.error.HTTPError as exc:
+        if exc.code == 403:
+            raise BgmServiceError(
+                "Access forbidden (HTTP 403). The website (such as Pixabay) blocks automated downloads "
+                "or requires browser verification. Please download the audio file directly from the website "
+                "and upload it via Custom Background Music."
+            ) from exc
+        raise BgmServiceError(f"HTTP Error {exc.code}: {exc.reason}") from exc
+    except Exception as exc:
+        raise BgmServiceError(f"failed to download: {exc}") from exc
+
+    # Check if response returned a webpage (HTML) instead of audio
+    content_type = response.headers.get("Content-Type", "").lower()
+    if "text/html" in content_type:
+        response.close()
+        raise BgmUploadError(
+            "URL points to a webpage (HTML), not a direct audio file. "
+            "Please provide a direct audio link (.mp3, .wav, etc.) or download the file and upload it."
+        )
+
+    temp_path = ""
+    try:
+        descriptor, temp_path = tempfile.mkstemp(
+            prefix=_INTERNAL_UPLOAD_PREFIX,
+            suffix=ext,
+            dir=target_dir,
+        )
+        total_bytes = 0
+        try:
+            with os.fdopen(descriptor, "wb") as output:
+                while True:
+                    chunk = response.read(_COPY_CHUNK_BYTES)
+                    if not chunk:
+                        break
+                    total_bytes += len(chunk)
+                    if total_bytes > MAX_BGM_UPLOAD_BYTES:
+                        raise BgmUploadError(
+                            "downloaded file exceeds the 30 MB limit"
+                        )
+                    output.write(chunk)
+                output.flush()
+                os.fsync(output.fileno())
+        finally:
+            response.close()
+
+        if total_bytes == 0:
+            raise BgmUploadError("downloaded file is empty")
+
+        # Validate audio via FFmpeg
+        _validate_audio(temp_path)
+
+        # Persist with UUID naming
+        stored_name = f"{uuid4().hex}{ext}"
+        target_path = os.path.join(target_dir, stored_name)
+        try:
+            os.replace(temp_path, target_path)
+        except OSError as exc:
+            raise BgmServiceError(
+                "failed to persist downloaded background music"
+            ) from exc
+        temp_path = ""
+
+        logger.info(
+            f"background music downloaded from URL: display_name={url_filename}, "
+            f"stored_name={stored_name}, size={total_bytes} bytes"
+        )
+        return url_filename, target_path
+    finally:
+        _remove_staged_file(temp_path)
+

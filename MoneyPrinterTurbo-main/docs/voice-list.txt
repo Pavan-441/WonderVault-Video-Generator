@@ -868,11 +868,41 @@ Gender: Male
 Name: ta-SG-VenbaNeural
 Gender: Female
 
+Name: te-IN-ShrutiNeural
+Gender: Female
+
+Name: te-IN-Shruti-SweetNeural
+Gender: Female
+
+Name: te-IN-Shruti-CalmNeural
+Gender: Female
+
+Name: te-IN-Shruti-EnergeticNeural
+Gender: Female
+
+Name: te-IN-AvaMultilingualNeural
+Gender: Female
+
+Name: te-IN-EmmaMultilingualNeural
+Gender: Female
+
 Name: te-IN-MohanNeural
 Gender: Male
 
-Name: te-IN-ShrutiNeural
-Gender: Female
+Name: te-IN-Mohan-DeepCinemaNeural
+Gender: Male
+
+Name: te-IN-Mohan-NewsAnchorNeural
+Gender: Male
+
+Name: te-IN-Mohan-EnergeticNeural
+Gender: Male
+
+Name: te-IN-AndrewMultilingualNeural
+Gender: Male
+
+Name: te-IN-BrianMultilingualNeural
+Gender: Male
 
 Name: th-TH-NiwatNeural
 Gender: Male

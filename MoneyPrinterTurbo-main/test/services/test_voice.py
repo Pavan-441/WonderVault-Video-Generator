@@ -55,7 +55,7 @@ class TestVoiceService(unittest.TestCase):
     def test_get_all_azure_voices(self):
         voices = vs.get_all_azure_voices()
         # 数据已从内联字符串迁移到 azure_voices.json，确保仍能完整加载
-        self.assertEqual(len(voices), 331)
+        self.assertEqual(len(voices), 341)
         # 结果应为 "Name-Gender" 格式且已排序
         self.assertEqual(voices, sorted(voices))
         for v in voices:

@@ -504,6 +504,11 @@ def generate_audio(
     # /audio 和 /subtitle 请求模型不包含 custom_audio_file，
     # 这里统一做兼容读取，避免直调接口时抛属性错误。
     requested_custom_audio_file = getattr(params, "custom_audio_file", None)
+    if getattr(params, "audio_enabled", True) is False:
+        requested_custom_audio_file = None
+        voice_preview = None
+        params.voice_name = voice.NO_VOICE_NAME
+
     try:
         custom_audio_file = resolve_custom_audio_file(
             task_id,
@@ -530,9 +535,14 @@ def generate_audio(
 
         logger.info("no custom audio file provided, using TTS to generate audio.")
         audio_file = path.join(utils.task_dir(task_id), "audio.mp3")
+        target_voice_name = (
+            voice.NO_VOICE_NAME
+            if getattr(params, "audio_enabled", True) is False
+            else voice.parse_voice_name(params.voice_name)
+        )
         tts_kwargs = {
             "text": video_script,
-            "voice_name": voice.parse_voice_name(params.voice_name),
+            "voice_name": target_voice_name,
             "voice_rate": params.voice_rate,
             "voice_file": audio_file,
         }
@@ -1512,6 +1522,12 @@ def _run_pipeline(
 ):
     logger.info(f"start task: {task_id}, stop_at: {stop_at}")
     sm.state.update_task(task_id, state=const.TASK_STATE_PROCESSING, progress=5)
+
+    if getattr(params, "audio_enabled", True) is False:
+        params.voice_name = voice.NO_VOICE_NAME
+        params.custom_audio_file = None
+        params.bgm_type = "none"
+        params.bgm_volume = 0.0
 
     if (
         stop_at in {"materials", "video"}

@@ -439,6 +439,58 @@ class TestBackgroundMusicService(unittest.TestCase):
                     os.path.realpath(os.path.join(uploaded_dir, "user.flac")),
                 )
 
+    def test_download_bgm_from_url_rejects_invalid_url(self):
+        for invalid_url in ("", "ftp://example.com/audio.mp3", "not_a_url"):
+            with self.subTest(invalid_url=invalid_url):
+                with self.assertRaises(bgm.BgmUploadError):
+                    bgm.download_bgm_from_url(invalid_url)
+
+    def test_download_bgm_from_url_success(self):
+        with tempfile.TemporaryDirectory() as uploaded_dir:
+            with patch.object(bgm, "uploaded_bgm_dir", return_value=uploaded_dir), \
+                 patch.object(bgm, "_validate_audio"), \
+                 patch("urllib.request.urlopen") as mock_urlopen:
+                mock_response = io.BytesIO(b"fake audio data")
+                mock_response.headers = {"Content-Type": "audio/mpeg"}
+                mock_urlopen.return_value = mock_response
+
+                name, path = bgm.download_bgm_from_url("https://example.com/test_track.mp3")
+                self.assertEqual(name, "test_track.mp3")
+                self.assertTrue(os.path.exists(path))
+                self.assertEqual(Path(path).read_bytes(), b"fake audio data")
+
+    def test_download_bgm_from_url_rejects_html_page(self):
+        with tempfile.TemporaryDirectory() as uploaded_dir:
+            with patch.object(bgm, "uploaded_bgm_dir", return_value=uploaded_dir), \
+                 patch("urllib.request.urlopen") as mock_urlopen:
+                mock_response = io.BytesIO(b"<html>webpage</html>")
+                mock_response.headers = {"Content-Type": "text/html; charset=utf-8"}
+                mock_urlopen.return_value = mock_response
+
+                with self.assertRaises(bgm.BgmUploadError) as cm:
+                    bgm.download_bgm_from_url("https://pixabay.com/music/test/")
+                self.assertIn("webpage", str(cm.exception).lower())
+
+    def test_download_bgm_from_url_http_403_guidance(self):
+        import urllib.error
+        with tempfile.TemporaryDirectory() as uploaded_dir:
+            http_403 = urllib.error.HTTPError(
+                "https://example.com/music.mp3", 403, "Forbidden", {}, None
+            )
+            with patch.object(bgm, "uploaded_bgm_dir", return_value=uploaded_dir), \
+                 patch("urllib.request.urlopen", side_effect=http_403):
+                with self.assertRaises(bgm.BgmServiceError) as cm:
+                    bgm.download_bgm_from_url("https://example.com/music.mp3")
+                self.assertIn("403", str(cm.exception))
+                self.assertIn("Custom Background Music", str(cm.exception))
+
+    def test_download_bgm_from_url_network_error(self):
+        with tempfile.TemporaryDirectory() as uploaded_dir:
+            with patch.object(bgm, "uploaded_bgm_dir", return_value=uploaded_dir), \
+                 patch("urllib.request.urlopen", side_effect=OSError("connection refused")):
+                with self.assertRaises(bgm.BgmServiceError):
+                    bgm.download_bgm_from_url("https://example.com/test_track.mp3")
+
 
 if __name__ == "__main__":
     unittest.main()

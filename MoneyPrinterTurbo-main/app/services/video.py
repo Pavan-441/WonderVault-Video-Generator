@@ -1463,8 +1463,9 @@ def generate_video(
             video_clip = CompositeVideoClip([video_clip, *text_clips])
             clip_stack.callback(video_clip.close)
 
-        bgm_enabled = bgm_service.should_use_bgm(
-            params.bgm_type, params.bgm_volume
+        bgm_enabled = (
+            getattr(params, "audio_enabled", True)
+            and bgm_service.should_use_bgm(params.bgm_type, params.bgm_volume)
         )
         if not bgm_enabled and params.bgm_type:
             # 所有 BGM 来源共用这一条短路规则。音量不大于 0 时不能解析随机或
@@ -1510,7 +1511,10 @@ def generate_video(
                     f"file={bgm_file}"
                 )
 
-        final_video_clip = video_clip.with_audio(audio_clip)
+        if getattr(params, "audio_enabled", True) is False:
+            final_video_clip = video_clip.without_audio()
+        else:
+            final_video_clip = video_clip.with_audio(audio_clip)
         clip_stack.callback(final_video_clip.close)
         # 显式沿用输入音频的采样率；如果取不到，再回退 MoviePy 默认的 44100Hz。
         # 这样可以减少不同环境，尤其 Docker 中再次重采样带来的音质波动。

@@ -125,6 +125,7 @@ class VideoParams(BaseModel):
     )
     video_language: Optional[str] = ""  # auto detect
 
+    audio_enabled: Optional[bool] = True
     voice_name: Optional[str] = ""
     voice_volume: Optional[float] = 1.0
     voice_rate: Optional[float] = 1.0

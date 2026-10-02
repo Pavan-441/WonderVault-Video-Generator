@@ -593,6 +593,128 @@ def generate_silent_audio(duration_seconds: float, output_file: str) -> bool:
         return False
     return True
 
+TELUGU_ONES = {
+    1: "ఒకటి", 2: "రెండు", 3: "మూడు", 4: "నాలుగు", 5: "ఐదు",
+    6: "ఆరు", 7: "ఏడు", 8: "ఎనిమిది", 9: "తొమ్మిది",
+}
+TELUGU_TEENS = {
+    10: "పది", 11: "పదకొండు", 12: "పన్నెండు", 13: "పదమూడు", 14: "పద్నాలుగు",
+    15: "పదిహేను", 16: "పదహారు", 17: "పదిహేడు", 18: "పద్దెనిమిది", 19: "పందొమ్మిది",
+}
+TELUGU_TENS = {
+    2: "ఇరవై", 3: "ముప్పై", 4: "నలభై", 5: "యాభై",
+    6: "అరవై", 7: "డెబ్బై", 8: "ఎనభై", 9: "తొంభై",
+}
+
+def _telugu_two_digits(n: int) -> str:
+    if n <= 0:
+        return ""
+    if n < 10:
+        return TELUGU_ONES[n]
+    if n < 20:
+        return TELUGU_TEENS[n]
+    ten_part = TELUGU_TENS[n // 10]
+    one_part = TELUGU_ONES.get(n % 10, "")
+    return f"{ten_part} {one_part}" if one_part else ten_part
+
+def convert_year_to_telugu(year: int) -> str:
+    if year == 1000:
+        return "వెయ్యి"
+    if 2000 <= year <= 2099:
+        if year == 2000:
+            return "రెండు వేలు"
+        rem = year - 2000
+        return f"రెండు వేల {_telugu_two_digits(rem)}"
+    elif 1000 <= year <= 1999:
+        century = year // 100
+        rem = year % 100
+        century_word = TELUGU_TEENS.get(century, TELUGU_ONES.get(century, str(century)))
+        if rem == 0:
+            return f"{century_word} వందలు"
+        return f"{century_word} వందల {_telugu_two_digits(rem)}"
+    return str(year)
+
+EN_ONES = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+EN_TEENS = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+EN_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+EN_DECADE_TENS = ["", "", "twenties", "thirties", "forties", "fifties", "sixties", "seventies", "eighties", "nineties"]
+
+def _en_two_digits(n: int, is_decade: bool = False) -> str:
+    if is_decade and n % 10 == 0:
+        if n == 0:
+            return "hundreds"
+        if n < 10:
+            return ""
+        return EN_DECADE_TENS[n // 10]
+    if n <= 0:
+        return ""
+    if n < 10:
+        return EN_ONES[n]
+    if n < 20:
+        return EN_TEENS[n - 10]
+    ten = EN_TENS[n // 10]
+    one = EN_ONES[n % 10]
+    return f"{ten}-{one}" if one else ten
+
+def convert_year_to_english(year: int, is_decade: bool = False) -> str:
+    if year == 1000:
+        return "one thousand"
+    if 2000 <= year <= 2099:
+        if year == 2000:
+            return "two thousands" if is_decade else "two thousand"
+        rem = year - 2000
+        if is_decade and rem % 10 == 0:
+            return f"two thousand {EN_DECADE_TENS[rem // 10]}" if rem >= 20 else ("two thousand tens" if rem == 10 else f"two thousand {_en_two_digits(rem)}")
+        return f"two thousand {_en_two_digits(rem)}"
+    elif 1000 <= year <= 1999:
+        century = year // 100
+        rem = year % 100
+        century_word = EN_TEENS[century - 10] if 10 <= century < 20 else _en_two_digits(century)
+        if rem == 0:
+            return f"{century_word} hundreds" if is_decade else f"{century_word} hundred"
+        if is_decade and rem % 10 == 0:
+            return f"{century_word} hundred {EN_DECADE_TENS[rem // 10]}"
+        return f"{century_word} hundred {_en_two_digits(rem)}"
+    return str(year)
+
+YEAR_REGEX = re.compile(r"(?<!\d)(?<!\d\.)(1[0-9]{3}|20[0-9]{2})((?:'|’)s|s)?(?!\d)(?!\.\d)")
+
+def normalize_years_for_tts(text: str, voice_name: str = "") -> str:
+    """
+    将文案中的 4 位年份数字（如 1970、2014、2022、1869）转换为自然的自然语言朗读形式。
+    支持泰卢固语（Telugu）和英语（English），避免 TTS 逐字念出'okati tommidhi yedu sunna'或'one nine seven zero'。
+    """
+    if not text:
+        return ""
+
+    clean_voice = voice_name.split(":")[0] if ":" in voice_name else voice_name
+    clean_voice = clean_voice.rsplit("-", 1)[0] if clean_voice.endswith(("-Female", "-Male")) else clean_voice
+    
+    has_telugu_script = bool(re.search(r"[\u0c00-\u0c7f]", text))
+    is_telugu_voice = clean_voice.startswith(("te-", "te_")) or "telugu" in voice_name.lower()
+    has_cjk = bool(re.search(r"[\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af]", text))
+    has_arabic = bool(re.search(r"[\u0600-\u06ff]", text))
+    has_latin = bool(re.search(r"[A-Za-z]", text))
+    is_en_voice = clean_voice.startswith(("en-", "en_"))
+
+    if has_telugu_script or (is_telugu_voice and not has_latin and not has_cjk and not has_arabic):
+        lang = "te"
+    elif not has_cjk and not has_arabic and (is_en_voice or (has_latin and not is_telugu_voice) or (is_telugu_voice and has_latin)):
+        lang = "en"
+    else:
+        return text
+
+    def _replace_year(match: re.Match) -> str:
+        year_val = int(match.group(1))
+        decade_suffix = match.group(2)
+        is_decade = bool(decade_suffix)
+        if lang == "te":
+            return convert_year_to_telugu(year_val)
+        else:
+            return convert_year_to_english(year_val, is_decade=is_decade)
+
+    return YEAR_REGEX.sub(_replace_year, text)
+
 
 def _single_tts(
     text: str,
@@ -615,6 +737,8 @@ def _single_tts(
             text=text,
             audio_duration_seconds=duration_seconds,
         )
+
+    text = normalize_years_for_tts(text, voice_name)
 
     if is_azure_v2_voice(voice_name):
         return azure_tts_v2(
@@ -1160,8 +1284,95 @@ def populate_legacy_submaker_with_full_text(
     return sub_maker
 
 
+TELUGU_VOICE_PROFILES = {
+    # Attractive Female Telugu Personas
+    "te-IN-Shruti-SweetNeural": {
+        "base_voice": "te-IN-ShrutiNeural",
+        "pitch": "+12Hz",
+        "rate_offset": 0.05,
+        "style_desc": "Sweet & Youthful Storyteller",
+    },
+    "te-IN-Shruti-CalmNeural": {
+        "base_voice": "te-IN-ShrutiNeural",
+        "pitch": "-6Hz",
+        "rate_offset": -0.04,
+        "style_desc": "Calm, Warm & Soothing",
+    },
+    "te-IN-Shruti-EnergeticNeural": {
+        "base_voice": "te-IN-ShrutiNeural",
+        "pitch": "+8Hz",
+        "rate_offset": 0.10,
+        "style_desc": "Vibrant & Energetic Host",
+    },
+    "te-IN-AvaMultilingualNeural": {
+        "base_voice": "en-US-AvaMultilingualNeural",
+        "pitch": "+0Hz",
+        "rate_offset": 0.0,
+        "style_desc": "Ava - Expressive & Cinematic",
+    },
+    "te-IN-EmmaMultilingualNeural": {
+        "base_voice": "en-US-EmmaMultilingualNeural",
+        "pitch": "+0Hz",
+        "rate_offset": 0.0,
+        "style_desc": "Emma - Friendly & Conversational",
+    },
+    # Attractive Male Telugu Personas
+    "te-IN-Mohan-DeepCinemaNeural": {
+        "base_voice": "te-IN-MohanNeural",
+        "pitch": "-12Hz",
+        "rate_offset": -0.04,
+        "style_desc": "Deep & Cinematic Narrator",
+    },
+    "te-IN-Mohan-NewsAnchorNeural": {
+        "base_voice": "te-IN-MohanNeural",
+        "pitch": "+4Hz",
+        "rate_offset": 0.05,
+        "style_desc": "News Anchor & Professional",
+    },
+    "te-IN-Mohan-EnergeticNeural": {
+        "base_voice": "te-IN-MohanNeural",
+        "pitch": "+8Hz",
+        "rate_offset": 0.10,
+        "style_desc": "Dynamic & Energetic Host",
+    },
+    "te-IN-AndrewMultilingualNeural": {
+        "base_voice": "en-US-AndrewMultilingualNeural",
+        "pitch": "+0Hz",
+        "rate_offset": 0.0,
+        "style_desc": "Andrew - Warm & Engaging Narrator",
+    },
+    "te-IN-BrianMultilingualNeural": {
+        "base_voice": "en-US-BrianMultilingualNeural",
+        "pitch": "+0Hz",
+        "rate_offset": 0.0,
+        "style_desc": "Brian - Deep & Authoritative Documentary",
+    },
+}
+
+
+def resolve_edge_voice_and_params(
+    voice_name: str, voice_rate: float
+) -> tuple[str, str, str]:
+    """
+    解析 Edge TTS (Azure V1) 语音名称，应用定制 Telugu 音色配置文件（音调与语速偏移）。
+
+    返回: (实际 edge_tts 声音标识, 转换后的语速字符串, 音调字符串)
+    """
+    clean_name = parse_voice_name(voice_name)
+    profile = TELUGU_VOICE_PROFILES.get(clean_name)
+    if profile:
+        actual_voice = profile["base_voice"]
+        pitch_str = profile.get("pitch", "+0Hz")
+        effective_rate = max(
+            0.5, min(2.0, float(voice_rate) + profile.get("rate_offset", 0.0))
+        )
+        return actual_voice, convert_rate_to_percent(effective_rate), pitch_str
+
+    return clean_name, convert_rate_to_percent(voice_rate), "+0Hz"
+
+
 def create_edge_tts_communicate(
-    text: str, voice_name: str, rate_str: str
+    text: str, voice_name: str, rate_str: str, pitch_str: str = "+0Hz"
 ) -> edge_tts.Communicate:
     """
     按当前已安装的 edge_tts 版本构造 Communicate 对象。
@@ -1180,6 +1391,12 @@ def create_edge_tts_communicate(
 
     if "boundary" in communicate_signature.parameters:
         communicate_kwargs["boundary"] = "WordBoundary"
+    if (
+        "pitch" in communicate_signature.parameters
+        and pitch_str
+        and pitch_str != "+0Hz"
+    ):
+        communicate_kwargs["pitch"] = pitch_str
 
     return edge_tts.Communicate(text, voice_name, **communicate_kwargs)
 
@@ -1320,18 +1537,23 @@ def stream_edge_tts_chunks(
 def azure_tts_v1(
     text: str, voice_name: str, voice_rate: float, voice_file: str
 ) -> Union[SubMaker, None]:
-    voice_name = parse_voice_name(voice_name)
+    actual_voice, rate_str, pitch_str = resolve_edge_voice_and_params(
+        voice_name, voice_rate
+    )
     text = text.strip()
-    rate_str = convert_rate_to_percent(voice_rate)
     for i in range(3):
         try:
-            logger.info(f"start, voice name: {voice_name}, try: {i + 1}")
+            logger.info(
+                f"start, voice name: {actual_voice} (from {voice_name}), try: {i + 1}"
+            )
 
             # 这里同时兼容 edge_tts 7.x 和旧版便携包里可能残留的老依赖：
             # 1. 新版支持 `boundary` + `stream_sync()`
             # 2. 旧版不支持 `boundary`，且通常只暴露异步 `stream()`
             ensure_file_path_exists(voice_file)
-            communicate = create_edge_tts_communicate(text, voice_name, rate_str)
+            communicate = create_edge_tts_communicate(
+                text, actual_voice, rate_str, pitch_str=pitch_str
+            )
             sub_maker = edge_tts.SubMaker()
             timeout_seconds = get_edge_tts_timeout_seconds()
 
@@ -2847,6 +3069,21 @@ def _match_script_line(script_lines: list[str], current_text: str, sub_index: in
     target_line_normalized = re.sub(r"[_\W]+", "", target_line)
     if current_text_normalized == target_line_normalized:
         return target_line.strip()
+
+    # 年份口语化容错：当音频 TTS 中年份（如 1970、2014）被转换为自然语言词汇朗读时，
+    # 允许与脚本原句匹配，并返回脚本原始行（保留数字年份展示）
+    if YEAR_REGEX.search(target_line):
+        target_en_normalized = re.sub(
+            r"[_\W]+", "", normalize_years_for_tts(target_line, "en-US")
+        )
+        if current_text_normalized == target_en_normalized:
+            return target_line.strip()
+
+        target_te_normalized = re.sub(
+            r"[_\W]+", "", normalize_years_for_tts(target_line, "te-IN")
+        )
+        if current_text_normalized == target_te_normalized:
+            return target_line.strip()
 
     # 最后一层阿拉伯语容错：edge-tts 返回的字母形态、变音符号或 Tatweel
     # 可能和脚本不同。只在常规匹配失败后归一化比较，非阿拉伯语文本不会受影响。

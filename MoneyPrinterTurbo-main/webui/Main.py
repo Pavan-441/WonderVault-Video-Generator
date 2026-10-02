@@ -662,6 +662,7 @@ def _initialize_session_state():
             "elevenlabs_music_prompt",
             max_length=elevenlabs_music_service.MAX_PROMPT_LENGTH,
         ),
+        "audio_enabled_toggle": _saved_ui_bool("audio_enabled", True),
         "subtitle_enabled_checkbox": _saved_ui_bool("subtitle_enabled", True),
         "stroke_color_picker": _saved_ui_color("stroke_color", "#000000"),
         "stroke_width_slider": _saved_ui_number(
@@ -1434,6 +1435,29 @@ def _infer_tts_server_from_voice(voice_name):
     return "azure-tts-v1"
 
 
+def _get_telugu_voice_label(v: str) -> str:
+    """为 Telugu 专属音色提供富有表现力的中英文本地化标签。"""
+    if not v or not str(v).startswith("te-IN-"):
+        return ""
+    female_suffix = f"({tr('Female')})"
+    male_suffix = f"({tr('Male')})"
+    labels = {
+        "te-IN-ShrutiNeural-Female": f"te-IN-Shruti ({tr('Standard')}) {female_suffix}",
+        "te-IN-Shruti-SweetNeural-Female": f"te-IN-Shruti ({tr('Sweet & Storyteller')}) {female_suffix}",
+        "te-IN-Shruti-CalmNeural-Female": f"te-IN-Shruti ({tr('Calm & Warm')}) {female_suffix}",
+        "te-IN-Shruti-EnergeticNeural-Female": f"te-IN-Shruti ({tr('Vibrant & Energetic')}) {female_suffix}",
+        "te-IN-AvaMultilingualNeural-Female": f"te-IN-Ava ({tr('Expressive & Cinematic')}) {female_suffix}",
+        "te-IN-EmmaMultilingualNeural-Female": f"te-IN-Emma ({tr('Friendly & Conversational')}) {female_suffix}",
+        "te-IN-MohanNeural-Male": f"te-IN-Mohan ({tr('Standard')}) {male_suffix}",
+        "te-IN-Mohan-DeepCinemaNeural-Male": f"te-IN-Mohan ({tr('Deep & Cinematic')}) {male_suffix}",
+        "te-IN-Mohan-NewsAnchorNeural-Male": f"te-IN-Mohan ({tr('News Anchor & Pro')}) {male_suffix}",
+        "te-IN-Mohan-EnergeticNeural-Male": f"te-IN-Mohan ({tr('Dynamic & High Energy')}) {male_suffix}",
+        "te-IN-AndrewMultilingualNeural-Male": f"te-IN-Andrew ({tr('Warm Narrator')}) {male_suffix}",
+        "te-IN-BrianMultilingualNeural-Male": f"te-IN-Brian ({tr('Documentary & Authoritative')}) {male_suffix}",
+    }
+    return labels.get(v, "")
+
+
 def _set_stable_widget_value(key, value):
     if value is not None:
         st.session_state[localized_widget_key(key)] = value
@@ -1956,22 +1980,14 @@ def render_onboarding_tour():
 
 
 def _render_generation_logs(task_id):
-    """渲染后台任务日志快照，不从工作线程访问 Streamlit 会话状态。"""
-    if config.ui.get("hide_log", False):
-        return
-
-    log_records = webui_task.get_task_logs(task_id)
-    if not log_records:
-        return
-
-    st.code("\n".join(log_records))
+    """UI 不展示后台生成日志，保持界面精爽并释放空间。"""
+    return
 
 
 def _render_generation_task_snapshot(task_id, task):
     """根据状态存储中的快照渲染进度、失败原因或最终成片。"""
     if not task:
         st.info(tr("Generating Video"))
-        _render_generation_logs(task_id)
         return
 
     state = _normalize_task_state(task.get("state"))
@@ -1982,20 +1998,17 @@ def _render_generation_task_snapshot(task_id, task):
             progress,
             text=f"{tr('Task Progress')}: {progress}%",
         )
-        _render_generation_logs(task_id)
         return
 
     if state == const.TASK_STATE_FAILED:
         error = str(task.get("error") or "").strip()
         message = tr("Video Generation Failed")
         st.error(f"{message}: {error}" if error else message)
-        _render_generation_logs(task_id)
         return
 
     video_files = task.get("videos") or []
     if state != const.TASK_STATE_COMPLETE or not video_files:
         st.error(tr("Video Generation Failed"))
-        _render_generation_logs(task_id)
         return
 
     st.success(tr("Video Generation Completed"))
@@ -2076,7 +2089,6 @@ def _render_generation_task_snapshot(task_id, task):
     except Exception:
         pass
 
-    _render_generation_logs(task_id)
     if st.session_state.get("handled_generation_task_id") != task_id:
         # Fragment 可能重复渲染同一个完成任务。无论是否开启自动打开目录，
         # 每个任务都只处理一次完成事件，避免重复弹出资源管理器或重复写入日志。
@@ -6824,6 +6836,31 @@ def _render_audio_settings(panel, params):
         with st.container(border=True):
             st.write(tr("Audio Settings"))
 
+            st.session_state.setdefault(
+                "audio_enabled_toggle",
+                _saved_ui_bool("audio_enabled", True),
+            )
+            audio_enabled = st.toggle(
+                tr("Enable Audio"),
+                key="audio_enabled_toggle",
+                help=tr("Enable Audio Help"),
+            )
+            _set_runtime_config("ui", "audio_enabled", audio_enabled)
+            params.audio_enabled = audio_enabled
+
+            if not audio_enabled:
+                st.info(
+                    tr(
+                        "Audio generation is disabled. Video will be generated with visual footage only."
+                    )
+                )
+                params.voice_name = voice.NO_VOICE_NAME
+                params.voice_volume = 0.0
+                params.voice_rate = 1.0
+                params.bgm_type = "none"
+                params.bgm_volume = 0.0
+                return None, None, VOICE_MODE_NONE
+
             # 配音方式是音频设置的一级状态，负责明确区分自动配音、用户上传和无配音。
             # 旧配置没有 voice_mode 时，根据原 tts_server 的无配音哨兵保持兼容。
             saved_tts_server = config.ui.get("tts_server", "azure-tts-v1")
@@ -6961,9 +6998,19 @@ def _render_audio_settings(panel, params):
                         if "V2" not in v:
                             filtered_voices.append(v)
 
+            if str(params.video_language or "").lower().startswith("te"):
+                filtered_voices = sorted(
+                    filtered_voices,
+                    key=lambda v: (0 if v.startswith("te-IN-") else 1, v)
+                )
+
             def _friendly(v):
                 if voice.is_no_voice(v):
                     return tr("No Voice Selected")
+                if v.startswith("te-IN-"):
+                    te_label = _get_telugu_voice_label(v)
+                    if te_label:
+                        return te_label
                 if voice.is_elevenlabs_voice(v):
                     parts = v.split(":", 2)
                     return parts[2] if len(parts) >= 3 else v
@@ -7014,11 +7061,18 @@ def _render_audio_settings(panel, params):
                     saved_voice_name
                 )
             else:
-                # 如果不在，则根据当前UI语言选择一个默认声音
-                for i, v in enumerate(filtered_voices):
-                    if v.lower().startswith(st.session_state["ui_language"].lower()):
-                        saved_voice_name_index = i
-                        break
+                matched_idx = None
+                if str(params.video_language or "").lower().startswith("te"):
+                    for i, v in enumerate(filtered_voices):
+                        if v.startswith("te-IN-"):
+                            matched_idx = i
+                            break
+                if matched_idx is None:
+                    for i, v in enumerate(filtered_voices):
+                        if v.lower().startswith(st.session_state["ui_language"].lower()):
+                            matched_idx = i
+                            break
+                saved_voice_name_index = matched_idx if matched_idx is not None else 0
 
             # 如果没有找到匹配的声音，使用第一个声音
             if saved_voice_name_index >= len(friendly_names) and friendly_names:
@@ -7515,6 +7569,19 @@ def _render_audio_settings(panel, params):
                             "Custom audio will be used directly. TTS synthesis will be skipped for this task."
                         )
                     )
+                else:
+                    staged_audio = st.session_state.get("staged_custom_audio_file")
+                    if staged_audio and os.path.exists(staged_audio):
+                        st.success(
+                            f"🎵 {tr('Active Audio from Audio Studio')}: {os.path.basename(staged_audio)}"
+                        )
+                        st.audio(staged_audio)
+                        if st.button(
+                            tr("Clear Audio Studio File"),
+                            key="clear_staged_audio_in_upload",
+                        ):
+                            st.session_state.pop("staged_custom_audio_file", None)
+                            st.rerun()
             uploaded_bgm_file = _render_background_music_settings(
                 params,
                 elevenlabs_api_key_rendered=elevenlabs_api_key_rendered,
@@ -7853,7 +7920,11 @@ def _render_generation_controls(
     has_local_materials = bool(
         uploaded_files or st.session_state.get("local_video_materials", [])
     )
-    has_custom_audio = bool(uploaded_audio_file)
+    staged_audio_file = st.session_state.get("staged_custom_audio_file")
+    has_custom_audio = bool(
+        uploaded_audio_file
+        or (staged_audio_file and os.path.exists(staged_audio_file))
+    )
     unmet_restore_requirements = _get_unmet_restore_upload_requirements(
         restore_upload_requirements,
         video_source=params.video_source,
@@ -8103,7 +8174,12 @@ def _render_generation_controls(
             st.error(tr("Please Upload Local Materials First"))
             st.stop()
 
-        if voice_mode == VOICE_MODE_UPLOAD and not uploaded_audio_file:
+        staged_audio_file = st.session_state.get("staged_custom_audio_file")
+        if (
+            voice_mode == VOICE_MODE_UPLOAD
+            and not uploaded_audio_file
+            and not (staged_audio_file and os.path.exists(staged_audio_file))
+        ):
             # 上传音频是用户显式选择的配音方式，缺少文件时不能静默退回 TTS。
             # 在任务启动前拦截，避免产生与用户选择不一致的成片。
             _remove_active_generation_task(task_id)
@@ -8157,6 +8233,16 @@ def _render_generation_controls(
                 st.stop()
             with open(custom_audio_path, "wb") as f:
                 f.write(uploaded_audio_file.getbuffer())
+            params.custom_audio_file = custom_audio_path
+        elif (
+            staged_audio_file
+            and os.path.exists(staged_audio_file)
+            and voice_mode == VOICE_MODE_UPLOAD
+        ):
+            task_dir = utils.task_dir(task_id)
+            ext = os.path.splitext(staged_audio_file)[1] or ".mp3"
+            custom_audio_path = os.path.join(task_dir, f"custom-audio{ext}")
+            shutil.copyfile(staged_audio_file, custom_audio_path)
             params.custom_audio_file = custom_audio_path
 
         if uploaded_files:
@@ -8257,24 +8343,537 @@ def _render_generation_controls(
     return start_button
 
 
-def _render_application():
-    """按固定顺序渲染顶部栏、弹窗、生成表单和任务结果。"""
-    _render_top_bar()
+def _render_audio_generator_studio():
+    """渲染独立的音频生成与下载工作室。"""
+    st.subheader(f"🎙️ {tr('Audio Generator & Downloader')}")
+    st.caption(tr("Audio Generator Subtitle"))
 
-    if st.session_state.get("settings_dialog_open", False):
-        _render_settings_dialog()
+    with st.container(border=True):
+        st.write(f"**{tr('Narration Script')}**")
 
-    if _apply_pending_settings_preset():
-        st.success(tr("Settings Preset Imported"))
+        btn_cols = st.columns([2, 1, 4])
+        with btn_cols[0]:
+            if st.button(
+                f"📋 {tr('Sync Script from Video Studio')}",
+                key="audio_studio_sync_btn",
+                use_container_width=True,
+            ):
+                video_script = st.session_state.get("video_script", "")
+                if video_script and str(video_script).strip():
+                    st.session_state["audio_studio_script_area"] = str(video_script).strip()
+                    st.toast(tr("Script synced from Video Studio"), icon="📋")
+                    st.rerun()
+                else:
+                    st.warning(tr("No script found in Video Studio"))
+        with btn_cols[1]:
+            if st.button(
+                f"🗑️ {tr('Clear Script')}",
+                key="audio_studio_clear_btn",
+                use_container_width=True,
+            ):
+                st.session_state["audio_studio_script_area"] = ""
+                st.rerun()
 
-    restore_applied = _apply_pending_task_restore()
-    restore_candidate_id = st.session_state.get("task_restore_candidate_id")
-    if restore_candidate_id:
-        _render_task_restore_dialog(restore_candidate_id)
-    restore_succeeded = st.session_state.pop("task_restore_succeeded", False)
-    if restore_applied or restore_succeeded:
-        st.success(tr("Task Configuration Loaded"))
+        script_text = st.text_area(
+            tr("Narration Script"),
+            value=st.session_state.get("audio_studio_script_area", ""),
+            height=160,
+            key="audio_studio_script_area",
+            placeholder=tr("Enter narration script to generate speech audio..."),
+            label_visibility="collapsed",
+        )
 
+        char_count = len(script_text.strip())
+        est_duration = (
+            int(voice.estimate_no_voice_duration(script_text.strip()))
+            if char_count > 0
+            else 0
+        )
+        st.caption(
+            tr("Characters: {chars} | Estimated Duration: ~{duration}s").format(
+                chars=char_count,
+                duration=est_duration,
+            )
+        )
+
+    # Voice & Synthesis Settings
+    with st.container(border=True):
+        st.write(f"**{tr('Audio Settings')}**")
+        cols = st.columns(2)
+        with cols[0]:
+            tts_servers = [
+                ("azure-tts-v1", "Azure TTS V1 (Edge TTS)"),
+                ("azure-tts-v2", "Azure TTS V2"),
+                ("siliconflow", "SiliconFlow TTS"),
+                ("gemini-tts", "Google Gemini TTS"),
+                ("mimo-tts", "Xiaomi MiMo TTS"),
+                ("minimax-tts", "MiniMax TTS"),
+                ("elevenlabs", "ElevenLabs TTS"),
+                ("chatterbox", "Chatterbox TTS"),
+                ("kokoro", "Kokoro TTS"),
+                ("fish_audio", "Fish Audio TTS"),
+                ("voxcpm", "VoxCPM TTS"),
+            ]
+            saved_tts = st.session_state.get(
+                "audio_studio_tts_server", config.ui.get("tts_server", "azure-tts-v1")
+            )
+            server_vals = [s[0] for s in tts_servers]
+            if saved_tts not in server_vals:
+                saved_tts = "azure-tts-v1"
+
+            selected_tts = st.selectbox(
+                tr("Voiceover Service"),
+                options=server_vals,
+                index=server_vals.index(saved_tts),
+                key="audio_studio_tts_server_select",
+                format_func=lambda val: dict(tts_servers)[val],
+            )
+            st.session_state["audio_studio_tts_server"] = selected_tts
+
+            provider_tips = get_tts_provider_tips(selected_tts)
+            if provider_tips:
+                st.info(provider_tips)
+
+            # Filter voices for the selected TTS provider
+            if selected_tts == "siliconflow":
+                provider_voices = voice.get_siliconflow_voices()
+            elif selected_tts == "gemini-tts":
+                provider_voices = voice.get_gemini_voices()
+            elif selected_tts == "mimo-tts":
+                provider_voices = voice.get_mimo_voices()
+            elif selected_tts == "minimax-tts":
+                effective_api_key = str(config.minimax_tts.get("api_key", "") or "").strip()
+                minimax_tts_base_url = voice.get_minimax_tts_endpoint()
+                available_voices = _get_cached_minimax_voices(
+                    effective_api_key,
+                    minimax_tts_base_url,
+                )
+                provider_voices = [f"minimax:{item['voice_id']}" for item in available_voices]
+                if not provider_voices:
+                    provider_voices = [f"minimax:{voice.MINIMAX_TTS_DEFAULT_VOICE}"]
+            elif selected_tts == "elevenlabs":
+                saved_elevenlabs_key = _sync_elevenlabs_api_key_input()
+                cache_key = f"elevenlabs_voices_{saved_elevenlabs_key}"
+                if cache_key not in st.session_state:
+                    st.session_state[cache_key] = voice.get_elevenlabs_voices(
+                        saved_elevenlabs_key
+                    )
+                provider_voices = st.session_state[cache_key]
+            elif selected_tts == "chatterbox":
+                _sync_chatterbox_config_from_session_state()
+                provider_voices = voice.get_chatterbox_voices()
+            elif selected_tts == "kokoro":
+                _sync_kokoro_config_from_session_state()
+                provider_voices = _get_kokoro_voice_options(config.ui.get("voice_name", ""))
+            elif selected_tts == "fish_audio":
+                provider_voices = voice.get_fish_audio_voices()
+            elif selected_tts == "voxcpm":
+                provider_voices = voice.get_voxcpm_voices()
+            else:
+                all_v = voice.get_all_azure_voices(filter_locals=None)
+                provider_voices = [
+                    v for v in all_v
+                    if ("V2" in v if selected_tts == "azure-tts-v2" else "V2" not in v)
+                ]
+                current_lang = str(config.ui.get("video_language", "") or "").lower()
+                if current_lang.startswith("te"):
+                    provider_voices = sorted(
+                        provider_voices,
+                        key=lambda v: (0 if v.startswith("te-IN-") else 1, v)
+                    )
+
+            def _audio_studio_friendly(v):
+                if v.startswith("te-IN-"):
+                    te_label = _get_telugu_voice_label(v)
+                    if te_label:
+                        return te_label
+                if voice.is_elevenlabs_voice(v):
+                    parts = v.split(":", 2)
+                    return parts[2] if len(parts) >= 3 else v
+                if voice.is_chatterbox_voice(v) or voice.is_kokoro_voice(v):
+                    name = v.split(":", 1)[1] if ":" in v else v
+                    return name.replace("-Female", "").replace("-Male", "")
+                if voice.is_minimax_voice(v):
+                    return v.split(":", 1)[1] if ":" in v else v
+                if voice.is_fish_audio_voice(v):
+                    parts = v.split(":", 2)
+                    return parts[2] if len(parts) >= 3 else v
+                return (
+                    v.replace("Female", f"({tr('Female')})")
+                    .replace("Male", f"({tr('Male')})")
+                    .replace("Neural", "")
+                )
+
+            if not provider_voices:
+                provider_voices = [config.ui.get("voice_name", "en-US-JennyNeural-Female")]
+
+            saved_voice = st.session_state.get(
+                "audio_studio_voice_name", config.ui.get("voice_name", "")
+            )
+            default_voice_idx = 0
+            if saved_voice in provider_voices:
+                default_voice_idx = provider_voices.index(saved_voice)
+
+            selected_voice = st.selectbox(
+                tr("Voiceover Voice"),
+                options=provider_voices,
+                index=default_voice_idx,
+                key=f"audio_studio_voice_select_{selected_tts}",
+                format_func=_audio_studio_friendly,
+            )
+            st.session_state["audio_studio_voice_name"] = selected_voice
+
+        with cols[1]:
+            voice_rate_options = [0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.5, 1.8, 2.0]
+            voice_volume_options = [0.6, 0.8, 1.0, 1.2, 1.5, 2.0]
+
+            ctrl_cols = st.columns(2)
+            with ctrl_cols[0]:
+                selected_rate = st.selectbox(
+                    tr("Voiceover Speed"),
+                    options=voice_rate_options,
+                    index=voice_rate_options.index(1.0) if 1.0 in voice_rate_options else 2,
+                    key="audio_studio_voice_rate",
+                    format_func=lambda val: f"{val:.1f}×",
+                )
+            with ctrl_cols[1]:
+                selected_volume = st.selectbox(
+                    tr("Voiceover Volume"),
+                    options=voice_volume_options,
+                    index=voice_volume_options.index(1.0) if 1.0 in voice_volume_options else 2,
+                    key="audio_studio_voice_volume",
+                    format_func=lambda val: f"{int(val * 100)}%",
+                )
+
+            add_bgm = st.checkbox(
+                tr("Add Background Music (BGM)"),
+                value=False,
+                key="audio_studio_add_bgm",
+            )
+            bgm_file_to_mix = ""
+            bgm_volume_to_mix = 0.2
+            bgm_label_display = ""
+            selected_bgm_source = "random"
+            if add_bgm:
+                bgm_source_options = [
+                    ("random", tr("Random Background Music")),
+                    ("preset", tr("Preset Song")),
+                    ("custom", tr("Custom Background Music")),
+                    ("url", tr("URL Background Music")),
+                ]
+                selected_bgm_source = st.selectbox(
+                    tr("Background Music Source"),
+                    options=[opt[0] for opt in bgm_source_options],
+                    index=0,
+                    key="audio_studio_bgm_source_select",
+                    format_func=lambda val: dict(bgm_source_options)[val],
+                )
+
+                if selected_bgm_source == "random":
+                    bgm_label_display = tr("Random Background Music")
+
+                elif selected_bgm_source == "preset":
+                    bgm_files = bgm_service.list_bgm_files()
+                    preset_options = [os.path.basename(f) for f in bgm_files]
+                    if preset_options:
+                        selected_preset_song = st.selectbox(
+                            tr("Preset Song"),
+                            options=preset_options,
+                            index=0,
+                            key="audio_studio_preset_song_choice",
+                        )
+                        for f in bgm_files:
+                            if os.path.basename(f) == selected_preset_song:
+                                bgm_file_to_mix = f
+                                bgm_label_display = selected_preset_song
+                                break
+                    else:
+                        st.warning(tr("No Background Music Available"))
+
+                elif selected_bgm_source == "custom":
+                    uploaded_custom_bgm = st.file_uploader(
+                        tr("Upload Background Music"),
+                        type=[
+                            ext.removeprefix(".")
+                            for ext in bgm_service.SUPPORTED_BGM_EXTENSIONS
+                        ],
+                        accept_multiple_files=False,
+                        key="audio_studio_custom_bgm_uploader",
+                        help=tr("Upload Background Music Help"),
+                        max_upload_size=bgm_service.MAX_BGM_UPLOAD_BYTES // (1024 * 1024),
+                    )
+
+                    custom_path_input = st.text_input(
+                        tr("Custom Background Music File"),
+                        value=st.session_state.get("audio_studio_custom_path_input", ""),
+                        key="audio_studio_custom_path_input",
+                        placeholder="e.g. C:/music/custom_bgm.mp3",
+                    ).strip()
+
+                    if uploaded_custom_bgm is not None:
+                        try:
+                            safe_name = bgm_service.sanitize_upload_filename(uploaded_custom_bgm.name)
+                            import hashlib
+                            cache_key = (
+                                safe_name,
+                                uploaded_custom_bgm.size,
+                                hashlib.sha256(uploaded_custom_bgm.getbuffer()).hexdigest(),
+                            )
+                            cached = st.session_state.get("audio_studio_custom_bgm_cached")
+                            if (
+                                not cached
+                                or cached.get("key") != cache_key
+                                or not os.path.exists(cached.get("path", ""))
+                            ):
+                                stored_name = bgm_service.save_bgm_upload(
+                                    uploaded_custom_bgm.name, uploaded_custom_bgm
+                                )
+                                saved_path = os.path.join(
+                                    bgm_service.uploaded_bgm_dir(), stored_name
+                                )
+                                st.session_state["audio_studio_custom_bgm_cached"] = {
+                                    "key": cache_key,
+                                    "path": saved_path,
+                                    "name": safe_name,
+                                }
+                                bgm_file_to_mix = saved_path
+                            else:
+                                bgm_file_to_mix = cached["path"]
+
+                            bgm_label_display = safe_name
+                            st.caption(f"🎵 {tr('Background Music Ready')}: `{safe_name}`")
+                            st.audio(uploaded_custom_bgm)
+                        except bgm_service.BgmUploadError as err:
+                            st.error(f"{tr('Invalid Background Music')}: {err}")
+                        except Exception as err:
+                            st.error(f"{tr('Background Music Validation Failed')}: {err}")
+                    elif custom_path_input:
+                        if os.path.isfile(custom_path_input):
+                            try:
+                                bgm_service.validate_audio_file(custom_path_input)
+                                bgm_file_to_mix = custom_path_input
+                                bgm_label_display = os.path.basename(custom_path_input)
+                                st.caption(
+                                    f"🎵 {tr('Background Music Ready')}: `{os.path.basename(custom_path_input)}`"
+                                )
+                            except Exception as err:
+                                st.error(f"{tr('Invalid Background Music')}: {err}")
+                        else:
+                            st.warning(f"File not found: {custom_path_input}")
+
+                elif selected_bgm_source == "url":
+                    bgm_url_input = st.text_input(
+                        tr("Background Music URL"),
+                        value=st.session_state.get("audio_studio_bgm_url_input", ""),
+                        key="audio_studio_bgm_url_input",
+                        placeholder=tr("Background Music URL Placeholder"),
+                        help=tr("Background Music URL Help"),
+                    ).strip()
+
+                    if bgm_url_input:
+                        import re as _re_bgm_url
+
+                        if not _re_bgm_url.match(r"^https?://", bgm_url_input, _re_bgm_url.IGNORECASE):
+                            st.warning(tr("Background Music URL Invalid"))
+                        else:
+                            # Cache by URL to avoid re-downloading on every rerun
+                            cached_url = st.session_state.get("audio_studio_url_bgm_cached")
+                            if (
+                                cached_url
+                                and cached_url.get("url") == bgm_url_input
+                                and os.path.exists(cached_url.get("path", ""))
+                            ):
+                                bgm_file_to_mix = cached_url["path"]
+                                bgm_label_display = cached_url["name"]
+                                st.caption(
+                                    f"🎵 {tr('Background Music Downloaded')}: `{cached_url['name']}`"
+                                )
+                                st.audio(cached_url["path"])
+                            else:
+                                try:
+                                    with st.spinner(tr("Downloading Background Music")):
+                                        display_name, saved_path = bgm_service.download_bgm_from_url(
+                                            bgm_url_input
+                                        )
+                                    st.session_state["audio_studio_url_bgm_cached"] = {
+                                        "url": bgm_url_input,
+                                        "path": saved_path,
+                                        "name": display_name,
+                                    }
+                                    bgm_file_to_mix = saved_path
+                                    bgm_label_display = display_name
+                                    st.caption(
+                                        f"🎵 {tr('Background Music Downloaded')}: `{display_name}`"
+                                    )
+                                    st.audio(saved_path)
+                                except bgm_service.BgmUploadError as err:
+                                    st.error(f"{tr('Invalid Background Music')}: {err}")
+                                except bgm_service.BgmServiceError as err:
+                                    st.error(f"{tr('Background Music Download Failed')}: {err}")
+                                except Exception as err:
+                                    st.error(f"{tr('Background Music Download Failed')}: {err}")
+
+                bgm_volume_to_mix = st.slider(
+                    tr("Background Music Volume"),
+                    min_value=0.05,
+                    max_value=0.5,
+                    value=0.2,
+                    step=0.05,
+                    key="audio_studio_bgm_volume",
+                )
+
+    # Generate button
+    generate_clicked = st.button(
+        f"🎙️ {tr('Generate Audio')}",
+        key="audio_studio_generate_btn",
+        type="primary",
+        use_container_width=True,
+    )
+
+    if generate_clicked:
+        clean_text = script_text.strip()
+        if not clean_text:
+            st.error(tr("Narration Script Required"))
+        elif add_bgm and selected_bgm_source == "custom" and not bgm_file_to_mix:
+            st.error(tr("Invalid Background Music"))
+        else:
+            with st.spinner(tr("Generating Audio...")):
+                try:
+                    if add_bgm and selected_bgm_source == "random" and not bgm_file_to_mix:
+                        bgm_files = bgm_service.list_bgm_files()
+                        if bgm_files:
+                            import random
+                            bgm_file_to_mix = random.choice(bgm_files)
+                            bgm_label_display = os.path.basename(bgm_file_to_mix)
+
+                    audio_dir = utils.storage_dir("audio", create=True)
+                    audio_filename = f"audio_{int(time.time())}_{str(uuid4())[:8]}.mp3"
+                    raw_audio_path = os.path.join(audio_dir, f"raw_{audio_filename}")
+                    final_audio_path = os.path.join(audio_dir, audio_filename)
+
+                    tts_kwargs = {
+                        "text": clean_text,
+                        "voice_name": voice.parse_voice_name(selected_voice),
+                        "voice_rate": selected_rate,
+                        "voice_file": raw_audio_path,
+                        "voice_volume": selected_volume,
+                    }
+                    if selected_tts == "voxcpm":
+                        ref = _get_voxcpm_reference_audio()
+                        prompt_a = _get_voxcpm_effective_prompt_audio()
+                        prompt_t = _get_voxcpm_prompt_text()
+                        if ref is not None:
+                            tts_kwargs["voxcpm_reference_audio"] = ref
+                        if prompt_a is not None:
+                            tts_kwargs["voxcpm_prompt_audio"] = prompt_a
+                            tts_kwargs["voxcpm_prompt_text"] = prompt_t
+
+                    sub_maker = voice.tts(**tts_kwargs)
+                    if (
+                        not sub_maker
+                        or not os.path.exists(raw_audio_path)
+                        or os.path.getsize(raw_audio_path) == 0
+                    ):
+                        st.error(
+                            tr("Voice Preview Failed").format(
+                                error="TTS generation produced no output"
+                            )
+                        )
+                    else:
+                        if add_bgm and bgm_file_to_mix and os.path.exists(bgm_file_to_mix):
+                            try:
+                                from moviepy.audio.io.AudioFileClip import AudioFileClip
+                                from moviepy.audio.AudioClip import CompositeAudioClip
+                                import moviepy.audio.fx as afx
+
+                                vc = AudioFileClip(raw_audio_path)
+                                bc = AudioFileClip(bgm_file_to_mix).with_effects([
+                                    afx.MultiplyVolume(bgm_volume_to_mix),
+                                    afx.AudioFadeOut(min(3.0, float(vc.duration))),
+                                    afx.AudioLoop(duration=float(vc.duration)),
+                                ])
+                                comp = CompositeAudioClip([vc, bc])
+                                comp.write_audiofile(final_audio_path, fps=44100, logger=None)
+                                vc.close()
+                                bc.close()
+                                comp.close()
+                                if os.path.exists(raw_audio_path):
+                                    os.remove(raw_audio_path)
+                            except Exception as mix_err:
+                                logger.warning(
+                                    f"BGM mixing failed: {mix_err}, using raw speech audio"
+                                )
+                                shutil.move(raw_audio_path, final_audio_path)
+                        else:
+                            shutil.move(raw_audio_path, final_audio_path)
+
+                        with open(final_audio_path, "rb") as f:
+                            audio_bytes = f.read()
+
+                        audio_duration = voice.get_audio_duration(final_audio_path)
+                        st.session_state["audio_studio_generated"] = {
+                            "file_path": final_audio_path,
+                            "audio_bytes": audio_bytes,
+                            "file_name": audio_filename,
+                            "duration": audio_duration,
+                            "file_size": len(audio_bytes),
+                            "voice": selected_voice,
+                            "rate": selected_rate,
+                            "bgm": bgm_label_display if (add_bgm and bgm_file_to_mix) else None,
+                        }
+                        st.toast(tr("Audio Generated Successfully"), icon="✅")
+                except Exception as exc:
+                    logger.exception("Audio generation failed")
+                    st.error(f"Audio generation failed: {exc}")
+
+    # Render generated audio results
+    generated_data = st.session_state.get("audio_studio_generated")
+    if generated_data and os.path.exists(generated_data.get("file_path", "")):
+        with st.container(border=True):
+            st.success(f"🎉 {tr('Audio Generated Successfully')}")
+            st.audio(generated_data["audio_bytes"], format="audio/mp3")
+
+            dur_sec = int(round(generated_data.get("duration", 0)))
+            dur_str = f"{dur_sec // 60:02d}:{dur_sec % 60:02d}"
+            size_kb = generated_data.get("file_size", 0) / 1024
+            size_str = (
+                f"{size_kb / 1024:.2f} MB" if size_kb > 1024 else f"{size_kb:.1f} KB"
+            )
+            bgm_info = f" | 🎵 BGM: {generated_data['bgm']}" if generated_data.get("bgm") else ""
+            st.caption(
+                f"⏱️ Duration: {dur_str} | 📦 Size: {size_str} | 🗣️ Voice: {_audio_studio_friendly(generated_data.get('voice', ''))} ({generated_data.get('rate', 1.0)}x){bgm_info}"
+            )
+
+            act_col1, act_col2 = st.columns(2)
+            with act_col1:
+                st.download_button(
+                    label=f"⬇️ {tr('Download Audio (MP3)')}",
+                    data=generated_data["audio_bytes"],
+                    file_name=generated_data["file_name"],
+                    mime="audio/mp3",
+                    type="primary",
+                    use_container_width=True,
+                    key="audio_studio_download_btn",
+                )
+            with act_col2:
+                if st.button(
+                    f"🎬 {tr('Use in Video Generator')}",
+                    use_container_width=True,
+                    key="audio_studio_use_in_video_btn",
+                ):
+                    st.session_state["staged_custom_audio_file"] = generated_data["file_path"]
+                    _set_runtime_config("ui", "audio_enabled", True)
+                    st.session_state["audio_enabled_toggle"] = True
+                    _set_runtime_config("ui", "voice_mode", VOICE_MODE_UPLOAD)
+                    st.session_state["voice_mode_control"] = VOICE_MODE_UPLOAD
+                    st.session_state[localized_widget_key("voice_mode_control")] = VOICE_MODE_UPLOAD
+                    st.session_state["main_studio_target_tab"] = "video"
+                    st.toast(tr("Audio staged for Video Generator"), icon="🎬")
+                    st.rerun()
+
+
+def _render_video_generator_studio():
+    """渲染四栏视频生成工作室。"""
     with st.container(key="main_settings_grid"):
         panel = st.columns(4)
     left_panel = panel[0]
@@ -8307,6 +8906,44 @@ def _render_application():
     # 如果后台任务正在使用配置，配置层会在任务结束时自动应用并落盘最新值。
     if not generation_submitted:
         _save_runtime_config()
+
+
+def _render_application():
+    """按固定顺序渲染顶部栏、弹窗、生成表单和任务结果。"""
+    _render_top_bar()
+
+    if st.session_state.get("settings_dialog_open", False):
+        _render_settings_dialog()
+
+    if _apply_pending_settings_preset():
+        st.success(tr("Settings Preset Imported"))
+
+    restore_applied = _apply_pending_task_restore()
+    restore_candidate_id = st.session_state.get("task_restore_candidate_id")
+    if restore_candidate_id:
+        _render_task_restore_dialog(restore_candidate_id)
+    restore_succeeded = st.session_state.pop("task_restore_succeeded", False)
+    if restore_applied or restore_succeeded:
+        st.success(tr("Task Configuration Loaded"))
+
+    main_tab_labels = [
+        f"🎬 {tr('Video Generator')}",
+        f"🎙️ {tr('Audio Generator & Downloader')}",
+    ]
+    main_tabs_key = localized_widget_key("main_studio_tabs")
+    target_tab = st.session_state.pop("main_studio_target_tab", None)
+    if target_tab == "video":
+        st.session_state[main_tabs_key] = main_tab_labels[0]
+    elif target_tab == "audio":
+        st.session_state[main_tabs_key] = main_tab_labels[1]
+
+    video_tab, audio_tab = st.tabs(main_tab_labels, key=main_tabs_key)
+
+    with video_tab:
+        _render_video_generator_studio()
+
+    with audio_tab:
+        _render_audio_generator_studio()
 
 
 _render_application()

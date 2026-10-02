@@ -1160,12 +1160,52 @@
     "gender": "Female"
   },
   {
+    "name": "te-IN-ShrutiNeural",
+    "gender": "Female"
+  },
+  {
+    "name": "te-IN-Shruti-SweetNeural",
+    "gender": "Female"
+  },
+  {
+    "name": "te-IN-Shruti-CalmNeural",
+    "gender": "Female"
+  },
+  {
+    "name": "te-IN-Shruti-EnergeticNeural",
+    "gender": "Female"
+  },
+  {
+    "name": "te-IN-AvaMultilingualNeural",
+    "gender": "Female"
+  },
+  {
+    "name": "te-IN-EmmaMultilingualNeural",
+    "gender": "Female"
+  },
+  {
     "name": "te-IN-MohanNeural",
     "gender": "Male"
   },
   {
-    "name": "te-IN-ShrutiNeural",
-    "gender": "Female"
+    "name": "te-IN-Mohan-DeepCinemaNeural",
+    "gender": "Male"
+  },
+  {
+    "name": "te-IN-Mohan-NewsAnchorNeural",
+    "gender": "Male"
+  },
+  {
+    "name": "te-IN-Mohan-EnergeticNeural",
+    "gender": "Male"
+  },
+  {
+    "name": "te-IN-AndrewMultilingualNeural",
+    "gender": "Male"
+  },
+  {
+    "name": "te-IN-BrianMultilingualNeural",
+    "gender": "Male"
   },
   {
     "name": "th-TH-NiwatNeural",
