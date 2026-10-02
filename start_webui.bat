@@ -1,5 +1,5 @@
 @echo off
-title MoneyPrinterTurbo - Wonder Vault Video Generator
+title Wonder Vault Video Generator
 setlocal enabledelayedexpansion
 
 :: Check directory structure

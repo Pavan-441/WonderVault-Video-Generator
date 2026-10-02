@@ -1,6 +1,6 @@
 # WonderVault-W YouTube Automation Setup
 
-This folder contains the complete local setup for **MoneyPrinterTurbo** dedicated to your YouTube channel **@WonderVault-W**.
+This folder contains the complete local setup for **Wonder Vault Video Generator** dedicated to your YouTube channel **@WonderVault-W**.
 
 ---
 

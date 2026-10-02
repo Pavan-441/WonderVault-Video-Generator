@@ -67,13 +67,13 @@ from app.utils.logging_utils import configure_terminal_logger
 from app.utils import utils
 
 st.set_page_config(
-    page_title="MoneyPrinterTurbo",
+    page_title="Wonder Vault Video Generator",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="auto",
     menu_items={
         "Report a bug": "https://github.com/harry0703/MoneyPrinterTurbo/issues",
-        "About": "# MoneyPrinterTurbo\nSimply provide a topic or keyword for a video, and it will "
+        "About": "# Wonder Vault Video Generator\nSimply provide a topic or keyword for a video, and it will "
         "automatically generate the video copy, video materials, video subtitles, "
         "and video background music before synthesizing a high-definition short "
         "video.\n\nhttps://github.com/harry0703/MoneyPrinterTurbo",
@@ -1674,12 +1674,12 @@ def _render_brand(available_update: str | None = None):
     st.markdown(
         f"""
         <h1 class="mpt-brand">
-            <span class="mpt-brand__name">MoneyPrinterTurbo</span>
+            <span class="mpt-brand__name">Wonder Vault Video Generator</span>
             <a class="mpt-brand__version"
                href="https://github.com/harry0703/MoneyPrinterTurbo"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="Open MoneyPrinterTurbo on GitHub"
+               aria-label="Open Wonder Vault Video Generator on GitHub"
                title="Open project on GitHub">v{html.escape(str(config.project_version))}</a>
             {update_link}
         </h1>

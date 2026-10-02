@@ -1,5 +1,5 @@
 # 🚀 100 VIRAL YOUTUBE SHORTS SCRIPTS & UI DATA FOR @WonderVault-W
-> **Instructions for MoneyPrinterTurbo WebUI (`http://127.0.0.1:8501`):**
+> **Instructions for Wonder Vault Video Generator WebUI (`http://127.0.0.1:8501`):**
 > For any video below, simply copy and paste the values into the corresponding fields shown in your WebUI screenshot!
 > - **Video Source**: `Pexels`
 > - **Aspect Ratio**: `Portrait 9:16`
