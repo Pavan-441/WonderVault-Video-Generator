@@ -1528,6 +1528,12 @@ def _apply_restored_params(params):
         utils.normalize_clip_speed(params.get("video_clip_speed", 1.0)),
     )
     _set_stable_widget_value("video_count_select", params.get("video_count", 1))
+    _set_stable_widget_value(
+        "stock_material_concurrency_select", params.get("stock_material_concurrency", 1)
+    )
+    _set_stable_widget_value(
+        "clip_rendering_concurrency_select", params.get("clip_rendering_concurrency", 1)
+    )
     st.session_state["match_materials_to_script"] = bool(
         params.get("match_materials_to_script", False)
     )
@@ -5405,6 +5411,34 @@ def _render_video_settings(panel, params):
                 key="video_count_select",
             )
             _set_runtime_config("ui", "video_count", params.video_count)
+
+            material_concurrency_options = [1, 2, 3, 4, 5]
+            params.stock_material_concurrency = stable_selectbox(
+                tr("Material Download Concurrency"),
+                options=material_concurrency_options,
+                default_value=_saved_ui_choice(
+                    "stock_material_concurrency", material_concurrency_options, 1
+                ),
+                key="stock_material_concurrency_select",
+                help=tr("Material Download Concurrency Help"),
+            )
+            _set_runtime_config(
+                "ui", "stock_material_concurrency", params.stock_material_concurrency
+            )
+
+            clip_rendering_concurrency_options = [1, 2, 3, 4]
+            params.clip_rendering_concurrency = stable_selectbox(
+                tr("Clip Rendering Concurrency"),
+                options=clip_rendering_concurrency_options,
+                default_value=_saved_ui_choice(
+                    "clip_rendering_concurrency", clip_rendering_concurrency_options, 1
+                ),
+                key="clip_rendering_concurrency_select",
+                help=tr("Clip Rendering Concurrency Help"),
+            )
+            _set_runtime_config(
+                "ui", "clip_rendering_concurrency", params.clip_rendering_concurrency
+            )
 
             video_codec_options = [
                 (tr("Default Video Encoder"), DEFAULT_VIDEO_CODEC_OPTION),

@@ -157,6 +157,8 @@ class VideoParams(BaseModel):
     stroke_color: Optional[str] = "#000000"
     stroke_width: float = 1.5
     n_threads: Optional[int] = 2
+    stock_material_concurrency: int = Field(default=1, ge=1, le=10)
+    clip_rendering_concurrency: int = Field(default=1, ge=1, le=8)
     paragraph_number: int = Field(default=1, ge=1, le=10)
     video_script_prompt: str = Field(default="", max_length=2000)
     custom_system_prompt: str = Field(default="", max_length=8000)

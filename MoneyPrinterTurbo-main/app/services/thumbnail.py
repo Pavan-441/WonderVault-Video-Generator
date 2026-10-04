@@ -105,24 +105,31 @@ def get_font(is_telugu_text: bool, size: int) -> ImageFont.FreeTypeFont:
 def extract_hook_title_fallback(script: str, is_telugu_lang: bool) -> str:
     """
     Deterministic rule-based fallback hook title when LLM is unavailable.
-    Picks a short, dramatic phrase or first line.
+    Picks a short, dramatic phrase or complete clause instead of trailing truncation.
     """
     lines = [line.strip() for line in (script or "").splitlines() if line.strip()]
     if not lines:
         return "షాకింగ్ నిజం!" if is_telugu_lang else "MUST WATCH!"
 
-    first_line = lines[0]
-    # Strip leading markdown symbols
-    first_line = re.sub(r"^[#*\-\s]+", "", first_line)
+    first_line = re.sub(r"^[#*\-\s]+", "", lines[0])
 
     if is_telugu_lang:
-        # Take first 4-6 Telugu words
-        words = first_line.split()
+        lower_script = script.lower()
+        if "శని" in script or "saturn" in lower_script:
+            return "శని గ్రహం అద్భుతం!"
+        if "నిజం" in script or "రహస్యం" in script:
+            return "షాకింగ్ రహస్యం!"
+        if "అద్భుత" in script:
+            return "కనులవిందు అద్భుతం!"
+        # Fallback to first clause without trailing ellipsis
+        clause = re.split(r"[,.!?।;]", first_line)[0].strip()
+        words = clause.split()
         if len(words) <= 5:
             return " ".join(words)
-        return " ".join(words[:4]) + "..."
+        return " ".join(words[:4])
     else:
-        words = first_line.split()
+        clause = re.split(r"[,.!?।;]", first_line)[0].strip()
+        words = clause.split()
         if len(words) <= 5:
             return " ".join(words).upper()
         return " ".join(words[:4]).upper() + "!"
@@ -144,23 +151,24 @@ def generate_hook_title(script: str, language: str = "auto") -> str:
     try:
         from app.services import llm
 
-        system_prompt = (
-            "You are a viral YouTube thumbnail copywriter. "
-            f"Generate a short, punchy, high-CTR hook title in {target_lang} for this video script. "
+        prompt = (
+            "You are a viral YouTube thumbnail copywriter.\n"
+            f"Generate a short, punchy, high-CTR hook title in {target_lang} for this video script.\n"
             "Constraints:\n"
             "1. Maximum 3 to 5 words only.\n"
             "2. Very catchy, curiosity-inducing, emotional or shocking.\n"
-            "3. NO quotation marks, NO explanations, NO hashtags, NO emojis.\n"
-            f"4. Must be purely in {target_lang}."
+            "3. NO quotation marks, NO explanations, NO hashtags, NO emojis, NO trailing punctuation.\n"
+            f"4. Must be purely in {target_lang} (or common {target_lang} transliteration).\n\n"
+            f"Video script excerpt:\n{script[:800]}\n\n"
+            "Catchy Thumbnail Hook Title:"
         )
-        prompt = f"Video script excerpt:\n{script[:600]}\n\nCatchy Thumbnail Hook Title:"
-        response = llm._generate_response(prompt=prompt, system_prompt=system_prompt)
-        cleaned = response.strip().strip('"\'“”')
+        response = llm._generate_response(prompt=prompt)
+        cleaned = response.strip().strip('"\'“”`*#').rstrip(".!?:")
         # Check if output is reasonable length (1 to 8 words)
         if cleaned and len(cleaned.split()) <= 8:
             return cleaned.upper() if not is_te else cleaned
     except Exception as exc:
-        logger.debug(f"LLM hook title generation fallback triggered: {exc}")
+        logger.warning(f"LLM hook title generation fallback triggered: {exc}")
 
     return extract_hook_title_fallback(script, is_te)
 
@@ -198,25 +206,218 @@ def craft_flow_prompt(
     return prompt.strip()
 
 
+def _to_argb(c: Tuple) -> int:
+    a = c[3] if len(c) > 3 else 255
+    return ((a & 0xFF) << 24) | ((c[0] & 0xFF) << 16) | ((c[1] & 0xFF) << 8) | (c[2] & 0xFF)
+
+
+def _render_text_layer_gdiplus(
+    canvas_w: int,
+    canvas_h: int,
+    lines: list[str],
+    line_positions: list[Tuple[float, float]],
+    font_family_name: str,
+    font_size: float,
+    fill_color: Tuple,
+    stroke_color: Tuple,
+    stroke_width: float,
+    shadow_color: Tuple,
+    shadow_offset: Tuple[float, float],
+    badge_bg: Tuple,
+    add_badge: bool = True,
+) -> Optional[Image.Image]:
+    """
+    Renders complex Indic/Telugu and multi-script typography using Windows native GDI+
+    (gdiplus.dll). GDI+ has built-in OpenType GSUB/GPOS complex shaping (Uniscribe engine),
+    ensuring accurate conjuncts, ligatures, vothulu (subscripts), and vowel signs.
+    """
+    if os.name != "nt":
+        return None
+
+    try:
+        import ctypes
+        from ctypes import wintypes
+
+        gdiplus = ctypes.windll.gdiplus
+    except Exception as e:
+        logger.debug(f"GDI+ library unavailable: {e}")
+        return None
+
+    class GdiplusStartupInput(ctypes.Structure):
+        _fields_ = [("v", wintypes.UINT), ("cb", ctypes.c_void_p), ("t", wintypes.BOOL), ("c", wintypes.BOOL)]
+
+    token = ctypes.c_ulong()
+    status = gdiplus.GdiplusStartup(ctypes.byref(token), ctypes.byref(GdiplusStartupInput(1, None, False, False)), None)
+    if status != 0:
+        return None
+
+    p_bitmap = ctypes.c_void_p()
+    p_graphics = ctypes.c_void_p()
+    p_family = ctypes.c_void_p()
+    p_shadow_pen = ctypes.c_void_p()
+    p_shadow_brush = ctypes.c_void_p()
+    p_stroke_pen = ctypes.c_void_p()
+    p_fill_brush = ctypes.c_void_p()
+    paths = []
+    line_boxes = []
+
+    class RectF(ctypes.Structure):
+        _fields_ = [("X", ctypes.c_float), ("Y", ctypes.c_float), ("W", ctypes.c_float), ("H", ctypes.c_float)]
+
+    try:
+        # 0x26200A = PixelFormat32bppARGB
+        if gdiplus.GdipCreateBitmapFromScan0(canvas_w, canvas_h, 0, 0x26200A, None, ctypes.byref(p_bitmap)) != 0:
+            return None
+        gdiplus.GdipGetImageGraphicsContext(p_bitmap, ctypes.byref(p_graphics))
+        gdiplus.GdipSetSmoothingMode(p_graphics, 4)  # AntiAlias
+        gdiplus.GdipSetTextRenderingHint(p_graphics, 4)  # AntiAliasGridFit
+
+        # Font family with fallback
+        res = gdiplus.GdipCreateFontFamilyFromName(font_family_name, None, ctypes.byref(p_family))
+        if res != 0:
+            res = gdiplus.GdipCreateFontFamilyFromName("Nirmala UI", None, ctypes.byref(p_family))
+        if res != 0:
+            gdiplus.GdipCreateFontFamilyFromName("Arial", None, ctypes.byref(p_family))
+
+        # Create Pens and Brushes
+        gdiplus.GdipCreatePen1(ctypes.c_uint(_to_argb(shadow_color)), ctypes.c_float(stroke_width + 4.0), 2, ctypes.byref(p_shadow_pen))
+        gdiplus.GdipCreateSolidFill(ctypes.c_uint(_to_argb(shadow_color)), ctypes.byref(p_shadow_brush))
+        gdiplus.GdipCreatePen1(ctypes.c_uint(_to_argb(stroke_color)), ctypes.c_float(stroke_width), 2, ctypes.byref(p_stroke_pen))
+        gdiplus.GdipCreateSolidFill(ctypes.c_uint(_to_argb(fill_color)), ctypes.byref(p_fill_brush))
+
+        # Construct vector paths for each line
+        for line, (x, y) in zip(lines, line_positions):
+            if not line.strip():
+                continue
+            p_path = ctypes.c_void_p()
+            gdiplus.GdipCreatePath(0, ctypes.byref(p_path))
+            layout_rect = RectF(float(x), float(y), float(canvas_w - x), float(font_size * 2.5))
+            # FontStyleBold = 1
+            gdiplus.GdipAddPathString(p_path, line, -1, p_family, 1, ctypes.c_float(font_size), ctypes.byref(layout_rect), None)
+            paths.append(p_path)
+
+            bounds = RectF()
+            gdiplus.GdipGetPathWorldBounds(p_path, ctypes.byref(bounds), None, None)
+            line_boxes.append((bounds.X, bounds.Y, bounds.X + bounds.W, bounds.Y + bounds.H))
+
+        if not paths:
+            return None
+
+        # 1. Drop Shadow Pass
+        dx, dy = shadow_offset
+        gdiplus.GdipTranslateWorldTransform(p_graphics, ctypes.c_float(dx), ctypes.c_float(dy), 0)
+        for p_path in paths:
+            gdiplus.GdipDrawPath(p_graphics, p_shadow_pen, p_path)
+            gdiplus.GdipFillPath(p_graphics, p_shadow_brush, p_path)
+        gdiplus.GdipResetWorldTransform(p_graphics)
+
+        # 2. Main Stroke and Fill Pass
+        for p_path in paths:
+            gdiplus.GdipDrawPath(p_graphics, p_stroke_pen, p_path)
+            gdiplus.GdipFillPath(p_graphics, p_fill_brush, p_path)
+
+        # Lock bits and transfer to PIL Image
+        class BitmapData(ctypes.Structure):
+            _fields_ = [("W", wintypes.UINT), ("H", wintypes.UINT), ("S", ctypes.c_int), ("P", ctypes.c_int), ("Scan0", ctypes.c_void_p), ("R", ctypes.c_void_p)]
+
+        class Rect(ctypes.Structure):
+            _fields_ = [("X", ctypes.c_int), ("Y", ctypes.c_int), ("W", ctypes.c_int), ("H", ctypes.c_int)]
+
+        bmp_data = BitmapData()
+        gdiplus.GdipBitmapLockBits(p_bitmap, ctypes.byref(Rect(0, 0, canvas_w, canvas_h)), 1, 0x26200A, ctypes.byref(bmp_data))
+        raw_bytes = (ctypes.c_char * (bmp_data.S * canvas_h)).from_address(bmp_data.Scan0)
+        text_img = Image.frombuffer("RGBA", (canvas_w, canvas_h), bytes(raw_bytes), "raw", "BGRA", bmp_data.S, 1).copy()
+        gdiplus.GdipBitmapUnlockBits(p_bitmap, ctypes.byref(bmp_data))
+
+    except Exception as exc:
+        logger.warning(f"GDI+ text rendering error: {exc}")
+        return None
+    finally:
+        for p in paths:
+            try:
+                gdiplus.GdipDeletePath(p)
+            except Exception:
+                pass
+        if p_shadow_pen:
+            try:
+                gdiplus.GdipDeletePen(p_shadow_pen)
+            except Exception:
+                pass
+        if p_shadow_brush:
+            try:
+                gdiplus.GdipDeleteBrush(p_shadow_brush)
+            except Exception:
+                pass
+        if p_stroke_pen:
+            try:
+                gdiplus.GdipDeletePen(p_stroke_pen)
+            except Exception:
+                pass
+        if p_fill_brush:
+            try:
+                gdiplus.GdipDeleteBrush(p_fill_brush)
+            except Exception:
+                pass
+        if p_family:
+            try:
+                gdiplus.GdipDeleteFontFamily(p_family)
+            except Exception:
+                pass
+        if p_graphics:
+            try:
+                gdiplus.GdipDeleteGraphics(p_graphics)
+            except Exception:
+                pass
+        if p_bitmap:
+            try:
+                gdiplus.GdipDisposeImage(p_bitmap)
+            except Exception:
+                pass
+        try:
+            gdiplus.GdiplusShutdown(token)
+        except Exception:
+            pass
+
+    # Optional Pill Badge layer
+    composite_layer = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    if add_badge and line_boxes:
+        badge_pad_x = 24
+        badge_pad_y = 12
+        badge_draw = ImageDraw.Draw(composite_layer)
+        for box in line_boxes:
+            b = (
+                int(box[0] - badge_pad_x),
+                int(box[1] - badge_pad_y),
+                int(box[2] + badge_pad_x),
+                int(box[3] + badge_pad_y),
+            )
+            badge_draw.rounded_rectangle(b, radius=16, fill=badge_bg)
+
+    return Image.alpha_composite(composite_layer, text_img)
+
+
 def _wrap_text_lines(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max_width: int) -> list[str]:
-    """Wrap text so each line fits within max_width pixels."""
-    words = text.split()
-    if not words:
-        return [text]
+    """Wrap text so each line fits within max_width pixels, respecting explicit newlines."""
+    paragraphs = [p.strip() for p in text.splitlines() if p.strip()]
+    if not paragraphs:
+        return [text.strip()] if text.strip() else []
 
-    lines = []
-    current_line = words[0]
-
-    for word in words[1:]:
-        test_line = f"{current_line} {word}"
-        bbox = draw.textbbox((0, 0), test_line, font=font)
-        if (bbox[2] - bbox[0]) <= max_width:
-            current_line = test_line
-        else:
-            lines.append(current_line)
-            current_line = word
-    lines.append(current_line)
-    return lines
+    all_lines = []
+    for para in paragraphs:
+        words = para.split()
+        if not words:
+            continue
+        current_line = words[0]
+        for word in words[1:]:
+            test_line = f"{current_line} {word}"
+            bbox = draw.textbbox((0, 0), test_line, font=font)
+            if (bbox[2] - bbox[0]) <= max_width:
+                current_line = test_line
+            else:
+                all_lines.append(current_line)
+                current_line = word
+        all_lines.append(current_line)
+    return all_lines
 
 
 def compose_thumbnail(
@@ -349,50 +550,77 @@ def compose_thumbnail(
         stroke_width = max(6, int(base_font_size * 0.09))
         shadow_offset = max(4, int(base_font_size * 0.06))
 
-        # Optional badge/pill background behind text for guaranteed contrast
-        if add_badge:
-            total_text_h = len(lines) * line_height
-            badge_pad = 24
-            badge_layer = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
-            badge_draw = ImageDraw.Draw(badge_layer)
+        # Attempt native Windows GDI+ rendering (supports full complex Indic/Telugu shaping)
+        gdiplus_layer = None
+        if os.name == "nt":
+            try:
+                family_name = "Nirmala UI" if (is_te or not style.get("font_family")) else style.get("font_family", "Nirmala UI")
+                line_positions = [(float(start_x), float(start_y + idx * line_height)) for idx in range(len(lines))]
+                gdiplus_layer = _render_text_layer_gdiplus(
+                    canvas_w=target_width,
+                    canvas_h=target_height,
+                    lines=lines,
+                    line_positions=line_positions,
+                    font_family_name=family_name,
+                    font_size=float(base_font_size),
+                    fill_color=style["fill"],
+                    stroke_color=style["stroke"],
+                    stroke_width=float(stroke_width),
+                    shadow_color=style["shadow"],
+                    shadow_offset=(float(shadow_offset), float(shadow_offset + 2)),
+                    badge_bg=style["badge_bg"],
+                    add_badge=add_badge,
+                )
+            except Exception as e:
+                logger.warning(f"GDI+ thumbnail text rendering failed, falling back to PIL: {e}")
+                gdiplus_layer = None
+
+        if gdiplus_layer is not None:
+            bg = Image.alpha_composite(bg, gdiplus_layer)
+        else:
+            # Fallback PIL renderer for non-Windows platforms or if GDI+ is unavailable
+            if add_badge:
+                badge_pad = 24
+                badge_layer = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
+                badge_draw = ImageDraw.Draw(badge_layer)
+
+                for idx, line in enumerate(lines):
+                    line_bbox = temp_draw.textbbox((start_x, start_y + idx * line_height), line, font=font)
+                    badge_box = (
+                        line_bbox[0] - badge_pad,
+                        line_bbox[1] - badge_pad // 2,
+                        line_bbox[2] + badge_pad,
+                        line_bbox[3] + badge_pad // 2,
+                    )
+                    badge_draw.rounded_rectangle(badge_box, radius=16, fill=style["badge_bg"])
+
+                bg = Image.alpha_composite(bg, badge_layer)
+
+            # Draw text layers: Shadow -> Stroke -> Fill
+            text_layer = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
+            text_draw = ImageDraw.Draw(text_layer)
 
             for idx, line in enumerate(lines):
-                line_bbox = temp_draw.textbbox((start_x, start_y + idx * line_height), line, font=font)
-                badge_box = (
-                    line_bbox[0] - badge_pad,
-                    line_bbox[1] - badge_pad // 2,
-                    line_bbox[2] + badge_pad,
-                    line_bbox[3] + badge_pad // 2,
+                pos = (start_x, start_y + idx * line_height)
+                # 1. Drop Shadow
+                text_draw.text(
+                    (pos[0] + shadow_offset, pos[1] + shadow_offset),
+                    line,
+                    font=font,
+                    fill=style["shadow"],
+                    stroke_width=stroke_width,
+                    stroke_fill=style["shadow"],
                 )
-                badge_draw.rounded_rectangle(badge_box, radius=16, fill=style["badge_bg"])
+                # 2. Main Stroke and Fill
+                text_draw.text(
+                    pos,
+                    line,
+                    font=font,
+                    fill=style["fill"],
+                    stroke_width=stroke_width,
+                    stroke_fill=style["stroke"],
+                )
 
-            bg = Image.alpha_composite(bg, badge_layer)
-
-        # Draw text layers: Shadow -> Stroke -> Fill
-        text_layer = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
-        text_draw = ImageDraw.Draw(text_layer)
-
-        for idx, line in enumerate(lines):
-            pos = (start_x, start_y + idx * line_height)
-            # 1. Drop Shadow
-            text_draw.text(
-                (pos[0] + shadow_offset, pos[1] + shadow_offset),
-                line,
-                font=font,
-                fill=style["shadow"],
-                stroke_width=stroke_width,
-                stroke_fill=style["shadow"],
-            )
-            # 2. Main Stroke and Fill
-            text_draw.text(
-                pos,
-                line,
-                font=font,
-                fill=style["fill"],
-                stroke_width=stroke_width,
-                stroke_fill=style["stroke"],
-            )
-
-        bg = Image.alpha_composite(bg, text_layer)
+            bg = Image.alpha_composite(bg, text_layer)
 
     return bg.convert("RGB")

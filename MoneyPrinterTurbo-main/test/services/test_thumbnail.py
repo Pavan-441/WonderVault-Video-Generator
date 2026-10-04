@@ -80,6 +80,18 @@ class TestThumbnailService(unittest.TestCase):
         self.assertEqual(result.size, (1080, 1920))
         self.assertEqual(result.mode, "RGB")
 
+    def test_compose_thumbnail_telugu_complex_ligatures(self):
+        bg = Image.new("RGB", (1280, 720), (10, 20, 30))
+        result = thumbnail.compose_thumbnail(
+            background_image=bg,
+            title_text="గాంధీ ఒక్కరే కాదు\nఅసలు నిజం",
+            aspect_ratio="16:9",
+            style_key="yellow_black",
+            add_badge=True,
+        )
+        self.assertEqual(result.size, (1920, 1080))
+        self.assertEqual(result.mode, "RGB")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -331,6 +331,40 @@ def generate_terms(task_id, params, video_script):
         else:
             raise ValueError("video_terms must be a string or a list of strings.")
 
+        video_terms = [t for t in video_terms if t]
+        # Normalize and optimize terms for stock video providers (Pexels, Pixabay, Coverr)
+        if params.video_source in {"pexels", "pixabay", "coverr"}:
+            has_non_ascii = any(any(ord(c) > 127 for c in t) for t in video_terms)
+            if has_non_ascii:
+                try:
+                    prompt = (
+                        "Translate or convert the following video search keywords into concise English "
+                        "visual stock keywords (1-3 English words each, describing physical visual objects, scenes, "
+                        "or environments for stock footage libraries like Pexels; avoid abstract concepts like 'gravity' "
+                        "or non-visual verbs like 'how high can you'). Output ONLY a valid JSON array of strings, "
+                        "e.g. [\"keyword1\", \"keyword2\"]:\n\n"
+                        f"Keywords: {json.dumps(video_terms, ensure_ascii=False)}"
+                    )
+                    response = llm._generate_response(prompt)
+                    if response and not response.startswith("Error:"):
+                        match = re.search(r"\[.*?\]", response, re.DOTALL)
+                        if match:
+                            translated = json.loads(match.group(0))
+                            if isinstance(translated, list) and len(translated) > 0:
+                                clean_trans = [str(x).strip() for x in translated if str(x).strip()]
+                                if clean_trans:
+                                    logger.info(f"translated stock search terms to English: {clean_trans}")
+                                    video_terms = clean_trans
+                except Exception as exc:
+                    logger.warning(f"failed to translate search terms to English: {exc}")
+                    extracted = []
+                    for term in video_terms:
+                        eng = " ".join(re.findall(r"[A-Za-z0-9]+", term)).strip()
+                        if eng:
+                            extracted.append(eng)
+                    if extracted:
+                        video_terms = extracted
+
         logger.debug(f"video terms: {utils.to_json(video_terms)}")
 
     if not video_terms:
@@ -754,6 +788,7 @@ def get_video_materials(
                 audio_duration=audio_duration * params.video_count,
                 max_clip_duration=params.video_clip_duration,
                 match_script_order=params.match_materials_to_script,
+                stock_material_concurrency=getattr(params, "stock_material_concurrency", 1),
             )
         except volcengine_seedance.VolcEngineSeedanceError as exc:
             # 未确认状态和已生成但下载失败都对应一个可在方舟控制台恢复的远端
@@ -948,6 +983,7 @@ def generate_final_videos(
             max_clip_duration=params.video_clip_duration,
             threads=params.n_threads,
             clip_speed=params.video_clip_speed,
+            clip_rendering_concurrency=getattr(params, "clip_rendering_concurrency", 1),
             **batch_options,
         )
         if allocate_batch_materials:

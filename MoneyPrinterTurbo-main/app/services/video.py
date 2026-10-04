@@ -12,7 +12,7 @@ import time
 import unicodedata
 from contextlib import ExitStack, redirect_stdout
 from functools import lru_cache
-from typing import List
+from typing import List, Optional
 from loguru import logger
 import numpy as np
 from moviepy import (
@@ -390,6 +390,34 @@ def _get_temp_audio_dir(output_dir: str) -> str:
     return output_dir
 
 
+def _merge_bt709_ffmpeg_params(kwargs: dict, codec: str = "") -> dict:
+    """
+    Ensure video exports are encoded and tagged with standard BT.709 color metadata
+    (color primaries, transfer characteristics, matrix coefficients, and TV range).
+    Prevents washed out, desaturated, or shifted colors on YouTube, mobile devices, and desktop players.
+    """
+    enriched = dict(kwargs)
+    existing_params = list(enriched.get("ffmpeg_params") or [])
+    existing_keys = set(existing_params)
+    additions = []
+    for flag, val in [
+        ("-color_primaries", "bt709"),
+        ("-color_trc", "bt709"),
+        ("-colorspace", "bt709"),
+        ("-color_range", "tv"),
+    ]:
+        if flag not in existing_keys:
+            additions.extend([flag, val])
+
+    codec_name = (codec or "").lower()
+    if "-bsf:v" not in existing_keys and (not codec_name or "264" in codec_name):
+        additions.extend(["-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1"])
+
+    if additions:
+        enriched["ffmpeg_params"] = existing_params + additions
+    return enriched
+
+
 def _fallback_write_videofile(clip, output_file: str, failed_codec: str, reason: str, **kwargs):
     """
     硬件编码失败后用 libx264 重试，只有重试成功才禁用该硬件编码器。
@@ -398,25 +426,34 @@ def _fallback_write_videofile(clip, output_file: str, failed_codec: str, reason:
     文件被占用、目录权限、杀软拦截等通用 IO 问题。只有 libx264 能成功写出时，
     才能判断原始失败大概率来自硬件编码器本身，避免误伤后续任务。
     """
-    clip.write_videofile(output_file, codec=_DEFAULT_VIDEO_CODEC, **kwargs)
+    fallback_kwargs = _merge_bt709_ffmpeg_params(kwargs, _DEFAULT_VIDEO_CODEC)
+    try:
+        clip.write_videofile(output_file, codec=_DEFAULT_VIDEO_CODEC, **fallback_kwargs)
+    except Exception:
+        clip.write_videofile(output_file, codec=_DEFAULT_VIDEO_CODEC, **kwargs)
     _disable_runtime_video_codec(failed_codec, reason)
     return _DEFAULT_VIDEO_CODEC
 
 
 def _write_videofile_with_codec_fallback(clip, output_file: str, codec: str, **kwargs):
     """
-    使用指定编码器写出视频，失败时自动用 libx264 重试一次。
+    使用指定编码器写出视频，附带 BT.709 色彩标准参数，失败时自动用 libx264 重试一次。
 
     硬件编码器是否可用不仅取决于 FFmpeg，还取决于显卡、驱动和当前运行环境。
     生成任务不能因为高级编码器不可用而整体失败，所以这里把回退集中处理。
     """
     effective_codec = _get_effective_video_codec(codec)
+    enriched_kwargs = _merge_bt709_ffmpeg_params(kwargs, effective_codec)
     try:
-        clip.write_videofile(output_file, codec=effective_codec, **kwargs)
+        clip.write_videofile(output_file, codec=effective_codec, **enriched_kwargs)
         return effective_codec
     except Exception as exc:
         if effective_codec == _DEFAULT_VIDEO_CODEC:
-            raise
+            try:
+                clip.write_videofile(output_file, codec=effective_codec, **kwargs)
+                return effective_codec
+            except Exception:
+                raise exc
         return _fallback_write_videofile(
             clip,
             output_file,
@@ -741,6 +778,97 @@ def _fit_clip_to_canvas(
     ).with_duration(clip.duration)
 
 
+def _process_single_subclip(
+    i: int,
+    subclipped_item: SubClippedVideoClip,
+    output_dir: str,
+    video_width: int,
+    video_height: int,
+    fit_mode: VideoFitMode,
+    transition_value: str,
+    normalized_clip_speed: float,
+    max_clip_duration: int,
+    fps: int,
+) -> Optional[SubClippedVideoClip]:
+    """Process, transform, and render a single subclip to a temp file."""
+    try:
+        clip = _open_video_clip_quietly(subclipped_item.file_path).subclipped(
+            subclipped_item.start_time, subclipped_item.end_time
+        )
+        if normalized_clip_speed != 1.0:
+            clip = clip.with_speed_scaled(normalized_clip_speed)
+
+        clip_w, clip_h = clip.size
+        if clip_w != video_width or clip_h != video_height:
+            clip_ratio = clip.w / clip.h
+            video_ratio = video_width / video_height
+            logger.debug(
+                "resizing clip, "
+                f"source: {clip_w}x{clip_h}, ratio: {clip_ratio:.2f}, "
+                f"target: {video_width}x{video_height}, ratio: {video_ratio:.2f}, "
+                f"fit_mode: {fit_mode.value}"
+            )
+            clip = _fit_clip_to_canvas(
+                clip,
+                target_width=video_width,
+                target_height=video_height,
+                fit_mode=fit_mode,
+            )
+
+        shuffle_side = random.choice(["left", "right", "top", "bottom"])
+        if transition_value in (None, VideoTransitionMode.none.value):
+            pass
+        elif transition_value == VideoTransitionMode.fade_in.value:
+            clip = video_effects.fadein_transition(clip, 1)
+        elif transition_value == VideoTransitionMode.fade_out.value:
+            clip = video_effects.fadeout_transition(clip, 1)
+        elif transition_value == VideoTransitionMode.slide_in.value:
+            clip = video_effects.slidein_transition(clip, 1, shuffle_side)
+        elif transition_value == VideoTransitionMode.slide_out.value:
+            clip = video_effects.slideout_transition(clip, 1, shuffle_side)
+        elif transition_value == VideoTransitionMode.zoom_in.value:
+            clip = video_effects.zoomin_transition(clip, 1)
+        elif transition_value == VideoTransitionMode.zoom_out.value:
+            clip = video_effects.zoomout_transition(clip, 1)
+        elif transition_value == VideoTransitionMode.shuffle.value:
+            transition_funcs = [
+                lambda c: video_effects.fadein_transition(c, 1),
+                lambda c: video_effects.fadeout_transition(c, 1),
+                lambda c: video_effects.slidein_transition(c, 1, shuffle_side),
+                lambda c: video_effects.slideout_transition(c, 1, shuffle_side),
+                lambda c: video_effects.zoomin_transition(c, 1),
+                lambda c: video_effects.zoomout_transition(c, 1),
+            ]
+            shuffle_transition = random.choice(transition_funcs)
+            clip = shuffle_transition(clip)
+
+        if clip.duration > max_clip_duration:
+            clip = clip.subclipped(0, max_clip_duration)
+
+        clip_file = f"{output_dir}/temp-clip-{i+1}.mp4"
+        _write_videofile_with_codec_fallback(
+            clip,
+            clip_file,
+            codec=_get_configured_video_codec(),
+            logger=None,
+            fps=fps,
+        )
+
+        clip_duration_saved = clip.duration
+        close_clip(clip)
+
+        return SubClippedVideoClip(
+            file_path=clip_file,
+            duration=clip_duration_saved,
+            width=clip_w,
+            height=clip_h,
+            source_file_path=subclipped_item.source_file_path,
+        )
+    except Exception as e:
+        logger.error(f"failed to process clip {i+1}: {str(e)}")
+        return None
+
+
 def combine_videos(
     combined_video_path: str,
     video_paths: List[str],
@@ -755,6 +883,7 @@ def combine_videos(
     source_usage: dict[str, int] | None = None,
     source_groups: dict[str, str] | None = None,
     used_video_paths: List[str] | None = None,
+    clip_rendering_concurrency: int = 1,
 ) -> str:
     audio_clip = AudioFileClip(audio_file)
     try:
@@ -832,104 +961,75 @@ def combine_videos(
         
     logger.debug(f"total subclipped items: {len(subclipped_items)}")
     
-    # Add downloaded clips over and over until the duration of the audio (max_duration) has been reached
+    # Pre-select needed subclips to satisfy required_video_duration
+    needed_items = []
+    estimated_duration = 0.0
     for i, subclipped_item in enumerate(subclipped_items):
-        if video_duration >= required_video_duration:
+        if estimated_duration >= required_video_duration:
             break
-        
-        logger.debug(
-            f"processing clip {i+1}: {subclipped_item.width}x{subclipped_item.height}, "
-            f"source: {os.path.basename(subclipped_item.source_file_path)}, "
-            f"current duration: {video_duration:.2f}s, "
-            f"remaining: {required_video_duration - video_duration:.2f}s"
+        item_est = min(
+            max_clip_duration,
+            (subclipped_item.end_time - subclipped_item.start_time) / normalized_clip_speed,
         )
-        
-        try:
-            clip = _open_video_clip_quietly(subclipped_item.file_path).subclipped(
-                subclipped_item.start_time, subclipped_item.end_time
+        estimated_duration += max(0.1, item_est)
+        needed_items.append((i, subclipped_item))
+
+    clip_concurrency = max(1, int(clip_rendering_concurrency or 1))
+    if clip_concurrency > 1 and len(needed_items) > 1:
+        import concurrent.futures
+
+        logger.info(
+            f"rendering {len(needed_items)} subclips in parallel with concurrency={clip_concurrency}"
+        )
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=min(clip_concurrency, len(needed_items))
+        ) as executor:
+            future_to_idx = {
+                executor.submit(
+                    _process_single_subclip,
+                    i,
+                    item,
+                    output_dir,
+                    video_width,
+                    video_height,
+                    fit_mode,
+                    transition_value,
+                    normalized_clip_speed,
+                    max_clip_duration,
+                    fps,
+                ): i
+                for i, item in needed_items
+            }
+            results_by_idx = {}
+            for future in concurrent.futures.as_completed(future_to_idx):
+                idx = future_to_idx[future]
+                res = future.result()
+                if res is not None:
+                    results_by_idx[idx] = res
+
+        for i, _ in needed_items:
+            if i in results_by_idx:
+                sc = results_by_idx[i]
+                processed_clips.append(sc)
+                video_duration += sc.duration
+    else:
+        # Serial processing (default)
+        for i, subclipped_item in needed_items:
+            sc = _process_single_subclip(
+                i,
+                subclipped_item,
+                output_dir,
+                video_width,
+                video_height,
+                fit_mode,
+                transition_value,
+                normalized_clip_speed,
+                max_clip_duration,
+                fps,
             )
-            # 播放速度属于素材本身属性，应在转场前应用。这样 Fade/Slide 等一秒转场
-            # 不会跟随素材速度变成 0.5 秒或 2 秒；后续最大时长裁剪继续作为
-            # 浮点误差或异常素材时长的安全兜底，保证最终片段不突破配置上限。
-            if normalized_clip_speed != 1.0:
-                clip = clip.with_speed_scaled(normalized_clip_speed)
-            # Normalize every source clip before transitions are applied. In cover mode
-            # the clip fills the canvas and the excess edges are cropped; contain keeps
-            # the complete source frame and uses black bars for the unused area.
-            clip_w, clip_h = clip.size
-            if clip_w != video_width or clip_h != video_height:
-                clip_ratio = clip.w / clip.h
-                video_ratio = video_width / video_height
-                logger.debug(
-                    "resizing clip, "
-                    f"source: {clip_w}x{clip_h}, ratio: {clip_ratio:.2f}, "
-                    f"target: {video_width}x{video_height}, ratio: {video_ratio:.2f}, "
-                    f"fit_mode: {fit_mode.value}"
-                )
-                clip = _fit_clip_to_canvas(
-                    clip,
-                    target_width=video_width,
-                    target_height=video_height,
-                    fit_mode=fit_mode,
-                )
-
-            shuffle_side = random.choice(["left", "right", "top", "bottom"])
-            if transition_value in (None, VideoTransitionMode.none.value):
-                clip = clip
-            elif transition_value == VideoTransitionMode.fade_in.value:
-                clip = video_effects.fadein_transition(clip, 1)
-            elif transition_value == VideoTransitionMode.fade_out.value:
-                clip = video_effects.fadeout_transition(clip, 1)
-            elif transition_value == VideoTransitionMode.slide_in.value:
-                clip = video_effects.slidein_transition(clip, 1, shuffle_side)
-            elif transition_value == VideoTransitionMode.slide_out.value:
-                clip = video_effects.slideout_transition(clip, 1, shuffle_side)
-            elif transition_value == VideoTransitionMode.zoom_in.value:
-                clip = video_effects.zoomin_transition(clip, 1)
-            elif transition_value == VideoTransitionMode.zoom_out.value:
-                clip = video_effects.zoomout_transition(clip, 1)
-            elif transition_value == VideoTransitionMode.shuffle.value:
-                transition_funcs = [
-                    lambda c: video_effects.fadein_transition(c, 1),
-                    lambda c: video_effects.fadeout_transition(c, 1),
-                    lambda c: video_effects.slidein_transition(c, 1, shuffle_side),
-                    lambda c: video_effects.slideout_transition(c, 1, shuffle_side),
-                    lambda c: video_effects.zoomin_transition(c, 1),
-                    lambda c: video_effects.zoomout_transition(c, 1),
-                ]
-                shuffle_transition = random.choice(transition_funcs)
-                clip = shuffle_transition(clip)
-
-            if clip.duration > max_clip_duration:
-                clip = clip.subclipped(0, max_clip_duration)
-                
-            # wirte clip to temp file
-            clip_file = f"{output_dir}/temp-clip-{i+1}.mp4"
-            _write_videofile_with_codec_fallback(
-                clip,
-                clip_file,
-                codec=_get_configured_video_codec(),
-                logger=None,
-                fps=fps,
-            )
-
-            # Store clip duration before closing
-            clip_duration_saved = clip.duration
-            close_clip(clip)
-
-            processed_clips.append(
-                SubClippedVideoClip(
-                    file_path=clip_file,
-                    duration=clip_duration_saved,
-                    width=clip_w,
-                    height=clip_h,
-                    source_file_path=subclipped_item.source_file_path,
-                )
-            )
-            video_duration += clip_duration_saved
-            
-        except Exception as e:
-            logger.error(f"failed to process clip: {str(e)}")
+            if sc is not None:
+                processed_clips.append(sc)
+                video_duration += sc.duration
     
     # loop processed clips until the video duration covers the audio duration and the small safety margin.
     if video_duration < required_video_duration:
