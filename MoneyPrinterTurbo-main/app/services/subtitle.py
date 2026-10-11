@@ -20,16 +20,12 @@ initial_prompt = config.whisper.get("initial_prompt", "") or None
 model = None
 
 
-def create(
-    audio_file,
-    subtitle_file: str = "",
-    word_level: bool = False,
-    log_details: bool = True,
-):
+def get_model():
+    """懒加载 Whisper 模型；依赖缺失或加载失败时返回 None。"""
     global model
     if WhisperModel is None:
         logger.warning("faster_whisper not available, skipping whisper subtitle generation")
-        return ""
+        return None
     if not model:
         model_path = f"{utils.root_dir()}/models/whisper-{model_size}"
         model_bin_file = f"{model_path}/model.bin"
@@ -53,6 +49,20 @@ def create(
                 f"********************************************\n\n"
             )
             return None
+    return model
+
+
+def create(
+    audio_file,
+    subtitle_file: str = "",
+    word_level: bool = False,
+    log_details: bool = True,
+):
+    if WhisperModel is None:
+        logger.warning("faster_whisper not available, skipping whisper subtitle generation")
+        return ""
+    if get_model() is None:
+        return None
 
     if log_details:
         logger.info(f"start, output file: {subtitle_file}")

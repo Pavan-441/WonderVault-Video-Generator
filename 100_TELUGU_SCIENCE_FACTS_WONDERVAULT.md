@@ -1,5398 +1,3589 @@
-# 🌟 100 TELUGU & ENGLISH MIX (TENGLISH) SHORTS SCRIPTS FOR @WonderVault-W
-> **యూట్యూబ్ షార్ట్స్ కోసం సహజమైన వాడుక భాషలో (Conversational Telugu + English Mix) 100 సైన్స్ & ఫ్యాక్ట్స్ స్క్రిప్ట్‌లు**
-> **WebUI (`http://127.0.0.1:8501`) సెట్టింగ్స్:**
-> - **Video Source**: `Pexels`
-> - **Video Transition Mode**: `FadeIn` (క్లిప్స్ స్మూత్ గా విలీనం అవ్వడానికి)
-> - **Video Aspect Ratio**: `Portrait 9:16`
-> - **Voiceover Service**: `Azure TTS V1 (Edge TTS)`
-> - **Voice**: `te-IN-MohanNeural-Male` లేదా `te-IN-ShrutiNeural-Female`
-> - **Font**: `NotoSansTelugu-Bold.ttf` (సబ్‌టైటిల్స్ బాక్సులు లేకుండా క్లియర్ గా రావడానికి)
-> - **Subtitles**: `Enabled` (Font size: 60, Position: Center or Lower-Third, Bold White/Yellow with stroke)
+# 🌟 100 TELUGU (TENGLISH) SCIENCE SHORTS — @WonderVault-W
+
+> **యూట్యూబ్ షార్ట్స్ రీచ్ కోసం పూర్తిగా రీరైట్ చేసిన 100 స్క్రిప్ట్‌లు** — ప్రతి స్క్రిప్ట్ మొదటి వాక్యంలోనే హుక్, ఫ్యాక్ట్-చెక్ చేసిన కంటెంట్, km/°C లాంటి మనకు అర్థమయ్యే యూనిట్స్, చివర్లో కామెంట్ చేయడానికి ఈజీ అయిన ఒక్క ప్రశ్న.
+>
+> **పాత ఫైల్ లో సరిచేసినవి:** సగం కట్ అయిన / రెండు టాపిక్స్ కలిసిపోయిన స్క్రిప్ట్‌లు (ఉదా: #032, #036, #048, #072, #082, #092, #098), చివర్లో మిగిలిపోయిన ముక్కలు ("హెల్త్ అండ్ సైన్స్ కోసం!"), అసలు లేని వాయిస్‌లు (`te-IN-Guy-Male`, `te-IN-Jenny-Female`), తప్పుడు ఫ్యాక్ట్స్ (ఉదా: Barreleye చేప Mariana Trench లో ఉండదు, Microraptor చిన్న డైనోసార్ కాదు, ఒక గ్లాస్ నీటితో సిటీకి పవర్ రాదు).
 
 ---
 
-### 🚀 YOUTUBE SHORTS VIRAL REACH PLAYBOOK (Wonder Vault ఛానెల్ కోసం గోల్డెన్ రూల్స్):
-1. **The 3-Second Hook Rule (VVSA > 80%)**:
-   - మొదటి 3 సెకన్లలో నిదానమైన ఇంట్రోలు లేదా "మీకు తెలుసా?" వంటి పాత ప్రశ్నలు వాడవద్దు.
-   - ప్రతి స్క్రిప్ట్ మొదటి వాక్యంలోనే షాకింగ్ ఫ్యాక్ట్ లేదా విజువల్ సర్‌ప్రైజ్ ఉండాలి.
-2. **Dynamic On-Screen Captions (సౌండ్ లేకుండా చూసేవారి కోసం)**:
-   - 70% మంది షార్ట్స్ ని మ్యూట్ లో చూస్తారు. కాబట్టి స్క్రీన్ మధ్యలో బోల్డ్ తెలుగు/టాంగ్లీష్ సబ్‌టైటిల్స్ తప్పనిసరి.
-3. **No Dead Outros (AVD > 100% Looping)**:
-   - వీడియో చివర్లో 6-8 సెకన్లు "సబ్‌స్క్రైబ్ చేసుకోండి" అని సాగదీయవద్దు.
-   - ప్రతి వీడియో చివర 1 సెకనులో కామెంట్ చేసేలా ప్రశ్నతో లేదా లూప్ తో ముగుస్తుంది (`కామెంట్ చేయండి! Follow Wonder Vault!`).
-4. **Mobile Title Rule (< 50 Characters)**:
-   - మొబైల్ స్క్రీన్‌లో టైటిల్ కట్ అవ్వకుండా 40-50 అక్షరాల లోపే ఉండేలా, ఎమోజీలతో `#Shorts #TeluguFacts` తో సెట్ చేయబడ్డాయి.
-5. **Bilingual SEO Descriptions**:
-   - తెలుగు వివరణతో పాటు ఇంగ్లీష్ సెర్చ్ కీవర్డ్స్ జోడించబడ్డాయి. దీనివల్ల యూట్యూబ్ అల్గోరిథం తెలుగు ఆడియన్స్‌తో పాటు స్పేస్/సైన్స్ సెర్చ్ చేసేవారికి కూడా సరిగ్గా చూపిస్తుంది.
-6. **Best Posting Time (IST)**:
-   - సాయంత్రం **5:30 PM - 8:30 PM** లేదా మధ్యాహ్నం **12:30 PM - 2:00 PM**.
+## ⚙️ WebUI లో ఒక్కసారి సెట్ చేయండి (`http://127.0.0.1:8501`)
 
----
-
-## 📑 విషయ సూచిక (Jumbled Sections / Variety Batches)
-> **గమనిక:** ప్రతి సెక్షన్‌లోనూ ఒకే రకమైన వీడియోలు కాకుండా... స్పేస్, హ్యూమన్ బాడీ, యానిమల్స్, ఎర్త్, డీప్ ఓషన్, వాట్-ఇఫ్, సైన్స్, డైనోసార్స్, ఏఐ, డైలీ లైఫ్ అన్నీ కలిపి **10 రకాల వైవిధ్యమైన వీడియోల మిశ్రమం (Mixed Variety Batch)** గా అమర్చబడ్డాయి. దీనివల్ల మీరు ఒక్కో సెక్షన్ వీడియోలను తయారు చేసి డౌన్‌లోడ్ చేసుకున్నప్పుడు ఛానెల్‌లో ఒకే రకమైన వీడియోలు రిపీట్ అవ్వకుండా ప్రతిరోజూ కొత్త రకం కంటెంట్ వస్తుంది!
-
-| సెక్షన్ (Section / Batch) | వీడియోల క్రమం (Video Sequence) | వర్గాల మిశ్రమం (Categories Included) |
+| Setting | Value | ఎందుకు |
 | :--- | :--- | :--- |
-| **సెక్షన్ 1 (Batch 1)** | `#001, #011, #021, #031, #041, #051, #061, #071, #081, #091` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 2 (Batch 2)** | `#002, #012, #022, #032, #042, #052, #062, #072, #082, #092` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 3 (Batch 3)** | `#003, #013, #023, #033, #043, #053, #063, #073, #083, #093` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 4 (Batch 4)** | `#004, #014, #024, #034, #044, #054, #064, #074, #084, #094` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 5 (Batch 5)** | `#005, #015, #025, #035, #045, #055, #065, #075, #085, #095` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 6 (Batch 6)** | `#006, #016, #026, #036, #046, #056, #066, #076, #086, #096` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 7 (Batch 7)** | `#007, #017, #027, #037, #047, #057, #067, #077, #087, #097` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 8 (Batch 8)** | `#008, #018, #028, #038, #048, #058, #068, #078, #088, #098` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 9 (Batch 9)** | `#009, #019, #029, #039, #049, #059, #069, #079, #089, #099` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
-| **సెక్షన్ 10 (Batch 10)** | `#010, #020, #030, #040, #050, #060, #070, #080, #090, #100` | స్పేస్ నుండి డైలీ లైఫ్ వరకు 10 విభిన్న సైన్స్ రంగాలు |
+| **Script Language** | `Telugu & English Mix (Tenglish - WonderVault)` | |
+| **Video Source** | `Pexels` | |
+| **Match Visuals to Script Order** | ✅ **On** | Keywords స్క్రిప్ట్ ఆర్డర్ లో ఉన్నాయి — చెప్పే మాటకు తగ్గ విజువల్ వస్తుంది |
+| **Aspect Ratio** | `Portrait 9:16` | |
+| **Video Transition Mode** | `None` or `FadeIn` | |
+| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` | |
+| **Voice** | ప్రతి వీడియోలో ఇచ్చింది — `te-IN-Mohan (Dynamic & High Energy)` (Space, Body, Earth, Ocean, What If, Dino, Tech) / `te-IN-Shruti (Vibrant & Energetic)` (Animals, Everyday Science, Daily Life) | రెండు ఫిక్స్‌డ్ వాయిస్‌లు = ఛానెల్ ఐడెంటిటీ |
+| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` | తెలుగు అక్షరాలు బాక్సులు లేకుండా |
+| **Subtitles** | Enabled, size `60`, **Center**, white/yellow + black stroke | |
+| **Background Music** | Volume `0.15` – `0.2` | వాయిస్ క్లియర్ గా వినిపించాలి |
 
 ---
 
-## సెక్షన్ 1: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 1 (Variety Batch 1 — #001, #011, #021, #031, #041, #051, #061, #071, #081, #091)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## 📈 WONDER VAULT SHORTS REACH PLAYBOOK (గోల్డెన్ రూల్స్)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+**Shorts అల్గోరిథం ఎలా పనిచేస్తుంది:** కొత్త Short ని ముందు కొంతమందికి చూపిస్తుంది. వాళ్ళు **స్వైప్ చేయకుండా** చూస్తే (Studio → "Viewed vs. swiped away"), **పూర్తిగా / మళ్ళీ** చూస్తే, **like / comment / share / subscribe** చేస్తే — ఇంకా ఎక్కువ మందికి చూపిస్తుంది. కింది రూల్స్ అన్నీ దీని కోసమే.
 
-### వీడియో #001 — Black Hole లో పడితే ఏం జరుగుతుంది?
+1. **మొదటి 1–2 సెకన్లలో హుక్.** "హాయ్ ఫ్రెండ్స్", "మీకు తెలుసా?", ఛానెల్ పేరు — ఏదీ వద్దు. మొదటి వాక్యమే షాకింగ్ ఫ్యాక్ట్. మొదటి క్లిప్ కూడా ఆ వాక్యానికి మ్యాచ్ అవ్వాలి.
+2. **25–40 సెకన్లు.** స్క్రిప్ట్‌లు ~50–65 పదాలు. షార్ట్ గా ఉంటే ఎక్కువ % చూస్తారు, రీప్లేలు వస్తాయి.
+3. **చివర్లో "Subscribe చేయండి" అని సాగదీయొద్దు.** ఒక్క ఈజీ ప్రశ్నతో ముగించండి (Yes/No, ఇది ఆ? అది ఆ?) — కామెంట్స్ పెరుగుతాయి.
+4. **Pinned comment:** ప్రతి వీడియోకి రెడీగా ఉంది — పబ్లిష్ చేయగానే పోస్ట్ చేసి పిన్ చేయండి. మొదటి గంటలో వచ్చే కామెంట్స్ కి రిప్లై ఇవ్వండి.
+5. **టైటిల్:** తెలుగు హుక్ + ఇంగ్లీష్ కీవర్డ్ (Black Hole, Brain Freeze…) + ఒక్క ఎమోజీ. టైటిల్ లో `#Shorts` అవసరం లేదు.
+6. **Description:** తెలుగులో 1–2 వాక్యాలు + ఒక ఇంగ్లీష్ లైన్ (ఇంగ్లీష్ సెర్చ్ కోసం) + 4–5 హ్యాష్‌ట్యాగ్స్. పాత "Related Searches" కీవర్డ్ లిస్ట్‌లు తీసేశాం — YouTube స్పామ్ పాలసీ వాటిని keyword stuffing గా చూస్తుంది.
+7. **కరెక్ట్ ఫ్యాక్ట్స్ = రీచ్.** తప్పు ఫ్యాక్ట్ ఉంటే కామెంట్స్ లో కరెక్ట్ చేస్తారు, షేర్లు పడిపోతాయి. థియరీలను "సైంటిస్టుల అంచనా" అనే చెప్పాం.
+8. **Mass-produced లా కనిపించొద్దు.** July 2025 నుంచి YouTube Partner Program లో "inauthentic content" పాలసీ ఉంది — ఒకే టెంప్లేట్ తో రిపీటెడ్ గా తయారైన వీడియోలకు మానిటైజేషన్ పోవచ్చు. విజువల్స్, హుక్స్ మారుస్తూ ఉండండి; అప్పుడప్పుడు మీ సొంత వాయిస్ / ఫేస్ కూడా వాడండి.
+9. **తెలుగు, ఇంగ్లీష్ వీడియోలను వేర్వేరు ఛానెల్స్ లో పెట్టండి.** ఒకే ఛానెల్ లో రెండు భాషలు కలిపితే అల్గోరిథం కి మీ ఆడియన్స్ ఎవరో అర్థం కాదు. Kids కంటెంట్ కూడా వేరే ఛానెల్ లో.
+10. **Playlists:** ప్రతి వర్గానికి ఒక Playlist పేరు ఇచ్చాం — ప్రతి Short ని దానిలో యాడ్ చేయండి.
+11. **పోస్టింగ్:** రోజుకు 1–2 Shorts, రెగ్యులర్ గా. డేటా వచ్చే వరకు సాయంత్రం **6:00 – 9:00 PM IST**; తర్వాత Studio → Analytics → Audience → **"When your viewers are on YouTube"** చూసి మార్చండి.
+12. **ప్రతి 48 గంటలకు చెక్ చేయండి:** *Viewed vs. swiped away* (> 70%), *Average percentage viewed* (> 80%). గెలిచిన వర్గాలు ఎక్కువ చేయండి, ఫెయిల్ అయిన వాటి హుక్ మార్చండి.
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
-| :--- | :--- |
-| **Video Subject** | `Black Hole లో పడితే ఏం జరుగుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `black hole space, event horizon galaxy, stars vortex cosmic, gravity simulation, deep space nebula` |
+### ✅ ప్రతి వీడియోకి వర్క్‌ఫ్లో
+1. **Video Subject**, **Video Script**, **Video Keywords** పేస్ట్ చేసి → **Voice** సెలెక్ట్ చేసి → Generate.
+2. ఒక్కసారి చూడండి: మొదటి క్లిప్ హుక్ కి మ్యాచ్ అయ్యిందా? లేకపోతే మొదటి keyword మార్చండి.
+3. Thumbnail Studio → **Thumbnail Title** పేస్ట్ చేయండి.
+4. **Title / Description / Tags** తో అప్‌లోడ్ → **Playlist** లో యాడ్ → **Pinned comment** పోస్ట్ చేసి పిన్ చేయండి.
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
-```text
-బ్లాక్ హోల్ లో పడితే మీ శరీరం నూడుల్స్ లా సాగిపోతుంది! సైన్స్ ప్రకారం అక్కడ 'Spaghettification' అనే మైండ్ బ్లోయింగ్ ప్రాసెస్ జరుగుతుంది! Black Hole యొక్క Gravity మీ తల కంటే కాళ్ళ వైపు వేల రెట్లు ఎక్కువగా ఉండటం వల్ల, మీ బాడీ ఒక నూడుల్స్ దారంలా సాగిపోతుంది! బయట ప్రపంచానికి మీరు అక్కడే ఫ్రీజ్ అయిపోయినట్లు కనిపిస్తారు. Time కూడా ఆగిపోతుంది! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
-```
+---
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Black Hole లో పడితే ఏమవుతుంది? 🕳️ #Shorts #TeluguFacts`
+## 📑 విషయ సూచిక (వెరైటీ బ్యాచ్‌లు)
+> ప్రతి సెక్షన్ లో 10 వేర్వేరు వర్గాల వీడియోలు ఉన్నాయి — ఒక్కో సెక్షన్ వరుసగా పోస్ట్ చేస్తే ఛానెల్ లో ప్రతిరోజూ కొత్త రకం కంటెంట్ వస్తుంది.
 
-- **YouTube Description**:
-```text
-🪐 Black Hole లో పడితే ఏం జరుగుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+| సెక్షన్ | వీడియోలు |
+| :--- | :--- |
+| **సెక్షన్ 1** | `#001, #011, #021, #031, #041, #051, #061, #071, #081, #091` |
+| **సెక్షన్ 2** | `#002, #012, #022, #032, #042, #052, #062, #072, #082, #092` |
+| **సెక్షన్ 3** | `#003, #013, #023, #033, #043, #053, #063, #073, #083, #093` |
+| **సెక్షన్ 4** | `#004, #014, #024, #034, #044, #054, #064, #074, #084, #094` |
+| **సెక్షన్ 5** | `#005, #015, #025, #035, #045, #055, #065, #075, #085, #095` |
+| **సెక్షన్ 6** | `#006, #016, #026, #036, #046, #056, #066, #076, #086, #096` |
+| **సెక్షన్ 7** | `#007, #017, #027, #037, #047, #057, #067, #077, #087, #097` |
+| **సెక్షన్ 8** | `#008, #018, #028, #038, #048, #058, #068, #078, #088, #098` |
+| **సెక్షన్ 9** | `#009, #019, #029, #039, #049, #059, #069, #079, #089, #099` |
+| **సెక్షన్ 10** | `#010, #020, #030, #040, #050, #060, #070, #080, #090, #100` |
+
+> **వర్గాలు:** #001–010 🌌 Space · #011–020 🧠 Body & Brain · #021–030 🐾 Animals · #031–040 🌍 Earth & Nature · #041–050 🌊 Ocean · #051–060 🤔 What If · #061–070 🔬 Everyday Science · #071–080 🦖 Dinosaurs · #081–090 🤖 Tech & AI · #091–100 💡 Daily Life
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+---
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Black Hole లో పడితే ఏం జరుగుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+## సెక్షన్ 1: వెరైటీ బ్యాచ్ 1 (#001, #011, #021, #031, #041, #051, #061, #071, #081, #091)
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+### వీడియో #001 — Black Hole లో పడితే ఏమవుతుంది?
 
-🔍 Related Searches / శోధన పదాలు:
-black hole లో పడితే ఏం జరుగుతుంది?, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+| WebUI field | Value |
+| :--- | :--- |
+| **Video Subject** | `Black Hole లో పడితే ఏమవుతుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `black hole, galaxy spiral, astronaut floating space, spaghetti noodles, red light glow, frozen clock` |
+| **Thumbnail Title** | `బాడీ నూడుల్స్ లా సాగుతుంది!` |
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
+```text
+Black Hole లోకి కాళ్ళతో పడితే, మీ బాడీ నూడుల్స్ లా సాగిపోతుంది! కాళ్ళ దగ్గర గ్రావిటీ తల దగ్గర కంటే చాలా ఎక్కువగా లాగుతుంది. సైంటిస్టులు దీన్ని నిజంగానే 'Spaghettification' అంటారు! ఇంకా క్రేజీ విషయం ఏంటంటే, దూరం నుంచి చూసే మీ ఫ్రెండ్ కి మీరు లోపలికి పడినట్లు అస్సలు కనిపించరు. ఎడ్జ్ దగ్గరే స్లో అయ్యి, ఎర్రగా మారి, అలాగే ఫ్రీజ్ అయిపోతారు. మీరైతే దూకుతారా? Yes or No?
 ```
+
+#### 📤 Upload Kit
+- **Title**: `Black Hole లో పడితే ఏమవుతుంది? 🕳️`
+- **Description**:
+```text
+Black Hole లో పడితే బాడీ నూడుల్స్ లా సాగిపోతుంది — దీన్నే Spaghettification అంటారు. బయట నుంచి చూసేవాళ్ళకి మీరు ఎడ్జ్ దగ్గరే ఫ్రీజ్ అయినట్లు కనిపిస్తారు!
+What happens if you fall into a black hole — explained in Telugu.
+
+💬 మీరైతే Black Hole లోకి దూకుతారా? Yes or No?
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `black hole space, event horizon galaxy, stars vortex cosmic, gravity simulation, deep space nebula, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
+
+#TeluguFacts #SpaceFacts #Telugu #Shorts
+```
+- **Tags**: `what happens if you fall into a black hole, what happens if you fall into a black hole in telugu, black hole, spaghettification, event horizon, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరైతే Black Hole లోకి దూకుతారా? Yes or No? 👇`
+- **Playlist**: `Space Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #011 — మన బ్రెయిన్ ఒక LED బల్బును వెలిగించగలదా?
+### వీడియో #011 — మీ Brain ఒక బల్బ్ అంత పవర్ వాడుతుంది!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మన బ్రెయిన్ ఒక LED బల్బును వెలిగించగలదా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `glowing brain electricity, light bulb glowing sparks, human brain neural network, energy pulse brain, electrical synapses` |
+| **Video Subject** | `మీ Brain ఒక బల్బ్ అంత పవర్ వాడుతుంది!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `brain glowing neurons, led light bulb, human body silhouette, person sleeping, supercomputer server` |
+| **Thumbnail Title** | `20 WATTS బ్రెయిన్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మీ బ్రెయిన్ లో ఉండే కరెంట్ తో నిజంగానే ఒక LED బల్బును వెలిగించవచ్చు! అవును, మీరు మేల్కొని ఉన్నప్పుడు మీ మెదడు దాదాపు twenty Watts ఎలక్ట్రికల్ పవర్ ని నిరంతరం జనరేట్ చేస్తుంది! ఈ పవర్ తో ఒక చిన్న LED బల్బును ఈజీగా వెలిగించవచ్చు! మన బ్రెయిన్ లో ఉండే eighty six billion న్యూరాన్లు సిగ్నల్స్ ని ఎక్స్ఛేంజ్ చేసుకున్నప్పుడు ఈ కరెంట్ పుడుతుంది. మన బ్రెయిన్ ఒక సూపర్ కంప్యూటర్! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+మీ బ్రెయిన్ ఇప్పుడు ఒక చిన్న LED బల్బ్ అంత ఎనర్జీ వాడుతోంది! దాదాపు twenty Watts. మన బాడీ బరువులో బ్రెయిన్ కేవలం రెండు పర్సెంట్ మాత్రమే. కానీ బాడీ ఎనర్జీలో దాదాపు ఇరవై పర్సెంట్ అదే తినేస్తుంది! ఎందుకంటే eighty six billion న్యూరాన్లు నిద్రలో కూడా సిగ్నల్స్ పంపుతూనే ఉంటాయి. ఇంకో ట్విస్ట్, బ్రెయిన్ లా పనిచేయాలని ట్రై చేసే సూపర్ కంప్యూటర్లకు మెగావాట్ల పవర్ కావాలి! మీ బ్రెయిన్ ఎప్పుడు ఎక్కువ అలసిపోతుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మన Brain తో LED బల్బు వెలిగించవచ్చా? 🧠 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మీ Brain ఒక బల్బ్ అంత పవర్ వాడుతుంది! 🧠`
+- **Description**:
 ```text
-🧠 మన బ్రెయిన్ ఒక LED బల్బును వెలిగించగలదా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మన బ్రెయిన్ ఒక LED బల్బును వెలిగించగలదా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+మన బ్రెయిన్ బాడీ బరువులో 2% మాత్రమే, కానీ ఎనర్జీలో 20% వాడుతుంది — దాదాపు 20 Watts, ఒక LED బల్బ్ అంత!
+How much energy does the brain use — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ బ్రెయిన్ ఏ టైమ్ లో ఎక్కువ అలసిపోతుంది?
 
-🔍 Related Searches / శోధన పదాలు:
-మన బ్రెయిన్ ఒక led బల్బును వెలిగించగలదా?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
+- **Tags**: `how much energy does the brain use, how much energy does the brain use in telugu, brain facts, neurons, human body, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ బ్రెయిన్ ఏ టైమ్ లో ఎక్కువ అలసిపోతుంది? 👇`
+- **Playlist**: `Human Body Telugu`
 
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `glowing brain electricity, light bulb glowing sparks, human brain neural network, energy pulse brain, electrical synapses, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #021 — Sea Otters పడుకునేటప్పుడు చేతులు పట్టుకుంటాయి!
+### వీడియో #021 — Sea Otters చేతులు ఎందుకు పట్టుకుంటాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Sea Otters పడుకునేటప్పుడు చేతులు పట్టుకుంటాయి!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `sea otter floating sleeping, cute otter holding hands, ocean kelp waves, baby otter playing, calm sea water` |
+| **Video Subject** | `Sea Otters చేతులు ఎందుకు పట్టుకుంటాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `sea otter floating, otters holding hands, ocean waves calm, kelp forest underwater, baby otter` |
+| **Thumbnail Title** | `చేతులు పట్టుకుని నిద్ర!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రంలో నిద్రపోయేటప్పుడు కొట్టుకుపోకుండా ఒకదాని చేయి ఒకటి గట్టిగా పట్టుకునే జంతువులు ఇవే! Sea Otters నీటిపై తేలుతూ  అంతేకాదు, సముద్రపు నాచు మొక్కలను ఒక బ్లాంకెట్ లా చుట్టుకుని హ్యాపీగా నిద్రపోతాయి! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+Sea Otters సముద్రంలో వెల్లకిలా తేలుతూ నిద్రపోతాయి. కానీ ఒక ప్రాబ్లం ఉంది. నిద్రలో అలలు వాటిని ఫ్యామిలీ నుంచి దూరంగా తీసుకెళ్ళిపోవచ్చు! అందుకే కొన్నిసార్లు ఒకదాని చేయి ఒకటి పట్టుకుని నిద్రపోతాయి. ఇంకో ట్రిక్ కూడా ఉంది, 'Kelp' అనే పొడవైన సముద్రపు మొక్కలను దుప్పటిలా చుట్టుకుంటాయి. దాంతో అవి ఒకే చోట ఉంటాయి! ఎంత క్యూట్ కదా! మీకు ఇష్టమైన క్యూట్ యానిమల్ ఏది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Otters నిద్రపోయేటప్పుడు చేతులు ఎందుకు పట్టుకుంటాయి #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Sea Otters చేతులు ఎందుకు పట్టుకుంటాయి? 🦦`
+- **Description**:
 ```text
-🐾 Sea Otters పడుకునేటప్పుడు చేతులు పట్టుకుంటాయి! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Sea Otters పడుకునేటప్పుడు చేతులు పట్టుకుంటాయి! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Sea Otters నిద్రలో దూరం కొట్టుకుపోకుండా కొన్నిసార్లు చేతులు పట్టుకుంటాయి, Kelp మొక్కలను దుప్పటిలా చుట్టుకుంటాయి!
+Why do sea otters hold hands — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీకు ఇష్టమైన క్యూట్ యానిమల్ ఏది?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-sea otters పడుకునేటప్పుడు చేతులు పట్టుకుంటాయి!, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `sea otter floating sleeping, cute otter holding hands, ocean kelp waves, baby otter playing, calm sea water, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do sea otters hold hands, why do sea otters hold hands in telugu, sea otters, cute animals, ocean animals, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఇష్టమైన క్యూట్ యానిమల్ ఏది? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #031 — స్కై బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది?
+### వీడియో #031 — ఆకాశం బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `స్కై బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `sunny blue sky clouds, lens flare bright sun, green meadow summer, prism rainbow light, kids looking at sky` |
+| **Video Subject** | `ఆకాశం బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `blue sky clouds, sunlight rays, rainbow prism, sky time lapse, orange sunset` |
+| **Thumbnail Title** | `ఆకాశం ఎందుకు బ్లూ?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సూర్యుడి కాంతి తెల్లగా ఉన్నా.. పగటిపూట ఆకాశం నీలి రంగులోనే ఎందుకు కనిపిస్తుందో తెలుసా? సన్ లైట్ లో seven colors ఉంటాయి. భూమి వాతావరణంలోకి ఈ లైట్ ఎంటర్ అయినప్పుడు, బ్లూ లైట్ వేవ్స్ చాలా చిన్నవిగా ఉండటం వల్ల అన్ని డైరెక్షన్స్ లో స్కాటర్ అయ్యి ఆకాశమంతా బ్యూటిఫుల్ బ్లూ కలర్ లో కనిపిస్తుంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+ఆకాశం గ్రీన్ లేదా పర్పుల్ కాకుండా బ్లూ గానే ఎందుకు ఉంది? సన్ లైట్ తెల్లగా కనిపిస్తుంది, కానీ అందులో రెయిన్ బో రంగులన్నీ కలిసి ఉంటాయి! ఆ లైట్ గాలిని తాకినప్పుడు, బ్లూ లైట్ అన్ని వైపులకూ ఎక్కువగా చెల్లాచెదురు అవుతుంది. అందుకే ఎటు చూసినా బ్లూ! మరి సాయంత్రం? లైట్ ఎక్కువ గాలి దాటి రావాలి, బ్లూ దారిలోనే పోతుంది. అందుకే సన్ సెట్ ఆరెంజ్, రెడ్! మీకు ఏ టైమ్ ఆకాశం ఇష్టం?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఆకాశం బ్లూ కలర్ లోనే ఎందుకుంటుంది? ☀️ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఆకాశం బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది? ☀️`
+- **Description**:
 ```text
-🌍 స్కై బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+సన్ లైట్ లోని బ్లూ లైట్ గాలిలో ఎక్కువగా చెల్లాచెదురు అవుతుంది — అందుకే ఆకాశం బ్లూ, సన్ సెట్ ఆరెంజ్!
+Why is the sky blue — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• స్కై బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీకు ఏ టైమ్ ఆకాశం ఇష్టం? ఉదయం, మధ్యాహ్నం, సాయంత్రం?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-స్కై బ్లూ కలర్ లోనే ఎందుకు ఉంటుంది?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
+- **Tags**: `why is the sky blue, why is the sky blue in telugu, sky, light scattering, science facts, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఏ టైమ్ ఆకాశం ఇష్టం? ఉదయం, మధ్యాహ్నం, సాయంత్రం? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `sunny blue sky clouds, lens flare bright sun, green meadow summer, prism rainbow light, kids looking at sky, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #041 — మరియానా ట్రెంచ్ లో ఉండే ట్రాన్స్ పరెంట్ చేప!
+### వీడియో #041 — గాజు లాంటి తల ఉన్న వింత చేప!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మరియానా ట్రెంచ్ లో ఉండే ట్రాన్స్ పరెంట్ చేప!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `deep sea strange fish, barreleye fish transparent head, underwater darkness trench, glowing sea creature, submarine lights` |
+| **Video Subject** | `గాజు లాంటి తల ఉన్న వింత చేప!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `deep sea fish, dark ocean water, transparent jellyfish, green glowing eyes, underwater submarine light` |
+| **Thumbnail Title** | `గాజు తల చేప!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఓషన్ లో seven miles లోతున ఉండే మరియానా ట్రెంచ్ లో 'Barreleye' అనే ఒక విచిత్రమైన ఫిష్ ఉంటుంది. దీని హెడ్ పూర్తిగా గ్లాస్ లా ట్రాన్స్ పరెంట్ గా ఉంటుంది! ఆ తల లోపల ఉండే గ్రీన్ ఐస్ పైకి, పక్కకి రొటేట్ అవుతూ చీకట్లో ఆహారాన్ని స్పాట్ చేస్తాయి! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+ఈ చేప తల పూర్తిగా ట్రాన్స్ పరెంట్! దాని పేరు 'Barreleye'. సముద్రంలో దాదాపు ఆరు నుంచి ఎనిమిది వందల మీటర్ల లోతులో, సన్ లైట్ దాదాపు చేరని చోట ఉంటుంది. ముందు కళ్ళలా కనిపించే ఆ రెండు చుక్కలు నిజానికి ముక్కు రంధ్రాలు! అసలు కళ్ళు తల లోపల మెరిసే గ్రీన్ డోమ్స్. అవి పైకి తిరిగి, తల లోపలి నుంచే పైన ఉన్న ఆహారాన్ని చూస్తాయి! క్రీపీ నా? కూల్ ఆ?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `గ్లాస్ లాంటి హెడ్ ఉన్న వింత చేప! 🐟 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `గాజు లాంటి తల ఉన్న వింత చేప! 🐟`
+- **Description**:
 ```text
-🌊 మరియానా ట్రెంచ్ లో ఉండే ట్రాన్స్ పరెంట్ చేప! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Barreleye చేపకి ట్రాన్స్ పరెంట్ తల ఉంటుంది — దాని గ్రీన్ కళ్ళు తల లోపలి నుంచే పైకి తిరిగి చూస్తాయి!
+Barreleye fish transparent head — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 ఈ చేప క్రీపీ నా? కూల్ ఆ?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మరియానా ట్రెంచ్ లో ఉండే ట్రాన్స్ పరెంట్ చేప! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మరియానా ట్రెంచ్ లో ఉండే ట్రాన్స్ పరెంట్ చేప!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `deep sea strange fish, barreleye fish transparent head, underwater darkness trench, glowing sea creature, submarine lights, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `barreleye fish transparent head, barreleye fish transparent head in telugu, barreleye fish, deep sea creatures, ocean, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ చేప క్రీపీ నా? కూల్ ఆ? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #051 — ఎర్త్ 5 సెకన్లు రొటేషన్ ఆపితే ఏమవుతుంది?
+### వీడియో #051 — భూమి 5 సెకన్లు తిరగడం ఆగిపోతే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఎర్త్ 5 సెకన్లు రొటేషన్ ఆపితే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `earth rotating space, tsunami destroying city, massive earthquake destruction, skyscraper collapsing wind, planetary disaster simulation` |
+| **Video Subject** | `భూమి 5 సెకన్లు తిరగడం ఆగిపోతే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `earth rotating space, city traffic, car crash slow motion, hurricane wind, ocean giant wave` |
+| **Thumbnail Title** | `భూమి ఆగితే!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-భూమి కేవలం five seconds పాటు తిరగడం ఆగిపోతే, కార్లు, భవనాలు, సముద్రాలు గంటకు one thousand miles స్పీడ్ తో ఈస్ట్ వైపుకి ఎగిరిపడతాయి! భారీ సునామీలు కాంటినెంట్స్ ని ముంచెత్తుతాయి. five seconds తర్వాత ఎర్త్ మళ్ళీ తిరగడం స్టార్ట్ చేసినా, హ్యూమన్ సివిలైజేషన్ మొత్తం కొట్టుకుపోతుంది! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+భూమి కేవలం five seconds తిరగడం ఆపితే, భూమికి అతుక్కోని ప్రతిదీ కదులుతూనే ఉంటుంది! ఈక్వేటర్ దగ్గర అంటే గంటకు దాదాపు one thousand six hundred kilometers స్పీడ్ తో తూర్పు వైపుకి! మనుషులు, కార్లు, బిల్డింగ్స్, సముద్రాలు కూడా పక్కకి విసిరేయబడతాయి. ఏ తుఫాను కంటే వేగంగా గాలులు వీస్తాయి, సముద్రాలు ఖండాల మీదకి దూసుకొస్తాయి. ఐదు సెకన్లు చాలు, సివిలైజేషన్ మొత్తం పోవడానికి! ఆ టైమ్ లో మీరు ఎక్కడ ఉండాలనుకుంటారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `భూమి 5 సెకన్లు ఆగితే ఏమవుతుంది? 🌍 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `భూమి 5 సెకన్లు తిరగడం ఆగిపోతే? 🌍`
+- **Description**:
 ```text
-🤔 ఎర్త్ 5 సెకన్లు రొటేషన్ ఆపితే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఎర్త్ 5 సెకన్లు రొటేషన్ ఆపితే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+భూమి ఈక్వేటర్ దగ్గర గంటకు 1,600 km స్పీడ్ తో తిరుగుతుంది. 5 సెకన్లు ఆగితే ప్రతిదీ ఆ స్పీడ్ తో విసిరేయబడుతుంది!
+What if earth stopped spinning — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 భూమి ఆగిపోతే ఆ టైమ్ లో మీరు ఎక్కడ ఉండాలనుకుంటారు?
 
-🔍 Related Searches / శోధన పదాలు:
-ఎర్త్ 5 సెకన్లు రొటేషన్ ఆపితే ఏమవుతుంది?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
+- **Tags**: `what if earth stopped spinning, what if earth stopped spinning in telugu, earth rotation, what if, hypothetical science, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `భూమి ఆగిపోతే ఆ టైమ్ లో మీరు ఎక్కడ ఉండాలనుకుంటారు? 👇`
+- **Playlist**: `What If Telugu`
 
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `earth rotating space, tsunami destroying city, massive earthquake destruction, skyscraper collapsing wind, planetary disaster simulation, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #061 — Moon మీద ఎంత హైట్ జంప్ చేయవచ్చో తెలుసా?
+### వీడియో #061 — చంద్రుడి మీద ఎంత ఎత్తు జంప్ చేయొచ్చు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Moon మీద ఎంత హైట్ జంప్ చేయవచ్చో తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `astronaut bouncing on moon, jumping high on trampoline, basketball hoop slam dunk, smiling kid jumping, earth seen from moon` |
+| **Video Subject** | `చంద్రుడి మీద ఎంత ఎత్తు జంప్ చేయొచ్చు?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `moon surface, basketball hoop, person jumping high, astronaut moon walk, kangaroo hopping` |
+| **Thumbnail Title** | `6 రెట్లు ఎత్తు జంప్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మూన్ మీద మీరు ఒక్క జంప్ చేస్తే ఎంత ఎత్తు ఎగరవచ్చో ఊహించగలరా? చంద్రుడి గ్రావిటీ భూమి కంటే six times తక్కువ!  మీరు భూమి మీద two feet జంప్ చేస్తే, మూన్ మీద ఏకంగా twelve feet హైట్ కి చాలా ఈజీగా గెంతవచ్చు! ఒక సూపర్ హీరోలా మెల్లగా కిందకి ల్యాండ్ అవుతారు! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+చంద్రుడి మీద బాస్కెట్ బాల్ ఆడితే ఎలా ఉంటుంది? చంద్రుడి గ్రావిటీ భూమి కంటే దాదాపు six times తక్కువ. అంటే ఇక్కడ మీరు half meter జంప్ చేస్తే, అక్కడ దాదాపు three meters ఎగరొచ్చు! బాస్కెట్ బాల్ హూప్ కంటే ఎత్తు! పైగా కిందకి స్లో మోషన్ లో మెల్లగా దిగుతారు. Apollo ఆస్ట్రోనాట్స్ కంగారూల్లా ఎగురుతూ నడిచారు! కానీ స్పేస్ సూట్ మర్చిపోకండి. మీరు ఇప్పుడు ఎంత ఎత్తు జంప్ చేయగలరు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మూన్ మీద ఎంత ఎత్తు ఎగరవచ్చో తెలుసా? 🚀 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చంద్రుడి మీద ఎంత ఎత్తు జంప్ చేయొచ్చు? 🚀`
+- **Description**:
 ```text
-🔬 Moon మీద ఎంత హైట్ జంప్ చేయవచ్చో తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Moon మీద ఎంత హైట్ జంప్ చేయవచ్చో తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+చంద్రుడి గ్రావిటీ భూమి కంటే 6 రెట్లు తక్కువ — అక్కడ మీరు 6 రెట్లు ఎత్తు ఎగరొచ్చు!
+How high can you jump on the moon — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు ఇప్పుడు ఎంత ఎత్తు జంప్ చేయగలరు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-moon మీద ఎంత హైట్ జంప్ చేయవచ్చో తెలుసా?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `astronaut bouncing on moon, jumping high on trampoline, basketball hoop slam dunk, smiling kid jumping, earth seen from moon, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how high can you jump on the moon, how high can you jump on the moon in telugu, moon gravity, astronauts, space facts, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఇప్పుడు ఎంత ఎత్తు జంప్ చేయగలరు? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #071 — T-Rex కి చికెన్ లాగా ఈకలు ఉండేవని తెలుసా?
+### వీడియో #071 — T-Rex కి ఈకలు ఉండేవా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `T-Rex కి చికెన్ లాగా ఈకలు ఉండేవని తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `t rex dinosaur roaring jungle, colorful bird feathers macro, chicken walking farm, dinosaur fossil skeleton museum, prehistoric raptor` |
+| **Video Subject** | `T-Rex కి ఈకలు ఉండేవా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `t rex model, feathered dinosaur, fossil skin, baby chick fluffy, chicken walking` |
+| **Thumbnail Title** | `ఈకల డైనోసార్లు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మూవీస్ లో చూపించే T-Rex ఒక గ్రీన్ బల్లిలా ఉంటుందని అనుకుంటారు. కానీ మోడరన్ సైంటిస్టుల రీసెర్చ్ ప్రకారం, చాలా డైనోసార్లకు కోళ్ళలా కలర్ ఫుల్ ఫెదర్స్ ఉండేవి! నిజానికి మోడరన్ బర్డ్స్ అన్నీ డైనోసార్ల సంతతి నుంచే వచ్చాయి! అంటే T-Rex నాలుగు టన్నుల భారీ ప్రిహిస్టారిక్ చికెన్ లాంటిదన్నమాట! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+T-Rex అంటే పెద్ద బల్లి లాంటి స్కిన్ అనుకుంటాం. కానీ చాలా డైనోసార్లకు ఈకలు ఉండేవి! T-Rex దగ్గరి బంధువులు కొన్ని ఈకలతో కప్పబడి ఉండేవి. పెద్ద T-Rex ఫాసిల్స్ లో ఎక్కువగా పొలుసుల స్కిన్ కనిపించింది. కానీ బేబీ T-Rex లకు కొంచెం ఈకలు ఉండొచ్చని కొందరు సైంటిస్టులు అనుకుంటున్నారు. ఇంకా షాకింగ్ విషయం: పక్షులు బతికున్న డైనోసార్లే! మీ ఇంట్లో కోడి కూడా డైనోసార్ బంధువే! ఈ ఫ్యాక్ట్ మీకు తెలుసా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `T-Rex కి కోడిలా ఈకలు ఉండేవట! 🦖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `T-Rex కి ఈకలు ఉండేవా? 🦖`
+- **Description**:
 ```text
-🦖 T-Rex కి చికెన్ లాగా ఈకలు ఉండేవని తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+T-Rex బంధువులకు ఈకలు ఉండేవి, బేబీ T-Rex లకు కూడా ఉండొచ్చు — పక్షులు బతికున్న డైనోసార్లే!
+Did t rex have feathers — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• T-Rex కి చికెన్ లాగా ఈకలు ఉండేవని తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 కోడి డైనోసార్ బంధువని మీకు ముందే తెలుసా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-t-rex కి చికెన్ లాగా ఈకలు ఉండేవని తెలుసా?, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
+- **Tags**: `did t rex have feathers, did t rex have feathers in telugu, t rex, feathered dinosaurs, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `కోడి డైనోసార్ బంధువని మీకు ముందే తెలుసా? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `t rex dinosaur roaring jungle, colorful bird feathers macro, chicken walking farm, dinosaur fossil skeleton museum, prehistoric raptor, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #081 — AI Singularity వస్తే మనుషుల పరిస్థితి ఏంటి?
+### వీడియో #081 — AI తనకంటే తెలివైన AI ని తయారుచేస్తే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `AI Singularity వస్తే మనుషుల పరిస్థితి ఏంటి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `artificial intelligence glowing face, futuristic server matrix, microchip neural network, robot robotic hand humanoid, glowing digital data` |
+| **Video Subject** | `AI తనకంటే తెలివైన AI ని తయారుచేస్తే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `robot artificial intelligence, computer code screen, server room, doctor laboratory, futuristic city` |
+| **Thumbnail Title** | `AI ని AI తయారుచేస్తే?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-AI మనుషుల కంటే తెలివైనదైతే మన పరిస్థితి ఏంటి? సైన్స్ లో దీన్నే 'AI Singularity' అంటారు!  ఒక్కసారి అది జరిగితే, మానవులందరి కంటే వేల రెట్లు తెలివైన సూపర్ AI పుడుతుంది. అది ప్రపంచంలోని అన్ని వ్యాధులను క్యూర్ చేస్తుందా లేదా మనుషులనే రీప్లేస్ చేస్తుందా?! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక AI తనకంటే బెటర్ AI ని తయారుచేసింది అనుకోండి. అది ఇంకా బెటర్ AI ని తయారుచేస్తుంది. అలా ఇంకా ఇంకా వేగంగా! ఈ టిప్పింగ్ పాయింట్ ని కొందరు సైంటిస్టులు 'AI Singularity' అంటారు, మెషిన్ తెలివి మనుషులను దాటిపోయే మూమెంట్. ఇది అసలు జరుగుతుందా, ఎప్పుడు జరుగుతుందో ఎవరికీ తెలియదు, ఎక్స్ పర్ట్స్ మధ్యే పెద్ద డిబేట్ ఉంది. జబ్బులు నయం చేయొచ్చు, లేదా ఊహించని రిస్క్స్ రావొచ్చు! మీకు హోప్ ఉందా? భయం ఉందా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `AI మనుషుల కంటే తెలివైనదైతే ఏమవుతుంది? 🤖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `AI తనకంటే తెలివైన AI ని తయారుచేస్తే? 🤖`
+- **Description**:
 ```text
-🤖 AI Singularity వస్తే మనుషుల పరిస్థితి ఏంటి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+AI Singularity అంటే AI తనను తాను వేగంగా ఇంప్రూవ్ చేసుకుని మనుషులను దాటిపోయే పాయింట్ — జరుగుతుందా లేదా అని ఎక్స్ పర్ట్స్ డిబేట్ చేస్తున్నారు.
+What is ai singularity — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 AI ఫ్యూచర్ గురించి మీకు హోప్ ఉందా? భయం ఉందా?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• AI Singularity వస్తే మనుషుల పరిస్థితి ఏంటి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-ai singularity వస్తే మనుషుల పరిస్థితి ఏంటి?, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `artificial intelligence glowing face, futuristic server matrix, microchip neural network, robot robotic hand humanoid, glowing digital data, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what is ai singularity, what is ai singularity in telugu, ai singularity, artificial intelligence, future tech, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `AI ఫ్యూచర్ గురించి మీకు హోప్ ఉందా? భయం ఉందా? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #091 — హాట్ కాఫీ తాగినప్పుడు నాలుక కాలితే ఏం చేయాలి?
+### వీడియో #091 — నాలుక కాలితే వెంటనే ఏం చేయాలి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `హాట్ కాఫీ తాగినప్పుడు నాలుక కాలితే ఏం చేయాలి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `hot coffee steam mug, pouring fresh milk glass, sugar cubes dissolving, tongue burning face funny, kitchen morning cafe` |
+| **Video Subject** | `నాలుక కాలితే వెంటనే ఏం చేయాలి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `hot tea cup steam, person burnt tongue, glass cold water, cold milk glass, tongue close up` |
+| **Thumbnail Title** | `నాలుక కాలిందా?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-వేడి కాఫీ తాగినప్పుడు నాలుక చురుక్కున కాలితే ఒక్క సెకనులో మంట తగ్గించే సింపుల్ ట్రిక్ ఇది! వెంటనే ఐస్ వాటర్ తాగడం కంటే  షుగర్ చల్లబరచడమే కాకుండా స్కిన్ సెల్స్ ని సూత్ చేస్తుంది. లేదా కోల్డ్ మిల్క్ తాగడం మంచిది! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+వేడి టీ తాగి నాలుక చురుక్కుమందా? వెంటనే చల్లటి నీటితో కొన్ని నిమిషాలు నోరు పుక్కిలించండి, లేదా చల్లటి పాలు తాగండి. ఐస్ ముక్కను నేరుగా ఎక్కువసేపు పెట్టకండి. గుడ్ న్యూస్ ఏంటంటే, నాలుక చాలా ఫాస్ట్ గా హీల్ అవుతుంది! నోటి లోపలి స్కిన్ కొన్ని రోజుల్లోనే రిపేర్ అవుతుంది, టేస్ట్ బడ్స్ దాదాపు రెండు వారాల్లో కొత్తవి వస్తాయి. కానీ బొబ్బలు ఎక్కువగా ఉంటే డాక్టర్ ని కలవండి. మీరు టీ బ్యాచా? కాఫీ బ్యాచా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `నాలుక కాలినప్పుడు వెంటనే ఏం చేయాలి? ☕ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నాలుక కాలితే వెంటనే ఏం చేయాలి? ☕`
+- **Description**:
 ```text
-💡 హాట్ కాఫీ తాగినప్పుడు నాలుక కాలితే ఏం చేయాలి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• హాట్ కాఫీ తాగినప్పుడు నాలుక కాలితే ఏం చేయాలి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+నాలుక కాలితే చల్లటి నీటితో పుక్కిలించండి లేదా చల్లటి పాలు తాగండి — నోటి స్కిన్ కొన్ని రోజుల్లో, టేస్ట్ బడ్స్ రెండు వారాల్లో కొత్తవి వస్తాయి!
+What to do when you burn your tongue — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీరు టీ బ్యాచా? కాఫీ బ్యాచా?
 
-🔍 Related Searches / శోధన పదాలు:
-హాట్ కాఫీ తాగినప్పుడు నాలుక కాలితే ఏం చేయాలి?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
+- **Tags**: `what to do when you burn your tongue, what to do when you burn your tongue in telugu, burnt tongue, first aid, health tips, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు టీ బ్యాచా? కాఫీ బ్యాచా? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `hot coffee steam mug, pouring fresh milk glass, sugar cubes dissolving, tongue burning face funny, kitchen morning cafe, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-## సెక్షన్ 2: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 2 (Variety Batch 2 — #002, #012, #022, #032, #042, #052, #062, #072, #082, #092)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 2: వెరైటీ బ్యాచ్ 2 (#002, #012, #022, #032, #042, #052, #062, #072, #082, #092)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #002 — సూర్యుడు ఒక్కసారిగా మాయమైపోతే ఏమవుతుంది?
+### వీడియో #002 — సూర్యుడు ఇప్పుడే మాయమైతే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `సూర్యుడు ఒక్కసారిగా మాయమైపోతే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `sun disappearing space, dark earth frozen, galaxy solar system, ice glacier frost, floating planet void` |
+| **Video Subject** | `సూర్యుడు ఇప్పుడే మాయమైతే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `sunset sky, clock ticking, dark night city, earth from space, frozen ice landscape` |
+| **Thumbnail Title** | `8 నిమిషాలే టైమ్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఒకవేళ సూర్యుడు ఈ సెకనులో మాయమైపోతే, ఆ విషయం మనకు తెలియడానికి eight నిమిషాల twenty సెకన్లు పడుతుంది! ఎందుకంటే Sunlight భూమికి చేరడానికి అంత టైమ్ పడుతుంది. ఆ తర్వాత భూమి మొత్తం ఫుల్ డార్క్ అయిపోతుంది. Gravity కోల్పోయి, ఎర్త్ గంటకు sixty seven thousand మైళ్ళ స్పీడ్ తో డీప్ స్పేస్ లోకి దూసుకుపోతుంది! కేవలం వన్ వీక్ లోనే టెంపరేచర్ మైనస్ డిగ్రీస్ కి పడిపోయి సముద్రాలన్నీ గడ్డకడతాయి! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+సూర్యుడు ఈ సెకన్ లో మాయమైతే, eight minutes twenty seconds వరకు మనకు అస్సలు తెలియదు! ఎందుకంటే సన్ లైట్, గ్రావిటీ రెండూ భూమికి చేరడానికి అంత టైమ్ పడుతుంది. ఆ తర్వాత ఆకాశం మొత్తం చీకటి. భూమి గంటకు one lakh kilometers కంటే ఎక్కువ స్పీడ్ తో స్ట్రెయిట్ లైన్ లో స్పేస్ లోకి దూసుకుపోతుంది. ఒక్క వారంలోనే టెంపరేచర్ మైనస్ పదిహేను డిగ్రీలకు పడిపోతుంది! మీరు ఎక్కడ దాక్కుంటారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సూర్యుడు అకస్మాత్తుగా మాయమైతే? ☀️ #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సూర్యుడు ఇప్పుడే మాయమైతే? ☀️`
+- **Description**:
 ```text
-🪐 సూర్యుడు ఒక్కసారిగా మాయమైపోతే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• సూర్యుడు ఒక్కసారిగా మాయమైపోతే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+సూర్యుడు మాయమైతే 8 నిమిషాల 20 సెకన్ల వరకు మనకు తెలియదు — ఆ తర్వాత భూమి స్పేస్ లోకి దూసుకుపోయి వారాల్లోనే గడ్డకట్టుకుపోతుంది.
+What if the sun disappeared — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 సూర్యుడు మాయమైతే మీరు ఎక్కడ దాక్కుంటారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-సూర్యుడు ఒక్కసారిగా మాయమైపోతే ఏమవుతుంది?, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `sun disappearing space, dark earth frozen, galaxy solar system, ice glacier frost, floating planet void, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if the sun disappeared, what if the sun disappeared in telugu, sun facts, earth orbit, space what if, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `సూర్యుడు మాయమైతే మీరు ఎక్కడ దాక్కుంటారు? 👇`
+- **Playlist**: `Space Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #012 — మనకు చిన్నప్పటి మెమొరీస్ ఎందుకు గుర్తుండవు?
+### వీడియో #012 — చిన్నప్పటి జ్ఞాపకాలు ఎందుకు మర్చిపోతాం?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనకు చిన్నప్పటి మెమొరీస్ ఎందుకు గుర్తుండవు?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `baby walking toddler, brain memory neurons, fading memory abstract, childhood photo album, thinking face close up` |
+| **Video Subject** | `చిన్నప్పటి జ్ఞాపకాలు ఎందుకు మర్చిపోతాం?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `baby first steps, toddler playing, family photo album, brain neurons, child birthday candles` |
+| **Thumbnail Title** | `మీ జ్ఞాపకాలు ఎక్కడ?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మీకు three years వయసులో జరిగిన విషయాలు ఏమైనా గుర్తున్నాయా? ninety nine percent మందికి గుర్తుండవు! దీనిని సైన్స్ లో 'Infantile Amnesia' అంటారు. చిన్నప్పుడు మన బ్రెయిన్ లో ప్రతిరోజూ లక్షలాది కొత్త న్యూరాన్లు చాలా ఫాస్ట్ గా గ్రో అవుతాయి. ఈ రాపిడ్ డెవలప్ మెంట్ ప్రాసెస్ లో పాత మెమొరీస్ ఉన్న న్యూరల్ పాత్ వేస్ ఓవర్ రైట్ అయిపోతాయి! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+మీరు ఫస్ట్ టైమ్ నడిచినప్పుడు మీరు అక్కడే ఉన్నారు, కానీ మీకు అది గుర్తు లేదు! మూడేళ్ళ వయసుకు ముందు జరిగినవి దాదాపు ఎవరికీ గుర్తుండవు. దీన్నే 'Infantile Amnesia' అంటారు. పసిపిల్లలు కూడా గుర్తుపెట్టుకుంటారు, ఫేసెస్, పదాలు నేర్చుకుంటారు. కానీ ఒక థియరీ ప్రకారం, చిన్నప్పుడు మెమొరీ సెంటర్ లో కొత్త న్యూరాన్లు చాలా ఫాస్ట్ గా పుట్టడం వల్ల పాత కనెక్షన్స్ రీవైర్ అయ్యి ఆ జ్ఞాపకాలు పోతాయి. మీ ఫస్ట్ మెమొరీ ఏంటి?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చిన్నప్పటి జ్ఞాపకాలు ఎందుకు మర్చిపోతాం? 👶 🧠 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చిన్నప్పటి జ్ఞాపకాలు ఎందుకు మర్చిపోతాం? 👶`
+- **Description**:
 ```text
-🧠 మనకు చిన్నప్పటి మెమొరీస్ ఎందుకు గుర్తుండవు? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+మూడేళ్ళ లోపు జ్ఞాపకాలు దాదాపు ఎవరికీ గుర్తుండవు — దీన్నే Infantile Amnesia అంటారు. బ్రెయిన్ వేగంగా పెరగడమే కారణం కావచ్చు.
+Why we forget childhood memories — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనకు చిన్నప్పటి మెమొరీస్ ఎందుకు గుర్తుండవు? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీ ఫస్ట్ మెమొరీ ఏంటి? అప్పుడు మీ వయసు ఎంత?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మనకు చిన్నప్పటి మెమొరీస్ ఎందుకు గుర్తుండవు?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
+- **Tags**: `why we forget childhood memories, why we forget childhood memories in telugu, infantile amnesia, memory, brain, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఫస్ట్ మెమొరీ ఏంటి? అప్పుడు మీ వయసు ఎంత? 👇`
+- **Playlist**: `Human Body Telugu`
 
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `baby walking toddler, brain memory neurons, fading memory abstract, childhood photo album, thinking face close up, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #022 — Flamingo బర్డ్స్ ఒకే కాలుపై ఎందుకు నిలబడతాయి?
+### వీడియో #022 — Flamingo ఒకే కాలు మీద ఎందుకు నిల్చుంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Flamingo బర్డ్స్ ఒకే కాలుపై ఎందుకు నిలబడతాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Jenny-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `pink flamingo standing one leg, flock flamingos lake, zoo exotic bird, calm water reflection, pink feathers macro` |
+| **Video Subject** | `Flamingo ఒకే కాలు మీద ఎందుకు నిల్చుంటుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `flamingo standing one leg, person balancing one leg, flamingo sleeping, bike kickstand, flamingo flock water` |
+| **Thumbnail Title** | `ఒంటి కాలి స్టంట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఫ్లెమింగో పక్షులు ఎప్పుడూ ఒకే కాలు మీద ఎందుకు నిలబడతాయో తెలుసా? రెండు కాళ్ళ కంటే ఒక కాలు మీదే అవి ఎక్కువ ఎనర్జీని సేవ్ చేసుకుంటాయి!  వాటి నీ జాయింట్ ఒక కిక్ స్టాండ్ లా లాక్ అయిపోతుంది. అందుకే అవి ఒకే కాలు మీద నిలబడి కూడా హాయిగా నిద్రపోగలవు! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక్క కాలు మీద నిల్చోండి చూద్దాం. ఊగిపోతున్నారు కదా? కానీ Flamingo లు ఒకే కాలు మీద నిల్చుని నిద్ర కూడా పోతాయి! సైంటిస్టులు కనిపెట్టింది ఏంటంటే, ఒంటి కాలు మీద నిల్చున్నప్పుడు దాని బాడీ బరువే కాలుని ఒక బైక్ స్టాండ్ లా లాక్ చేస్తుంది. అందుకే మజిల్స్ కి దాదాపు పనే ఉండదు! ఇంకో కాలు పొట్ట దగ్గర దాచుకోవడం వల్ల వెచ్చగా కూడా ఉంటుంది. మీరు ఎన్ని సెకన్లు ఒంటి కాలు మీద నిల్చోగలరు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Flamingo లు ఒకే కాలుపై ఎందుకు నిల్చుంటాయి? 🦩 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Flamingo ఒకే కాలు మీద ఎందుకు నిల్చుంటుంది? 🦩`
+- **Description**:
 ```text
-🐾 Flamingo బర్డ్స్ ఒకే కాలుపై ఎందుకు నిలబడతాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Flamingo ఒంటి కాలు మీద నిల్చుంటే దాని బరువే కాలుని బైక్ స్టాండ్ లా లాక్ చేస్తుంది — దాదాపు ఎనర్జీ అవసరం లేదు!
+Why flamingos stand on one leg — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు ఎన్ని సెకన్లు ఒంటి కాలు మీద నిల్చోగలరు?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Flamingo బర్డ్స్ ఒకే కాలుపై ఎందుకు నిలబడతాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-flamingo బర్డ్స్ ఒకే కాలుపై ఎందుకు నిలబడతాయి?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `pink flamingo standing one leg, flock flamingos lake, zoo exotic bird, calm water reflection, pink feathers macro, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why flamingos stand on one leg, why flamingos stand on one leg in telugu, flamingos, birds, animal facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎన్ని సెకన్లు ఒంటి కాలు మీద నిల్చోగలరు? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #032 — Rainbow ఎలా ఫామ్ అవుతుందో తెలుసా?
+### వీడియో #032 — రెయిన్ బో నిజానికి ఫుల్ సర్కిల్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Rainbow ఎలా ఫామ్ అవుతుందో తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `rainbow in blue sky, rain falling sunny day, colorful rainbow arch meadow, water drops prism light, smiling kids rainbow` |
+| **Video Subject** | `రెయిన్ బో నిజానికి ఫుల్ సర్కిల్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `rainbow sky, sunshine rain, raindrop close up, glass prism light, airplane window clouds` |
+| **Thumbnail Title** | `రెయిన్ బో = సర్కిల్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఆకాశంలో రెయిన్ బో ఎప్పుడూ హాఫ్ సర్కిల్ మాత్రమే కాదు.. పూర్తి రౌండ్ సర్కిల్ అని తెలుసా! గాల్లో ఉండే చిన్న చిన్న వాటర్ డ్రాప్లెట్స్  నిజానికి ప్రతి రెయిన్ బో ఆకాశంలో ఒక ఫుల్ సర్కిల్ లో ఉంటుంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+రెయిన్ బో హాఫ్ సర్కిల్ అనుకుంటున్నారా? నిజానికి అది పూర్తి గుండ్రటి సర్కిల్! రెయిన్ బో రావాలంటే రెండు కావాలి, ఎండ, వాన చినుకులు. ప్రతి చినుకు ఒక చిన్న ప్రిజం లా పనిచేస్తుంది. సన్ లైట్ లోపలికి వెళ్ళగానే వంగి, ఏడు రంగులుగా విడిపోతుంది. నేల అడ్డుగా ఉండటం వల్ల మనకు పై సగం మాత్రమే కనిపిస్తుంది. విమానం నుంచి చూస్తే ఫుల్ సర్కిల్ కనిపించొచ్చు! మీరు ఎప్పుడైనా డబుల్ రెయిన్ బో చూశారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `రెయిన్ బో ఎలా ఏర్పడుతుంది? 🌈 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `రెయిన్ బో నిజానికి ఫుల్ సర్కిల్! 🌈`
+- **Description**:
 ```text
-🌍 Rainbow ఎలా ఫామ్ అవుతుందో తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Rainbow ఎలా ఫామ్ అవుతుందో తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+రెయిన్ బో నిజానికి ఫుల్ సర్కిల్ — నేల అడ్డుగా ఉండటం వల్ల మనకు సగమే కనిపిస్తుంది!
+How rainbows form full circle rainbow — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీరు ఎప్పుడైనా డబుల్ రెయిన్ బో చూశారా?
 
-🔍 Related Searches / శోధన పదాలు:
-rainbow ఎలా ఫామ్ అవుతుందో తెలుసా?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
+- **Tags**: `how rainbows form full circle rainbow, how rainbows form full circle rainbow in telugu, rainbow, light, weather science, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎప్పుడైనా డబుల్ రెయిన్ బో చూశారా? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `rainbow in blue sky, rain falling sunny day, colorful rainbow arch meadow, water drops prism light, smiling kids rainbow, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #042 — ఎప్పటికీ చనిపోని ఇమ్మోర్టల్ జెల్లీఫిష్!
+### వీడియో #042 — మళ్ళీ బేబీగా మారే జెల్లీఫిష్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఎప్పటికీ చనిపోని ఇమ్మోర్టల్ జెల్లీఫిష్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `immortal jellyfish glowing, transparent sea jellyfish, underwater coral blue, stem cells regenerating, floating marine life` |
+| **Video Subject** | `మళ్ళీ బేబీగా మారే జెల్లీఫిష్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `jellyfish underwater, tiny jellyfish, polyp coral, ocean deep, scientist microscope` |
+| **Thumbnail Title** | `వయసు రివర్స్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రంలో 'Turritopsis dohrnii' అనే ఒక జెల్లీఫిష్ ఉంటుంది, దీనికి బయోలాజికల్ డెత్ అనేది ఉండదు! దీనికి ఏజింగ్ అయినా లేదా ఏదైనా ఇంజురీ అయినా, తన సెల్స్ ని తిరిగి యంగ్ స్టెమ్ సెల్స్ గా మార్చుకుని మళ్ళీ లైఫ్ ని స్టార్ట్ చేస్తుంది! దీనికి చావే లేదు! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+ఈ జెల్లీఫిష్ మళ్ళీ బేబీగా మారిపోగలదు! దాని పేరు 'Turritopsis dohrnii', ముద్దుపేరు 'Immortal Jellyfish'. దెబ్బ తగిలినా, ఆకలైనా, వయసైపోయినా, అది ఒక చిన్న పాలిప్ స్టేజ్ కి వెనక్కి వెళ్ళి, మళ్ళీ మొదటి నుంచి పెరుగుతుంది! థియరీ ప్రకారం ఇలా మళ్ళీ మళ్ళీ చేయొచ్చు. కానీ నిజానికి చాలావరకు వేరే జంతువులకు ఆహారం అవుతాయి. ఏజింగ్ రహస్యం కోసం సైంటిస్టులు దీని జీన్స్ స్టడీ చేస్తున్నారు! మీకు ఈ పవర్ కావాలా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చావే లేని అమర జెల్లీఫిష్! 🪼 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మళ్ళీ బేబీగా మారే జెల్లీఫిష్! 🪼`
+- **Description**:
 ```text
-🌊 ఎప్పటికీ చనిపోని ఇమ్మోర్టల్ జెల్లీఫిష్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఎప్పటికీ చనిపోని ఇమ్మోర్టల్ జెల్లీఫిష్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Turritopsis dohrnii జెల్లీఫిష్ ముందు స్టేజ్ కి వెనక్కి వెళ్ళి మళ్ళీ జీవితం మొదలుపెట్టగలదు — ఏజింగ్ కోసం దీన్ని స్టడీ చేస్తున్నారు!
+Immortal jellyfish turritopsis dohrnii — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మళ్ళీ బేబీగా మారే పవర్ మీకు కావాలా? Yes or No?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ఎప్పటికీ చనిపోని ఇమ్మోర్టల్ జెల్లీఫిష్!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `immortal jellyfish glowing, transparent sea jellyfish, underwater coral blue, stem cells regenerating, floating marine life, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `immortal jellyfish turritopsis dohrnii, immortal jellyfish turritopsis dohrnii in telugu, immortal jellyfish, aging, marine biology, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మళ్ళీ బేబీగా మారే పవర్ మీకు కావాలా? Yes or No? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #052 — స్లీప్ పూర్తిగా మానేస్తే మనిషి ఏమవుతాడు?
+### వీడియో #052 — నిద్ర లేకుండా 11 రోజులు ఉన్న మనిషి!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `స్లీప్ పూర్తిగా మానేస్తే మనిషి ఏమవుతాడు?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `exhausted sleepless person eyes, clock ticking night insomnia, hospital heart monitor, hallucination abstract, tired face close up` |
+| **Video Subject** | `నిద్ర లేకుండా 11 రోజులు ఉన్న మనిషి!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `teenager tired, clock time lapse, person hallucination blur, football player, tired person night` |
+| **Thumbnail Title** | `11 రోజులు నిద్ర లేదు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఒకవేళ మీరు నిద్రపోవడం మానేస్తే ఏమవుతుంది? twenty four hours లోనే బ్రెయిన్ ఆల్కహాల్ తాగిన మత్తులో పడిపోతుంది. three days కి భయంకరమైన హాలూసినేషన్స్ మొదలవుతాయి. seven days లో ఇమ్యూనిటీ సిస్టమ్ క్రాష్ అయిపోయి ప్రాణాలకే ప్రమాదం వస్తుంది! స్లీప్ అనేది బాడీకి అల్టిమేట్ మెడిసిన్. హెల్త్ అండ్ సైన్స్ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+Nineteen sixty three లో Randy Gardner అనే పదిహేడేళ్ళ కుర్రాడు eleven days నిద్రపోకుండా ఉన్నాడు! రెండో రోజుకే ఫోకస్ పోయింది. నాలుగో రోజుకి హాల్యూసినేషన్స్ మొదలయ్యాయి, తను ఒక ఫేమస్ ఫుట్ బాల్ ప్లేయర్ అని అనుకున్నాడు! చివరికి మెమొరీ, మాటలు రెండూ దెబ్బతిన్నాయి. ఒక్క రాత్రి నిద్ర లేకపోయినా బ్రెయిన్ మత్తులో ఉన్నట్లే స్లో అవుతుంది. ఇంట్లో ట్రై చేయకండి! మీరు ఎక్కువలో ఎక్కువ ఎంతసేపు మేల్కొని ఉన్నారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `స్లీప్ లేకపోతే మనిషి చనిపోతాడా? 🛌 🤔 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నిద్ర లేకుండా 11 రోజులు ఉన్న మనిషి! 🛌`
+- **Description**:
 ```text
-🤔 స్లీప్ పూర్తిగా మానేస్తే మనిషి ఏమవుతాడు? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Randy Gardner 11 రోజులు నిద్ర లేకుండా ఉన్నాడు — హాల్యూసినేషన్స్, మెమొరీ సమస్యలు వచ్చాయి. ఒక్క రాత్రి నిద్ర లేకపోయినా బ్రెయిన్ స్లో అవుతుంది!
+What happens if you don't sleep — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• స్లీప్ పూర్తిగా మానేస్తే మనిషి ఏమవుతాడు? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీరు ఎక్కువలో ఎక్కువ ఎన్ని గంటలు నిద్ర లేకుండా ఉన్నారు?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-స్లీప్ పూర్తిగా మానేస్తే మనిషి ఏమవుతాడు?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
+- **Tags**: `what happens if you don't sleep, what happens if you don't sleep in telugu, sleep deprivation, randy gardner, sleep science, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎక్కువలో ఎక్కువ ఎన్ని గంటలు నిద్ర లేకుండా ఉన్నారు? 👇`
+- **Playlist**: `What If Telugu`
 
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `exhausted sleepless person eyes, clock ticking night insomnia, hospital heart monitor, hallucination abstract, tired face close up, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #062 — మేఘాలు దూదిలా వైట్ గా ఎందుకుంటాయి?
+### వీడియో #062 — మేఘాలు దూదిలా తెల్లగా ఎందుకుంటాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మేఘాలు దూదిలా వైట్ గా ఎందుకుంటాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `white fluffy clouds blue sky, airplane flying through clouds, cotton candy sweet, kids lying grass looking sky, sunny sunny clouds` |
+| **Video Subject** | `మేఘాలు దూదిలా తెల్లగా ఎందుకుంటాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `white fluffy clouds, glass of water, water droplets, sunlight through clouds, dark rain clouds` |
+| **Thumbnail Title** | `మేఘాలు ఎందుకు తెలుపు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-టన్నుల కొద్దీ నీరుండే మేఘాలు దూదిలా తెల్లగా ఎందుకుంటాయో ఆలోచించారా? క్లౌడ్స్ లో బిలియన్ల కొద్దీ మైక్రో వాటర్ డ్రాప్లెట్స్ ఉంటాయి! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+మేఘాలు నీటితోనే తయారయ్యాయి, నీరు రంగు లేకుండా ఉంటుంది. మరి మేఘాలు దూదిలా తెల్లగా ఎందుకు? ఒక మేఘంలో కోట్ల కొద్దీ చిన్న నీటి బిందువులు ఉంటాయి. సన్ లైట్ వాటిని తాకినప్పుడు, అన్ని రంగులూ సమానంగా చెల్లాచెదురు అవుతాయి. అన్ని రంగులు కలిస్తే తెలుపు! మరి వాన మేఘాలు నల్లగా ఎందుకు? అవి చాలా మందంగా, నీటితో నిండి ఉండటం వల్ల లైట్ లోపలికి రాదు. అందుకే గ్రే! ఈరోజు మీకు ఏ షేప్ మేఘం కనిపించింది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మేఘాలు దూదిలా తెల్లగా ఎందుకుంటాయి? ☁️ 🔬 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మేఘాలు దూదిలా తెల్లగా ఎందుకుంటాయి? ☁️`
+- **Description**:
 ```text
-🔬 మేఘాలు దూదిలా వైట్ గా ఎందుకుంటాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+మేఘాల్లోని నీటి బిందువులు అన్ని రంగుల లైట్ ని సమానంగా చెల్లాచెదురు చేస్తాయి — అందుకే తెలుపు. మందమైన వాన మేఘాలు లైట్ ని అడ్డుకుంటాయి, అందుకే గ్రే!
+Why are clouds white — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 ఈరోజు మేఘాల్లో మీకు ఏ షేప్ కనిపించింది?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మేఘాలు దూదిలా వైట్ గా ఎందుకుంటాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మేఘాలు దూదిలా వైట్ గా ఎందుకుంటాయి?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `white fluffy clouds blue sky, airplane flying through clouds, cotton candy sweet, kids lying grass looking sky, sunny sunny clouds, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are clouds white, why are clouds white in telugu, clouds, weather, light scattering, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈరోజు మేఘాల్లో మీకు ఏ షేప్ కనిపించింది? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #072 — స్కూల్ బస్సు కంటే పొడవైన నెక్ ఉన్న డైనోసార్!
+### వీడియో #072 — స్కూల్ బస్సు అంత పొడవైన మెడ ఉన్న డైనోసార్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `స్కూల్ బస్సు కంటే పొడవైన నెక్ ఉన్న డైనోసార్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `long neck brachiosaurus treetops, school bus driving, giant dinosaur footprint rock, prehistoric jungle trees, museum dinosaur skeleton` |
+| **Video Subject** | `స్కూల్ బస్సు అంత పొడవైన మెడ ఉన్న డైనోసార్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `long neck dinosaur, school bus, giraffe eating tall tree, dinosaur egg, giant footprint` |
+| **Thumbnail Title** | `బస్సు అంత మెడ!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-బాస్కెట్ బాల్ సైజులో ఉండే డైనోసార్ గుడ్లు ఎలా ఉండేవో తెలుసా? కొన్ని జెయింట్ డైనోసార్ ఎగ్స్ రెండు అడుగుల పొడవు ఉండేవి!  ఇది ఒక పెద్ద స్కూల్ బస్సు కంటే పొడవైనది! ఆ లాంగ్ నెక్ తో అవి భారీ చెట్ల పైకొమ్మల ఆకులను చాలా ఈజీగా తినేసేవి. వాటి ఫుట్ ప్రింట్స్ లో మనం స్విమ్మింగ్ చేయవచ్చు! జెయింట్ డైనోసార్స్ కోసం! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+కొన్ని డైనోసార్ల మెడ ఒక స్కూల్ బస్సు అంత పొడవు! వాటిని 'Sauropods' అంటారు. అందులో 'Mamenchisaurus' మెడ దాదాపు fifteen meters ఉండేది! ఆ పొడవైన మెడతో ఎత్తైన చెట్ల ఆకులను తినేవి, లేదా అడుగు కూడా కదలకుండా చాలా దూరం వరకు మొక్కలను తినేసేవి. పైగా అవి గుడ్లు పెట్టేవి. వాటి కాలి ముద్రలు ఎంత పెద్దవంటే, ఒక చిన్న పిల్లాడు అందులో కూర్చోవచ్చు! మీకు ఇష్టమైన డైనోసార్ ఏది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `స్కూల్ బస్సు కంటే పొడవైన మెడ గల డైనోసార్! 🦕 🦖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `స్కూల్ బస్సు అంత పొడవైన మెడ ఉన్న డైనోసార్! 🦕`
+- **Description**:
 ```text
-🦖 స్కూల్ బస్సు కంటే పొడవైన నెక్ ఉన్న డైనోసార్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• స్కూల్ బస్సు కంటే పొడవైన నెక్ ఉన్న డైనోసార్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Mamenchisaurus లాంటి Sauropods మెడ దాదాపు 15 మీటర్లు — ఒక స్కూల్ బస్సు అంత పొడవు!
+Longest neck dinosaur — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీకు ఇష్టమైన డైనోసార్ ఏది?
 
-🔍 Related Searches / శోధన పదాలు:
-స్కూల్ బస్సు కంటే పొడవైన నెక్ ఉన్న డైనోసార్!, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
+- **Tags**: `longest neck dinosaur, longest neck dinosaur in telugu, sauropods, mamenchisaurus, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఇష్టమైన డైనోసార్ ఏది? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `long neck brachiosaurus treetops, school bus driving, giant dinosaur footprint rock, prehistoric jungle trees, museum dinosaur skeleton, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #082 — క్వాంటమ్ కంప్యూటర్లు అన్ని పాస్ వర్డ్స్ ని హ్యాక్ చేయగలవా?
+### వీడియో #082 — 5 నిమిషాల్లో 10 సెప్టిలియన్ ఏళ్ళ పని!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `క్వాంటమ్ కంప్యూటర్లు అన్ని పాస్ వర్డ్స్ ని హ్యాక్ చేయగలవా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `quantum computer golden chandelier, cryogenic cooling chamber, glowing cyber matrix, padlock encryption digital, binary code stream` |
+| **Video Subject** | `5 నిమిషాల్లో 10 సెప్టిలియన్ ఏళ్ళ పని!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `quantum computer, computer chip, supercomputer server, universe galaxies, padlock security` |
+| **Thumbnail Title** | `క్వాంటమ్ కంప్యూటర్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనిషి చనిపోయినా అతని మెదడును కంప్యూటర్ లో బతికించే 'Mind Uploading' టెక్నాలజీ గురించి విన్నారా? భవిష్యత్తులో మన మెమొరీస్ ని  క్వాంటమ్ కంప్యూటర్లలో Qubits ఒకే టైమ్ లో zero మరియు one గా సూపర్ పొజిషన్ లో ఉండటం వల్లే ఈ అన్ బిలీవబుల్ స్పీడ్ సాధ్యమవుతుంది! ఇది వరల్డ్ లోని అన్ని ఎన్ క్రిప్షన్స్ ని క్రాక్ చేయగలదు! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+Two thousand twenty four చివర్లో Google 'Willow' అనే క్వాంటమ్ చిప్ ని చూపించింది. అది ఒక స్పెషల్ టెస్ట్ ప్రాబ్లం ని ఐదు నిమిషాల్లోపే సాల్వ్ చేసింది. అదే ప్రాబ్లం కి బెస్ట్ సూపర్ కంప్యూటర్ కి ten septillion years పడుతుందని Google చెబుతోంది, అంటే విశ్వం వయసు కంటే చాలా ఎక్కువ! క్వాంటమ్ కంప్యూటర్లు 'Qubits' వాడతాయి. ఫ్యూచర్ లో పెద్ద మెషీన్లు ఇప్పటి ఆన్ లైన్ ఎన్ క్రిప్షన్ ని బ్రేక్ చేయొచ్చు, అందుకే కొత్త 'Quantum-Safe' సెక్యూరిటీ వస్తోంది! ఎగ్జైటింగ్ ఆ? భయంకరమా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `పాస్ వర్డ్స్ ని బ్రేక్ చేసే క్వాంటమ్ కంప్యూటర్! 💻 🤖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `5 నిమిషాల్లో 10 సెప్టిలియన్ ఏళ్ళ పని! ⚛️`
+- **Description**:
 ```text
-🤖 క్వాంటమ్ కంప్యూటర్లు అన్ని పాస్ వర్డ్స్ ని హ్యాక్ చేయగలవా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• క్వాంటమ్ కంప్యూటర్లు అన్ని పాస్ వర్డ్స్ ని హ్యాక్ చేయగలవా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Google Willow క్వాంటమ్ చిప్ 5 నిమిషాల్లో చేసిన పనికి సూపర్ కంప్యూటర్ కి 10 సెప్టిలియన్ ఏళ్ళు పడుతుంది — ఎన్ క్రిప్షన్ కి ఇది ఎందుకు ముఖ్యమో చూడండి.
+Google willow quantum computer — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 క్వాంటమ్ కంప్యూటర్లు ఎగ్జైటింగ్ ఆ? భయంకరమా?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-క్వాంటమ్ కంప్యూటర్లు అన్ని పాస్ వర్డ్స్ ని హ్యాక్ చేయగలవా?, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `quantum computer golden chandelier, cryogenic cooling chamber, glowing cyber matrix, padlock encryption digital, binary code stream, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `google willow quantum computer, google willow quantum computer in telugu, quantum computer, google willow, encryption, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `క్వాంటమ్ కంప్యూటర్లు ఎగ్జైటింగ్ ఆ? భయంకరమా? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #092 — ఫోటోల కంటే అద్దంలో ఎందుకు అందంగా కనిపిస్తాం?
+### వీడియో #092 — ఫోటోల కంటే అద్దంలో ఎందుకు బాగుంటాం?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఫోటోల కంటే అద్దంలో ఎందుకు అందంగా కనిపిస్తాం?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `person looking in bathroom mirror, smiling confident face, taking selfie smartphone camera, handsome beautiful portrait, soft lighting room` |
+| **Video Subject** | `ఫోటోల కంటే అద్దంలో ఎందుకు బాగుంటాం?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person looking mirror, selfie phone camera, face close up, friends taking photo, camera lens` |
+| **Thumbnail Title** | `అద్దం vs ఫోటో!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఉదయం లేవగానే గ్లాస్ వాటర్ తాగితే మీ బాడీలో జరిగే అద్భుతం ఏంటో తెలుసా? రాత్రి ఎనిమిది గంటల నిద్ర తర్వాత బాడీని రీఛార్జ్ చేసే మ్యాజిక్ ఇది!  ఎందుకు అంటే, మన బ్రెయిన్ కి అద్దంలో కనిపించే మన రివర్స్ ఫేస్ ని చూడటమే అలవాటు. కెమెరా మన ఫేస్ ని అన్-మిర్రర్డ్ గా తీసినప్పుడు బ్రెయిన్ కి అది కొత్తగా అనిపించి నచ్చదు! దీనిని 'Mere-Exposure Effect' అంటారు. మీరు ఫోటోల్లోనూ బాగుంటారు! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+అద్దంలో మీరు బాగుంటారు, కానీ ఫోటోలో ఏదో తేడాగా కనిపిస్తారా? మీరు ఒంటరి కాదు! అద్దంలో మీరు ఎప్పుడూ మీ రివర్స్ ఫేస్ నే చూస్తారు. బ్రెయిన్ కి అదే అలవాటు. మనకు బాగా తెలిసిన వాటినే ఇష్టపడతాం, దీన్ని 'Mere-Exposure Effect' అంటారు. కెమెరా మిమ్మల్ని రియల్ గా చూపిస్తుంది, అది మీకు కొత్తగా అనిపిస్తుంది! పైగా దగ్గరగా తీసే సెల్ఫీలు ముక్కును కొంచెం పెద్దగా చూపిస్తాయి. మీ ఫ్రెండ్స్ మాత్రం మిమ్మల్ని ఫోటోలానే చూస్తారు! మీకు ఏది నచ్చుతుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఫోటోల కంటే మిర్రర్ లో ఎందుకు బాగుంటాం? 🪞 💡 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఫోటోల కంటే అద్దంలో ఎందుకు బాగుంటాం? 🪞`
+- **Description**:
 ```text
-💡 ఫోటోల కంటే అద్దంలో ఎందుకు అందంగా కనిపిస్తాం? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+అద్దంలో మన రివర్స్ ఫేస్ కి బ్రెయిన్ అలవాటు పడుతుంది — Mere-Exposure Effect వల్ల ఫోటోలో మనం కొత్తగా అనిపిస్తాం!
+Why you look different in photos than in the mirror — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఫోటోల కంటే అద్దంలో ఎందుకు అందంగా కనిపిస్తాం? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీకు ఏది నచ్చుతుంది? అద్దంలో మీరా? ఫోటోలో మీరా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-ఫోటోల కంటే అద్దంలో ఎందుకు అందంగా కనిపిస్తాం?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
+- **Tags**: `why you look different in photos than in the mirror, why you look different in photos than in the mirror in telugu, mere exposure effect, selfies, psychology, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఏది నచ్చుతుంది? అద్దంలో మీరా? ఫోటోలో మీరా? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `person looking in bathroom mirror, smiling confident face, taking selfie smartphone camera, handsome beautiful portrait, soft lighting room, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-## సెక్షన్ 3: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 3 (Variety Batch 3 — #003, #013, #023, #033, #043, #053, #063, #073, #083, #093)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 3: వెరైటీ బ్యాచ్ 3 (#003, #013, #023, #033, #043, #053, #063, #073, #083, #093)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #003 — మొత్తం డైమండ్స్ తో నిండిన ప్లానెట్ 55 Cancri e!
+### వీడియో #003 — Diamond Planet నిజంగానే ఉందా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మొత్తం డైమండ్స్ తో నిండిన ప్లానెట్ 55 Cancri e!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `sparkling diamond crystals, glowing alien planet, molten core magma, deep space stars, shiny gemstone` |
+| **Video Subject** | `Diamond Planet నిజంగానే ఉందా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `diamond sparkle, planet space, star telescope, lava flow, james webb telescope` |
+| **Thumbnail Title** | `వజ్రాల ప్లానెట్?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-బంగారం, డైమండ్స్ కోసం మనం భూమిని తవ్వుతున్నాం, కానీ స్పేస్ లో మొత్తం వజ్రాలతో తయారైన ఒక ప్లానెట్ ఉందని మీకు తెలుసా? దాని పేరే 'Fifty Five Cancri e'. మన ఎర్త్ కంటే two times పెద్దగా ఉండే ఈ ప్లానెట్ లో కార్బన్ చాలా ఎక్కువ. అక్కడ ఉండే ఎక్స్ట్రీమ్ హీట్ మరియు ప్రెషర్ వల్ల ఆ కార్బన్ మొత్తం ప్యూర్ డైమండ్స్ లా మారిపోయింది! దీని వాల్యూ ఎంతో తెలిస్తే షాక్ అవుతారు—దాదాపు twenty six nonillion డాలర్లు! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+నలభై light years దూరంలో 'Diamond Planet' అని పిలిచే ఒక ప్లానెట్ ఉంది! దాని పేరు Fifty Five Cancri e. భూమి కంటే రెండింతలు పెద్దది, ఎనిమిది రెట్లు బరువైనది. Two thousand twelve లో సైంటిస్టులు, ఇందులో కార్బన్ ఎక్కువ కాబట్టి మూడో వంతు వజ్రమే అయ్యుండొచ్చు అన్నారు! కానీ James Webb టెలిస్కోప్ కొత్త డేటా ప్రకారం, దీని మీద లావా సముద్రం, దాని పైన దట్టమైన వాతావరణం ఉండొచ్చు. వజ్రమా? లావానా? మీ ఓటు ఏంటి?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `వజ్రాలతో నిండిన డైమండ్ ప్లానెట్! 💎 🪐 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Diamond Planet నిజంగానే ఉందా? 💎`
+- **Description**:
 ```text
-🪐 మొత్తం డైమండ్స్ తో నిండిన ప్లానెట్ 55 Cancri e! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+55 Cancri e ని ఒకప్పుడు Diamond Planet అన్నారు. కానీ James Webb కొత్త డేటా ప్రకారం దీని మీద లావా, దట్టమైన వాతావరణం ఉండొచ్చు!
+Diamond planet 55 cancri e — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 Diamond Planet aa? Lava Planet aa? మీ ఓటు ఏంటి?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మొత్తం డైమండ్స్ తో నిండిన ప్లానెట్ 55 Cancri e! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మొత్తం డైమండ్స్ తో నిండిన ప్లానెట్ 55 cancri e!, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `sparkling diamond crystals, glowing alien planet, molten core magma, deep space stars, shiny gemstone, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `diamond planet 55 cancri e, diamond planet 55 cancri e in telugu, 55 cancri e, diamond planet, exoplanet, james webb, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Diamond Planet aa? Lava Planet aa? మీ ఓటు ఏంటి? 👇`
+- **Playlist**: `Space Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #013 — కడుపులోని యాసిడ్ రేజర్ బ్లేడ్లను కరిగించగలదా?
+### వీడియో #013 — బ్లేడ్లను కరిగించే కడుపులోని యాసిడ్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `కడుపులోని యాసిడ్ రేజర్ బ్లేడ్లను కరిగించగలదా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `stomach acid chemical reaction, razor blade dissolving, human digestive system, stomach anatomy glowing, medical lab test` |
+| **Video Subject** | `బ్లేడ్లను కరిగించే కడుపులోని యాసిడ్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `acid bubbling, stomach anatomy, razor blade, mucus protective layer, cells microscope` |
+| **Thumbnail Title** | `మెటల్ ని కరిగించే యాసిడ్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మన స్టమక్ లో ఉండే గ్యాస్ట్రిక్ యాసిడ్ ఎంత పవర్ ఫుల్ అంటే, దాని pH లెవల్ one point five నుండి two point zero మధ్య ఉంటుంది. ఇది రేజర్ బ్లేడ్లు, బోన్స్ ని కూడా కొన్ని గంటల్లో పూర్తిగా కరిగించేయగలదు! మరి మన పొట్ట ఎందుకు కరిగిపోదు అంటే, స్టమక్ లైనింగ్ ప్రతిరోజూ ఒక థిక్ మ్యూకస్ లేయర్ ని రిలీజ్ చేసి మన కడుపుని కాపాడుతుంది! మన బాడీ ఒక అద్భుతం! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+మీ కడుపులో ఉన్న యాసిడ్ మెటల్ ని కూడా కరిగించగలదు! దాని pH దాదాపు one నుంచి two. ఒక ల్యాబ్ స్టడీ లో ఇది ఒక్క రోజులో రేజర్ బ్లేడ్లను బాగా కరిగించేసింది! మరి మన కడుపు ఎందుకు కరిగిపోదు? కడుపు లోపల ఒక మందమైన మ్యూకస్ లేయర్ ఉంటుంది, అది యాసిడ్ ని న్యూట్రలైజ్ చేస్తుంది. పైగా కడుపు లైనింగ్ సెల్స్ ప్రతి కొన్ని రోజులకు కొత్తవి వస్తుంటాయి! మీకు తెలిసిన వింతైన బాడీ ఫ్యాక్ట్ ఏంటి?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `బ్లేడ్లను కరిగించే కడుపులోని యాసిడ్! 🧪 🧠 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `బ్లేడ్లను కరిగించే కడుపులోని యాసిడ్! 🧪`
+- **Description**:
 ```text
-🧠 కడుపులోని యాసిడ్ రేజర్ బ్లేడ్లను కరిగించగలదా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• కడుపులోని యాసిడ్ రేజర్ బ్లేడ్లను కరిగించగలదా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+కడుపులోని యాసిడ్ (pH 1–2) మెటల్ ని కూడా కరిగించగలదు — మ్యూకస్ లేయర్, కొత్త సెల్స్ మన కడుపుని కాపాడతాయి!
+Stomach acid can dissolve metal — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీకు తెలిసిన వింతైన బాడీ ఫ్యాక్ట్ ఏంటి?
 
-🔍 Related Searches / శోధన పదాలు:
-కడుపులోని యాసిడ్ రేజర్ బ్లేడ్లను కరిగించగలదా?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
+- **Tags**: `stomach acid can dissolve metal, stomach acid can dissolve metal in telugu, stomach acid, digestion, human body facts, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు తెలిసిన వింతైన బాడీ ఫ్యాక్ట్ ఏంటి? 👇`
+- **Playlist**: `Human Body Telugu`
 
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `stomach acid chemical reaction, razor blade dissolving, human digestive system, stomach anatomy glowing, medical lab test, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #023 — సీతాకోకచిలుకలు కాళ్ళతో టేస్ట్ చేస్తాయి!
+### వీడియో #023 — కాళ్ళతో టేస్ట్ చేసే సీతాకోకచిలుకలు!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `సీతాకోకచిలుకలు కాళ్ళతో టేస్ట్ చేస్తాయి!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `butterfly on flower, monarch butterfly wings, garden flowers spring, macro insect legs, colorful nature garden` |
+| **Video Subject** | `కాళ్ళతో టేస్ట్ చేసే సీతాకోకచిలుకలు!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `butterfly landing flower, pizza, butterfly feet close up, caterpillar eating leaf, butterfly drinking nectar` |
+| **Thumbnail Title** | `కాళ్ళతో టేస్ట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనం నాలుకతో టేస్ట్ చేస్తే, సీతాకోకచిలుకలు మాత్రం తమ ఫీట్ తో టేస్ట్ చేస్తాయి! వాటి కాళ్ళ కింద స్పెషల్ టేస్ట్ సెన్సార్లు ఉంటాయి. ఏదైనా పువ్వు మీద ల్యాండ్ అయిన వెంటనే కాళ్ళతోనే ఆ ఫ్లవర్ నెక్టార్ తీపిని కనిపెట్టేస్తాయి! నేచర్ లో ఎన్ని వింతలున్నాయో కదా! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+పిజ్జా మీద కాలు పెట్టి టేస్ట్ చూస్తే ఎలా ఉంటుంది? సీతాకోకచిలుకలు దాదాపు అలాగే చేస్తాయి! వాటి కాళ్ళ మీద చిన్న టేస్ట్ సెన్సార్లు ఉంటాయి. ఒక ఆకు మీద వాలగానే దాని టేస్ట్ తెలిసిపోతుంది. తల్లి సీతాకోకచిలుక దీంతోనే గుడ్లు పెట్టడానికి సరైన ఆకుని సెలెక్ట్ చేస్తుంది, పుట్టే గొంగళి పురుగులకు మంచి ఫుడ్ దొరకాలని! ఆ తర్వాత స్ట్రా లాంటి నాలుకతో తేనె తాగుతాయి. మీరు కాళ్ళతో ఏ ఫుడ్ టేస్ట్ చేస్తారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `కాళ్ళతో టేస్ట్ చేసే సీతాకోకచిలుకలు! 🦋 🐾 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `కాళ్ళతో టేస్ట్ చేసే సీతాకోకచిలుకలు! 🦋`
+- **Description**:
 ```text
-🐾 సీతాకోకచిలుకలు కాళ్ళతో టేస్ట్ చేస్తాయి! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• సీతాకోకచిలుకలు కాళ్ళతో టేస్ట్ చేస్తాయి! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+సీతాకోకచిలుకల కాళ్ళ మీద టేస్ట్ సెన్సార్లు ఉంటాయి — తల్లి సీతాకోకచిలుక గుడ్లు పెట్టడానికి సరైన ఆకుని ఇలాగే వెతుకుతుంది!
+Butterflies taste with their feet — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 కాళ్ళతో టేస్ట్ చేయాల్సి వస్తే మీరు ఏ ఫుడ్ సెలెక్ట్ చేస్తారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-సీతాకోకచిలుకలు కాళ్ళతో టేస్ట్ చేస్తాయి!, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `butterfly on flower, monarch butterfly wings, garden flowers spring, macro insect legs, colorful nature garden, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `butterflies taste with their feet, butterflies taste with their feet in telugu, butterflies, insects, animal facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `కాళ్ళతో టేస్ట్ చేయాల్సి వస్తే మీరు ఏ ఫుడ్ సెలెక్ట్ చేస్తారు? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #033 — Popcorn ఎలా పేలుతుందో తెలుసా?
+### వీడియో #033 — పాప్ కార్న్ ఎందుకు 'POP' అంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Popcorn ఎలా పేలుతుందో తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `popcorn popping pan, corn kernels heating up, bowl of fresh popcorn, butter popcorn cinema, slow motion food pop` |
+| **Video Subject** | `పాప్ కార్న్ ఎందుకు 'POP' అంటుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `popcorn popping, corn kernels close up, steam rising, popcorn bowl, family movie night` |
+| **Thumbnail Title** | `POP సీక్రెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మొక్కజొన్న గింజలను హీట్ చేయగానే వైట్ గా పాప్ కార్న్ లా ఎందుకు బ్లాస్ట్ అవుతాయో తెలుసా? ప్రతి గింజ లోపల ఒక చిన్న వాటర్ డ్రాప్ లెట్ ఉంటుంది. పాన్ హీట్ అయినప్పుడు ఆ నీరు స్టీమ్ గా మారి లోపల విపరీతమైన ప్రెషర్ క్రియేట్ అవుతుంది. ఆ ప్రెషర్ కి గింజ ఒక్కసారిగా 'POP' అంటూ పేలిపోతుంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+పాప్! పాప్! పాప్! గట్టి మొక్కజొన్న గింజ మెత్తటి పాప్ కార్న్ గా ఎలా మారుతుంది? ప్రతి గింజ లోపల ఒక చిన్న నీటి చుక్క ఉంటుంది, చుట్టూ గట్టి షెల్. వేడి చేయగానే ఆ నీరు ఆవిరిగా మారుతుంది. ఆవిరి బయటికి రావాలని నెడుతుంది, కానీ షెల్ స్ట్రాంగ్ కాబట్టి ప్రెషర్ పెరుగుతూనే ఉంటుంది. సడెన్ గా పాప్! షెల్ పగిలి, లోపలి స్టార్చ్ తెల్లటి మేఘంలా ఉబ్బుతుంది! మీకు సాల్ట్ పాప్ కార్నా? కారామెల్ ఆ?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `పాప్ కార్న్ ఎందుకు POP అంటూ పేలుతుంది? 🍿 🌍 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `పాప్ కార్న్ ఎందుకు 'POP' అంటుంది? 🍿`
+- **Description**:
 ```text
-🌍 Popcorn ఎలా పేలుతుందో తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+ప్రతి పాప్ కార్న్ గింజలో ఒక నీటి చుక్క ఉంటుంది — వేడికి అది ఆవిరై ప్రెషర్ పెరిగి గింజ పేలుతుంది!
+Why does popcorn pop — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Popcorn ఎలా పేలుతుందో తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీకు సాల్ట్ పాప్ కార్న్ ఇష్టమా? కారామెల్ ఇష్టమా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-popcorn ఎలా పేలుతుందో తెలుసా?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
+- **Tags**: `why does popcorn pop, why does popcorn pop in telugu, popcorn, kitchen science, science facts, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు సాల్ట్ పాప్ కార్న్ ఇష్టమా? కారామెల్ ఇష్టమా? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `popcorn popping pan, corn kernels heating up, bowl of fresh popcorn, butter popcorn cinema, slow motion food pop, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #043 — Octopus కి 3 హార్ట్స్, 9 బ్రెయిన్స్ ఉంటాయి!
+### వీడియో #043 — 3 గుండెలు, బ్లూ బ్లడ్ ఉన్న ఆక్టోపస్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Octopus కి 3 హార్ట్స్, 9 బ్రెయిన్స్ ఉంటాయి!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `octopus swimming coral, blue copper blood, tentacles moving rock, marine life intelligent, camouflaged octopus` |
+| **Video Subject** | `3 గుండెలు, బ్లూ బ్లడ్ ఉన్న ఆక్టోపస్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `octopus underwater, octopus arms, octopus opening jar, octopus camouflage, coral reef rocks` |
+| **Thumbnail Title** | `3 గుండెలు! బ్లూ రక్తం!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఆక్టోపస్ ఒక నార్మల్ సీ క్రియేచర్ కాదు, అది ఆల్మోస్ట్ ఒక ఏలియన్ లాంటిది! దానికి three hearts, బ్లూ కలర్ బ్లడ్, మరియు nine brains ఉంటాయి! దాని ప్రతి చేతికి ఒక్కో మినీ బ్రెయిన్ ఉండటం వల్ల, చేతులు హెడ్ పర్మిషన్ లేకుండానే ఓన్ గా డెసిషన్స్ తీసుకోగలవు! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+ఆక్టోపస్ దాదాపు ఒక ఏలియన్! దానికి three hearts, బ్లూ కలర్ బ్లడ్ ఉంటాయి. దాని న్యూరాన్లలో ఎక్కువ భాగం తల లో కాదు, చేతుల్లో ఉంటాయి! ప్రతి చేయి తాకిన దాన్ని టేస్ట్ చేయగలదు, కొన్ని డెసిషన్స్ సొంతంగా తీసుకోగలదు. జార్ మూతలు తెరుస్తాయి, ట్యాంక్ నుంచి తప్పించుకుంటాయి. సెకనులోనే స్కిన్ కలర్, టెక్స్చర్ మార్చి రాళ్ళలో మాయమైపోతాయి! సముద్రంలో తెలివైనది ఏది? ఆక్టోపస్? డాల్ఫిన్?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `9 మెదళ్ళు ఉన్న ఆక్టోపస్ సీక్రెట్! 🐙 🌊 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `3 గుండెలు, బ్లూ బ్లడ్ ఉన్న ఆక్టోపస్! 🐙`
+- **Description**:
 ```text
-🌊 Octopus కి 3 హార్ట్స్, 9 బ్రెయిన్స్ ఉంటాయి! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+ఆక్టోపస్ కి 3 గుండెలు, బ్లూ రక్తం — దాని న్యూరాన్లలో ఎక్కువ భాగం చేతుల్లోనే ఉంటాయి!
+Octopus facts three hearts blue blood — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 సముద్రంలో తెలివైనది ఏది? ఆక్టోపస్ ఆ? డాల్ఫిన్ ఆ?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Octopus కి 3 హార్ట్స్, 9 బ్రెయిన్స్ ఉంటాయి! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-octopus కి 3 హార్ట్స్, 9 బ్రెయిన్స్ ఉంటాయి!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `octopus swimming coral, blue copper blood, tentacles moving rock, marine life intelligent, camouflaged octopus, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `octopus facts three hearts blue blood, octopus facts three hearts blue blood in telugu, octopus, ocean animals, animal intelligence, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `సముద్రంలో తెలివైనది ఏది? ఆక్టోపస్ ఆ? డాల్ఫిన్ ఆ? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #053 — భూమిపై ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది?
+### వీడియో #053 — ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `భూమిపై ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `lush green forest, giant dragonfly prehistoric, wildfire burning forest, runner athletic sprint, oxygen molecules glowing` |
+| **Video Subject** | `ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `breathing fresh air, forest fire, lightning strike, giant dragonfly, insect macro` |
+| **Thumbnail Title** | `2X ఆక్సిజన్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-భూమి మీద ఉన్న ఆక్సిజన్ twenty one percent నుండి forty two percent కి పెరిగితే మనం సూపర్ మ్యాన్ లా ఫాస్ట్ గా రన్ చేయగలం. కానీ చీమలు, స్పైడర్స్ గద్దలంత పెద్ద సైజ్ కి పెరిగిపోతాయి! అంతేకాదు, చిన్న స్పార్క్ తగిలినా భారీ ఫారెస్ట్ ఫైర్స్ అంటుకుని అడవులన్నీ తగలబడిపోతాయి! నేచర్ బ్యాలెన్స్ చాలా ముఖ్యం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+మనం పీల్చే గాలిలో ఆక్సిజన్ దాదాపు twenty one percent. అది డబుల్ అయితే? మొదట్లో కొంచెం ఎనర్జిటిక్ గా అనిపించొచ్చు. కానీ మంటలు భయంకరంగా మారతాయి! ఇప్పుడు తడిగా ఉండి అంత ఈజీగా కాలని అడవులు కూడా, ఒక్క పిడుగుతో అంటుకుపోతాయి. చాలా తరాల తర్వాత కీటకాలు కూడా పెద్దవి అవ్వొచ్చు. ముప్పై కోట్ల ఏళ్ళ క్రితం ఆక్సిజన్ ఎక్కువ ఉన్నప్పుడు, గద్ద అంత రెక్కలున్న తూనీగలు ఉండేవి! మీరు తట్టుకోగలరా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఆక్సిజన్ డబుల్ అయితే కీటకాలు రాక్షసులవుతాయా? 🌿 🤔 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది? 🌿`
+- **Description**:
 ```text
-🤔 భూమిపై ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• భూమిపై ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+ఆక్సిజన్ డబుల్ అయితే అడవులు ఈజీగా అంటుకుంటాయి — తరాల తర్వాత కీటకాలు కూడా పెద్దవి అవ్వొచ్చు, 30 కోట్ల ఏళ్ళ క్రితం లాగా!
+What if oxygen doubled — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 గద్ద అంత పెద్ద తూనీగలతో మీరు బతకగలరా?
 
-🔍 Related Searches / శోధన పదాలు:
-భూమిపై ఆక్సిజన్ డబుల్ అయితే ఏమవుతుంది?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
+- **Tags**: `what if oxygen doubled, what if oxygen doubled in telugu, oxygen, giant insects, what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `గద్ద అంత పెద్ద తూనీగలతో మీరు బతకగలరా? 👇`
+- **Playlist**: `What If Telugu`
 
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `lush green forest, giant dragonfly prehistoric, wildfire burning forest, runner athletic sprint, oxygen molecules glowing, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #063 — Ice Cream తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది?
+### వీడియో #063 — ఐస్ క్రీమ్ తింటే Brain Freeze ఎందుకు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Ice Cream తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `kid eating ice cream cone, delicious gelato scoops, laughing kid holding head funny, tongue touching roof of mouth, colorful ice cream` |
+| **Video Subject** | `ఐస్ క్రీమ్ తింటే Brain Freeze ఎందుకు?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person eating ice cream, ice cream cone, brain illustration, person holding head, ice cream shop` |
+| **Thumbnail Title** | `BRAIN FREEZE!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చల్లటి ఐస్ క్రీమ్ తినగానే తల దిమ్మున హెడేక్ ఎందుకు వస్తుందో తెలుసా? దీనిని 'Brain Freeze' అంటారు! కోల్డ్ ఐస్ మన నోటి పైభాగాన్ని టచ్ చేసినప్పుడు అక్కడి బ్లడ్ వెసల్స్ ఒక్కసారిగా షాక్ అయ్యి బ్రెయిన్ కి ఎమర్జెన్సీ అలారం పంపుతాయి. మీ వెచ్చని టంగ్ ని నోటి పైభాగంలో నొక్కి పెడితే బ్రెయిన్ ఫ్రీజ్ వెంటనే తగ్గిపోతుంది! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+అబ్బా! చల్లటి ఐస్ క్రీమ్ పెద్ద బైట్ వేయగానే తల దిమ్మెక్కుతుంది. దీన్ని 'Brain Freeze' అంటారు! చల్లటిది నోటి పైభాగాన్ని తాకగానే, అక్కడి బ్లడ్ వెసల్స్ సడెన్ గా కుంచించుకుని, మళ్ళీ వెంటనే విచ్చుకుంటాయి. ఒక నెర్వ్ బ్రెయిన్ కి అలారం పంపుతుంది, మనకు అది నుదుటి దగ్గర తలనొప్పిలా అనిపిస్తుంది. సింపుల్ ట్రిక్: మీ నాలుకను నోటి పైభాగానికి నొక్కి వెచ్చబరచండి! మీ ఫేవరెట్ ఐస్ క్రీమ్ ఫ్లేవర్ ఏది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఐస్ క్రీమ్ తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది? #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఐస్ క్రీమ్ తింటే Brain Freeze ఎందుకు? 🍦`
+- **Description**:
 ```text
-🔬 Ice Cream తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Ice Cream తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+చల్లటిది నోటి పైభాగాన్ని తాకితే బ్లడ్ వెసల్స్ కుంచించుకుని విచ్చుకుంటాయి — అదే Brain Freeze! నాలుకతో నొక్కితే తగ్గుతుంది.
+Why do we get brain freeze — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీ ఫేవరెట్ ఐస్ క్రీమ్ ఫ్లేవర్ ఏది?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ice cream తింటే బ్రెయిన్ ఫ్రీజ్ ఎందుకు వస్తుంది?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `kid eating ice cream cone, delicious gelato scoops, laughing kid holding head funny, tongue touching roof of mouth, colorful ice cream, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we get brain freeze, why do we get brain freeze in telugu, brain freeze, ice cream, human body, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఫేవరెట్ ఐస్ క్రీమ్ ఫ్లేవర్ ఏది? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #073 — రాక్షస Megalodon షార్క్ ఎంత పెద్దదో తెలుసా?
+### వీడియో #073 — మెగలోడాన్ షార్క్ ఎంత పెద్దది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `రాక్షస Megalodon షార్క్ ఎంత పెద్దదో తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `megalodon shark swimming ocean, great white shark underwater, giant shark tooth fossil, deep blue ocean predators, massive sea monster` |
+| **Video Subject** | `మెగలోడాన్ షార్క్ ఎంత పెద్దది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `shark swimming, great white shark, fossil shark tooth, whale ocean, ocean deep blue` |
+| **Thumbnail Title** | `అతిపెద్ద షార్క్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రాలలో రూల్ చేసిన బిగ్గెస్ట్ ప్రిడేటర్ Megalodon Shark! ఇది sixty feet length ఉండేది, అంటే three Great White Sharks ని వరుసగా నిలబెట్టినంత పెద్దది! దాని దవడలు seven feet width ఉండి, ఒక కిల్లర్ వేల్ ని కూడా సింగిల్ బైట్ తో నమిలేసేది! అదృష్టవశాత్తూ ఇది ఎప్పుడో అంతరించిపోయింది! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+చరిత్రలో అతిపెద్ద షార్క్ Megalodon! ఇది డైనోసార్ కాదు, డైనోసార్లు పోయిన చాలా కాలం తర్వాత బతికిన భారీ షార్క్. సైంటిస్టుల అంచనా ప్రకారం ఇది దాదాపు fifteen to eighteen meters పొడవు పెరిగేది, అంటే మూడు Great White Sharks వరుసగా పెట్టినంత! దాని పళ్ళు ఒక పెద్దవాళ్ళ అరచేయి అంత పెద్దవి. ఇది తిమింగలాలను వేటాడేది! కానీ భయపడకండి, ఇది మిలియన్ల సంవత్సరాల క్రితమే అంతరించిపోయింది. ఇప్పుడు ఉంటే మీరు సముద్రంలోకి దిగుతారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `రాక్షస మెగలోడాన్ షార్క్ ఎంత పెద్దది? 🦈 🦖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మెగలోడాన్ షార్క్ ఎంత పెద్దది? 🦈`
+- **Description**:
 ```text
-🦖 రాక్షస Megalodon షార్క్ ఎంత పెద్దదో తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Megalodon దాదాపు 15–18 మీటర్ల పొడవు, అరచేయి అంత పళ్ళు — తిమింగలాలను వేటాడేది, మిలియన్ల ఏళ్ళ క్రితం అంతరించిపోయింది.
+How big was megalodon — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• రాక్షస Megalodon షార్క్ ఎంత పెద్దదో తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 Megalodon ఇప్పుడు ఉంటే మీరు సముద్రంలోకి దిగుతారా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-రాక్షస megalodon షార్క్ ఎంత పెద్దదో తెలుసా?, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
+- **Tags**: `how big was megalodon, how big was megalodon in telugu, megalodon, sharks, prehistoric animals, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Megalodon ఇప్పుడు ఉంటే మీరు సముద్రంలోకి దిగుతారా? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `megalodon shark swimming ocean, great white shark underwater, giant shark tooth fossil, deep blue ocean predators, massive sea monster, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #083 — Neuralink: బ్రెయిన్ తోనే కంప్యూటర్ ని వాడొచ్చా?
+### వీడియో #083 — ఆలోచనతోనే కంప్యూటర్ ని కంట్రోల్ చేయొచ్చా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Neuralink: బ్రెయిన్ తోనే కంప్యూటర్ ని వాడొచ్చా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `brain computer interface cyber, glowing electrode neural, futuristic cyberpunk surgery, telekinesis mind control, virtual reality headset` |
+| **Video Subject** | `ఆలోచనతోనే కంప్యూటర్ ని కంట్రోల్ చేయొచ్చా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `brain chip, person playing chess laptop, neurons, wheelchair technology, computer cursor` |
+| **Thumbnail Title** | `ఆలోచనతో కంట్రోల్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చేతులు కదపకుండా కేవలం థాట్స్ తోనే మొబైల్ ని, కంప్యూటర్ ని ఆపరేట్ చేయడం పాజిబులేనా? ఎలాన్ మస్క్ కి చెందిన Neuralink ఆల్రెడీ హ్యూమన్ పేషెంట్స్ పై దీనిని సక్సెస్ ఫుల్ గా టెస్ట్ చేసింది! బ్రెయిన్ లో అమర్చిన మైక్రో చిప్ మన ఆలోచనలను డిజిటల్ సిగ్నల్స్ గా మారుస్తుంది. ఫ్యూచర్ లో మనం టెలిపతి ద్వారా మాట్లాడవచ్చు! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+Two thousand twenty four లో, భుజాల కింద నుంచి పెరాలిసిస్ ఉన్న ఒక వ్యక్తి కేవలం ఆలోచనలతోనే ల్యాప్ టాప్ లో చెస్ ఆడాడు! Neuralink బ్రెయిన్ ఇంప్లాంట్ పెట్టుకున్న ఫస్ట్ పర్సన్ అతనే. బ్రెయిన్ లోని చిన్న దారాలు న్యూరాన్ల సిగ్నల్స్ ని పట్టుకుంటాయి, సాఫ్ట్ వేర్ వాటిని కర్సర్ మూవ్మెంట్స్ గా మారుస్తుంది. వేరే రీసెర్చ్ టీమ్స్ బ్రెయిన్ సిగ్నల్స్ ని మాటలుగా మార్చడంలో కూడా హెల్ప్ చేశాయి! మీరు బ్రెయిన్ చిప్ పెట్టించుకుంటారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఆలోచనతోనే మొబైల్ ని కంట్రోల్ చేయవచ్చా? 🧠 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఆలోచనతోనే కంప్యూటర్ ని కంట్రోల్ చేయొచ్చా? 🧠`
+- **Description**:
 ```text
-🤖 Neuralink: బ్రెయిన్ తోనే కంప్యూటర్ ని వాడొచ్చా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+2024 లో పెరాలిసిస్ ఉన్న వ్యక్తి Neuralink ఇంప్లాంట్ తో ఆలోచనలతోనే చెస్ ఆడాడు — Brain-Computer Interfaces రియాలిటీ అవుతున్నాయి!
+Neuralink brain computer interface — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు ఎప్పుడైనా బ్రెయిన్ చిప్ పెట్టించుకుంటారా? Yes or No?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Neuralink: బ్రెయిన్ తోనే కంప్యూటర్ ని వాడొచ్చా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-neuralink: బ్రెయిన్ తోనే కంప్యూటర్ ని వాడొచ్చా?, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `brain computer interface cyber, glowing electrode neural, futuristic cyberpunk surgery, telekinesis mind control, virtual reality headset, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `neuralink brain computer interface, neuralink brain computer interface in telugu, neuralink, brain chip, future tech, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎప్పుడైనా బ్రెయిన్ చిప్ పెట్టించుకుంటారా? Yes or No? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #093 — నిద్రలో కింద పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం?
+### వీడియో #093 — నిద్రలో పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `నిద్రలో కింద పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `person falling down cliff dream, sleeping in bed waking up startled, brain neural pulse, heart rate monitor, cozy bedroom moonlight` |
+| **Video Subject** | `నిద్రలో పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person falling asleep bed, falling dream cliff, person waking startled, coffee cup night, tired person` |
+| **Thumbnail Title** | `నిద్రలో ఉలికిపాటు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-నిద్రలోకి జారుకునేటప్పుడు సడెన్ గా ఏదో లోయలో పడిపోతున్నట్లు ఉలిక్కిపడి లేచారా? దీనిని 'Hypnic Jerk' అంటారు! మనం నిద్రపోయేటప్పుడు మన హార్ట్ రేట్, బ్రీతింగ్ చాలా స్లో అవుతాయి. అప్పుడు మన బ్రెయిన్ మనం చనిపోతున్నామేమో అని పొరబడి, మనల్ని సేవ్ చేయడానికి మజిల్స్ కి సడెన్ గా ఎలక్ట్రిక్ షాక్ ఇచ్చి లేపుతుంది! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+నిద్రలోకి జారుకుంటుండగా సడెన్ గా ఏదో లోయలో పడిపోతున్నట్లు ఉలిక్కిపడి లేచారా? దీన్ని 'Hypnic Jerk' అంటారు! దాదాపు చాలామందికి ఇది జరుగుతుంది. నిద్ర మొదలవుతున్నప్పుడు మజిల్స్ రిలాక్స్ అవుతాయి. ఒక థియరీ ప్రకారం, బ్రెయిన్ ఈ సడెన్ రిలాక్సేషన్ ని పడిపోతున్నట్లు పొరబడి, మజిల్స్ ని కుదుపుతుంది. కాఫీ, స్ట్రెస్, అలసట ఉంటే ఇది ఎక్కువగా వస్తుంది. ఇది సాధారణంగా ప్రమాదకరం కాదు! మీకు ఇది ఎంత తరచుగా జరుగుతుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `నిద్రలో పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం? 🛌 💡 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నిద్రలో పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం? 🛌`
+- **Description**:
 ```text
-💡 నిద్రలో కింద పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• నిద్రలో కింద పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+నిద్రలో పడిపోతున్నట్లు ఉలిక్కిపడటాన్ని Hypnic Jerk అంటారు — చాలామందికి వస్తుంది, సాధారణంగా ప్రమాదకరం కాదు!
+Why do we jerk while falling asleep hypnic jerk — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీకు Hypnic Jerk ఎంత తరచుగా వస్తుంది?
 
-🔍 Related Searches / శోధన పదాలు:
-నిద్రలో కింద పడిపోతున్నట్లు ఎందుకు ఉలిక్కిపడతాం?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
+- **Tags**: `why do we jerk while falling asleep hypnic jerk, why do we jerk while falling asleep hypnic jerk in telugu, hypnic jerk, sleep, brain, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు Hypnic Jerk ఎంత తరచుగా వస్తుంది? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `person falling down cliff dream, sleeping in bed waking up startled, brain neural pulse, heart rate monitor, cozy bedroom moonlight, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-## సెక్షన్ 4: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 4 (Variety Batch 4 — #004, #014, #024, #034, #044, #054, #064, #074, #084, #094)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 4: వెరైటీ బ్యాచ్ 4 (#004, #014, #024, #034, #044, #054, #064, #074, #084, #094)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #004 — Saturn ప్లానెట్ కి చుట్టూ రింగ్స్ ఎలా వచ్చాయి?
+### వీడియో #004 — Saturn రింగ్స్ దేనితో తయారయ్యాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Saturn ప్లానెట్ కి చుట్టూ రింగ్స్ ఎలా వచ్చాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `saturn planet rings, ice crystals space, cosmic orbiting planets, solar system 3d, glittering space dust` |
+| **Video Subject** | `Saturn రింగ్స్ దేనితో తయారయ్యాయి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `saturn planet rings, ice chunks space, sand grains, house, moon breaking apart` |
+| **Thumbnail Title** | `రింగ్స్ అంతా ఐస్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-శని గ్రహం చుట్టూ ఉండే అందమైన రింగ్స్ రాళ్లతో తయారు కాలేదు! అవి బిలియన్ల కొద్దీ ఐస్ ముక్కలతో ఏర్పడ్డాయి! Saturn రింగ్స్ బిలియన్ల కొద్దీ ఐస్ ముక్కలు మరియు స్పేస్ డస్ట్ తో ఏర్పడ్డాయి. కొన్ని ఐస్ క్యూబ్స్ లా చిన్నగా ఉంటే, మరికొన్ని పెద్ద బిల్డింగ్స్ అంత సైజ్ లో ఉంటాయి! ఒక పురాతన ఐస్ మూన్ Saturn గ్రావిటీకి ముక్కలై ఇలా రింగ్స్ లా మారిందని సైంటిస్టులు చెబుతారు! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+Saturn చుట్టూ ఉన్న అందమైన రింగ్స్ సాలిడ్ గా ఉండవు! అవి బిలియన్ల కొద్దీ ఐస్ ముక్కలతో తయారయ్యాయి. కొన్ని ఇసుక రేణువు అంత చిన్నవి, కొన్ని ఒక ఇల్లు అంత పెద్దవి! ఈ రింగ్స్ లక్షల కిలోమీటర్ల వెడల్పు ఉన్నా, మందం మాత్రం చాలా చోట్ల ఒక బిల్డింగ్ అంతే! ఒక పాత మూన్ Saturn కి చాలా దగ్గరగా వచ్చి ముక్కలైపోయి ఇవి ఏర్పడ్డాయని కొంతమంది సైంటిస్టులు అనుకుంటున్నారు. మీకు ఇష్టమైన ప్లానెట్ ఏది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Saturn రింగ్స్ వెనుక ఉన్న సీక్రెట్! 🪐 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Saturn రింగ్స్ దేనితో తయారయ్యాయి? 🪐`
+- **Description**:
 ```text
-🪐 Saturn ప్లానెట్ కి చుట్టూ రింగ్స్ ఎలా వచ్చాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Saturn ప్లానెట్ కి చుట్టూ రింగ్స్ ఎలా వచ్చాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Saturn రింగ్స్ బిలియన్ల ఐస్ ముక్కలతో తయారయ్యాయి — ఇసుక రేణువు నుంచి ఇల్లు అంత సైజ్ వరకు!
+What are saturn's rings made of — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీకు ఇష్టమైన ప్లానెట్ ఏది?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-saturn ప్లానెట్ కి చుట్టూ రింగ్స్ ఎలా వచ్చాయి?, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `saturn planet rings, ice crystals space, cosmic orbiting planets, solar system 3d, glittering space dust, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what are saturn's rings made of, what are saturn's rings made of in telugu, saturn rings, saturn facts, planets, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఇష్టమైన ప్లానెట్ ఏది? 👇`
+- **Playlist**: `Space Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #014 — మన రక్తనాళాలు భూమిని 2 సార్లు చుట్టేయగలవా?
+### వీడియో #014 — మన రక్తనాళాలతో భూమిని 2 సార్లు చుట్టొచ్చు!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మన రక్తనాళాలు భూమిని 2 సార్లు చుట్టేయగలవా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `blood cells flowing vein, earth globe equator, microscopic capillaries, human heart pumping, medical vascular network` |
+| **Video Subject** | `మన రక్తనాళాలతో భూమిని 2 సార్లు చుట్టొచ్చు!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `blood vessels, earth from space, highway night traffic, capillaries microscope, red blood cells` |
+| **Thumbnail Title** | `ఒక లక్ష KM రక్తనాళాలు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మన శరీరంలోని రక్తనాళాలతో భూమిని ఏకంగా రెండు సార్లు చుట్టేయవచ్చని తెలుసా!  ఈ లెంగ్త్ తో మన ఎర్త్ ని two point five times చుట్టేయవచ్చు! మన బాడీలోని ప్రతి సెల్ కి ఆక్సిజన్ అందించడానికి ఇంత పెద్ద హైవే నెట్ వర్క్ రన్ అవుతోంది! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+మీ బాడీ లోపల ఒక భారీ హైవే నెట్ వర్క్ ఉంది! ఒక పెద్దవాళ్ళ బాడీలోని arteries, veins, చిన్న capillaries అన్నింటినీ ఒక లైన్ లో పెడితే, దాదాపు one lakh kilometers ఉంటుందని అంచనా! అంటే భూమిని రెండు సార్లకు పైగా చుట్టేయొచ్చు! ఇందులో ఎక్కువ భాగం capillaries. అవి వెంట్రుక కంటే సన్నగా ఉంటాయి, రెడ్ బ్లడ్ సెల్స్ ఒక్కొక్కటిగా లైన్ లో వెళ్ళాలి! ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మన బ్లడ్ వెసల్స్ భూమినే చుట్టేయగలవా? 🩸 🧠 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మన రక్తనాళాలతో భూమిని 2 సార్లు చుట్టొచ్చు! 🩸`
+- **Description**:
 ```text
-🧠 మన రక్తనాళాలు భూమిని 2 సార్లు చుట్టేయగలవా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+మన బాడీలోని రక్తనాళాలన్నీ కలిపితే దాదాపు 1 లక్ష km — భూమిని రెండు సార్లకు పైగా చుట్టేయొచ్చు!
+How long are human blood vessels — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మన రక్తనాళాలు భూమిని 2 సార్లు చుట్టేయగలవా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మన రక్తనాళాలు భూమిని 2 సార్లు చుట్టేయగలవా?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
+- **Tags**: `how long are human blood vessels, how long are human blood vessels in telugu, blood vessels, circulatory system, human body facts, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No? 👇`
+- **Playlist**: `Human Body Telugu`
 
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `blood cells flowing vein, earth globe equator, microscopic capillaries, human heart pumping, medical vascular network, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #024 — Dogs కూడా మనలాగే డ్రీమ్స్ కంటాయా?
+### వీడియో #024 — కుక్కలు కూడా కలలు కంటాయా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Dogs కూడా మనలాగే డ్రీమ్స్ కంటాయా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `cute dog sleeping twitching, golden retriever playing, puppy running grass, happy pet smiling, fluffy dog sofa` |
+| **Video Subject** | `కుక్కలు కూడా కలలు కంటాయా?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `dog sleeping, puppy twitching paws, dog running park, dog playing ball, person hugging dog` |
+| **Thumbnail Title** | `కుక్కలు కలలు కంటాయి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-కుక్కలు నిద్రలో కాళ్ళు కదుపుతుంటే అవి కలలు కంటున్నట్లేనా? సైన్స్ ఏం చెబుతుందో చూడండి!  డాగ్స్ కూడా మనలాగే కలలు కంటాయి! నిద్రలో అవి బాల్స్ ని చేజ్ చేసినట్లు, పార్క్ లో రన్ చేసినట్లు, అన్నింటికంటే ఎక్కువగా తమ ఫేవరెట్ ఓనర్ అయిన మీతో ఆడుకున్నట్లు కలలు కంటాయి! పెట్ లవర్స్ అందరూ! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+నిద్రపోతున్న మీ కుక్క కాళ్ళు ఆడిస్తూ, చిన్నగా మొరుగుతుందా? అది కల కంటూ ఉండొచ్చు! మనం కలలు కనే స్లీప్ స్టేజ్ కుక్కలకు కూడా ఉంటుందని సైంటిస్టులు కనిపెట్టారు. ఆ టైమ్ లో వాటి బ్రెయిన్ బిజీగా ఉంటుంది, కనురెప్పల కింద కళ్ళు కదులుతాయి, కాళ్ళు పరిగెత్తుతున్నట్లు ఆడుతాయి. అవి దేని గురించి కలలు కంటాయి? ఆడుకోవడం, పరిగెత్తడం, బహుశా తమకు ఇష్టమైన ఓనర్ గురించి! మీ పెట్ పేరు ఏంటి?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మీ పెట్ డాగ్ దేని గురించి కలలు కంటుందో తెలుసా? 🐶 🐾 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `కుక్కలు కూడా కలలు కంటాయా? 🐶`
+- **Description**:
 ```text
-🐾 Dogs కూడా మనలాగే డ్రీమ్స్ కంటాయా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+మనం కలలు కనే స్లీప్ స్టేజ్ కుక్కలకు కూడా ఉంటుంది — నిద్రలో కాళ్ళు ఆడించడం, చిన్నగా మొరగడం కలకి సంకేతం కావచ్చు!
+Do dogs dream — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీ పెట్ పేరు ఏంటి? కామెంట్ లో చెప్పండి!
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Dogs కూడా మనలాగే డ్రీమ్స్ కంటాయా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-dogs కూడా మనలాగే డ్రీమ్స్ కంటాయా?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `cute dog sleeping twitching, golden retriever playing, puppy running grass, happy pet smiling, fluffy dog sofa, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `do dogs dream, do dogs dream in telugu, dogs, pets, dog facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ పెట్ పేరు ఏంటి? కామెంట్ లో చెప్పండి! 👇`
+- **Playlist**: `Animal Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #034 — వాటర్ లో ఉంటే ఫింగర్స్ ముడతలు ఎందుకు పడతాయి?
+### వీడియో #034 — నీళ్ళలో వేళ్ళు ఎందుకు ముడతలు పడతాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `వాటర్ లో ఉంటే ఫింగర్స్ ముడతలు ఎందుకు పడతాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `wrinkled fingers bath water, splashing water pool, bubbles in bathtub, kid washing hands, water ripples blue` |
+| **Video Subject** | `నీళ్ళలో వేళ్ళు ఎందుకు ముడతలు పడతాయి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `wrinkled fingers, hands in water, tire tread close up, wet stones in hand, bath water` |
+| **Thumbnail Title** | `ముడతల వేళ్ళ సీక్రెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-నీటిలో ఎక్కువసేపు ఉంటే చేతి వేళ్ళు ముడతలు పడటం వెనుక దాగున్న సూపర్ పవర్ ఏంటో తెలుసా!  తడిసిన వస్తువులను జారకుండా గట్టిగా పట్టుకోవడానికి మన నెర్వస్ సిస్టమ్ కావాలనే ఈ టైర్ గ్రిప్స్ లాంటి ముడతలను క్రియేట్ చేస్తుంది! మన బాడీ ఎంత స్మార్ట్ కదా! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+ఎక్కువసేపు స్నానం చేస్తే వేళ్ళు ముడతలు పడతాయి కదా? స్కిన్ నీటిని పీల్చుకోవడం వల్ల కాదు! మన బాడీ కావాలనే అలా చేస్తుంది. మన నెర్వ్స్ వేళ్ళ కొనల్లోని బ్లడ్ వెసల్స్ ని కుంచింపజేస్తాయి, దాంతో స్కిన్ ముడతలు పడుతుంది. ఈ ముడతలు టైర్ గ్రిప్ లా పనిచేసి, తడి వస్తువులను జారకుండా పట్టుకోవడానికి హెల్ప్ చేస్తాయని సైంటిస్టుల అంచనా! ఈసారి స్నానం తర్వాత మీ వేళ్ళు చూడండి. ఇది మీకు తెలుసా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `వాటర్ లో ఫింగర్స్ ఎందుకు ముడతలు పడతాయి? 🛁 🌍 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నీళ్ళలో వేళ్ళు ఎందుకు ముడతలు పడతాయి? 🛁`
+- **Description**:
 ```text
-🌍 వాటర్ లో ఉంటే ఫింగర్స్ ముడతలు ఎందుకు పడతాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• వాటర్ లో ఉంటే ఫింగర్స్ ముడతలు ఎందుకు పడతాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+నీళ్ళలో వేళ్ళు ముడతలు పడటం నెర్వ్స్ వల్ల జరుగుతుంది — తడి వస్తువులను గ్రిప్ చేయడానికి హెల్ప్ చేయొచ్చు!
+Why fingers wrinkle in water — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No?
 
-🔍 Related Searches / శోధన పదాలు:
-వాటర్ లో ఉంటే ఫింగర్స్ ముడతలు ఎందుకు పడతాయి?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
+- **Tags**: `why fingers wrinkle in water, why fingers wrinkle in water in telugu, wrinkly fingers, human body, science facts, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `wrinkled fingers bath water, splashing water pool, bubbles in bathtub, kid washing hands, water ripples blue, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #044 — పిస్టల్ ష్రింప్ బుల్లెట్ కంటే స్పీడ్ గా కొడుతుంది!
+### వీడియో #044 — సూర్యుడంత వేడి పుట్టించే చిట్టి రొయ్య!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `పిస్టల్ ష్రింప్ బుల్లెట్ కంటే స్పీడ్ గా కొడుతుంది!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `pistol shrimp snapping claw, underwater cavitation bubble, sun heat plasma, macro ocean shrimp, predator strike coral` |
+| **Video Subject** | `సూర్యుడంత వేడి పుట్టించే చిట్టి రొయ్య!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `pistol shrimp, shrimp claw close up, underwater bubble, sun surface, small fish reef` |
+| **Thumbnail Title** | `రొయ్య బుడగ = సూర్యుడు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రంలో ఒక బుల్లెట్ కంటే వేగంగా షాక్ వేవ్ కొట్టే చిట్టి రొయ్య ఇదే!  అది పంజాని క్లోజ్ చేసినప్పుడు వచ్చే వాటర్ బబుల్ టెంపరేచర్ సూర్యుడి ఉపరితలం అంత వేడిగా ఉంటుంది! ఆ షాక్ వేవ్ కి చేపలు స్పృహ తప్పుతాయి. నేచర్ పవర్స్ కోసం! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+Pistol Shrimp కొన్ని సెంటీమీటర్లే ఉంటుంది, కానీ ఒక బుడగతో ఫైట్ చేస్తుంది! తన పెద్ద పంజాని టక్కున మూసినప్పుడు, నీరు ఎంత స్పీడ్ గా దూసుకెళ్తుందంటే ఒక బుడగ పుడుతుంది. ఆ బుడగ పగిలినప్పుడు నీటి లోపల తుపాకీ కంటే గట్టి సౌండ్ వస్తుంది. ఒక్క క్షణం పాటు దాని లోపల వేడి వేల డిగ్రీలకు చేరుతుంది, దాదాపు సూర్యుడి ఉపరితలం అంత! చిన్న చేపలు స్పృహ తప్పుతాయి. ఏ సముద్ర జీవి అంటే మీకు భయం?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `బుల్లెట్ కంటే ఫాస్ట్ గా కొట్టే చిట్టి రొయ్య! 🦐 🌊 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సూర్యుడంత వేడి పుట్టించే చిట్టి రొయ్య! 🦐`
+- **Description**:
 ```text
-🌊 పిస్టల్ ష్రింప్ బుల్లెట్ కంటే స్పీడ్ గా కొడుతుంది! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• పిస్టల్ ష్రింప్ బుల్లెట్ కంటే స్పీడ్ గా కొడుతుంది! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Pistol Shrimp పంజా మూయగానే వచ్చే బుడగ ఒక్క క్షణం సూర్యుడి ఉపరితలం అంత వేడి అవుతుంది — చిన్న చేపలు స్పృహ తప్పుతాయి!
+Pistol shrimp hotter than the sun — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 ఏ సముద్ర జీవి అంటే మీకు ఎక్కువ భయం?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-పిస్టల్ ష్రింప్ బుల్లెట్ కంటే స్పీడ్ గా కొడుతుంది!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `pistol shrimp snapping claw, underwater cavitation bubble, sun heat plasma, macro ocean shrimp, predator strike coral, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `pistol shrimp hotter than the sun, pistol shrimp hotter than the sun in telugu, pistol shrimp, ocean animals, animal superpowers, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఏ సముద్ర జీవి అంటే మీకు ఎక్కువ భయం? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #054 — Moon ప్లేస్ లో జూపిటర్ వస్తే ఎలా ఉంటుంది?
+### వీడియో #054 — చంద్రుడి ప్లేస్ లో Jupiter ఉంటే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Moon ప్లేస్ లో జూపిటర్ వస్తే ఎలా ఉంటుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `giant jupiter planet sky, full moon replacement night, volcano erupting magma, red spot jupiter close, tsunami waves night` |
+| **Video Subject** | `చంద్రుడి ప్లేస్ లో Jupiter ఉంటే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `full moon night, jupiter planet, giant ocean tide, volcano eruption, io moon volcano` |
+| **Thumbnail Title** | `మన ఆకాశంలో Jupiter!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చంద్రుడి ప్లేస్ లో జూపిటర్ వస్తే రాత్రి ఆకాశం ఎలా కనిపిస్తుందో ఊహించగలరా!  జూపిటర్ మన స్కై నిండా భారీగా కనిపిస్తూ, పౌర్ణమి కంటే forty times ఎక్కువ బ్రైట్ గా వెలుగుతుంది! కానీ దాని ఇమ్మేన్స్ గ్రావిటీ ఎర్త్ ని చిన్నాభిన్నం చేసి, సూపర్ వోల్కనోలు, సునామీలతో భూమిని నాశనం చేస్తుంది! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+చంద్రుడి ప్లేస్ లో Jupiter ని పెడితే ఎలా ఉంటుంది? అది పౌర్ణమి చంద్రుడి కంటే దాదాపు forty times వెడల్పుగా, ఆకాశంలో పెద్ద భాగం నిండిపోయేలా కనిపిస్తుంది! చూడటానికి సూపర్. కానీ డేంజర్! దాని గ్రావిటీ భారీ టైడ్స్ ని సృష్టిస్తుంది. భూమి లోపల నిరంతరం సాగదీయడం వల్ల, Jupiter మూన్ Io లాగా ప్రతిచోటా అగ్నిపర్వతాలు పేలొచ్చు. పైగా, నిజానికి మనమే Jupiter చుట్టూ తిరుగుతాం! ఆ వ్యూ కోసం రిస్క్ తీసుకుంటారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Moon స్థానంలో Jupiter ఉంటే? 🪐 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చంద్రుడి ప్లేస్ లో Jupiter ఉంటే? 🪐`
+- **Description**:
 ```text
-🤔 Moon ప్లేస్ లో జూపిటర్ వస్తే ఎలా ఉంటుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+చంద్రుడి దూరంలో Jupiter ఉంటే, అది చంద్రుడి కంటే 40 రెట్లు వెడల్పుగా కనిపిస్తుంది — కానీ దాని గ్రావిటీ టైడ్స్, అగ్నిపర్వతాలు తెస్తుంది!
+What if jupiter replaced the moon — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Moon ప్లేస్ లో జూపిటర్ వస్తే ఎలా ఉంటుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 ఆ వ్యూ కోసం రిస్క్ తీసుకుంటారా? Yes or No?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-moon ప్లేస్ లో జూపిటర్ వస్తే ఎలా ఉంటుంది?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
+- **Tags**: `what if jupiter replaced the moon, what if jupiter replaced the moon in telugu, jupiter, moon, space what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఆ వ్యూ కోసం రిస్క్ తీసుకుంటారా? Yes or No? 👇`
+- **Playlist**: `What If Telugu`
 
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `giant jupiter planet sky, full moon replacement night, volcano erupting magma, red spot jupiter close, tsunami waves night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #064 — Flamingo బర్డ్స్ పుట్టినప్పుడు గ్రే కలర్ లో ఉంటాయా?
+### వీడియో #064 — Flamingo లు పుట్టినప్పుడు పింక్ కాదు!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Flamingo బర్డ్స్ పుట్టినప్పుడు గ్రే కలర్ లో ఉంటాయా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `baby flamingo grey chick, bright pink flamingo flock, tiny red shrimp water, colorful feathers zoo, flamingos pond reflection` |
+| **Video Subject** | `Flamingo లు పుట్టినప్పుడు పింక్ కాదు!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `baby flamingo gray, flamingo flock pink, tiny shrimp, algae water, flamingo eating` |
+| **Thumbnail Title** | `పింక్ రంగు ఫుడ్ నుంచి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-పింక్ కలర్ లో ఉండే ఫ్లెమింగో పక్షులు పుట్టినప్పుడు తెల్లగా, గ్రే కలర్ లో ఉంటాయని తెలుసా!  మరి అవి పింక్ గా ఎలా మారతాయి అంటే, అవి తినే రెడ్ ష్రింప్స్ మరియు ఆల్గేలలో ఉండే కెరోటినాయిడ్ పిగ్మెంట్స్ వల్ల వాటి రెక్కలు గ్రాడ్యువల్ గా పింక్ కలర్ లోకి మారిపోతాయి! యు ఆర్ వాట్ యు ఈట్! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+బేబీ ఫ్లెమింగోలు పింక్ కలర్ లో ఉండవు! అవి గ్రే, తెలుపు రంగులో పుడతాయి. మరి పింక్ ఎలా అవుతాయి? వాటి ఫుడ్ వల్ల! ఫ్లెమింగోలు తినే చిన్న రొయ్యలు, ఆల్గేలో సహజమైన పింక్, ఆరెంజ్ రంగులు ఉంటాయి. రెండు మూడు సంవత్సరాల పాటు అవి రెక్కల్లో పేరుకుని, ఫ్లెమింగో పింక్ గా మారుతుంది! ఆ ఫుడ్ తినడం ఆపితే, రంగు మెల్లగా తగ్గిపోతుంది కూడా. మీకు ఇష్టమైన ఫుడ్ రంగులోకి మీరు మారితే, ఏ రంగులో ఉంటారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఫ్లెమింగోలు పింక్ రంగులోకి ఎలా మారతాయి? 🦩 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Flamingo లు పుట్టినప్పుడు పింక్ కాదు! 🦩`
+- **Description**:
 ```text
-🔬 Flamingo బర్డ్స్ పుట్టినప్పుడు గ్రే కలర్ లో ఉంటాయా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+బేబీ ఫ్లెమింగోలు గ్రే రంగులో పుడతాయి — తినే రొయ్యలు, ఆల్గేలోని రంగుల వల్ల 2–3 ఏళ్ళలో పింక్ గా మారతాయి!
+Why flamingos are pink — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీ ఫేవరెట్ ఫుడ్ రంగులోకి మారితే మీరు ఏ రంగులో ఉంటారు?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Flamingo బర్డ్స్ పుట్టినప్పుడు గ్రే కలర్ లో ఉంటాయా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-flamingo బర్డ్స్ పుట్టినప్పుడు గ్రే కలర్ లో ఉంటాయా?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `baby flamingo grey chick, bright pink flamingo flock, tiny red shrimp water, colorful feathers zoo, flamingos pond reflection, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why flamingos are pink, why flamingos are pink in telugu, flamingos, birds, animal facts, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఫేవరెట్ ఫుడ్ రంగులోకి మారితే మీరు ఏ రంగులో ఉంటారు? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #074 — ఫైటర్ జెట్ అంత పెద్ద ఎగిరే డైనోసార్!
+### వీడియో #074 — విమానం అంత రెక్కలున్న ఎగిరే జీవి!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఫైటర్ జెట్ అంత పెద్ద ఎగిరే డైనోసార్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `pterodactyl flying prehistoric canyon, giraffe standing savanna, fighter jet flying mountains, sunset prehistoric sky, giant fossil wings` |
+| **Video Subject** | `విమానం అంత రెక్కలున్న ఎగిరే జీవి!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `pterosaur flying, small airplane, giraffe standing, bird taking off, sky soaring` |
+| **Thumbnail Title** | `విమానం అంత రెక్కలు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఒక ఫైటర్ జెట్ విమానం సైజులో ఆకాశంలో ఎగిరే రాకాసి డైనోసార్ ఇదే!  ఇది ఒక చిన్న ఫైటర్ జెట్ అంత పెద్దది! నిలబడితే జిరాఫీ అంత ఎత్తు ఉండే ఈ జీవి, తన వింగ్స్ ని పోల్ వాల్ట్ లా నేలకు అదిమి ఒక్కసారిగా గాల్లోకి లాంచ్ అయ్యేది! ప్రిహిస్టారిక్ వండర్స్ కోసం! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+Quetzalcoatlus ని కలవండి! ఇది డైనోసార్ కాదు, 'Pterosaur' అనే ఎగిరే సరీసృపం. దాని రెక్కలు దాదాపు eleven meters, ఒక చిన్న విమానం అంత వెడల్పు! నేల మీద నిలబడితే ఒక జిరాఫీ అంత ఎత్తు! మరి ఇంత పెద్ద జీవి ఎలా ఎగిరింది? తన బలమైన ముందు చేతులతో నేలను గట్టిగా నెట్టి, ఒక పెద్ద జంప్ తో గాల్లోకి లేచేదని సైంటిస్టుల అంచనా. ఇప్పుడు ఇది మన ఆకాశంలో ఎగిరితే ఎలా ఉంటుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `విమానమంత పెద్ద ఎగిరే జీవి! 🦅 🦖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `విమానం అంత రెక్కలున్న ఎగిరే జీవి! 🦅`
+- **Description**:
 ```text
-🦖 ఫైటర్ జెట్ అంత పెద్ద ఎగిరే డైనోసార్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఫైటర్ జెట్ అంత పెద్ద ఎగిరే డైనోసార్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Quetzalcoatlus డైనోసార్ కాదు, ఎగిరే సరీసృపం — రెక్కలు దాదాపు 11 మీటర్లు, నేల మీద జిరాఫీ అంత ఎత్తు!
+Quetzalcoatlus largest flying animal — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 ఇది ఇప్పుడు మన ఆకాశంలో ఎగిరితే మీ రియాక్షన్ ఏంటి?
 
-🔍 Related Searches / శోధన పదాలు:
-ఫైటర్ జెట్ అంత పెద్ద ఎగిరే డైనోసార్!, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
+- **Tags**: `quetzalcoatlus largest flying animal, quetzalcoatlus largest flying animal in telugu, quetzalcoatlus, pterosaurs, prehistoric animals, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఇది ఇప్పుడు మన ఆకాశంలో ఎగిరితే మీ రియాక్షన్ ఏంటి? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `pterodactyl flying prehistoric canyon, giraffe standing savanna, fighter jet flying mountains, sunset prehistoric sky, giant fossil wings, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #084 — మనం నిజంగానే ఒక Simulation లో బతుకుతున్నామా?
+### వీడియో #084 — మనం సిమ్యులేషన్ లో బతుకుతున్నామా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనం నిజంగానే ఒక Simulation లో బతుకుతున్నామా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `green binary matrix code, glitch screen television, vr gamer headset glowing, digital universe hologram, floating cube cyberspace` |
+| **Video Subject** | `మనం సిమ్యులేషన్ లో బతుకుతున్నామా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `retro video game, virtual reality headset, digital code, futuristic city, person looking sky` |
+| **Thumbnail Title** | `ఇది నిజమేనా?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనం నిజంగానే ఒక వీడియో గేమ్‌లాంటి కంప్యూటర్ సిమ్యులేషన్ లో బతుకుతున్నామా? సైన్స్ ఏం చెబుతోందంటే...  fifty years క్రితం ఒక చిన్న డాట్ వీడియో గేమ్ ఉండేది, ఇప్పుడు ఫోటో రియలిస్టిక్ VR వరల్డ్స్ వచ్చాయి. ఫ్యూచర్ లో హ్యూమన్స్ బిలియన్ల వర్చువల్ వరల్డ్స్ ని రన్ చేస్తే, మనం అందులో ఒక సిమ్యులేషన్ కాదని ప్రూఫ్ ఏంటి?! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+Fifty years క్రితం బెస్ట్ వీడియో గేమ్ 'Pong', రెండు గీతలు, ఒక చుక్క. ఇప్పుడు నిజంలాంటి వర్చువల్ వరల్డ్స్! ఫిలాసఫర్ Nick Bostrom ఒక ఆర్గ్యుమెంట్ చెప్పాడు. ఫ్యూచర్ సివిలైజేషన్లు నిజమైన మనసులను సిమ్యులేట్ చేయగలిగితే, అవి అలా చేయాలనుకుంటే, సిమ్యులేషన్ లోని మనసులే నిజమైన వాటి కంటే చాలా ఎక్కువ ఉంటాయి. అప్పుడు మనం నిజమైన ప్రపంచంలో ఉండే ఛాన్స్ తక్కువ! కానీ దీనికి ఏ ప్రూఫ్ లేదు. మీరేమనుకుంటున్నారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మనం వీడియో గేమ్ లో బతుకుతున్నామా? 🕶️ 🤖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మనం సిమ్యులేషన్ లో బతుకుతున్నామా? 🕶️`
+- **Description**:
 ```text
-🤖 మనం నిజంగానే ఒక Simulation లో బతుకుతున్నామా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనం నిజంగానే ఒక Simulation లో బతుకుతున్నామా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Nick Bostrom ప్రకారం, ఫ్యూచర్ సివిలైజేషన్లు రియలిస్టిక్ సిమ్యులేషన్లు రన్ చేస్తే, మనం కూడా ఒక సిమ్యులేషన్ లో ఉండొచ్చు!
+Are we living in a simulation — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మనం సిమ్యులేషన్ లో ఉన్నామని మీరు అనుకుంటున్నారా? Yes or No?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-మనం నిజంగానే ఒక simulation లో బతుకుతున్నామా?, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `green binary matrix code, glitch screen television, vr gamer headset glowing, digital universe hologram, floating cube cyberspace, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `are we living in a simulation, are we living in a simulation in telugu, simulation theory, nick bostrom, philosophy, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మనం సిమ్యులేషన్ లో ఉన్నామని మీరు అనుకుంటున్నారా? Yes or No? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #094 — ఆవలింతలు ఎందుకు ఒకరి నుంచి ఒకరికి అంటుకుంటాయి?
+### వీడియో #094 — ఆవలింతలు ఎందుకు అంటుకుంటాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఆవలింతలు ఎందుకు ఒకరి నుంచి ఒకరికి అంటుకుంటాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `person yawning tired, sleepy face close up, human brain empathy, crowd people yawning, funny sleepy morning` |
+| **Video Subject** | `ఆవలింతలు ఎందుకు అంటుకుంటాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person yawning, chimpanzee yawning, dog yawning, friends together, family sitting` |
+| **Thumbnail Title** | `ఆవలించకుండా చూడండి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఎవరైనా ఆవలిస్తే చూసిన వెంటనే మనకు కూడా ఆవలింత ఎందుకు వస్తుందో తెలుసా? దీని వెనుక ఉన్న మైండ్ సైన్స్ ఇది!  ఎంపతీ ఎక్కువగా ఉన్న వాళ్ళకి ఆవలింతలు చాలా త్వరగా స్ప్రెడ్ అవుతాయి! మీరు కూడా ఇప్పుడు ఆవలించారా? కామెంట్ చేయండి! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+ఈ వీడియో ఆవలించకుండా చూడండి చూద్దాం! ఎవరైనా ఆవలించడం చూసినా, విన్నా, దాని గురించి చదివినా మనకూ ఆవలింత వస్తుంది. మనుషులకే కాదు, చింపాంజీలకు, ఓనర్ నుంచి కుక్కలకు కూడా ఇది అంటుకుంటుంది! ఎందుకో సైంటిస్టులకు ఇంకా పూర్తిగా తెలియదు. ఒక ఐడియా ఏంటంటే ఇది సోషల్ బాండింగ్ కి సంబంధించినది. అపరిచితుల కంటే ఫ్యామిలీ, ఫ్రెండ్స్ నుంచి ఎక్కువ అంటుకుంటుంది! నిజం చెప్పండి, మీరు ఇప్పటికే ఆవలించారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఆవలింతలు ఎందుకు అంటుకుంటాయి? 🥱 💡 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఆవలింతలు ఎందుకు అంటుకుంటాయి? 🥱`
+- **Description**:
 ```text
-💡 ఆవలింతలు ఎందుకు ఒకరి నుంచి ఒకరికి అంటుకుంటాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+ఆవలింతలు మనుషులకే కాదు, చింపాంజీలకు, కుక్కలకు కూడా అంటుకుంటాయి — మనకు దగ్గరి వాళ్ళ నుంచి ఎక్కువగా!
+Why is yawning contagious — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఆవలింతలు ఎందుకు ఒకరి నుంచి ఒకరికి అంటుకుంటాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 నిజం చెప్పండి, మీరు ఈ వీడియో చూస్తూ ఆవలించారా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-ఆవలింతలు ఎందుకు ఒకరి నుంచి ఒకరికి అంటుకుంటాయి?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
+- **Tags**: `why is yawning contagious, why is yawning contagious in telugu, contagious yawning, yawning, psychology, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `నిజం చెప్పండి, మీరు ఈ వీడియో చూస్తూ ఆవలించారా? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `person yawning tired, sleepy face close up, human brain empathy, crowd people yawning, funny sleepy morning, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-## సెక్షన్ 5: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 5 (Variety Batch 5 — #005, #015, #025, #035, #045, #055, #065, #075, #085, #095)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 5: వెరైటీ బ్యాచ్ 5 (#005, #015, #025, #035, #045, #055, #065, #075, #085, #095)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #005 — స్పేస్ లో నాసా రికార్డ్ చేసిన భయంకరమైన సౌండ్!
+### వీడియో #005 — Black Hole సౌండ్ ఎలా ఉంటుందో విన్నారా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `స్పేస్ లో నాసా రికార్డ్ చేసిన భయంకరమైన సౌండ్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `deep space audio waves, black hole pulsing, galaxy cluster dark, radio telescope satellite, cosmic nebula eerie` |
+| **Video Subject** | `Black Hole సౌండ్ ఎలా ఉంటుందో విన్నారా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `galaxy cluster, black hole, sound waves visual, nasa space telescope, dark night alone` |
+| **Thumbnail Title** | `Black Hole సౌండ్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-స్పేస్ లో గాలి ఉండదు కాబట్టి ఎలాంటి సౌండ్స్ ఉండవని మనం అనుకుంటాం. కానీ NASA రికార్డ్ చేసిన రియల్ సౌండ్ వింటే గూస్ బంప్స్ వస్తాయి! Perseus గెలాక్సీ క్లస్టర్ మధ్యలో ఉన్న సూపర్ మ్యాసివ్ Black Hole నుండి వచ్చే సౌండ్ వేవ్స్ ని నాసా స్పెషల్ టెక్నాలజీతో రికార్డ్ చేసింది. ఈ సౌండ్ ఒక హారర్ మూవీలో దెయ్యాల అరుపుల్లా చాలా భయంకరంగా ఉంటుంది! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+స్పేస్ లో సౌండ్ ఉండదని మనకు చెప్పారు. కానీ పూర్తిగా కాదు! Perseus Galaxy Cluster లో ఒక భారీ Black Hole చుట్టూ ఉన్న వేడి గ్యాస్ లో నిజమైన సౌండ్ వేవ్స్ ఉన్నాయి. కానీ ఆ నోట్ మన చెవులకు వినిపించనంత లోతుగా ఉంటుంది. అందుకే NASA ఆ పిచ్ ని కోట్ల కోట్ల రెట్లు పెంచింది. విన్నాక గూస్ బంప్స్ గ్యారంటీ, దెయ్యాలు మూలుగుతున్నట్లు ఉంటుంది! రాత్రి ఒంటరిగా వినగలరా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Black Hole నిజమైన భయంకరమైన సౌండ్! 🔊 🪐 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Black Hole సౌండ్ ఎలా ఉంటుందో విన్నారా? 🔊`
+- **Description**:
 ```text
-🪐 స్పేస్ లో నాసా రికార్డ్ చేసిన భయంకరమైన సౌండ్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Perseus galaxy cluster లోని Black Hole నిజమైన సౌండ్ వేవ్స్ ని క్రియేట్ చేస్తుంది. NASA ఆ పిచ్ ని పెంచి మనం వినేలా చేసింది!
+Black hole sound nasa — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 Black Hole సౌండ్ ని రాత్రి ఒంటరిగా వినగలరా?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• స్పేస్ లో నాసా రికార్డ్ చేసిన భయంకరమైన సౌండ్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-స్పేస్ లో నాసా రికార్డ్ చేసిన భయంకరమైన సౌండ్!, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `deep space audio waves, black hole pulsing, galaxy cluster dark, radio telescope satellite, cosmic nebula eerie, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `black hole sound nasa, black hole sound nasa in telugu, black hole sound, perseus cluster, nasa, space sounds, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Black Hole సౌండ్ ని రాత్రి ఒంటరిగా వినగలరా? 👇`
+- **Playlist**: `Space Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #015 — బ్రెయిన్ సర్జరీ చేసేటప్పుడు పెయిన్ తెలియదా?
+### వీడియో #015 — Brain కి నొప్పే తెలియదా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `బ్రెయిన్ సర్జరీ చేసేటప్పుడు పెయిన్ తెలియదా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `brain surgery hospital, human brain model, doctor examining brain, medical scan glowing, head massage headache` |
+| **Video Subject** | `Brain కి నొప్పే తెలియదా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `brain model, doctor surgery, patient talking hospital, person headache, neck muscles` |
+| **Thumbnail Title** | `బ్రెయిన్ కి నొప్పి తెలియదు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-తల నొప్పి వచ్చినప్పుడు బ్రెయిన్ లో పెయిన్ వస్తుందని మనం అనుకుంటాం. కానీ రియల్ ఫ్యాక్ట్ ఏంటంటే, స్వయంగా బ్రెయిన్ కి ఎలాంటి పెయిన్ రిసెప్టర్స్ ఉండవు! అందుకే డాక్టర్లు బ్రెయిన్ సర్జరీ చేసేటప్పుడు పేషెంట్ ఫుల్ కాన్షియస్ గా మెలకువగా ఉన్నా కూడా ఆపరేషన్ చేయగలరు! మరి హెడేక్ ఎందుకు వస్తుంది అంటే, మెదడు చుట్టూ ఉన్న మజిల్స్ మరియు బ్లడ్ వెసల్స్ స్ట్రెస్ అయినప్పుడు ఆ నొప్పి వస్తుంది! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+బ్రెయిన్ కి స్వయంగా నొప్పి తెలియదు! దానిలో పెయిన్ సెన్సార్లు ఉండవు. అందుకే కొన్ని బ్రెయిన్ సర్జరీలు పేషెంట్ మెలకువగా ఉండగానే చేస్తారు. పేషెంట్ మాట్లాడుతూ ఉంటే, డాక్టర్లు ముఖ్యమైన ఏరియాలను కాపాడుకుంటారు! మరి తలనొప్పి ఎక్కడి నుంచి వస్తుంది? బ్రెయిన్ చుట్టూ ఉండే పొరలు, బ్లడ్ వెసల్స్, తల, మెడ మజిల్స్ లో పెయిన్ సెన్సార్లు ఉంటాయి. అక్కడి నుంచే నొప్పి! మీకు తలనొప్పి ఎక్కువగా ఎప్పుడు వస్తుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Brain కి నొప్పే తెలియదా? 🧠 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Brain కి నొప్పే తెలియదా? 🧠`
+- **Description**:
 ```text
-🧠 బ్రెయిన్ సర్జరీ చేసేటప్పుడు పెయిన్ తెలియదా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• బ్రెయిన్ సర్జరీ చేసేటప్పుడు పెయిన్ తెలియదా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+బ్రెయిన్ లో పెయిన్ సెన్సార్లు ఉండవు — అందుకే కొన్ని సర్జరీలు పేషెంట్ మెలకువగా ఉండగానే చేస్తారు! తలనొప్పి చుట్టూ ఉండే పొరలు, మజిల్స్ నుంచి వస్తుంది.
+Can the brain feel pain — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీకు తలనొప్పి ఎక్కువగా ఎప్పుడు వస్తుంది?
 
-🔍 Related Searches / శోధన పదాలు:
-బ్రెయిన్ సర్జరీ చేసేటప్పుడు పెయిన్ తెలియదా?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
+- **Tags**: `can the brain feel pain, can the brain feel pain in telugu, brain facts, awake brain surgery, headache, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు తలనొప్పి ఎక్కువగా ఎప్పుడు వస్తుంది? 👇`
+- **Playlist**: `Human Body Telugu`
 
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `brain surgery hospital, human brain model, doctor examining brain, medical scan glowing, head massage headache, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #025 — పిల్లి చేసే Purring సౌండ్ లో హీలింగ్ పవర్ ఉందా?
+### వీడియో #025 — పిల్లి 'Purr' ఎందుకు చేస్తుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `పిల్లి చేసే Purring సౌండ్ లో హీలింగ్ పవర్ ఉందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `cat purring cuddling human, cute kitten sleeping, pet cat sofa, smiling happy cat, fluffy kitten close up` |
+| **Video Subject** | `పిల్లి 'Purr' ఎందుకు చేస్తుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `cat purring, cat on lap, cat close up, mother cat kittens, kitten sleeping` |
+| **Thumbnail Title** | `పిల్లి పర్ర్ సీక్రెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-పిల్లి మన దగ్గర పడుకున్నప్పుడు ఒక వైబ్రేషన్ సౌండ్ చేస్తుంది, దానిని 'Purring' అంటారు. ఈ సౌండ్ twenty five నుండి one hundred and fifty Hertz ఫ్రీక్వెన్సీలో ఉంటుంది. సైంటిస్టుల ప్రకారం ఈ వైబ్రేషన్ హ్యూమన్స్ లో బోన్స్ త్వరగా అతుక్కోవడానికి, బీపీ నార్మల్ అవ్వడానికి, స్ట్రెస్ తగ్గడానికి హెల్ప్ చేస్తుందట! పిల్లులు నేచురల్ హీలర్స్! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+పర్ర్ర్! పిల్లి చేసే ఈ సౌండ్ యానిమల్ వరల్డ్ లోనే చాలా స్పెషల్. పిల్లి గాలి పీల్చుకుంటూ, వదులుతూ, గొంతులోని మజిల్స్ ని చాలా ఫాస్ట్ గా కదిలిస్తుంది. అదే Purr! హ్యాపీగా ఉన్నప్పుడు పిల్లులు Purr చేస్తాయి. కానీ భయపడినప్పుడు, దెబ్బ తగిలినప్పుడు కూడా చేస్తాయి, బహుశా తమను తాము కూల్ చేసుకోవడానికి. ఈ వైబ్రేషన్స్ ఎముకలు హీల్ అవ్వడానికి హెల్ప్ చేస్తాయా అని సైంటిస్టులు రీసెర్చ్ చేస్తున్నారు! మీ ఇంట్లో పిల్లి ఉందా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `పిల్లి సౌండ్ లో బోన్స్ క్యూర్ చేసే పవర్! 🐱 🐾 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `పిల్లి 'Purr' ఎందుకు చేస్తుంది? 🐱`
+- **Description**:
 ```text
-🐾 పిల్లి చేసే Purring సౌండ్ లో హీలింగ్ పవర్ ఉందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• పిల్లి చేసే Purring సౌండ్ లో హీలింగ్ పవర్ ఉందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+పిల్లులు గొంతు మజిల్స్ ని ఫాస్ట్ గా కదిలించి Purr చేస్తాయి — హ్యాపీగా ఉన్నప్పుడే కాదు, తమను తాము కూల్ చేసుకోవడానికి కూడా!
+Why do cats purr — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీ ఇంట్లో పిల్లి ఉందా? దాని పేరు ఏంటి?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-పిల్లి చేసే purring సౌండ్ లో హీలింగ్ పవర్ ఉందా?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `cat purring cuddling human, cute kitten sleeping, pet cat sofa, smiling happy cat, fluffy kitten close up, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do cats purr, why do cats purr in telugu, cats, cat purring, pets, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఇంట్లో పిల్లి ఉందా? దాని పేరు ఏంటి? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #035 — ట్రీస్ కి కూడా వాటి సొంత అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా?
+### వీడియో #035 — చెట్లకు అండర్ గ్రౌండ్ ఇంటర్నెట్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ట్రీస్ కి కూడా వాటి సొంత అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `forest sunlight tree roots, underground root system, glowing mycelium fungi, mushrooms growing woods, giant trees aerial` |
+| **Video Subject** | `చెట్లకు అండర్ గ్రౌండ్ ఇంటర్నెట్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `forest trees, tree roots underground, mushroom threads mycelium, mushrooms forest floor, sunlight through trees` |
+| **Thumbnail Title** | `చెట్ల ఇంటర్నెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఫారెస్ట్ లోని చెట్లు అండర్ గ్రౌండ్ లో మాట్లాడుకుంటాయని మీకు తెలుసా? ట్రీస్ రూట్స్ కింద 'Mycelium' అనే ఫంగస్ నెట్ వర్క్ ఉంటుంది, సైంటిస్టులు దీనిని 'Wood Wide Web' అంటారు! దీని ద్వారా ఒక పెద్ద చెట్టు చిన్న చెట్లకు న్యూట్రిషన్ షేర్ చేస్తుంది, పురుగులు దాడి చేసినప్పుడు వార్నింగ్ సిగ్నల్స్ పంపుతుంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+అడవి నేల కింద ఒక సీక్రెట్ నెట్ వర్క్ ఉంది! చెట్ల వేర్లు, పుట్టగొడుగుల లాంటి ఫంగస్ యొక్క సన్నటి దారాలతో కనెక్ట్ అవుతాయి. సైంటిస్టులు దీన్ని 'Wood Wide Web' అంటారు! ఈ దారాల ద్వారా ఫంగస్ నేల నుంచి నీరు, న్యూట్రియంట్స్ ని చెట్లకు ఇస్తుంది. బదులుగా చెట్లు ఫంగస్ కి షుగర్ ఇస్తాయి. చెట్లు ఒకదానికొకటి ఎంత షేర్ చేసుకుంటాయో సైంటిస్టులు ఇంకా రీసెర్చ్ చేస్తున్నారు! మీ ఊర్లో పెద్ద చెట్టు ఏది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చెట్లకు అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా? 🌳 🌍 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చెట్లకు అండర్ గ్రౌండ్ ఇంటర్నెట్! 🌳`
+- **Description**:
 ```text
-🌍 ట్రీస్ కి కూడా వాటి సొంత అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+చెట్ల వేర్లు ఫంగస్ దారాలతో కలిసి 'Wood Wide Web' ని ఏర్పరుస్తాయి — షుగర్ కి బదులుగా నీరు, న్యూట్రియంట్స్ ఎక్స్ఛేంజ్ జరుగుతుంది!
+Wood wide web trees fungi network — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ట్రీస్ కి కూడా వాటి సొంత అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీ ఊర్లో అతి పెద్ద చెట్టు ఏది?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-ట్రీస్ కి కూడా వాటి సొంత అండర్ గ్రౌండ్ ఇంటర్నెట్ ఉందా?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
+- **Tags**: `wood wide web trees fungi network, wood wide web trees fungi network in telugu, wood wide web, trees, fungi, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఊర్లో అతి పెద్ద చెట్టు ఏది? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `forest sunlight tree roots, underground root system, glowing mycelium fungi, mushrooms growing woods, giant trees aerial, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #045 — బ్లూ వేల్ గుండె ఒక కార్ సైజ్ లో ఉంటుందా?
+### వీడియో #045 — బ్లూ వేల్ గుండె ఎంత పెద్దది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `బ్లూ వేల్ గుండె ఒక కార్ సైజ్ లో ఉంటుందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `blue whale swimming surface, giant whale underwater, human heart pumping, massive ocean mammal, ocean drone footage` |
+| **Video Subject** | `బ్లూ వేల్ గుండె ఎంత పెద్దది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `blue whale swimming, whale heart model, bumper car, ocean deep dive, krill swarm` |
+| **Thumbnail Title** | `180 KG గుండె!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-భూమిపై ఉన్న బిగ్గెస్ట్ యానిమల్ Blue Whale. దాని గుండె ఎంత పెద్దదంటే, ఒక నార్మల్ కార్ అంత సైజ్ లో ఉండి one hundred and eighty kilos బరువు ఉంటుంది! దాని బ్లడ్ వెసల్స్ లో ఒక చిన్న కిడ్ ఈత కొట్టవచ్చు! అన్ బిలీవబుల్ ఓషన్ జెయింట్స్ కోసం! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+భూమి మీద ఇప్పటివరకు జీవించిన అతిపెద్ద జంతువు Blue Whale. దాని గుండె బరువు దాదాపు one hundred eighty kilos! ఇద్దరు పెద్ద మనుషుల కంటే ఎక్కువ బరువు! సైంటిస్టులు ఒక బ్లూ వేల్ కి సెన్సార్ అతికించి చూస్తే, లోతుగా డైవ్ చేసినప్పుడు దాని గుండె నిమిషానికి కేవలం two times మాత్రమే కొట్టుకుంది! మన గుండె నిమిషానికి seventy times. ఇంత పెద్ద జంతువు కేవలం చిన్న రొయ్యలు తిని బతుకుతుంది! మీరు ఎప్పుడైనా తిమింగలాన్ని చూశారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `కార్ అంత పెద్ద బ్లూ వేల్ గుండె! 🐋 🌊 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `బ్లూ వేల్ గుండె ఎంత పెద్దది? 🐋`
+- **Description**:
 ```text
-🌊 బ్లూ వేల్ గుండె ఒక కార్ సైజ్ లో ఉంటుందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Blue Whale గుండె దాదాపు 180 kg — డీప్ డైవ్ లో అది నిమిషానికి కేవలం 2 సార్లే కొట్టుకుంటుంది!
+Blue whale heart size — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు ఎప్పుడైనా నిజంగా తిమింగలాన్ని చూశారా?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• బ్లూ వేల్ గుండె ఒక కార్ సైజ్ లో ఉంటుందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-బ్లూ వేల్ గుండె ఒక కార్ సైజ్ లో ఉంటుందా?, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `blue whale swimming surface, giant whale underwater, human heart pumping, massive ocean mammal, ocean drone footage, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `blue whale heart size, blue whale heart size in telugu, blue whale, ocean giants, animal facts, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎప్పుడైనా నిజంగా తిమింగలాన్ని చూశారా? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #055 — భూమి మధ్యలో హోల్ వేసి దూకితే ఏమవుతుంది?
+### వీడియో #055 — భూమికి హోల్ వేసి దూకితే 42 నిమిషాలే!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `భూమి మధ్యలో హోల్ వేసి దూకితే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `tunnel through earth core, falling deep hole canyon, globe spinning hands, planetary physics simulation, glowing magma core` |
+| **Video Subject** | `భూమికి హోల్ వేసి దూకితే 42 నిమిషాలే!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `drilling hole ground, earth core diagram, person falling, earth from space, globe spinning` |
+| **Thumbnail Title** | `42 నిమిషాల్లో అవతలికి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-భూమికి ఒక వైపు నుండి మరోవైపుకి హోల్ వేసి అందులోకి దూకితే ఎంత టైమ్ పడుతుందో తెలుసా? గ్రావిటీ మిమ్మల్ని వేగంగా పుల్ చేయడం వల్ల ఎర్త్ సెంటర్ వద్ద మీ స్పీడ్ గంటకు eighteen thousand miles ఉంటుంది! సరిగ్గా forty two minutes లో మీరు ఎర్త్ కి అవతలి వైపుకు చేరుకుంటారు! ఫిజిక్స్ వండర్స్ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+భూమికి ఒక వైపు నుంచి మరో వైపుకి నేరుగా ఒక టన్నెల్ తవ్వి దూకితే ఏమవుతుంది? వేడి, గాలి సంగతి పక్కన పెడదాం. గ్రావిటీ మిమ్మల్ని ఇంకా ఇంకా వేగంగా లాగుతుంది. భూమి సెంటర్ దగ్గర గంటకు దాదాపు twenty eight thousand kilometers స్పీడ్! తర్వాత స్లో అవుతూ, సరిగ్గా forty two minutes లో అవతలి వైపు బయటికి వస్తారు! ఎవరూ పట్టుకోకపోతే? మళ్ళీ వెనక్కి పడిపోతారు, ఎప్పటికీ! మీ ఇంటి నుంచి దూకితే ఏ దేశంలో బయటికి వస్తారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఎర్త్ కి హోల్ వేసి దూకితే 42 నిమిషాలేనా? 🕳️ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `భూమికి హోల్ వేసి దూకితే 42 నిమిషాలే! 🕳️`
+- **Description**:
 ```text
-🤔 భూమి మధ్యలో హోల్ వేసి దూకితే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• భూమి మధ్యలో హోల్ వేసి దూకితే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+భూమి గుండా టన్నెల్ లో పడితే దాదాపు 42 నిమిషాల్లో అవతలి వైపు చేరతారు — గాలి లేకపోతే ఎప్పటికీ అటూ ఇటూ ఊగుతారు!
+Falling through a tunnel through the earth — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ ఇంటి నుంచి దూకితే ఏ దేశంలో బయటికి వస్తారు?
 
-🔍 Related Searches / శోధన పదాలు:
-భూమి మధ్యలో హోల్ వేసి దూకితే ఏమవుతుంది?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
+- **Tags**: `falling through a tunnel through the earth, falling through a tunnel through the earth in telugu, gravity tunnel, earth core, physics, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఇంటి నుంచి దూకితే ఏ దేశంలో బయటికి వస్తారు? 👇`
+- **Playlist**: `What If Telugu`
 
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `tunnel through earth core, falling deep hole canyon, globe spinning hands, planetary physics simulation, glowing magma core, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #065 — తేనెటీగలు Honey ని ఎలా తయారు చేస్తాయి?
+### వీడియో #065 — తేనెటీగలు తేనెను ఎలా తయారుచేస్తాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `తేనెటీగలు Honey ని ఎలా తయారు చేస్తాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `honeybee on blooming flower, golden honeycomb dripping honey, bees buzzing around hive, jar of raw honey, sunny spring field` |
+| **Video Subject** | `తేనెటీగలు తేనెను ఎలా తయారుచేస్తాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `bee on flower, bee drinking nectar, beehive inside, honeycomb close up, honey dripping` |
+| **Thumbnail Title** | `తేనెటీగల టీమ్ వర్క్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-తేనెటీగలు ఫ్లవర్స్ నుంచి నెక్టార్ ని కలెక్ట్ చేసి తమ స్పెషల్ హనీ స్టమక్ లో స్టోర్ చేసుకుంటాయి. ఆ తర్వాత హైవ్ కి చేరి, వేలాది తేనెటీగలు తమ రెక్కలను ఎలక్ట్రిక్ ఫ్యాన్స్ లా ఊపుతూ వాటర్ ని ఎవాపొరేట్ చేస్తాయి! అలా తియ్యటి ప్యూర్ తేనె తయారవుతుంది. ఒక్క స్పూన్ తేనె కోసం ఎంతో హార్డ్ వర్క్ చేస్తాయి! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+తేనె తయారీ ఒక పెద్ద టీమ్ ప్రాజెక్ట్! వర్కర్ తేనెటీగలు పువ్వు నుంచి పువ్వుకి ఎగురుతూ తియ్యటి మకరందాన్ని ఒక స్పెషల్ హనీ పొట్టలో దాచుకుంటాయి. గూటికి వెళ్ళాక, ఒక తేనెటీగ నుంచి మరోదానికి పంచుకుంటూ, అందులో ఎంజైమ్స్ కలుపుతాయి. తర్వాత మైనపు గదుల్లో పెట్టి, తమ రెక్కలను ఫ్యాన్స్ లా ఊపుతూ నీటిని ఆవిరి చేస్తాయి. చిక్కగా అయ్యాక అదే తేనె! ఒక్క తేనెటీగ జీవితమంతా కష్టపడితే, ఒక టీస్పూన్ లో చిన్న భాగమే వస్తుంది! తేనె మీకు ఇష్టమా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `తేనెటీగలు తేనెను ఎలా తయారు చేస్తాయి? 🐝 🔬 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `తేనెటీగలు తేనెను ఎలా తయారుచేస్తాయి? 🐝`
+- **Description**:
 ```text
-🔬 తేనెటీగలు Honey ని ఎలా తయారు చేస్తాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• తేనెటీగలు Honey ని ఎలా తయారు చేస్తాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+తేనెటీగలు మకరందానికి ఎంజైమ్స్ కలిపి, రెక్కలతో గాలి కొట్టి నీటిని ఆవిరి చేస్తాయి — ఒక తేనెటీగ జీవితమంతా కష్టపడితే టీస్పూన్ లో చిన్న భాగమే!
+How do bees make honey — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీకు తేనె ఇష్టమా? దేనితో తింటారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-తేనెటీగలు honey ని ఎలా తయారు చేస్తాయి?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `honeybee on blooming flower, golden honeycomb dripping honey, bees buzzing around hive, jar of raw honey, sunny spring field, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how do bees make honey, how do bees make honey in telugu, honey bees, honey, insects, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు తేనె ఇష్టమా? దేనితో తింటారు? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #075 — సుత్తి తోక ఉన్న ఆర్మీ ట్యాంకర్ డైనోసార్!
+### వీడియో #075 — సుత్తి తోక ఉన్న ట్యాంక్ డైనోసార్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `సుత్తి తోక ఉన్న ఆర్మీ ట్యాంకర్ డైనోసార్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `ankylosaurus dinosaur forest, armadillo armor shell, blacksmith hammer striking, t rex battle defense, prehistoric rocky jungle` |
+| **Video Subject** | `సుత్తి తోక ఉన్న ట్యాంక్ డైనోసార్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `ankylosaurus model, armadillo armor, knight armor, dinosaur tail club, dinosaur museum` |
+| **Thumbnail Title** | `డైనోసార్ ట్యాంక్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-Ankylosaurus అనే డైనోసార్ ని అప్పటి మిలిటరీ ట్యాంకర్ అనవచ్చు! దాని బాడీ మొత్తం థిక్ బోన్ ఆర్మర్ తో, ఐ లిడ్స్ కి కూడా రక్షణ కవచంతో ఉండేది! అన్నింటికంటే వింత దాని టెయిల్ చివర భారీ సాలిడ్ బోన్ క్లబ్ ఉండేది! T-Rex దాడి చేస్తే ఆ తోకతో కొట్టి T-Rex కాళ్ళ బోన్స్ ని విరగ్గొట్టేసేది! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+Ankylosaurus అంటే డైనోసార్ల ప్రపంచంలో ఒక మిలిటరీ ట్యాంక్! దాని వీపు మొత్తం మందమైన ఎముకల ప్లేట్లు, ముళ్ళతో కవచంలా ఉండేది. కనురెప్పలకు కూడా ఎముకల రక్షణ ఉండేది! దాని తోక చివర ఒక పెద్ద ఎముకల సుత్తి. దాడి చేసే వేటాడే డైనోసార్ల కాళ్ళను గాయపరిచేంత బలంగా అది తోకను ఊపగలదని సైంటిస్టుల అంచనా. దీని జోలికి ఎవరూ వెళ్ళరు! మీరు డైనోసార్ అయితే ఏ పవర్ కావాలి? కవచం? కొమ్ములు? స్పీడ్?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సుత్తి తోక ఉన్న ట్యాంకర్ డైనోసార్! 🛡️ 🦖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సుత్తి తోక ఉన్న ట్యాంక్ డైనోసార్! 🛡️`
+- **Description**:
 ```text
-🦖 సుత్తి తోక ఉన్న ఆర్మీ ట్యాంకర్ డైనోసార్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Ankylosaurus వీపు, కనురెప్పలు కూడా ఎముకల కవచంతో ఉండేవి — తోక చివర ఒక భారీ ఎముకల సుత్తి!
+Ankylosaurus armored dinosaur — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• సుత్తి తోక ఉన్న ఆర్మీ ట్యాంకర్ డైనోసార్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీరు డైనోసార్ అయితే ఏ పవర్ కావాలి? కవచం? కొమ్ములు? స్పీడ్?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-సుత్తి తోక ఉన్న ఆర్మీ ట్యాంకర్ డైనోసార్!, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
+- **Tags**: `ankylosaurus armored dinosaur, ankylosaurus armored dinosaur in telugu, ankylosaurus, armored dinosaurs, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు డైనోసార్ అయితే ఏ పవర్ కావాలి? కవచం? కొమ్ములు? స్పీడ్? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `ankylosaurus dinosaur forest, armadillo armor shell, blacksmith hammer striking, t rex battle defense, prehistoric rocky jungle, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #085 — CRISPR: హ్యూమన్ DNA ని Cut & Paste చేయవచ్చా?
+### వీడియో #085 — DNA ని ఎడిట్ చేసే CRISPR టెక్నాలజీ!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `CRISPR: హ్యూమన్ DNA ని Cut & Paste చేయవచ్చా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `dna double helix glowing, scientist looking microscope, genetic editing visual, medical laboratory pipette, glowing neon cells` |
+| **Video Subject** | `DNA ని ఎడిట్ చేసే CRISPR టెక్నాలజీ!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `dna helix, scissors cutting, bacteria microscope, red blood cells, laboratory scientist` |
+| **Thumbnail Title** | `DNA కట్ & పేస్ట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-CRISPR టెక్నాలజీ అనేది హ్యూమన్ DNA కోసం కనిపెట్టిన 'Cut & Paste' టూల్ లాంటిది! దీని ద్వారా జెనెటిక్ డిఫెక్ట్స్ ని కట్ చేసి క్యాన్సర్, గుండెజబ్బులు, అంధత్వం రాకుండా పర్మనెంట్ గా క్యూర్ చేయవచ్చు! ఫ్యూచర్ లో ఏజింగ్ ప్రాసెస్ ని కూడా ఆపి మనుషులు ఎక్కువ కాలం జీవించేలా చేయవచ్చు! బయోటెక్ వండర్స్ కోసం! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+ఇప్పుడు సైంటిస్టులు DNA ని దాదాపు ఒక టెక్స్ట్ లా ఎడిట్ చేయగలరు! ఆ టూల్ పేరు 'CRISPR'. బ్యాక్టీరియా వైరస్ లతో పోరాడటానికి వాడే ట్రిక్ నుంచి దీన్ని తీసుకున్నారు. Two thousand twenty three లో Sickle Cell వ్యాధికి ఫస్ట్ CRISPR ట్రీట్ మెంట్ అప్రూవ్ అయ్యింది. మన దేశంలో కూడా లక్షల మందికి ఈ వ్యాధి ఉంది. డాక్టర్లు పేషెంట్ సొంత బ్లడ్ స్టెమ్ సెల్స్ ని ఎడిట్ చేసి మళ్ళీ పెడతారు. దీన్ని కనిపెట్టినవాళ్ళకు నోబెల్ ప్రైజ్ వచ్చింది! CRISPR తో తర్వాత ఏ వ్యాధిని ఓడించాలి?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మానవ DNA ని ఎడిట్ చేసే అద్భుత టెక్నాలజీ! 🧬 🤖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `DNA ని ఎడిట్ చేసే CRISPR టెక్నాలజీ! ✂️`
+- **Description**:
 ```text
-🤖 CRISPR: హ్యూమన్ DNA ని Cut & Paste చేయవచ్చా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+బ్యాక్టీరియా నుంచి తీసుకున్న CRISPR తో 2023 లో Sickle Cell వ్యాధికి ఫస్ట్ జీన్ ఎడిటింగ్ ట్రీట్ మెంట్ అప్రూవ్ అయ్యింది!
+Crispr gene editing explained — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 CRISPR తో తర్వాత ఏ వ్యాధిని ఓడించాలి?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• CRISPR: హ్యూమన్ DNA ని Cut & Paste చేయవచ్చా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-crispr: హ్యూమన్ dna ని cut & paste చేయవచ్చా?, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `dna double helix glowing, scientist looking microscope, genetic editing visual, medical laboratory pipette, glowing neon cells, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `crispr gene editing explained, crispr gene editing explained in telugu, crispr, gene editing, sickle cell, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `CRISPR తో తర్వాత ఏ వ్యాధిని ఓడించాలి? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #095 — గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుందో తెలుసా?
+### వీడియో #095 — మీ గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుందో తెలుసా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `human heart beating 3d, stethoscope doctor listening, athletic runner heartbeat, red blood cells pumping, medical glowing heart` |
+| **Video Subject** | `మీ గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `heart beating animation, stethoscope doctor, water tanker truck, heart electrical signal, person walking morning` |
+| **Thumbnail Title** | `రోజుకు 1 లక్ష సార్లు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మీ గుండె రోజుకు ఒక లక్ష సార్లు కొట్టుకుంటూ లక్ష కిలోమీటర్ల మేర రక్తాన్ని పంప్ చేస్తుందని తెలుసా!  ఇది పంప్ చేసే బ్లడ్ ఒక పెద్ద స్విమ్మింగ్ పూల్ ని నింపేయగలదు. హార్ట్ కి తనకంటూ ఓన్ ఎలక్ట్రికల్ సిస్టమ్ ఉంటుంది కాబట్టి బాడీ నుంచి బయటకు తీసినా కొద్దిసేపు కొట్టుకుంటూనే ఉంటుంది! కార్డియో ఫ్యాక్ట్స్ కోసం! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+మీ గుండె రోజుకు దాదాపు one lakh సార్లు కొట్టుకుంటుంది! ప్రతిరోజూ దాదాపు seven thousand liters రక్తాన్ని పంప్ చేస్తుంది, ఒక చిన్న వాటర్ ట్యాంకర్ నింపేంత! జీవితమంతా ఆగకుండా! ఇంకో ఆశ్చర్యకర విషయం, గుండెకు తన సొంత ఎలక్ట్రికల్ సిస్టమ్ ఉంది. అందుకే బాడీ నుంచి బయటకు తీసినా, ఆక్సిజన్ ఉన్నంతవరకు కొద్దిసేపు కొట్టుకుంటూనే ఉంటుంది! ఈ కష్టజీవిని కాపాడుకోండి, రోజూ కొంచెం నడవండి. మీరు రోజుకు ఎన్ని స్టెప్స్ నడుస్తారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుంది? 🫀 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మీ గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుంది? 🫀`
+- **Description**:
 ```text
-💡 గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుందో తెలుసా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుందో తెలుసా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+మన గుండె రోజుకు దాదాపు 1 లక్ష సార్లు కొట్టుకుంటూ 7,000 లీటర్ల రక్తాన్ని పంప్ చేస్తుంది — దానికి సొంత ఎలక్ట్రికల్ సిస్టమ్ ఉంది!
+How many times does the heart beat a day — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు రోజుకు ఎన్ని స్టెప్స్ నడుస్తారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-గుండె రోజుకు ఎన్ని సార్లు కొట్టుకుంటుందో తెలుసా?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `human heart beating 3d, stethoscope doctor listening, athletic runner heartbeat, red blood cells pumping, medical glowing heart, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how many times does the heart beat a day, how many times does the heart beat a day in telugu, heart facts, heartbeat, human body, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు రోజుకు ఎన్ని స్టెప్స్ నడుస్తారు? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---
 
-## సెక్షన్ 6: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 6 (Variety Batch 6 — #006, #016, #026, #036, #046, #056, #066, #076, #086, #096)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 6: వెరైటీ బ్యాచ్ 6 (#006, #016, #026, #036, #046, #056, #066, #076, #086, #096)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #006 — Moon మన భూమి నుంచి దూరంగా పారిపోతోందా?
+### వీడియో #006 — Moon భూమి నుంచి దూరం వెళ్ళిపోతోందా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Moon మన భూమి నుంచి దూరంగా పారిపోతోందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `moon orbiting earth, glowing full moon, solar eclipse ring, space time lapse, tides ocean night` |
+| **Video Subject** | `Moon భూమి నుంచి దూరం వెళ్ళిపోతోందా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `full moon night, fingernails close up, ocean tides waves, earth rotation space, solar eclipse` |
+| **Thumbnail Title** | `చంద్రుడు దూరమవుతున్నాడు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చంద్రుడు ప్రతి సంవత్సరం మన భూమికి దూరంగా జరిగిపోతున్నాడు!  మన చేతి గోర్లు ఎంత స్పీడ్ తో పెరుగుతాయో, మూన్ అంత స్పీడ్ తో దూరమవుతున్నాడు. కొన్ని మిలియన్ ఇయర్స్ తర్వాత Moon చాలా దూరం వెళ్ళిపోవడం వల్ల ఎర్త్ మీద టోటల్ సోలార్ ఎక్లిప్స్ (సూర్యగ్రహణం) అస్సలు కనిపించదు! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+చంద్రుడు మన నుంచి నెమ్మదిగా దూరమైపోతున్నాడు! ప్రతి సంవత్సరం దాదాపు four centimeters దూరం జరుగుతున్నాడు. మన గోర్లు పెరిగేంత స్పీడ్ అన్నమాట! దీనికి కారణం సముద్రపు టైడ్స్. అవి మూన్ ని కొంచెం బయటకు నెడుతూ, భూమి స్పిన్ ని స్లో చేస్తున్నాయి. అందుకే కోట్ల సంవత్సరాల క్రితం భూమి మీద ఒక రోజు కేవలం కొన్ని గంటలే! ఫ్యూచర్ లో టోటల్ సూర్యగ్రహణాలు కూడా ఇక కనిపించవు. పెద్ద రోజులు కావాలా? గ్రహణాలు కావాలా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Moon భూమి నుంచి దూరంగా వెళ్ళిపోతోందా? 🌕 Moon Drift #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Moon భూమి నుంచి దూరం వెళ్ళిపోతోందా? 🌕`
+- **Description**:
 ```text
-🪐 Moon మన భూమి నుంచి దూరంగా పారిపోతోందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+చంద్రుడు ప్రతి సంవత్సరం దాదాపు 3.8 cm భూమి నుంచి దూరం జరుగుతున్నాడు — మన గోర్లు పెరిగేంత స్పీడ్ తో!
+Moon moving away from earth — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Moon మన భూమి నుంచి దూరంగా పారిపోతోందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 పెద్ద రోజులు కావాలా? సూర్యగ్రహణాలు కావాలా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-moon మన భూమి నుంచి దూరంగా పారిపోతోందా?, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
+- **Tags**: `moon moving away from earth, moon moving away from earth in telugu, moon facts, tides, solar eclipse, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `పెద్ద రోజులు కావాలా? సూర్యగ్రహణాలు కావాలా? 👇`
+- **Playlist**: `Space Facts Telugu`
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `moon orbiting earth, glowing full moon, solar eclipse ring, space time lapse, tides ocean night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #016 — మనిషి ఎముకలు కాంక్రీట్ కంటే 4 రెట్లు స్ట్రాంగ్!
+### వీడియో #016 — మన ఎముకలు కాంక్రీట్ కంటే స్ట్రాంగ్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనిషి ఎముకలు కాంక్రీట్ కంటే 4 రెట్లు స్ట్రాంగ్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `human skeleton bones, concrete block breaking, gymnast athletic jump, bone marrow microscopic, strong steel structure` |
+| **Video Subject** | `మన ఎముకలు కాంక్రీట్ కంటే స్ట్రాంగ్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `skeleton x-ray, concrete block, collagen fibers, construction site, doctor cast` |
+| **Thumbnail Title** | `కాంక్రీట్ కంటే స్ట్రాంగ్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనిషి ఎముక కాంక్రీట్ కంటే నాలుగు రెట్లు ఎక్కువ బలంగా ఉంటుందని తెలుసా!  ఇది కాంక్రీట్ కంటే దృఢమైనది మరియు ఫ్లెక్సిబుల్. కాల్షియం మరియు కొల్లాజెన్ ఫైబర్స్ కాంబినేషన్ వల్లే ఎముకలకు ఈ సూపర్ పవర్ వచ్చింది! మీ బోన్స్ ని హెల్తీగా ఉంచుకోండి! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+మీ ఎముకలు మీరు అనుకునే దానికంటే చాలా స్ట్రాంగ్! బరువుతో పోలిస్తే, కొన్ని రకాల కాంక్రీట్ కంటే ఎక్కువ ప్రెషర్ ని ఎముక తట్టుకోగలదు. సీక్రెట్ దాని డిజైన్ లో ఉంది. గట్టి కాల్షియం క్రిస్టల్స్ బలాన్ని ఇస్తాయి, ఫ్లెక్సిబుల్ కొల్లాజెన్ ఫైబర్స్ విరిగిపోకుండా కాపాడతాయి. ఇంకో సూపర్ పవర్: కాంక్రీట్ లా కాకుండా, ఎముక తనను తాను రిపేర్ చేసుకుంటుంది! మీరు ఎప్పుడైనా ఎముక విరగ్గొట్టుకున్నారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `కాంక్రీట్ కంటే స్ట్రాంగ్ మన ఎముకలు! 🦴 🧠 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మన ఎముకలు కాంక్రీట్ కంటే స్ట్రాంగ్! 🦴`
+- **Description**:
 ```text
-🧠 మనిషి ఎముకలు కాంక్రీట్ కంటే 4 రెట్లు స్ట్రాంగ్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+బరువుతో పోలిస్తే ఎముక కొన్ని కాంక్రీట్ల కంటే స్ట్రాంగ్ — పైగా అది తనను తాను రిపేర్ చేసుకుంటుంది!
+Are bones stronger than concrete — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు ఎప్పుడైనా ఎముక విరగ్గొట్టుకున్నారా? ఏది?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనిషి ఎముకలు కాంక్రీట్ కంటే 4 రెట్లు స్ట్రాంగ్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మనిషి ఎముకలు కాంక్రీట్ కంటే 4 రెట్లు స్ట్రాంగ్!, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `human skeleton bones, concrete block breaking, gymnast athletic jump, bone marrow microscopic, strong steel structure, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `are bones stronger than concrete, are bones stronger than concrete in telugu, bone strength, skeleton, human body facts, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎప్పుడైనా ఎముక విరగ్గొట్టుకున్నారా? ఏది? 👇`
+- **Playlist**: `Human Body Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #026 — Dolphins పేర్లు పెట్టి పిలుచుకుంటాయా?
+### వీడియో #026 — డాల్ఫిన్లకు కూడా పేర్లు ఉంటాయి!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Dolphins పేర్లు పెట్టి పిలుచుకుంటాయా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `dolphins jumping ocean, underwater dolphin pod, playful swimming sea, blue crystal water, happy dolphin whistle` |
+| **Video Subject** | `డాల్ఫిన్లకు కూడా పేర్లు ఉంటాయి!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `dolphins swimming, dolphin close up, dolphin pod ocean, dolphins jumping waves, friends meeting` |
+| **Thumbnail Title** | `డాల్ఫిన్ల పేర్లు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డాల్ఫిన్స్ మనుషుల్లాగే ఒకదానికొకటి పేర్లు పెట్టుకుని ఈలలతో పిలుచుకుంటాయని తెలుసా!  ప్రతి డాల్ఫిన్ కి ఒక యూనిక్ విజిల్ సౌండ్ ఉంటుంది, అది వాటి నేమ్ లాంటిది! తోటి డాల్ఫిన్ ఫ్రెండ్ ని పిలవడానికి అవి ఆ స్పెషల్ విజిల్ ఊదుతాయి! అంతేకాదు, అవి జోక్స్ వేసుకుంటూ టీమ్ వర్క్ తో చేపలను వేటాడతాయి! డాల్ఫిన్స్ సీక్రెట్స్ కోసం! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+మనకు పేర్లు ఉన్నట్లే, డాల్ఫిన్లకు కూడా దాదాపు పేర్లు ఉంటాయి! ప్రతి డాల్ఫిన్ కి ఒక స్పెషల్ విజిల్ ఉంటుంది, దాన్ని 'Signature Whistle' అంటారు. తోటి డాల్ఫిన్లు ఆ విజిల్ ని కాపీ చేసి ఆ డాల్ఫిన్ ని పిలుస్తాయి, పేరు పెట్టి పిలిచినట్లు! పాత ఫ్రెండ్స్ విజిల్స్ ని అవి twenty years కంటే ఎక్కువ కాలం గుర్తుపెట్టుకుంటాయని సైంటిస్టులు కనిపెట్టారు. మీ పెట్ నేమ్ ఏంటి? లేదా మీ నిక్ నేమ్?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `డాల్ఫిన్లకు కూడా మనుషుల్లా పేర్లు ఉంటాయా? 🐬 🐾 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `డాల్ఫిన్లకు కూడా పేర్లు ఉంటాయి! 🐬`
+- **Description**:
 ```text
-🐾 Dolphins పేర్లు పెట్టి పిలుచుకుంటాయా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Dolphins పేర్లు పెట్టి పిలుచుకుంటాయా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+ప్రతి డాల్ఫిన్ కి ఒక Signature Whistle ఉంటుంది — తోటి డాల్ఫిన్లు దాన్ని పేరులా వాడతాయి, 20 ఏళ్ళకు పైగా గుర్తుపెట్టుకుంటాయి!
+Dolphins have names signature whistle — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ నిక్ నేమ్ ఏంటి?
 
-🔍 Related Searches / శోధన పదాలు:
-dolphins పేర్లు పెట్టి పిలుచుకుంటాయా?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
+- **Tags**: `dolphins have names signature whistle, dolphins have names signature whistle in telugu, dolphins, ocean animals, animal intelligence, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ నిక్ నేమ్ ఏంటి? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `dolphins jumping ocean, underwater dolphin pod, playful swimming sea, blue crystal water, happy dolphin whistle, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #036 — Fireflies బ్యాటరీ లేకుండా ఎలా వెలుగుతాయి?
+### వీడియో #036 — మిణుగురు పురుగులు ఎలా వెలుగుతాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Fireflies బ్యాటరీ లేకుండా ఎలా వెలుగుతాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `fireflies glowing dark night, glowing insect child hand, magical summer forest, jar with fireflies, starry night glow` |
+| **Video Subject** | `మిణుగురు పురుగులు ఎలా వెలుగుతాయి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `fireflies glowing night, firefly close up, light bulb, summer field night, village night` |
+| **Thumbnail Title** | `బ్యాటరీ లేని లైట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మిణుగురు పురుగులు కరెంట్ లేకుండా ఒంట్లో లైట్ ఎలా వెలిగిస్తాయో తెలుసా!  వరల్డ్ లోనే మోస్ట్ ఎఫీషియంట్ లైట్ ఇది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+బ్యాటరీ లేకుండా మిణుగురు పురుగులు ఎలా వెలుగుతాయి? వాటి పొట్టలో 'Luciferin' అనే స్పెషల్ కెమికల్ ఉంటుంది. అది గాలిలోని ఆక్సిజన్ తో కలిసినప్పుడు లైట్ పుడుతుంది! దీన్ని 'Cold Light' అంటారు. ఎందుకంటే దాదాపు ఎనర్జీ అంతా వెలుగుగా మారుతుంది, వేడి దాదాపు ఉండదు. మన బల్బ్ వేడెక్కుతుంది, కానీ మిణుగురు పురుగు కాదు! అవి సీక్రెట్ కోడ్ లా లైట్ ఫ్లాష్ చేసి పార్ట్నర్ ని వెతుక్కుంటాయి. మీరు చివరిసారి మిణుగురులను ఎప్పుడు చూశారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మిణుగురు పురుగులు ఎలా వెలుగుతాయి? 🪲 🌍 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మిణుగురు పురుగులు ఎలా వెలుగుతాయి? ✨`
+- **Description**:
 ```text
-🌍 Fireflies బ్యాటరీ లేకుండా ఎలా వెలుగుతాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Fireflies బ్యాటరీ లేకుండా ఎలా వెలుగుతాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+మిణుగురు పురుగులు Luciferin, ఆక్సిజన్ కలిపి 'Cold Light' తయారుచేస్తాయి — దాదాపు వేడి లేకుండా వెలుగు!
+How do fireflies glow — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు చివరిసారి మిణుగురు పురుగులను ఎప్పుడు చూశారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-fireflies బ్యాటరీ లేకుండా ఎలా వెలుగుతాయి?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `fireflies glowing dark night, glowing insect child hand, magical summer forest, jar with fireflies, starry night glow, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how do fireflies glow, how do fireflies glow in telugu, fireflies, bioluminescence, insects, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు చివరిసారి మిణుగురు పురుగులను ఎప్పుడు చూశారు? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #046 — సముద్రంలో లోతుగా వెళ్తే ఏమవుతుంది?
+### వీడియో #046 — సముద్రం లోతుల్లో ప్రెషర్ ఎంత?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `సముద్రంలో లోతుగా వెళ్తే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `deep ocean submarine crushed, dark abyss water pressure, diving deep underwater, metal crushing simulation, trench depths` |
+| **Video Subject** | `సముద్రం లోతుల్లో ప్రెషర్ ఎంత?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `deep ocean dark, styrofoam cup, submarine underwater, mariana trench, crushed cup` |
+| **Thumbnail Title** | `కప్పు చిన్నదైపోయింది!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రం లోతుల్లో వాటర్ ప్రెజర్ ఎంత భయంకరంగా ఉంటుందో తెలుసా! మీపై వందల ఏనుగులు నిలబడినంత ఒత్తిడి!  అక్కడ స్ట్రాంగ్ టైటానియం సబ్ మెరైన్లు కూడా సెకన్లలో చితికిపోతాయి. డీప్ సీ మిస్టరీస్ కోసం! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+సముద్రం లోతుల్లో ప్రెషర్ ఎంత ఉంటుందో ఒక సింపుల్ ఎక్స్ పెరిమెంట్ చూపిస్తుంది. సైంటిస్టులు ఒక మామూలు స్టైరోఫోమ్ కప్పుని డీప్ సీ సబ్ మెరైన్ బయట కట్టి కిందకి పంపారు. పైకి వచ్చేసరికి అది ఒక చిన్న గ్లాస్ అంత కుంచించుకుపోయింది! Mariana Trench అడుగున, ప్రెషర్ ఉపరితలం కంటే దాదాపు one thousand times ఎక్కువ. మీ బొటనవేలు మీద ఒక కారు బరువు ఉన్నట్లు! మీరు అంత లోతుకి వెళ్తారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సముద్రపు అగాధంలో ఏం జరుగుతుంది? 🌊 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సముద్రం లోతుల్లో ప్రెషర్ ఎంత? 🌊`
+- **Description**:
 ```text
-🌊 సముద్రంలో లోతుగా వెళ్తే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+డీప్ సీ కి పంపిన స్టైరోఫోమ్ కప్పు ప్రెషర్ కి కుంచించుకుపోయింది! Mariana Trench లో ప్రెషర్ ఉపరితలం కంటే 1,000 రెట్లు ఎక్కువ.
+Deep ocean pressure styrofoam cup — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• సముద్రంలో లోతుగా వెళ్తే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 సబ్ మెరైన్ లో అంత లోతుకి మీరు వెళ్తారా? Yes or No?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-సముద్రంలో లోతుగా వెళ్తే ఏమవుతుంది?, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
+- **Tags**: `deep ocean pressure styrofoam cup, deep ocean pressure styrofoam cup in telugu, deep sea pressure, mariana trench, ocean, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `సబ్ మెరైన్ లో అంత లోతుకి మీరు వెళ్తారా? Yes or No? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `deep ocean submarine crushed, dark abyss water pressure, diving deep underwater, metal crushing simulation, trench depths, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #056 — డైనోసార్లు అంతరించిపోకపోతే మనుషులు ఉండేవారా?
+### వీడియో #056 — ఆస్టరాయిడ్ మిస్ అయ్యుంటే డైనోసార్లు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `డైనోసార్లు అంతరించిపోకపోతే మనుషులు ఉండేవారా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `asteroid hitting earth explosion, t rex dinosaur jungle, raptor running prehistoric, human evolution timeline, ancient jungle` |
+| **Video Subject** | `ఆస్టరాయిడ్ మిస్ అయ్యుంటే డైనోసార్లు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `asteroid space, dinosaur forest, small mammal, dinosaur skeleton museum, jungle` |
+| **Thumbnail Title** | `ఆస్టరాయిడ్ మిస్ అయితే?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డైనోసార్లను చంపిన ఆస్టరాయిడ్ పడకపోతే.. ఈ రోజు మనుషులు అసలు పుట్టేవారా?  అలా జరిగి ఉంటే మనుషుల ఎవల్యూషన్ కూడా జరిగేది కాదేమో! డైనోసార్లే మరింత ఇంటెలిజెంట్ గా మారి వాటి స్వంత సివిలైజేషన్ ని బిల్డ్ చేసుకునేవి! డైనోసార్ హిస్టరీ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+Sixty six million years క్రితం, దాదాపు పది కిలోమీటర్ల వెడల్పున్న ఒక ఆస్టరాయిడ్ పెద్ద డైనోసార్లను అంతం చేసింది. అది మిస్ అయ్యుంటే? డైనోసార్లు ఇంకా భూమిని రూల్ చేస్తుండేవి కావచ్చు. మన పూర్వీకులైన చిన్న క్షీరదాలకు ఛాన్స్ దొరికేది కాదేమో! Nineteen eighty two లో ఒక సైంటిస్ట్, తెలివైన డైనోసార్ ఎలా ఉండేదో ఊహించాడు. పెద్ద బ్రెయిన్, నిటారుగా నడిచే 'Dinosauroid'! కాస్త క్రీపీ కదా? అప్పుడు మనుషులు ఉండేవారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `డైనోసార్లు చనిపోకపోతే మనుషులు ఉండేవారా? 🦖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఆస్టరాయిడ్ మిస్ అయ్యుంటే డైనోసార్లు? 🦖`
+- **Description**:
 ```text
-🤔 డైనోసార్లు అంతరించిపోకపోతే మనుషులు ఉండేవారా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+ఆస్టరాయిడ్ మిస్ అయ్యుంటే డైనోసార్లు ఇంకా రూల్ చేసేవి కావచ్చు — ఒక సైంటిస్ట్ తెలివైన 'Dinosauroid' ని కూడా ఊహించాడు!
+What if the dinosaur asteroid missed — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 ఆస్టరాయిడ్ మిస్ అయ్యుంటే మనుషులు ఉండేవారా?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• డైనోసార్లు అంతరించిపోకపోతే మనుషులు ఉండేవారా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-డైనోసార్లు అంతరించిపోకపోతే మనుషులు ఉండేవారా?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `asteroid hitting earth explosion, t rex dinosaur jungle, raptor running prehistoric, human evolution timeline, ancient jungle, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if the dinosaur asteroid missed, what if the dinosaur asteroid missed in telugu, dinosaurs, asteroid, what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఆస్టరాయిడ్ మిస్ అయ్యుంటే మనుషులు ఉండేవారా? 👇`
+- **Playlist**: `What If Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #066 — చలికి బాడీ ఎందుకు షివర్ అవుతుంది?
+### వీడియో #066 — చలికి ఒళ్ళు ఎందుకు వణుకుతుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `చలికి బాడీ ఎందుకు షివర్ అవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `person shivering cold snow, winter snow blizzard, hot chocolate mug cozy, knitted winter gloves, warm fireplace burning` |
+| **Video Subject** | `చలికి ఒళ్ళు ఎందుకు వణుకుతుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person shivering cold, winter fog morning, muscles moving, warm blanket, hot tea cup` |
+| **Thumbnail Title** | `వణుకు = హీటర్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చలి వేసినప్పుడు శరీరం ఎందుకు గడగడా వణుకుతుందో తెలుసా? అది మీ బాడీ వేసే హీటర్ ట్రిక్!  బాడీ టెంపరేచర్ పడిపోయినప్పుడు మన బ్రెయిన్ మజిల్స్ ని సెకనుకు పదుల సార్లు వేగంగా షేక్ చేస్తుంది. ఈ రాపిడ్ వర్కౌట్ వల్ల హీట్ పుట్టి బాడీ వెచ్చబడుతుంది! మన బాడీ ఎంత తెలివైనదో కదా! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+చలి వేస్తే మన బాడీ గడగడా వణుకుతుంది. అది మీ బాడీ సొంత హీటర్! బాడీ టెంపరేచర్ పడిపోగానే, బ్రెయిన్ మజిల్స్ కి ఒక మెసేజ్ పంపుతుంది: ఊగండి! మజిల్స్ సెకనుకు చాలా సార్లు బిగుసుకుని, వదులవుతూ ఉంటాయి. ఈ చిన్న చిన్న మూవ్మెంట్స్ అన్నీ వేడిని పుట్టిస్తాయి, ఆ వేడే మనల్ని వెచ్చగా ఉంచుతుంది! పళ్ళు టకటక కొట్టుకోవడం కూడా అందుకే. మీ ఊర్లో చలికాలంలో టెంపరేచర్ ఎంత వరకు పడిపోతుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చలికి ఒళ్ళు ఎందుకు వణుకుతుంది? ❄️ 🔬 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చలికి ఒళ్ళు ఎందుకు వణుకుతుంది? ❄️`
+- **Description**:
 ```text
-🔬 చలికి బాడీ ఎందుకు షివర్ అవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• చలికి బాడీ ఎందుకు షివర్ అవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+వణుకు మన బాడీ సొంత హీటర్ — మజిల్స్ వేగంగా బిగుసుకుని వదులవుతూ వేడిని పుట్టిస్తాయి!
+Why do we shiver when cold — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ ఊర్లో చలికాలంలో టెంపరేచర్ ఎంత వరకు పడిపోతుంది?
 
-🔍 Related Searches / శోధన పదాలు:
-చలికి బాడీ ఎందుకు షివర్ అవుతుంది?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
+- **Tags**: `why do we shiver when cold, why do we shiver when cold in telugu, shivering, body temperature, human body, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఊర్లో చలికాలంలో టెంపరేచర్ ఎంత వరకు పడిపోతుంది? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `person shivering cold snow, winter snow blizzard, hot chocolate mug cozy, knitted winter gloves, warm fireplace burning, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #076 — డైనోసార్ల రియల్ కలర్స్ ఎలా కనిపెట్టారు?
+### వీడియో #076 — డైనోసార్ల అసలు రంగులు ఎలా కనిపెట్టారు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `డైనోసార్ల రియల్ కలర్స్ ఎలా కనిపెట్టారు?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `electron microscope scientist lab, colorful bird feathers macro, orange striped tail raccoon, colorful dinosaur painting, fossil excavation` |
+| **Video Subject** | `డైనోసార్ల అసలు రంగులు ఎలా కనిపెట్టారు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `dinosaur fossil, microscope scientist, feather close up, striped tail animal, colorful dinosaur model` |
+| **Thumbnail Title** | `డైనోసార్ల నిజమైన రంగు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-కోట్లాది ఏళ్ల నాటి డైనోసార్ల ఒరిజినల్ రంగులను సైంటిస్టులు ఎలా కనిపెట్టారో తెలుసా!  దీని ఆధారంగా Sinosauropteryx అనే డైనోసార్ కి ఆరెంజ్, వైట్ స్ట్రిప్స్ టెయిల్ ఉండేదని కనిపెట్టారు! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+కోట్ల ఏళ్ళ నాటి డైనోసార్ల రంగు సైంటిస్టులకు ఎలా తెలిసింది? ఫాసిల్ ఈకలను సూపర్ పవర్ ఫుల్ మైక్రోస్కోప్ లతో చూశారు. అందులో 'Melanosomes' అనే చిన్న చిన్న రంగు ప్యాకెట్లు కనిపించాయి! ఈ రోజు పక్షుల్లో కూడా ఇవే రంగును ఇస్తాయి, ఒక్కో రంగుకు ఒక్కో షేప్! ఈ క్లూస్ తో 'Sinosauropteryx' అనే చిన్న డైనోసార్ తోకకు ఆరెంజ్, తెలుపు చారలు ఉండేవని కనిపెట్టారు! T-Rex ఏ రంగులో ఉండేదని మీరు అనుకుంటున్నారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `డైనోసార్ల అసలు రంగులు ఎలా కనిపెట్టారు? 🎨 🦖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `డైనోసార్ల అసలు రంగులు ఎలా కనిపెట్టారు? 🎨`
+- **Description**:
 ```text
-🦖 డైనోసార్ల రియల్ కలర్స్ ఎలా కనిపెట్టారు? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• డైనోసార్ల రియల్ కలర్స్ ఎలా కనిపెట్టారు? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+ఫాసిల్ ఈకల్లోని Melanosomes ని చూసి Sinosauropteryx తోకకు ఆరెంజ్-తెలుపు చారలు ఉండేవని కనిపెట్టారు!
+How scientists found real dinosaur colors — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 T-Rex ఏ రంగులో ఉండేదని మీరు అనుకుంటున్నారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-డైనోసార్ల రియల్ కలర్స్ ఎలా కనిపెట్టారు?, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `electron microscope scientist lab, colorful bird feathers macro, orange striped tail raccoon, colorful dinosaur painting, fossil excavation, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how scientists found real dinosaur colors, how scientists found real dinosaur colors in telugu, dinosaur colors, sinosauropteryx, paleontology, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `T-Rex ఏ రంగులో ఉండేదని మీరు అనుకుంటున్నారు? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #086 — Nuclear Fusion: భూమిపై మినీ సన్ ని తయారుచేయడం!
+### వీడియో #086 — భూమి మీద మినీ సూర్యుడు! Fusion Energy
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Nuclear Fusion: భూమిపై మినీ సన్ ని తయారుచేయడం!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `nuclear fusion reactor glowing, magnetic tokamak chamber, sun burning plasma flare, clean futuristic city, glowing energy core` |
+| **Video Subject** | `భూమి మీద మినీ సూర్యుడు! Fusion Energy` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `sun surface, fusion reactor, ocean water, petrol fuel pump, plasma glow` |
+| **Thumbnail Title** | `భూమి మీద సూర్యుడు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సూర్యుడి శక్తిని భూమిపై సృష్టించే 'ఆర్టిఫిషియల్ సన్' ప్రాజెక్ట్ గురించి తెలుసా!  సీ వాటర్ లోని హైడ్రోజన్ ని one hundred million degrees వద్ద మండించడం ద్వారా జీరో పొల్యూషన్ తో లిమిట్ లెస్ క్లీన్ ఎనర్జీ ని ప్రొడ్యూస్ చేయవచ్చు! ఒక్క గ్లాస్ వాటర్ తో ఒక సిటీ మొత్తానికి వన్ ఇయర్ పవర్ ఇవ్వవచ్చు! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+సైంటిస్టులు భూమి మీద ఒక చిన్న సూర్యుడిని తయారుచేయాలని ట్రై చేస్తున్నారు! దాన్నే 'Nuclear Fusion' అంటారు. నక్షత్రాలు చిన్న అణువులను కలిపి భారీ ఎనర్జీని ఇస్తాయి, కార్బన్ పొల్యూషన్ లేకుండా! ఫ్యూయల్ సముద్రపు నీటిలోని హెవీ హైడ్రోజన్. ఒక్క లీటర్ సముద్రపు నీటిలోని ఈ ఫ్యూయల్, దాదాపు three hundred లీటర్ల పెట్రోల్ అంత ఎనర్జీ ఇస్తుంది! ఫ్రాన్స్ లో కడుతున్న ITER ప్రాజెక్ట్ లో ఇండియా కూడా పార్ట్నర్. కానీ పెద్ద ఛాలెంజ్, పది కోట్ల డిగ్రీల వేడి! మన లైఫ్ టైమ్ లో వస్తుందా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `భూమిపై మినీ సన్! అపరిమిత ఉచిత విద్యుత్! ☀️ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `భూమి మీద మినీ సూర్యుడు! Fusion Energy ☀️`
+- **Description**:
 ```text
-🤖 Nuclear Fusion: భూమిపై మినీ సన్ ని తయారుచేయడం! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Fusion Energy తో 1 లీటర్ సముద్రపు నీటిలోని ఫ్యూయల్ దాదాపు 300 లీటర్ల పెట్రోల్ అంత ఎనర్జీ ఇస్తుంది — ITER లో ఇండియా కూడా పార్ట్నర్!
+Nuclear fusion energy explained — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Nuclear Fusion: భూమిపై మినీ సన్ ని తయారుచేయడం! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 Fusion పవర్ మన లైఫ్ టైమ్ లో వస్తుందా? Yes or No?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-nuclear fusion: భూమిపై మినీ సన్ ని తయారుచేయడం!, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
+- **Tags**: `nuclear fusion energy explained, nuclear fusion energy explained in telugu, nuclear fusion, iter, clean energy, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Fusion పవర్ మన లైఫ్ టైమ్ లో వస్తుందా? Yes or No? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `nuclear fusion reactor glowing, magnetic tokamak chamber, sun burning plasma flare, clean futuristic city, glowing energy core, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #096 — దోమలు కొందరిని మాత్రమే ఎందుకు ఎక్కువగా కుడతాయి?
+### వీడియో #096 — దోమలు కొందరినే ఎందుకు ఎక్కువ కుడతాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `దోమలు కొందరిని మాత్రమే ఎందుకు ఎక్కువగా కుడతాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `mosquito biting human skin macro, insect flying close up, person scratching mosquito bite, sweaty runner workout, camping tent night` |
+| **Video Subject** | `దోమలు కొందరినే ఎందుకు ఎక్కువ కుడతాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `mosquito close up, person scratching arm, sweat skin, person sleeping mosquito net, group of friends evening` |
+| **Thumbnail Title** | `దోమలకు మీరే ఇష్టమా?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-దోమలు అందరినీ వదిలేసి మిమ్మల్నే ఎక్కువగా ఎందుకు కుడతాయో తెలుసా!  'O' బ్లడ్ గ్రూప్ ఉన్నవారిని, వర్కౌట్ చేసి చెమట పట్టిన వారిని దోమలు ఎక్కువగా కుడతాయి! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+పక్కన అందరూ ఉన్నా, దోమలు మిమ్మల్నే కుడుతున్నాయా? అది మీ భ్రమ కాదు! దోమలు మనం వదిలే కార్బన్ డయాక్సైడ్, బాడీ వేడి, చెమట వాసనని ఫాలో అవుతాయి. Two thousand twenty two లో ఒక స్టడీ ప్రకారం, కొంతమంది స్కిన్ మీద కొన్ని యాసిడ్స్ ఎక్కువగా ఉంటాయి. టాప్ దోమ మాగ్నెట్ ని దోమలు దాదాపు వంద రెట్లు ఎక్కువగా ఇష్టపడ్డాయి! పైగా ఆ వాసన ఏళ్ళ తరబడి మారలేదు. మీరు 'దోమ మాగ్నెట్' ఆ?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `దోమలు కొందరినే ఎందుకు కుడతాయి? 🦟 💡 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `దోమలు కొందరినే ఎందుకు ఎక్కువ కుడతాయి? 🦟`
+- **Description**:
 ```text
-💡 దోమలు కొందరిని మాత్రమే ఎందుకు ఎక్కువగా కుడతాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+దోమలు CO2, వేడి, చెమట వాసనని ఫాలో అవుతాయి — కొంతమంది స్కిన్ లోని యాసిడ్స్ వల్ల వాళ్ళు 'దోమ మాగ్నెట్స్' అవుతారు!
+Why mosquitoes bite some people more — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు 'దోమ మాగ్నెట్' ఆ? Yes or No?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• దోమలు కొందరిని మాత్రమే ఎందుకు ఎక్కువగా కుడతాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-దోమలు కొందరిని మాత్రమే ఎందుకు ఎక్కువగా కుడతాయి?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `mosquito biting human skin macro, insect flying close up, person scratching mosquito bite, sweaty runner workout, camping tent night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why mosquitoes bite some people more, why mosquitoes bite some people more in telugu, mosquitoes, mosquito bites, health facts, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు 'దోమ మాగ్నెట్' ఆ? Yes or No? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---
 
-## సెక్షన్ 7: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 7 (Variety Batch 7 — #007, #017, #027, #037, #047, #057, #067, #077, #087, #097)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 7: వెరైటీ బ్యాచ్ 7 (#007, #017, #027, #037, #047, #057, #067, #077, #087, #097)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #007 — పక్కకు పడుకుని తిరిగే వింత ప్లానెట్ Uranus!
+### వీడియో #007 — పక్కకి పడుకుని తిరిగే ప్లానెట్ Uranus!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `పక్కకు పడుకుని తిరిగే వింత ప్లానెట్ Uranus!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `uranus blue cyan planet, rolling ball space, planetary collision, solar system animation, ice giant planet` |
+| **Video Subject** | `పక్కకి పడుకుని తిరిగే ప్లానెట్ Uranus!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `uranus planet, spinning top toy, rolling ball, planets orbit sun, night darkness` |
+| **Thumbnail Title** | `పక్కకి ఒరిగిన ప్లానెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మన సోలార్ సిస్టమ్ లోని అన్ని ప్లానెట్స్ టాప్ లా నిటారుగా తిరుగుతుంటే, Uranus మాత్రం ఒక బంతిలా సైడ్ కి పడుకుని రోల్ అవుతుంది! బిలియన్ ఇయర్స్ క్రితం ఎర్త్ సైజ్ లో ఉన్న ఒక భారీ ఆస్టరాయిడ్ యురేనస్ ని గట్టిగా గుద్దడం వల్లే అది అలా ఒరిగిపోయింది! దీనివల్ల Uranus లో forty two years పగలు, మరో forty two years నైట్ ఉంటుంది! వినడానికే ఎంత క్రేజీగా ఉంది కదా! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+మిగతా ప్లానెట్స్ అన్నీ బొంగరంలా నిటారుగా తిరుగుతుంటే, Uranus మాత్రం పక్కకి పడుకుని బంతిలా దొర్లుతుంది! కోట్ల సంవత్సరాల క్రితం భూమి అంత పెద్ద వస్తువు ఏదో దాన్ని గుద్దడం వల్ల అది అలా ఒరిగిపోయిందని సైంటిస్టుల అంచనా. దీనివల్ల Uranus పోల్స్ దగ్గర forty two years పగలు, ఆ తర్వాత forty two years చీకటి! ఒక్క ఉదయం కోసం నలభై రెండేళ్ళు వెయిట్ చేయాలి. మీరు అక్కడ ఉండగలరా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `పడుకుని దొర్లే వింత ప్లానెట్ Uranus! 🪐 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `పక్కకి పడుకుని తిరిగే ప్లానెట్ Uranus! 🪐`
+- **Description**:
 ```text
-🪐 పక్కకు పడుకుని తిరిగే వింత ప్లానెట్ Uranus! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• పక్కకు పడుకుని తిరిగే వింత ప్లానెట్ Uranus! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Uranus పక్కకి ఒరిగి తిరుగుతుంది — అందుకే దాని పోల్స్ దగ్గర 42 ఏళ్ళు పగలు, 42 ఏళ్ళు చీకటి!
+Why uranus rotates on its side — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 42 ఏళ్ళ చీకటిలో మీరు ఉండగలరా?
 
-🔍 Related Searches / శోధన పదాలు:
-పక్కకు పడుకుని తిరిగే వింత ప్లానెట్ uranus!, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
+- **Tags**: `why uranus rotates on its side, why uranus rotates on its side in telugu, uranus, planets, solar system, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `42 ఏళ్ళ చీకటిలో మీరు ఉండగలరా? 👇`
+- **Playlist**: `Space Facts Telugu`
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `uranus blue cyan planet, rolling ball space, planetary collision, solar system animation, ice giant planet, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #017 — మనిషి కన్ను 30 మైళ్ళ దూరం చూడగలదా?
+### వీడియో #017 — మనిషి కన్ను ఎంత దూరం చూడగలదు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనిషి కన్ను 30 మైళ్ళ దూరం చూడగలదా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `candle flame night darkness, human eye pupil iris, starry night mountain, single photon light particle, telescope observing stars` |
+| **Video Subject** | `మనిషి కన్ను ఎంత దూరం చూడగలదు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `candle flame dark, night landscape, human eye close up, andromeda galaxy, stars milky way` |
+| **Thumbnail Title** | `2.6 KM దూరంలో క్యాండిల్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-హ్యూమన్ ఐ పవర్ ఎంత క్రేజీగా ఉంటుందో తెలుసా? పూర్తి డార్క్ గా ఉన్న రాత్రి, క్లియర్ వెదర్ లో మనిషి కన్ను దాదాపు thirty miles (forty eight kilometers) దూరంలో వెలిగే చిన్న క్యాండిల్ ఫ్లేమ్ ని కూడా ఈజీగా డిటెక్ట్ చేయగలదు! మన కంటిలోని రాడ్ సెల్స్ సింగిల్ ఫోటాన్ లైట్ కి కూడా రెస్పాండ్ అయ్యే సూపర్ సెన్సార్లు! మన విజన్ ఒక నేచురల్ four K కెమెరా! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+చీకటి రాత్రి, క్లియర్ వెదర్ లో మీ కన్ను దాదాపు రెండున్నర కిలోమీటర్ల దూరంలో ఉన్న ఒక చిన్న క్యాండిల్ వెలుగుని కూడా చూడగలదని రీసెర్చ్ చెబుతోంది! కానీ రాత్రి ఆకాశం వైపు చూస్తే ఇంకా చాలా దూరం చూడొచ్చు. Andromeda Galaxy ఇరవై ఐదు లక్షల light years దూరంలో ఉంది, అయినా చీకటి ప్లేస్ నుంచి కళ్ళతోనే కనిపిస్తుంది! ఆ లైట్ బయల్దేరినప్పుడు మనలాంటి మనుషులే లేరు! మీరు లాస్ట్ టైమ్ డార్క్ స్కై ఎప్పుడు చూశారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మనిషి కన్ను ఎంత దూరం చూడగలదు? 👁️ #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మనిషి కన్ను ఎంత దూరం చూడగలదు? 👁️`
+- **Description**:
 ```text
-🧠 మనిషి కన్ను 30 మైళ్ళ దూరం చూడగలదా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనిషి కన్ను 30 మైళ్ళ దూరం చూడగలదా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+మన కన్ను దాదాపు 2.6 km దూరంలో క్యాండిల్ ని చూడగలదు — 25 లక్షల light years దూరంలో ఉన్న Andromeda Galaxy ని కూడా!
+How far can the human eye see — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు లాస్ట్ టైమ్ స్టార్స్ నిండిన ఆకాశం ఎప్పుడు చూశారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-మనిషి కన్ను 30 మైళ్ళ దూరం చూడగలదా?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `candle flame night darkness, human eye pupil iris, starry night mountain, single photon light particle, telescope observing stars, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how far can the human eye see, how far can the human eye see in telugu, human eye, eyesight, andromeda galaxy, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు లాస్ట్ టైమ్ స్టార్స్ నిండిన ఆకాశం ఎప్పుడు చూశారు? 👇`
+- **Playlist**: `Human Body Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #027 — Sloth ఎందుకు అంత స్లోగా కదులుతుంది?
+### వీడియో #027 — Sloth ఇంత స్లోగా ఎందుకు ఉంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Sloth ఎందుకు అంత స్లోగా కదులుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `sloth hanging tree branch, slow motion sloth smiling, rainforest trees jungle, funny cute animal, green leaves canopy` |
+| **Video Subject** | `Sloth ఇంత స్లోగా ఎందుకు ఉంటుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `sloth hanging tree, sloth eating leaves, sloth moving slowly, green algae fur close up, rainforest canopy` |
+| **Thumbnail Title** | `స్లో = సూపర్ పవర్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-వరల్డ్ లోనే అత్యంత బద్ధకమైన యానిమల్ స్లాత్. ఒక ఆకును డైజెస్ట్ చేసుకోవడానికి దానికి వన్ మంత్ పడుతుంది! కానీ ఇంత స్లోగా ఉండటమే దానికి బెస్ట్ ప్రొటెక్షన్. దాని బాడీపై గ్రీన్ ఆల్గే పెరగడం వల్ల చెట్ల కొమ్మల్లో అది డేంజరస్ ప్రిడేటర్స్ కి అస్సలు కనిపించదు! స్లో అండ్ స్టడీగా బతికేసే స్లాత్ ఫ్యాక్ట్స్ కోసం! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+ప్రపంచంలోనే అత్యంత స్లో యానిమల్స్ లో Sloth ఒకటి. కానీ స్లోగా ఉండటమే దాని సీక్రెట్ సూపర్ పవర్! అది ఆకులు మాత్రమే తింటుంది, వాటిలో ఎనర్జీ చాలా తక్కువ. అందుకే ఎనర్జీ సేవ్ చేయడానికి నెమ్మదిగా కదులుతుంది. ఒక్క మీల్ అరగడానికి వారాలు పడుతుంది! ఇంకా క్రేజీ, దాని బొచ్చు మీద గ్రీన్ ఆల్గే పెరిగి, చెట్లలో అది కనిపించకుండా కేమోఫ్లాజ్ అవుతుంది! మీ ఫ్రెండ్స్ లో Sloth ఎవరు? ట్యాగ్ చేయండి!
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `వరల్డ్ లోనే మోస్ట్ లేజీ యానిమల్ Sloth! 🦥 🐾 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Sloth ఇంత స్లోగా ఎందుకు ఉంటుంది? 🦥`
+- **Description**:
 ```text
-🐾 Sloth ఎందుకు అంత స్లోగా కదులుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Sloth ఎనర్జీ సేవ్ చేయడానికే స్లోగా కదులుతుంది — దాని బొచ్చు మీద గ్రీన్ ఆల్గే పెరిగి చెట్లలో దాక్కోవడానికి హెల్ప్ చేస్తుంది!
+Why are sloths so slow — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Sloth ఎందుకు అంత స్లోగా కదులుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీ ఫ్రెండ్స్ లో Sloth ఎవరు? ట్యాగ్ చేయండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-sloth ఎందుకు అంత స్లోగా కదులుతుంది?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
+- **Tags**: `why are sloths so slow, why are sloths so slow in telugu, sloths, rainforest animals, animal facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఫ్రెండ్స్ లో Sloth ఎవరు? ట్యాగ్ చేయండి! 👇`
+- **Playlist**: `Animal Facts Telugu`
 
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `sloth hanging tree branch, slow motion sloth smiling, rainforest trees jungle, funny cute animal, green leaves canopy, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #037 — అమెజాన్ లో సలసలా బాయిల్ అయ్యే రివర్!
+### వీడియో #037 — సలసలా మరిగే అమెజాన్ నది!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `అమెజాన్ లో సలసలా బాయిల్ అయ్యే రివర్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `boiling river steam amazon, rainforest aerial jungle, hot thermal river, misty steam jungle, bubbling hot water` |
+| **Video Subject** | `సలసలా మరిగే అమెజాన్ నది!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `amazon rainforest, steaming river, hot water steam, jungle river, geologist` |
+| **Thumbnail Title** | `మరిగే నది!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-పెరూ అమెజాన్ అడవుల్లో 'Mayantuyacu' అనే ఒక మిస్టరీ రివర్ ఉంది. ఈ రివర్ వాటర్ ఎప్పుడూ two hundred degrees Fahrenheit వేడితో బాయిల్ అవుతుంటుంది! అందులో ఏదైనా చిన్న యానిమల్ పడితే కొన్ని సెకన్లలోనే ఉడికిపోతుంది. ఎర్త్ అడుగున ఉండే జియోథర్మల్ ఫాల్ట్స్ వల్లే ఈ నది ఇలా మరుగుతోంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+పెరూ అమెజాన్ అడవుల్లో ఒక నది ఉంది, అది మిమ్మల్ని కాల్చేసేంత వేడిగా ఉంటుంది! లోకల్ ప్రజలు దాన్ని 'Shanay-timpishka' అంటారు, అంటే సూర్యుడి వేడితో మరిగింది అని. కొన్ని చోట్ల నీళ్ళు దాదాపు ninety degrees Celsius కి చేరతాయి! అందులో పడిన చిన్న జంతువులు చనిపోతాయి. చాలా ఏళ్ళు ఇది కట్టుకథ అనుకున్నారు. కానీ ఇది నిజం, పైగా అగ్నిపర్వతం వల్ల కూడా కాదు! భూమి లోతుల నుంచి వేడి నీరు పైకి వస్తోంది. మీరు అక్కడికి వెళ్తారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సలసలా కాగే అమెజాన్ రివర్! 🌊 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సలసలా మరిగే అమెజాన్ నది! 🔥`
+- **Description**:
 ```text
-🌍 అమెజాన్ లో సలసలా బాయిల్ అయ్యే రివర్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+అమెజాన్ లోని Boiling River లో నీళ్ళు దాదాపు 90°C కి చేరతాయి — భూమి లోతుల నుంచి వచ్చే వేడి నీరే కారణం!
+Boiling river of the amazon — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 ఈ మరిగే నది దగ్గరికి మీరు వెళ్తారా?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• అమెజాన్ లో సలసలా బాయిల్ అయ్యే రివర్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-అమెజాన్ లో సలసలా బాయిల్ అయ్యే రివర్!, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `boiling river steam amazon, rainforest aerial jungle, hot thermal river, misty steam jungle, bubbling hot water, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `boiling river of the amazon, boiling river of the amazon in telugu, boiling river, amazon, geology, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ మరిగే నది దగ్గరికి మీరు వెళ్తారా? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #047 — చీకటి ఓషన్ లో గ్లో అయ్యే అద్భుత జీవులు!
+### వీడియో #047 — చీకటి సముద్రంలో వెలిగే జీవులు!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `చీకటి ఓషన్ లో గ్లో అయ్యే అద్భుత జీవులు!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `bioluminescent glowing fish, neon deep sea jellyfish, glowing underwater world, black water glowing lights, alien marine creatures` |
+| **Video Subject** | `చీకటి సముద్రంలో వెలిగే జీవులు!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `deep ocean darkness, bioluminescent jellyfish, glowing deep sea fish, anglerfish light, glowing blue waves beach` |
+| **Thumbnail Title** | `సముద్రంలో లైట్స్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రంలో వెయ్యి మీటర్ల కంటే డీప్ గా సన్ లైట్ అస్సలు ఉండదు. అక్కడ ఉండే ninety percent జీవులు తమ బాడీ నుంచే బ్లూ, గ్రీన్ కలర్స్ లో గ్లో అవుతాయి! దీనిని 'Bioluminescence' అంటారు. ఆహారాన్ని అట్రాక్ట్ చేయడానికి ఇవి ఈ లైట్స్ ని వాడతాయి! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+సముద్రంలో దాదాపు వెయ్యి మీటర్ల లోతు దాటితే సన్ లైట్ అస్సలు ఉండదు. పూర్తి చీకటి! అయినా అక్కడ మెరుపులు కనిపిస్తాయి. ఎందుకంటే అక్కడ ఉండే జీవుల్లో దాదాపు నాలుగింట మూడు వంతులు తమ బాడీ నుంచే లైట్ తయారుచేస్తాయి! దీన్ని 'Bioluminescence' అంటారు. కొన్ని ఆహారాన్ని ఆకర్షించడానికి, కొన్ని శత్రువులను కన్ఫ్యూజ్ చేయడానికి, కొన్ని పార్ట్నర్ ని వెతకడానికి! మన బీచ్ లో కూడా రాత్రి బ్లూ అలలు కనిపిస్తాయి తెలుసా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చీకటి సముద్రంలో వెలిగే గ్లోయింగ్ క్రియేచర్స్! ✨ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చీకటి సముద్రంలో వెలిగే జీవులు! ✨`
+- **Description**:
 ```text
-🌊 చీకటి ఓషన్ లో గ్లో అయ్యే అద్భుత జీవులు! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• చీకటి ఓషన్ లో గ్లో అయ్యే అద్భుత జీవులు! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+సముద్రం లోతుల్లో జీవుల్లో దాదాపు 75% తమ బాడీ నుంచే లైట్ తయారుచేస్తాయి — దీన్నే Bioluminescence అంటారు!
+Bioluminescence deep sea creatures — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 రాత్రి బీచ్ లో మెరిసే బ్లూ అలలు మీరు చూశారా?
 
-🔍 Related Searches / శోధన పదాలు:
-చీకటి ఓషన్ లో గ్లో అయ్యే అద్భుత జీవులు!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
+- **Tags**: `bioluminescence deep sea creatures, bioluminescence deep sea creatures in telugu, bioluminescence, deep sea, ocean, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `రాత్రి బీచ్ లో మెరిసే బ్లూ అలలు మీరు చూశారా? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `bioluminescent glowing fish, neon deep sea jellyfish, glowing underwater world, black water glowing lights, alien marine creatures, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #057 — వాటర్ కి బదులు రోజూ Soda తాగితే?
+### వీడియో #057 — నీళ్ళకు బదులు కూల్ డ్రింక్స్ మాత్రమే తాగితే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `వాటర్ కి బదులు రోజూ Soda తాగితే?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `pouring soda fizzy glass, sugar cubes slow motion, human kidney illustration, dry cracked ground, drinking clean fresh water` |
+| **Video Subject** | `నీళ్ళకు బదులు కూల్ డ్రింక్స్ మాత్రమే తాగితే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `soda can pouring, teeth close up, sugar cubes, bacteria microscope, glass of water` |
+| **Thumbnail Title** | `రోజూ కూల్ డ్రింక్స్?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనం వాటర్ మానేసి రోజూ కూల్ డ్రింక్స్ మాత్రమే తాగితే ఏమవుతుంది? కొన్ని రోజుల్లోనే దంతాల ఎనామిల్ కరిగిపోతుంది, లివర్ ఫ్యాటీగా మారుతుంది. వన్ మంత్ లో తీవ్రమైన డీహైడ్రేషన్, కిడ్నీ స్టోన్స్ వస్తాయి. వన్ ఇయర్ లో హార్ట్ ఎటాక్ రిస్క్ పెరిగిపోతుంది! ప్యూర్ వాటర్ ఈజ్ లైఫ్! హెల్త్ ఫ్యాక్ట్స్ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+నీళ్ళకు బదులు రోజూ కూల్ డ్రింక్స్ మాత్రమే తాగితే ఏమవుతుంది? మొదట దెబ్బ పళ్ళకి! షుగర్ నోట్లోని బ్యాక్టీరియాకి ఫుడ్, అవి యాసిడ్ తయారుచేస్తాయి. పైగా డ్రింక్ కూడా యాసిడిక్. దాంతో ఎనామిల్ అరిగిపోతుంది. ఒక్క క్యాన్ లో దాదాపు పది టీస్పూన్ల చక్కెర ఉంటుంది! నెలలు, సంవత్సరాలు గడిచే కొద్దీ బరువు పెరగడం, టైప్ టూ డయాబెటిస్, ఫ్యాటీ లివర్ రిస్క్ పెరుగుతుంది. మీరు వారానికి ఎన్ని కూల్ డ్రింక్స్ తాగుతారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `వాటర్ కి బదులు సోడా తాగితే ఏం జరుగుతుంది? 🥤 🤔 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నీళ్ళకు బదులు కూల్ డ్రింక్స్ మాత్రమే తాగితే? 🥤`
+- **Description**:
 ```text
-🤔 వాటర్ కి బదులు రోజూ Soda తాగితే? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• వాటర్ కి బదులు రోజూ Soda తాగితే? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+రోజూ కూల్ డ్రింక్స్ పళ్ళ ఎనామిల్ ని అరగదీస్తాయి — ఒక్క క్యాన్ లో దాదాపు 10 టీస్పూన్ల చక్కెర, డయాబెటిస్, ఫ్యాటీ లివర్ రిస్క్ పెంచుతుంది.
+What happens if you only drink soda — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు వారానికి ఎన్ని కూల్ డ్రింక్స్ తాగుతారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-వాటర్ కి బదులు రోజూ soda తాగితే?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `pouring soda fizzy glass, sugar cubes slow motion, human kidney illustration, dry cracked ground, drinking clean fresh water, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens if you only drink soda, what happens if you only drink soda in telugu, soft drinks, sugar, health facts, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు వారానికి ఎన్ని కూల్ డ్రింక్స్ తాగుతారు? 👇`
+- **Playlist**: `What If Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #067 — నాలుకపై ఉండే టేస్ట్ బడ్స్ సీక్రెట్!
+### వీడియో #067 — నాలుక మీద బుడిపెల రహస్యం!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `నాలుకపై ఉండే టేస్ట్ బడ్స్ సీక్రెట్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `kid sticking tongue out funny, human tongue taste buds macro, colorful fruits strawberries, smiling child eating watermelon, sweet food` |
+| **Video Subject** | `నాలుక మీద బుడిపెల రహస్యం!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person sticking tongue out, tongue close up, mirror, sweets candy, lemon sour face` |
+| **Thumbnail Title** | `నాలుక బుడిపెలు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మీ నాలుకను మిర్రర్ లో చూస్తే చిన్న చిన్న బంప్స్ కనిపిస్తాయి. వాటిని 'Papillae' అంటారు! అవి ఫుడ్ ని చూవ్ చేయడానికి గ్రిప్ నిస్తాయి. వాటి లోపల ten thousand మైక్రోస్కోపిక్ టేస్ట్ బడ్స్ ఉండి స్వీట్, సాల్ట్, సోర్, బిట్టర్ టేస్ట్ లని బ్రెయిన్ కి తెలియజేస్తాయి! బాడీ వండర్స్ కోసం! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+అద్దంలో మీ నాలుకను చూడండి. చిన్న చిన్న బుడిపెలు కనిపిస్తున్నాయా? వాటిని 'Papillae' అంటారు! కొన్ని ఫుడ్ ని నమిలేటప్పుడు గ్రిప్ ఇస్తాయి. కొన్నింటిలో టేస్ట్ బడ్స్ ఉంటాయి. మనకు వేల టేస్ట్ బడ్స్ ఉన్నాయి! అవి స్వీట్, సాల్ట్, సోర్, బిట్టర్, ఉమామి అనే రుచులను గుర్తిస్తాయి. ఇంకో సర్ ప్రైజ్: టేస్ట్ బడ్స్ శాశ్వతం కాదు, దాదాపు రెండు వారాలకు ఒకసారి కొత్తవి వస్తాయి! మీకు ఇష్టమైన రుచి ఏది? తీపి? కారం? పులుపు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `నాలుకపై ఉండే బుడిపల రహస్యం! 👅 🔬 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నాలుక మీద బుడిపెల రహస్యం! 👅`
+- **Description**:
 ```text
-🔬 నాలుకపై ఉండే టేస్ట్ బడ్స్ సీక్రెట్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+నాలుక మీద బుడిపెలను Papillae అంటారు — వాటిలోని టేస్ట్ బడ్స్ దాదాపు రెండు వారాలకు ఒకసారి కొత్తవి వస్తాయి!
+What are the bumps on your tongue — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• నాలుకపై ఉండే టేస్ట్ బడ్స్ సీక్రెట్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీకు ఇష్టమైన రుచి ఏది? తీపి? కారం? పులుపు?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-నాలుకపై ఉండే టేస్ట్ బడ్స్ సీక్రెట్!, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
+- **Tags**: `what are the bumps on your tongue, what are the bumps on your tongue in telugu, taste buds, tongue, human body, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఇష్టమైన రుచి ఏది? తీపి? కారం? పులుపు? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `kid sticking tongue out funny, human tongue taste buds macro, colorful fruits strawberries, smiling child eating watermelon, sweet food, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #077 — హమ్మింగ్ బర్డ్ అంత చిన్న చిట్టి డైనోసార్!
+### వీడియో #077 — ఇప్పటికీ బతికున్న చిట్టి డైనోసార్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `హమ్మింగ్ బర్డ్ అంత చిన్న చిట్టి డైనోసార్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `tiny hummingbird on flower, miniature bird flying slow motion, dense rainforest canopy, ancient dragonfly, coin in palm hand` |
+| **Video Subject** | `ఇప్పటికీ బతికున్న చిట్టి డైనోసార్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `bee hummingbird, hummingbird flower, small coin, crow bird, birds flying` |
+| **Thumbnail Title** | `ఇంకా బతికే ఉంది!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డైనోసార్లన్నీ కొండంత పెద్దవి కావని మీకు తెలుసా? Microraptor అనే డైనోసార్ ఒక చిన్న పిచ్చుక లేదా హమ్మింగ్ బర్డ్ అంత సైజ్ లో ఉండేది! దానికి four wings ఉండేవి—రెండు చేతులకు, రెండు కాళ్ళకు! అది ట్రీస్ మధ్య గాల్లో గ్లైడ్ చేస్తూ కీటకాలను వేటాడేది! మినియేచర్ డైనోసార్స్ కోసం! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+అతి చిన్న డైనోసార్ ఏదో తెలుసా? అది ఇంకా బతికే ఉంది! పక్షులు డైనోసార్లే. అందులో అతి చిన్నది 'Bee Hummingbird'. దాదాపు five centimeters పొడవు, బరువు రెండు గ్రాములు కూడా ఉండదు! చాలా కాలం క్రితం కూడా చిన్న డైనోసార్లు ఉండేవి. 'Microraptor' ఒక కాకి సైజ్ లో, చేతులకు రెండు, కాళ్ళకు రెండు, మొత్తం నాలుగు రెక్కలతో ఉండేది! ఇకపై పక్షిని చూస్తే డైనోసార్ కి హాయ్ చెప్పండి! మీకు ఇష్టమైన పక్షి ఏది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `తేనెపిట్టంత చిన్న చిట్టి డైనోసార్! 🐦 🦖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఇప్పటికీ బతికున్న చిట్టి డైనోసార్! 🐦`
+- **Description**:
 ```text
-🦖 హమ్మింగ్ బర్డ్ అంత చిన్న చిట్టి డైనోసార్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+అతి చిన్న డైనోసార్ Bee Hummingbird — ఇంకా బతికే ఉంది, ఎందుకంటే పక్షులు డైనోసార్లే! Microraptor కి నాలుగు రెక్కలు ఉండేవి.
+Smallest dinosaur bee hummingbird — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీకు ఇష్టమైన పక్షి ఏది?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• హమ్మింగ్ బర్డ్ అంత చిన్న చిట్టి డైనోసార్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-హమ్మింగ్ బర్డ్ అంత చిన్న చిట్టి డైనోసార్!, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `tiny hummingbird on flower, miniature bird flying slow motion, dense rainforest canopy, ancient dragonfly, coin in palm hand, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `smallest dinosaur bee hummingbird, smallest dinosaur bee hummingbird in telugu, smallest dinosaur, birds are dinosaurs, microraptor, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఇష్టమైన పక్షి ఏది? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #087 — ఓషన్ అడుగున ఉండే గ్లోబల్ ఇంటర్నెట్ కేబుల్స్!
+### వీడియో #087 — ఇంటర్నెట్ సముద్రం అడుగున నడుస్తుంది!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఓషన్ అడుగున ఉండే గ్లోబల్ ఇంటర్నెట్ కేబుల్స్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `underwater fiber optic cable, deep sea trench seabed, glowing data light pulse, satellite orbiting earth, global internet network map` |
+| **Video Subject** | `ఇంటర్నెట్ సముద్రం అడుగున నడుస్తుంది!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `ocean floor, fiber optic cable, ship anchor, satellite orbit, repair ship ocean` |
+| **Thumbnail Title** | `సముద్రం కింద ఇంటర్నెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఇంటర్నెట్ మొత్తం స్పేస్ శాటిలైట్స్ ద్వారా నడుస్తుందని అనుకుంటారు. కానీ ninety nine percent ఇంటర్నేషనల్ ఇంటర్నెట్ ట్రాఫిక్ సముద్రం అడుగున వేసిన వేలాది కిలోమీటర్ల ఆప్టికల్ ఫైబర్ కేబుల్స్ ద్వారానే రన్ అవుతుంది! ఈ కేబుల్స్ ఒక గార్డెన్ పైపు కంటే లావుగా ఉండవు! షార్క్స్ కూడా ఈ కేబుల్స్ ని కొరుకుతుంటాయి! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+ఇంటర్నెట్ శాటిలైట్స్ ద్వారా నడుస్తుందని అనుకుంటున్నారా? ఎక్కువ భాగం కాదు! దేశాల మధ్య వెళ్ళే డేటాలో ninety five percent కంటే ఎక్కువ, సముద్రం అడుగున వేసిన కేబుల్స్ ద్వారానే వెళ్తుంది! వందల కేబుల్స్ సముద్రాలను దాటుతాయి, లోతైన చోట్ల కొన్ని ఒక గార్డెన్ పైపు కంటే లావుగా ఉండవు. ఓడ లంగరు తగిలినా, భూకంపం వచ్చినా, ఒక కేబుల్ తెగితే ఒక ప్రాంతం మొత్తం ఇంటర్నెట్ స్లో అవుతుంది! మీ దగ్గర ఇంటర్నెట్ స్పీడ్ ఎంత?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సముద్రం అడుగున ఉన్న గ్లోబల్ ఇంటర్నెట్ కేబుల్స్! 🌐 🤖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఇంటర్నెట్ సముద్రం అడుగున నడుస్తుంది! 🌐`
+- **Description**:
 ```text
-🤖 ఓషన్ అడుగున ఉండే గ్లోబల్ ఇంటర్నెట్ కేబుల్స్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఓషన్ అడుగున ఉండే గ్లోబల్ ఇంటర్నెట్ కేబుల్స్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+దేశాల మధ్య ఇంటర్నెట్ డేటాలో 95% కంటే ఎక్కువ సముద్రం అడుగున ఉన్న ఫైబర్ కేబుల్స్ ద్వారానే వెళ్తుంది — శాటిలైట్స్ ద్వారా కాదు!
+Undersea internet cables — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ దగ్గర ఇంటర్నెట్ స్పీడ్ ఎంత? కామెంట్ చేయండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ఓషన్ అడుగున ఉండే గ్లోబల్ ఇంటర్నెట్ కేబుల్స్!, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
+- **Tags**: `undersea internet cables, undersea internet cables in telugu, undersea cables, internet, fiber optic, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ దగ్గర ఇంటర్నెట్ స్పీడ్ ఎంత? కామెంట్ చేయండి! 👇`
+- **Playlist**: `Tech & AI Telugu`
 
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `underwater fiber optic cable, deep sea trench seabed, glowing data light pulse, satellite orbiting earth, global internet network map, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #097 — స్ట్రెస్ పడితే జుట్టు నిజంగానే వైట్ అయిపోతుందా?
+### వీడియో #097 — టెన్షన్ పడితే జుట్టు తెల్లబడుతుందా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `స్ట్రెస్ పడితే జుట్టు నిజంగానే వైట్ అయిపోతుందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `grey hair close up strand, stressed person holding head, peaceful meditation nature, smiling confident man, hair follicle microscope` |
+| **Video Subject** | `టెన్షన్ పడితే జుట్టు తెల్లబడుతుందా?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `gray hair close up, stressed person, laboratory mice, hair follicle microscope, relaxed person smiling` |
+| **Thumbnail Title** | `టెన్షన్ = తెల్ల జుట్టు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-విపరీతమైన స్ట్రెస్ వల్ల హెయిర్ నిజంగానే వైట్ అవుతుందని హార్వర్డ్ రీసెర్చర్స్ ప్రూవ్ చేశారు! ఎక్కువ టెన్షన్ పడినప్పుడు బాడీలో 'Noradrenaline' రిలీజ్ అవుతుంది. ఇది హెయిర్ ఫాలికల్స్ లో కలర్ నిచ్చే స్టెమ్ సెల్స్ ని పర్మనెంట్ గా డామేజ్ చేస్తుంది! సో టెన్షన్ తగ్గించండి, హ్యాపీగా నవ్వండి! హెల్త్ టిప్స్ కోసం! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+టెన్షన్ వల్ల జుట్టు తెల్లబడుతుందని పెద్దవాళ్ళు చెబుతారు. సైన్స్ ఏమంటోంది? Two thousand twenty లో Harvard సైంటిస్టులు ఎలుకల మీద చేసిన స్టడీ లో, తీవ్రమైన స్ట్రెస్ వల్ల రిలీజ్ అయ్యే ఒక కెమికల్, జుట్టుకు రంగు ఇచ్చే స్టెమ్ సెల్స్ ని ఖాళీ చేసింది. జుట్టు తెల్లబడింది! మనుషుల మీద చేసిన మరో స్టడీ లో, స్ట్రెస్ తగ్గినప్పుడు కొంతమంది జుట్టు మళ్ళీ రంగులోకి వచ్చింది! మీకు ఫస్ట్ వైట్ హెయిర్ ఎప్పుడు వచ్చింది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `టెన్షన్ పడితే జుట్టు తెల్లబడుతుందా? 👨‍🦳 💡 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `టెన్షన్ పడితే జుట్టు తెల్లబడుతుందా? 👨‍🦳`
+- **Description**:
 ```text
-💡 స్ట్రెస్ పడితే జుట్టు నిజంగానే వైట్ అయిపోతుందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• స్ట్రెస్ పడితే జుట్టు నిజంగానే వైట్ అయిపోతుందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Harvard స్టడీ లో తీవ్రమైన స్ట్రెస్ జుట్టు రంగు స్టెమ్ సెల్స్ ని ఖాళీ చేసింది — మనుషుల్లో స్ట్రెస్ తగ్గినప్పుడు కొంత రంగు తిరిగొచ్చింది!
+Does stress cause gray hair — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీకు ఫస్ట్ వైట్ హెయిర్ ఏ వయసులో వచ్చింది?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-స్ట్రెస్ పడితే జుట్టు నిజంగానే వైట్ అయిపోతుందా?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `grey hair close up strand, stressed person holding head, peaceful meditation nature, smiling confident man, hair follicle microscope, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `does stress cause gray hair, does stress cause gray hair in telugu, gray hair, stress, health facts, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఫస్ట్ వైట్ హెయిర్ ఏ వయసులో వచ్చింది? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---
 
-## సెక్షన్ 8: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 8 (Variety Batch 8 — #008, #018, #028, #038, #048, #058, #068, #078, #088, #098)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 8: వెరైటీ బ్యాచ్ 8 (#008, #018, #028, #038, #048, #058, #068, #078, #088, #098)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #008 — మన గెలాక్సీని మింగేస్తున్న The Great Attractor!
+### వీడియో #008 — మన గెలాక్సీని లాగుతున్న మిస్టరీ!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మన గెలాక్సీని మింగేస్తున్న The Great Attractor!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `milky way core dust, gravity pull galaxy, cosmic web universe, collision deep space, mysterious dark matter` |
+| **Video Subject** | `మన గెలాక్సీని లాగుతున్న మిస్టరీ!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `milky way galaxy, galaxies moving, space dust nebula, telescope night sky, dark space` |
+| **Thumbnail Title** | `మనల్ని ఎవరు లాగుతున్నారు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-లక్షలాది గెలాక్సీలను తనవైపు లాక్కుంటున్న అంతరిక్ష రాక్షసుడు 'The Great Attractor' గురించి విన్నారా!  దాని పేరే 'The Great Attractor'. మన గెలాక్సీ గంటకు thirteen lakh మైళ్ళ స్పీడ్ తో ఆ మిస్టరీ పాయింట్ వైపు కొట్టుకుపోతోంది! షాకింగ్ విషయం ఏంటంటే, మన గెలాక్సీ సెంటర్ లో ఉన్న దట్టమైన డస్ట్ వల్ల ఆ గ్రేట్ అట్రాక్టర్ ఏంటో ఇప్పటికీ టెలిస్కోప్ లతో కూడా చూడలేకపోతున్నాం! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+మన మొత్తం గెలాక్సీని ఏదో కనిపించని శక్తి లాగుతోంది! Milky Way తో పాటు వేల గెలాక్సీలు గంటకు ఇరవై లక్షల కిలోమీటర్లకు పైగా స్పీడ్ తో ఒక ప్రాంతం వైపు కదులుతున్నాయి. దాని పేరే 'The Great Attractor'. అక్కడ భారీ మొత్తంలో మాస్ ఉందని సైంటిస్టుల అంచనా. కానీ ప్రాబ్లం ఏంటంటే, అది మన గెలాక్సీ సెంటర్ లోని దట్టమైన డస్ట్ వెనుక దాక్కుంది. అందుకే సరిగ్గా చూడలేకపోతున్నాం! అక్కడ ఏముందని మీరు అనుకుంటున్నారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మన గెలాక్సీని లాక్కుంటున్న మిస్టరీ! 🌌 🪐 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మన గెలాక్సీని లాగుతున్న మిస్టరీ! 🌌`
+- **Description**:
 ```text
-🪐 మన గెలాక్సీని మింగేస్తున్న The Great Attractor! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Milky Way తో పాటు వేల గెలాక్సీలు 'Great Attractor' అనే మిస్టరీ ప్రాంతం వైపు దూసుకుపోతున్నాయి — అది మన గెలాక్సీ డస్ట్ వెనుక దాక్కుంది!
+Great attractor — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మన గెలాక్సీని మింగేస్తున్న The Great Attractor! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 Great Attractor దగ్గర ఏముందని మీరు అనుకుంటున్నారు?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మన గెలాక్సీని మింగేస్తున్న the great attractor!, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
+- **Tags**: `great attractor, great attractor in telugu, milky way, galaxy, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Great Attractor దగ్గర ఏముందని మీరు అనుకుంటున్నారు? 👇`
+- **Playlist**: `Space Facts Telugu`
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `milky way core dust, gravity pull galaxy, cosmic web universe, collision deep space, mysterious dark matter, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #018 — Hiccups ఎందుకు వస్తాయి? చిటికెలో ఎలా ఆపాలి?
+### వీడియో #018 — Hiccups ఎందుకు వస్తాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Hiccups ఎందుకు వస్తాయి? చిటికెలో ఎలా ఆపాలి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `drinking water glass, person hiccup funny, human diaphragm lungs, smiling person relieved, throat vocal cords` |
+| **Video Subject** | `Hiccups ఎందుకు వస్తాయి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person hiccups, lungs diaphragm diagram, eating fast, fizzy soda bubbles, person laughing` |
+| **Thumbnail Title** | `హిక్! ఎందుకు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఎక్కిళ్ళు వచ్చినప్పుడు ఒక్క సెకనులో ఆపే సైంటిఫిక్ ట్రిక్ ఇదే!  ఒక గ్లాస్ చల్లటి నీరు తాగితే డయాఫ్రాగమ్ రిలాక్స్ అయ్యి ఎక్కిళ్ళు వెంటనే ఆగిపోతాయి! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+హిక్! ఎక్కిళ్ళు ఎందుకు వస్తాయో తెలుసా? మన లంగ్స్ కింద 'Diaphragm' అనే పెద్ద మజిల్ ఉంటుంది. ఫాస్ట్ గా తిన్నప్పుడు, ఎక్కువ నవ్వినప్పుడు, లేదా సోడా తాగినప్పుడు అది ఇరిటేట్ అయ్యి సడెన్ గా జంప్ అవుతుంది. అప్పుడు గాలి లోపలికి వెళ్తుంది, వెంటనే గొంతులోని ఒక ఫ్లాప్ టక్కున మూసుకుంటుంది. ఆ సౌండే 'హిక్'! చాలా ఎక్కిళ్ళు కొన్ని నిమిషాల్లో వాటంతట అవే ఆగిపోతాయి. మీ ఫేవరెట్ హిక్కప్ ట్రిక్ ఏంటి?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `Hiccups ఎందుకు వస్తాయి? ఎలా ఆపాలి? 🥤 🧠 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Hiccups ఎందుకు వస్తాయి? 🥤`
+- **Description**:
 ```text
-🧠 Hiccups ఎందుకు వస్తాయి? చిటికెలో ఎలా ఆపాలి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Diaphragm సడెన్ గా జంప్ అయ్యి, గొంతులోని ఫ్లాప్ మూసుకుపోవడం వల్లే ఎక్కిళ్ళు వస్తాయి!
+Why do we get hiccups — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 ఎక్కిళ్ళు ఆపడానికి మీ ఫేవరెట్ ట్రిక్ ఏంటి?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Hiccups ఎందుకు వస్తాయి? చిటికెలో ఎలా ఆపాలి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-hiccups ఎందుకు వస్తాయి? చిటికెలో ఎలా ఆపాలి?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `drinking water glass, person hiccup funny, human diaphragm lungs, smiling person relieved, throat vocal cords, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we get hiccups, why do we get hiccups in telugu, hiccups, diaphragm, human body, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఎక్కిళ్ళు ఆపడానికి మీ ఫేవరెట్ ట్రిక్ ఏంటి? 👇`
+- **Playlist**: `Human Body Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #028 — Ants తమ వెయిట్ కంటే 50 రెట్లు ఎత్తుతాయి!
+### వీడియో #028 — చీమల అన్ బిలీవబుల్ సూపర్ పవర్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Ants తమ వెయిట్ కంటే 50 రెట్లు ఎత్తుతాయి!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `ant carrying heavy leaf, macro ant colony, ant lifting weight, green grass nature, tiny insect teamwork` |
+| **Video Subject** | `చీమల అన్ బిలీవబుల్ సూపర్ పవర్!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `ant carrying leaf, ants teamwork, person lifting car, ant colony, ants on sugar` |
+| **Thumbnail Title** | `చీమ బలం!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-చీమలు తమ బరువు కంటే 50 రెట్లు ఎక్కువ బరువును అలవోకగా ఎలా ఎత్తుతాయో తెలుసా!  ఒకవేళ మనుషులకు ఆ పవర్ ఉంటే, ఒక్క చేత్తో ఒక ఫుల్ సైజ్ కారుని తలపైకి ఎత్తేయవచ్చు! నేచర్ లో చీమల సూపర్ పవర్స్ ఆశ్చర్యం కలిగిస్తాయి! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+చీమ చిన్నదే కానీ సూపర్ స్ట్రాంగ్! కొన్ని చీమలు తమ బరువు కంటే యాభై రెట్లు ఎక్కువ బరువును మోయగలవు! మనకు అంత పవర్ ఉంటే ఒక కారునే ఎత్తేయొచ్చు! ఎలా సాధ్యం? చీమ చాలా చిన్నది కాబట్టి, దాని తేలికైన బాడీతో పోలిస్తే మజిల్స్ చాలా స్ట్రాంగ్. పైగా చీమలు టీమ్ వర్క్ లో మాస్టర్స్, పెద్ద ఆకులను, ఫుడ్ ని కలిసి మోసుకెళ్తాయి! మీ ఇంట్లో చీమలు ఎక్కువగా దేని దగ్గరికి వస్తాయి?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చీమల అన్ బిలీవబుల్ సూపర్ పవర్! 🐜 🐾 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `చీమల అన్ బిలీవబుల్ సూపర్ పవర్! 🐜`
+- **Description**:
 ```text
-🐾 Ants తమ వెయిట్ కంటే 50 రెట్లు ఎత్తుతాయి! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Ants తమ వెయిట్ కంటే 50 రెట్లు ఎత్తుతాయి! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+కొన్ని చీమలు తమ బరువు కంటే 50 రెట్లు ఎక్కువ మోయగలవు — పైగా టీమ్ వర్క్ లో మాస్టర్స్!
+How strong are ants — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీ ఇంట్లో చీమలు ఎక్కువగా దేని దగ్గరికి వస్తాయి?
 
-🔍 Related Searches / శోధన పదాలు:
-ants తమ వెయిట్ కంటే 50 రెట్లు ఎత్తుతాయి!, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
+- **Tags**: `how strong are ants, how strong are ants in telugu, ants, insects, animal superpowers, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఇంట్లో చీమలు ఎక్కువగా దేని దగ్గరికి వస్తాయి? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `ant carrying heavy leaf, macro ant colony, ant lifting weight, green grass nature, tiny insect teamwork, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #038 — ఓషన్ లోపల ఒక వాటర్ ఫాల్ ఉంటుందా?
+### వీడియో #038 — సముద్రం లోపల జలపాతం! నిజమా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఓషన్ లోపల ఒక వాటర్ ఫాల్ ఉంటుందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `mauritius underwater waterfall, ocean aerial turquoise, deep ocean drop off, drone tropical island, clear blue waves` |
+| **Video Subject** | `సముద్రం లోపల జలపాతం! నిజమా?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `mauritius island aerial, ocean drone shot, sand underwater, deep blue ocean, tropical beach` |
+| **Thumbnail Title** | `సముద్రంలో జలపాతం?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రం నీటి లోపల ప్రపంచంలోనే అతిపెద్ద వాటర్‌ఫాల్ దాగి ఉందని తెలుసా!  కానీ అది రియల్ వాటర్ ఫాల్ కాదు, సముద్రపు ఇసుక లోతైన అగాధంలోకి జారడం వల్ల ఏర్పడే ఒక నేచురల్ ఆప్టికల్ ఇల్యూషన్! నేచర్ ఎంత బ్యూటిఫుల్ ఆర్టో చూడండి! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+పై నుంచి చూస్తే, Mauritius దగ్గర సముద్రం ఒక లోతైన గుంతలోకి పడిపోతున్నట్లు కనిపిస్తుంది! సముద్రం లోపల జలపాతం! కానీ ఇది ఒక ఆప్టికల్ ఇల్యూషన్. సముద్రం అడుగున ఒక ఏటవాలు ప్రాంతంలో ఇసుక, మట్టి కిందికి జారుతూ ఉంటాయి. వాటి ప్యాటర్న్ అచ్చం నీళ్ళు కిందికి పడుతున్నట్లు కనిపిస్తుంది. విమానం లేదా డ్రోన్ నుంచి చూస్తేనే బెస్ట్ వ్యూ! ఇసుకతో ప్రకృతి చేసిన మ్యాజిక్. మొదట చూసినప్పుడు మీరు నమ్మారా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సముద్రం లోపల జలపాతం! 🏝️ 🌍 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సముద్రం లోపల జలపాతం! నిజమా? 🏝️`
+- **Description**:
 ```text
-🌍 ఓషన్ లోపల ఒక వాటర్ ఫాల్ ఉంటుందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఓషన్ లోపల ఒక వాటర్ ఫాల్ ఉంటుందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+Mauritius లోని 'Underwater Waterfall' ఒక ఆప్టికల్ ఇల్యూషన్ — సముద్రం అడుగున జారే ఇసుక వల్ల అలా కనిపిస్తుంది!
+Mauritius underwater waterfall illusion — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మొదట చూసినప్పుడు మీరు నమ్మేశారా?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ఓషన్ లోపల ఒక వాటర్ ఫాల్ ఉంటుందా?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `mauritius underwater waterfall, ocean aerial turquoise, deep ocean drop off, drone tropical island, clear blue waves, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `mauritius underwater waterfall illusion, mauritius underwater waterfall illusion in telugu, underwater waterfall, mauritius, optical illusion, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మొదట చూసినప్పుడు మీరు నమ్మేశారా? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #048 — ఓషన్ వాటర్ ఎందుకు అంత సాల్టీగా ఉంటుంది?
+### వీడియో #048 — సముద్రపు నీరు ఎందుకు ఉప్పగా ఉంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఓషన్ వాటర్ ఎందుకు అంత సాల్టీగా ఉంటుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `ocean waves crashing rocks, mineral salt rocks sea, river flowing into ocean, evaporating water sun, sea foam white` |
+| **Video Subject** | `సముద్రపు నీరు ఎందుకు ఉప్పగా ఉంటుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `ocean waves, rain on rocks, river flowing, sea salt evaporation, salt pans` |
+| **Thumbnail Title** | `సముద్రం ఎందుకు ఉప్పు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రపు నీరు అంత ఉప్పగా మారడానికి కారణం ఏంటో తెలుసా!  బిలియన్ల ఏళ్ళుగా ఈ ప్రాసెస్ జరగడం వల్లే ఓషన్స్ ఉప్పగా మారాయి! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+నదుల నీరు తియ్యగా ఉంటుంది, మరి సముద్రం ఎందుకు ఉప్పగా ఉంటుంది? వర్షం నీరు రాళ్ళ మీద పడి, వాటిలోని మినరల్స్ ని కరిగించి నదుల్లోకి తీసుకెళ్తుంది. నదులు అవన్నీ సముద్రంలో కలుపుతాయి. ఎండకి నీరు ఆవిరై పోతుంది, కానీ ఉప్పు అక్కడే ఉండిపోతుంది. కోట్ల సంవత్సరాలుగా ఇదే జరుగుతోంది! సముద్రంలోని ఉప్పుని తీసి భూమి మీద పరిస్తే, దాదాపు one hundred fifty meters మందం ఉంటుంది! మీరు సముద్రం నీరు రుచి చూశారా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సముద్రపు నీరు ఎందుకు అంత సాల్టీగా ఉంటుంది? 🌊 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సముద్రపు నీరు ఎందుకు ఉప్పగా ఉంటుంది? 🌊`
+- **Description**:
 ```text
-🌊 ఓషన్ వాటర్ ఎందుకు అంత సాల్టీగా ఉంటుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+వర్షం రాళ్ళలోని మినరల్స్ ని నదుల ద్వారా సముద్రంలోకి చేరుస్తుంది — నీరు ఆవిరైనా ఉప్పు అక్కడే ఉండిపోతుంది!
+Why is the ocean salty — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఓషన్ వాటర్ ఎందుకు అంత సాల్టీగా ఉంటుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 మీరు ఎప్పుడైనా సముద్రం నీరు రుచి చూశారా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-ఓషన్ వాటర్ ఎందుకు అంత సాల్టీగా ఉంటుంది?, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
+- **Tags**: `why is the ocean salty, why is the ocean salty in telugu, ocean salt, sea water, earth science, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు ఎప్పుడైనా సముద్రం నీరు రుచి చూశారా? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `ocean waves crashing rocks, mineral salt rocks sea, river flowing into ocean, evaporating water sun, sea foam white, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #058 — గ్రావిటీ 5 సెకన్లు ఆగిపోతే ఏమవుతుంది?
+### వీడియో #058 — గ్రావిటీ 5 సెకన్లు ఆగిపోతే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `గ్రావిటీ 5 సెకన్లు ఆగిపోతే ఏమవుతుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `zero gravity floating people, floating cars objects, ocean water rising sky, astronaut floating space, clouds dispersing` |
+| **Video Subject** | `గ్రావిటీ 5 సెకన్లు ఆగిపోతే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `astronaut floating, earth spinning, objects floating air, clouds sky, things falling down` |
+| **Thumbnail Title** | `గ్రావిటీ OFF!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-భూమిపై గ్రావిటీ 5 సెకన్లు ఆగిపోతే.. ప్రపంచం మొత్తం ఎలా తునాతునకలవుతుందో తెలుసా!  అంతకంటే డేంజర్ ఏంటంటే, ఎర్త్ అట్మాస్ఫియర్, ఓషన్ వాటర్ స్పేస్ లోకి కొట్టుకుపోతాయి! five seconds లోనే సర్వం నాశనం అయిపోతుంది. సైన్స్ ఫ్యాక్ట్స్ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+గ్రావిటీ five seconds మాయమైతే, మీరు మెల్లగా గాల్లో తేలరు! భూమి తిరుగుతూనే ఉంటుంది కాబట్టి, అతుక్కోని ప్రతిదీ ఒక స్ట్రెయిట్ లైన్ లో దూరంగా వెళ్ళిపోతుంది, కింద నేల వంగి దూరమవుతుంది. గాలి కూడా బయటికి విస్తరించడం మొదలవుతుంది, చెవులు పాప్ అవుతాయి. గ్రావిటీ మళ్ళీ రాగానే, పైకి వెళ్ళినవన్నీ దబాల్న కింద పడతాయి! ఐదు సెకన్ల ఫ్లోటింగ్, తర్వాత చాలా బ్యాడ్ ల్యాండింగ్. మీరు ముందుగా దేన్ని పట్టుకుంటారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `గ్రావిటీ 5 సెకన్లు ఆగిపోతే? 🚀 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `గ్రావిటీ 5 సెకన్లు ఆగిపోతే? 🚀`
+- **Description**:
 ```text
-🤔 గ్రావిటీ 5 సెకన్లు ఆగిపోతే ఏమవుతుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+గ్రావిటీ 5 సెకన్లు మాయమైతే భూమి స్పిన్ వల్ల ప్రతిదీ దూరంగా జారిపోతుంది — తర్వాత అన్నీ దబాల్న కింద పడతాయి!
+What if gravity disappeared for 5 seconds — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 గ్రావిటీ పోతే మీరు ముందుగా దేన్ని పట్టుకుంటారు?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• గ్రావిటీ 5 సెకన్లు ఆగిపోతే ఏమవుతుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-గ్రావిటీ 5 సెకన్లు ఆగిపోతే ఏమవుతుంది?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `zero gravity floating people, floating cars objects, ocean water rising sky, astronaut floating space, clouds dispersing, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if gravity disappeared for 5 seconds, what if gravity disappeared for 5 seconds in telugu, gravity, physics, what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `గ్రావిటీ పోతే మీరు ముందుగా దేన్ని పట్టుకుంటారు? 👇`
+- **Playlist**: `What If Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #068 — బనానాస్ ఎందుకు స్మైల్ లా కర్వ్ అయి ఉంటాయి?
+### వీడియో #068 — అరటిపండు వంకరగా ఎందుకుంటుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `బనానాస్ ఎందుకు స్మైల్ లా కర్వ్ అయి ఉంటాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `banana bunch tree sunshine, yellow banana peeling, tropical banana plantation, blue sky palm trees, smiling kid eating fruit` |
+| **Video Subject** | `అరటిపండు వంకరగా ఎందుకుంటుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `banana bunch tree, banana plant farm, sunlight leaves, banana close up, person eating banana` |
+| **Thumbnail Title** | `అరటి స్మైల్ సీక్రెట్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-అరటిపండ్లు ఎప్పుడూ పైకి వంగి ఎందుకు పెరుగుతాయో తెలుసా? దీని వెనుక ఉన్న బోటనీ సైన్స్ ఇది!  బనానాస్ మొదట నేల వైపు మొలుస్తాయి, కానీ పెరుగుతున్న కొద్దీ సన్ లైట్ కోసం గ్రావిటీకి ఎదురొడ్డి పైకి స్కై వైపు తిరుగుతాయి! ఈ ఎదురు ఎదుగుదల వల్లే అరటిపండుకి ఆ అందమైన స్మైల్ కర్వ్ వస్తుంది! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+అరటిపండు స్ట్రెయిట్ గా ఎందుకు ఉండదు? అది పెరిగే విధానమే కారణం! అరటి గెలలో చిన్న పండ్లు మొదట నేల వైపు చూస్తాయి. కానీ పెరుగుతున్న కొద్దీ, సన్ లైట్ వైపు పైకి తిరిగి పెరుగుతాయి. ఆ వంపే అరటిపండుకి స్మైల్ షేప్ ఇస్తుంది! గ్రావిటీకి ఎదురుగా పెరగడాన్ని సైంటిస్టులు 'Negative Geotropism' అంటారు. పెద్ద పదం కదా! మీకు ఏ అరటిపండు ఇష్టం? చక్కెరకేళి? అమృతపాణి? కర్పూరం?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `అరటిపండు వంకరగా ఎందుకుంటుంది? 🍌 🔬 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `అరటిపండు వంకరగా ఎందుకుంటుంది? 🍌`
+- **Description**:
 ```text
-🔬 బనానాస్ ఎందుకు స్మైల్ లా కర్వ్ అయి ఉంటాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• బనానాస్ ఎందుకు స్మైల్ లా కర్వ్ అయి ఉంటాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+అరటిపండ్లు మొదట నేల వైపు, తర్వాత లైట్ వైపు పైకి తిరిగి పెరుగుతాయి — అందుకే వంకర! దీన్ని Negative Geotropism అంటారు.
+Why are bananas curved — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీకు ఏ అరటిపండు ఇష్టం? చక్కెరకేళి? అమృతపాణి? కర్పూరం?
 
-🔍 Related Searches / శోధన పదాలు:
-బనానాస్ ఎందుకు స్మైల్ లా కర్వ్ అయి ఉంటాయి?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
+- **Tags**: `why are bananas curved, why are bananas curved in telugu, bananas, plant science, science facts, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఏ అరటిపండు ఇష్టం? చక్కెరకేళి? అమృతపాణి? కర్పూరం? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `banana bunch tree sunshine, yellow banana peeling, tropical banana plantation, blue sky palm trees, smiling kid eating fruit, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #078 — డైనోసార్లు అంత జెయింట్ గా ఎందుకు పెరిగాయి?
+### వీడియో #078 — డైనోసార్లు అంత భారీగా ఎలా పెరిగాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `డైనోసార్లు అంత జెయింట్ గా ఎందుకు పెరిగాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `lush prehistoric rainforest jungle, gigantic trees ancient, elephant walking savanna, hollow bone bird skeleton, museum dinosaur hall` |
+| **Video Subject** | `డైనోసార్లు అంత భారీగా ఎలా పెరిగాయి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `giant sauropod, elephants walking, bird bones skeleton, eating leaves, dinosaur eggs nest` |
+| **Thumbnail Title** | `ఎందుకంత భారీ?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డైనోసార్లు అంత భారీగా ఎలా పెరగగలిగాయో తెలుసా! భూమిపై ఉన్న ఆక్సిజన్ సీక్రెట్ ఇది!  అలాగే వాటి బోన్స్ బర్డ్స్ బోన్స్ లా లోపల బోలుగా ఉండటం వల్ల అంత వెయిట్ ని బ్యాలెన్స్ చేశాయి! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+కొన్ని డైనోసార్లు పది ఏనుగుల కంటే ఎక్కువ బరువు! ఇంత పెద్దగా ఎలా పెరిగాయి? సైంటిస్టుల దగ్గర కొన్ని క్లూస్ ఉన్నాయి. పెద్ద డైనోసార్ల ఎముకల్లో పక్షుల్లా గాలి గదులు ఉండేవి, అందుకే తేలికగా ఉండేవి. పక్షుల లాంటి సూపర్ లంగ్స్ ఉండేవి. అవి నమలకుండా ఆకులను నేరుగా మింగేసేవి, అందుకే రోజంతా తినగలిగేవి. పైగా గుడ్లు పెట్టేవి, ఎక్కువ పిల్లలు పుట్టేవి! కొత్త డైనోసార్ కి మీరు ఏ పేరు పెడతారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `డైనోసార్లు అంత భారీగా ఎందుకు పెరిగాయి? 🌴 🦖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `డైనోసార్లు అంత భారీగా ఎలా పెరిగాయి? 🌴`
+- **Description**:
 ```text
-🦖 డైనోసార్లు అంత జెయింట్ గా ఎందుకు పెరిగాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• డైనోసార్లు అంత జెయింట్ గా ఎందుకు పెరిగాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+పెద్ద డైనోసార్ల ఎముకల్లో గాలి గదులు, పక్షుల లాంటి లంగ్స్ ఉండేవి — నమలకుండా మింగేసి రోజంతా తినేవి!
+Why were dinosaurs so big — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 కొత్త డైనోసార్ కనిపెడితే మీరు ఏ పేరు పెడతారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-డైనోసార్లు అంత జెయింట్ గా ఎందుకు పెరిగాయి?, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `lush prehistoric rainforest jungle, gigantic trees ancient, elephant walking savanna, hollow bone bird skeleton, museum dinosaur hall, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why were dinosaurs so big, why were dinosaurs so big in telugu, giant dinosaurs, sauropods, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `కొత్త డైనోసార్ కనిపెడితే మీరు ఏ పేరు పెడతారు? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #088 — Graphene: స్టీల్ కంటే 200 రెట్లు బలమైన మెటీరియల్!
+### వీడియో #088 — ఉక్కు కంటే 200 రెట్లు బలమైన Graphene!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Graphene: స్టీల్ కంటే 200 రెట్లు బలమైన మెటీరియల్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `hexagonal carbon lattice, futuristic transparent material, elephant heavy weight, glowing battery charging fast, high tech lab research` |
+| **Video Subject** | `ఉక్కు కంటే 200 రెట్లు బలమైన Graphene!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `graphene honeycomb, carbon atoms, steel beams, sticky tape, battery technology` |
+| **Thumbnail Title** | `ఒక్క అణువు మందం!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-స్టీల్ కంటే 200 రెట్లు బలమైన, పేపర్ కంటే పల్చని సూపర్ మెటీరియల్ ఇదే!  ఇది పేపర్ కంటే లైట్ గా, కాపర్ కంటే ఫాస్ట్ గా కరెంట్ ని కండక్ట్ చేస్తుంది! ప్లాస్టిక్ ర్యాప్ అంత పల్చటి గ్రాఫీన్ షీట్ ఒక ఏనుగు బరువును కూడా మోయగలదు! ఇది బుల్లెట్ ప్రూఫ్ ఆర్మర్స్ ని, సూపర్ ఫాస్ట్ బ్యాటరీలను మార్చేస్తుంది! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక్క అణువు మందం మాత్రమే ఉండే మెటీరియల్ ని ఊహించండి! అదే 'Graphene', కార్బన్ అణువులు తేనెతుట్టె ప్యాటర్న్ లో ఉండే ఒక్క పొర. దాని బరువుతో పోలిస్తే ఉక్కు కంటే దాదాపు two hundred times బలమైనది! కరెంట్ ని సూపర్ గా కండక్ట్ చేస్తుంది, దాదాపు ట్రాన్స్ పరెంట్ గా ఉంటుంది. ఫన్నీ విషయం, దీన్ని ఫస్ట్ టైమ్ సింపుల్ సెల్లో టేప్ తో వేరు చేశారు, దానికి నోబెల్ ప్రైజ్ వచ్చింది! దీంతో ముందు ఏం తయారుచేయాలి?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఉక్కు కంటే 200 రెట్లు బలమైన Graphene! 🛡️ 🤖 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఉక్కు కంటే 200 రెట్లు బలమైన Graphene! 🛡️`
+- **Description**:
 ```text
-🤖 Graphene: స్టీల్ కంటే 200 రెట్లు బలమైన మెటీరియల్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Graphene ఒక్క అణువు మందమైన కార్బన్ పొర — బరువుతో పోలిస్తే ఉక్కు కంటే 200 రెట్లు బలమైనది, సెల్లో టేప్ తో కనిపెట్టారు!
+What is graphene — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Graphene: స్టీల్ కంటే 200 రెట్లు బలమైన మెటీరియల్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 Graphene తో ముందు ఏం తయారుచేయాలి?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-graphene: స్టీల్ కంటే 200 రెట్లు బలమైన మెటీరియల్!, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
+- **Tags**: `what is graphene, what is graphene in telugu, graphene, materials science, technology, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Graphene తో ముందు ఏం తయారుచేయాలి? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `hexagonal carbon lattice, futuristic transparent material, elephant heavy weight, glowing battery charging fast, high tech lab research, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #098 — కన్నీళ్ళు ఎందుకు అంత సాల్టీగా ఉంటాయి?
+### వీడియో #098 — కన్నీళ్ళు ఎందుకు ఉప్పగా ఉంటాయి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `కన్నీళ్ళు ఎందుకు అంత సాల్టీగా ఉంటాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `tear drop falling down cheek, human eye sparkling, salt crystals macro, crying emotional smile, woman face beauty` |
+| **Video Subject** | `కన్నీళ్ళు ఎందుకు ఉప్పగా ఉంటాయి?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `tear drop close up, eye tears, salt crystals, blood cells, person crying movie` |
+| **Thumbnail Title** | `కన్నీళ్ళు ఉప్పు ఎందుకు?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనం ఏడ్చినప్పుడు వచ్చే కన్నీళ్ళు ఉప్పగా ఎందుకు ఉంటాయో తెలుసా!  బాడీ సీక్రెట్స్ కోసం! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+కన్నీళ్ళు ఉప్పగా ఎందుకు ఉంటాయి? ఎందుకంటే అవి మన రక్తంలోని నీటి భాగం నుంచే తయారవుతాయి, అందులో సోడియం లాంటి సాల్ట్స్ ఉంటాయి! కన్నీళ్ళలో మూడు రకాలు ఉన్నాయి. కళ్ళను ఎప్పుడూ తడిగా ఉంచేవి. దుమ్ము, ఉల్లిపాయ గ్యాస్ పడినప్పుడు వచ్చేవి. ఇంకా ఎమోషనల్ కన్నీళ్ళు! ఇంట్రెస్టింగ్ గా, ఎమోషనల్ కన్నీళ్ళలో ప్రోటీన్లు కొంచెం ఎక్కువ అని కొన్ని స్టడీస్ చెబుతున్నాయి. మీరు చివరిసారి ఏ సినిమాకి ఏడ్చారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `కన్నీళ్ళు ఎందుకు సాల్టీగా ఉంటాయి? 💧 💡 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `కన్నీళ్ళు ఎందుకు ఉప్పగా ఉంటాయి? 💧`
+- **Description**:
 ```text
-💡 కన్నీళ్ళు ఎందుకు అంత సాల్టీగా ఉంటాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+కన్నీళ్ళు రక్తంలోని నీటి భాగం నుంచి తయారవుతాయి, అందుకే ఉప్పగా ఉంటాయి — మూడు రకాల కన్నీళ్ళు ఉన్నాయి!
+Why are tears salty — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీరు చివరిసారి ఏ సినిమా చూసి ఏడ్చారు?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• కన్నీళ్ళు ఎందుకు అంత సాల్టీగా ఉంటాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-కన్నీళ్ళు ఎందుకు అంత సాల్టీగా ఉంటాయి?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `tear drop falling down cheek, human eye sparkling, salt crystals macro, crying emotional smile, woman face beauty, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are tears salty, why are tears salty in telugu, tears, crying, human body, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు చివరిసారి ఏ సినిమా చూసి ఏడ్చారు? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---
 
-## సెక్షన్ 9: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 9 (Variety Batch 9 — #009, #019, #029, #039, #049, #059, #069, #079, #089, #099)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 9: వెరైటీ బ్యాచ్ 9 (#009, #019, #029, #039, #049, #059, #069, #079, #089, #099)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #009 — కోట్లాది నక్షత్రాలు ఉన్నా స్పేస్ ఎందుకు డార్క్ గా ఉంటుంది?
+### వీడియో #009 — కోట్ల స్టార్స్ ఉన్నా ఆకాశం ఎందుకు చీకటి?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `కోట్లాది నక్షత్రాలు ఉన్నా స్పేస్ ఎందుకు డార్క్ గా ఉంటుంది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `pitch black starry space, expanding universe light, twinkling stars cosmos, telescope night sky, abstract light rays` |
+| **Video Subject** | `కోట్ల స్టార్స్ ఉన్నా ఆకాశం ఎందుకు చీకటి?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `night sky stars, bright sun glare, telescope observatory, galaxies deep space, starry sky time lapse` |
+| **Thumbnail Title** | `ఆకాశం ఎందుకు చీకటి?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-విశ్వం నిండా ట్రిలియన్ల కొద్దీ సూర్యుళ్ళు, మెరిసే స్టార్స్ ఉన్నప్పుడు స్పేస్ మొత్తం బ్రైట్ గా వెలగకుండా ఎందుకు పిచ్ బ్లాక్ గా ఉంటుంది? దీనిని సైన్స్ లో 'Olbers' Paradox' అంటారు. రెండు మెయిన్ రీజన్స్ ఉన్నాయి: మొదటిది, విశ్వం వేగంగా ఎక్స్ పాండ్ అవుతూ లైట్ వేవ్స్ ని స్ట్రెచ్ చేస్తోంది. రెండవది, చాలా దూరంలో ఉన్న నక్షత్రాల కాంతి ఇంకా భూమిని చేరుకోలేదు! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+విశ్వంలో కోట్ల కోట్ల నక్షత్రాలు ఉంటే, రాత్రి ఆకాశం ఎందుకు చీకటిగా ఉంది? ఎటు చూసినా ఏదో ఒక స్టార్ కనిపించాలి కదా, ఆకాశమంతా సూర్యుడిలా వెలిగిపోవాలి! దీన్నే 'Olbers' Paradox' అంటారు. సమాధానం ఏంటంటే, విశ్వానికి ఒక మొదలు ఉంది. దాని వయసు thirteen point eight billion years. అందుకే చాలా దూరంలో ఉన్న స్టార్స్ లైట్ ఇంకా మనకు చేరలేదు. ఇది మీకు చిన్నప్పుడు డౌట్ వచ్చిందా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `స్టార్స్ ఉన్నా స్పేస్ డార్క్ గా ఎందుకుంటుంది? ✨ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `కోట్ల స్టార్స్ ఉన్నా ఆకాశం ఎందుకు చీకటి? ✨`
+- **Description**:
 ```text
-🪐 కోట్లాది నక్షత్రాలు ఉన్నా స్పేస్ ఎందుకు డార్క్ గా ఉంటుంది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• కోట్లాది నక్షత్రాలు ఉన్నా స్పేస్ ఎందుకు డార్క్ గా ఉంటుంది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Olbers' Paradox: కోట్ల నక్షత్రాలు ఉన్నా ఆకాశం ఎందుకు చీకటి? దీని సమాధానమే విశ్వానికి ఒక మొదలు ఉందని చెబుతుంది!
+Why is the night sky dark olbers paradox — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 ఈ డౌట్ మీకు చిన్నప్పుడు వచ్చిందా?
 
-🔍 Related Searches / శోధన పదాలు:
-కోట్లాది నక్షత్రాలు ఉన్నా స్పేస్ ఎందుకు డార్క్ గా ఉంటుంది?, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
+- **Tags**: `why is the night sky dark olbers paradox, why is the night sky dark olbers paradox in telugu, olbers paradox, night sky, big bang, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ డౌట్ మీకు చిన్నప్పుడు వచ్చిందా? 👇`
+- **Playlist**: `Space Facts Telugu`
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `pitch black starry space, expanding universe light, twinkling stars cosmos, telescope night sky, abstract light rays, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #019 — ఉల్లిపాయలు కట్ చేసేటప్పుడు కన్నీళ్ళు ఎందుకు వస్తాయి?
+### వీడియో #019 — ఉల్లిపాయ కోస్తే కన్నీళ్ళు ఎందుకు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఉల్లిపాయలు కట్ చేసేటప్పుడు కన్నీళ్ళు ఎందుకు వస్తాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `cutting onions kitchen board, tears crying funny face, fresh sliced onion, water washing eyes, chef preparing food` |
+| **Video Subject** | `ఉల్లిపాయ కోస్తే కన్నీళ్ళు ఎందుకు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `cutting onion, person crying kitchen, onion close up, eye tears, refrigerator vegetables` |
+| **Thumbnail Title** | `ఉల్లి కన్నీళ్ళు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఉల్లిపాయలు కట్ చేస్తుంటే కళ్ళలో నీళ్ళు ఎందుకు తిరుగుతాయో తెలుసా? ఉల్లిపాయను కోసినప్పుడు దాని ప్లాంట్ సెల్స్ బ్రేక్ అయ్యి సల్ఫర్ గ్యాస్ ఎయిర్ లోకి రిలీజ్ అవుతుంది. ఆ గ్యాస్ కంట్లోని వాటర్ తో మిక్స్ అయినప్పుడు మైల్డ్ యాసిడ్ లా మారుతుంది. వెంటనే మన కళ్ళు ఆ యాసిడ్ ని వాష్ చేయడానికి ప్రొటెక్షన్ కోసం కన్నీళ్ళను బయటకు పంపుతాయి! ఆనియన్స్ ని ఫ్రిజ్ లో పెట్టి కట్ చేస్తే కన్నీళ్ళు రావు! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+ఉల్లిపాయ కోస్తున్నప్పుడు అమ్మ ఏడుస్తుంది, కానీ బాధతో కాదు! ఉల్లిపాయను కట్ చేసినప్పుడు దాని సెల్స్ పగిలి ఒక స్పెషల్ గ్యాస్ గాల్లోకి వస్తుంది. ఆ గ్యాస్ మన కళ్ళకి తగిలితే మంటగా అనిపిస్తుంది. వెంటనే కళ్ళు కన్నీళ్ళతో దాన్ని కడిగేస్తాయి! ఇది మన కళ్ళ సొంత సేఫ్టీ షవర్. ఒక టిప్: ఉల్లిపాయను కోసే ముందు ఫ్రిజ్ లో కాసేపు పెడితే గ్యాస్ తక్కువగా వస్తుంది! మీ ఇంట్లో ఎవరు ఎక్కువ ఏడుస్తారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఉల్లిపాయ కోస్తే కన్నీళ్ళు ఎందుకు వస్తాయి? 🧅 🧠 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఉల్లిపాయ కోస్తే కన్నీళ్ళు ఎందుకు? 🧅`
+- **Description**:
 ```text
-🧠 ఉల్లిపాయలు కట్ చేసేటప్పుడు కన్నీళ్ళు ఎందుకు వస్తాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఉల్లిపాయలు కట్ చేసేటప్పుడు కన్నీళ్ళు ఎందుకు వస్తాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+ఉల్లిపాయ కోస్తే వచ్చే గ్యాస్ కళ్ళకి మంట పుట్టిస్తుంది, అందుకే కన్నీళ్ళు వస్తాయి. ఫ్రిజ్ లో పెట్టిన ఉల్లిపాయ తక్కువ ఏడిపిస్తుంది!
+Why do onions make you cry — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీ ఇంట్లో ఉల్లిపాయ కోస్తే ఎవరు ఎక్కువ ఏడుస్తారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ఉల్లిపాయలు కట్ చేసేటప్పుడు కన్నీళ్ళు ఎందుకు వస్తాయి?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `cutting onions kitchen board, tears crying funny face, fresh sliced onion, water washing eyes, chef preparing food, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do onions make you cry, why do onions make you cry in telugu, onions, kitchen science, tears, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఇంట్లో ఉల్లిపాయ కోస్తే ఎవరు ఎక్కువ ఏడుస్తారు? 👇`
+- **Playlist**: `Human Body Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #029 — Chameleon రంగులు మార్చడం దాక్కోవడానికేనా?
+### వీడియో #029 — ఊసరవెల్లి రంగులు ఎందుకు మారుస్తుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Chameleon రంగులు మార్చడం దాక్కోవడానికేనా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `chameleon changing colors, colorful lizard branch, chameleon rotating eyes, exotic reptile jungle, vibrant skin colors` |
+| **Video Subject** | `ఊసరవెల్లి రంగులు ఎందుకు మారుస్తుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `chameleon changing color, chameleon close up eye, colorful chameleon branch, chameleon walking, color crystals` |
+| **Thumbnail Title** | `రంగు = ఫీలింగ్స్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఊసరవెల్లి శత్రువుల నుంచి దాక్కోవడానికే రంగులు మారుస్తుందని అనుకుంటారు, కానీ అది కంప్లీట్ రాంగ్! అవి తమ ఎమోషన్స్ ని ఎక్స్ ప్రెస్ చేయడానికి రంగులు మార్చుకుంటాయి! కోపం వచ్చినప్పుడు రెడ్, ఎల్లో కలర్స్ లోకి, రిలాక్స్ అయినప్పుడు గ్రీన్ కలర్ లోకి మారిపోతాయి! వాటి స్కిన్ ఒక మూడ్ రింగ్ లాంటిది! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+ఊసరవెల్లి దాక్కోవడానికే రంగులు మారుస్తుందని అందరూ అనుకుంటారు. కానీ అది ఫుల్ స్టోరీ కాదు! ఎక్కువగా తమ ఫీలింగ్స్ చూపించడానికి, తోటి ఊసరవెల్లులతో మాట్లాడటానికి రంగులు మారుస్తాయి. ఎక్సైట్ అయినప్పుడు, టఫ్ గా కనిపించాలనుకున్నప్పుడు ఎల్లో, రెడ్, ఆరెంజ్ కలర్స్. కూల్ గా ఉన్నప్పుడు గ్రీన్, బ్రౌన్. వాటి స్కిన్ లోని చిన్న క్రిస్టల్స్ లైట్ ని బెండ్ చేసి రంగులు మారుస్తాయి! మీ మూడ్ కి ఏ కలర్ సెట్ అవుతుంది?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఊసరవెల్లి రంగులు ఎందుకు మారుస్తుంది? 🦎 🐾 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `ఊసరవెల్లి రంగులు ఎందుకు మారుస్తుంది? 🦎`
+- **Description**:
 ```text
-🐾 Chameleon రంగులు మార్చడం దాక్కోవడానికేనా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+ఊసరవెల్లులు ఎక్కువగా ఫీలింగ్స్ చూపించడానికే రంగులు మారుస్తాయి — స్కిన్ లోని క్రిస్టల్స్ లైట్ ని బెండ్ చేస్తాయి!
+Why do chameleons change color — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Chameleon రంగులు మార్చడం దాక్కోవడానికేనా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 ఇప్పుడు మీ మూడ్ కి ఏ కలర్ సెట్ అవుతుంది?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-chameleon రంగులు మార్చడం దాక్కోవడానికేనా?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
+- **Tags**: `why do chameleons change color, why do chameleons change color in telugu, chameleons, reptiles, animal facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఇప్పుడు మీ మూడ్ కి ఏ కలర్ సెట్ అవుతుంది? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `chameleon changing colors, colorful lizard branch, chameleon rotating eyes, exotic reptile jungle, vibrant skin colors, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #039 — మెరుపు సూర్యుడి కంటే 5 రెట్లు ఎక్కువ హాట్!
+### వీడియో #039 — సూర్యుడి కంటే 5 రెట్లు వేడి పిడుగు!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మెరుపు సూర్యుడి కంటే 5 రెట్లు ఎక్కువ హాట్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `lightning strike storm clouds, thunder strike night, slow motion electric bolt, dramatic lightning tree, storm weather` |
+| **Video Subject** | `సూర్యుడి కంటే 5 రెట్లు వేడి పిడుగు!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `lightning strike, sun surface, thunderstorm clouds, stopwatch counting, rain storm city` |
+| **Thumbnail Title** | `సూర్యుడి కంటే వేడి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఆకాశంలో మెరిసే పిడుగు ఎంత వేడిగా ఉంటుందో తెలిస్తే షాక్ అవుతారు! ఒక్క లైట్నింగ్ స్ట్రైక్ లో టెంపరేచర్ thirty thousand degrees Celsius ఉంటుంది. ఇది సన్ సర్ఫేస్ కంటే five times ఎక్కువ వేడి! అందుకే పిడుగు పడినప్పుడు సరౌండింగ్ ఎయిర్ ఎక్స్ ప్లాజివ్ గా ఎక్స్ పాండ్ అయ్యి భారీ థండర్ సౌండ్ వస్తుంది! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక పిడుగు సూర్యుడి ఉపరితలం కంటే దాదాపు ఐదు రెట్లు వేడిగా ఉంటుంది! పిడుగు పడినప్పుడు దాని దారిలోని గాలి దాదాపు thirty thousand degrees Celsius కి చేరుతుంది. అంత వేడికి గాలి ఒక్కసారిగా పేలినట్లు విస్తరిస్తుంది. ఆ షాక్ వేవే మనకు ఉరుము సౌండ్! మెరుపు చూసి ఉరుము వినేదాకా సెకన్లు లెక్కపెట్టండి. ప్రతి మూడు సెకన్లకు దాదాపు ఒక కిలోమీటర్ దూరంలో పిడుగు పడినట్లు! మీకు ఉరుములంటే భయమా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సూర్యుడి కంటే 5 రెట్లు వేడి పిడుగు! ⚡ 🌍 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సూర్యుడి కంటే 5 రెట్లు వేడి పిడుగు! ⚡`
+- **Description**:
 ```text
-🌍 మెరుపు సూర్యుడి కంటే 5 రెట్లు ఎక్కువ హాట్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+పిడుగు దారిలోని గాలి దాదాపు 30,000°C కి చేరుతుంది — సూర్యుడి ఉపరితలం కంటే ఐదు రెట్లు వేడి! అదే ఉరుము సౌండ్ కి కారణం.
+How hot is lightning — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీకు ఉరుములంటే భయమా? Yes or No?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మెరుపు సూర్యుడి కంటే 5 రెట్లు ఎక్కువ హాట్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మెరుపు సూర్యుడి కంటే 5 రెట్లు ఎక్కువ హాట్!, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `lightning strike storm clouds, thunder strike night, slow motion electric bolt, dramatic lightning tree, storm weather, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how hot is lightning, how hot is lightning in telugu, lightning, thunder, weather science, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు ఉరుములంటే భయమా? Yes or No? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #049 — Seahorse లో మేల్ సీహార్స్ పిల్లల్ని కంటుందా?
+### వీడియో #049 — పిల్లల్ని కనేది మగ సముద్రపు గుర్రం!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Seahorse లో మేల్ సీహార్స్ పిల్లల్ని కంటుందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `seahorse swimming coral reef, male seahorse babies pouch, colorful underwater ocean, gentle marine animal, floating sea creature` |
+| **Video Subject** | `పిల్లల్ని కనేది మగ సముద్రపు గుర్రం!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `seahorse underwater, seahorse pouch, baby seahorses, seahorse couple, coral reef` |
+| **Thumbnail Title** | `మగవాడే డెలివరీ!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-సముద్రంలో ఉండే 'Sea Horse' జీవుల్లో పిల్లల్ని కనేది ఆడది కాదు, మేల్ సీహార్స్! ఫిమేల్ సీహార్స్ తన ఎగ్స్ ని మేల్ దాని పొట్ట పౌచ్ లో పెడుతుంది. మేల్ సీహార్స్ ఆ ఎగ్స్ ని ప్రొటెక్ట్ చేసి, వందలాది బేబీ సీహార్స్ లను డెలివరీ చేస్తుంది! నేచర్ ఎంత క్రేజీ కదా! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+Seahorse ల ప్రపంచంలో పిల్లల్ని కనేది ఆడది కాదు, మగది! ఆడ Seahorse తన గుడ్లను మగ Seahorse పొట్ట మీద ఉన్న ఒక పౌచ్ లో పెడుతుంది. మగ Seahorse వాటిని కొన్ని వారాల పాటు కాపాడుతుంది. తర్వాత పౌచ్ నుంచి వందల కొద్దీ బుల్లి Seahorse లు బయటికి వస్తాయి! జంతు ప్రపంచంలో ఇది చాలా అరుదు. ఇంకో క్యూట్ ఫ్యాక్ట్, కొన్ని Seahorse జంటలు ప్రతి ఉదయం కలిసి డాన్స్ చేస్తాయి! మీకు ఈ ఫ్యాక్ట్ తెలుసా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `పిల్లల్ని కనే మేల్ సముద్రపు గుర్రం! 🐴 🌊 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `పిల్లల్ని కనేది మగ సముద్రపు గుర్రం! 🐴`
+- **Description**:
 ```text
-🌊 Seahorse లో మేల్ సీహార్స్ పిల్లల్ని కంటుందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Seahorse లో మేల్ సీహార్స్ పిల్లల్ని కంటుందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Seahorse లలో మగవే పిల్లల్ని కంటాయి — ఆడది గుడ్లను మగది పౌచ్ లో పెడుతుంది, వందల బేబీలు బయటికి వస్తాయి!
+Male seahorse gives birth — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No?
 
-🔍 Related Searches / శోధన పదాలు:
-seahorse లో మేల్ సీహార్స్ పిల్లల్ని కంటుందా?, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
+- **Tags**: `male seahorse gives birth, male seahorse gives birth in telugu, seahorse, ocean animals, animal facts, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఈ ఫ్యాక్ట్ మీకు ముందే తెలుసా? Yes or No? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `seahorse swimming coral reef, male seahorse babies pouch, colorful underwater ocean, gentle marine animal, floating sea creature, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #059 — వరల్డ్ లోని అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే?
+### వీడియో #059 — అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `వరల్డ్ లోని అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `volcano erupting dark ash, red hot magma flow, apocalyptic dark sky, lightning inside ash cloud, volcanic ruins` |
+| **Video Subject** | `అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `volcano eruption, ash cloud, sunlight blocked sky, frozen crops, snow summer` |
+| **Thumbnail Title** | `అన్నీ ఒకేసారి పేలితే!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ప్రపంచంలో ఉన్న fifteen hundred active volcanoes ఒకేసారి పేలితే, ఎర్త్ మొత్తం బ్లాక్ యాష్ క్లౌడ్స్ తో కప్పబడిపోతుంది. సన్ లైట్ రాక టెంపరేచర్ thirty degrees పడిపోయి విపరీతమైన వింటర్ ఏర్పడుతుంది. క్రాప్స్ పండక వరల్డ్ వైడ్ కరువు వస్తుంది! ఎర్త్ మిస్టరీస్ కోసం! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+భూమి మీద దాదాపు one thousand three hundred fifty అగ్నిపర్వతాలు యాక్టివ్ అవ్వొచ్చు. అన్నీ ఒకేసారి పేలితే? బూడిద, సల్ఫర్ గ్యాస్ ఆకాశాన్ని కప్పేసి సన్ లైట్ ని అడ్డుకుంటాయి. దీనికి ఒక చిన్న ప్రివ్యూ ఉంది. Eighteen fifteen లో Tambora అనే ఒక్క అగ్నిపర్వతం పేలడం వల్ల, తర్వాతి సంవత్సరం ఎండాకాలమే రాలేదు! ప్రపంచమంతా పంటలు పోయాయి. ఇప్పుడు దాన్ని వెయ్యితో గుణించండి! మీరు ఎక్కడికి వెళ్తారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే? 🌋 🤔 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే? 🌋`
+- **Description**:
 ```text
-🤔 వరల్డ్ లోని అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• వరల్డ్ లోని అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+ఒక్క Tambora అగ్నిపర్వతం 1816 ని 'ఎండాకాలం లేని సంవత్సరం' చేసింది. అన్నీ ఒకేసారి పేలితే ఊహించండి!
+What if all volcanoes erupted at once — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 అప్పుడు బతకడానికి మీరు ఎక్కడికి వెళ్తారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-వరల్డ్ లోని అన్ని అగ్నిపర్వతాలు ఒకేసారి పేలితే?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `volcano erupting dark ash, red hot magma flow, apocalyptic dark sky, lightning inside ash cloud, volcanic ruins, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if all volcanoes erupted at once, what if all volcanoes erupted at once in telugu, volcanoes, tambora, what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `అప్పుడు బతకడానికి మీరు ఎక్కడికి వెళ్తారు? 👇`
+- **Playlist**: `What If Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #069 — మనల్ని మనం టికిల్ ఎందుకు చేసుకోలేం?
+### వీడియో #069 — మనల్ని మనం గిలిగింతలు పెట్టుకోలేమా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనల్ని మనం టికిల్ ఎందుకు చేసుకోలేం?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `kids tickling laughing bed, sibling playful giggles, child smiling happy face, human brain cerebellum, playful family morning` |
+| **Video Subject** | `మనల్ని మనం గిలిగింతలు పెట్టుకోలేమా?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `person laughing tickle, hands tickling feet, brain illustration, family playing laughing, person surprised` |
+| **Thumbnail Title** | `ట్రై చేయండి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మిమ్మల్ని మీరు గిలిగింతలు పెట్టుకోవడానికి ట్రై చేయండి, నవ్వు రాదు! ఎందుకంటే మీ బ్రెయిన్ మీ హ్యాండ్ మూమెంట్స్ ని ముందే ప్రిడిక్ట్ చేసి ఆ సెన్సేషన్ ని క్యాన్సిల్ చేసేస్తుంది! అదే వేరేవాళ్ళు సడెన్ గా తాకినప్పుడు బ్రెయిన్ సర్ ప్రైజ్ అయ్యి నవ్వు ఆపుకోలేం! సైన్స్ ఫ్యాక్ట్స్ కోసం! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+మిమ్మల్ని మీరే గిలిగింతలు పెట్టుకోండి. ఏమీ జరగట్లేదు కదా? కానీ వేరే ఎవరైనా పెడితే నవ్వు ఆపుకోలేరు! ఎందుకు? మీ చేతులు ఏం చేయబోతున్నాయో మీ బ్రెయిన్ కి ముందే తెలుసు. బ్రెయిన్ వెనుక భాగంలో ఉండే 'Cerebellum' ఆ ఫీలింగ్ ని ముందే ప్రిడిక్ట్ చేసేస్తుంది. సర్ ప్రైజ్ లేదు! గిలిగింతలకు సర్ ప్రైజ్ కావాలి. వేరేవాళ్ళు చేస్తే బ్రెయిన్ ప్రిడిక్ట్ చేయలేదు. ఇప్పుడే ట్రై చేశారా? పనిచేసిందా?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మనల్ని మనం గిలిగింతలు పెట్టుకోలేమా? 😂 🔬 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మనల్ని మనం గిలిగింతలు పెట్టుకోలేమా? 😂`
+- **Description**:
 ```text
-🔬 మనల్ని మనం టికిల్ ఎందుకు చేసుకోలేం? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+మనల్ని మనం గిలిగింతలు పెట్టుకోలేం — Cerebellum మన సొంత టచ్ ని ముందే ప్రిడిక్ట్ చేసేస్తుంది, సర్ ప్రైజ్ ఉండదు!
+Why can't you tickle yourself — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనల్ని మనం టికిల్ ఎందుకు చేసుకోలేం? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 ఇప్పుడే ట్రై చేశారా? పనిచేసిందా?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మనల్ని మనం టికిల్ ఎందుకు చేసుకోలేం?, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
+- **Tags**: `why can't you tickle yourself, why can't you tickle yourself in telugu, tickling, brain, cerebellum, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఇప్పుడే ట్రై చేశారా? పనిచేసిందా? 👇`
+- **Playlist**: `Everyday Science Telugu`
 
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `kids tickling laughing bed, sibling playful giggles, child smiling happy face, human brain cerebellum, playful family morning, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #079 — గంటకు 40 మైళ్ళ స్పీడ్ తో రన్ చేసే డైనోసార్!
+### వీడియో #079 — నిప్పుకోడిలా పరిగెత్తే డైనోసార్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `గంటకు 40 మైళ్ళ స్పీడ్ తో రన్ చేసే డైనోసార్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `ostrich sprinting savanna fast, running dinosaur pack jungle, cheetah sprint slow motion, wide open desert plains, racehorse sprinting` |
+| **Video Subject** | `నిప్పుకోడిలా పరిగెత్తే డైనోసార్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `ostrich running, dinosaur running, racehorse galloping, t rex model, person sprinting` |
+| **Thumbnail Title** | `సూపర్ ఫాస్ట్ డైనో!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-Gallimimus అనే డైనోసార్ నిప్పుకోడిలా ఉండే బర్డ్ మిమిక్ డైనోసార్! ఇది గంటకు forty miles per hour స్పీడ్ తో చీతా లా రన్ చేసేది! ఎంతటి డేంజరస్ ప్రిడేటర్లు ఎటాక్ చేసినా, ఇది తన లాంగ్ లెగ్స్ తో సెకన్లలో ఎస్కేప్ అయిపోయేది! ఫాస్టెస్ట్ యానిమల్స్ కోసం! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+Gallimimus ని కలవండి! అచ్చం ఒక పెద్ద నిప్పుకోడిలా ఉంటుంది. పొడవైన కాళ్ళు, పొడవైన మెడ, పళ్ళు లేని ముక్కు! Gallimimus పరిగెత్తడం కోసమే పుట్టింది. ఇది దాదాపు ఒక రేస్ గుర్రం అంత స్పీడ్ గా పరిగెత్తేదని సైంటిస్టుల అంచనా! ఆ స్పీడ్ తోనే, అదే ప్రాంతంలో ఉండే T-Rex బంధువు 'Tarbosaurus' లాంటి భారీ వేటగాళ్ళ నుంచి తప్పించుకునేది. రేస్ పెడితే ఎవరు గెలుస్తారు? మీరా? Gallimimus ఆ?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `చీతాలా పరిగెత్తే రన్నర్ డైనోసార్! 🏃 🦖 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నిప్పుకోడిలా పరిగెత్తే డైనోసార్! 🏃`
+- **Description**:
 ```text
-🦖 గంటకు 40 మైళ్ళ స్పీడ్ తో రన్ చేసే డైనోసార్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+Gallimimus నిప్పుకోడిలా ఉండే డైనోసార్ — రేస్ గుర్రం అంత స్పీడ్ తో T-Rex బంధువు Tarbosaurus నుంచి తప్పించుకునేది!
+Gallimimus fastest dinosaur — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 రేస్ పెడితే ఎవరు గెలుస్తారు? మీరా? Gallimimus ఆ?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• గంటకు 40 మైళ్ళ స్పీడ్ తో రన్ చేసే డైనోసార్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-గంటకు 40 మైళ్ళ స్పీడ్ తో రన్ చేసే డైనోసార్!, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `ostrich sprinting savanna fast, running dinosaur pack jungle, cheetah sprint slow motion, wide open desert plains, racehorse sprinting, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `gallimimus fastest dinosaur, gallimimus fastest dinosaur in telugu, gallimimus, fast dinosaurs, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `రేస్ పెడితే ఎవరు గెలుస్తారు? మీరా? Gallimimus ఆ? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #089 — Voyager 1: సౌర కుటుంబాన్ని దాటి వెళ్ళిన మిషన్!
+### వీడియో #089 — Voyager 1 ఇప్పుడు ఒక లైట్-డే దూరంలో!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Voyager 1: సౌర కుటుంబాన్ని దాటి వెళ్ళిన మిషన్!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `voyager spacecraft space, golden record nasa, earth tiny pale blue dot, deep space lonely star, radio dish antenna night` |
+| **Video Subject** | `Voyager 1 ఇప్పుడు ఒక లైట్-డే దూరంలో!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `voyager spacecraft, rocket launch, deep space stars, radio antenna dish, golden record` |
+| **Thumbnail Title** | `ఒక లైట్-డే దూరం!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-nineteen seventy seven లో నాసా లాంచ్ చేసిన Voyager One స్పేస్ క్రాఫ్ట్ గంటకు thirty eight thousand miles స్పీడ్ తో వెళ్తూ ఇప్పుడు సోలార్ సిస్టమ్ ని దాటి fifteen billion miles సుదూర ఇంటర్ స్టెల్లార్ స్పేస్ లో ఉంది! అందులో ఎర్త్ కి సంబంధించిన గోల్డెన్ రికార్డ్ ఉంది. ఏలియన్స్ కోసం మనం పంపిన ఏకైక రాయబారి ఇది! స్పేస్ వండర్స్ కోసం! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+Nineteen seventy seven లో NASA 'Voyager 1' ని లాంచ్ చేసింది. ఇప్పుడది మనుషులు పంపిన అతి దూరపు వస్తువు, దాదాపు twenty five billion kilometers దూరంలో! Two thousand twenty six చివర్లో అది ఒక మైల్ స్టోన్ చేరుకుంటుంది: భూమి నుంచి ఒక 'Light Day' దూరం! అంటే మన మెసేజ్ దానికి చేరడానికి ఒక రోజంతా, జవాబు రావడానికి ఇంకో రోజు! అందులో భూమి సౌండ్స్ తో ఒక గోల్డెన్ రికార్డ్ ఉంది. మీరైతే అందులో ఏ తెలుగు పాట పెడతారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సోలార్ సిస్టమ్ దాటి వెళ్ళిన ఏకైక స్పేస్ క్రాఫ్ట్! #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `Voyager 1 ఇప్పుడు ఒక లైట్-డే దూరంలో! 🛰️`
+- **Description**:
 ```text
-🤖 Voyager 1: సౌర కుటుంబాన్ని దాటి వెళ్ళిన మిషన్! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Voyager 1: సౌర కుటుంబాన్ని దాటి వెళ్ళిన మిషన్! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+Voyager 1 భూమి నుంచి ఒక Light Day దూరానికి చేరుకుంటోంది — మన మెసేజ్ దానికి చేరడానికి దాదాపు ఒక రోజంతా పడుతుంది!
+Voyager 1 one light day from earth — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 Golden Record లో మీరైతే ఏ తెలుగు పాట పెడతారు?
 
-🔍 Related Searches / శోధన పదాలు:
-voyager 1: సౌర కుటుంబాన్ని దాటి వెళ్ళిన మిషన్!, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
+- **Tags**: `voyager 1 one light day from earth, voyager 1 one light day from earth in telugu, voyager 1, nasa, interstellar space, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Golden Record లో మీరైతే ఏ తెలుగు పాట పెడతారు? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `voyager spacecraft space, golden record nasa, earth tiny pale blue dot, deep space lonely star, radio dish antenna night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #099 — ఎక్కువసేపు కూర్చుంటే ప్రాణాలకే ప్రమాదమా?
+### వీడియో #099 — రోజంతా కూర్చుంటే బాడీకి ఏమవుతుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `ఎక్కువసేపు కూర్చుంటే ప్రాణాలకే ప్రమాదమా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `office worker sitting chair desk, person walking stretch legs, heart health ecg monitor, smartwatch step counter, healthy lifestyle` |
+| **Video Subject** | `రోజంతా కూర్చుంటే బాడీకి ఏమవుతుంది?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `office worker sitting desk, legs muscles, blood sugar test, person standing stretching, walking break office` |
+| **Thumbnail Title** | `కూర్చోవడం డేంజరా?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-రోజంతా ఒకే చోట కూర్చుని వర్క్ చేయడం స్మోకింగ్ కంటే డేంజర్ అని డాక్టర్లు హెచ్చరిస్తున్నారు! కంటిన్యూస్ గా కూర్చోవడం వల్ల బాడీ ఎంజైమ్స్ ఫ్యాట్ ని బర్న్ చేయడం ఆపేస్తాయి, హార్ట్ డిసీజ్ మరియు డయాబెటిస్ రిస్క్ డబుల్ అవుతుంది. ప్రతి వన్ అవర్ కి ఒకసారి two minutes లేచి వాక్ చేయండి! హెల్త్ రూల్స్ కోసం! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+రోజంతా కుర్చీలో కూర్చుని పనిచేస్తున్నారా? ఇది వినండి! ఎక్కువసేపు కదలకుండా కూర్చుంటే, మన కాళ్ళ మజిల్స్ దాదాపు నిద్రపోతాయి. బ్లడ్ లోని షుగర్, ఫ్యాట్ ని వాడుకోవడం స్లో అవుతుంది. ఎక్కువ కాలం ఇలా ఉంటే హార్ట్ డిసీజ్, టైప్ టూ డయాబెటిస్ రిస్క్ పెరుగుతుందని స్టడీస్ చెబుతున్నాయి. సింపుల్ సొల్యూషన్: ప్రతి thirty minutes కి ఒకసారి లేచి, రెండు మూడు నిమిషాలు నడవండి. చిన్న వాక్స్ కూడా బ్లడ్ షుగర్ ని తగ్గిస్తాయని రీసెర్చ్! మీరు రోజుకు ఎన్ని గంటలు కూర్చుంటారు?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఎక్కువసేపు కూర్చుంటే స్మోకింగ్ కంటే డేంజరా? 🪑 💡 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `రోజంతా కూర్చుంటే బాడీకి ఏమవుతుంది? 🪑`
+- **Description**:
 ```text
-💡 ఎక్కువసేపు కూర్చుంటే ప్రాణాలకే ప్రమాదమా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• ఎక్కువసేపు కూర్చుంటే ప్రాణాలకే ప్రమాదమా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+ఎక్కువసేపు కూర్చుంటే హార్ట్ డిసీజ్, డయాబెటిస్ రిస్క్ పెరుగుతుంది — ప్రతి 30 నిమిషాలకు 2–3 నిమిషాల నడక బ్లడ్ షుగర్ ని తగ్గిస్తుంది!
+What happens to your body when you sit all day — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీరు రోజుకు ఎన్ని గంటలు కూర్చుంటారు?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-ఎక్కువసేపు కూర్చుంటే ప్రాణాలకే ప్రమాదమా?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `office worker sitting chair desk, person walking stretch legs, heart health ecg monitor, smartwatch step counter, healthy lifestyle, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens to your body when you sit all day, what happens to your body when you sit all day in telugu, sitting too long, health tips, blood sugar, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు రోజుకు ఎన్ని గంటలు కూర్చుంటారు? 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---
 
-## సెక్షన్ 10: ఆల్-రౌండర్ మిక్స్ బ్యాచ్ 10 (Variety Batch 10 — #010, #020, #030, #040, #050, #060, #070, #080, #090, #100)
-> **ఈ బ్యాచ్ లోని 10 విభిన్న రకాల వీడియోలు:**
-> 1. 🌌 Space & Cosmic | 2. 🧠 Human Body & Brain | 3. 🐾 Animals | 4. 🌍 Earth & Nature | 5. 🌊 Deep Ocean
-> 6. 🤔 Crazy What If | 7. 🔬 Everyday Science | 8. 🦖 Dinosaurs | 9. 🤖 Tech & AI | 10. ☕ Daily Life Science
+## సెక్షన్ 10: వెరైటీ బ్యాచ్ 10 (#010, #020, #030, #040, #050, #060, #070, #080, #090, #100)
 
-> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic Wonders)
+> 📌 **వర్గం:** 🌌 అంతరిక్షం & విశ్వ రహస్యాలు (Space & Cosmic)
 
-### వీడియో #010 — కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ HD 189733b!
+### వీడియో #010 — గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ HD 189733b!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `deadly storm planet, blue gas giant, glass shards flying, lightning thunder storm, alien stormy world` |
+| **Video Subject** | `గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `blue planet space, glass shards, sandstorm wind, storm clouds fast, earth from space` |
+| **Thumbnail Title** | `ఇక్కడ గాజు వర్షం!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ గురించి విన్నారా! స్పేస్ లో HD 189733b ప్లానెట్ పై  అక్కడ గంటకు five thousand four hundred మైళ్ళ స్పీడ్ తో సూపర్ సోనిక్ గాలులు వీస్తాయి. ఆ గాలులతో పాటు కరిగిన గ్లాస్ పార్టికల్స్ అడ్డంగా బుల్లెట్లలా దూసుకొస్తాయి! అక్కడ ఒక్క సెకను నిలబడినా బాడీ ముక్కలైపోతుంది. స్పేస్ లోని! మరి దీనిపై మీరేమంటారు? కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక ప్లానెట్ మీద గాజు వర్షం పక్కకి కురుస్తుంది! దాని పేరు HD one eight nine seven three three b. దూరం నుంచి చూస్తే అచ్చం భూమిలా అందమైన నీలి రంగులో ఉంటుంది. కానీ దగ్గరికి వెళ్తే పీడకల! అక్కడ గాలుల స్పీడ్ గంటకు ఎనిమిది వేల కిలోమీటర్లకు పైనే, సౌండ్ కంటే ఏడు రెట్లు వేగం. ఆ గాలుల్లో గాజు ముక్కలు దూసుకొస్తాయి! ఒక్క ప్లానెట్ కి వెళ్ళాలంటే మీరు ఏది సెలెక్ట్ చేస్తారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `గ్లాస్ వర్షం కురిసే కిల్లర్ ప్లానెట్! 🪐 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్! 🪐`
+- **Description**:
 ```text
-🪐 కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ HD 189733b! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+HD 189733b అచ్చం నీలి భూమిలా కనిపిస్తుంది, కానీ అక్కడ గంటకు 8,000 km కి పైగా గాలులు గాజు ముక్కలను పక్కకి కురిపిస్తాయి!
+Planet where it rains glass hd 189733b — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ HD 189733b! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 ఒక్క ప్లానెట్ కి వెళ్ళాలంటే మీరు ఏది సెలెక్ట్ చేస్తారు?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-కరిగిన గాజు వర్షం కురిసే కిల్లర్ ప్లానెట్ hd 189733b!, space facts in telugu, astronomy telugu, universe mysteries telugu, black hole facts telugu, solar system telugu, nasa discoveries telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #SpaceFacts #Telugu #Shorts
 ```
+- **Tags**: `planet where it rains glass hd 189733b, planet where it rains glass hd 189733b in telugu, hd 189733b, exoplanet, glass rain, space facts telugu, universe telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `ఒక్క ప్లానెట్ కి వెళ్ళాలంటే మీరు ఏది సెలెక్ట్ చేస్తారు? 👇`
+- **Playlist**: `Space Facts Telugu`
 
-- **YouTube Tags**: `space facts telugu, astronomy facts in telugu, wonder vault space, universe secrets telugu, science shorts telugu, unknown space facts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `deadly storm planet, blue gas giant, glass shards flying, lightning thunder storm, alien stormy world, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ ఫ్యాక్ట్స్ (Human Body & Brain Wonders)
+> 📌 **వర్గం:** 🧠 హ్యూమన్ బాడీ & బ్రెయిన్ (Human Body & Brain)
 
-### వీడియో #020 — మంచి సాంగ్ విన్నప్పుడు Goosebumps ఎందుకు వస్తాయి?
+### వీడియో #020 — సాంగ్స్ వింటే Goosebumps ఎందుకు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మంచి సాంగ్ విన్నప్పుడు Goosebumps ఎందుకు వస్తాయి?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `goosebumps on arm skin, person listening headphones music, concert musical stage, emotional face tears, glowing sound frequency` |
+| **Video Subject** | `సాంగ్స్ వింటే Goosebumps ఎందుకు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `headphones music, goosebumps skin, concert crowd, singer on stage, brain glowing` |
+| **Thumbnail Title** | `మ్యూజిక్ గూస్ బంప్స్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఒక అదిరిపోయే సాంగ్ విన్నప్పుడు మీ చేతులపై వెంట్రుకలు నిక్కబొడుచుకుని గూస్ బంప్స్ వచ్చాయా? దీనిని సైన్స్ లో 'Frisson' లేదా మ్యూజికల్ చిల్స్ అంటారు. ఏదైనా అద్భుతమైన మ్యూజిక్ లేదా హై వోకల్స్ విన్నప్పుడు బ్రెయిన్ లో Dopamine అనే హ్యాపీ హార్మోన్ ఒక్కసారిగా రిలీజ్ అవుతుంది! ఇది మన నెర్వస్ సిస్టమ్ ని ఎగ్జైట్ చేసి గూస్ బంప్స్ రప్పిస్తుంది! మీ బ్రెయిన్ పవర్ ఎలా ఉందో కింద కామెంట్ చేయండి! Follow Wonder Vault!
+ఒక సాంగ్ లో పర్ఫెక్ట్ మూమెంట్ రాగానే చేతుల మీద గూస్ బంప్స్ వచ్చేస్తాయి! దీన్ని 'Frisson' అంటారు. మ్యూజిక్ మనల్ని సర్ ప్రైజ్ చేసినప్పుడు ఇది వస్తుంది. సడెన్ బీట్ డ్రాప్, హై నోట్, లేదా ఎమోషనల్ లిరిక్. అప్పుడు బ్రెయిన్ లోని రివార్డ్ సిస్టమ్ లైట్ అయ్యి 'Dopamine' రిలీజ్ అవుతుంది. ఇంట్రెస్టింగ్ విషయం, అందరికీ ఈ చిల్స్ రావు, సగం కంటే ఎక్కువ మందికి మాత్రమే! మీకు గూస్ బంప్స్ ఇచ్చే సాంగ్ ఏది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సాంగ్స్ వింటే Goosebumps ఎందుకు వస్తాయి? 🎧 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సాంగ్స్ వింటే Goosebumps ఎందుకు? 🎧`
+- **Description**:
 ```text
-🧠 మంచి సాంగ్ విన్నప్పుడు Goosebumps ఎందుకు వస్తాయి? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+మ్యూజిక్ మనల్ని సర్ ప్రైజ్ చేసినప్పుడు బ్రెయిన్ Dopamine రిలీజ్ చేస్తుంది — అదే గూస్ బంప్స్ (Frisson)!
+Why music gives you goosebumps — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మీకు గూస్ బంప్స్ ఇచ్చే తెలుగు సాంగ్ ఏది?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మంచి సాంగ్ విన్నప్పుడు Goosebumps ఎందుకు వస్తాయి? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మంచి సాంగ్ విన్నప్పుడు goosebumps ఎందుకు వస్తాయి?, human body facts in telugu, human brain secrets telugu, psychology facts telugu, biology telugu, brain power telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HumanBody #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `human brain facts telugu, human body facts in telugu, psychology facts telugu, biology facts telugu, wonder vault, telugu shorts, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `goosebumps on arm skin, person listening headphones music, concert musical stage, emotional face tears, glowing sound frequency, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why music gives you goosebumps, why music gives you goosebumps in telugu, frisson, music chills, dopamine, human body facts telugu, brain facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీకు గూస్ బంప్స్ ఇచ్చే తెలుగు సాంగ్ ఏది? 👇`
+- **Playlist**: `Human Body Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🐾 యానిమల్ సూపర్ పవర్స్ (Crazy Animal Superpowers)
+> 📌 **వర్గం:** 🐾 జంతువుల సూపర్ పవర్స్ (Animals)
 
-### వీడియో #030 — Owl తన తలను 270 డిగ్రీలు తిప్పగలదా?
+### వీడియో #030 — తలను వెనక్కి తిప్పే గుడ్లగూబ సీక్రెట్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Owl తన తలను 270 డిగ్రీలు తిప్పగలదా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `owl turning head backwards, big eyes owl blinking, barn owl night perch, dark forest trees, fluffy owl feathers` |
+| **Video Subject** | `తలను వెనక్కి తిప్పే గుడ్లగూబ సీక్రెట్!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `owl turning head, owl big eyes, owl close up, person turning head, owl flying night` |
+| **Thumbnail Title** | `270° తల తిప్పుతుంది!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-గుడ్లగూబ తన బాడీని కదపకుండా తలను ఏకంగా two hundred and seventy degrees వెనక్కి తిప్పగలదు! మనుషులకు seven మెడ ఎముకలు ఉంటే, Owl కి fourteen bones ఉంటాయి. అందుకే అది శరీరాన్ని కదపకుండా వెనుక ఉన్న ఎరను కూడా చాలా క్లియర్ గా చూస్తుంది! ఈ జంతువు మీకు నచ్చిందో లేదో కామెంట్ చేయండి! Follow Wonder Vault!
+మీ తలను వెనక్కి తిప్పి చూడగలరా? గుడ్లగూబ దాదాపు two hundred seventy degrees తిప్పగలదు! ఎందుకంటే దాని పెద్ద కళ్ళు మన కళ్ళలా అటూ ఇటూ కదలవు. అందుకే మొత్తం తలనే తిప్పుతుంది. మనకు మెడలో seven ఎముకలు ఉంటే, గుడ్లగూబకు fourteen! పైగా తల తిప్పినప్పుడు కూడా బ్లడ్ ఫ్లో ఆగకుండా స్పెషల్ బ్లడ్ వెసల్స్ ఉంటాయి. మీరు మీ తలను ఎంత దూరం తిప్పగలరు? ట్రై చేయండి!
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `హెడ్ ని వెనక్కి తిప్పే గుడ్లగూబ సీక్రెట్! 🦉 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `తలను వెనక్కి తిప్పే గుడ్లగూబ సీక్రెట్! 🦉`
+- **Description**:
 ```text
-🐾 Owl తన తలను 270 డిగ్రీలు తిప్పగలదా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• Owl తన తలను 270 డిగ్రీలు తిప్పగలదా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+గుడ్లగూబ తలను 270 డిగ్రీలు తిప్పగలదు — దానికి మెడలో 14 ఎముకలు, స్పెషల్ బ్లడ్ వెసల్స్ ఉంటాయి!
+How owls turn their heads — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీరు మీ తలను ఎంత దూరం తిప్పగలరు?
 
-🔍 Related Searches / శోధన పదాలు:
-owl తన తలను 270 డిగ్రీలు తిప్పగలదా?, animal facts in telugu, wildlife wonders telugu, animal superpowers telugu, nature animals telugu, interesting animal facts, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #AnimalFacts #Telugu #Shorts
 ```
+- **Tags**: `how owls turn their heads, how owls turn their heads in telugu, owls, birds, animal facts, animal facts telugu, animals telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు మీ తలను ఎంత దూరం తిప్పగలరు? 👇`
+- **Playlist**: `Animal Facts Telugu`
 
-- **YouTube Tags**: `animal facts in telugu, wildlife wonders telugu, amazing animal secrets, wonder vault animals, nature facts telugu, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `owl turning head backwards, big eyes owl blinking, barn owl night perch, dark forest trees, fluffy owl feathers, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🌍 ఎర్త్ & నేచర్ మిస్టరీస్ (Earth & Nature Wonders)
+> 📌 **వర్గం:** 🌍 భూమి & ప్రకృతి (Earth & Nature)
 
-### వీడియో #040 — తేనె వేల సంవత్సరాలైనా ఎందుకు స్పాయిల్ అవ్వదు?
+### వీడియో #040 — పాడవని ఆహారం తేనె! ఎందుకు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `తేనె వేల సంవత్సరాలైనా ఎందుకు స్పాయిల్ అవ్వదు?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `honey dripping from spoon, ancient egyptian pyramid, honeycomb bees hive, golden raw honey jar, sweet nectar macro` |
+| **Video Subject** | `పాడవని ఆహారం తేనె! ఎందుకు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `honey dripping, egyptian tomb, bees honeycomb, bacteria microscope, honey jar kitchen` |
+| **Thumbnail Title** | `తేనె పాడవదు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-ఈజిప్ట్ పిరమిడ్స్ లో దొరికిన three thousand years నాటి హనీ ఇప్పటికీ ఎడిబుల్ గా ఉందని ఆర్కియాలజిస్టులు చెప్పారు! తేనెలో వాటర్ కంటెంట్ జీరోగా ఉండటం మరియు అసిడిక్ నేచర్ వల్ల ఎలాంటి బ్యాక్టీరియా అందులో బతకలేదు. అందుకే తేనె ఎప్పటికీ పాడవని ఏకైక సూపర్ ఫుడ్! మీరు ఎప్పుడైనా ఇలా గమనించారా? కామెంట్ చేయండి! Follow Wonder Vault!
+వేల ఏళ్ళ నాటి ఈజిప్ట్ సమాధుల్లో దొరికిన తేనె ఇంకా తినొచ్చని చెబుతారు! ఇది ఎలా సాధ్యం? తేనెలో షుగర్ చాలా ఎక్కువ, నీరు చాలా తక్కువ. అందుకే బ్యాక్టీరియా అందులో పడితే వాటిలోని నీటినే తేనె లాగేసుకుంటుంది, అవి పెరగలేవు! పైగా తేనె యాసిడిక్. తేనెటీగలు కలిపే ఒక ఎంజైమ్ నెమ్మదిగా హైడ్రోజన్ పెరాక్సైడ్ ని కూడా తయారుచేస్తుంది. మూత గట్టిగా పెడితే తేనె దాదాపు ఎప్పటికీ పాడవదు! మీ ఇంట్లో తేనె ఉందా?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `ఎప్పటికీ పాడవని ఏకైక ఆహారం తేనె! 🍯 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `పాడవని ఆహారం తేనె! ఎందుకు? 🍯`
+- **Description**:
 ```text
-🌍 తేనె వేల సంవత్సరాలైనా ఎందుకు స్పాయిల్ అవ్వదు? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• తేనె వేల సంవత్సరాలైనా ఎందుకు స్పాయిల్ అవ్వదు? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+తేనెలో నీరు తక్కువ, యాసిడిక్, పైగా హైడ్రోజన్ పెరాక్సైడ్ ఉంటుంది — అందుకే మూత పెట్టిన తేనె దాదాపు ఎప్పటికీ పాడవదు!
+Why honey never spoils — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 మీ ఇంట్లో ఇప్పుడు తేనె ఉందా?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-తేనె వేల సంవత్సరాలైనా ఎందుకు స్పాయిల్ అవ్వదు?, earth facts in telugu, nature mysteries telugu, natural phenomena telugu, planet earth secrets telugu, wonders of nature, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #NatureFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `earth facts telugu, nature mysteries in telugu, natural phenomena telugu, planet earth secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `honey dripping from spoon, ancient egyptian pyramid, honeycomb bees hive, golden raw honey jar, sweet nectar macro, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why honey never spoils, why honey never spoils in telugu, honey, food science, bees, nature facts telugu, earth facts telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీ ఇంట్లో ఇప్పుడు తేనె ఉందా? 👇`
+- **Playlist**: `Earth & Nature Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🌊 డీప్ ఓషన్ మిస్టరీస్ (Deep Ocean Secrets)
+> 📌 **వర్గం:** 🌊 సముద్ర రహస్యాలు (Deep Ocean)
 
-### వీడియో #050 — సముద్రపు రక్త పిశాచి Vampire Squid!
+### వీడియో #050 — సముద్రపు 'రక్త పిశాచి' స్క్విడ్!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `సముద్రపు రక్త పిశాచి Vampire Squid!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `vampire squid deep sea, glowing red eyes squid, dark ocean trench, tentacles cape glowing, deep sea expedition` |
+| **Video Subject** | `సముద్రపు 'రక్త పిశాచి' స్క్విడ్!` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `vampire squid, deep sea dark, red glowing eyes, marine snow particles, glowing blue cloud` |
+| **Thumbnail Title** | `VAMPIRE SQUID!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డీప్ ఓషన్ డార్క్ నెస్ లో 'Vampire Squid' అనే క్రియేచర్ ఉంటుంది. దీని ఐస్ బ్లడ్ రెడ్ కలర్ లో గ్లో అవుతాయి, బాడీ మొత్తం ఒక బ్లాక్ కేప్ లాంటి స్కిన్ తో కప్పబడి ఉంటుంది! ఎనిమీస్ ఎటాక్ చేసినప్పుడు ఇది నార్మల్ ఇంక్ కాకుండా మెరిసే గ్లోయింగ్ మ్యూకస్ ని స్ప్రే చేసి చీకట్లో ఎస్కేప్ అయిపోతుంది! డీప్ ఓషన్ రహస్యాలు మీకు నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+సముద్రం లోతుల్లో 'Vampire Squid' అనే జీవి ఉంది! ఎర్రటి కళ్ళు, నల్లటి కేప్ లాంటి స్కిన్. పేరుకు తగ్గట్టు భయంకరంగా ఉంటుంది కదా? కానీ ట్విస్ట్ ఏంటంటే, అది రక్తం తాగదు, అసలు వేటాడదు కూడా! పై నుంచి కిందకి పడే చనిపోయిన చిన్న ముక్కలు, 'Marine Snow' ని తింటుంది. ప్రమాదం వస్తే, ఇంక్ బదులు మెరిసే నీలి మ్యూకస్ మేఘాన్ని వదిలి చీకట్లో తప్పించుకుంటుంది! దాని పేరు మార్చాలంటే ఏం పెడతారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `సముద్రపు రక్త పిశాచి 🦑 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `సముద్రపు 'రక్త పిశాచి' స్క్విడ్! 🦑`
+- **Description**:
 ```text
-🌊 సముద్రపు రక్త పిశాచి Vampire Squid! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+Vampire Squid పేరు భయంకరం, కానీ అది రక్తం తాగదు — 'Marine Snow' తింటుంది, మెరిసే మ్యూకస్ వదిలి తప్పించుకుంటుంది!
+Vampire squid facts — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• సముద్రపు రక్త పిశాచి Vampire Squid! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 Vampire Squid కి కొత్త పేరు పెట్టాలంటే ఏం పెడతారు?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-సముద్రపు రక్త పిశాచి vampire squid!, deep ocean facts telugu, mariana trench telugu, deep sea creatures in telugu, ocean mysteries telugu, underwater abyss, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #OceanFacts #Telugu #Shorts
 ```
+- **Tags**: `vampire squid facts, vampire squid facts in telugu, vampire squid, deep sea creatures, ocean mysteries, ocean facts telugu, deep sea telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `Vampire Squid కి కొత్త పేరు పెట్టాలంటే ఏం పెడతారు? 👇`
+- **Playlist**: `Ocean Mysteries Telugu`
 
-- **YouTube Tags**: `deep ocean facts telugu, mariana trench secrets, deep sea creatures in telugu, ocean mysteries telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `vampire squid deep sea, glowing red eyes squid, dark ocean trench, tentacles cape glowing, deep sea expedition, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🤔 'ఒకవేళ ఇలా జరిగితే?' సైన్స్ థాట్స్ (Crazy What If Scenarios)
+> 📌 **వర్గం:** 🤔 ఒకవేళ ఇలా జరిగితే? (What If)
 
-### వీడియో #060 — మనుషులంతా ఒక్కసారిగా మాయమైపోతే?
+### వీడియో #060 — మనుషులంతా మాయమైతే భూమి ఎలా మారుతుంది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనుషులంతా ఒక్కసారిగా మాయమైపోతే?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-Guy-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `empty abandoned city overgrown, weeds growing street, wild deer running city streets, dark skyline blackout, nature reclaims city` |
+| **Video Subject** | `మనుషులంతా మాయమైతే భూమి ఎలా మారుతుంది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `city lights night, power plant, subway tunnel water, cracked road plants, abandoned building jungle` |
+| **Thumbnail Title** | `మనుషులు లేని భూమి!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-రేపు మార్నింగ్ కల్లా ఎర్త్ పై మనుషులంతా మాయమైపోతే, కొన్ని గంటల్లోనే వరల్డ్ వైడ్ పవర్ కట్ అయిపోతుంది. three days లో సబ్వే టన్నెల్స్ వాటర్ తో మునిగిపోతాయి. five hundred years లో న్యూయార్క్, లండన్ సిటీలను దట్టమైన అడవులు కప్పేస్తాయి! నేచర్ ఎప్పుడూ గెలుస్తుంది! ఒకవేళ ఇలా జరిగితే మీరేం చేస్తారు? కామెంట్ చేయండి! Follow Wonder Vault!
+రేపు ఉదయానికి మనుషులంతా మాయమైతే? కొన్ని గంటల్లోనే పవర్ ప్లాంట్స్ ఆగిపోయి లైట్స్ ఆరిపోతాయి. ఒకటి రెండు రోజుల్లో పెద్ద సిటీల సబ్ వే టన్నెల్స్ నీటితో నిండిపోతాయి, ఎందుకంటే నీళ్ళు తోడే పంపులు ఆగిపోతాయి. కొన్ని దశాబ్దాల్లో రోడ్లు పగిలి చెట్లు పెరుగుతాయి. కొన్ని శతాబ్దాల్లో చాలా బిల్డింగ్స్ కూలిపోతాయి. వేల ఏళ్ళ తర్వాత మనం ఉన్నామనడానికి సాక్ష్యం రాయి, గాజు, ప్లాస్టిక్ మాత్రమే! ఏది ఎక్కువ కాలం నిలుస్తుంది?
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మనుషులు లేకపోతే భూమి ఎలా మారుతుంది? 🏙️ 🤔 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `మనుషులంతా మాయమైతే భూమి ఎలా మారుతుంది? 🏙️`
+- **Description**:
 ```text
-🤔 మనుషులంతా ఒక్కసారిగా మాయమైపోతే? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+మనుషులు లేకపోతే గంటల్లో లైట్స్ ఆరిపోతాయి, రోజుల్లో సబ్ వేలు మునిగిపోతాయి, శతాబ్దాల్లో ప్రకృతి సిటీలను ఆక్రమిస్తుంది!
+What if humans disappeared — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మనుషులు తయారుచేసిన వాటిలో ఏది ఎక్కువ కాలం నిలుస్తుంది?
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనుషులంతా ఒక్కసారిగా మాయమైపోతే? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-మనుషులంతా ఒక్కసారిగా మాయమైపోతే?, what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, what if earth stops, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #WhatIf #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `what if science telugu, crazy science scenarios, hypothetical questions telugu, science fiction telugu, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `empty abandoned city overgrown, weeds growing street, wild deer running city streets, dark skyline blackout, nature reclaims city, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if humans disappeared, what if humans disappeared in telugu, life after people, nature, what if, what if telugu, science what if telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మనుషులు తయారుచేసిన వాటిలో ఏది ఎక్కువ కాలం నిలుస్తుంది? 👇`
+- **Playlist**: `What If Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🔬 కూల్ సైన్స్ & ఫన్ ఫ్యాక్ట్స్ (Cool Everyday Science)
+> 📌 **వర్గం:** 🔬 రోజువారీ సైన్స్ (Everyday Science)
 
-### వీడియో #070 — మనం రోజుకు 14 వేల సార్లు బ్లింక్ చేస్తాం!
+### వీడియో #070 — రోజుకు 10 వేల సార్లకు పైగా కళ్ళు ఆర్పుతాం!
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `మనం రోజుకు 14 వేల సార్లు బ్లింక్ చేస్తాం!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `eye blinking slow motion close up, human iris sparkling, child smiling clear blue eyes, clean fresh water splash, sunny outdoor park` |
+| **Video Subject** | `రోజుకు 10 వేల సార్లకు పైగా కళ్ళు ఆర్పుతాం!` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `eye blinking close up, eye macro, car windshield wiper, dust particles, person looking at phone` |
+| **Thumbnail Title** | `బ్లింక్! బ్లింక్!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-మనం నిమిషానికి fifteen నుంచి twenty times, అంటే రోజుకు దాదాపు fourteen thousand times కళ్ళు ఆర్పుతాం! ఎందుకు అంటే, ప్రతిసారి బ్లింక్ చేసినప్పుడు కంటిపై ఫ్రెష్ మాయిశ్చర్ లేయర్ స్ప్రెడ్ అయ్యి డస్ట్ కొట్టుకుపోతుంది. అంతేకాదు, ప్రతి బ్లింక్ మన బ్రెయిన్ కి సెకనులో పదోవంతు రెస్ట్ ఇస్తుంది! ఈ సైన్స్ ఫ్యాక్ట్ నచ్చితే కామెంట్ చేయండి! Follow Wonder Vault!
+ఇప్పుడే మీరు కన్ను ఆర్పారు! మనం నిమిషానికి దాదాపు fifteen times బ్లింక్ చేస్తాం. అంటే రోజుకు పది వేల సార్ల కంటే ఎక్కువ! ఎందుకు ఇన్ని సార్లు? ప్రతి బ్లింక్ కంటి మీద ఒక సన్నటి కన్నీటి పొరను పరుస్తుంది, ఒక చిన్న వైపర్ లా! కళ్ళను తడిగా ఉంచి, దుమ్ము కడిగేస్తుంది. ఇంకో ఫ్యాక్ట్: ఫోన్ స్క్రీన్ చూస్తున్నప్పుడు మనం చాలా తక్కువ బ్లింక్ చేస్తాం, అందుకే కళ్ళు పొడిబారతాయి! రోజుకు ఎన్ని గంటలు ఫోన్ చూస్తారు?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `రోజుకు 14 వేల సార్లు కళ్ళు ఎందుకు ఆర్పుతాం? 👁️ #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `రోజుకు 10 వేల సార్లకు పైగా కళ్ళు ఆర్పుతాం! 👁️`
+- **Description**:
 ```text
-🔬 మనం రోజుకు 14 వేల సార్లు బ్లింక్ చేస్తాం! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• మనం రోజుకు 14 వేల సార్లు బ్లింక్ చేస్తాం! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
-
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+మనం రోజుకు 10,000 సార్లకు పైగా బ్లింక్ చేస్తాం — ఫోన్ చూస్తున్నప్పుడు తక్కువ బ్లింక్ చేయడం వల్లే కళ్ళు పొడిబారతాయి!
+Why do we blink — explained in Telugu.
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+💬 మీరు రోజుకు ఎన్ని గంటలు ఫోన్ చూస్తారు? నిజం చెప్పండి!
 
-🔍 Related Searches / శోధన పదాలు:
-మనం రోజుకు 14 వేల సార్లు బ్లింక్ చేస్తాం!, everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets telugu, kitchen science, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #ScienceFacts #Telugu #Shorts
 ```
+- **Tags**: `why do we blink, why do we blink in telugu, blinking, eyes, screen time, science facts telugu, everyday science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మీరు రోజుకు ఎన్ని గంటలు ఫోన్ చూస్తారు? నిజం చెప్పండి! 👇`
+- **Playlist**: `Everyday Science Telugu`
 
-- **YouTube Tags**: `everyday science facts telugu, physics facts in telugu, how things work telugu, daily science secrets, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `eye blinking slow motion close up, human iris sparkling, child smiling clear blue eyes, clean fresh water splash, sunny outdoor park, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** 🦖 డైనోసార్లు & జెయింట్ క్రియేచర్స్ (Dinosaurs & Prehistoric Giants)
+> 📌 **వర్గం:** 🦖 డైనోసార్లు (Dinosaurs)
 
-### వీడియో #080 — డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ ఎక్కడ పడింది?
+### వీడియో #080 — డైనోసార్లను చంపిన ఆస్టరాయిడ్ ఎక్కడ పడింది?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ ఎక్కడ పడింది?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-MohanNeural-Male` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `mexico cenote blue water aerial, yucatan peninsula coast, asteroid impact explosion space, dinosaur looking up sky, fossil rock crater` |
+| **Video Subject** | `డైనోసార్లను చంపిన ఆస్టరాయిడ్ ఎక్కడ పడింది?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `asteroid space, earth from space, mexico coast aerial, cenote swimming hole, dinosaur skeleton` |
+| **Thumbnail Title** | `ఇక్కడే పడింది!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-డైనోసార్లను తుడిచిపెట్టిన భారీ ఆస్టరాయిడ్ భూమిపై ఎక్కడ పడిందో తెలుసా! మెక్సికో యుకాటాన్ కోస్ట్ లోని 'Chicxulub' అనే లొకేషన్ లో పడింది! అక్కడ one hundred and ten miles వెడల్పు ఉన్న మెగా క్రేటర్ ఏర్పడింది! నేటికీ అక్కడ ఆ కాస్మిక్ క్రేటర్ గుర్తులు ఉన్నాయి! డైనోసార్ల గురించి మీరు ఏమనుకుంటున్నారో కామెంట్ చేయండి! Follow Wonder Vault!
+Sixty six million years క్రితం, దాదాపు పది కిలోమీటర్ల వెడల్పున్న ఒక ఆస్టరాయిడ్ భూమిని ఢీకొట్టింది. డైనోసార్ల యుగం ముగిసింది. అది ఎక్కడ పడింది? మెక్సికోలో! అక్కడ 'Chicxulub' అనే భారీ క్రేటర్ ని సైంటిస్టులు కనిపెట్టారు. దాని వెడల్పు దాదాపు one hundred eighty kilometers! ఇప్పుడది భూమి, సముద్రం కింద దాగి ఉంది. కానీ దాని అంచు వెంబడి 'Cenotes' అనే అందమైన సహజ నీటి గుంతలు ఒక రింగ్ లా ఉన్నాయి! ఈ పేరు పలకగలరా? చిక్ షు లూబ్!
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `డైనోసార్లను చంపిన ఆస్టరాయిడ్ ఎక్కడ పడింది? ☄️ #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `డైనోసార్లను చంపిన ఆస్టరాయిడ్ ఎక్కడ పడింది? ☄️`
+- **Description**:
 ```text
-🦖 డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ ఎక్కడ పడింది? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
-
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ ఎక్కడ పడింది? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ మెక్సికోలో పడింది — 180 km వెడల్పున్న Chicxulub క్రేటర్ అంచున Cenotes రింగ్ లా ఉన్నాయి!
+Where did the dinosaur asteroid hit chicxulub — explained in Telugu.
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+💬 'Chicxulub' పేరు ఒక్కసారిలో పలకగలరా?
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔍 Related Searches / శోధన పదాలు:
-డైనోసార్లను అంతం చేసిన ఆస్టరాయిడ్ ఎక్కడ పడింది?, dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, fossil secrets telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #Dinosaurs #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `dinosaur facts in telugu, prehistoric creatures telugu, t rex facts telugu, ancient earth history, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `mexico cenote blue water aerial, yucatan peninsula coast, asteroid impact explosion space, dinosaur looking up sky, fossil rock crater, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `where did the dinosaur asteroid hit chicxulub, where did the dinosaur asteroid hit chicxulub in telugu, chicxulub crater, asteroid, dinosaurs, dinosaur facts telugu, dinosaurs telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `'Chicxulub' పేరు ఒక్కసారిలో పలకగలరా? 👇`
+- **Playlist**: `Dinosaurs Telugu`
 
 ---
 
-> 📌 **వర్గం:** 🤖 ఫ్యూచరిస్టిక్ టెక్ & ఏఐ (Futuristic Tech & AI Marvels)
+> 📌 **వర్గం:** 🤖 టెక్ & AI (Tech & AI)
 
-### వీడియో #090 — 3D Bio-Printer: లివింగ్ ఆర్గాన్స్ ని ప్రింట్ చేసే టెక్నాలజీ!
+### వీడియో #090 — 3D ప్రింటర్ తో మనిషి అవయవాలు?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `3D Bio-Printer: లివింగ్ ఆర్గాన్స్ ని ప్రింట్ చేసే టెక్నాలజీ!` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `3d printer robotic nozzle, human heart beating simulation, glowing stem cells culture, medical laboratory surgery, futuristic hospital` |
+| **Video Subject** | `3D ప్రింటర్ తో మనిషి అవయవాలు?` |
+| **Voice** | `te-IN-Mohan (Dynamic & High Energy) (Male)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `3d printer, laboratory scientist, heart model, cells microscope, hospital surgery` |
+| **Thumbnail Title** | `గుండెను ప్రింట్ చేశారు!` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-పేషెంట్స్ ప్రాణాలు కాపాడేందుకు హార్ట్, కిడ్నీలు, స్కిన్ వంటి ఆర్గాన్స్ ని Three D ప్రింటర్ల ద్వారా ప్రింట్ చేసే టెక్నాలజీ వచ్చేసింది! పేషెంట్ ఓన్ స్టెమ్ సెల్స్ తో చేసిన బయో-ఇంక్ తో ఈ ఆర్గాన్స్ ని లేయర్ బై లేయర్ ప్రింట్ చేస్తారు. దీనివల్ల ఆర్గాన్ రిజెక్షన్ రిస్క్ జీరో అవుతుంది! మెడికల్ మార్వెల్స్ కోసం! ఫ్యూచర్ టెక్నాలజీపై మీ అభిప్రాయం ఏంటి? కామెంట్ చేయండి! Follow Wonder Vault!
+Two thousand nineteen లో Israel సైంటిస్టులు ఒక పేషెంట్ సొంత సెల్స్ తో ఒక చిన్న గుండెను 3D ప్రింట్ చేశారు! అది ఒక కుందేలు గుండె అంత సైజ్, ఇంకా కొట్టుకోలేదు. కానీ దానికి బ్లడ్ వెసల్స్, గదులు ఉన్నాయి! దీన్ని 'Bioprinting' అంటారు. బతికున్న సెల్స్ తో తయారైన 'Bio-ink' ని పొరలు పొరలుగా ప్రింట్ చేస్తారు. ఇప్పటికి ఎక్కువగా రీసెర్చ్ లో, స్కిన్, కార్టిలేజ్ లాంటి చిన్న టిష్యూస్ కే వాడుతున్నారు. హాస్పిటల్స్ లో ప్రింటెడ్ అవయవాలు ఎప్పటికి వస్తాయి?
 ```
 
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `మానవ అవయవాలను ప్రింట్ చేసే Three D ప్రింటర్లు! 🫀 #Shorts #TeluguFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `3D ప్రింటర్ తో మనిషి అవయవాలు? 🫀`
+- **Description**:
 ```text
-🤖 3D Bio-Printer: లివింగ్ ఆర్గాన్స్ ని ప్రింట్ చేసే టెక్నాలజీ! — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
-
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+2019 లో పేషెంట్ సెల్స్ తో ఒక చిన్న గుండెను 3D ప్రింట్ చేశారు — Bioprinting ఫ్యూచర్ లో అవయవాల కొరతను తీర్చొచ్చు!
+3d printed organs bioprinting — explained in Telugu.
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• 3D Bio-Printer: లివింగ్ ఆర్గాన్స్ ని ప్రింట్ చేసే టెక్నాలజీ! వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+💬 హాస్పిటల్స్ లో ప్రింటెడ్ అవయవాలు ఇంకా ఎన్నేళ్ళకు వస్తాయి?
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-3d bio-printer: లివింగ్ ఆర్గాన్స్ ని ప్రింట్ చేసే టెక్నాలజీ!, future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, ai singularity telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #TechFacts #Telugu #Shorts
 ```
+- **Tags**: `3d printed organs bioprinting, 3d printed organs bioprinting in telugu, 3d bioprinting, medical technology, biotech, technology telugu, ai telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `హాస్పిటల్స్ లో ప్రింటెడ్ అవయవాలు ఇంకా ఎన్నేళ్ళకు వస్తాయి? 👇`
+- **Playlist**: `Tech & AI Telugu`
 
-- **YouTube Tags**: `future technology in telugu, artificial intelligence telugu, tech secrets telugu, sci fi technology, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `3d printer robotic nozzle, human heart beating simulation, glowing stem cells culture, medical laboratory surgery, futuristic hospital, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
-
 ---
 
-> 📌 **వర్గం:** ☕ డైలీ లైఫ్ లో క్రేజీ సైన్స్ (Everyday Life Science Facts)
+> 📌 **వర్గం:** 💡 డైలీ లైఫ్ సైన్స్ (Daily Life Science)
 
-### వీడియో #100 — నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా?
+### వీడియో #100 — నవ్వు నిజంగా ఆరోగ్యానికి మంచిదా?
 
-| UI Field (స్క్రీన్‌షాట్ ఫీల్డ్) | ఎంటర్ చేయాల్సిన విలువ (Value to Enter) |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా?` |
-| **Script Language** | `en-US` (లేదా `te-IN`) |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (స్మూత్ ఫేడ్ ఇన్ ట్రాన్సిషన్) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `te-IN-ShrutiNeural-Female` |
-| **Subtitle Font** | `NotoSansTelugu-Bold.ttf` (తెలుగు ఫాంట్) |
-| **Video Keywords (English)** | `happy family laughing together, smiling joyful face child, laughing friends park, heart glowing healthy, sunlight morning joy` |
+| **Video Subject** | `నవ్వు నిజంగా ఆరోగ్యానికి మంచిదా?` |
+| **Voice** | `te-IN-Shruti (Vibrant & Energetic) (Female)` |
+| **Video Keywords** (స్క్రిప్ట్ ఆర్డర్ లో) | `friends laughing together, brain glowing, heart blood flow, elderly people laughing, family laughing dinner` |
+| **Thumbnail Title** | `నవ్వు మెడిసిన్?` |
 
-#### 🎙️ వాడుక భాష తెలుగు వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)' box):
+#### 🎙️ వాయిస్‌ఓవర్ స్క్రిప్ట్ (Paste into 'Video Script (Optional)')
 ```text
-రోజుకు పది నిమిషాలు మనస్ఫూర్తిగా నవ్వితే మీ ఆయుష్షు పెరుగుతుందని సైంటిఫిక్ గా నిరూపించబడింది!  మనం మనసారా నవ్వినప్పుడు బ్రెయిన్ లో Endorphins రిలీజ్ అయ్యి స్ట్రెస్ హార్మోన్ Cortisol ని తగ్గిస్తాయి. రోజుకు fifteen minutes నవ్వడం వల్ల హార్ట్ బ్లడ్ సర్క్యులేషన్ పెరిగి లాంగ్ లైఫ్ వస్తుంది! ఎప్పుడూ నవ్వుతూ ఉండండి, Wonder Vault ఛానల్ ని ఇప్పుడే! ఈ సైన్స్ టిప్ ని మీరు ట్రై చేశారా? కామెంట్ చేయండి! Follow Wonder Vault!
+నవ్వు నిజంగానే బెస్ట్ మెడిసిన్ ఆ? సైన్స్ ఏం చెబుతోందో చూద్దాం! మనసారా నవ్వినప్పుడు బ్రెయిన్ 'Endorphins' రిలీజ్ చేస్తుంది, అవి నొప్పిని, స్ట్రెస్ ని తగ్గిస్తాయి. నవ్వు బ్లడ్ ఫ్లోని కూడా మెరుగుపరుస్తుందని స్టడీస్ చెబుతున్నాయి. జపాన్ లో వేల మంది మీద చేసిన ఒక స్టడీ లో, అరుదుగా నవ్వేవాళ్ళకు హెల్త్ రిస్క్స్ ఎక్కువ కనిపించాయి. నవ్వు ఆయుష్షు పెంచుతుందని పూర్తిగా ప్రూవ్ కాలేదు, కానీ ఫ్రీ మెడిసిన్ కదా! మిమ్మల్ని ఎక్కువగా నవ్వించే ఫ్రెండ్ ని ట్యాగ్ చేయండి!
 ```
-
-#### 🎯 YouTube Shorts అప్‌లోడ్ డేటా (Title, Description, Tags):
-- **YouTube Title**: `నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా? 😊 #Shorts #TeluguFacts`
 
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title**: `నవ్వు నిజంగా ఆరోగ్యానికి మంచిదా? 😊`
+- **Description**:
 ```text
-💡 నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా? — తెలుగులో మైండ్ బ్లోయింగ్ సైన్స్ నిజాలు!
+నవ్వినప్పుడు బ్రెయిన్ Endorphins రిలీజ్ చేసి స్ట్రెస్, నొప్పి తగ్గిస్తుంది — అరుదుగా నవ్వేవాళ్ళకు హెల్త్ రిస్క్స్ ఎక్కువ అని జపాన్ స్టడీ!
+Is laughter good for health — explained in Telugu.
 
-⚡ మీకు తెలుసా?
-విశ్వంలో మరియు ప్రకృతిలో మన ఊహకు కూడా అందని ఎన్నో వింతలు దాగి ఉన్నాయి. స్పేస్ మిస్టరీల నుండి హ్యూమన్ బాడీ సీక్రెట్స్ మరియు డీప్ ఓషన్ వింతల వరకు.. సైన్స్ లోని అత్యంత ఆసక్తికరమైన నిజాలను ఈ షార్ట్ లో తెలుసుకోండి!
+💬 మిమ్మల్ని ఎక్కువగా నవ్వించే ఫ్రెండ్ ని ట్యాగ్ చేయండి!
 
-🔬 ఈ వీడియోలో ముఖ్యమైన విషయాలు:
-• నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా? వెనుక ఉన్న అసలైన సైన్స్ సీక్రెట్
-• ఖగోళ మరియు భౌతిక శాస్త్ర అద్భుతాలు
-• ప్రతీ ఒక్కరూ తెలుసుకోవాల్సిన ఇంట్రెస్టింగ్ స్పేస్ & సైన్స్ ఫ్యాక్ట్స్
+🔔 ప్రతిరోజూ ఒక కొత్త సైన్స్ ఫ్యాక్ట్ కోసం @WonderVault-W ని Follow అవ్వండి!
 
-💬 దీనిపై మీ అభిప్రాయం ఏంటి? కామెంట్స్ లో మాతో పంచుకోండి! 👇
-
-🔔 మరిన్ని అద్భుతమైన స్పేస్, సైన్స్, యానిమల్స్ & నేచర్ ఫ్యాక్ట్స్ కోసం Wonder Vault (@WonderVault-W) ని ఇప్పుడే సబ్‌స్క్రైబ్ చేసుకోండి!
-🌟 నేర్చుకోండి • అన్వేషించండి • ఆశ్చర్యపోండి 🌟
-
-🔍 Related Searches / శోధన పదాలు:
-నవ్వడం వల్ల నిజంగానే ఆయుష్షు పెరుగుతుందా?, health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, healthy living telugu, telugu science facts, space facts in telugu, unknown facts telugu, wonder vault telugu, interesting facts in telugu, daily science shorts telugu
-
-#Shorts #TeluguFacts #ScienceFacts #SpaceFacts #WonderVault #TeluguShorts #DidYouKnow #TeluguScience #ViralShorts #TrendingShorts
+#TeluguFacts #HealthFacts #Telugu #Shorts
 ```
-
-- **YouTube Tags**: `health hacks telugu, daily life science tips, body facts in telugu, science of daily habits, wonder vault, telugu science shorts, viral telugu facts, wonder vault telugu, did you know telugu`
-- **Pexels Keywords (English)**: `happy family laughing together, smiling joyful face child, laughing friends park, heart glowing healthy, sunlight morning joy, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `is laughter good for health, is laughter good for health in telugu, laughter, endorphins, health facts, health facts telugu, daily life science telugu, telugu facts, telugu science, wonder vault telugu`
+- **Pinned comment**: `మిమ్మల్ని ఎక్కువగా నవ్వించే ఫ్రెండ్ ని ట్యాగ్ చేయండి! 👇`
+- **Playlist**: `Daily Life Science Telugu`
 
 ---

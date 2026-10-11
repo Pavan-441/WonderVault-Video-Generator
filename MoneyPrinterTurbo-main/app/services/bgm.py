@@ -340,6 +340,16 @@ def list_bgm_files() -> list[str]:
     return _list_bgm_files((utils.song_dir(), uploaded_bgm_dir(create=True)))
 
 
+def list_uploaded_bgm_files() -> list[str]:
+    """
+    只列出用户自己上传的背景音乐。
+
+    内置歌曲取自 YouTube 视频，容易被版权方认领（Content ID），因此随机 BGM 只从
+    这里选择，不再使用内置歌曲。
+    """
+    return _list_bgm_files((uploaded_bgm_dir(create=True),))
+
+
 def resolve_builtin_bgm_file(unsafe_path: str) -> str:
     """按文件名解析内置背景音乐，并拒绝路径、未知文件和用户上传文件。"""
     if not unsafe_path:

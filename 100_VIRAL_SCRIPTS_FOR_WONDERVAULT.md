@@ -1,5040 +1,3276 @@
-# 🚀 100 VIRAL YOUTUBE SHORTS SCRIPTS & UI DATA FOR @WonderVault-W
-> **WebUI (`http://127.0.0.1:8501`) Configuration:**
-> - **Video Source**: `Pexels`
-> - **Aspect Ratio**: `Portrait 9:16`
-> - **Video Transition Mode**: `FadeIn` (Smooth clip transitions)
-> - **Voiceover Service**: `Azure TTS V1 (Edge TTS)`
-> - **Voice**: `en-US-Christopher-Male` or `en-US-Guy-Male`
-> - **Subtitles**: `Enabled` (Font size: 60, Center or Lower-Third, Bold White/Yellow with black border)
+# 🚀 100 VIRAL SHORTS SCRIPTS FOR @WonderVault-W (English)
+
+> Every script is rewritten for retention: a hook in the first sentence, one clear payoff, a fact-checked body (no myths that commenters will correct), and a specific question at the end instead of a generic "Comment below! Follow Wonder Vault!".
 
 ---
 
-### 📈 VIRAL YOUTUBE SHORTS PLAYBOOK FOR WONDER VAULT:
-1. **The 2.5-Second Hook (VVSA Target: > 80%)**: The opening frame and first sentence deliver instant curiosity, sensory shock, or an impossible question.
-2. **Subtitles on Every Frame**: Over 65% of viewers browse on silent mode. Dynamic animated captions maintain viewer engagement.
-3. **Seamless Loops & Comment Velocity**: Stripped all 6-second drop-off subscribe pitches. Replaced with snappy 1-second discussion prompts that drive comment activity and repeat loops.
-4. **Mobile-First Titles (< 50 Chars)**: Guaranteed to fit entirely on mobile Shorts feeds without truncation.
-5. **Full SEO Metadata**: Rich search queries, bulleted facts, and high-CTR viral hashtags.
+## ⚙️ Set once in the WebUI (`http://127.0.0.1:8501`)
+
+| Setting | Value | Why |
+| :--- | :--- | :--- |
+| **Script Language** | `English (WonderVault Shorts)` | |
+| **Video Source** | `Pexels` | |
+| **Match Visuals to Script Order** | ✅ **On** | Keywords below are listed in the order the script mentions them, so the visual matches the line being spoken |
+| **Aspect Ratio** | `Portrait 9:16` | |
+| **Video Transition Mode** | `None` or `FadeIn` | Hard cuts feel faster on Shorts; FadeIn is fine for calm topics |
+| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` | |
+| **Voice** | Per video (default `en-US-AndrewMultilingual-Male`; `en-US-BrianMultilingual-Male` for Mysteries & Stoicism) | One consistent narrator builds recognition |
+| **Voice Speed** | `1.1` – `1.15` | Slightly faster narration lifts retention |
+| **Background Music** | Volume `0.15` – `0.2` | Voice must stay clearly on top |
+| **Subtitles** | Enabled, size `60`, **Center**, white/yellow with black stroke | The bottom of a Short is covered by the title & buttons — keep captions in the middle |
 
 ---
 
-## Category 1: Cosmic & Deep Space Wonders
+## 📈 WONDER VAULT SHORTS REACH PLAYBOOK
+
+**How the Shorts feed decides who sees your video:** it shows each new Short to a small test audience, then expands it if people **don't swipe away** (YouTube Studio → "Viewed vs. swiped away"), **watch most or all of it / rewatch** (average percentage viewed), and **engage** (likes, comments, shares, subscribes). Everything below targets those signals.
+
+1. **Hook in the first 1–2 seconds.** The first sentence of every script is the hook — no "Hey guys", no "Did you know", no channel name. Make sure the first clip matches the first line (that's why "Match Visuals to Script Order" matters).
+2. **Short and tight: 25–40 seconds.** Scripts are ~65–90 words. Shorts can be up to 3 minutes, but for fact videos, shorter means a higher percentage viewed and more replays.
+3. **End on the payoff + one question.** No 5-second subscribe outro (people swipe during it). The closing question is specific and easy to answer (yes/no, pick one), which drives comments.
+4. **Pin the comment.** Each video has a ready "Pinned comment" — post it right after publishing and pin it. Reply to early comments in the first hour.
+5. **Titles ≤ 50 characters, one emoji, no hashtags.** The title is a curiosity hook *plus* the searchable keyword. `#Shorts` in the title is unnecessary — vertical videos up to 3 minutes are classified as Shorts automatically.
+6. **Descriptions: 1–2 real sentences + 3–5 hashtags.** The old "Related Searches" keyword lists were removed — YouTube's spam policy treats long keyword lists in descriptions as keyword stuffing. (If a video has more than 60 hashtags, YouTube ignores all of them.)
+7. **Accuracy is reach.** Science audiences correct mistakes in the comments, and a wrong fact kills trust and shares. All 100 scripts were fact-checked; claims that are only theories are worded as theories.
+8. **Make each video feel made, not mass-produced.** Since July 2025, YouTube's Partner Program calls this the "inauthentic content" policy: mass-produced, repetitive, template-identical videos can lose monetization. Vary hooks and visuals, keep scripts unique (they are), and occasionally add your own voice or a reaction.
+9. **Playlists = binge sessions.** Each category has its own playlist name. Add every Short to its playlist so viewers can watch the next one.
+10. **Posting rhythm:** 1–2 Shorts per day, consistent. Use YouTube Studio → Analytics → Audience → **"When your viewers are on YouTube"** to choose times; until you have data, post 1–2 hours before your audience's evening peak.
+11. **Review every 48 hours.** For each Short check *Viewed vs. swiped away* (aim > 70%) and *Average percentage viewed* (aim > 80%). Make more of the categories that win, and rewrite the hooks of the ones that lose.
+
+### ✅ Per-video workflow
+1. Paste **Video Subject**, **Video Script**, **Video Keywords** → choose the **Voice** → Generate.
+2. Watch the result once: does the first clip match the hook? If not, swap the first keyword.
+3. Thumbnail Studio → paste the **Thumbnail Title**.
+4. Upload with the **Title / Description / Tags**, add to the **Playlist**, then post and pin the **Pinned comment**.
+
+---
+
+## 🌌 Category 1: Space & Cosmic Mysteries
+> **Playlist:** `Space Mysteries`
 
 ### Video #001 — What Happens If You Fall Into a Black Hole?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `What Happens If You Fall Into a Black Hole?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `black hole space, event horizon, galaxy spiral, stars cosmic, deep space nebula` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `black hole, galaxy spiral, astronaut floating space, spaghetti noodles, red light glow, frozen clock` |
+| **Thumbnail Title** | `YOUR BODY BECOMES SPAGHETTI` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 31s
 ```text
-If you jumped into a black hole, something terrifying called spaghettification happens. The gravitational pull at your feet would be so much stronger than at your head that your entire body would be stretched into a single-atom thin string of spaghetti. As you cross the event horizon, time itself slows down to an outside observer until you appear completely frozen. Once inside, not even light can escape, and all known laws of physics break down! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+Fall into a black hole feet first, and you become spaghetti. Gravity at your feet pulls so much harder than at your head that your body gets stretched thinner and thinner, like noodles. Scientists literally call it spaghettification. But here's the creepy part. To a friend watching from far away, you never fall in. You slow down at the edge, fade to red, and freeze there forever. So which one is the real you? Would you jump in, yes or no?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Really Happens Inside a Black Hole? 🕳️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (46 chars): `What Happens If You Fall Into a Black Hole? 🕳️`
+- **Description**:
 ```text
-🪐 What Happens If You Fall Into a Black Hole? — Explore the mind-bending science behind this incredible mystery!
+Falling into a black hole stretches your body like spaghetti — scientists really call it spaghettification. And to anyone watching from outside, you'd appear frozen at the edge forever.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you jump into a black hole — yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What Happens If You Fall Into a Black Hole?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what happens if you fall into a black hole?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what happens if you fall into a black hole?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `black hole space, event horizon, galaxy spiral, stars cosmic, deep space nebula, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens if you fall into a black hole, black hole, spaghettification, event horizon, astrophysics, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you jump into a black hole — yes or no? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #002 — The Scariest Planet in the Universe
+### Video #002 — The Planet Where It Rains Glass Sideways
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Scariest Planet in the Universe` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `alien planet deep space, stormy atmosphere planet, lightning storm space, blue planet cosmos, asteroids flying` |
+| **Video Subject** | `The Planet Where It Rains Glass Sideways` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `blue planet space, deep blue ocean marble, glass shards, sandstorm wind, storm clouds fast, earth from space` |
+| **Thumbnail Title** | `IT RAINS GLASS HERE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-There is a nightmare planet in deep space called HD one eight nine seven three three b. At first glance, it looks like a beautiful deep blue marble just like Earth. But don't be fooled. Its atmosphere is packed with silicate particles, and winds blow at over five thousand four hundred miles per hour. That means it literally rains molten glass sideways at seven times the speed of sound. If you stood on its surface, you would be shredded in milliseconds! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+There's a planet where it rains glass, sideways. It's called HD one eight nine seven three three b, and from far away it looks like a calm blue marble, just like Earth. Up close, it's a nightmare. Its air is full of tiny silicate particles, basically glass, and winds scream at over five thousand miles per hour. That's seven times the speed of sound. Step outside and you'd be sandblasted in seconds. Still think Earth is boring?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Deadliest Planet in the Universe! 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (42 chars): `The Planet Where It Rains Glass Sideways 🪐`
+- **Description**:
 ```text
-🪐 The Scariest Planet in the Universe — Explore the mind-bending science behind this incredible mystery!
+HD 189733b looks like a peaceful blue Earth, but its winds hit 5,000+ mph and carry molten glass sideways — one of the most violent weather systems ever detected.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which planet would you visit if you had to pick one?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Scariest Planet in the Universe
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the scariest planet in the universe, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the scariest planet in the universe, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `alien planet deep space, stormy atmosphere planet, lightning storm space, blue planet cosmos, asteroids flying, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the planet where it rains glass sideways, hd 189733b, exoplanet, glass rain planet, nasa, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which planet would you visit if you had to pick one? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #003 — How Big Is the Universe Really?
+### Video #003 — How Big Is the Universe, Really?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Big Is the Universe Really?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `earth zoom out space, sun solar flare, milky way galaxy, deep field telescope, cosmic web universe` |
+| **Video Subject** | `How Big Is the Universe, Really?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `sun surface, blood cell microscope, milky way galaxy, usa map from space, galaxies deep field, starry night sky` |
+| **Thumbnail Title** | `EARTH IS A SPECK` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 83 words ≈ 32s
 ```text
-Think our Earth is big? If the Sun were the size of a white blood cell, our Milky Way galaxy would be the size of the entire United States. And inside the observable universe, there are over two trillion galaxies, containing more stars than every single grain of sand on every beach on Earth. Yet, the observable universe is only what light has had time to reach us. The actual universe could be completely infinite! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+Shrink the Sun down to the size of a single white blood cell. At that scale, our Milky Way galaxy would still be as wide as the entire United States. Now, there are hundreds of billions of galaxies we can see, maybe up to two trillion. And all of that is just the observable universe, the part whose light has had time to reach us. What's beyond it? Nobody knows. It might go on forever. Does that make you feel tiny or lucky?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Terrifyingly Huge Is the Universe? 🌌 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `How Big Is the Universe, Really? 🌌`
+- **Description**:
 ```text
-🪐 How Big Is the Universe Really? — Explore the mind-bending science behind this incredible mystery!
+If the Sun were the size of a white blood cell, the Milky Way would be as wide as the USA — and there are hundreds of billions of galaxies beyond it.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Does the size of the universe make you feel tiny or lucky?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind How Big Is the Universe Really?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how big is the universe really?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `how big is the universe really?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `earth zoom out space, sun solar flare, milky way galaxy, deep field telescope, cosmic web universe, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how big is the universe, really, size of the universe, observable universe, milky way, galaxies, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Does the size of the universe make you feel tiny or lucky? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #004 — What If the Sun Disappeared Right Now?
+### Video #004 — What If the Sun Vanished Right Now?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If the Sun Disappeared Right Now?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `sun shining bright, sun disappearing darkness, frozen earth landscape, ice glacier tundra, planet drifting space` |
+| **Video Subject** | `What If the Sun Vanished Right Now?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `sunset sky, clock ticking, dark night city, earth from space, frozen ice landscape, deep ocean water` |
+| **Thumbnail Title** | `SUN GONE: 8 MINUTES LEFT` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 82 words ≈ 32s
 ```text
-If the Sun vanished this second, you wouldn't notice for eight minutes and twenty seconds because sunlight takes that long to reach us. But the moment the darkness hits, Earth would lose its gravitational anchor and fling into deep space in a straight line at sixty-seven thousand miles per hour. Within one week, global temperatures would drop to zero degrees Fahrenheit, and within a year, minus one hundred. The oceans would freeze into solid ice sheets! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+If the Sun vanished right now, you'd have eight minutes and twenty seconds before you noticed. That's how long its light, and its gravity, take to reach us. Then the sky goes black, and Earth flies off in a straight line at sixty seven thousand miles per hour. Within a week, the surface drops below zero Fahrenheit. Within a year, minus one hundred. But deep under the ice, the oceans would stay liquid for a very long time. Where would you hide?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If the Sun Vanished for 7 Days? ☀️ 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `What If the Sun Vanished Right Now? ☀️`
+- **Description**:
 ```text
-🪐 What If the Sun Disappeared Right Now? — Explore the mind-bending science behind this incredible mystery!
+If the Sun disappeared, Earth wouldn't notice for 8 minutes 20 seconds — then it would fly off into space at 67,000 mph and freeze within weeks.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Where would you hide if the Sun disappeared?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If the Sun Disappeared Right Now?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if the sun disappeared right now?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if the sun disappeared right now?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `sun shining bright, sun disappearing darkness, frozen earth landscape, ice glacier tundra, planet drifting space, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if the sun vanished right now, what if the sun disappeared, sun facts, earth orbit, space hypothetical, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Where would you hide if the Sun disappeared? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #005 — The Sound of Space That Will Give You Chills
+### Video #005 — NASA Turned a Black Hole Into Sound
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Sound of Space That Will Give You Chills` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `deep space nebula glowing, soundwave frequency visual, black hole acoustic, dark cosmic dust, radio telescope satellite` |
+| **Video Subject** | `NASA Turned a Black Hole Into Sound` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `galaxy cluster, black hole, sound waves visual, piano keys, nasa space telescope, dark night alone` |
+| **Thumbnail Title** | `LISTEN TO A BLACK HOLE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-You have been told space is completely silent because sound waves cannot travel through a vacuum. But NASA proved that wrong. Massive clusters of galaxies contain vast clouds of gas and dust that carry acoustic waves. When scientists acoustic-mapped the supermassive black hole at the center of the Perseus galaxy cluster, they detected sound waves fifty-seven octaves below middle C. When pitched up so humans can hear, it sounds like an eerie, haunting cosmic choir! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+They told you space is silent. Not completely. In the Perseus galaxy cluster, a giant black hole sends pressure waves rippling through hot gas. Those waves are real sound, but the note is fifty seven octaves below middle C. Far too low for any human ear. So NASA scientists raised the pitch quadrillions of times until we could hear it. The result sounds like a ghostly, groaning choir. Would you listen to it alone at night?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Terrifying Real Sound of a Black Hole 🔊 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `NASA Turned a Black Hole Into Sound 🔊`
+- **Description**:
 ```text
-🪐 The Sound of Space That Will Give You Chills — Explore the mind-bending science behind this incredible mystery!
+The black hole in the Perseus galaxy cluster creates real sound waves 57 octaves below middle C. NASA raised the pitch so humans can finally hear it.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you listen to a black hole's sound alone at night?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Sound of Space That Will Give You Chills
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the sound of space that will give you chills, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the sound of space that will give you chills, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `deep space nebula glowing, soundwave frequency visual, black hole acoustic, dark cosmic dust, radio telescope satellite, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `nasa turned a black hole into sound, black hole sound, perseus cluster, nasa sonification, space sounds, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you listen to a black hole's sound alone at night? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #006 — Could the Moon Crash Into Earth?
+### Video #006 — The Moon Is Slowly Escaping Earth
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Could the Moon Crash Into Earth?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `full moon glowing night, orbit earth moon, solar eclipse ring, ocean tide waves, clock ticking space` |
+| **Video Subject** | `The Moon Is Slowly Escaping Earth` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `full moon night, fingernails close up, ocean tides waves, earth rotation space, solar eclipse` |
+| **Thumbnail Title** | `THE MOON IS LEAVING` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 30s
 ```text
-Will the Moon ever crash into Earth? The surprising answer is: it's actually doing the exact opposite. Every single year, the Moon steals a tiny bit of Earth's rotational energy and drifts roughly one point five inches further away into deep space. That is about the same speed your fingernails grow. Hundreds of millions of years from now, total solar eclipses will be completely impossible because the Moon will be too small in our sky! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+The Moon is running away from us. Every year it drifts about one and a half inches farther from Earth, roughly as fast as your fingernails grow. Earth's tides are the reason. They pull on the Moon and fling it slightly outward, while slowing our own spin. Billions of years ago, a day on Earth was only a few hours long. And one day, total solar eclipses will be gone forever. Would you rather have longer days or eclipses?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Is the Moon Escaping From Earth? 🌕 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (35 chars): `The Moon Is Slowly Escaping Earth 🌕`
+- **Description**:
 ```text
-🪐 Could the Moon Crash Into Earth? — Explore the mind-bending science behind this incredible mystery!
+The Moon drifts about 3.8 cm (1.5 inches) away from Earth every year — about the speed your fingernails grow. Eventually, total solar eclipses will disappear.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Longer days or total solar eclipses — which would you keep?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Could the Moon Crash Into Earth?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-could the moon crash into earth?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `could the moon crash into earth?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `full moon glowing night, orbit earth moon, solar eclipse ring, ocean tide waves, clock ticking space, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the moon is slowly escaping earth, moon facts, moon moving away, solar eclipse, tides, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Longer days or total solar eclipses — which would you keep? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #007 — The Mystery of the Great Attractor
+### Video #007 — Something Huge Is Pulling Our Galaxy
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Mystery of the Great Attractor` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `milky way core, gravity pulling simulation, galaxy collision cosmic, dark matter web, deep space telescope` |
+| **Video Subject** | `Something Huge Is Pulling Our Galaxy` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `milky way galaxy, galaxies moving, space dust nebula, telescope night sky, dark space` |
+| **Thumbnail Title** | `WHAT IS PULLING US?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 30s
 ```text
-Somewhere hundreds of millions of light-years away sits an invisible gravitational monster known as the Great Attractor. Our Milky Way, along with thousands of other nearby galaxies, is currently being pulled toward this mysterious region at an astonishing one point three million miles per hour. The craziest part? It lies directly behind the dense dust of our own galactic core, meaning we can't even see what is pulling us! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+Our entire galaxy is being pulled toward something we can't see. Right now, the Milky Way and thousands of nearby galaxies are moving at over one million miles per hour toward a region called the Great Attractor. Astronomers think it's a giant concentration of mass, hundreds of millions of light years away. The problem? It sits right behind the bright, dusty center of our own galaxy, so it's hidden from view. What do you think is out there?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Monster Pulling Our Entire Galaxy! 🌌 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `Something Huge Is Pulling Our Galaxy 🌌`
+- **Description**:
 ```text
-🪐 The Mystery of the Great Attractor — Explore the mind-bending science behind this incredible mystery!
+The Milky Way is racing toward a mysterious region called the Great Attractor — hidden behind the dust of our own galaxy.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What do you think the Great Attractor really is?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Mystery of the Great Attractor
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the mystery of the great attractor, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the mystery of the great attractor, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `milky way core, gravity pulling simulation, galaxy collision cosmic, dark matter web, deep space telescope, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `something huge is pulling our galaxy, great attractor, milky way, galaxy, cosmology, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What do you think the Great Attractor really is? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #008 — Why Is Space Pitch Black Despite Trillions of Stars?
+### Video #008 — Why Is Space Dark With Trillions of Stars?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Is Space Pitch Black Despite Trillions of Stars?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `starry night sky, deep space darkness, light beam stretching, expanding universe galaxy, telescope night stars` |
+| **Video Subject** | `Why Is Space Dark With Trillions of Stars?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `night sky stars, bright sun glare, telescope observatory, galaxies deep space, red light glow` |
+| **Thumbnail Title** | `WHY ISN'T THE SKY BRIGHT?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 30s
 ```text
-If there are trillions of glowing stars across the cosmos, why is the night sky completely black instead of glowing brightly? This famous puzzle is called Olbers' Paradox. The answer is twofold: first, the universe has a finite age of thirteen point eight billion years, so light from distant stars hasn't reached us yet. Second, the universe is expanding so fast that the light waves stretch out into invisible infrared frequencies! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+If space has trillions of stars, why is the night sky dark? In an endless, unchanging universe, every direction you looked would end on a star, and the whole sky would blaze like the Sun. This puzzle is called Olbers' paradox. The answer: the universe had a beginning. It's thirteen point eight billion years old, so light from most distant stars hasn't reached us yet. And cosmic expansion stretches old light into wavelengths we can't see. Mind blown?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Is Space Dark If There Are Trillions of Stars? #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (44 chars): `Why Is Space Dark With Trillions of Stars? ✨`
+- **Description**:
 ```text
-🪐 Why Is Space Pitch Black Despite Trillions of Stars? — Explore the mind-bending science behind this incredible mystery!
+Olbers' paradox asks why the night sky is dark if the universe is full of stars. The answer proves the universe had a beginning.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Did you ever wonder about this as a kid?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Is Space Pitch Black Despite Trillions of Stars?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why is space pitch black despite trillions of stars?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why is space pitch black despite trillions of stars?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `starry night sky, deep space darkness, light beam stretching, expanding universe galaxy, telescope night stars, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why is space dark with trillions of stars, olbers paradox, night sky, big bang, cosmology, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Did you ever wonder about this as a kid? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #009 — The Planet Made Entirely of Diamond
+### Video #009 — The Planet That Might Be Made of Diamond
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Planet Made Entirely of Diamond` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `sparkling diamond macro, glowing crystal planet, molten core magma, sci fi alien world, gold and gems treasure` |
+| **Video Subject** | `The Planet That Might Be Made of Diamond` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `diamond sparkle, planet space, star telescope, lava flow, james webb telescope, glowing planet` |
+| **Thumbnail Title** | `A DIAMOND PLANET?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 31s
 ```text
-Forget gold and oil—the most expensive treasure in the galaxy is a planet called Fifty Five Cancri e. Orbiting a star forty light-years away, this super-Earth is twice the size of our planet and eight times heavier. Because it is packed with carbon and subjected to insane temperatures and pressures, scientists believe at least one-third of its entire mass is pure diamond. It is worth twenty-six nonillion dollars! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+Forty light years away is a planet once nicknamed the diamond planet. It's called fifty five Cancri e, about twice Earth's width and eight times its mass. In two thousand twelve, scientists suggested it might be so rich in carbon that a third of it could be diamond. Newer telescope data, including from James Webb, show it's more complicated, with a thick atmosphere over a lava-covered surface. Diamond or lava world? Science is still deciding. Which would you bet on?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Trillion Dollar Diamond Planet! 💎 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (42 chars): `The Planet That Might Be Made of Diamond 💎`
+- **Description**:
 ```text
-🪐 The Planet Made Entirely of Diamond — Explore the mind-bending science behind this incredible mystery!
+55 Cancri e was once called the diamond planet. New James Webb data reveal an atmosphere over a molten surface — the mystery isn't solved yet.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Diamond world or lava world — which would you bet on?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Planet Made Entirely of Diamond
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the planet made entirely of diamond, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the planet made entirely of diamond, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `sparkling diamond macro, glowing crystal planet, molten core magma, sci fi alien world, gold and gems treasure, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the planet that might be made of diamond, 55 cancri e, diamond planet, exoplanet, james webb, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Diamond world or lava world — which would you bet on? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-### Video #010 — What Is the Coldest Place in the Universe?
+### Video #010 — The Coldest Place in the Known Universe
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What Is the Coldest Place in the Universe?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `frozen ice frost macro, icy nebula cosmic, deep space cold blue, dying star nebula, absolute zero frost` |
+| **Video Subject** | `The Coldest Place in the Known Universe` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `nebula space, dying star, aerosol spray can, ice crystals frost, thermometer cold, deep space` |
+| **Thumbnail Title** | `COLDER THAN SPACE ITSELF` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 83 words ≈ 32s
 ```text
-The coldest natural place known in the universe isn't Pluto or deep interstellar space—it is the Boomerang Nebula. Located five thousand light-years away, gas is blowing outward from its dying central star at over three hundred thousand miles per hour. This rapid expansion creates a cosmic refrigerator effect that drops the temperature to minus four hundred and fifty eight degrees Fahrenheit. That is just one degree above absolute zero, colder than the background echo of the Big Bang itself! Would you dare to travel this deep into space? Comment below! Follow Wonder Vault!
+The coldest known place in the universe isn't empty space. It's a cloud called the Boomerang Nebula, five thousand light years away. A dying star is blowing gas outward at over three hundred thousand miles per hour, and that rapid expansion chills it, like spray from an aerosol can. The result is about minus four hundred fifty eight degrees Fahrenheit. That's just one degree above absolute zero, and colder than the leftover glow of the Big Bang. How cold have you ever been?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Coldest Place in the Known Universe ❄️ 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (42 chars): `The Coldest Place in the Known Universe ❄️`
+- **Description**:
 ```text
-🪐 What Is the Coldest Place in the Universe? — Explore the mind-bending science behind this incredible mystery!
+The Boomerang Nebula sits at about 1 Kelvin — colder than the Big Bang's leftover radiation — chilled by gas expanding from a dying star.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the coldest place you've ever been?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What Is the Coldest Place in the Universe?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what is the coldest place in the universe?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Space #Astronomy #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what is the coldest place in the universe?, space mysteries, astrophysics, astronomy shorts, cosmic discoveries, solar system wonders, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `frozen ice frost macro, icy nebula cosmic, deep space cold blue, dying star nebula, absolute zero frost, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the coldest place in the known universe, boomerang nebula, coldest place in the universe, absolute zero, nebula, space facts, astronomy, universe, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the coldest place you've ever been? 👇`
+- **Playlist**: `Space Mysteries`
 
 ---
 
-## Category 2: Human Brain & Mind Mysteries
+## 🧠 Category 2: Brain & Mind Mysteries
+> **Playlist:** `Brain Secrets`
 
-### Video #011 — Why Your Brain Erases Your Childhood Memories
+### Video #011 — Why You Can't Remember Being a Baby
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Your Brain Erases Your Childhood Memories` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `toddler baby walking, glowing neurons firing, brain memory neural, clock hands spinning, abstract memory fade` |
+| **Video Subject** | `Why You Can't Remember Being a Baby` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `baby first steps, toddler playing, family photo album, brain neurons, child birthday candles` |
+| **Thumbnail Title** | `WHERE DID YOUR MEMORIES GO?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-Do you remember anything before you were three years old? Almost no one does. This phenomenon is called infantile amnesia. When you are a toddler, your brain experiences explosive neurogenesis—producing millions of brand-new neurons every single day. While this allows you to learn to speak and walk at lightning speed, this massive rewiring completely disrupts and overwrites the delicate neural pathways where early memories were stored! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+You were there for your first steps, but you can't remember them. Almost nobody remembers anything before age three. It's called infantile amnesia. Babies clearly form memories. They learn faces and words. But one leading theory says the hippocampus, your memory hub, is adding new neurons so fast in early childhood that it rewires the old connections and those early memories get lost. What's your earliest memory? How old were you?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why You Forgot Your Early Childhood! 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Why You Can't Remember Being a Baby 👶`
+- **Description**:
 ```text
-🧠 Why Your Brain Erases Your Childhood Memories — Explore the mind-bending science behind this incredible mystery!
+Infantile amnesia is why almost nobody remembers life before age 3 — and rapid brain growth may be what erases those early memories.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's your earliest memory — and how old were you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Your Brain Erases Your Childhood Memories
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why your brain erases your childhood memories, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why your brain erases your childhood memories, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `toddler baby walking, glowing neurons firing, brain memory neural, clock hands spinning, abstract memory fade, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why you can't remember being a baby, infantile amnesia, childhood memories, memory, hippocampus, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's your earliest memory — and how old were you? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #012 — The Optical Illusion That Tricks 99% of People
+### Video #012 — You Have a Blind Spot Right Now
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Optical Illusion That Tricks 99% of People` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `optical illusion tunnel, eye pupil zoom macro, human iris close up, neural hologram visual, surreal illusion art` |
+| **Video Subject** | `You Have a Blind Spot Right Now` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `human eye close up, retina, optic nerve, brain glowing, blurred vision` |
+| **Thumbnail Title** | `YOUR BRAIN IS FAKING THIS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 82 words ≈ 32s
 ```text
-Your eyes don't actually see the world—your brain invents it. Every human has a physical blind spot in each eye where the optic nerve attaches to the retina. There are zero light receptors there. So why don't you see two black holes in your vision right now? Because your brain automatically guesses what should be there and hallucinates the missing background in real time! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+There's a hole in your vision right now, and your brain is hiding it from you. Every eye has a blind spot where the optic nerve leaves the retina. There are zero light sensors there. So why don't you see a black hole floating in front of you? Because your brain fills it in with whatever is around it, and also uses your other eye. Part of what you see right now is a guess. Want a quick test to find it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Your Brain Is Hallucinating Your Vision! 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `You Have a Blind Spot Right Now 👁️`
+- **Description**:
 ```text
-🧠 The Optical Illusion That Tricks 99% of People — Explore the mind-bending science behind this incredible mystery!
+Each of your eyes has a blind spot with no light receptors at all — your brain quietly fills in the gap so you never notice.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Want a quick test to find your blind spot? Comment YES.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Optical Illusion That Tricks 99% of People
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the optical illusion that tricks 99% of people, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the optical illusion that tricks 99% of people, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `optical illusion tunnel, eye pupil zoom macro, human iris close up, neural hologram visual, surreal illusion art, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `you have a blind spot right now, blind spot, vision, optic nerve, brain tricks, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Want a quick test to find your blind spot? Comment YES. 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #013 — Why Do We Get Déjà Vu?
+### Video #013 — The Real Science Behind Déjà Vu
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Get Déjà Vu?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `person looking around confused, mysterious hallway dark, vintage clock ticking, neural synapse glow, surreal dream world` |
+| **Video Subject** | `The Real Science Behind Déjà Vu` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person walking into room, eerie hallway, brain scan, neurons firing, clock spinning` |
+| **Thumbnail Title** | `YOU'VE SEEN THIS BEFORE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Ever walked into a room and felt an eerie, unshakable certainty that you’ve lived this exact second before? That is déjà vu, and it affects over sixty percent of people. Neurologists believe it is actually a temporary brain glitch. It happens when the part of your brain that processes real-time experiences accidentally misroutes the sensory information directly into your long-term memory vault first, tricking your conscious mind into feeling like an ancient memory! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+You walk into a room and suddenly feel like you've lived this exact moment before. That's déjà vu, and about two thirds of people have felt it. Scientists still debate the cause. One idea: your brain flags the moment as familiar by mistake, a tiny glitch in the system that checks for memories. Brain scans suggest that déjà vu may actually be your brain fact checking itself. How often do you get déjà vu?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Real Science Behind Déjà Vu! 🌀 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `The Real Science Behind Déjà Vu 🌀`
+- **Description**:
 ```text
-🧠 Why Do We Get Déjà Vu? — Explore the mind-bending science behind this incredible mystery!
+About two-thirds of people experience déjà vu. Scientists think it may be a familiarity glitch — your brain fact-checking its own memory.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 How often do you get déjà vu — never, sometimes, or all the time?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Do We Get Déjà Vu?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we get déjà vu?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we get déjà vu?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `person looking around confused, mysterious hallway dark, vintage clock ticking, neural synapse glow, surreal dream world, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the real science behind déjà vu, deja vu, memory glitch, neuroscience, brain, brain facts, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `How often do you get déjà vu — never, sometimes, or all the time? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #014 — The Brain Trick That Makes Time Feel Faster
+### Video #014 — Why Time Speeds Up as You Get Older
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Brain Trick That Makes Time Feel Faster` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `hourglass sand falling, person running fast motion, young child playing park, calendar pages turning, busy city time lapse` |
+| **Video Subject** | `Why Time Speeds Up as You Get Older` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `kids summer playing, calendar pages flying, office routine, hiking new place, learning guitar` |
+| **Thumbnail Title** | `WHY YEARS FLY BY` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-Have you ever wondered why summers felt endless as a kid, but years fly by in an instant as an adult? It comes down to how your brain records time. When you are young, almost everything is new, forcing your brain to process massive amounts of rich detail. As an adult, routine takes over. Your brain switches to autopilot and compresses familiar days into single chunks. To slow down time, force yourself to learn new skills and explore new places! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+Remember when one summer felt like forever? Now whole years vanish. Here's one big reason. When you're young, almost everything is new, so your brain records lots of detail, and looking back, those periods feel long. As an adult, routine takes over and your brain compresses similar days into one blur. The fix is simple: do new things. New places, new skills, new people. They make your life feel longer. What's something new you'll try this month?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Time Flies Faster As You Get Older! ⏳ 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Why Time Speeds Up as You Get Older ⏳`
+- **Description**:
 ```text
-🧠 The Brain Trick That Makes Time Feel Faster — Explore the mind-bending science behind this incredible mystery!
+Time seems to speed up with age because routine days blur together in memory. New experiences can make life feel longer again.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one new thing you'll try this month?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Brain Trick That Makes Time Feel Faster
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the brain trick that makes time feel faster, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the brain trick that makes time feel faster, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `hourglass sand falling, person running fast motion, young child playing park, calendar pages turning, busy city time lapse, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why time speeds up as you get older, time perception, why time flies, memory, psychology, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one new thing you'll try this month? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #015 — Can Your Brain Learn While You Sleep?
+### Video #015 — Your Brain Does Its Best Work While You Sleep
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Can Your Brain Learn While You Sleep?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `person sleeping peacefully, brain wave monitor eeg, glowing neurons network, night bedroom moonlight, dream abstract art` |
+| **Video Subject** | `Your Brain Does Its Best Work While You Sleep` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person sleeping bed, brain glowing neurons, piano practice, water flowing, student studying night` |
+| **Thumbnail Title** | `SLEEP = BRAIN UPGRADE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-Can you actually learn new things while fast asleep? While listening to audiobooks won't make you fluent in French overnight, neuroscientists found that sleep is when your brain does its heavy lifting. During deep sleep, the brain activates the glymphatic system, flushing out toxic cellular waste while violently replaying the skills you practiced during the day, locking them into permanent muscle memory! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+Your brain doesn't switch off when you sleep. It goes to work. During deep sleep, it replays what you practiced that day and strengthens those connections, so skills and memories stick. At the same time, fluid washes through the brain and helps clear out waste that builds up while you're awake. That's why studying all night before an exam backfires. Sleep is part of learning. How many hours do you actually sleep?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Does Your Brain Learn While You Sleep? 😴 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (47 chars): `Your Brain Does Its Best Work While You Sleep 😴`
+- **Description**:
 ```text
-🧠 Can Your Brain Learn While You Sleep? — Explore the mind-bending science behind this incredible mystery!
+During deep sleep, your brain replays the day's learning and clears out waste — which is why sleep is part of learning, not a break from it.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 How many hours of sleep do you really get?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Can Your Brain Learn While You Sleep?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-can your brain learn while you sleep?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `can your brain learn while you sleep?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `person sleeping peacefully, brain wave monitor eeg, glowing neurons network, night bedroom moonlight, dream abstract art, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `your brain does its best work while you sleep, sleep and memory, glymphatic system, learning, brain health, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `How many hours of sleep do you really get? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #016 — The Placebo Effect: The Ultimate Brain Superpower
+### Video #016 — The Placebo Effect Is Weirder Than You Think
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Placebo Effect: The Ultimate Brain Superpower` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `medical pill capsule falling, doctor smiling patient, glowing healing light, heart beat pulse monitor, pharmaceutical lab research` |
+| **Video Subject** | `The Placebo Effect Is Weirder Than You Think` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `pills in hand, doctor patient, brain chemistry, sugar cubes, person relief smile` |
+| **Thumbnail Title** | `FAKE PILLS THAT WORK` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-Did you know a sugar pill can cure physical illnesses simply because you believe it will? This is the placebo effect. When doctors give patients fake pills but tell them it is powerful medicine, the brain actually triggers real biochemical cascades, releasing endorphins, lowering heart rates, and shrinking inflammation. Your mind possesses its own internal pharmacy. Belief alone can rewire your physiology! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+A sugar pill with no medicine in it can make people feel better. That's the placebo effect, and it's real. When you expect relief, your brain can release its own painkilling chemicals. It works best on symptoms like pain and nausea. It won't cure an infection. But here's the strangest part: in some studies, placebos still helped even when patients were told they were fake. What does that say about our minds?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Power of the Placebo Effect! 💊 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (46 chars): `The Placebo Effect Is Weirder Than You Think 💊`
+- **Description**:
 ```text
-🧠 The Placebo Effect: The Ultimate Brain Superpower — Explore the mind-bending science behind this incredible mystery!
+Placebos can reduce pain and nausea because expecting relief makes the brain release its own painkillers — sometimes even when people know the pill is fake.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Do you think a fake pill would work on you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Placebo Effect: The Ultimate Brain Superpower
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the placebo effect: the ultimate brain superpower, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the placebo effect: the ultimate brain superpower, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `medical pill capsule falling, doctor smiling patient, glowing healing light, heart beat pulse monitor, pharmaceutical lab research, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the placebo effect is weirder than you think, placebo effect, brain, psychology, medicine, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Do you think a fake pill would work on you? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #017 — Why We Yawn When We See Someone Else Yawn
+### Video #017 — Why Yawning Is Contagious
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why We Yawn When We See Someone Else Yawn` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `person yawning tired, sleepy face close up, human brain empathy, primitive tribe fire, crowd faces emotional` |
+| **Video Subject** | `Why Yawning Is Contagious` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person yawning, chimpanzee yawning, dog yawning, friends together, baby face` |
+| **Thumbnail Title** | `TRY NOT TO YAWN` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-You probably know that yawning is contagious—in fact, just hearing about yawning might make you want to yawn right now! But why? Scientists link contagious yawning to mirror neurons in the brain, which are responsible for empathy and social bonding. It’s an evolutionary mechanism designed to keep primitive groups synchronized and alert to surrounding predators. People with higher empathy yawn significantly more! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+Try to watch this without yawning. Seeing, hearing, or even reading about yawns can trigger one. Contagious yawning shows up in humans, chimps, and even dogs that catch yawns from their owners. Scientists don't fully agree on why. One idea is that it's linked to social bonding, since we tend to catch yawns more from family and friends than from strangers. Babies don't catch yawns until around age four. Did you yawn yet?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Yawning Is So Contagious! 🥱 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `Why Yawning Is Contagious 🥱`
+- **Description**:
 ```text
-🧠 Why We Yawn When We See Someone Else Yawn — Explore the mind-bending science behind this incredible mystery!
+Contagious yawning appears in humans, chimps and even dogs. We catch yawns more from people we're close to — scientists think it's linked to social bonding.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Be honest — did you yawn while watching this?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why We Yawn When We See Someone Else Yawn
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why we yawn when we see someone else yawn, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why we yawn when we see someone else yawn, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `person yawning tired, sleepy face close up, human brain empathy, primitive tribe fire, crowd faces emotional, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why yawning is contagious, contagious yawning, yawning, social bonding, psychology, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Be honest — did you yawn while watching this? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #018 — The Phantom Limb Phenomenon
+### Video #018 — Feeling Pain in a Limb That's Gone
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Phantom Limb Phenomenon` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `mirror reflection illusion, human hands reaching, brain neural scan mri, medical rehabilitation clinic, abstract silhouette light` |
+| **Video Subject** | `Feeling Pain in a Limb That's Gone` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `hand close up, brain map, mirror reflection, doctor patient therapy, hands moving` |
+| **Thumbnail Title** | `PAIN IN A MISSING ARM` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Imagine feeling an excruciating itch on your left hand—except your left arm was amputated ten years ago. This is the phantom limb syndrome. Even after a limb is gone, the brain's internal sensory map continues to fire signals looking for that missing body part. Doctors famously cure this pain using a simple mirror box, tricking the brain into believing the limb is back and unclenched. The power of the brain is unbelievable! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+Imagine an itch on your hand. Except your hand was amputated years ago. Most amputees experience phantom limb sensations, because the brain's map of the body is still there, still sending and expecting signals. Neuroscientist V. S. Ramachandran found a clever trick: a simple mirror box. Patients see the reflection of their healthy hand where the missing one used to be, and for many, the pain eases. A mirror, fooling the brain. Isn't that wild?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mystery of Phantom Limbs! 🪞 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Feeling Pain in a Limb That's Gone 🪞`
+- **Description**:
 ```text
-🧠 The Phantom Limb Phenomenon — Explore the mind-bending science behind this incredible mystery!
+Phantom limb pain happens because the brain's body map stays active after an amputation. A simple mirror box can trick the brain and ease the pain.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the most surprising brain fact you know?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Phantom Limb Phenomenon
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the phantom limb phenomenon, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the phantom limb phenomenon, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `mirror reflection illusion, human hands reaching, brain neural scan mri, medical rehabilitation clinic, abstract silhouette light, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `feeling pain in a limb that's gone, phantom limb, mirror therapy, ramachandran, neuroscience, brain facts, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the most surprising brain fact you know? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #019 — Why Do We Dream Such Weird Things?
+### Video #019 — Why Your Dreams Are So Weird
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Dream Such Weird Things?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `surreal dream landscape floating, flying surreal clouds, person falling slow motion, sleeping eye rem, fantasy glowing ocean` |
+| **Video Subject** | `Why Your Dreams Are So Weird` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person dreaming, whale flying sky, empty classroom, brain neurons, surreal clouds` |
+| **Thumbnail Title** | `WHY DREAMS MAKE NO SENSE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Why do dreams feature flying whales, falling off cliffs, or showing up to class with no shoes? During REM sleep, the prefrontal cortex—the logical, rational gatekeeper of your brain—is completely shut off. Meanwhile, the amygdala and hippocampus, which control deep emotion and visual memories, are firing at maximum speed. Without logic to filter them, your raw memories mix into bizarre, surreal movies! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+Flying whales, your old school, and a test you didn't study for, all in one dream. Why so weird? During REM sleep, the parts of your brain that handle emotion and visual memory are very active, while the region that checks logic and plans ahead quiets down. So memories and feelings get mixed together, and nothing stops to say this makes no sense. You just go along with it. What's the weirdest dream you remember?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Your Dreams Are So Insanely Weird! 🌙 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (30 chars): `Why Your Dreams Are So Weird 🌙`
+- **Description**:
 ```text
-🧠 Why Do We Dream Such Weird Things? — Explore the mind-bending science behind this incredible mystery!
+During REM sleep, emotional and visual brain regions fire up while logical areas quiet down — that's why dreams feel real but make no sense.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the weirdest dream you've ever had?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Do We Dream Such Weird Things?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we dream such weird things?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we dream such weird things?, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `surreal dream landscape floating, flying surreal clouds, person falling slow motion, sleeping eye rem, fantasy glowing ocean, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why your dreams are so weird, dreams, rem sleep, why dreams are weird, sleep science, brain facts, neuroscience, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the weirdest dream you've ever had? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-### Video #020 — How Your Brain Makes Decisions Before You Even Know
+### Video #020 — Can Your Brain Decide Before You Do?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Your Brain Makes Decisions Before You Even Know` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `finger pressing button, brain fMRI glowing scan, binary code matrix, silhouette thinking shadow, clock ticking reverse` |
+| **Video Subject** | `Can Your Brain Decide Before You Do?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `hand pressing button, brain scan mri, stopwatch, coin flip, person thinking` |
+| **Thumbnail Title** | `YOUR BRAIN DECIDED FIRST` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Think you are in complete control of your choices? Think again. In famous brain imaging experiments, neuroscientists could predict which button a participant was going to press up to seven whole seconds before the participant consciously decided to press it! Your subconscious brain computes options and reaches a conclusion long before your conscious mind takes the credit. Are we truly in control?! Have you ever experienced this brain trick? Tell us below! Follow Wonder Vault!
+In a famous brain scan study, scientists could predict which button people would press, up to seven seconds before they consciously decided. Sounds like proof free will is fake, right? Not so fast. The predictions were only right about sixty percent of the time, just above a coin flip. Still, it hints that some decisions start brewing before you're aware of them. So who's really choosing? You, or your brain?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Does Free Will Actually Exist? 🤯 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `Can Your Brain Decide Before You Do? 🤯`
+- **Description**:
 ```text
-🧠 How Your Brain Makes Decisions Before You Even Know — Explore the mind-bending science behind this incredible mystery!
+Brain scans predicted people's choices up to 7 seconds early — but only about 60% of the time. Here's what that really says about free will.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Do you believe in free will — yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind How Your Brain Makes Decisions Before You Even Know
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how your brain makes decisions before you even know, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Brain #Neuroscience #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `how your brain makes decisions before you even know, brain science, neuroscience, subconscious mind, human memory, brain psychology, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `finger pressing button, brain fMRI glowing scan, binary code matrix, silhouette thinking shadow, clock ticking reverse, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `can your brain decide before you do, free will, neuroscience, brain scan, decision making, brain facts, psychology facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Do you believe in free will — yes or no? 👇`
+- **Playlist**: `Brain Secrets`
 
 ---
 
-## Category 3: 'What If?' Hypothetical Scenarios
+## 🤔 Category 3: 'What If?' Scenarios
+> **Playlist:** `What If?`
 
 ### Video #021 — What If Earth Stopped Spinning for 5 Seconds?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `What If Earth Stopped Spinning for 5 Seconds?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `earth rotating space, tsunami wave city, hurricane destruction wind, skyscraper collapsing, dramatic earthquake shockwave` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `earth rotating space, city traffic, car crash slow motion, hurricane wind, ocean giant wave` |
+| **Thumbnail Title** | `EARTH STOPS FOR 5 SECONDS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-If the Earth suddenly stopped spinning for just five seconds, the catastrophe would be instant. Everything on the planet not anchored to bedrock—cars, buildings, oceans, and people—would be thrown eastward at over one thousand miles per hour. Massive supersonic shockwaves would level cities, and colossal ocean tsunamis would submerge continents within minutes. When the Earth resumed spinning, virtually all surface civilization would be gone! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+If Earth stopped spinning for just five seconds, everything not bolted to bedrock would keep moving. At the equator, that's about one thousand miles per hour, east. People, cars, buildings, the oceans themselves, all launched sideways. The winds would be faster than any hurricane in history, and the oceans would slosh into giant waves crossing the continents. Five seconds would be enough to end civilization. Where on Earth would you want to be?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Earth Stopped Spinning for 5 Seconds? 🌍 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (47 chars): `What If Earth Stopped Spinning for 5 Seconds? 🌍`
+- **Description**:
 ```text
-🤔 What If Earth Stopped Spinning for 5 Seconds? — Explore the mind-bending science behind this incredible mystery!
+Earth's surface spins at about 1,000 mph at the equator. If the planet stopped for 5 seconds, everything on it would keep moving — with catastrophic results.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Where on Earth would you want to be if this happened?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If Earth Stopped Spinning for 5 Seconds?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if earth stopped spinning for 5 seconds?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if earth stopped spinning for 5 seconds?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `earth rotating space, tsunami wave city, hurricane destruction wind, skyscraper collapsing, dramatic earthquake shockwave, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if earth stopped spinning for 5 seconds, what if earth stopped spinning, earth rotation, hypothetical science, what if, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Where on Earth would you want to be if this happened? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #022 — What If All Humans Vanished Tomorrow?
+### Video #022 — What If Every Human Vanished Tomorrow?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If All Humans Vanished Tomorrow?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `empty abandoned city, weeds growing through street, dark skyline blackout, overgrown skyscraper vines, wild deer running city` |
+| **Video Subject** | `What If Every Human Vanished Tomorrow?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `city lights night, power plant, subway tunnel water, cracked road plants, abandoned building jungle` |
+| **Thumbnail Title** | `EARTH WITHOUT US` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-If every human disappeared tomorrow morning, within just a few hours, electrical grids worldwide would fail as fossil fuel power plants run out of fuel. Within three days, underground subways in major cities would completely flood with groundwater. Within ten years, millions of wooden homes would collapse under termites and rot. And within five hundred years, overgrown forests would reclaim Paris, London, and New York. Nature always wins! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+If every human vanished tomorrow, the lights would start going out within hours as power plants shut down. Within a couple of days, New York's subway tunnels would flood, because pumps stop pulling out the groundwater. In a few decades, roads crack and trees grow through them. In a few centuries, most buildings collapse. And thousands of years from now, the main sign we existed might be our stone, glass and plastic. What would last longest?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Humans Vanished From Earth? 🏙️ 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `What If Every Human Vanished Tomorrow? 🏙️`
+- **Description**:
 ```text
-🤔 What If All Humans Vanished Tomorrow? — Explore the mind-bending science behind this incredible mystery!
+Without humans, cities would go dark within hours, subways would flood within days, and nature would reclaim our buildings within centuries.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What human-made thing do you think would last the longest?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If All Humans Vanished Tomorrow?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if all humans vanished tomorrow?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if all humans vanished tomorrow?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `empty abandoned city, weeds growing through street, dark skyline blackout, overgrown skyscraper vines, wild deer running city, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if every human vanished tomorrow, what if humans disappeared, life after people, nature reclaims city, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What human-made thing do you think would last the longest? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #023 — What If You Never Slept Again?
+### Video #023 — What Happens If You Never Sleep?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If You Never Slept Again?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `tired exhausted person eye, clock spinning fast, dark room insomnia, hallucination abstract visual, hospital heart monitor` |
+| **Video Subject** | `What Happens If You Never Sleep?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `teenager tired, clock time lapse, person hallucination blur, football player, tired driver night` |
+| **Thumbnail Title** | `NO SLEEP FOR 11 DAYS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-What happens if you refuse to sleep? After twenty-four hours, your reaction time drops as if your blood alcohol level is zero point one zero percent. By day three, you begin experiencing vivid hallucinations, slurred speech, and paranoia. By day seven, your immune system crashes completely, your body temperature plummets, and your brain cells begin dying from toxic waste accumulation. Total sleep deprivation is one hundred percent fatal! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+In the winter of nineteen sixty three, a seventeen year old named Randy Gardner stayed awake for eleven days straight. By day two, he struggled to focus. By day four, he was hallucinating and thought he was a famous football player. By the end, he had memory gaps and slurred speech. Just one night without sleep can affect you like being legally drunk. Don't try this at home. What's the longest you've stayed awake?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If You Stopped Sleeping Forever? 🛌 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `What Happens If You Never Sleep? 🛌`
+- **Description**:
 ```text
-🤔 What If You Never Slept Again? — Explore the mind-bending science behind this incredible mystery!
+Randy Gardner stayed awake for 11 days in 1963–64 — and the effects were wild. Even one sleepless night impairs you like alcohol.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the longest you've ever stayed awake?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If You Never Slept Again?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if you never slept again?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if you never slept again?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `tired exhausted person eye, clock spinning fast, dark room insomnia, hallucination abstract visual, hospital heart monitor, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens if you never sleep, sleep deprivation, randy gardner, no sleep, sleep science, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the longest you've ever stayed awake? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #024 — What If the Moon Were Replaced by Jupiter?
+### Video #024 — What If Jupiter Replaced Our Moon?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If the Moon Were Replaced by Jupiter?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `full moon sky, jupiter planet huge sky, red spot jupiter close, volcano erupting magma, tsunami waves night` |
+| **Video Subject** | `What If Jupiter Replaced Our Moon?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `full moon night, jupiter planet, giant ocean tide, volcano eruption, io moon volcano` |
+| **Thumbnail Title** | `JUPITER IN OUR SKY` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-What if we swapped our tiny Moon with massive Jupiter? First of all, Jupiter is so gargantuan it would fill almost our entire night sky, glowing forty times brighter than a full moon. You could clearly see its swirling clouds and giant red storm with the naked eye. But the honeymoon wouldn't last—its immense gravitational pull would rip Earth apart with super-volcanoes, boiling oceans, and lethal tidal forces! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+Swap the Moon for Jupiter. At the Moon's distance, Jupiter would look about forty times wider than the full moon, a giant striped ball covering a huge chunk of the sky. Beautiful, but deadly. Its gravity would raise enormous tides, and the constant stretching of Earth's interior could set off volcanoes everywhere, like on Jupiter's moon Io. And technically, we'd be the one orbiting Jupiter. Would the view be worth it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Jupiter Replaced the Moon? 🪐 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `What If Jupiter Replaced Our Moon? 🪐`
+- **Description**:
 ```text
-🤔 What If the Moon Were Replaced by Jupiter? — Explore the mind-bending science behind this incredible mystery!
+At the Moon's distance, Jupiter would look 40 times wider than the full moon — but its gravity would trigger huge tides and volcanoes across Earth.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would the view be worth it? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If the Moon Were Replaced by Jupiter?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if the moon were replaced by jupiter?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if the moon were replaced by jupiter?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `full moon sky, jupiter planet huge sky, red spot jupiter close, volcano erupting magma, tsunami waves night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if jupiter replaced our moon, what if jupiter replaced the moon, jupiter facts, tidal forces, space hypothetical, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would the view be worth it? Yes or no? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #025 — What If Oxygen Doubled on Earth?
+### Video #025 — What If Earth Had Double the Oxygen?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If Oxygen Doubled on Earth?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `lush green forest sun, giant dragonfly prehistoric, massive forest wildfire, runner sprinting athletic, lightning storm trees` |
+| **Video Subject** | `What If Earth Had Double the Oxygen?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `breathing fresh air, forest fire, lightning strike, giant dragonfly, insect macro` |
+| **Thumbnail Title** | `2X OXYGEN = GIANT BUGS?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-What if oxygen levels on Earth suddenly jumped from twenty one percent to forty two percent? First, you would feel superhuman—running faster, thinking clearer, and barely getting tired. But the downsides are terrifying. Insects like spiders, ants, and beetles would grow to the size of hawks, just like in prehistoric times. Worse, a single lightning strike could trigger uncontrollable wildfires that burn down entire continents. Balance is everything! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+Today, Earth's air is about twenty one percent oxygen. What if it doubled? At first you might feel a little more energetic. But fire would become terrifying. Wet forests that barely burn today could catch fire from a single lightning strike. And over many generations, insects could grow much bigger. Three hundred million years ago, when oxygen was higher, there were dragonflies with wings as wide as a hawk's. Would you survive giant bugs?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Earth Had Double the Oxygen? 🌿 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `What If Earth Had Double the Oxygen? 🌿`
+- **Description**:
 ```text
-🤔 What If Oxygen Doubled on Earth? — Explore the mind-bending science behind this incredible mystery!
+Doubling Earth's oxygen would make wildfires explosive — and over generations, insects could grow giant, like the hawk-sized dragonflies of 300 million years ago.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Could you live with hawk-sized dragonflies?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If Oxygen Doubled on Earth?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if oxygen doubled on earth?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if oxygen doubled on earth?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `lush green forest sun, giant dragonfly prehistoric, massive forest wildfire, runner sprinting athletic, lightning storm trees, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if earth had double the oxygen, what if oxygen doubled, oxygen, giant insects, meganeura, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Could you live with hawk-sized dragonflies? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #026 — What If You Fell Through a Hole Across Earth?
+### Video #026 — What If You Jumped Through the Earth?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If You Fell Through a Hole Across Earth?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `deep hole canyon, earth core molten magma, falling fast tunnel, planetary physics simulation, globe spinning hands` |
+| **Video Subject** | `What If You Jumped Through the Earth?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `drilling hole ground, earth core diagram, person falling, earth from space, globe spinning` |
+| **Thumbnail Title** | `42 MINUTES TO THE OTHER SIDE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-If you drilled a tunnel straight through the center of the Earth from one side to the other and jumped in, how long would it take to emerge on the opposite continent? Ignoring the molten heat and air resistance, gravity would accelerate you faster and faster until you reached eighteen thousand miles per hour at the Earth's core. You would pop out on the other side in exactly forty-two minutes! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+Imagine drilling a tunnel straight through Earth and jumping in. Ignore the heat and the air. Gravity would pull you faster and faster until you hit around eighteen thousand miles per hour at the center. Then you'd slow down as you rose toward the other side, and pop out after about forty two minutes, right at the surface. And if nobody grabs you? You fall back, forever bouncing between both sides. Where would you come out?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If You Jumped Through the Earth? 🕳️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `What If You Jumped Through the Earth? 🕳️`
+- **Description**:
 ```text
-🤔 What If You Fell Through a Hole Across Earth? — Explore the mind-bending science behind this incredible mystery!
+A tunnel through Earth's center would take about 42 minutes to fall through — and without air resistance, you'd bounce back and forth forever.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 If you jumped through from your home, where would you come out?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If You Fell Through a Hole Across Earth?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if you fell through a hole across earth?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if you fell through a hole across earth?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `deep hole canyon, earth core molten magma, falling fast tunnel, planetary physics simulation, globe spinning hands, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if you jumped through the earth, tunnel through earth, gravity train, physics, earth core, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `If you jumped through from your home, where would you come out? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #027 — What If the Dinosaurs Never Went Extinct?
+### Video #027 — What If the Dinosaur Asteroid Had Missed?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If the Dinosaurs Never Went Extinct?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `asteroid entering atmosphere, t rex dinosaur jungle, raptor dinosaur running, prehistoric jungle landscape, human evolution timeline` |
+| **Video Subject** | `What If the Dinosaur Asteroid Had Missed?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `asteroid space, dinosaur forest, small mammal, dinosaur skeleton museum, jungle` |
+| **Thumbnail Title** | `WHAT IF IT MISSED?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-What if that six-mile-wide asteroid had missed Earth sixty-six million years ago? Without that cosmic impact, dinosaurs would have continued dominating every continent. Small tree-dwelling mammals might never have had the chance to evolve into primates, apes, and humans. Some paleontologists believe intelligent raptors might have developed opposable thumbs, tool use, and their own civilization! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+Sixty six million years ago, an asteroid about six miles wide wiped out the giant dinosaurs. What if it had missed? Dinosaurs might still rule. Small mammals, our ancestors, might never have gotten their big break. In nineteen eighty two, a paleontologist even imagined what a smart dinosaur might look like, a big-brained, upright creature he called the dinosauroid. It's only a thought experiment, but it's a creepy one. Would humans exist?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Dinosaurs Survived the Asteroid? 🦖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (43 chars): `What If the Dinosaur Asteroid Had Missed? 🦖`
+- **Description**:
 ```text
-🤔 What If the Dinosaurs Never Went Extinct? — Explore the mind-bending science behind this incredible mystery!
+If the asteroid had missed, dinosaurs might still rule. One paleontologist even imagined a big-brained "dinosauroid" — a creepy thought experiment.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would humans exist if the asteroid had missed?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If the Dinosaurs Never Went Extinct?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if the dinosaurs never went extinct?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if the dinosaurs never went extinct?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `asteroid entering atmosphere, t rex dinosaur jungle, raptor dinosaur running, prehistoric jungle landscape, human evolution timeline, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if the dinosaur asteroid had missed, dinosaur asteroid, what if dinosaurs survived, dinosauroid, extinction, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would humans exist if the asteroid had missed? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #028 — What If You Drank Only Soda Instead of Water?
+### Video #028 — What Happens If You Only Drink Soda?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If You Drank Only Soda Instead of Water?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `pouring soda glass fizz, sugar cubes falling slow motion, human kidney diagram, dry cracked desert ground, drinking fresh cold water` |
+| **Video Subject** | `What Happens If You Only Drink Soda?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `soda can pouring, teeth close up, sugar cubes, bacteria microscope, glass of water` |
+| **Thumbnail Title** | `ONLY SODA FOR A YEAR` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 30s
 ```text
-What happens if you completely replace water with soda? Within days, the extreme sugar and phosphoric acid will strip enamel from your teeth and overload your liver. After a month, chronic dehydration sets in, causing severe headaches and kidney stones. After a year, the risk of diabetes, heart disease, and organ failure spikes dramatically. Your body is over sixty percent water—water is life! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+What if you replaced every glass of water with soda? Your teeth would take the first hit. Sugar feeds mouth bacteria that make acid, and the soda itself is acidic, so enamel starts wearing away. One can can contain around ten teaspoons of sugar, so a few cans a day adds up fast. Over months and years, that raises the risk of weight gain, type two diabetes, and fatty liver. How many sodas do you drink a week?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Happens If You Only Drink Soda? 🥤 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `What Happens If You Only Drink Soda? 🥤`
+- **Description**:
 ```text
-🤔 What If You Drank Only Soda Instead of Water? — Explore the mind-bending science behind this incredible mystery!
+Swapping water for soda attacks tooth enamel with sugar and acid, and over time raises the risk of diabetes and fatty liver.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 How many sodas do you drink in a week?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If You Drank Only Soda Instead of Water?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if you drank only soda instead of water?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if you drank only soda instead of water?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `pouring soda glass fizz, sugar cubes falling slow motion, human kidney diagram, dry cracked desert ground, drinking fresh cold water, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens if you only drink soda, soda health, sugar, teeth enamel, health facts, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `How many sodas do you drink in a week? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #029 — What If Earth Lost Gravity for 5 Seconds?
+### Video #029 — What If Gravity Switched Off for 5 Seconds?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If Earth Lost Gravity for 5 Seconds?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `zero gravity floating room, astronaut floating weightless, ocean water rising sky, car floating street, clouds dispersing atmosphere` |
+| **Video Subject** | `What If Gravity Switched Off for 5 Seconds?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `astronaut floating, earth spinning, objects floating air, clouds sky, things falling down` |
+| **Thumbnail Title** | `GRAVITY OFF FOR 5 SECONDS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-What happens if gravity turned off for just five seconds? Everything not bolted to the Earth's bedrock would instantly float into the sky. But that's not the worst part—the atmosphere itself would blow away into space at incredible speeds. Ocean waters would lift in massive floating walls, and buildings would crumble as the ground underneath expanded explosively without gravity holding it down! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+If gravity disappeared for five seconds, you wouldn't float away gently. Earth is spinning, so everything not anchored would keep drifting off in a straight line while the ground curved away beneath it. The air would start to expand outward too, and your ears would pop as the pressure dropped. When gravity came back, everything that drifted up would come crashing down. Five seconds of floating, then a very bad landing. Would you hold on to something?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Gravity Stopped for 5 Seconds? 🚀 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `What If Gravity Switched Off for 5 Seconds? 🚀`
+- **Description**:
 ```text
-🤔 What If Earth Lost Gravity for 5 Seconds? — Explore the mind-bending science behind this incredible mystery!
+If gravity vanished for 5 seconds, Earth's spin would send unanchored objects drifting — and then everything would crash back down.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the first thing you'd grab?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If Earth Lost Gravity for 5 Seconds?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if earth lost gravity for 5 seconds?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if earth lost gravity for 5 seconds?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `zero gravity floating room, astronaut floating weightless, ocean water rising sky, car floating street, clouds dispersing atmosphere, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if gravity switched off for 5 seconds, what if gravity disappeared, gravity, physics, hypothetical science, what if, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the first thing you'd grab? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-### Video #030 — What If Every Volcano on Earth Erupted at Once?
+### Video #030 — What If Every Volcano Erupted at Once?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What If Every Volcano on Earth Erupted at Once?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `volcano eruption lava, ash cloud lightning volcano, dark sky apocalyptic, red hot magma flow, ruins volcanic dust` |
+| **Video Subject** | `What If Every Volcano Erupted at Once?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `volcano eruption, ash cloud, sunlight blocked sky, frozen crops, snow summer` |
+| **Thumbnail Title** | `ALL VOLCANOES AT ONCE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-If all fifteen hundred active volcanoes erupted simultaneously, the immediate blasts would trigger global shockwaves and acid rain. Massive clouds of dense ash would blot out the sun for months, plunging Earth into an artificial volcanic winter. Crops would die, temperatures would plummet by thirty degrees, and civilization would face immediate starvation. Volcanic eruptions shaped our planet's past—and could end its future! What would you do if this happened right now? Comment below! Follow Wonder Vault!
+There are about one thousand three hundred and fifty potentially active volcanoes on Earth. What if they all erupted today? Ash and sulfur gas would spread through the atmosphere and block sunlight. We have a small preview: in eighteen fifteen, a single volcano, Tambora, cooled the planet so much that eighteen sixteen became the year without a summer. Crops failed across the world. Now multiply that by a thousand. Where would you go?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What If Every Volcano Erupted Today? 🌋 🤔 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `What If Every Volcano Erupted at Once? 🌋`
+- **Description**:
 ```text
-🤔 What If Every Volcano on Earth Erupted at Once? — Explore the mind-bending science behind this incredible mystery!
+One volcano, Tambora, caused 1816's "year without a summer." Now imagine all ~1,350 active volcanoes erupting at once.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Where would you go to survive?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What If Every Volcano on Earth Erupted at Once?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what if every volcano on earth erupted at once?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#WhatIf #Science #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `what if every volcano on earth erupted at once?, what if science, hypothetical scenarios, crazy science theories, physics thought experiments, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `volcano eruption lava, ash cloud lightning volcano, dark sky apocalyptic, red hot magma flow, ruins volcanic dust, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what if every volcano erupted at once, volcano eruption, tambora, year without a summer, volcanoes, what if, hypothetical science, science facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Where would you go to survive? 👇`
+- **Playlist**: `What If?`
 
 ---
 
-## Category 4: Deep Ocean & Earth Extremes
+## 🌊 Category 4: Deep Ocean & Earth Extremes
+> **Playlist:** `Earth's Extremes`
 
-### Video #031 — The Creepiest Creature in the Mariana Trench
+### Video #031 — The Fish With a See-Through Head
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Creepiest Creature in the Mariana Trench` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `deep sea dark underwater, strange bioluminescent fish, mariana trench submarine, glowing underwater organisms, black abyss ocean` |
+| **Video Subject** | `The Fish With a See-Through Head` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `deep sea fish, dark ocean water, transparent jellyfish, green glowing eyes, underwater submarine light` |
+| **Thumbnail Title** | `IT HAS A GLASS HEAD` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-Seven miles beneath the ocean's surface lies the Mariana Trench—a world of total pitch darkness and crushing pressure equal to eight tons per square inch. Here lives the barreleye fish, a bizarre creature with a completely transparent, see-through dome for a head. Inside its clear skull, glowing green barrel-shaped eyes rotate in any direction to spot the faint silhouettes of prey swimming overhead! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+This fish has a see-through head. It's called the barreleye, and it lives about two thousand feet deep, where sunlight barely reaches. Those two dots on the front that look like eyes? They're actually nostrils. The real eyes are the glowing green domes inside its transparent head, and they can rotate to look straight up through the top of the skull. Scientists only figured out how those eyes work in two thousand nine. Creepy or cool?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Creepiest Creature in the Mariana Trench 🐟 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `The Fish With a See-Through Head 🐟`
+- **Description**:
 ```text
-🌊 The Creepiest Creature in the Mariana Trench — Explore the mind-bending science behind this incredible mystery!
+The barreleye fish has a transparent head, and its glowing green eyes can rotate to look up through its own skull. It wasn't filmed alive until 2009.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Creepy or cool? Pick one.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Creepiest Creature in the Mariana Trench
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the creepiest creature in the mariana trench, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the creepiest creature in the mariana trench, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `deep sea dark underwater, strange bioluminescent fish, mariana trench submarine, glowing underwater organisms, black abyss ocean, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the fish with a see-through head, barreleye fish, deep sea creatures, ocean mysteries, weird fish, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Creepy or cool? Pick one. 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #032 — Why No One Can Explore Under the Antarctic Ice
+### Video #032 — The Lake Hidden Under 2 Miles of Ice
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why No One Can Explore Under the Antarctic Ice` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `antarctica ice shelf, frozen glacier crevasse, underwater diver ice, microscope bacteria glowing, snow blizzard storm` |
+| **Video Subject** | `The Lake Hidden Under 2 Miles of Ice` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `antarctica ice, ice drilling, frozen lake, scientist arctic, microscope bacteria` |
+| **Thumbnail Title** | `A LAKE UNDER THE ICE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-Underneath miles of solid Antarctic ice lies Lake Vostok—a massive freshwater lake completely sealed off from sunlight and our atmosphere for over fifteen million years. The water is under such extreme pressure that it stays liquid below freezing. Scientists believe prehistoric microorganisms and ancient creatures completely unknown to modern science could be thriving in this alien subglacial sanctuary! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+Under more than two miles of Antarctic ice lies a lake the size of Lake Ontario. Lake Vostok has been cut off from sunlight and air for millions of years. It stays liquid because the ice above acts like a blanket and the Earth below gives off heat. Scientists finally drilled down to it in twenty twelve, and they're searching for microbes that might have survived there in total isolation. What do you think is down there?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Secret World Trapped Under Antarctic Ice! ❄️ 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `The Lake Hidden Under 2 Miles of Ice ❄️`
+- **Description**:
 ```text
-🌊 Why No One Can Explore Under the Antarctic Ice — Explore the mind-bending science behind this incredible mystery!
+Lake Vostok lies under more than 2 miles of Antarctic ice, cut off for millions of years — scientists are searching it for isolated microbes.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What do you think is living down there?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why No One Can Explore Under the Antarctic Ice
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why no one can explore under the antarctic ice, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why no one can explore under the antarctic ice, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `antarctica ice shelf, frozen glacier crevasse, underwater diver ice, microscope bacteria glowing, snow blizzard storm, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the lake hidden under 2 miles of ice, lake vostok, antarctica, subglacial lake, earth mysteries, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What do you think is living down there? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #033 — The Boiling River of the Amazon
+### Video #033 — The River in the Amazon That Boils
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Boiling River of the Amazon` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `amazon rainforest aerial, steaming hot river, boiling water bubbles, misty jungle morning, lush green trees river` |
+| **Video Subject** | `The River in the Amazon That Boils` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `amazon rainforest, steaming river, hot water steam, jungle river, geologist` |
+| **Thumbnail Title** | `THIS RIVER BOILS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-Deep in the Peruvian Amazon flows Mayantuyacu—a mystical river so hot that it literally boils. Stretching over four miles, water temperatures reach up to two hundred degrees Fahrenheit. Any small animal that falls in is cooked alive within seconds. For centuries it was dismissed as a myth, but geologists proved it is heated by deep geothermal faults beneath the Earth's crust! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+Deep in the Peruvian Amazon there's a river so hot it can scald you. Locals call it Shanay-timpishka, boiled by the heat of the sun. Parts of it reach around two hundred degrees Fahrenheit, almost boiling. Small animals that fall in can die. For years, people thought it was just a legend. It's real, and it's not volcanic. Geologists think hot water rises along deep faults in the Earth and feeds the river. Would you visit it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mysterious Boiling River of the Amazon! 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `The River in the Amazon That Boils 🔥`
+- **Description**:
 ```text
-🌊 The Boiling River of the Amazon — Explore the mind-bending science behind this incredible mystery!
+The Boiling River of the Amazon reaches about 200°F (93°C). It isn't volcanic — it's fed by hot water rising through deep geological faults.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you visit the boiling river?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Boiling River of the Amazon
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the boiling river of the amazon, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the boiling river of the amazon, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `amazon rainforest aerial, steaming hot river, boiling water bubbles, misty jungle morning, lush green trees river, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the river in the amazon that boils, boiling river, amazon, shanay timpishka, geology, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you visit the boiling river? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #034 — The Underwater Waterfall You Won't Believe Exists
+### Video #034 — The Underwater Waterfall That Isn't Real
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Underwater Waterfall You Won't Believe Exists` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `mauritius aerial ocean, crystal clear turquoise water, underwater waterfall illusion, drone ocean drop off, coral reef waves` |
+| **Video Subject** | `The Underwater Waterfall That Isn't Real` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `mauritius island aerial, ocean drone shot, sand underwater, deep blue ocean, tropical beach` |
+| **Thumbnail Title** | `UNDERWATER WATERFALL?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Off the coast of Mauritius in the Indian Ocean, there appears to be a gigantic, terrifying underwater waterfall plunging into a bottomless dark abyss. While it looks like the ocean floor is opening up to swallow the sea, it is actually a breathtaking optical illusion created by sand and silt cascading down high underwater ocean drop-offs. Nature's art is unmatched! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+From above, it looks like the ocean is pouring into a bottomless pit off the coast of Mauritius. An underwater waterfall. But it's an illusion. Sand and silt are sliding down a steep slope on the sea floor, and the pattern they leave looks exactly like water falling into the deep. The best view is from a plane or a drone. Nature made a magic trick out of sand. Did it fool you at first?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Giant Underwater Waterfall of Mauritius! 🏝️ 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (43 chars): `The Underwater Waterfall That Isn't Real 🏝️`
+- **Description**:
 ```text
-🌊 The Underwater Waterfall You Won't Believe Exists — Explore the mind-bending science behind this incredible mystery!
+Mauritius's famous underwater waterfall is an optical illusion created by sand and silt sliding down a steep slope on the sea floor.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Did it fool you at first?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Underwater Waterfall You Won't Believe Exists
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the underwater waterfall you won't believe exists, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the underwater waterfall you won't believe exists, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `mauritius aerial ocean, crystal clear turquoise water, underwater waterfall illusion, drone ocean drop off, coral reef waves, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the underwater waterfall that isn't real, underwater waterfall, mauritius, optical illusion, ocean, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Did it fool you at first? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #035 — Why We Know More About Mars Than Our Own Oceans
+### Video #035 — We Know Mars' Surface Better Than Our Ocean
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why We Know More About Mars Than Our Own Oceans` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `deep sea ocean submarine, deep water submersible, mars planet surface, titanium metal crumple, glowing deep sea squid` |
+| **Video Subject** | `We Know Mars' Surface Better Than Our Ocean` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `mars surface, ocean surface aerial, ship sonar, deep sea dark, strange sea creature` |
+| **Thumbnail Title** | `MARS IS MAPPED. OUR OCEAN ISN'T` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Humans have mapped one hundred percent of the surface of Mars and the Moon, but we have explored less than five percent of Earth's oceans. Why? Because the ocean is a nightmare environment: absolute freezing cold, zero sunlight, and crushing hydrostatic pressure that can crumple titanium submarines like aluminum soda cans. There are millions of undiscovered species swimming right beneath our feet! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+We have detailed maps of the entire surface of Mars. But only about a quarter of Earth's seafloor is mapped in high detail. Why? Water blocks the radar and cameras we use on other planets, so we have to map the ocean slowly with sonar from ships. And the deep sea is dark, freezing, and crushing. Scientists think most ocean species haven't even been discovered yet. What do you think is hiding down there?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why We Fear Our Own Oceans More Than Mars! 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `We Know Mars' Surface Better Than Our Ocean 🌊`
+- **Description**:
 ```text
-🌊 Why We Know More About Mars Than Our Own Oceans — Explore the mind-bending science behind this incredible mystery!
+Mars' surface is fully mapped, but only about 25% of Earth's seafloor is mapped in high resolution — and most ocean species are still undiscovered.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What do you think is hiding in the deep ocean?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why We Know More About Mars Than Our Own Oceans
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why we know more about mars than our own oceans, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why we know more about mars than our own oceans, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `deep sea ocean submarine, deep water submersible, mars planet surface, titanium metal crumple, glowing deep sea squid, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `we know mars' surface better than our ocean, ocean exploration, deep sea, seafloor mapping, mars, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What do you think is hiding in the deep ocean? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #036 — The Immortal Jellyfish That Never Dies
+### Video #036 — The Jellyfish That Can Restart Its Life
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Immortal Jellyfish That Never Dies` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `glowing jellyfish swimming, transparent jellyfish blue, cell division microscope, youthful glow abstract, underwater coral reef` |
+| **Video Subject** | `The Jellyfish That Can Restart Its Life` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `jellyfish underwater, tiny jellyfish, polyp coral, ocean deep, scientist microscope` |
+| **Thumbnail Title** | `IT CAN REVERSE AGING` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-There is a creature on Earth that has unlocked the secret to biological immortality: Turritopsis dohrnii, the immortal jellyfish. Whenever this tiny creature experiences physical damage, starvation, or aging, it transforms its mature cells back into youthful stem cells, essentially reversing its life cycle and starting life all over again like an infant. It can repeat this loop forever! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+There's a jellyfish that can turn itself back into a baby. Turritopsis dohrnii, nicknamed the immortal jellyfish. When it's injured, starving, or old, it can shrink back into an early stage called a polyp, and start growing up all over again. In theory, it can repeat this again and again. In reality, most get eaten or get sick. But scientists are studying its genes to understand aging. Would you want this power?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Creature That Lives Forever! 🪼 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `The Jellyfish That Can Restart Its Life 🪼`
+- **Description**:
 ```text
-🌊 The Immortal Jellyfish That Never Dies — Explore the mind-bending science behind this incredible mystery!
+Turritopsis dohrnii, the "immortal jellyfish," can revert to an earlier life stage and start over. Scientists are studying its genes to understand aging.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you want to restart your life? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Immortal Jellyfish That Never Dies
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the immortal jellyfish that never dies, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the immortal jellyfish that never dies, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `glowing jellyfish swimming, transparent jellyfish blue, cell division microscope, youthful glow abstract, underwater coral reef, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the jellyfish that can restart its life, immortal jellyfish, turritopsis dohrnii, aging, marine biology, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you want to restart your life? Yes or no? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #037 — The Door to Hell: The Crater That Burns Forever
+### Video #037 — The Fire Crater Burning Since 1971
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Door to Hell: The Crater That Burns Forever` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `fire crater desert night, glowing flames pit, desert dunes night, blazing fire sparks, geological gas flare` |
+| **Video Subject** | `The Fire Crater Burning Since 1971` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `fire crater night, desert sand, gas flames, drilling rig, people standing edge` |
+| **Thumbnail Title** | `IT'S BEEN BURNING 50 YEARS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-In the Karakum desert of Turkmenistan sits the Darvaza Gas Crater, nicknamed the Door to Hell. In nineteen seventy one, Soviet geologists accidentally drilled into an underground natural gas pocket, causing the ground to collapse into a two-hundred-foot-wide crater. To prevent poisonous gas from spreading, they set it on fire, expecting it to burn out in a few weeks. It has been blazing non-stop for over fifty years! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+In the desert of Turkmenistan, there's a crater that has been on fire for over fifty years. It's called the Darvaza gas crater, nicknamed the Door to Hell. The usual story is that in nineteen seventy one, Soviet engineers drilled into a natural gas pocket, the ground collapsed, and they lit the gas to burn it off, expecting it to last a few weeks. It never stopped. Would you stand at the edge?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Giant Fire Crater That Never Goes Out! 🔥 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `The Fire Crater Burning Since 1971 🔥`
+- **Description**:
 ```text
-🌊 The Door to Hell: The Crater That Burns Forever — Explore the mind-bending science behind this incredible mystery!
+Turkmenistan's Darvaza gas crater, the "Door to Hell," has been burning for more than 50 years after gas was set alight to burn it off.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you stand at the edge? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Door to Hell: The Crater That Burns Forever
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the door to hell: the crater that burns forever, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the door to hell: the crater that burns forever, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `fire crater desert night, glowing flames pit, desert dunes night, blazing fire sparks, geological gas flare, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the fire crater burning since 1971, darvaza gas crater, door to hell, turkmenistan, earth wonders, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you stand at the edge? Yes or no? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #038 — The Tree That Bleeds Red Blood
+### Video #038 — The Tree That Bleeds Red Sap
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Tree That Bleeds Red Blood` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `dragons blood tree socotra, alien looking tree desert, red sap oozing bark, misty mountain socotra, rocky desert exotic` |
+| **Video Subject** | `The Tree That Bleeds Red Sap` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `dragon blood tree, red resin, island landscape, mountain fog, ancient medicine` |
+| **Thumbnail Title** | `THIS TREE BLEEDS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-On the isolated island of Socotra in Yemen grows one of the strangest trees on Earth: the Dragon's Blood Tree. Shaped like a giant, dense mushroom or flying saucer, its dense canopy captures moisture from mountain fog. When its bark is cut, it oozes a thick, dark crimson red sap that looks eerily like real human blood. For centuries, this sap was valued as sacred medicine and dye! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+On the island of Socotra, there's a tree that looks like an upside-down umbrella, and it bleeds. Cut its bark and a dark red resin oozes out. It's called the dragon's blood tree. That umbrella shape is a survival trick: it shades its own roots and catches moisture from the mountain mist. For centuries, people used its red resin as dye, varnish, and medicine. Socotra has hundreds of plants found nowhere else. Want to visit?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mysterious Tree That Bleeds Real Red Sap! 🌳 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (30 chars): `The Tree That Bleeds Red Sap 🌳`
+- **Description**:
 ```text
-🌊 The Tree That Bleeds Red Blood — Explore the mind-bending science behind this incredible mystery!
+The dragon's blood tree of Socotra oozes red resin when cut — and its umbrella shape helps it capture mist and shade its roots.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you visit Socotra?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Tree That Bleeds Red Blood
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the tree that bleeds red blood, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the tree that bleeds red blood, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `dragons blood tree socotra, alien looking tree desert, red sap oozing bark, misty mountain socotra, rocky desert exotic, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the tree that bleeds red sap, dragon blood tree, socotra, strange trees, nature, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you visit Socotra? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
 ### Video #039 — The Cave of Giant Crystals
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `The Cave of Giant Crystals` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `massive crystal cave, glowing white crystal cavern, geologist exploring cave, subterranean tunnel rock, sparkling minerals` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `crystal cave, mine tunnel, giant crystals, explorer headlamp, steam hot humid` |
+| **Thumbnail Title** | `CRYSTALS BIGGER THAN BUSES` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-One thousand feet beneath the Naica mine in Mexico lies the Cave of the Crystals—a subterranean cavern holding the largest natural crystals ever discovered. Some selenite crystal beams measure over thirty-eight feet long and weigh fifty-five tons. But humans can only survive inside for ten minutes without specialized cooling gear, because temperatures exceed one hundred and thirty six degrees Fahrenheit with ninety nine percent humidity! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+About a thousand feet under a mine in Mexico is a cave filled with crystals as long as a bus. The Cave of the Crystals in Naica holds some of the largest natural crystals ever found, up to around thirty nine feet long and fifty five tons. But it's deadly. The air is about one hundred thirty six degrees Fahrenheit, with near total humidity. Without cooling suits, people could only last minutes. Would you go in?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Alien Cave of Giant Crystals! 💎 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (28 chars): `The Cave of Giant Crystals 💎`
+- **Description**:
 ```text
-🌊 The Cave of Giant Crystals — Explore the mind-bending science behind this incredible mystery!
+Mexico's Cave of the Crystals holds selenite beams up to 12 m (39 ft) long — in heat and humidity so extreme humans can last only minutes.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you go in? How long would you last?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Cave of Giant Crystals
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the cave of giant crystals, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the cave of giant crystals, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `massive crystal cave, glowing white crystal cavern, geologist exploring cave, subterranean tunnel rock, sparkling minerals, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the cave of giant crystals, cave of the crystals, naica, crystals, earth wonders, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you go in? How long would you last? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-### Video #040 — The Deepest Hole Ever Dug by Humans
+### Video #040 — The Deepest Hole Ever Dug
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Deepest Hole Ever Dug by Humans` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `deep industrial drill rig, molten rock underground, drill bit spinning, earth crust mantle layers, abandoned industrial silo` |
+| **Video Subject** | `The Deepest Hole Ever Dug` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `drilling rig, metal hatch ground, rock layers, earth crust diagram, hot lava` |
+| **Thumbnail Title** | `7.5 MILES DOWN` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 83 words ≈ 32s
 ```text
-How deep can humans actually drill into the Earth? In the nineteen seventies, Soviet scientists attempted to reach the Earth's mantle by drilling the Kola Superdeep Borehole. They reached an astonishing forty thousand two hundred and thirty feet—over seven miles deep! But they had to stop when temperatures reached three hundred and fifty six degrees Fahrenheit, turning the rock into gooey plastic. That incredible hole barely scratches one-third of one percent of Earth's crust! Would you dive this deep into the dark ocean? Tell us below! Follow Wonder Vault!
+The deepest hole humans have ever drilled is in Russia. The Kola Superdeep Borehole reached about seven and a half miles down, over forty thousand feet. Then it had to stop. Down there, the rock was around three hundred fifty degrees Fahrenheit, hot enough that it behaved less like solid rock and more like plastic. And it barely scratched the planet. It got only about a third of the way through the crust, and nowhere near the mantle. How deep would you go?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Deepest Hole Humans Ever Dug! ⛏️ 🌊 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (28 chars): `The Deepest Hole Ever Dug ⛏️`
+- **Description**:
 ```text
-🌊 The Deepest Hole Ever Dug by Humans — Explore the mind-bending science behind this incredible mystery!
+The Kola Superdeep Borehole reached 12,262 m (40,230 ft) — but that was only about a third of the way through Earth's crust.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 How deep do you think we'll ever drill?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Deepest Hole Ever Dug by Humans
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the deepest hole ever dug by humans, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Earth #Nature #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the deepest hole ever dug by humans, mariana trench, deep sea creatures, extreme earth facts, underwater mysteries, abyss secrets, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `deep industrial drill rig, molten rock underground, drill bit spinning, earth crust mantle layers, abandoned industrial silo, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the deepest hole ever dug, kola superdeep borehole, deepest hole, earth crust, geology, earth facts, nature facts, geography facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `How deep do you think we'll ever drill? 👇`
+- **Playlist**: `Earth's Extremes`
 
 ---
 
-## Category 5: Psychology Tricks & Human Behavior
+## 👁️ Category 5: Psychology Tricks & Human Behavior
+> **Playlist:** `Psychology Tricks`
 
-### Video #041 — The Benjamin Franklin Effect: How to Make Anyone Like You
+### Video #041 — The Ben Franklin Trick to Make People Like You
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Benjamin Franklin Effect: How to Make Anyone Like You` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `two people talking coffee shop, borrowing pen handshake, confident smile portrait, psychology book reading, warm social connection` |
+| **Video Subject** | `The Ben Franklin Trick to Make People Like You` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `two people talking, borrowing pen, old library books, handshake smile, friends coffee` |
+| **Thumbnail Title** | `ASK FOR A FAVOR` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-Want someone to like you? Don't do them a favor—ask them to do a small favor for you! This psychological secret is called the Benjamin Franklin Effect. When someone helps you, their subconscious brain resolves cognitive dissonance by reasoning: 'I wouldn't help this person unless I liked them.' Just asking to borrow a pen or advice makes people perceive you as warmer and more trustworthy! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+Want someone to like you more? Don't do them a favor. Ask them for one. This is the Ben Franklin effect. Franklin wrote that he won over a rival by asking to borrow a rare book. The idea is that when someone helps you, their brain wants their actions to make sense, so it quietly concludes, I must like this person. Keep it small, like borrowing a pen or asking for advice. Have you noticed this?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How to Make Anyone Like You Instantly! 🤝 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (48 chars): `The Ben Franklin Trick to Make People Like You 🤝`
+- **Description**:
 ```text
-👁️ The Benjamin Franklin Effect: How to Make Anyone Like You — Explore the mind-bending science behind this incredible mystery!
+The Ben Franklin effect: asking someone for a small favor can make them like you more, as their brain justifies helping you.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Have you ever seen this work in real life?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Benjamin Franklin Effect: How to Make Anyone Like You
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the benjamin franklin effect: how to make anyone like you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the benjamin franklin effect: how to make anyone like you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `two people talking coffee shop, borrowing pen handshake, confident smile portrait, psychology book reading, warm social connection, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the ben franklin trick to make people like you, ben franklin effect, psychology tricks, social psychology, persuasion, psychology facts, human behavior, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Have you ever seen this work in real life? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #042 — The Bystander Effect: Why People Don't Help in Emergencies
+### Video #042 — What to Shout in an Emergency
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Bystander Effect: Why People Don't Help in Emergencies` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `busy crowd walking city, person pointing finger, emergency ambulance flashing, dramatic street scene, focused eye gaze` |
+| **Video Subject** | `What to Shout in an Emergency` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `crowded street, person pointing, phone emergency call, ambulance lights, people helping` |
+| **Thumbnail Title** | `DON'T SAY "SOMEONE HELP"` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-If you are ever in an emergency in a crowded place, never yell 'Someone help me!' You will fall victim to the Bystander Effect. When in a crowd, responsibility is subconsciously diffused across everyone, meaning everyone assumes someone else will call nine one one. Instead, point directly at one single person and say: 'You in the blue shirt, call nine one one right now!' Assigning responsibility triggers instant action! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+If you ever need help in a crowd, don't just shout, someone help. You might get nothing. It's called the bystander effect. In a crowd, everyone assumes someone else will act. So pick one person. Point, make eye contact, and be specific. You, in the blue shirt, call for an ambulance. Once one person has a clear job, they usually move, and others often follow. This could save a life. Share it with someone.
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Life-Saving Psychological Trick You Need! 🚨 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (31 chars): `What to Shout in an Emergency 🚨`
+- **Description**:
 ```text
-👁️ The Bystander Effect: Why People Don't Help in Emergencies — Explore the mind-bending science behind this incredible mystery!
+The bystander effect means crowds often don't help. Point to one person and give a specific instruction — it can save a life.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Who will you share this with?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Bystander Effect: Why People Don't Help in Emergencies
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the bystander effect: why people don't help in emergencies, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the bystander effect: why people don't help in emergencies, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `busy crowd walking city, person pointing finger, emergency ambulance flashing, dramatic street scene, focused eye gaze, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what to shout in an emergency, bystander effect, emergency tips, psychology, safety, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Who will you share this with? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #043 — The Spot-Light Effect: Nobody Cares as Much as You Think
+### Video #043 — Nobody Notices Your Mistakes Like You Think
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Spot-Light Effect: Nobody Cares as Much as You Think` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `person walking stage spotlight, self conscious mirror looking, crowded subway people looking phones, confident smiling walking, deep breath relaxation` |
+| **Video Subject** | `Nobody Notices Your Mistakes Like You Think` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person tripping street, embarrassing t-shirt, classroom students, crowd walking, spotlight stage` |
+| **Thumbnail Title** | `NOBODY IS WATCHING` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-Ever tripped in public or spilled coffee on your shirt and felt like the entire world was staring and laughing? That is the Spotlight Effect. Psychologists proved that humans dramatically overestimate how much other people notice our appearance and mistakes. In reality, most people are trapped inside their own heads, worrying about what others think of them! Stop stressing and be you! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+You trip in public and feel like everyone saw. They mostly didn't. It's called the spotlight effect. In one famous study, students wore an embarrassing t-shirt into a room. They guessed about half the people noticed. In reality, it was closer to a quarter. Everyone around you is busy worrying about themselves. So the next time you feel judged, remember, the spotlight is a lot dimmer than it feels. What would you do if nobody was watching?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Nobody Cares About Your Mistakes! 💡 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `Nobody Notices Your Mistakes Like You Think 💡`
+- **Description**:
 ```text
-👁️ The Spot-Light Effect: Nobody Cares as Much as You Think — Explore the mind-bending science behind this incredible mystery!
+The spotlight effect: people notice our mistakes far less than we think. In one study, students guessed 50% noticed an embarrassing shirt — it was about 25%.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What would you do if you knew nobody was judging you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Spot-Light Effect: Nobody Cares as Much as You Think
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the spot-light effect: nobody cares as much as you think, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the spot-light effect: nobody cares as much as you think, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `person walking stage spotlight, self conscious mirror looking, crowded subway people looking phones, confident smiling walking, deep breath relaxation, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `nobody notices your mistakes like you think, spotlight effect, social anxiety, psychology facts, confidence, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What would you do if you knew nobody was judging you? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #044 — The Door-in-the-Face Technique for Persuasion
+### Video #044 — The Door-in-the-Face Trick to Get a Yes
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Door-in-the-Face Technique for Persuasion` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `business handshake deal, negotiation table meeting, smiling professional businessman, contract signing pen, strategic chess move` |
+| **Video Subject** | `The Door-in-the-Face Trick to Get a Yes` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `salesperson talking, person saying no, handshake deal, shopping store, negotiation table` |
+| **Thumbnail Title** | `ASK BIG, THEN SMALL` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Here is an elite negotiation trick used by top salespeople and diplomats: The Door-in-the-Face technique. If you need a favor, ask for an absurdly huge, unreasonable favor first that you know will be rejected. When they say no, immediately follow up with your real, smaller request. Subconsciously, they will perceive your second request as a generous compromise and feel compelled to say yes! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+Here's a persuasion trick salespeople use. It's called the door in the face. First, ask for something big that you expect to be turned down. Then, right after the no, ask for what you actually want. The second request feels like a compromise, and many people feel they should meet you halfway. In one classic study, it more than doubled how many people agreed. Now you'll notice it everywhere. Has someone used this on you?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How to Get Anyone to Say YES! 🎯 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `The Door-in-the-Face Trick to Get a Yes 🎯`
+- **Description**:
 ```text
-👁️ The Door-in-the-Face Technique for Persuasion — Explore the mind-bending science behind this incredible mystery!
+The door-in-the-face technique: a big request followed by a smaller one makes the second feel like a compromise — and people say yes more often.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Has anyone used this trick on you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Door-in-the-Face Technique for Persuasion
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the door-in-the-face technique for persuasion, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the door-in-the-face technique for persuasion, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `business handshake deal, negotiation table meeting, smiling professional businessman, contract signing pen, strategic chess move, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the door-in-the-face trick to get a yes, door in the face, persuasion, negotiation, psychology tricks, psychology facts, human behavior, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Has anyone used this trick on you? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #045 — The Zeigarnik Effect: Why Unfinished Tasks Haunt You
+### Video #045 — Why Unfinished Tasks Stick in Your Head
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Zeigarnik Effect: Why Unfinished Tasks Haunt You` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `to do list checklist pencil, person typing laptop late night, clock ticking stress, ticking stopwatch, completed checkmark green` |
+| **Video Subject** | `Why Unfinished Tasks Stick in Your Head` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `waiter cafe notepad, unfinished puzzle, person procrastinating phone, timer two minutes, person working desk` |
+| **Thumbnail Title** | `WHY YOU CAN'T LET GO` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 68 words ≈ 26s
 ```text
-Ever wonder why you can't sleep when you leave a project unfinished, or why cliffhangers in movies are so addictive? Russian psychologist Bluma Zeigarnik discovered that our brains hold onto interrupted, incomplete tasks with intense cognitive tension. The moment a task is finished, the brain lets it go. To stop procrastinating, just start for two minutes—your brain will fight to finish it! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+Ever noticed how an unfinished task keeps nagging at you? A psychologist named Bluma Zeigarnik noticed waiters remembered unpaid orders perfectly, then forgot them once they were paid. That's the Zeigarnik effect: unfinished things tend to stay on your mind. You can use it. Struggling to start something? Just do two minutes. Once it's started, your brain often wants to finish it. What's one task you've been avoiding?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Unfinished Tasks Drive You Crazy! 📝 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `Why Unfinished Tasks Stick in Your Head 📝`
+- **Description**:
 ```text
-👁️ The Zeigarnik Effect: Why Unfinished Tasks Haunt You — Explore the mind-bending science behind this incredible mystery!
+The Zeigarnik effect: unfinished tasks stick in our minds. Use it to beat procrastination by starting for just two minutes.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one task you've been avoiding? Start it for 2 minutes.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Zeigarnik Effect: Why Unfinished Tasks Haunt You
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the zeigarnik effect: why unfinished tasks haunt you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the zeigarnik effect: why unfinished tasks haunt you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `to do list checklist pencil, person typing laptop late night, clock ticking stress, ticking stopwatch, completed checkmark green, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why unfinished tasks stick in your head, zeigarnik effect, procrastination, productivity, psychology, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one task you've been avoiding? Start it for 2 minutes. 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #046 — Why Narcissists Love Bomb You
+### Video #046 — The Warning Signs of Love Bombing
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Narcissists Love Bomb You` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `red roses bouquet, text notifications phone buzzing, silhouette couple sunset, heartbreak crying dark, thoughtful portrait contemplation` |
+| **Video Subject** | `The Warning Signs of Love Bombing` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `couple gifts flowers, phone text messages, red flag, person thinking alone, calm couple walking` |
+| **Thumbnail Title** | `TOO MUCH, TOO FAST` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-Have you ever met someone who showered you with overwhelming compliments, gifts, and affection from day one, only to turn cold later? That is called love bombing. It is a psychological manipulation tactic designed to rapidly break down your emotional boundaries and create an addictive chemical rush of dopamine in your brain. True affection grows with time and respect—beware of fast intensity! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+Someone you just met showers you with constant compliments, gifts, and big promises. Feels amazing, right? Psychologists warn this can be love bombing. It's an intense rush of affection used to create quick attachment, often followed by control or sudden coldness. Not everyone who is excited about you is manipulating you. But real affection is consistent, respects your boundaries, and doesn't rush you. Too much, too fast is a red flag. Have you seen this happen?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Dark Psychology of Love Bombing 🚩 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (35 chars): `The Warning Signs of Love Bombing 🚩`
+- **Description**:
 ```text
-👁️ Why Narcissists Love Bomb You — Explore the mind-bending science behind this incredible mystery!
+Love bombing is an overwhelming rush of attention used to create fast attachment. Learn the signs — and what healthy affection looks like.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Have you ever seen this happen to a friend?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Narcissists Love Bomb You
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why narcissists love bomb you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `why narcissists love bomb you, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `red roses bouquet, text notifications phone buzzing, silhouette couple sunset, heartbreak crying dark, thoughtful portrait contemplation, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the warning signs of love bombing, love bombing, red flags, relationships, psychology, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Have you ever seen this happen to a friend? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #047 — The Baader-Meinhof Phenomenon: Why New Things Appear Everywhere
+### Video #047 — Why You Suddenly See It Everywhere
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Baader-Meinhof Phenomenon: Why New Things Appear Everywhere` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `red car driving highway, dictionary reading magnifying glass, multiple billboards street, glowing pattern recognition, eyes scanning crowd` |
+| **Video Subject** | `Why You Suddenly See It Everywhere` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `red car street, dictionary word, traffic cars, brain glowing, person surprised` |
+| **Thumbnail Title** | `WHY IT'S EVERYWHERE NOW` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-Have you ever learned a weird new word or decided to buy a red car, and suddenly you start seeing that exact word or car everywhere you look? No, the universe isn't glitching. This is the Baader-Meinhof phenomenon, or frequency illusion. Your brain's selective attention filter simply learned to flag that information as relevant, consciously noticing what it used to ignore! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+You learn a new word, and suddenly you see it everywhere. You buy a red car, and every road is full of red cars. The universe isn't sending you signs. It's the Baader-Meinhof phenomenon, also called the frequency illusion. Your brain now flags that thing as important, so you start noticing it. It was always there. Now you'll probably notice this effect everywhere too. Sorry. What's something you started noticing everywhere?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why You See the Same Thing Everywhere! 🚗 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Why You Suddenly See It Everywhere 🚗`
+- **Description**:
 ```text
-👁️ The Baader-Meinhof Phenomenon: Why New Things Appear Everywhere — Explore the mind-bending science behind this incredible mystery!
+The Baader-Meinhof phenomenon (frequency illusion) is why something new suddenly seems to appear everywhere — your brain is just noticing it now.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's something you suddenly started seeing everywhere?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Baader-Meinhof Phenomenon: Why New Things Appear Everywhere
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the baader-meinhof phenomenon: why new things appear everywhere, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the baader-meinhof phenomenon: why new things appear everywhere, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `red car driving highway, dictionary reading magnifying glass, multiple billboards street, glowing pattern recognition, eyes scanning crowd, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why you suddenly see it everywhere, baader meinhof phenomenon, frequency illusion, cognitive bias, psychology, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's something you suddenly started seeing everywhere? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #048 — The Power of Silence in an Argument
+### Video #048 — The Power of Silence in a Conversation
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Power of Silence in an Argument` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `intense eye contact staring, two people argument debate, calm stoic man looking, ticking clock conference room, confident quiet smile` |
+| **Video Subject** | `The Power of Silence in a Conversation` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `two people negotiating, business meeting, person thinking silent, clock ticking, handshake` |
+| **Thumbnail Title** | `JUST STAY QUIET` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-In any heated disagreement or negotiation, the most lethal weapon isn't a clever comeback—it is pure, uninterrupted silence. When someone finishes speaking and you calmly maintain eye contact without saying a word, the silence creates intense psychological pressure. To fill the uncomfortable void, the other person will almost always keep talking, backtracking, and revealing their real motives! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+In a tense conversation, the strongest move is often to say nothing. After someone answers, pause and stay calm for a few seconds. Most people feel uncomfortable with silence and rush to fill it. They explain more, add details, or improve their offer. Negotiators use this all the time. It works in job interviews, salary talks, and arguments. Next time, count to four in your head before you reply. Will you try this?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Lethal Power of Silence in Arguments 🤫 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `The Power of Silence in a Conversation 🤫`
+- **Description**:
 ```text
-👁️ The Power of Silence in an Argument — Explore the mind-bending science behind this incredible mystery!
+Silence is a powerful negotiation tool. Most people rush to fill a pause — and often reveal more or improve their offer.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Will you try the 4-second pause? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Power of Silence in an Argument
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the power of silence in an argument, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the power of silence in an argument, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `intense eye contact staring, two people argument debate, calm stoic man looking, ticking clock conference room, confident quiet smile, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the power of silence in a conversation, power of silence, negotiation, communication skills, psychology, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Will you try the 4-second pause? Yes or no? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #049 — The Anchoring Bias: How Stores Control What You Spend
+### Video #049 — How Stores Trick You With Prices
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Anchoring Bias: How Stores Control What You Spend` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `price tag discount sale, shopping mall retail clothes, credit card payment terminal, luxury watch display, cash register money` |
+| **Video Subject** | `How Stores Trick You With Prices` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `price tag sale, shopping mall, restaurant menu, shopping bags, credit card payment` |
+| **Thumbnail Title** | `THAT "DISCOUNT" IS A TRICK` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Ever seen a designer jacket priced at one thousand dollars, marked down to three hundred dollars, and felt like you got an incredible steal? You just fell for the Anchoring Bias. The first price you see acts as a psychological anchor. Your brain doesn't judge whether three hundred dollars is a good value; it only compares it to the original anchor of one thousand. Stores exploit this every single day! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+A jacket says one thousand dollars, now just three hundred. Suddenly three hundred feels like a steal. That's anchoring. The first number you see becomes your reference point, and your brain judges everything against it instead of asking what the thing is really worth. Stores, menus, and even salary talks use it. One very expensive item makes everything next to it look reasonable. What's the last deal that tricked you?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Stores Trick Your Brain Into Spending! 🏷️ 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (35 chars): `How Stores Trick You With Prices 🏷️`
+- **Description**:
 ```text
-👁️ The Anchoring Bias: How Stores Control What You Spend — Explore the mind-bending science behind this incredible mystery!
+Anchoring bias: the first price you see shapes what feels cheap. Stores use crossed-out prices and expensive decoys to make you spend more.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the last "deal" that tricked you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Anchoring Bias: How Stores Control What You Spend
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the anchoring bias: how stores control what you spend, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the anchoring bias: how stores control what you spend, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `price tag discount sale, shopping mall retail clothes, credit card payment terminal, luxury watch display, cash register money, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how stores trick you with prices, anchoring bias, pricing psychology, shopping tricks, cognitive bias, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the last "deal" that tricked you? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-### Video #050 — The Pygmalion Effect: Belief Shapes Reality
+### Video #050 — How Others' Expectations Change You
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Pygmalion Effect: Belief Shapes Reality` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `teacher encouraging student, mentor coaching young athlete, golden trophy award, smiling confident student, standing tall sunset mountain` |
+| **Video Subject** | `How Others' Expectations Change You` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `classroom teacher, students raising hands, child reading, teacher encouragement, graduation cap` |
+| **Thumbnail Title** | `BELIEF CHANGES RESULTS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 68 words ≈ 26s
 ```text
-If people expect you to succeed, you actually become more likely to succeed. This is the Pygmalion Effect. In landmark psychological studies, teachers were falsely told that random students were intellectual geniuses. By the end of the year, those exact students scored significantly higher on IQ tests simply because the teachers subconsciously treated them with higher encouragement. Surround yourself with believers! Have you noticed this psychology trick in people? Comment below! Follow Wonder Vault!
+In the nineteen sixties, teachers were told certain students were about to bloom intellectually. In reality, those kids were picked at random. By the end of the year, some of them, especially the youngest, showed bigger gains on tests. This is the Pygmalion effect. The teachers' expectations seem to have changed how they treated those kids, and that changed the results. Who believed in you when it mattered?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Expectations Shape Your Success! 🏆 👁️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `How Others' Expectations Change You 🏆`
+- **Description**:
 ```text
-👁️ The Pygmalion Effect: Belief Shapes Reality — Explore the mind-bending science behind this incredible mystery!
+The Pygmalion effect: when teachers expected certain random students to bloom, some of those students really did improve more.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Who believed in you when it mattered?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Pygmalion Effect: Belief Shapes Reality
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the pygmalion effect: belief shapes reality, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Psychology #HumanBehavior #MindTricks #Shorts
 ```
-
-- **YouTube Tags**: `the pygmalion effect: belief shapes reality, human psychology, body language tricks, dark psychology facts, behavioral science, subconscious triggers, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `teacher encouraging student, mentor coaching young athlete, golden trophy award, smiling confident student, standing tall sunset mountain, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how others' expectations change you, pygmalion effect, expectations, education, psychology, psychology facts, human behavior, psychology tricks, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Who believed in you when it mattered? 👇`
+- **Playlist**: `Psychology Tricks`
 
 ---
 
-## Category 6: Animal Superpowers & Nature Wonders
+## 🐾 Category 6: Animal Superpowers
+> **Playlist:** `Animal Superpowers`
 
-### Video #051 — The Mantis Shrimp's Deadly Super Punch
+### Video #051 — The Shrimp That Punches Like a Bullet
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Mantis Shrimp's Deadly Super Punch` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `colorful mantis shrimp underwater, bullet fired slow motion, underwater shockwave bubble, coral reef sea floor, striking predator motion` |
+| **Video Subject** | `The Shrimp That Punches Like a Bullet` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `mantis shrimp, coral reef, underwater bubbles, aquarium glass, crab shell` |
+| **Thumbnail Title** | `FASTEST PUNCH ON EARTH` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-The mantis shrimp may be small, but it packs the fastest punch in the entire animal kingdom. Its club appendages strike at fifty miles per hour—accelerating faster than a bullet fired from a gun! The strike is so fast that it boils the surrounding water and creates underwater shockwaves of light and heat called cavitation bubbles. It easily shatters thick aquarium glass! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+The mantis shrimp has one of the fastest strikes in the animal kingdom. Its club shoots out with the acceleration of a twenty two caliber bullet. The punch is so fast that the water around it boils into tiny bubbles. When those bubbles collapse, they release a flash of light, heat, and a second shockwave. So prey gets hit twice. Mantis shrimp have even cracked aquarium glass. Want to see one in action?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Shrimp That Punches Like a Bullet! 🥊 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `The Shrimp That Punches Like a Bullet 🥊`
+- **Description**:
 ```text
-🐾 The Mantis Shrimp's Deadly Super Punch — Explore the mind-bending science behind this incredible mystery!
+The mantis shrimp punches with the acceleration of a bullet — so fast it creates collapsing bubbles that hit prey a second time.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which animal has the coolest superpower?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Mantis Shrimp's Deadly Super Punch
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the mantis shrimp's deadly super punch, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the mantis shrimp's deadly super punch, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `colorful mantis shrimp underwater, bullet fired slow motion, underwater shockwave bubble, coral reef sea floor, striking predator motion, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the shrimp that punches like a bullet, mantis shrimp, animal superpowers, ocean animals, fastest punch, animal facts, wildlife, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which animal has the coolest superpower? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #052 — The Bird That Never Forgets a Human Face
+### Video #052 — Crows Remember Your Face for Years
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Bird That Never Forgets a Human Face` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `black crow perched branch, raven close up eye, flying crows flock sky, mysterious forest trees, smart bird tool use` |
+| **Video Subject** | `Crows Remember Your Face for Years` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `crow bird, scary mask, university campus, crows flying flock, bird watching` |
+| **Thumbnail Title** | `CROWS NEVER FORGET` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-If you ever harass a crow, you might regret it for the rest of your life. Crows possess extraordinary facial recognition abilities. University researchers wearing specific masks caught and released crows; years later, whenever anyone wore that mask on campus, crows would dive-bomb and screech in fury. Even crazier, parent crows teach their babies which human faces to hate! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+Never upset a crow. They remember faces. Researchers at the University of Washington wore a scary mask while catching and banding a few crows. Years later, whenever someone walked through campus in that mask, crows would scold and dive at them. Even crows that had never been caught joined in. They had learned from the others. A crow grudge can spread through a whole flock. Would you mess with a crow?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why You Should Never Mess With a Crow! 🦅 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `Crows Remember Your Face for Years 🐦‍⬛`
+- **Description**:
 ```text
-🐾 The Bird That Never Forgets a Human Face — Explore the mind-bending science behind this incredible mystery!
+Crows recognize human faces and hold grudges for years — and they teach other crows who to scold, as a famous University of Washington mask study showed.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Have you ever had a run-in with a crow?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Bird That Never Forgets a Human Face
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the bird that never forgets a human face, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the bird that never forgets a human face, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `black crow perched branch, raven close up eye, flying crows flock sky, mysterious forest trees, smart bird tool use, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `crows remember your face for years, crows, crow intelligence, animal facts, birds, wildlife, animal superpowers, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Have you ever had a run-in with a crow? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #053 — The Tardigrade: The Indestructible Micro-Monster
+### Video #053 — The Tiny Animal That Survived Space
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Tardigrade: The Indestructible Micro-Monster` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `tardigrade water bear microscope, outer space satellite orbit, frozen ice crystal macro, radiation symbol warning, tiny microscopic organism` |
+| **Video Subject** | `The Tiny Animal That Survived Space` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `tardigrade microscope, moss macro, satellite space, frozen ice, water drop` |
+| **Thumbnail Title** | `IT SURVIVED SPACE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Meet the tardigrade, also known as the water bear. These microscopic creatures can survive freezing in liquid helium, temperatures of three hundred degrees Fahrenheit, crushing deep-sea pressure, lethal doses of radiation, and even years in the vacuum of outer space! When threatened, they expel all water from their bodies and enter cryptobiosis, suspending their metabolism until conditions improve! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+Meet the tardigrade, also called the water bear. It's smaller than a grain of sand. When things get bad, it dries itself out and curls into a tiny ball called a tun. In that state, tardigrades have survived extreme cold, intense radiation, and even ten days exposed to open space on a satellite in two thousand seven. Add water, and many wake up like nothing happened. Toughest animal on Earth?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Indestructible Creature That Can Survive Space #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `The Tiny Animal That Survived Space 🐻`
+- **Description**:
 ```text
-🐾 The Tardigrade: The Indestructible Micro-Monster — Explore the mind-bending science behind this incredible mystery!
+Tardigrades (water bears) survived 10 days exposed to space in 2007. In their dried "tun" state, they can endure extreme cold and radiation.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Is the tardigrade the toughest animal on Earth? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Tardigrade: The Indestructible Micro-Monster
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the tardigrade: the indestructible micro-monster, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the tardigrade: the indestructible micro-monster, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `tardigrade water bear microscope, outer space satellite orbit, frozen ice crystal macro, radiation symbol warning, tiny microscopic organism, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the tiny animal that survived space, tardigrade, water bear, animal superpowers, extremophiles, animal facts, wildlife, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Is the tardigrade the toughest animal on Earth? Yes or no? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #054 — The Lyrebird: The Nature Mimic That Can Copy Chainsaws
+### Video #054 — The Bird That Copies Chainsaws
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Lyrebird: The Nature Mimic That Can Copy Chainsaws` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `lyrebird singing forest, audio waveform visual, vintage camera shutter clicking, chainsaw cutting wood, eucalyptus forest mist` |
+| **Video Subject** | `The Bird That Copies Chainsaws` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `lyrebird, australian forest, camera shutter, chainsaw cutting, bird singing` |
+| **Thumbnail Title** | `THIS BIRD IS A CHAINSAW` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-The Australian Lyrebird is the world's most astonishing audio mimic. To impress mates, it doesn't just mimic other birds—it flawlessly copies camera shutters, car alarms, crying babies, and even the sound of screaming chainsaws ripping through timber. Its voice box is so complex it can reproduce multiple overlapping industrial sounds with razor-sharp acoustic accuracy! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+Close your eyes. That could be a camera shutter, a car alarm, or a chainsaw. Or it could be a lyrebird. The Australian lyrebird is one of the best mimics on Earth. Males copy the songs of dozens of other birds to impress females. And some lyrebirds living near people have learned to copy human sounds too, like cameras and chainsaws. One bird can sound like a whole forest. Which sound would you teach it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Bird That Mimics Chainsaws and Car Alarms! 🎵 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (32 chars): `The Bird That Copies Chainsaws 🎵`
+- **Description**:
 ```text
-🐾 The Lyrebird: The Nature Mimic That Can Copy Chainsaws — Explore the mind-bending science behind this incredible mystery!
+The Australian lyrebird can mimic dozens of birds — and some have learned human sounds like camera shutters and chainsaws.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which sound would you teach a lyrebird?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Lyrebird: The Nature Mimic That Can Copy Chainsaws
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the lyrebird: the nature mimic that can copy chainsaws, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the lyrebird: the nature mimic that can copy chainsaws, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `lyrebird singing forest, audio waveform visual, vintage camera shutter clicking, chainsaw cutting wood, eucalyptus forest mist, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the bird that copies chainsaws, lyrebird, bird mimicry, animal facts, australia, wildlife, animal superpowers, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which sound would you teach a lyrebird? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #055 — The Octopus: The Alien Living on Earth
+### Video #055 — Why Octopuses Are Basically Aliens
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Octopus: The Alien Living on Earth` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `octopus camouflage rock, tentacles reaching underwater, blue blood microscope, ocean coral reef, intelligent sea creature` |
+| **Video Subject** | `Why Octopuses Are Basically Aliens` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `octopus underwater, octopus arms, blue blood, octopus opening jar, octopus camouflage` |
+| **Thumbnail Title** | `3 HEARTS. BLUE BLOOD.` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-With three hearts, blue copper-based blood, and nine brains—one central brain and one miniature brain in each of its eight arms—the octopus is essentially an alien living in our oceans. Each arm can taste, touch, and make independent hunting decisions without checking with the head! Furthermore, they can alter the color and three-dimensional texture of their skin in milliseconds to match any background! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+The octopus has three hearts, blue blood, and most of its brain cells in its arms. Each arm can taste what it touches and make some decisions on its own. Octopuses can open jars, escape tanks, and change both the color and texture of their skin in a fraction of a second to vanish against rocks. And they do all of this while living only a year or two. Smartest sea creature?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Octopuses Are Basically Aliens! 🐙 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Why Octopuses Are Basically Aliens 🐙`
+- **Description**:
 ```text
-🐾 The Octopus: The Alien Living on Earth — Explore the mind-bending science behind this incredible mystery!
+Octopuses have three hearts, blue blood and most of their neurons in their arms — and they can change color and texture in a split second.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Smartest sea creature — octopus or dolphin?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Octopus: The Alien Living on Earth
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the octopus: the alien living on earth, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the octopus: the alien living on earth, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `octopus camouflage rock, tentacles reaching underwater, blue blood microscope, ocean coral reef, intelligent sea creature, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why octopuses are basically aliens, octopus, octopus facts, animal intelligence, ocean animals, animal facts, wildlife, animal superpowers, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Smartest sea creature — octopus or dolphin? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #056 — The Wood Frog That Freezes Solid and Comes Back to Life
+### Video #056 — The Frog That Freezes Solid and Comes Back
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Wood Frog That Freezes Solid and Comes Back to Life` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `green tree frog leaf, frost freezing plant time lapse, ice melting spring, snow melting forest, beating heart pulse` |
+| **Video Subject** | `The Frog That Freezes Solid and Comes Back` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `wood frog, snow forest, frozen ice, heart beating, frog jumping spring` |
+| **Thumbnail Title** | `FROZEN... THEN ALIVE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-During brutal Alaskan winters, the wood frog does something that sounds impossible: it allows sixty percent of its entire body to freeze rock solid into a block of ice. Its heart stops beating, its breathing ceases, and its brain shows zero electrical activity—it is clinically dead. Yet in the spring, it thaws from the inside out, its heart restarts, and it hops away! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+In Alaska, the wood frog does something that sounds impossible. Every winter, it lets up to two thirds of its body water turn to ice. Its heart stops. It stops breathing. To us, it looks dead. The secret? It floods its cells with sugar, which works like antifreeze and protects them from damage. When spring comes, it thaws out, its heart starts beating again, and it hops away. Could humans ever do this?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Frog That Freezes Solid and Resurrects! 🐸 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (44 chars): `The Frog That Freezes Solid and Comes Back 🐸`
+- **Description**:
 ```text
-🐾 The Wood Frog That Freezes Solid and Comes Back to Life — Explore the mind-bending science behind this incredible mystery!
+The Alaskan wood frog freezes for the winter — its heart stops — then thaws and hops away in spring, protected by sugar acting as antifreeze.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Should scientists try to copy this for humans? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Wood Frog That Freezes Solid and Comes Back to Life
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the wood frog that freezes solid and comes back to life, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the wood frog that freezes solid and comes back to life, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `green tree frog leaf, frost freezing plant time lapse, ice melting spring, snow melting forest, beating heart pulse, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the frog that freezes solid and comes back, wood frog, frozen frog, animal superpowers, cryobiology, animal facts, wildlife, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Should scientists try to copy this for humans? Yes or no? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #057 — The Pistol Shrimp: Creating Temperatures as Hot as the Sun
+### Video #057 — The Shrimp That's as Hot as the Sun
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Pistol Shrimp: Creating Temperatures as Hot as the Sun` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `pistol shrimp claw snapping, underwater bubble pop, sun surface solar flare, shockwave sound wave, macro ocean creature` |
+| **Video Subject** | `The Shrimp That's as Hot as the Sun` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `pistol shrimp, shrimp claw, underwater bubble, sun surface, small fish reef` |
+| **Thumbnail Title** | `HOTTER THAN THE SUN?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 30s
 ```text
-The tiny pistol shrimp has one oversized claw that snaps shut with explosive force. When it snaps, it shoots a high-velocity water jet that creates an acoustic bubble. As the bubble collapses, it produces a sound louder than a gunshot, and inside that microscopic bubble, temperatures momentarily spike to over eight thousand degrees Fahrenheit—nearly as hot as the surface of the sun! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+The pistol shrimp is only a couple of inches long, but it fights with a bubble. When it snaps its big claw shut, it shoots out a jet of water so fast that it creates a bubble. When the bubble collapses, it makes a crack louder than a gunshot underwater, and for a tiny instant, the temperature inside reaches thousands of degrees, close to the surface of the Sun. Small fish are stunned. Which ocean animal scares you most?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Tiny Shrimp That Shoots as Hot as the Sun! 🦐 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `The Shrimp That's as Hot as the Sun 🦐`
+- **Description**:
 ```text
-🐾 The Pistol Shrimp: Creating Temperatures as Hot as the Sun — Explore the mind-bending science behind this incredible mystery!
+The pistol shrimp snaps a bubble so violently that, for an instant, it gets nearly as hot as the Sun's surface — and loud enough to stun fish.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which ocean animal scares you the most?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Pistol Shrimp: Creating Temperatures as Hot as the Sun
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the pistol shrimp: creating temperatures as hot as the sun, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the pistol shrimp: creating temperatures as hot as the sun, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `pistol shrimp claw snapping, underwater bubble pop, sun surface solar flare, shockwave sound wave, macro ocean creature, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the shrimp that's as hot as the sun, pistol shrimp, cavitation, animal superpowers, ocean animals, animal facts, wildlife, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which ocean animal scares you the most? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #058 — The Peregrine Falcon: The Fastest Living Creature
+### Video #058 — The Fastest Animal on Earth Isn't the Cheetah
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Peregrine Falcon: The Fastest Living Creature` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `falcon flying sky, eagle diving fast motion, speedometer racing needle, bullet train passing, mountain cliff landscape` |
+| **Video Subject** | `The Fastest Animal on Earth Isn't the Cheetah` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `peregrine falcon diving, cheetah running, falcon flying sky, bird nostril close up, bird hunting` |
+| **Thumbnail Title** | `FASTER THAN A CHEETAH` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-You might think the cheetah is the fastest animal on Earth at seventy miles per hour, but the Peregrine Falcon crushes that record. When diving from the sky to hunt prey, this raptor reaches speeds exceeding two hundred and forty miles per hour! That is faster than a skydiving human and rivaling bullet trains. Specialized baffles in its nostrils allow it to breathe even against supersonic air pressure! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+The cheetah is fast. But it's not the fastest animal on Earth. That title goes to the peregrine falcon. When it dives for prey, it folds its wings and drops at over two hundred miles per hour, the fastest recorded speed of any animal. At that speed, breathing should be hard. But small bony cones in its nostrils help control the rush of air. Cheetah or falcon, which would win a race?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Fastest Animal on Earth Beats a Bullet Train! #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (47 chars): `The Fastest Animal on Earth Isn't the Cheetah 🦅`
+- **Description**:
 ```text
-🐾 The Peregrine Falcon: The Fastest Living Creature — Explore the mind-bending science behind this incredible mystery!
+The peregrine falcon dives at over 200 mph — making it the fastest animal on Earth, far faster than a cheetah.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Cheetah or falcon — who wins?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Peregrine Falcon: The Fastest Living Creature
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the peregrine falcon: the fastest living creature, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `the peregrine falcon: the fastest living creature, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `falcon flying sky, eagle diving fast motion, speedometer racing needle, bullet train passing, mountain cliff landscape, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the fastest animal on earth isn't the cheetah, peregrine falcon, fastest animal, birds of prey, animal facts, wildlife, animal superpowers, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Cheetah or falcon — who wins? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #059 — Electric Eels: Swimming Power Plants
+### Video #059 — The Eel That Shocks With 860 Volts
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Electric Eels: Swimming Power Plants` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `electric eel underwater, electric spark glowing water, amazon river underwater, battery power glowing, neon lightning bolt` |
+| **Video Subject** | `The Eel That Shocks With 860 Volts` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `electric eel, amazon river, lightning spark, battery, murky water` |
+| **Thumbnail Title** | `860 VOLTS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 31s
 ```text
-The Amazonian electric eel isn't an eel at all—it's a knifefish equipped with thousands of specialized disc cells called electrocytes. When hunting or defending itself, it can discharge up to eight hundred and sixty volts of electricity at one ampere! That is more than enough to stun an adult horse or incapacitate a human diver. Nature's bio-batteries are terrifyingly real! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+This fish can shock with up to eight hundred sixty volts. That's about seven times more voltage than a standard wall outlet in the US. It's the electric eel, which, plot twist, isn't actually an eel. It's a kind of knifefish. Most of its body is packed with thousands of special cells called electrocytes that work like a stack of batteries. It uses them to hunt, defend itself, and even to sense its surroundings. Would you swim in that river?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Creature With 860 Volts of Deadly Electricity! ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `The Eel That Shocks With 860 Volts ⚡`
+- **Description**:
 ```text
-🐾 Electric Eels: Swimming Power Plants — Explore the mind-bending science behind this incredible mystery!
+The electric eel can discharge up to 860 volts using thousands of battery-like electrocyte cells. Plot twist: it isn't an eel.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you swim in a river with electric eels?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Electric Eels: Swimming Power Plants
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-electric eels: swimming power plants, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `electric eels: swimming power plants, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `electric eel underwater, electric spark glowing water, amazon river underwater, battery power glowing, neon lightning bolt, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the eel that shocks with 860 volts, electric eel, electrocytes, amazon animals, animal superpowers, animal facts, wildlife, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you swim in a river with electric eels? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-### Video #060 — How Honey Never Spoils for Thousands of Years
+### Video #060 — Why Honey Almost Never Spoils
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Honey Never Spoils for Thousands of Years` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `golden honey dripping spoon, ancient egyptian tomb hieroglyphs, honeycomb bees macro, bacteria dying microscope, golden nectar sunlight` |
+| **Video Subject** | `Why Honey Almost Never Spoils` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `honey dripping, egyptian tomb, bees honeycomb, microscope bacteria, honey jar kitchen` |
+| **Thumbnail Title** | `3,000-YEAR-OLD HONEY?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Did you know archaeologists have opened ancient Egyptian tombs and found pots of honey over three thousand years old that are still completely edible? Honey has almost zero water content and an acidic pH, creating an osmotic vacuum that instantly sucks moisture out of any bacteria or fungus that tries to land on it. It is nature's only immortal food! Which animal superpower shocked you most? Tell us below! Follow Wonder Vault!
+Honey found in ancient Egyptian tombs is often said to still be edible after thousands of years. Is that possible? Honey is so full of sugar and so low in water that it pulls moisture out of microbes, so they can't grow. It's also acidic, and bees add an enzyme that slowly makes hydrogen peroxide. Keep it sealed and dry, and it can last practically forever. Do you have honey at home right now?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Only Food on Earth That Never Spoils! 🍯 🐾 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (31 chars): `Why Honey Almost Never Spoils 🍯`
+- **Description**:
 ```text
-🐾 How Honey Never Spoils for Thousands of Years — Explore the mind-bending science behind this incredible mystery!
+Honey's low water content, acidity and natural hydrogen peroxide stop microbes from growing — so sealed honey can last practically forever.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Do you have honey at home right now?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind How Honey Never Spoils for Thousands of Years
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how honey never spoils for thousands of years, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Animals #Wildlife #AnimalFacts #Shorts
 ```
-
-- **YouTube Tags**: `how honey never spoils for thousands of years, animal superpowers, wildlife wonders, bizarre animals, nature secrets, predator prey facts, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `golden honey dripping spoon, ancient egyptian tomb hieroglyphs, honeycomb bees macro, bacteria dying microscope, golden nectar sunlight, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why honey almost never spoils, honey, honey never spoils, bees, food science, animal facts, wildlife, animal superpowers, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Do you have honey at home right now? 👇`
+- **Playlist**: `Animal Superpowers`
 
 ---
 
-## Category 7: Futuristic Tech & AI Marvels
+## 🤖 Category 7: Future Tech & AI
+> **Playlist:** `Future Tech`
 
-### Video #061 — What Happens When AI Reaches the Singularity?
+### Video #061 — What Happens After the AI Singularity?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What Happens When AI Reaches the Singularity?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `artificial intelligence glowing face, futuristic server matrix, microchip neural network, robot robotic hand humanoid, glowing digital data` |
+| **Video Subject** | `What Happens After the AI Singularity?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `robot artificial intelligence, computer code screen, server room, doctor laboratory, futuristic city` |
+| **Thumbnail Title** | `WHEN AI BUILDS AI` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-The Technological Singularity is the theoretical tipping point when artificial intelligence becomes capable of redesigning and upgrading itself recursively. Once an AI can write smarter AI in seconds, an intelligence explosion occurs that outpaces all human intellect combined. Will this lead to curing all diseases and interstellar travel, or the obsolescence of humanity? We may find out this century! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+Imagine an AI smart enough to build a better AI. That one builds an even better one. And so on, faster and faster. Some scientists call this possible tipping point the singularity, a moment when machine intelligence races past ours. Nobody knows if or when it will happen, and experts strongly disagree. It could help cure diseases and solve huge problems, or create risks we can't predict. Hopeful or worried?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Happens After the AI Singularity? 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `What Happens After the AI Singularity? 🤖`
+- **Description**:
 ```text
-🤖 What Happens When AI Reaches the Singularity? — Explore the mind-bending science behind this incredible mystery!
+The singularity is a hypothetical point where AI improves itself faster than humans can keep up. Experts disagree on whether — or when — it could happen.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Are you more hopeful or worried about AI?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind What Happens When AI Reaches the Singularity?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what happens when ai reaches the singularity?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `what happens when ai reaches the singularity?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `artificial intelligence glowing face, futuristic server matrix, microchip neural network, robot robotic hand humanoid, glowing digital data, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what happens after the ai singularity, ai singularity, artificial intelligence, future technology, ai, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Are you more hopeful or worried about AI? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #062 — Quantum Computers: Breaking Modern Encryption
+### Video #062 — The Quantum Chip That Beat 10 Septillion Years
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Quantum Computers: Breaking Modern Encryption` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `quantum computer golden chandelier, cryogenic cooling chamber, glowing cyber matrix, padlock encryption digital, binary code stream` |
+| **Video Subject** | `The Quantum Chip That Beat 10 Septillion Years` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `quantum computer, computer chip, supercomputer server, universe galaxies, padlock security` |
+| **Thumbnail Title** | `5 MINUTES VS FOREVER` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-Traditional computers calculate using binary bits—either zeros or ones. But quantum computers use qubits, which can exist as both a zero and a one simultaneously thanks to quantum superposition. A problem that would take our fastest supercomputer ten thousand years to solve can be computed by a quantum processor in just two hundred seconds. When perfected, they could crack all global encryption overnight! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+In late twenty twenty four, Google revealed a quantum chip called Willow. It solved a special test problem in under five minutes. The best supercomputer, Google says, would need ten septillion years, far longer than the universe has existed. Quantum computers use qubits, which can hold many possibilities at once. The test was carefully chosen, but large future machines could break today's online encryption. That's why new quantum-safe encryption is already rolling out. Exciting or scary?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Quantum Computer That Can Hack Everything! 💻 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (49 chars): `The Quantum Chip That Beat 10 Septillion Years ⚛️`
+- **Description**:
 ```text
-🤖 Quantum Computers: Breaking Modern Encryption — Explore the mind-bending science behind this incredible mystery!
+Google's Willow quantum chip solved a benchmark in under 5 minutes that would take a supercomputer 10 septillion years. Here's why it matters for encryption.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Exciting or scary? Pick one.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Quantum Computers: Breaking Modern Encryption
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-quantum computers: breaking modern encryption, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `quantum computers: breaking modern encryption, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `quantum computer golden chandelier, cryogenic cooling chamber, glowing cyber matrix, padlock encryption digital, binary code stream, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the quantum chip that beat 10 septillion years, quantum computer, google willow, qubits, encryption, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Exciting or scary? Pick one. 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #063 — Neuralink: Downloading Memories to Your Brain?
+### Video #063 — Controlling a Computer With Your Mind
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Neuralink: Downloading Memories to Your Brain?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `brain computer interface cyber, glowing electrode neural, futuristic cyberpunk surgery, telekinesis mind control, virtual reality headset` |
+| **Video Subject** | `Controlling a Computer With Your Mind` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `brain chip, person playing chess laptop, neurons, wheelchair technology, computer cursor` |
+| **Thumbnail Title** | `TYPING WITH THOUGHTS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 69 words ≈ 27s
 ```text
-Imagine sending a text message, controlling your computer, or playing video games simply by thinking about it. Brain-computer interfaces like Neuralink are already doing this with paralyzed human patients, implanting thread-like electrodes directly into the motor cortex. Future generations may even record memories, stream music straight to their auditory nerve, or communicate telepathically! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+In twenty twenty four, a man paralyzed from the shoulders down played chess on a laptop using only his thoughts. He was the first person to receive a Neuralink brain implant. Tiny threads in his brain pick up signals from neurons, and software turns them into cursor movements. Other research teams have helped people turn brain signals into speech. Would you ever get a brain chip? Yes or no?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Will Humans Download Skills Directly to the Brain? 🧠 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `Controlling a Computer With Your Mind 🧠`
+- **Description**:
 ```text
-🤖 Neuralink: Downloading Memories to Your Brain? — Explore the mind-bending science behind this incredible mystery!
+A paralyzed man played chess with his thoughts using a Neuralink brain implant in 2024. Brain-computer interfaces are moving from sci-fi to reality.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you ever get a brain chip? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Neuralink: Downloading Memories to Your Brain?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-neuralink: downloading memories to your brain?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `neuralink: downloading memories to your brain?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `brain computer interface cyber, glowing electrode neural, futuristic cyberpunk surgery, telekinesis mind control, virtual reality headset, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `controlling a computer with your mind, neuralink, brain computer interface, bci, future tech, technology facts, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you ever get a brain chip? Yes or no? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #064 — Are We Living in a Computer Simulation?
+### Video #064 — Are We Living in a Simulation?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Are We Living in a Computer Simulation?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `green binary matrix code, glitch screen television, vr gamer headset glowing, digital universe hologram, floating cube cyberspace` |
+| **Video Subject** | `Are We Living in a Simulation?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `retro video game, virtual reality headset, digital code, futuristic city, person looking sky` |
+| **Thumbnail Title** | `IS THIS REAL?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Philosopher Nick Bostrom and tech leaders like Elon Musk argue that the odds we are living in 'base reality' are one in billions. Think about it: fifty years ago we had Pong—two rectangles and a dot. Today we have photorealistic three-dimensional worlds and VR. If technology continues advancing for thousands of years, civilizations will run billions of ancestor simulations. How do we know we aren't inside one right now?! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+Fifty years ago, the best video game was Pong, two paddles and a dot. Today, we have photorealistic virtual worlds. Philosopher Nick Bostrom argued that if civilizations ever get able to run realistic simulations of minds, and want to, simulated minds could vastly outnumber real ones. If that's true, the odds that we're in base reality might be low. There's no evidence either way. Do you think this is real?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Are We Living in a Video Game Simulation? 🕶️ 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `Are We Living in a Simulation? 🕶️`
+- **Description**:
 ```text
-🤖 Are We Living in a Computer Simulation? — Explore the mind-bending science behind this incredible mystery!
+Nick Bostrom's simulation argument says that if advanced civilizations run realistic simulations, we might be living in one. Is it possible?
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Do you think we're in a simulation? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Are We Living in a Computer Simulation?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-are we living in a computer simulation?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `are we living in a computer simulation?, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `green binary matrix code, glitch screen television, vr gamer headset glowing, digital universe hologram, floating cube cyberspace, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `are we living in a simulation, simulation theory, nick bostrom, philosophy, virtual reality, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Do you think we're in a simulation? Yes or no? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #065 — CRISPR: Editing Human DNA Like a Word Document
+### Video #065 — CRISPR: Editing Human DNA
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `CRISPR: Editing Human DNA Like a Word Document` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `dna double helix glowing, scientist looking microscope, genetic editing visual, medical laboratory pipette, glowing neon cells` |
+| **Video Subject** | `CRISPR: Editing Human DNA` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `dna helix, scissors cutting, bacteria microscope, red blood cells, laboratory scientist` |
+| **Thumbnail Title** | `CUT AND PASTE DNA` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-With gene-editing technology called CRISPR-Cas9, scientists have essentially built the 'cut and paste' tool for genetic code. Originally discovered as a bacterial immune defense, it allows doctors to snip out defective genes that cause sickle cell disease, blindness, and cancers. In the near future, it could halt biological aging and allow genetically enhanced humans! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+Scientists can now edit DNA almost like editing text. The tool is called CRISPR, and it was borrowed from bacteria, which use it to fight viruses. In twenty twenty three, the first CRISPR therapy was approved for sickle cell disease. Doctors edit a patient's own blood stem cells and put them back. For many patients, the painful crises stopped. Its inventors won the Nobel Prize. What disease should CRISPR tackle next?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How CRISPR Will Rewrite Human Genetics Forever! 🧬 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (28 chars): `CRISPR: Editing Human DNA ✂️`
+- **Description**:
 ```text
-🤖 CRISPR: Editing Human DNA Like a Word Document — Explore the mind-bending science behind this incredible mystery!
+CRISPR, a gene-editing tool borrowed from bacteria, led to the first approved gene-editing therapy for sickle cell disease in 2023.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What disease should CRISPR tackle next?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind CRISPR: Editing Human DNA Like a Word Document
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-crispr: editing human dna like a word document, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `crispr: editing human dna like a word document, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `dna double helix glowing, scientist looking microscope, genetic editing visual, medical laboratory pipette, glowing neon cells, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `crispr: editing human dna, crispr, gene editing, sickle cell, biotechnology, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What disease should CRISPR tackle next? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #066 — Nuclear Fusion: Creating an Artificial Star on Earth
+### Video #066 — Building a Mini Sun on Earth
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Nuclear Fusion: Creating an Artificial Star on Earth` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `nuclear fusion reactor glowing, magnetic tokamak chamber, sun burning plasma flare, clean futuristic city, glowing energy core` |
+| **Video Subject** | `Building a Mini Sun on Earth` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `sun surface, fusion reactor, ocean water, gasoline fuel pump, plasma glow` |
+| **Thumbnail Title** | `A STAR IN A BOX` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 82 words ≈ 32s
 ```text
-Unlike nuclear fission which splits atoms and produces radioactive waste, nuclear fusion powers the sun by smashing hydrogen atoms together at one hundred million degrees Celsius. Scientists across the world are racing to harness fusion in magnetic tokamak reactors. A single glass of seawater could provide enough fusion fuel to power an entire city for an entire year with zero carbon emissions! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+Scientists are trying to build a tiny Sun on Earth. Nuclear fusion, the power source of stars, squeezes light atoms together to release huge energy, with no carbon emissions and far less long-lived waste than today's nuclear plants. The fuel is heavy hydrogen found in seawater. The deuterium in one liter of seawater holds about as much energy as three hundred liters of gasoline. The catch? Heating plasma to over one hundred million degrees. Will we see fusion power in our lifetime?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Creating a Mini-Star on Earth for Unlimited Energy #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (31 chars): `Building a Mini Sun on Earth ☀️`
+- **Description**:
 ```text
-🤖 Nuclear Fusion: Creating an Artificial Star on Earth — Explore the mind-bending science behind this incredible mystery!
+Fusion power could turn seawater into energy — the deuterium in 1 liter of seawater equals about 300 liters of gasoline. The hard part is containing 100-million-degree plasma.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Will we see fusion power in our lifetime? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Nuclear Fusion: Creating an Artificial Star on Earth
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-nuclear fusion: creating an artificial star on earth, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `nuclear fusion: creating an artificial star on earth, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `nuclear fusion reactor glowing, magnetic tokamak chamber, sun burning plasma flare, clean futuristic city, glowing energy core, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `building a mini sun on earth, nuclear fusion, fusion energy, iter, clean energy, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Will we see fusion power in our lifetime? Yes or no? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #067 — The Internet Under the Ocean
+### Video #067 — The Internet Runs Through Cables Under the Sea
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Internet Under the Ocean` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `underwater fiber optic cable, deep sea trench seabed, glowing data light pulse, satellite orbiting earth, global internet network map` |
+| **Video Subject** | `The Internet Runs Through Cables Under the Sea` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `ocean floor, fiber optic cable, ship anchor, satellite orbit, repair ship ocean` |
+| **Thumbnail Title** | `INTERNET UNDER THE OCEAN` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-You might think global internet data travels through orbiting satellites in space, but over ninety-nine percent of all international data travels through undersea fiber-optic cables! Thousands of miles of cables, often no thicker than a garden hose, lie across the ocean floor connecting continents. Sharks have even been recorded biting them! A single underwater landslide could sever connectivity for millions! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+You probably think the internet runs through satellites. Mostly, it doesn't. Over ninety five percent of data between continents travels through cables on the ocean floor. Hundreds of them stretch across the seas, some barely thicker than a garden hose in the deep sections. When one gets damaged by a ship's anchor or an earthquake, whole regions can slow down. Specialized ships go out to repair them. Did you know this?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Secret Cables Under the Ocean Floor! 🌐 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (48 chars): `The Internet Runs Through Cables Under the Sea 🌐`
+- **Description**:
 ```text
-🤖 The Internet Under the Ocean — Explore the mind-bending science behind this incredible mystery!
+Over 95% of international internet traffic travels through undersea fiber-optic cables — not satellites.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Did you know this before? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Internet Under the Ocean
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the internet under the ocean, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `the internet under the ocean, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `underwater fiber optic cable, deep sea trench seabed, glowing data light pulse, satellite orbiting earth, global internet network map, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the internet runs through cables under the sea, undersea cables, internet, fiber optic, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Did you know this before? Yes or no? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #068 — Graphene: The Miracle Material 200x Stronger Than Steel
+### Video #068 — The Material 200 Times Stronger Than Steel
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Graphene: The Miracle Material 200x Stronger Than Steel` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `hexagonal carbon lattice, futuristic transparent material, elephant heavy weight, glowing battery charging fast, high tech lab research` |
+| **Video Subject** | `The Material 200 Times Stronger Than Steel` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `graphene honeycomb, carbon atoms, steel beams, sticky tape, battery technology` |
+| **Thumbnail Title** | `ONE ATOM THICK` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Imagine a material that is one atom thick, two hundred times stronger than steel, lighter than paper, and more conductive than copper. That material is graphene—a single hexagonal layer of carbon atoms. A sheet of graphene as thin as plastic wrap could hold the weight of an elephant without snapping. It is poised to revolutionize bulletproof armor, hyper-fast batteries, and space elevators! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+Imagine a material just one atom thick. That's graphene, a single sheet of carbon atoms in a honeycomb pattern. For its weight, it's about two hundred times stronger than steel. It conducts electricity extremely well, and it's nearly transparent. It was first isolated using simple sticky tape, and that discovery won a Nobel Prize in twenty ten. Scientists are using it in batteries, sensors and stronger materials. What should we build with it first?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Material 200 Times Stronger Than Steel! 🛡️ 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `The Material 200 Times Stronger Than Steel 🛡️`
+- **Description**:
 ```text
-🤖 Graphene: The Miracle Material 200x Stronger Than Steel — Explore the mind-bending science behind this incredible mystery!
+Graphene is a single layer of carbon atoms — about 200 times stronger than steel for its weight. It was first isolated with sticky tape.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What should we build with graphene first?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Graphene: The Miracle Material 200x Stronger Than Steel
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-graphene: the miracle material 200x stronger than steel, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `graphene: the miracle material 200x stronger than steel, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `hexagonal carbon lattice, futuristic transparent material, elephant heavy weight, glowing battery charging fast, high tech lab research, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the material 200 times stronger than steel, graphene, materials science, nobel prize, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What should we build with graphene first? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #069 — Voyager 1: The Human Machine Leaving the Solar System
+### Video #069 — Voyager 1 Is Almost One Light-Day Away
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Voyager 1: The Human Machine Leaving the Solar System` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `voyager spacecraft space, golden record nasa, earth tiny pale blue dot, deep space lonely star, radio dish antenna night` |
+| **Video Subject** | `Voyager 1 Is Almost One Light-Day Away` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `voyager spacecraft, rocket launch, deep space stars, radio antenna dish, golden record` |
+| **Thumbnail Title** | `ONE LIGHT-DAY FROM HOME` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 87 words ≈ 33s
 ```text
-Launched back in nineteen seventy seven, NASA's Voyager One spacecraft is the farthest human-made object in history. Traveling at thirty-eight thousand miles per hour, it is now over fifteen billion miles away in the cold void of interstellar space. Powered by decaying plutonium, it still radios data back to Earth, carrying a golden phonograph record with sounds, songs, and images of humanity for alien civilizations! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+In nineteen seventy seven, NASA launched Voyager one. It's now the most distant human-made object, over fifteen billion miles away. And around late twenty twenty six, it reaches a milestone: one light day from Earth. A message sent from Earth takes a full day to reach it, and another day to come back. It still talks to us with a radio transmitter about as powerful as a fridge light bulb. And it carries a golden record for anyone who finds it. What would you put on it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Loneliest Spacecraft in the Universe 🛰️ 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `Voyager 1 Is Almost One Light-Day Away 🛰️`
+- **Description**:
 ```text
-🤖 Voyager 1: The Human Machine Leaving the Solar System — Explore the mind-bending science behind this incredible mystery!
+Voyager 1 is about to become the first human-made object one light-day from Earth. Messages now take almost a full day to reach it.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What would you put on the golden record?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Voyager 1: The Human Machine Leaving the Solar System
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-voyager 1: the human machine leaving the solar system, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `voyager 1: the human machine leaving the solar system, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `voyager spacecraft space, golden record nasa, earth tiny pale blue dot, deep space lonely star, radio dish antenna night, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `voyager 1 is almost one light-day away, voyager 1, nasa, interstellar space, golden record, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What would you put on the golden record? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-### Video #070 — 3D-Printed Human Organs: The End of Donor Lists
+### Video #070 — 3D Printing Living Human Tissue
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `3D-Printed Human Organs: The End of Donor Lists` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `3d printer robotic nozzle, human heart beating simulation, glowing stem cells culture, medical laboratory surgery, futuristic hospital` |
+| **Video Subject** | `3D Printing Living Human Tissue` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `3d printer, laboratory scientist, heart model, cells microscope, hospital surgery` |
+| **Thumbnail Title** | `PRINTING A HEART?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-Every day, people die waiting for organ transplants. But bioprinting is changing everything. Using 'bio-ink' made from a patient's own stem cells, medical three-D printers are now printing living heart valves, skin, and cartilage layer by layer. Because the organ is made from your own cells, your immune system will never reject it. In the future, replacement organs will be printed on demand! Is AI advancing faster than we think? Drop your thoughts below! Follow Wonder Vault!
+In twenty nineteen, scientists in Israel 3D printed a tiny heart using a patient's own cells. It was the size of a rabbit's heart, and it couldn't pump yet. But it had blood vessels and chambers. Bioprinting uses bio-ink made of living cells, printed layer by layer. Today, it's mostly used in research and for small tissues like skin and cartilage. The dream is printed organs that your body won't reject. How long until that happens?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Printing Living Human Organs with 3D Printers! 🫀 🤖 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `3D Printing Living Human Tissue 🫀`
+- **Description**:
 ```text
-🤖 3D-Printed Human Organs: The End of Donor Lists — Explore the mind-bending science behind this incredible mystery!
+In 2019, scientists 3D printed a small heart with real cells and blood vessels. Bioprinting could one day solve organ shortages.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 How many years until printed organs are used in hospitals?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind 3D-Printed Human Organs: The End of Donor Lists
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-3d-printed human organs: the end of donor lists, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Technology #FutureTech #Science #Shorts
 ```
-
-- **YouTube Tags**: `3d-printed human organs: the end of donor lists, future technology, artificial intelligence, singularity, sci-fi inventions, emerging tech, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `3d printer robotic nozzle, human heart beating simulation, glowing stem cells culture, medical laboratory surgery, futuristic hospital, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `3d printing living human tissue, 3d bioprinting, printed organs, medical technology, biotech, technology facts, future tech, science and technology, wonder vault, did you know, science shorts`
+- **Pinned comment**: `How many years until printed organs are used in hospitals? 👇`
+- **Playlist**: `Future Tech`
 
 ---
 
-## Category 8: Unsolved Mysteries & Glitches in Reality
+## 🕵️ Category 8: Unsolved Mysteries
+> **Playlist:** `Unsolved Mysteries`
 
-### Video #071 — The Mandela Effect: Proof of Parallel Universes?
+### Video #071 — The Mandela Effect: Did You Remember Wrong?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Mandela Effect: Proof of Parallel Universes?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `monopoly game pieces, pikachu tail drawing, parallel universes multiverse, glitch in television screen, silhouette mirror mystery` |
+| **Video Subject** | `The Mandela Effect: Did You Remember Wrong?` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `board game money, yellow cartoon toy, nelson mandela statue, brain memory, people confused` |
+| **Thumbnail Title** | `YOU REMEMBER IT WRONG` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 31s
 ```text
-Does the Monopoly Man have a monocle? Does Pikachu have a black tip on his tail? Most people swear they do—yet neither of them ever did! This collective false memory is called the Mandela Effect, named after millions remembering Nelson Mandela dying in prison in the nineteen eighties. While psychologists attribute it to memory confabulation, quantum physicists playfully wonder if our reality slipped into a parallel timeline! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+Does the Monopoly man wear a monocle? Most people say yes. He doesn't, and he never did. Does Pikachu have a black tip on its tail? Nope. This is the Mandela effect, named after people who were sure Nelson Mandela died in prison in the nineteen eighties. He actually lived until twenty thirteen. Psychologists say our brains fill in details that seem to fit, and when lots of people share the same guess, false memories spread. Which one fooled you?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mandela Effect: Glitch in Reality? 🧩 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `The Mandela Effect: Did You Remember Wrong? 🧩`
+- **Description**:
 ```text
-🕵️ The Mandela Effect: Proof of Parallel Universes? — Explore the mind-bending science behind this incredible mystery!
+The Monopoly man has no monocle and Pikachu has no black tail tip — the Mandela effect shows how shared false memories form.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which Mandela effect fooled you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Mandela Effect: Proof of Parallel Universes?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the mandela effect: proof of parallel universes?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the mandela effect: proof of parallel universes?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `monopoly game pieces, pikachu tail drawing, parallel universes multiverse, glitch in television screen, silhouette mirror mystery, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the mandela effect: did you remember wrong, mandela effect, false memories, psychology, memory, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which Mandela effect fooled you? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #072 — The Wow! Signal: Alien Contact in 1977?
+### Video #072 — The Mysterious 'Wow!' Signal From Space
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Wow! Signal: Alien Contact in 1977?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `radio telescope listening stars, vintage computer printout, mysterious radio wave waveform, alien constellation deep space, night observatory dome` |
+| **Video Subject** | `The Mysterious 'Wow!' Signal From Space` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `radio telescope, computer printout, red pen writing, space nebula, hydrogen cloud` |
+| **Thumbnail Title** | `WOW!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-On August fifteenth, nineteen seventy seven, astronomer Jerry Ehman was scanning radio frequencies from deep space with the Big Ear radio telescope. Suddenly, the equipment recorded an intense, seventy-two-second burst of radio signal originating from the Sagittarius constellation, exactly at the fourteen twenty megahertz frequency of hydrogen. Stunned, Ehman circled the data and wrote 'Wow!' in red pen. It has never repeated since! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+On August fifteenth, nineteen seventy seven, a radio telescope in Ohio picked up a strong, narrow signal from deep space. It lasted about seventy two seconds, and it came near the frequency of hydrogen, the exact kind of signal some scientists expected aliens might use. Astronomer Jerry Ehman circled it and wrote Wow! It has never been seen again. A newer theory suggests a natural cause: a hydrogen cloud suddenly brightened. Aliens or nature?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mysterious 'Wow!' Alien Signal 📡 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `The Mysterious 'Wow!' Signal From Space 📡`
+- **Description**:
 ```text
-🕵️ The Wow! Signal: Alien Contact in 1977? — Explore the mind-bending science behind this incredible mystery!
+The 1977 "Wow!" signal lasted 72 seconds and never repeated. A recent theory suggests a hydrogen cloud suddenly brightening.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Aliens or nature? What's your guess?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Wow! Signal: Alien Contact in 1977?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the wow! signal: alien contact in 1977?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the wow! signal: alien contact in 1977?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `radio telescope listening stars, vintage computer printout, mysterious radio wave waveform, alien constellation deep space, night observatory dome, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the mysterious 'wow!' signal from space, wow signal, seti, aliens, radio astronomy, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Aliens or nature? What's your guess? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #073 — The Voynich Manuscript: The Unbreakable 600-Year Cipher
+### Video #073 — The Book No One Can Read
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Voynich Manuscript: The Unbreakable 600-Year Cipher` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `ancient manuscript parchment, medieval calligraphy handwriting, botanical drawings bizarre, magnifying glass old book, dusty library candlelight` |
+| **Video Subject** | `The Book No One Can Read` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `ancient book manuscript, old pages handwriting, plant illustration, star chart, codebreaker` |
+| **Thumbnail Title** | `NOBODY CAN READ THIS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-The Voynich Manuscript is a six-hundred-year-old illustrated codex written in an entirely unknown alphabet and language that no cryptographer, linguist, or AI has ever deciphered. Carbon-dated to the early fourteen hundreds, it is packed with bizarre drawings of alien-looking plants that don't exist on Earth, astrological charts, and strange bathing nymphs. Is it lost ancient wisdom, an elaborate medieval hoax, or an alien botanical guide?! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+There's a six hundred year old book that nobody can read. The Voynich manuscript is written in an unknown script, filled with drawings of plants that don't seem to match any real species, strange star charts, and pools of bathing figures. Carbon dating puts its pages in the early fourteen hundreds. Codebreakers, linguists and computers have all tried to crack it. No solution is widely accepted. A real language, a code, or a hoax?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Book Nobody on Earth Can Read! 📜 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (26 chars): `The Book No One Can Read 📜`
+- **Description**:
 ```text
-🕵️ The Voynich Manuscript: The Unbreakable 600-Year Cipher — Explore the mind-bending science behind this incredible mystery!
+The Voynich manuscript is a 600-year-old book written in an unknown script that no one has convincingly deciphered.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Real language, secret code, or hoax?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Voynich Manuscript: The Unbreakable 600-Year Cipher
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the voynich manuscript: the unbreakable 600-year cipher, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the voynich manuscript: the unbreakable 600-year cipher, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `ancient manuscript parchment, medieval calligraphy handwriting, botanical drawings bizarre, magnifying glass old book, dusty library candlelight, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the book no one can read, voynich manuscript, unsolved mysteries, codes, history, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Real language, secret code, or hoax? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #074 — The Lost City of Atlantis: Found in the Sahara?
+### Video #074 — Is the Eye of the Sahara Atlantis?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Lost City of Atlantis: Found in the Sahara?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `eye of the sahara satellite aerial, ancient temple ruins columns, desert sand dunes golden, ocean water ancient flooding, hieroglyphs carving` |
+| **Video Subject** | `Is the Eye of the Sahara Atlantis?` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `sahara desert aerial, satellite view earth, ancient ruins, desert rings, astronaut space station` |
+| **Thumbnail Title** | `ATLANTIS IN THE DESERT?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-Was Plato's mythical lost city of Atlantis located in the Atlantic Ocean, or in the middle of the Sahara Desert? The Eye of the Sahara, also known as the Richat Structure in Mauritania, matches Plato's description of Atlantis with uncanny precision: concentric circular rings of alternating water and land, open to the south, surrounded by mountains to the north, and measuring the exact diameter Plato recorded! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+In the Sahara Desert in Mauritania is a giant set of rings so big, astronauts used it as a landmark. It's called the Richat Structure, or the Eye of the Sahara, about twenty five miles across. Some people say it matches Plato's description of Atlantis: circular rings, mountains, and the sea nearby long ago. Geologists say it's a natural dome of rock that eroded into rings over millions of years. Atlantis or geology?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Is Atlantis Hidden in the Sahara Desert? 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Is the Eye of the Sahara Atlantis? 🏛️`
+- **Description**:
 ```text
-🕵️ The Lost City of Atlantis: Found in the Sahara? — Explore the mind-bending science behind this incredible mystery!
+The Richat Structure is so large it's visible from space. Some link it to Atlantis — geologists say it's an eroded rock dome.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Atlantis or geology? Comment your pick.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Lost City of Atlantis: Found in the Sahara?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the lost city of atlantis: found in the sahara?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the lost city of atlantis: found in the sahara?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `eye of the sahara satellite aerial, ancient temple ruins columns, desert sand dunes golden, ocean water ancient flooding, hieroglyphs carving, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `is the eye of the sahara atlantis, eye of the sahara, richat structure, atlantis, mysteries, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Atlantis or geology? Comment your pick. 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #075 — The Bloop: The Giant Mystery Beneath the Sea
+### Video #075 — The Bloop: The Ocean's Mystery Sound
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Bloop: The Giant Mystery Beneath the Sea` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `underwater hydrophone audio wave, giant whale swimming dark, iceberg breaking ocean, deep sea abyss trench, bubbling water deep` |
+| **Video Subject** | `The Bloop: The Ocean's Mystery Sound` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `ocean underwater, microphone sound waves, blue whale, iceberg breaking, antarctica ice` |
+| **Thumbnail Title** | `WHAT MADE THIS SOUND?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-In nineteen ninety seven, underwater microphones placed thousands of miles apart across the Pacific Ocean recorded an ultra-low frequency sound nicknamed 'The Bloop.' The acoustic profile was organic—it sounded like a living marine animal, but it was several times louder than the largest blue whale ever recorded! While scientists later linked it to giant Antarctic ice-quakes, legends of colossal deep-sea monsters still haunt the waters! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+In nineteen ninety seven, underwater microphones in the Pacific picked up an extremely loud, low sound. It was heard by sensors thousands of miles apart. Scientists named it the Bloop. It sounded a bit like an animal, but louder than anything alive. Rumors of a giant sea monster spread fast. The real answer turned out to be icequakes: huge icebergs cracking and breaking near Antarctica. What's the creepiest sound you've heard?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mysterious Loud Sound in the Pacific Ocean 🐋 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `The Bloop: The Ocean's Mystery Sound 🐋`
+- **Description**:
 ```text
-🕵️ The Bloop: The Giant Mystery Beneath the Sea — Explore the mind-bending science behind this incredible mystery!
+The 1997 "Bloop" was heard across the Pacific. It sparked sea monster rumors — until scientists traced it to icequakes near Antarctica.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the creepiest sound you've ever heard?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Bloop: The Giant Mystery Beneath the Sea
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the bloop: the giant mystery beneath the sea, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the bloop: the giant mystery beneath the sea, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `underwater hydrophone audio wave, giant whale swimming dark, iceberg breaking ocean, deep sea abyss trench, bubbling water deep, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the bloop: the ocean's mystery sound, the bloop, ocean mysteries, icequakes, ocean sounds, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the creepiest sound you've ever heard? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #076 — Why Did the Mayans Mysteriously Abandon Their Cities?
+### Video #076 — Why Did the Maya Abandon Their Cities?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Did the Mayans Mysteriously Abandon Their Cities?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `mayan pyramid jungle aerial, overgrown stone ruins, ancient carved stone calendar, dry cracked earth drought, sun setting temple` |
+| **Video Subject** | `Why Did the Maya Abandon Their Cities?` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `maya pyramid, jungle ruins, stars night sky, dry cracked earth, guatemala village` |
+| **Thumbnail Title** | `WHY DID THEY LEAVE?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-The Mayan civilization built towering stone pyramids, mastered complex astronomy, and sustained millions of people across Mesoamerica. Then, around the ninth century, they suddenly abandoned their monumental stone cities to be swallowed by jungle vines. Was it severe prolonged mega-drought, environmental collapse from deforestation, or devastating internal warfare? The rapid collapse remains one of history's greatest enigmas! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+The Maya built huge stone pyramids, tracked the stars, and created one of the Americas' most advanced writing systems. Then, in the ninth and tenth centuries, many of their great southern cities emptied out. The jungle swallowed them. What happened? Evidence points to a mix: long droughts, deforestation, crop failures, and wars between cities. But the Maya didn't disappear. Millions of Maya people live in Central America today. What do you think was the main cause?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Did the Mayans Abandon Their Pyramids? 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `Why Did the Maya Abandon Their Cities? 🏛️`
+- **Description**:
 ```text
-🕵️ Why Did the Mayans Mysteriously Abandon Their Cities? — Explore the mind-bending science behind this incredible mystery!
+Many great Maya cities were abandoned in the 9th and 10th centuries, likely due to drought, deforestation and war — but the Maya people never vanished.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Drought, war, or something else — what was the main cause?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Did the Mayans Mysteriously Abandon Their Cities?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why did the mayans mysteriously abandon their cities?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `why did the mayans mysteriously abandon their cities?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `mayan pyramid jungle aerial, overgrown stone ruins, ancient carved stone calendar, dry cracked earth drought, sun setting temple, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why did the maya abandon their cities, maya civilization, maya collapse, ancient history, mysteries, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Drought, war, or something else — what was the main cause? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #077 — The Hum: The Sound Driving People Crazy
+### Video #077 — The Mysterious Hum Some People Can't Escape
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Hum: The Sound Driving People Crazy` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `desert town sunset peaceful, sound wave visualizer low frequency, person holding head migraine, diesel engine generator, night starry sky quiet` |
+| **Video Subject** | `The Mysterious Hum Some People Can't Escape` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `small town night, distant factory, person covering ears, microphone recording, ocean waves` |
+| **Thumbnail Title** | `CAN YOU HEAR THE HUM?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-In places like Taos, New Mexico and Bristol, England, thousands of residents report hearing an incessant, low-frequency humming or rumbling sound like a distant diesel engine idling. Microphones struggle to record it, yet the sound drives susceptible people to insomnia and madness. Suspects range from submarine radio transmitters to industrial fans and oceanic waves. What causes The Hum?! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+In places like Taos, New Mexico, and Bristol, England, some people report a constant low humming sound. Like a distant engine idling, day and night. Most people nearby hear nothing. Microphones often fail to pick it up. For those who hear it, it can cause stress and lost sleep. Possible explanations include industrial machinery, ocean waves, or tinnitus-like effects in the ear. There's still no single answer. Have you ever heard a sound nobody else could?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mysterious Hum Driving People Crazy 🔊 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `The Mysterious Hum Some People Can't Escape 🔊`
+- **Description**:
 ```text
-🕵️ The Hum: The Sound Driving People Crazy — Explore the mind-bending science behind this incredible mystery!
+"The Hum" is a low droning noise reported in Taos, Bristol and other places. Most people can't hear it — and the cause is still debated.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Have you ever heard a sound nobody else could?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Hum: The Sound Driving People Crazy
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the hum: the sound driving people crazy, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the hum: the sound driving people crazy, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `desert town sunset peaceful, sound wave visualizer low frequency, person holding head migraine, diesel engine generator, night starry sky quiet, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the mysterious hum some people can't escape, the hum, unexplained sounds, mysteries, taos hum, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Have you ever heard a sound nobody else could? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #078 — The Disappearance of the Mary Celeste
+### Video #078 — The Ghost Ship Where Everyone Vanished
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Disappearance of the Mary Celeste` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `ghost ship sailing fog, stormy ocean waves wooden ship, empty ship cabin table, antique compass navigation, ocean sunset horizon` |
+| **Video Subject** | `The Ghost Ship Where Everyone Vanished` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `old sailing ship, ocean fog, empty ship cabin, lifeboat sea, storm waves` |
+| **Thumbnail Title** | `WHERE DID THE CREW GO?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-In eighteen seventy two, the British merchant ship Dei Gratia spotted the Mary Celeste drifting erratically in the Atlantic Ocean. When crew members boarded, they found the ship in completely seaworthy condition, with six months of food, cargo intact, and personal belongings in place. But the captain, his family, and the entire crew had vanished without a trace, leaving the lifeboat missing. What made them abandon ship?! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+In eighteen seventy two, sailors spotted a ship drifting in the Atlantic. Its name was the Mary Celeste. When they boarded, the ship was mostly seaworthy, with food and water for months, and the cargo nearly untouched. But the captain, his wife, their young daughter, and all the crew were gone. So was the lifeboat. They were never found. Some think the captain feared the ship was sinking or about to explode. What's your theory?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Ghost Ship Where Everyone Vanished! ⛵ 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `The Ghost Ship Where Everyone Vanished ⛵`
+- **Description**:
 ```text
-🕵️ The Disappearance of the Mary Celeste — Explore the mind-bending science behind this incredible mystery!
+In 1872, the Mary Celeste was found drifting with food, cargo and no crew. The lifeboat was gone — and no one was ever found.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's your theory? Comment below.
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Disappearance of the Mary Celeste
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the disappearance of the mary celeste, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the disappearance of the mary celeste, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `ghost ship sailing fog, stormy ocean waves wooden ship, empty ship cabin table, antique compass navigation, ocean sunset horizon, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the ghost ship where everyone vanished, mary celeste, ghost ship, unsolved mysteries, history, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's your theory? Comment below. 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #079 — The Dancing Plague of 1518
+### Video #079 — The Plague Where People Couldn't Stop Dancing
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Dancing Plague of 1518` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `medieval european town street, people dancing crazy crowd, exhausted feet boots, eerie medieval painting, crowd frenzy panic` |
+| **Video Subject** | `The Plague Where People Couldn't Stop Dancing` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `medieval town, people dancing, musicians playing, tired person collapsing, old manuscript` |
+| **Thumbnail Title** | `THEY COULDN'T STOP DANCING` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-In July fifteen eighteen, a woman named Frau Troffea stepped into the streets of Strasbourg and began dancing fervently without music. Within a month, hundreds of citizens joined her, dancing day and night until their feet bled and their hearts stopped from exhaustion. Physicians thought it was hot blood, but modern historians suspect mass psychogenic hysteria or ergot fungus poisoning from rye bread! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+In July fifteen eighteen, a woman in Strasbourg stepped into the street and started dancing. And she didn't stop. Within weeks, dozens more joined, and some accounts say hundreds. City officials thought more dancing would cure it, so they hired musicians. It didn't help. Some reports say people collapsed from exhaustion. Historians think it was mass psychogenic illness, extreme stress spreading through a desperate, starving population. Would you believe this if it weren't recorded?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Bizarre Plague Where People Danced to Death! 💃 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (47 chars): `The Plague Where People Couldn't Stop Dancing 💃`
+- **Description**:
 ```text
-🕵️ The Dancing Plague of 1518 — Explore the mind-bending science behind this incredible mystery!
+In 1518, dozens of people in Strasbourg danced uncontrollably for weeks. Historians suspect mass psychogenic illness triggered by famine and stress.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Would you believe this if it weren't recorded?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Dancing Plague of 1518
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the dancing plague of 1518, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the dancing plague of 1518, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `medieval european town street, people dancing crazy crowd, exhausted feet boots, eerie medieval painting, crowd frenzy panic, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the plague where people couldn't stop dancing, dancing plague 1518, strasbourg, mass hysteria, history mysteries, unsolved mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Would you believe this if it weren't recorded? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-### Video #080 — The Mystery of the Bermuda Triangle Solved?
+### Video #080 — The Truth About the Bermuda Triangle
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Mystery of the Bermuda Triangle Solved?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `bermuda triangle ocean aerial, cargo ship rough waves, storm lightning over sea, vintage airplane propeller, radar screen sweeping` |
+| **Video Subject** | `The Truth About the Bermuda Triangle` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `ocean storm, cargo ship, small airplane flying, map ocean, coast guard boat` |
+| **Thumbnail Title** | `THE TRIANGLE ISN'T CURSED` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 68 words ≈ 26s
 ```text
-For decades, the Bermuda Triangle between Miami, Bermuda, and Puerto Rico has been blamed for disappearing dozens of planes and ships. Theories ranged from alien portals to sea monsters. But modern maritime data reveals that this area is one of the most heavily trafficked shipping lanes on Earth, with accident rates statistically no higher than any other ocean! Rogues waves and unpredictable tropical storms explain the rest! What is your theory behind this mystery? Comment below! Follow Wonder Vault!
+The Bermuda Triangle is famous for ships and planes vanishing. Aliens, portals, sea monsters, take your pick. But here's what the data says. It's one of the busiest shipping and flight areas in the world. And insurers and the US Coast Guard say it doesn't have more accidents than other busy ocean areas. Sudden storms, strong currents, and human error explain most losses. Did you believe the legend?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Truth Behind the Bermuda Triangle! 🚢 🕵️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `The Truth About the Bermuda Triangle 🚢`
+- **Description**:
 ```text
-🕵️ The Mystery of the Bermuda Triangle Solved? — Explore the mind-bending science behind this incredible mystery!
+The Bermuda Triangle doesn't have more accidents than other busy ocean areas — storms, currents and heavy traffic explain most losses.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Did you believe the legend before this?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Mystery of the Bermuda Triangle Solved?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the mystery of the bermuda triangle solved?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Mystery #History #Unsolved #Shorts
 ```
-
-- **YouTube Tags**: `the mystery of the bermuda triangle solved?, unsolved mysteries, strange science glitches, universe anomalies, unexplained phenomena, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `bermuda triangle ocean aerial, cargo ship rough waves, storm lightning over sea, vintage airplane propeller, radar screen sweeping, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the truth about the bermuda triangle, bermuda triangle, myths debunked, ocean, mysteries, unsolved mysteries, history mysteries, mystery facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Did you believe the legend before this? 👇`
+- **Playlist**: `Unsolved Mysteries`
 
 ---
 
-## Category 9: Body Superpowers & Medical Curiosities
+## ⚡ Category 9: Body Superpowers
+> **Playlist:** `Human Body Facts`
 
-### Video #081 — Your Stomach Acid Can Dissolve Razor Blades
+### Video #081 — Your Stomach Acid Can Dissolve Metal
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Your Stomach Acid Can Dissolve Razor Blades` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `stomach acid chemical reaction, bubbles dissolving liquid, razor blade macro, human digestive system anatomy, glowing stomach cells` |
+| **Video Subject** | `Your Stomach Acid Can Dissolve Metal` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `acid bubbling, stomach anatomy, razor blade, mucus protective layer, cells microscope` |
+| **Thumbnail Title** | `STRONG ENOUGH FOR METAL` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Inside your stomach right now is hydrochloric acid with a pH between one point five and two point zero—strong enough to dissolve metal razor blades, bones, and teeth! So why doesn't your stomach dissolve itself? Because your stomach lining secretes a thick, protective mucus barrier every few days, continuously regenerating fresh epithelial cells before the acid can burn through! Did you know your body could do this? Comment below! Follow Wonder Vault!
+Your stomach acid is strong. With a pH between about one and two, it can slowly dissolve metal. In one lab study, it badly corroded razor blades within a day. So why doesn't your stomach digest itself? It's lined with a thick layer of mucus and bicarbonate that neutralizes acid at the surface. And the cells of the lining are constantly replaced, refreshing themselves every few days. What's the strangest thing you know someone swallowed?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Your Stomach Acid Can Dissolve Metal! 🧪 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `Your Stomach Acid Can Dissolve Metal 🧪`
+- **Description**:
 ```text
-⚡ Your Stomach Acid Can Dissolve Razor Blades — Explore the mind-bending science behind this incredible mystery!
+Stomach acid (pH 1–2) can corrode metal — your stomach survives thanks to a mucus-bicarbonate shield and a lining that renews every few days.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the strangest body fact you know?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Your Stomach Acid Can Dissolve Razor Blades
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-your stomach acid can dissolve razor blades, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `your stomach acid can dissolve razor blades, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `stomach acid chemical reaction, bubbles dissolving liquid, razor blade macro, human digestive system anatomy, glowing stomach cells, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `your stomach acid can dissolve metal, stomach acid, digestion, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the strangest body fact you know? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #082 — Why Humans Are the Greatest Long-Distance Runners
+### Video #082 — Humans Can Outrun Almost Any Animal
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Humans Are the Greatest Long-Distance Runners` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `marathon runner sweating sun, cheetah sprinting savanna, sweat droplets forehead close up, human running sunset trail, prehistoric hunters plains` |
+| **Video Subject** | `Humans Can Outrun Almost Any Animal` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `cheetah sprinting, marathon runners, sweat skin close up, panting dog, desert runner` |
+| **Thumbnail Title** | `WE'RE BUILT TO OUTRUN` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-A cheetah can sprint at seventy miles per hour, but over a marathon distance, a fit human can outrun almost any animal on Earth! Why? While other mammals rely on panting to cool down and must stop to avoid heatstroke, humans evolved millions of sweat glands across hairless skin. Our sweat allows evaporative cooling on the run, making our ancestors the ultimate persistence hunters! Did you know your body could do this? Comment below! Follow Wonder Vault!
+A cheetah would destroy you in a sprint. But over a very long distance, humans can outlast almost any animal. Our secret is sweat. We have millions of sweat glands and little body hair, so we cool down while running. Many animals have to stop and pant. Some hunters in the Kalahari still practice persistence hunting, chasing prey in the heat until it's exhausted. You're built for endurance. How far can you run?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Humans Can Outrun Any Animal on Earth! 🏃 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Humans Can Outrun Almost Any Animal 🏃`
+- **Description**:
 ```text
-⚡ Why Humans Are the Greatest Long-Distance Runners — Explore the mind-bending science behind this incredible mystery!
+Humans are one of the best endurance runners on Earth thanks to sweat cooling — enabling persistence hunting in hot climates.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the farthest you've ever run?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Humans Are the Greatest Long-Distance Runners
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why humans are the greatest long-distance runners, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why humans are the greatest long-distance runners, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `marathon runner sweating sun, cheetah sprinting savanna, sweat droplets forehead close up, human running sunset trail, prehistoric hunters plains, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `humans can outrun almost any animal, persistence hunting, human evolution, running, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the farthest you've ever run? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #083 — You Have More Bacteria Than Human Cells in Your Body
+### Video #083 — You Have as Many Bacteria as Human Cells
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `You Have More Bacteria Than Human Cells in Your Body` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `gut microbiome bacteria glowing, microscope bacteria moving, healthy salad food eating, human digestive tract 3d, cellular glow biology` |
+| **Video Subject** | `You Have as Many Bacteria as Human Cells` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `bacteria microscope, human body cells, gut intestines, vegetables fruits, fiber food` |
+| **Thumbnail Title** | `YOU'RE HALF BACTERIA` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-You might think of yourself as a single human organism, but biologically, you are an ecosystem. Scientists estimate the human body contains around thirty trillion human cells, but roughly thirty-eight trillion bacterial cells! Most of this microbiome lives in your gut, digesting food, producing serotonin, and actively influencing your mood and food cravings. Treat your gut well! Did you know your body could do this? Comment below! Follow Wonder Vault!
+You're not just one organism. You're an ecosystem. Your body has around thirty trillion human cells, and roughly thirty eight trillion bacteria. Most of them live in your gut. They help digest food, make some vitamins, train your immune system, and may even affect your mood. That's why fiber-rich foods matter. They feed the good bacteria. So when you eat, you're feeding trillions of tiny roommates. What's your favorite high-fiber food?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `You Are More Bacteria Than Human! 🦠 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (42 chars): `You Have as Many Bacteria as Human Cells 🦠`
+- **Description**:
 ```text
-⚡ You Have More Bacteria Than Human Cells in Your Body — Explore the mind-bending science behind this incredible mystery!
+Your body hosts about 38 trillion bacteria — similar to its 30 trillion human cells. Most live in your gut and help with digestion and immunity.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's your favorite gut-friendly food?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind You Have More Bacteria Than Human Cells in Your Body
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-you have more bacteria than human cells in your body, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `you have more bacteria than human cells in your body, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `gut microbiome bacteria glowing, microscope bacteria moving, healthy salad food eating, human digestive tract 3d, cellular glow biology, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `you have as many bacteria as human cells, gut microbiome, bacteria, human body facts, health, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's your favorite gut-friendly food? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
 ### Video #084 — Your Bones Are Stronger Than Concrete
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Your Bones Are Stronger Than Concrete` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `human skeleton bone structure, concrete block breaking hydraulic, athletic gymnast jumping, collagen fiber microscopic, architectural bridge steel` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `skeleton x-ray, concrete block, collagen fibers, construction steel rods, doctor cast` |
+| **Thumbnail Title** | `STRONGER THAN CONCRETE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Ounce for ounce, human bone is stronger than reinforced concrete! A block of human bone the size of a matchbox can support up to nine tons of weight—four times what concrete can bear before fracturing. This incredible strength comes from a composite architecture of flexible collagen fibers woven into rigid calcium phosphate crystals. Our internal skeleton is an architectural masterpiece! Did you know your body could do this? Comment below! Follow Wonder Vault!
+Your bones are stronger than you think. Pound for pound, bone can handle more squeezing force than some kinds of concrete. The secret is its design. Hard mineral crystals give strength, and flexible collagen fibers stop it from shattering, like steel rods inside concrete. And unlike concrete, bone heals itself. It's constantly being rebuilt, so cracks can mend. Your skeleton is living, self-repairing architecture. Have you ever broken a bone?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Human Bones Are Stronger Than Concrete! 🦴 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `Your Bones Are Stronger Than Concrete 🦴`
+- **Description**:
 ```text
-⚡ Your Bones Are Stronger Than Concrete — Explore the mind-bending science behind this incredible mystery!
+Pound for pound, bone can be stronger than some concrete — thanks to mineral crystals and flexible collagen — and it repairs itself.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Have you ever broken a bone? Which one?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Your Bones Are Stronger Than Concrete
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-your bones are stronger than concrete, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `your bones are stronger than concrete, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `human skeleton bone structure, concrete block breaking hydraulic, athletic gymnast jumping, collagen fiber microscopic, architectural bridge steel, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `your bones are stronger than concrete, bone strength, skeleton, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Have you ever broken a bone? Which one? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #085 — Why Do We Get Goosebumps When Listening to Music?
+### Video #085 — Why Music Gives You Goosebumps
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Get Goosebumps When Listening to Music?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `goosebumps arm hair rising, person wearing headphones listening music, audio sound waves glowing, concert stage singer spotlight, emotional chills face` |
+| **Video Subject** | `Why Music Gives You Goosebumps` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `headphones music, goosebumps skin, concert crowd, singer on stage, brain glowing` |
+| **Thumbnail Title** | `WHY MUSIC GIVES CHILLS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 29s
 ```text
-Ever listened to an incredible song and felt a shiver run down your spine with goosebumps on your arms? This musical frisson occurs when a song surprises your brain with an unexpected chord change or soaring vocal, triggering a sudden release of dopamine in the striatum. In prehistoric times, goosebumps raised our body hair to look bigger or retain warmth; today, it connects us to beauty! Did you know your body could do this? Comment below! Follow Wonder Vault!
+A song hits the perfect moment and goosebumps run down your arms. This is called frisson, or musical chills. It usually happens when music surprises you, like a sudden key change, a huge drop, or a voice that soars. Brain scans show the brain's reward system lights up, releasing dopamine, the same chemical tied to food and other rewards. Not everyone gets chills, but more than half of people do. What song gives you goosebumps?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Great Music Gives You Goosebumps! 🎧 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (32 chars): `Why Music Gives You Goosebumps 🎧`
+- **Description**:
 ```text
-⚡ Why Do We Get Goosebumps When Listening to Music? — Explore the mind-bending science behind this incredible mystery!
+Musical chills (frisson) happen when a song surprises your brain, triggering a dopamine release in its reward system.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What song gives you goosebumps every time?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Do We Get Goosebumps When Listening to Music?
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we get goosebumps when listening to music?, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we get goosebumps when listening to music?, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `goosebumps arm hair rising, person wearing headphones listening music, audio sound waves glowing, concert stage singer spotlight, emotional chills face, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why music gives you goosebumps, frisson, music chills, goosebumps, dopamine, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What song gives you goosebumps every time? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #086 — Your Blood Vessels Can Circle the Earth Twice
+### Video #086 — Your Blood Vessels Could Circle Earth Twice
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Your Blood Vessels Can Circle the Earth Twice` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `red blood cells flowing artery, globe earth rotating equator, microscopic capillaries glowing, heart pumping blood 3d, vascular network tree` |
+| **Video Subject** | `Your Blood Vessels Could Circle Earth Twice` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `blood vessels, earth from space, capillaries microscope, red blood cells, human hair close up` |
+| **Thumbnail Title** | `60,000 MILES INSIDE YOU` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 29s
 ```text
-If you took all the blood vessels—arteries, veins, and microscopic capillaries—from an average adult human body and laid them end-to-end in a straight line, they would stretch over sixty thousand miles! That is long enough to wrap around the entire equator of the Earth more than two and a half times. Every cell in your body is nourished by this vast transit system! Did you know your body could do this? Comment below! Follow Wonder Vault!
+Inside you is a network of tubes so long it's hard to imagine. If you took all the arteries, veins and tiny capillaries in an adult and laid them end to end, the common estimate is about sixty thousand miles. That would wrap around Earth more than twice. Most of that length is capillaries, many narrower than a strand of hair, so thin that red blood cells pass in single file. Does that blow your mind?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Your Blood Vessels Can Circle the Earth! 🩸 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (45 chars): `Your Blood Vessels Could Circle Earth Twice 🩸`
+- **Description**:
 ```text
-⚡ Your Blood Vessels Can Circle the Earth Twice — Explore the mind-bending science behind this incredible mystery!
+An adult's blood vessels are often estimated to stretch about 60,000 miles end to end — enough to circle Earth more than twice.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Did you know this before? Yes or no?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Your Blood Vessels Can Circle the Earth Twice
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-your blood vessels can circle the earth twice, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `your blood vessels can circle the earth twice, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `red blood cells flowing artery, globe earth rotating equator, microscopic capillaries glowing, heart pumping blood 3d, vascular network tree, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `your blood vessels could circle earth twice, blood vessels, circulatory system, human body facts, capillaries, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Did you know this before? Yes or no? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #087 — Why Sneezing Can Be Dangerous to Hold In
+### Video #087 — Why You Should Never Hold In a Sneeze
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Sneezing Can Be Dangerous to Hold In` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `person sneezing tissue, air pressure shockwave macro, human ear anatomy eardrum, lungs breathing deep, doctor examining patient` |
+| **Video Subject** | `Why You Should Never Hold In a Sneeze` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `person sneezing, nose pinch, throat anatomy, doctor ear check, sneeze into elbow` |
+| **Thumbnail Title** | `DON'T HOLD IT IN` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Never pinch your nose and clamp your mouth shut to stifle a sneeze! A sneeze expels air at speeds of up to one hundred miles per hour, generating immense pressure in your respiratory tract. Holding it in forces that violent pressure into your eustachian tubes, risking ruptured eardrums, torn throat tissue, and in rare cases, popped blood vessels in the eyes or brain! Let it out! Did you know your body could do this? Comment below! Follow Wonder Vault!
+Never pinch your nose and close your mouth to stop a sneeze. A sneeze builds up a sudden burst of pressure in your airways. If it has nowhere to go, that pressure gets pushed into your throat and ears. Doctors have reported rare cases of people tearing their throat, and even their windpipe, doing exactly this. It's rare, but it's not worth the risk. Just sneeze into your elbow. Do you hold in sneezes?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why You Should NEVER Hold in a Sneeze! 🤧 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `Why You Should Never Hold In a Sneeze 🤧`
+- **Description**:
 ```text
-⚡ Why Sneezing Can Be Dangerous to Hold In — Explore the mind-bending science behind this incredible mystery!
+Holding in a sneeze forces high pressure into your throat and ears. Doctors have reported rare cases of torn throats and windpipes.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Be honest — do you hold in your sneezes?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why Sneezing Can Be Dangerous to Hold In
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why sneezing can be dangerous to hold in, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why sneezing can be dangerous to hold in, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `person sneezing tissue, air pressure shockwave macro, human ear anatomy eardrum, lungs breathing deep, doctor examining patient, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why you should never hold in a sneeze, sneeze, holding in a sneeze, health tips, human body, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Be honest — do you hold in your sneezes? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #088 — The Human Eye Can See a Candle Flame from 30 Miles Away
+### Video #088 — How Far Can the Human Eye See?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Human Eye Can See a Candle Flame from 30 Miles Away` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `candle flame flickering dark, eye iris pupil night, starry mountain ridge night, single photon light particle, looking through telescope` |
+| **Video Subject** | `How Far Can the Human Eye See?` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `candle flame dark, night landscape, human eye close up, andromeda galaxy, stars milky way` |
+| **Thumbnail Title** | `SEE A CANDLE 1.6 MILES AWAY` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 31s
 ```text
-How powerful are human eyes? Under ideal conditions—pitch-black night, clear mountain air, and a flat unobstructed horizon—the human retina is sensitive enough to detect the faint flicker of a single candle flame from up to thirty miles away! Individual rod cells in your eyes can respond to a single photon of light. Your vision is a quantum sensor! Did you know your body could do this? Comment below! Follow Wonder Vault!
+How far can you see? On a dark, clear night, research suggests the human eye can spot a single candle flame about one and a half miles away. And when you look at the night sky, you can see much farther. The Andromeda galaxy, two and a half million light years away, is visible to the naked eye from a dark place. That light left Andromeda before modern humans even existed. When did you last see a really dark sky?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Far Can the Human Eye Really See? 🕯️ ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `How Far Can the Human Eye See? 👁️`
+- **Description**:
 ```text
-⚡ The Human Eye Can See a Candle Flame from 30 Miles Away — Explore the mind-bending science behind this incredible mystery!
+The human eye can spot a candle flame about 1.6 miles away on a dark night — and can see the Andromeda galaxy, 2.5 million light-years away.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 When did you last see a truly dark sky?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Human Eye Can See a Candle Flame from 30 Miles Away
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the human eye can see a candle flame from 30 miles away, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `the human eye can see a candle flame from 30 miles away, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `candle flame flickering dark, eye iris pupil night, starry mountain ridge night, single photon light particle, looking through telescope, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how far can the human eye see, human eye, eyesight, andromeda galaxy, vision facts, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `When did you last see a truly dark sky? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #089 — Why We Cry When We Are Extremely Happy
+### Video #089 — Why We Cry When We're Happy
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why We Cry When We Are Extremely Happy` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `happy tears smiling bride, athlete crying gold medal, tear drop falling cheek, emotional hug slow motion, smiling woman sunset` |
+| **Video Subject** | `Why We Cry When We're Happy` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `wedding couple, family reunion hug, sports team winning, tears close up, cute puppy` |
+| **Thumbnail Title** | `WHY HAPPY TEARS?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 66 words ≈ 25s
 ```text
-Why do tears roll down our cheeks during joyful moments like weddings or winning a championship? Psychologists call this a dimorphous expression of emotion. When your nervous system is overwhelmed by intense positive emotion, your brain cannot handle the peak arousal. To restore emotional equilibrium and homeostasis, it triggers tears to release stress hormones and soothe your body! Did you know your body could do this? Comment below! Follow Wonder Vault!
+A wedding, a reunion, a big win. And suddenly, you're crying. Why do we cry when we're happy? Psychologists call it a dimorphous expression, showing the opposite emotion of what you feel. One idea is that it helps balance overwhelming emotion, bringing you back to calm. It's the same reason some people laugh when nervous, or squeeze something cute. When did you last cry happy tears?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why We Cry Happy Tears! 🥹 ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (29 chars): `Why We Cry When We're Happy 🥹`
+- **Description**:
 ```text
-⚡ Why We Cry When We Are Extremely Happy — Explore the mind-bending science behind this incredible mystery!
+Happy tears are a "dimorphous expression" — an opposite reaction that may help balance overwhelming emotions.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 When did you last cry happy tears?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why We Cry When We Are Extremely Happy
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why we cry when we are extremely happy, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `why we cry when we are extremely happy, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `happy tears smiling bride, athlete crying gold medal, tear drop falling cheek, emotional hug slow motion, smiling woman sunset, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why we cry when we're happy, happy tears, emotions, psychology, crying, human body facts, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `When did you last cry happy tears? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-### Video #090 — How Your Body Replaces Every Cell Every 7 to 10 Years
+### Video #090 — The 7-Year Body Replacement Myth
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Your Body Replaces Every Cell Every 7 to 10 Years` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `cell mitosis division glowing, human skin macro texture, time lapse growing flower, silhouette sunrise mountain, human body energy glow` |
+| **Video Subject** | `The 7-Year Body Replacement Myth` |
+| **Voice** | `en-US-AndrewMultilingual-Male` |
+| **Video Keywords** (in script order) | `human cells microscope, intestine lining, red blood cells, skeleton x-ray, brain neurons` |
+| **Thumbnail Title** | `NOT A NEW YOU EVERY 7 YEARS` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 30s
 ```text
-The body you had seven years ago is virtually gone. Every second, your body produces around three point eight million new cells to replace dying ones. Your skin renews every month, your red blood cells refresh every four months, and your skeleton replaces itself every decade. You are a continuously regenerating, living work of art! Did you know your body could do this? Comment below! Follow Wonder Vault!
+You've probably heard that your body replaces every cell every seven years. It's a myth. Some cells renew fast. Your gut lining refreshes in days, and red blood cells last about four months. Your skeleton gets rebuilt over roughly a decade. But most of the neurons in your brain's cortex, and the lens cells in your eyes, stay with you your whole life. Still, you replace hundreds of billions of cells every day. Which fact surprised you most?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Your Body Replaces Itself Every 7 Years! ✨ ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `The 7-Year Body Replacement Myth ✨`
+- **Description**:
 ```text
-⚡ How Your Body Replaces Every Cell Every 7 to 10 Years — Explore the mind-bending science behind this incredible mystery!
+You don't get a whole new body every 7 years — some cells renew in days, but many brain neurons stay with you for life.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 Which fact surprised you most?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind How Your Body Replaces Every Cell Every 7 to 10 Years
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how your body replaces every cell every 7 to 10 years, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#HumanBody #Health #ScienceFacts #Shorts
 ```
-
-- **YouTube Tags**: `how your body replaces every cell every 7 to 10 years, human body superpowers, medical curiosities, biology secrets, anatomy facts, human limits, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `cell mitosis division glowing, human skin macro texture, time lapse growing flower, silhouette sunrise mountain, human body energy glow, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the 7-year body replacement myth, 7 year myth, cell renewal, human body facts, biology myths, biology, health facts, wonder vault, did you know, science shorts`
+- **Pinned comment**: `Which fact surprised you most? 👇`
+- **Playlist**: `Human Body Facts`
 
 ---
 
-## Category 10: Stoic Wisdom & Mindset Hacks
+## 🏛️ Category 10: Stoic Wisdom & Mindset
+> **Playlist:** `Mindset & Stoicism`
 
-### Video #091 — Marcus Aurelius: The Stoic Rule for Unshakeable Peace
+### Video #091 — Marcus Aurelius' Secret to Inner Peace
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Marcus Aurelius: The Stoic Rule for Unshakeable Peace` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `marcus aurelius statue marble, storm clouds lightning calm man, walking ancient rome ruins, deep breath mountain summit, flickering oil lamp parchment` |
+| **Video Subject** | `Marcus Aurelius' Secret to Inner Peace` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `roman statue, ancient rome ruins, person writing journal, traffic jam, calm person meditating` |
+| **Thumbnail Title** | `CONTROL YOUR REACTION` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-Roman Emperor Marcus Aurelius ruled the greatest empire on Earth, yet his secret to inner peace was simple: 'You have power over your mind—not outside events. Realize this, and you will find strength.' You cannot control traffic, the weather, or rude people. But you have one hundred percent control over how you react. Master your reaction, and no one can disturb your peace! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Marcus Aurelius was the most powerful man in the Roman Empire. Wars, plagues, betrayal, he faced all of it. And in his private journal, he kept reminding himself of one idea: things outside you can't disturb you. Only your judgment about them can. You can't control traffic, the weather, or rude people. But you can control how you respond. That's where your peace lives. What's one thing you'll stop reacting to?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Marcus Aurelius: The Stoic Secret to Peace 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (41 chars): `Marcus Aurelius' Secret to Inner Peace 🏛️`
+- **Description**:
 ```text
-🏛️ Marcus Aurelius: The Stoic Rule for Unshakeable Peace — Explore the mind-bending science behind this incredible mystery!
+Marcus Aurelius reminded himself that only our judgments — not outside events — disturb us. A Stoic lesson for staying calm.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one thing you'll stop reacting to this week?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Marcus Aurelius: The Stoic Rule for Unshakeable Peace
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-marcus aurelius: the stoic rule for unshakeable peace, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `marcus aurelius: the stoic rule for unshakeable peace, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `marcus aurelius statue marble, storm clouds lightning calm man, walking ancient rome ruins, deep breath mountain summit, flickering oil lamp parchment, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `marcus aurelius' secret to inner peace, marcus aurelius, stoicism, meditations, inner peace, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one thing you'll stop reacting to this week? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #092 — The 5-Second Rule That Destroys Procrastination
+### Video #092 — The 5-Second Rule to Beat Procrastination
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The 5-Second Rule That Destroys Procrastination` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `countdown timer numbers 5 to 1, runner tying shoes starting, alarm clock ringing morning, person opening laptop focus, determined eyes workout` |
+| **Video Subject** | `The 5-Second Rule to Beat Procrastination` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `alarm clock morning, person getting out of bed, open book desk, phone call, running shoes` |
+| **Thumbnail Title** | `5, 4, 3, 2, 1, GO` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 30s
 ```text
-Whenever you have an instinct to act on a goal—working out, studying, or making a call—your brain has a five-second window before it floods you with excuses and hesitation. Count backwards: five, four, three, two, one, and physically move! Counting backwards interrupts your brain's habit loop and engages your prefrontal cortex, turning intention into immediate action! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+When you know you should do something, but hesitate, try this. Count backward: five, four, three, two, one, and move. Get up, open the book, make the call. It's called the five second rule, made famous by Mel Robbins. The idea is that hesitation gives your brain time to talk you out of it, and a countdown interrupts that habit. It won't fix everything, but it's a great way to start. What will you do on one?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The 5-Second Rule to Beat Procrastination! ⏱️ 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (44 chars): `The 5-Second Rule to Beat Procrastination ⏱️`
+- **Description**:
 ```text
-🏛️ The 5-Second Rule That Destroys Procrastination — Explore the mind-bending science behind this incredible mystery!
+Mel Robbins' 5-second rule: count 5-4-3-2-1 and act before hesitation talks you out of it.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What will you do after the countdown today?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The 5-Second Rule That Destroys Procrastination
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the 5-second rule that destroys procrastination, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `the 5-second rule that destroys procrastination, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `countdown timer numbers 5 to 1, runner tying shoes starting, alarm clock ringing morning, person opening laptop focus, determined eyes workout, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the 5-second rule to beat procrastination, 5 second rule, mel robbins, procrastination, motivation, stoicism, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What will you do after the countdown today? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #093 — Memento Mori: The Ancient Reminder That Gives You Power
+### Video #093 — Memento Mori: Remember You Will Die
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Memento Mori: The Ancient Reminder That Gives You Power` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `hourglass sand running out, ancient roman triumph march, skull hourglass still life, sunset ocean horizon, person looking starry sky` |
+| **Video Subject** | `Memento Mori: Remember You Will Die` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `hourglass sand, skull still life, ancient roman statue, sunrise mountain, person walking path` |
+| **Thumbnail Title** | `REMEMBER YOU WILL DIE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 27s
 ```text
-In ancient Rome, when a conquering general paraded through streets of cheering crowds, a slave stood behind him whispering: 'Memento Mori'—remember that you must die. Remembering that your time on Earth is finite isn't depressing; it is liberating. It strips away petty drama, fear of rejection, and wasted hours. Live boldly today! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Stoic philosophers had a strange daily practice: remember that you will die. In Latin, memento mori. It sounds dark, but the point is the opposite. When you remember that time is limited, small arguments stop mattering, fear of embarrassment shrinks, and you stop putting things off. Seneca wrote that we act as if we will live forever. Memento mori is the reminder that we won't. So what are you waiting for?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Memento Mori: The Most Powerful Stoic Lesson ⏳ 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Memento Mori: Remember You Will Die ⏳`
+- **Description**:
 ```text
-🏛️ Memento Mori: The Ancient Reminder That Gives You Power — Explore the mind-bending science behind this incredible mystery!
+Memento mori — "remember you will die" — is a Stoic practice that makes life feel more urgent and meaningful.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one thing you'll stop putting off?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Memento Mori: The Ancient Reminder That Gives You Power
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-memento mori: the ancient reminder that gives you power, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `memento mori: the ancient reminder that gives you power, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `hourglass sand running out, ancient roman triumph march, skull hourglass still life, sunset ocean horizon, person looking starry sky, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `memento mori: remember you will die, memento mori, stoicism, seneca, motivation, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one thing you'll stop putting off? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #094 — The 1 Percent Rule of Compounding Habits
+### Video #094 — The 1% Rule That Changes Everything
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The 1 Percent Rule of Compounding Habits` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `domino chain reaction falling, athlete gym training sweat, reading book coffee morning, compounding chart rising, staircase climbing top` |
+| **Video Subject** | `The 1% Rule That Changes Everything` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `graph growth chart, books reading, person walking park, coins saving jar, sunrise` |
+| **Thumbnail Title** | `1% BETTER = 37X` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-Improving by just one percent every single day seems insignificant in the moment. But mathematically, if you get one percent better each day for one year, you end up thirty-seven times better than when you started! Small, daily disciplines compound like interest into monumental success. Focus on the daily system, not the giant goal! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Getting one percent better at something today feels like nothing. But do it every day for a year, and the math says you'd be about thirty seven times better. Get one percent worse every day, and you'd be close to zero. That's the power of compounding. Small habits look boring in the moment, but over time they decide everything. Read ten pages. Walk ten minutes. Save a little. What's your one percent today?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The 1% Rule That Changes Everything! 📈 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `The 1% Rule That Changes Everything 📈`
+- **Description**:
 ```text
-🏛️ The 1 Percent Rule of Compounding Habits — Explore the mind-bending science behind this incredible mystery!
+1.01 to the power of 365 is about 37.8. Tiny daily improvements compound into huge results over a year.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's your 1% habit today?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The 1 Percent Rule of Compounding Habits
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the 1 percent rule of compounding habits, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `the 1 percent rule of compounding habits, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `domino chain reaction falling, athlete gym training sweat, reading book coffee morning, compounding chart rising, staircase climbing top, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the 1% rule that changes everything, 1 percent rule, atomic habits, self improvement, compounding, stoicism, mindset, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's your 1% habit today? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #095 — Amor Fati: Love Whatever Happens
+### Video #095 — Amor Fati: Love What Happens to You
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Amor Fati: Love Whatever Happens` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `fire burning logs dark, blacksmith hammering glowing steel, warrior standing rain storm, sunrise peak climbing, stoic face determined` |
+| **Video Subject** | `Amor Fati: Love What Happens to You` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `person climbing mountain, storm clouds, philosopher statue, runner crossing finish, sunrise` |
+| **Thumbnail Title** | `LOVE YOUR FATE` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-The Stoic philosopher Friedrich Nietzsche called it Amor Fati—not merely tolerating adversity, but actively loving your fate. When obstacles, delays, or failures strike, don't wish they didn't happen. Treat them as fuel. As Marcus Aurelius wrote: 'The impediment to action advances action. What stands in the way becomes the way.' Turn every setback into your greatest lesson! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Friedrich Nietzsche called it amor fati, love of fate. Not just accepting what happens to you, but embracing it, even the hard parts. The Stoics practiced a similar idea centuries earlier. Marcus Aurelius wrote that the obstacle to action can advance action, and what stands in the way becomes the way. A setback isn't the end of your story. It's often the part that teaches you the most. What setback made you stronger?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Amor Fati: Love Your Hardships! 🔥 #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `Amor Fati: Love What Happens to You 🔥`
+- **Description**:
 ```text
-🏛️ Amor Fati: Love Whatever Happens — Explore the mind-bending science behind this incredible mystery!
+Amor fati means embracing everything that happens — a Nietzsche idea echoing the Stoic view that the obstacle becomes the way.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What setback ended up making you stronger?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Amor Fati: Love Whatever Happens
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-amor fati: love whatever happens, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `amor fati: love whatever happens, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `fire burning logs dark, blacksmith hammering glowing steel, warrior standing rain storm, sunrise peak climbing, stoic face determined, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `amor fati: love what happens to you, amor fati, nietzsche, stoicism, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What setback ended up making you stronger? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #096 — Why You Should Stop Caring What Others Think
+### Video #096 — Stop Worrying What People Think of You
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why You Should Stop Caring What Others Think` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `silhouette walking against crowd, mirror reflection confident smile, freedom open arms mountain, bird soaring blue sky, peaceful forest walk` |
+| **Video Subject** | `Stop Worrying What People Think of You` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `person walking city, crowd busy street, person looking mirror, eagle flying, person smiling confident` |
+| **Thumbnail Title** | `THEY'RE NOT THINKING OF YOU` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 28s
 ```text
-Think about someone you found embarrassing five years ago. Chances are, you don't even remember their name. People are so consumed with their own insecurities, debts, and appearances that they forget about you minutes after you walk away. Live your life according to your values, not the imaginary judgment of strangers! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Think about someone who embarrassed themselves in front of you five years ago. Can you even remember? Probably not. That's how much people remember your awkward moments too. Most people are far too busy thinking about their own problems, their own looks, and their own mistakes. The judgment you fear is mostly happening inside your own head. Live by your values, not imaginary opinions. What would you do if no one judged you?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Stop Caring What Others Think of You! 🦅 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `Stop Worrying What People Think of You 🦅`
+- **Description**:
 ```text
-🏛️ Why You Should Stop Caring What Others Think — Explore the mind-bending science behind this incredible mystery!
+Most people are too focused on themselves to remember your mistakes. The judgment you fear mostly lives in your own head.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What would you do if no one judged you?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Why You Should Stop Caring What Others Think
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why you should stop caring what others think, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `why you should stop caring what others think, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `silhouette walking against crowd, mirror reflection confident smile, freedom open arms mountain, bird soaring blue sky, peaceful forest walk, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `stop worrying what people think of you, stop caring what others think, confidence, mindset, self improvement, stoicism, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What would you do if no one judged you? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #097 — The Law of Jevons: Why Saving Time Makes Us Busier
+### Video #097 — Why Technology Makes Us Busier
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Law of Jevons: Why Saving Time Makes Us Busier` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `busy city traffic time lapse, smartphone notifications popping up, vintage steam engine train, calm coffee cup morning, quiet nature reading` |
+| **Video Subject** | `Why Technology Makes Us Busier` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `steam engine train, coal smoke factory, smartphone notifications, office emails, person relaxing nature` |
+| **Thumbnail Title** | `WHY YOU'RE ALWAYS BUSY` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 27s
 ```text
-Economist William Jevons noticed that as steam engines became more efficient with coal, coal consumption didn't decrease—it skyrocketed! The same paradox applies to modern technology: smartphones, email, and AI were supposed to give us endless leisure, but instead we work faster, reply constantly, and feel busier than ever. Guard your boundaries ruthlessly! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+In eighteen sixty five, economist William Jevons noticed something strange. As steam engines used coal more efficiently, Britain burned more coal, not less. It's called the Jevons paradox. Something similar happens with our time. Email, smartphones and AI make tasks faster, but instead of resting, we often fill the saved time with more tasks, more messages, more scrolling. Efficiency doesn't give you time. Boundaries do. What's one boundary you'll set?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Modern Tech Makes Us Feel Busier! 📱 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (32 chars): `Why Technology Makes Us Busier 📱`
+- **Description**:
 ```text
-🏛️ The Law of Jevons: Why Saving Time Makes Us Busier — Explore the mind-bending science behind this incredible mystery!
+The Jevons paradox: making something more efficient can increase its use. It helps explain why faster technology often makes us busier.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one boundary you'll set this week?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Law of Jevons: Why Saving Time Makes Us Busier
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the law of jevons: why saving time makes us busier, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `the law of jevons: why saving time makes us busier, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `busy city traffic time lapse, smartphone notifications popping up, vintage steam engine train, calm coffee cup morning, quiet nature reading, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why technology makes us busier, jevons paradox, productivity, technology, digital wellbeing, stoicism, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one boundary you'll set this week? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #098 — Dichotomy of Control: The Secret to Stress-Free Living
+### Video #098 — The Stoic Trick to Calm Anxiety
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Dichotomy of Control: The Secret to Stress-Free Living` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `calm ocean surface gentle waves, man meditating mountain sunrise, chaotic storm outside window, balanced zen stones, deep relaxed breathing` |
+| **Video Subject** | `The Stoic Trick to Calm Anxiety` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `ancient statue, person writing list, calm lake, storm clouds, person relaxing breathing` |
+| **Thumbnail Title** | `WHAT CAN YOU CONTROL?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-Epictetus, born a Greek slave, achieved legendary wisdom by dividing all things in life into two categories: what is up to us, and what is not. Your thoughts, actions, and morals are up to you. Other people's opinions, outcomes, and the past are not. When you focus one hundred percent of your energy on what you control and release the rest, anxiety evaporates! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Epictetus was born into slavery and became one of the most influential philosophers of ancient Rome. His main teaching starts with one question: is this within my control? Your effort, your choices, your attitude, yes. Other people's opinions, the past, the outcome, no. Put your energy into the first list, and let go of the second. It won't make every worry disappear, but it gives you something useful to do. What's on your list?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Stoic Secret to Erase All Anxiety 🧘 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `The Stoic Trick to Calm Anxiety 🧘`
+- **Description**:
 ```text
-🏛️ Dichotomy of Control: The Secret to Stress-Free Living — Explore the mind-bending science behind this incredible mystery!
+Epictetus' dichotomy of control: focus on what's up to you, and let go of what isn't. A simple Stoic tool for anxious moments.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's one thing you need to let go of?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind Dichotomy of Control: The Secret to Stress-Free Living
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-dichotomy of control: the secret to stress-free living, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `dichotomy of control: the secret to stress-free living, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `calm ocean surface gentle waves, man meditating mountain sunrise, chaotic storm outside window, balanced zen stones, deep relaxed breathing, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the stoic trick to calm anxiety, epictetus, dichotomy of control, stoicism, anxiety, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's one thing you need to let go of? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #099 — The Two-Minute Rule to Stop Laziness
+### Video #099 — The 2-Minute Rule That Beats Laziness
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Two-Minute Rule to Stop Laziness` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `making bed clean bedroom, washing dish clean water, stopwatch two minutes, typing quick email laptop, stretching workout clothes` |
+| **Video Subject** | `The 2-Minute Rule That Beats Laziness` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `person washing cup, phone message reply, folding clothes, reading book, pushups` |
+| **Thumbnail Title** | `IF IT TAKES 2 MINUTES, DO IT` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 28s
 ```text
-If an action takes less than two minutes to complete, do it immediately without adding it to a to-do list. Answer that quick email, wash that dish, make your bed. Clearing small tasks prevents cognitive clutter and builds momentum. When you start with two minutes of reading or exercise, your brain easily transitions into flow state! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Here's a simple rule from productivity expert David Allen. If something takes less than two minutes, do it now. Reply to that message. Wash that cup. Put your clothes away. Small tasks pile up and clutter your mind. And there's a second version from James Clear: when starting a new habit, make it take just two minutes. Read one page. Do one pushup. Starting is the hardest part. What will you do right now?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The 2-Minute Rule That Destroys Laziness! ⚡ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `The 2-Minute Rule That Beats Laziness ⚡`
+- **Description**:
 ```text
-🏛️ The Two-Minute Rule to Stop Laziness — Explore the mind-bending science behind this incredible mystery!
+The 2-minute rule: if it takes less than two minutes, do it now. And start new habits with just two minutes.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What 2-minute task will you do right now?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Two-Minute Rule to Stop Laziness
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the two-minute rule to stop laziness, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `the two-minute rule to stop laziness, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `making bed clean bedroom, washing dish clean water, stopwatch two minutes, typing quick email laptop, stretching workout clothes, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the 2-minute rule that beats laziness, 2 minute rule, david allen, james clear, productivity, stoicism, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What 2-minute task will you do right now? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
 
-### Video #100 — The Power of Writing Things Down
+### Video #100 — Why Writing Things Down Calms Your Mind
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Power of Writing Things Down` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `fountain pen writing journal notebook, calm morning coffee desk, brain glowing neural, organized clean desk setup, peaceful sunrise window` |
+| **Video Subject** | `Why Writing Things Down Calms Your Mind` |
+| **Voice** | `en-US-BrianMultilingual-Male` |
+| **Video Keywords** (in script order) | `journal writing pen, cluttered desk, person in bed sleeping, to do list paper, calm morning window` |
+| **Thumbnail Title** | `GET IT OUT OF YOUR HEAD` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 28s
 ```text
-Your brain is designed for having ideas, not for storing them. When you keep tasks, worries, and plans swirling in your head, your working memory stays overloaded and anxious. The simple act of writing your thoughts down on paper clears mental RAM, externalizes problems, and brings instant psychological clarity. Write daily and liberate your mind! Which stoic rule will you practice today? Comment below! Follow Wonder Vault!
+Your brain is great at having ideas but bad at holding them. When tasks, worries, and plans swirl in your head, they compete for limited working memory. Writing them down helps. In one study, people who spent five minutes writing a to-do list before bed fell asleep faster than those who wrote about what they'd already done. Get it out of your head and onto paper. What's the first thing you'd write?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Writing Things Down Calms Your Mind ✍️ 🏛️ #Shorts #ScienceFacts`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (42 chars): `Why Writing Things Down Calms Your Mind ✍️`
+- **Description**:
 ```text
-🏛️ The Power of Writing Things Down — Explore the mind-bending science behind this incredible mystery!
+Writing a to-do list before bed helped people fall asleep faster in one study. Getting thoughts onto paper frees up your working memory.
 
-⚡ Did You Know?
-The universe is filled with phenomena that defy everyday human logic. From deep cosmic abysses and extreme physics to the unexplored powers of the human mind and nature, reality is stranger than fiction.
+💬 What's the first thing you'd write down right now?
 
-🔬 Key Takeaways:
-• Discover the hidden truth behind The Power of Writing Things Down
-• Understand the scientific mechanism that makes this possible
-• Experience the awe-inspiring wonders of our universe and human nature
+🔔 Follow @WonderVault-W for a new mind-blowing fact every day.
 
-💬 What are your thoughts on this? Does it blow your mind? Share your reaction in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily mind-expanding space discoveries, psychology secrets, animal facts, and science wonders for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the power of writing things down, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, educational shorts, did you know, wonder vault
-
-#Shorts #ScienceFacts #SpaceFacts #WonderVault #DidYouKnow #MindBlowingFacts #Curiosity #ViralShorts #Science
+#Stoicism #Mindset #SelfImprovement #Shorts
 ```
-
-- **YouTube Tags**: `the power of writing things down, stoic philosophy, mental toughness, self improvement, psychology habits, growth mindset, science facts, mind blowing facts, did you know, wondervault, wonder vault, educational science, viral shorts, science shorts, amazing facts`
-- **Pexels Keywords**: `fountain pen writing journal notebook, calm morning coffee desk, brain glowing neural, organized clean desk setup, peaceful sunrise window, cinematic 4k, slow motion hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why writing things down calms your mind, journaling, writing to do list, sleep, mental clarity, stoicism, mindset, self improvement, wonder vault, did you know, science shorts`
+- **Pinned comment**: `What's the first thing you'd write down right now? 👇`
+- **Playlist**: `Mindset & Stoicism`
 
 ---
-

@@ -1,0 +1,7 @@
+# Streamlit reads this file from the project directory, so it applies to every launch
+# path (webui.sh, webui.bat, docker-compose, Dockerfile) without changing their commands.
+
+[server]
+# Largest request body accepted by the server, in MB (Streamlit default: 200).
+# Must be at least MAX_VIDEO_TEXT_UPLOAD_MB in app/services/video_transcript.py.
+maxUploadSize = 500

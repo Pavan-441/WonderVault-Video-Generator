@@ -1,2579 +1,1665 @@
-# 🌟 50 KID-FRIENDLY FUN SCIENCE & ANIMAL FACTS FOR @WonderVault-W
-> **Crafted specifically for children, toddlers, parents, and curious young minds!**
-> **WebUI (`http://127.0.0.1:8501`) Configuration:**
-> - **Video Source**: `Pexels`
-> - **Aspect Ratio**: `Portrait 9:16`
-> - **Voice**: Friendly, warm voice (e.g. `en-US-Jenny-Female` or `en-US-Guy-Male`)
-> - **Background Music**: Playful, cheerful, gentle (Volume 15-20%)
-> - **Subtitles**: `Enabled` (Font size: 60, Bold Colorful font, Center or Lower-Third)
+# 🌟 50 FUN SCIENCE SHORTS FOR KIDS — @WonderVault-W
+
+> Rewritten for young viewers: simple words, a fun hook in the first sentence, an action or out-loud question at the end, and fact-checked content (no myths like "T. rex was a giant chicken" or "dolphins tell jokes").
 
 ---
 
-### 🎈 KIDS & FAMILY SHORTS PLAYBOOK:
-1. **Bright, Playful Hooks (First 2.5s)**: Capture kids' and parents' imagination immediately with cheerful wonder and cute animals.
-2. **Family Discussion Triggers**: Every video ends with a fun question kids can answer with their parents in the comments!
-3. **Clean, Safe, Educational Metadata**: Fully optimized for YouTube Kids and family science discovery searches.
-4. **Mobile-First Titles**: Short, adorable, and emoji-filled under 50 characters.
+## ⚠️ Read first: "Made for kids" changes how these videos work
+
+Content aimed at children **must** be marked **"Yes, it's made for kids"** when uploading (this is required by US law, COPPA, and YouTube's rules). On those videos YouTube **turns off comments**, the notification bell, and personalized ads. So:
+
+- These scripts **don't ask for comments**. They end with something kids can do or say out loud (stand on one leg, buzz like a bee, a staring contest), which also makes kids rewatch.
+- The **description** includes an "Ask your child" prompt so parents can continue the conversation.
+- **Strongly recommended:** post kids content on a **separate channel** (e.g. *Wonder Vault Kids*). Mixing kids videos with general-audience videos (psychology, mysteries, "what if" disasters) confuses who the channel is for and hurts recommendations for both.
 
 ---
 
-## 🐾 Category 1: Cute Animals & Pets (Kids Favorite!)
+## ⚙️ Set once in the WebUI (`http://127.0.0.1:8501`)
 
-### Video #001 — Why Do Sea Otters Hold Hands While Sleeping?
-
-| UI Field (Screenshot) | Value to Enter / Paste |
+| Setting | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Sea Otters Hold Hands While Sleeping?` |
-| **Script Language** | `en-US` |
+| **Script Language** | `English (WonderVault Shorts)` |
 | **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
+| **Match Visuals to Script Order** | ✅ **On** (keywords are listed in script order) |
 | **Aspect Ratio** | `Portrait 9:16` |
+| **Video Transition Mode** | `FadeIn` |
 | **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `sea otter floating water, cute otter holding hands, ocean kelp forest, playful baby otter, calm water gentle waves` |
+| **Voice** | `en-US-EmmaMultilingual-Female` (warm and friendly; `en-US-Ana-Female` is a child voice if you want a kid narrator) |
+| **Voice Speed** | `1.0` – `1.05` (kids need a clear pace) |
+| **Background Music** | Playful and gentle, volume `0.15` – `0.2` |
+| **Subtitles** | Enabled, size `60`, **Center**, bold colorful text with black stroke |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+---
+
+## 🎈 KIDS SHORTS PLAYBOOK
+
+1. **Hook with wonder, not "Did you know".** Start with a funny image or a challenge ("Try standing on one leg…").
+2. **One idea per video, 25–35 seconds.** Scripts are ~70–85 words.
+3. **End with an action.** A physical or out-loud prompt keeps kids engaged and leads to replays, which is the main signal you have when comments are off.
+4. **Bright, cute, clearly matching visuals.** Keep keywords concrete (animals, objects, kids playing). Avoid scary or violent clips.
+5. **Titles ≤ 50 characters**, simple words, one emoji. No hashtags in the title.
+6. **Playlists by category** so kids keep watching the next one.
+7. **Never use** words like "deadly", "terrifying" or "creepy" in kids' titles.
+
+### ✅ Per-video workflow
+1. Paste **Video Subject**, **Video Script**, **Video Keywords** → Generate.
+2. Check that no clip is scary or off-topic, and swap keywords if needed.
+3. Thumbnail Studio → **Thumbnail Title**.
+4. Upload: **Audience = Yes, it's made for kids**, then Title / Description / Tags / Playlist.
+
+---
+
+## 🐾 Category 1: Cute Animals & Pets
+> **Playlist:** `Cute Animal Facts`
+
+### Video #001 — Why Do Sea Otters Hold Hands?
+
+| WebUI field | Value |
+| :--- | :--- |
+| **Video Subject** | `Why Do Sea Otters Hold Hands?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `sea otter floating, otters holding hands, ocean waves calm, kelp forest underwater, baby otter` |
+| **Thumbnail Title** | `OTTERS HOLD HANDS!` |
+
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 75 words ≈ 30s
 ```text
-Did you know sea otters do the sweetest thing ever when they sleep? Because they sleep floating on their backs in the ocean, ocean currents could easily drift them apart. So when it's nap time, otters hold hands with their best friends and wrap themselves in giant sea kelp like a cozy blanket so they never float away! Isn't that adorable?! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Sea otters sleep floating on their backs in the ocean. But there's a problem. While they nap, the water could carry them away from their family! So sometimes, otters hold paws with each other while they sleep. And they have another trick. They wrap themselves in long seaweed called kelp, like a cozy blanket that keeps them in place. Holding hands so nobody drifts away. Who would you hold hands with? Say it out loud!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do Otters Hold Hands When Sleeping? 🦦 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (31 chars): `Why Do Sea Otters Hold Hands? 🦦`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Do Sea Otters Hold Hands While Sleeping? — Fun Science & Animal Wonders for Curious Kids!
+Sea otters sometimes hold paws while they sleep so they don't drift apart — and they wrap themselves in kelp like a cozy blanket!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Who would you hold hands with so you don't float away?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Sea Otters Hold Hands While Sleeping?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do sea otters hold hands while sleeping?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do sea otters hold hands while sleeping?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `sea otter floating water, cute otter holding hands, ocean kelp forest, playful baby otter, calm water gentle waves, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do sea otters hold hands, sea otters, otters holding hands, ocean animals for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
 ### Video #002 — Why Do Flamingos Stand on One Leg?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Why Do Flamingos Stand on One Leg?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `pink flamingo standing one leg, flock of flamingos water, colorful bird zoo, calm lake reflection, tropical bird nature` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `flamingo standing one leg, child balancing, flamingo sleeping, bicycle kickstand, flamingo flock water` |
+| **Thumbnail Title** | `ONE LEG? NO PROBLEM!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Have you ever seen a bright pink flamingo standing on just one skinny leg and wondered: how don't they fall over? Scientists discovered that flamingos actually spend LESS energy standing on one leg than two! Their body weight locks their knee joint into place like a kickstand, so they can balance effortlessly—and even fall asleep standing on one leg without wobbling! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Try standing on one leg. Wobbly, right? Flamingos do it all the time, and they even fall asleep like that! Scientists found something amazing. When a flamingo stands on one leg, its body weight helps lock its leg in place, like a kickstand on a bike. So it barely has to use its muscles at all. It might even help them stay warm by keeping one leg tucked up. Can you stand on one leg for ten seconds? Try it now!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do Flamingos Stand on One Leg? 🦩 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Why Do Flamingos Stand on One Leg? 🦩`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Do Flamingos Stand on One Leg? — Fun Science & Animal Wonders for Curious Kids!
+Flamingos can balance on one leg with almost no effort — their body weight locks the leg in place like a kickstand!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you stand on one leg for 10 seconds like a flamingo?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Flamingos Stand on One Leg?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do flamingos stand on one leg?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do flamingos stand on one leg?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `pink flamingo standing one leg, flock of flamingos water, colorful bird zoo, calm lake reflection, tropical bird nature, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do flamingos stand on one leg, flamingos, why flamingos stand on one leg, birds for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
 ### Video #003 — Butterflies Taste With Their Feet!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Butterflies Taste With Their Feet!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `colorful butterfly flower, monarch butterfly wings, garden flowers blooming, macro butterfly feet, sunny spring meadow` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `butterfly landing flower, pizza, butterfly feet close up, caterpillar eating leaf, butterfly drinking nectar` |
+| **Thumbnail Title** | `TASTING WITH FEET!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 32s
 ```text
-Imagine if you had to step on a pizza to taste how delicious it was! Well, that is exactly how butterflies eat! Butterflies have special taste sensors right on the bottom of their tiny feet. When a butterfly lands on a colorful flower, it instantly tastes the sweet nectar through its toes before deciding to take a sip with its straw-like tongue! Nature is full of surprises! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Imagine stepping on a pizza to find out if it tastes good! That's kind of how butterflies do it. Butterflies have tiny taste sensors on their feet. When a butterfly lands on a leaf, it can taste it right away. Mother butterflies use this to find the perfect leaf to lay their eggs on, so their caterpillar babies have yummy food. Then they sip sweet nectar with a long, curly straw tongue. What would you taste with your feet?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Did You Know Butterflies Taste With Their Feet? 🦋 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Butterflies Taste With Their Feet! 🦋`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Butterflies Taste With Their Feet! — Fun Science & Animal Wonders for Curious Kids!
+Butterflies have taste sensors on their feet! Mother butterflies use them to find the perfect leaf for their caterpillars.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What food would you want to taste with your feet?
 
-🎈 What You'll Learn:
-• The surprising truth behind Butterflies Taste With Their Feet!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-butterflies taste with their feet!, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `butterflies taste with their feet!, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `colorful butterfly flower, monarch butterfly wings, garden flowers blooming, macro butterfly feet, sunny spring meadow, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `butterflies taste with their feet, butterflies, butterfly facts, insects for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #004 — Do Dogs Really Dream Like Us?
+### Video #004 — Do Dogs Dream Like We Do?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Do Dogs Really Dream Like Us?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `cute puppy sleeping twitching, golden retriever happy running, dog playing park ball, fluffy puppy cute face, funny sleeping pet` |
+| **Video Subject** | `Do Dogs Dream Like We Do?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `dog sleeping, puppy twitching paws, dog running park, dog playing ball, child hugging dog` |
+| **Thumbnail Title** | `DOGS DREAM TOO!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Ever watched your dog sleeping and seen their tiny paws twitching and heard soft little barks? Yes! Dogs really do dream! Science shows that dog brains have the same sleep stages as human brains. While they sleep, dogs dream about chasing balls, playing at the dog park, running through grass, and most of all, spending time with YOU, their favorite human! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Have you ever seen a sleeping dog twitch its paws, wag its tail, or make tiny woofs? That might be a dream! Scientists found that dogs go through the same kind of sleep where we have our dreams. Their brains get busy, their eyes move under their eyelids, and their legs may paddle like they're running. What do dogs dream about? We can't ask them, but maybe about playing, running, and their favorite people. What would your dog dream about?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Does Your Dog Dream About? 🐶 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `Do Dogs Dream Like We Do? 🐶`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Do Dogs Really Dream Like Us? — Fun Science & Animal Wonders for Curious Kids!
+Dogs go through the same dream stage of sleep we do — twitching paws and tiny woofs might mean they're dreaming!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What do you think your dog dreams about?
 
-🎈 What You'll Learn:
-• The surprising truth behind Do Dogs Really Dream Like Us?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-do dogs really dream like us?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `do dogs really dream like us?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `cute puppy sleeping twitching, golden retriever happy running, dog playing park ball, fluffy puppy cute face, funny sleeping pet, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `do dogs dream like we do, do dogs dream, dog facts, pets for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #005 — Why Do Cats Purr When Happy?
+### Video #005 — Why Do Cats Purr?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Cats Purr When Happy?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `fluffy kitten purring close up, cute cat cuddling human, cat sleeping cozy sofa, playful cute kitten yarn, smiling happy cat` |
+| **Video Subject** | `Why Do Cats Purr?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `cat purring, cat on lap, cat close up, mother cat kittens, kitten sleeping` |
+| **Thumbnail Title** | `PURR POWER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Cats are famous for making that cozy, vibrating purr sound when you cuddle them. But did you know cat purring is actually a healing superpower? A cat's purr vibrates at a special frequency between twenty five and one hundred and fifty Hertz. Scientists found that this exact vibration helps heal bones, soothes sore muscles, and calms down stress! So when your kitty purrs on your lap, they are sharing their healing power with you! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Purrrr. That cozy rumble is one of the coolest sounds in the animal world. Cats purr by quickly twitching the muscles in their voice box, over and over, as they breathe in and out. Cats purr when they're happy and relaxed. But sometimes they also purr when they're nervous or hurt, maybe to calm themselves down. Mother cats purr to their kittens, and kittens can purr when they're just a few days old. Can you make a purring sound? Try it!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Secret Healing Power of Cat Purring! 🐱 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (19 chars): `Why Do Cats Purr? 🐱`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Do Cats Purr When Happy? — Fun Science & Animal Wonders for Curious Kids!
+Cats purr by rapidly twitching muscles in their voice box. They purr when happy — and sometimes to calm themselves down!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you make a purring sound like a cat?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Cats Purr When Happy?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do cats purr when happy?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do cats purr when happy?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `fluffy kitten purring close up, cute cat cuddling human, cat sleeping cozy sofa, playful cute kitten yarn, smiling happy cat, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do cats purr, cat facts, pets for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #006 — Can Dolphins Really Talk to Each Other?
+### Video #006 — Dolphins Have Their Own Names!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Can Dolphins Really Talk to Each Other?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `dolphins jumping ocean water, underwater dolphin pod, playful dolphin swimming, crystal clear blue sea, ocean waves sunny` |
+| **Video Subject** | `Dolphins Have Their Own Names!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `dolphins swimming, dolphin close up, dolphin pod ocean, dolphins jumping waves, dolphins catching fish` |
+| **Thumbnail Title** | `DOLPHINS HAVE NAMES!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Dolphins are some of the smartest animals in the whole ocean! Did you know every single dolphin has its own unique whistle, just like humans have names? When dolphins meet in the ocean, they whistle their names to introduce themselves and call out to their dolphin best friends! They can even tell jokes and coordinate teamwork to catch fish! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+You have a name. And so do dolphins, sort of! Each dolphin makes its own special whistle, called a signature whistle. Other dolphins learn it, and they can copy it to call that dolphin, almost like saying its name! Scientists found that dolphins can remember the whistles of old friends for over twenty years. Dolphins also work as a team to catch fish. If you were a dolphin, what would your whistle sound like? Whistle it!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Dolphins Have Names For Each Other! 🐬 🐾 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (32 chars): `Dolphins Have Their Own Names! 🐬`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Can Dolphins Really Talk to Each Other? — Fun Science & Animal Wonders for Curious Kids!
+Every dolphin has its own signature whistle — and other dolphins can use it like a name! They remember friends' whistles for 20+ years.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If you were a dolphin, what would your name-whistle sound like?
 
-🎈 What You'll Learn:
-• The surprising truth behind Can Dolphins Really Talk to Each Other?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-can dolphins really talk to each other?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `can dolphins really talk to each other?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `dolphins jumping ocean water, underwater dolphin pod, playful dolphin swimming, crystal clear blue sea, ocean waves sunny, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `dolphins have their own names, dolphins, dolphin names, signature whistle, ocean animals for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #007 — Why Are Sloths So Incredibly Slow?
+### Video #007 — Why Are Sloths So Slow?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Are Sloths So Incredibly Slow?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `cute sloth hanging tree branch, sloth smiling slow motion, tropical rainforest canopy, funny animal close up, green leaves jungle` |
+| **Video Subject** | `Why Are Sloths So Slow?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `sloth hanging tree, sloth eating leaves, sloth moving slowly, green algae fur close up, rainforest canopy` |
+| **Thumbnail Title** | `SLOW IS A SUPERPOWER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Sloths are the slowest mammals in the world—it can take them an entire month just to digest a single leaf! But being slow is actually their greatest secret weapon. Sloths are so slow that green algae grows directly on their fur, turning them green so eagles and jaguars can't spot them in the trees! Plus, their slow movements mean predators looking for fast running prey never notice them! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Sloths are some of the slowest animals in the world. Being slow is their secret superpower! Sloths eat leaves, which don't give much energy, so they move slowly to save it. Their tummies are so slow that eating one meal can take weeks to digest! And because they hardly move, tiny green algae grow on their fur, helping them blend into the trees. Predators looking for moving animals often miss them. Can you move like a sloth? Try it super slowly!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Are Sloths So Super Slow? 🦥 🐾 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (25 chars): `Why Are Sloths So Slow? 🦥`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Are Sloths So Incredibly Slow? — Fun Science & Animal Wonders for Curious Kids!
+Sloths move slowly to save energy — and green algae grows on their fur, helping them hide in the trees!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you move as slowly as a sloth?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Are Sloths So Incredibly Slow?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why are sloths so incredibly slow?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why are sloths so incredibly slow?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `cute sloth hanging tree branch, sloth smiling slow motion, tropical rainforest canopy, funny animal close up, green leaves jungle, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are sloths so slow, sloths, sloth facts, rainforest animals for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
 ### Video #008 — How Strong Is a Tiny Ant?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `How Strong Is a Tiny Ant?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `tiny ant carrying leaf, macro ant colony, ant lifting heavy object, green grass garden, kid lifting toy weights` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `ant carrying leaf, ants teamwork, child lifting toy, car, ant colony` |
+| **Thumbnail Title** | `ANTS ARE SUPER STRONG!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Don't ever underestimate an ant! Even though an ant is tiny enough to fit on your fingertip, it is one of the strongest creatures on Earth! A common garden ant can lift objects up to fifty times its own body weight. If a human kid had the superpower of an ant, you could easily lift a full-sized family car over your head with one hand! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Ants are tiny, but they are super strong! Some ants can carry things many times heavier than their own bodies, sometimes even fifty times their weight. If you were as strong as that, you could lift a car! How do they do it? Because they're so small, their muscles are strong compared to their light little bodies. And ants work as a team, carrying big leaves and food home together. What's the heaviest thing you can lift? Show us your muscles!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Strong Is a Tiny Ant? 🐜 🐾 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `How Strong Is a Tiny Ant? 🐜`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 How Strong Is a Tiny Ant? — Fun Science & Animal Wonders for Curious Kids!
+Some ants can carry up to 50 times their own body weight — and they work as a team to carry big loads home!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's the heaviest thing you can lift?
 
-🎈 What You'll Learn:
-• The surprising truth behind How Strong Is a Tiny Ant?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how strong is a tiny ant?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `how strong is a tiny ant?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `tiny ant carrying leaf, macro ant colony, ant lifting heavy object, green grass garden, kid lifting toy weights, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how strong is a tiny ant, ants, ant strength, insects for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #009 — Why Do Chameleon Lizards Change Color?
+### Video #009 — Why Do Chameleons Change Color?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Chameleon Lizards Change Color?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `chameleon changing color, colorful chameleon eyes moving, lizard on branch jungle, rainbow colors nature, exotic pet reptile` |
+| **Video Subject** | `Why Do Chameleons Change Color?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `chameleon changing color, chameleon close up eye, colorful chameleon branch, chameleon walking, mood ring` |
+| **Thumbnail Title** | `COLOR = FEELINGS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 82 words ≈ 33s
 ```text
-You might think chameleons change color to hide from danger, but that's a myth! Chameleons actually change color to show their feelings and talk to other chameleons! When a chameleon is angry or excited, its skin lights up in bright yellow, red, and orange. When it wants to relax, it turns cool green and brown. Their skin is like an emotional mood ring! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Chameleons change color, but not just to hide! Mostly, they change color to show how they feel and to talk to other chameleons. When they're excited or want to look tough, they can turn bright yellow, red, or orange. When they're calm, they look softer greens and browns. Their skin has tiny crystals that bend light, and when the crystals move, the colors change. It's like wearing a mood ring! If your skin changed color, what color would you be right now?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do Chameleons Really Change Color? 🦎 🐾 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (33 chars): `Why Do Chameleons Change Color? 🦎`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Do Chameleon Lizards Change Color? — Fun Science & Animal Wonders for Curious Kids!
+Chameleons mostly change color to show feelings and talk to each other — using tiny light-bending crystals in their skin!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If your skin changed color with your feelings, what color would you be?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Chameleon Lizards Change Color?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do chameleon lizards change color?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do chameleon lizards change color?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `chameleon changing color, colorful chameleon eyes moving, lizard on branch jungle, rainbow colors nature, exotic pet reptile, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do chameleons change color, chameleons, chameleon color change, reptiles for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-### Video #010 — Why Can an Owl Turn Its Head Around?
+### Video #010 — How Owls Turn Their Heads So Far!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Can an Owl Turn Its Head Around?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `owl turning head wide eyes, barn owl night perch, big owl eyes blinking, forest trees night moonlight, cute fluffy owl feathers` |
+| **Video Subject** | `How Owls Turn Their Heads So Far!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `owl turning head, owl big eyes, owl close up, child turning head, owl flying night` |
+| **Thumbnail Title** | `OWLS LOOK BEHIND THEM!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 85 words ≈ 34s
 ```text
-Can you turn your head all the way around to look behind your back? Owls can! An owl can rotate its head up to two hundred and seventy degrees in both directions without moving its body! Owls have fourteen neck bones—twice as many as humans—and specialized blood vessels so blood keeps flowing even during extreme head turns. It helps them spot mice in total darkness! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault! Which cute animal is your absolute favorite? Tell us in the comments! Follow Wonder Vault!
+Can you turn your head to look behind your back? Owls can turn their heads up to about two hundred seventy degrees! That's three quarters of a circle. Owls need to, because their big eyes can't move around in their heads like ours can. So they turn their whole head instead. They have twice as many neck bones as we do, and special blood vessels that keep blood flowing while they twist. Turn your head as far as you can. How far did you go?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Owls Turn Their Heads All the Way Round! 🦉 🐾 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (35 chars): `How Owls Turn Their Heads So Far! 🦉`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🐾 Why Can an Owl Turn Its Head Around? — Fun Science & Animal Wonders for Curious Kids!
+Owls can turn their heads about 270 degrees! They have twice as many neck bones as we do, plus special blood vessels.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How far can you turn your head?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Can an Owl Turn Its Head Around?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which cute animal is your absolute favorite? Tell us in the comments! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why can an owl turn its head around?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#AnimalsForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why can an owl turn its head around?, cute animals for kids, animal fun facts, pets for kids, baby animals, animal superpowers, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `owl turning head wide eyes, barn owl night perch, big owl eyes blinking, forest trees night moonlight, cute fluffy owl feathers, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how owls turn their heads so far, owls, owl head turn, birds for kids, animal facts for kids, cute animals, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Cute Animal Facts`
 
 ---
 
-## 🌈 Category 2: Fun Everyday Science & Nature for Kids
+## 🌈 Category 2: Everyday Science & Nature
+> **Playlist:** `Everyday Science for Kids`
 
 ### Video #011 — Why Is the Sky Blue?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Why Is the Sky Blue?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `sunny blue sky white clouds, bright sunshine lens flare, kids looking up sky happy, green meadow sunny day, rainbow prism light` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `blue sky clouds, sunlight rays, rainbow prism, sky time lapse, orange sunset` |
+| **Thumbnail Title** | `WHY BLUE?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Have you ever looked up on a sunny day and wondered why the sky is bright blue instead of green, purple, or yellow? Sunlight looks white, but it's actually made of every rainbow color mixed together! When sunlight hits Earth's atmosphere, blue light scatters in all directions because it travels in short, smaller waves, painting our whole sky in a cheerful blue! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Why is the sky blue and not green or purple? Sunlight looks white, but it's really all the colors of the rainbow mixed together! When sunlight hits the air, the blue light bounces around the most, scattering all across the sky. So wherever you look, blue light is coming at you. And at sunset? The light travels through more air, the blue gets scattered away, and we see orange and red instead. What's your favorite color of sky? Say it!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Is the Sky Blue? (Kid Science!) ☀️ 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (23 chars): `Why Is the Sky Blue? ☀️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Why Is the Sky Blue? — Fun Science & Animal Wonders for Curious Kids!
+Sunlight contains every color, but air scatters blue light the most — that's why the sky looks blue, and sunsets look orange!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's your favorite color of sky — blue, orange, or pink?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Is the Sky Blue?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why is the sky blue?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why is the sky blue?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `sunny blue sky white clouds, bright sunshine lens flare, kids looking up sky happy, green meadow sunny day, rainbow prism light, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why is the sky blue, sky science for kids, light and color, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #012 — How Are Rainbows Made in the Sky?
+### Video #012 — How Are Rainbows Made?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Are Rainbows Made in the Sky?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `bright rainbow sky landscape, raindrops falling sunny weather, colorful rainbow arc meadow, smiling kids pointing rainbow, prism splitting colors` |
+| **Video Subject** | `How Are Rainbows Made?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `rainbow sky, sunshine rain, raindrop prism, glass prism light, airplane window clouds` |
+| **Thumbnail Title** | `RAINBOW MAGIC!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Rainbows look like pure magic, but they are actually pure science! Whenever it rains while the sun is shining, millions of tiny raindrops act like miniature glass prisms in the air. When sunlight enters a raindrop, it bends and splits into seven brilliant colors: red, orange, yellow, green, blue, indigo, and violet! And here is a secret: every rainbow is actually a full circle from high in the sky! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Rainbows look like magic, but they're made of science! You need two things: sunshine and raindrops. Each raindrop acts like a tiny prism. When sunlight goes inside, it bends and splits into colors: red, orange, yellow, green, blue, indigo, and violet. Here's a secret. A rainbow is really a full circle! We usually only see the top half because the ground is in the way. From an airplane, you might see the whole circle! Can you name all seven colors?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Rainbows Are Made! 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (24 chars): `How Are Rainbows Made? 🌈`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 How Are Rainbows Made in the Sky? — Fun Science & Animal Wonders for Curious Kids!
+Raindrops split sunlight into seven colors — and a rainbow is actually a full circle! We usually only see half.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you name all seven rainbow colors in order?
 
-🎈 What You'll Learn:
-• The surprising truth behind How Are Rainbows Made in the Sky?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how are rainbows made in the sky?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `how are rainbows made in the sky?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `bright rainbow sky landscape, raindrops falling sunny weather, colorful rainbow arc meadow, smiling kids pointing rainbow, prism splitting colors, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how are rainbows made, rainbows, how rainbows form, weather for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #013 — What Makes Popcorn Pop?
+### Video #013 — Why Does Popcorn POP?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What Makes Popcorn Pop?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `popcorn popping slow motion, corn kernels heating pan, bowl of fresh popcorn, happy kid eating popcorn, movie popcorn butter` |
+| **Video Subject** | `Why Does Popcorn POP?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `popcorn popping, corn kernels close up, steam rising, popcorn bowl, family movie night` |
+| **Thumbnail Title** | `POP!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Why does hard corn turn into fluffy, delicious popcorn when you heat it? Inside every single popcorn kernel is a tiny droplet of water surrounded by hard starch. When the pan gets hot, that water turns into steam, building up insane pressure inside like a mini pressure cooker. Suddenly—POP! The hard shell bursts inside-out into a warm, puffy cloud! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Pop! Pop! Pop! Why does hard corn turn into fluffy popcorn? Inside every popcorn kernel is a tiny drop of water, trapped inside a hard shell. When it gets hot, the water turns into steam. The steam pushes and pushes, but the shell is strong, so the pressure keeps building. Then suddenly, POP! The shell bursts, and the soft starch inside puffs out into a fluffy white cloud. How many pops can you count? Start counting!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Does Popcorn POP? 🍿 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (23 chars): `Why Does Popcorn POP? 🍿`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 What Makes Popcorn Pop? — Fun Science & Animal Wonders for Curious Kids!
+Each popcorn kernel holds a tiny drop of water. When heated, it turns to steam and builds pressure until — POP!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How many pops can you count?
 
-🎈 What You'll Learn:
-• The surprising truth behind What Makes Popcorn Pop?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what makes popcorn pop?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `what makes popcorn pop?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `popcorn popping slow motion, corn kernels heating pan, bowl of fresh popcorn, happy kid eating popcorn, movie popcorn butter, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why does popcorn pop, popcorn, how popcorn pops, kitchen science for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #014 — Why Do Our Fingers Wrinkle in the Bath?
+### Video #014 — Why Do Fingers Wrinkle in Water?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Our Fingers Wrinkle in the Bath?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `wrinkled fingers bath water, kid splashing swimming pool, rubber duck floating water, bubbles bathtub smiling kid, water ripples blue` |
+| **Video Subject** | `Why Do Fingers Wrinkle in Water?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `wrinkled fingers, child in bath, tire tread close up, wet marbles, hands in water` |
+| **Thumbnail Title** | `PRUNE FINGERS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Ever taken a long bath or spent all afternoon in the swimming pool and noticed your fingers look like prunes? You might think your skin is absorbing water, but that's not it! Your nervous system intentionally shrinks blood vessels in your fingertips to create tiny tire treads. This gives your fingers a super-grip so you can grab slippery underwater objects without dropping them! Isn't your body amazing?! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+After a long bath, your fingers look like little prunes. But they aren't soaking up water! Your body is doing it on purpose. Your nerves tell tiny blood vessels in your fingertips to squeeze, and the skin wrinkles up. Scientists think those wrinkles act like the treads on a tire, helping you grip wet, slippery things. In one study, people picked up wet marbles faster with wrinkly fingers. Look at your fingertips after your next bath!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Fingers Wrinkle in Water! 🛁 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `Why Do Fingers Wrinkle in Water? 🛁`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Why Do Our Fingers Wrinkle in the Bath? — Fun Science & Animal Wonders for Curious Kids!
+Wrinkly bath fingers aren't from soaking up water — your nerves cause them, and they may help you grip wet things!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Have you ever had prune fingers?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Our Fingers Wrinkle in the Bath?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do our fingers wrinkle in the bath?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do our fingers wrinkle in the bath?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `wrinkled fingers bath water, kid splashing swimming pool, rubber duck floating water, bubbles bathtub smiling kid, water ripples blue, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do fingers wrinkle in water, wrinkly fingers, body science for kids, why fingers wrinkle, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
 ### Video #015 — Why Do We Get Hiccups?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Why Do We Get Hiccups?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `kid drinking water glass, funny kid making face, breathing lungs diagram, smiling child laughing, colorful kitchen juice` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child hiccups, lungs diaphragm diagram, eating fast, fizzy soda bubbles, child laughing` |
+| **Thumbnail Title** | `HIC! WHY?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Hiccup! Why do we suddenly get hiccups out of nowhere? Right below your lungs is a dome-shaped muscle called the diaphragm. When you eat too fast, laugh really hard, or drink cold soda, your diaphragm gets irritated and suddenly jerks downward. When it jerks, your vocal cords snap shut with a loud 'HIC!' Drinking a big glass of cold water usually helps it relax! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Hic! Hiccups can happen out of nowhere. Under your lungs is a big muscle called the diaphragm. It helps you breathe. Sometimes, when you eat too fast, laugh a lot, or have fizzy drinks, it gets irritated and suddenly jumps. That quick jump pulls in air, and then a flap in your throat snaps shut, making that funny hic sound! Most hiccups go away on their own in a few minutes. What's your favorite hiccup trick? Do you have one?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do We Get Hiccups? 🥤 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (24 chars): `Why Do We Get Hiccups? 🥤`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Why Do We Get Hiccups? — Fun Science & Animal Wonders for Curious Kids!
+Hiccups happen when your diaphragm suddenly jumps and a flap in your throat snaps shut — making the "hic!" sound.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's your favorite trick to stop hiccups?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do We Get Hiccups?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we get hiccups?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we get hiccups?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `kid drinking water glass, funny kid making face, breathing lungs diagram, smiling child laughing, colorful kitchen juice, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we get hiccups, hiccups, body science for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #016 — Why Do Onions Make Us Cry?
+### Video #016 — Why Do Onions Make You Cry?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Onions Make Us Cry?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `chopping onion kitchen board, crying funny tears kid, chef cooking fresh food, tear drop falling eye, water washing vegetables` |
+| **Video Subject** | `Why Do Onions Make You Cry?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `cutting onion, person crying kitchen, onion close up, eye tears, refrigerator vegetables` |
+| **Thumbnail Title** | `ONION TEARS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 31s
 ```text
-Has your mom or dad ever chopped an onion and started crying? It's not because they are sad! When you cut into an onion, you break open its plant cells, releasing a harmless sulfur gas. When this gas reaches the moisture in your eyes, your eyes produce tears as an automatic shield to wash the stinging gas away! Pro tip: chilling onions in the fridge before cutting prevents tears! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Has a grown-up ever cried while cutting onions? They're not sad! When you cut an onion, you break open tiny cells, and they release a special gas into the air. When that gas reaches your eyes, it stings a little. So your eyes make tears to wash it away. It's your body's own eye shower! A cold onion releases less gas, so some cooks put onions in the fridge before chopping. Have you ever had onion tears?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do Onions Make You Cry? 🧅 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (29 chars): `Why Do Onions Make You Cry? 🧅`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Why Do Onions Make Us Cry? — Fun Science & Animal Wonders for Curious Kids!
+Cutting an onion releases a gas that stings your eyes, so your eyes make tears to wash it away. Chilled onions release less!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Have you ever cried from an onion?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Onions Make Us Cry?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do onions make us cry?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do onions make us cry?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `chopping onion kitchen board, crying funny tears kid, chef cooking fresh food, tear drop falling eye, water washing vegetables, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do onions make you cry, onions, why onions make you cry, kitchen science for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
 ### Video #017 — How High Could You Jump on the Moon?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `How High Could You Jump on the Moon?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `astronaut bouncing moon surface, full moon glowing sky, kid jumping trampoline happy, basketball dunk slow motion, earth seen from moon` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `moon surface, basketball hoop, child jumping, astronaut moon walk, kangaroo hopping` |
+| **Thumbnail Title** | `JUMP 6X HIGHER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-What would happen if you had a basketball game on the Moon? Because the Moon is much smaller than Earth, its gravity is six times weaker! If you can jump two feet high on Earth, you could easily jump twelve feet high on the Moon—flying right over the basketball hoop! And when you come down, you float down in gentle slow motion like an astronaut superhero! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Imagine playing basketball on the Moon! The Moon's gravity is about six times weaker than Earth's. So if you can jump one foot high here, you could jump about six feet high on the Moon, taller than a grown-up! And you'd float back down slowly, like in slow motion. Astronauts on the Moon even bounced around like kangaroos to get around. But don't forget your space suit! How high can you jump right now? Show me!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How High Can You Jump on the Moon? 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `How High Could You Jump on the Moon? 🚀`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 How High Could You Jump on the Moon? — Fun Science & Animal Wonders for Curious Kids!
+The Moon's gravity is about six times weaker than Earth's — so you could jump about six times higher!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How high can you jump right now?
 
-🎈 What You'll Learn:
-• The surprising truth behind How High Could You Jump on the Moon?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how high could you jump on the moon?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `how high could you jump on the moon?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `astronaut bouncing moon surface, full moon glowing sky, kid jumping trampoline happy, basketball dunk slow motion, earth seen from moon, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how high could you jump on the moon, moon gravity, jumping on the moon, space for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
 ### Video #018 — Why Are Clouds White?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Why Are Clouds White?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `white fluffy clouds blue sky, sunny sky time lapse, airplane flying through clouds, cotton candy fluffy sweet, kids lying grass looking sky` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `white fluffy clouds, glass of water, water droplets, sunlight through clouds, gray rain clouds` |
+| **Thumbnail Title** | `WHY ARE CLOUDS WHITE?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 84 words ≈ 34s
 ```text
-If rain clouds are full of water, and water is clear, why are fluffy clouds as white as cotton candy? Clouds are made of billions of microscopic water droplets and ice crystals packed together. Unlike individual raindrops that bend light into rainbows, cloud droplets are so tightly bunched that they scatter all colors of sunlight equally. All colors combined make pure, bright white! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Clouds are made of water, and water is clear. So why are clouds white? A cloud is made of billions of tiny water droplets floating together. When sunlight hits them, the droplets bounce all the colors of light around equally. And when all the colors mix together, we see white! But when a cloud gets really thick and full of water, less light can get through, and it turns gray. That's when you might need an umbrella! What shape cloud do you see today?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Are Clouds Fluffy and White? ☁️ 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (24 chars): `Why Are Clouds White? ☁️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Why Are Clouds White? — Fun Science & Animal Wonders for Curious Kids!
+Clouds look white because their tiny droplets scatter all colors of sunlight equally. Thick clouds block more light and look gray.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What shapes can you spot in the clouds today?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Are Clouds White?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why are clouds white?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why are clouds white?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `white fluffy clouds blue sky, sunny sky time lapse, airplane flying through clouds, cotton candy fluffy sweet, kids lying grass looking sky, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are clouds white, clouds, why clouds are white, weather for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #019 — Can Trees Talk to Each Other Under the Ground?
+### Video #019 — Trees Have an Underground Network!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Can Trees Talk to Each Other Under the Ground?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `lush green forest sunbeams, tree roots underground, glowing mycelium fungi network, mushrooms growing forest floor, giant ancient trees` |
+| **Video Subject** | `Trees Have an Underground Network!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `forest trees, tree roots underground, mushroom threads mycelium, mushrooms forest floor, sunlight through trees` |
+| **Thumbnail Title** | `TREES CAN SHARE!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Did you know that trees in a forest talk and help each other like best friends? Deep underground, tree roots connect with a massive network of tiny mushroom threads called mycelium—scientists call it the Wood Wide Web! Through this underground internet, mother trees share sugar with baby trees and send emergency warning signals when hungry bugs attack! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+Under a forest floor, there's a secret network. Tree roots connect with tiny threads from fungi, like mushrooms. Scientists call it the wood wide web! Through these threads, trees and fungi trade food and water. The fungi help trees get water and nutrients from the soil, and the trees give the fungi sugar in return. Scientists are still studying how much trees share with each other. A forest is a team! Can you name a mushroom?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Trees Have Their Own Underground Internet! 🌳 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Trees Have an Underground Network! 🌳`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 Can Trees Talk to Each Other Under the Ground? — Fun Science & Animal Wonders for Curious Kids!
+Tree roots connect with fungi in a "wood wide web," trading sugar for water and nutrients. Scientists are still studying how much trees share.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How many kinds of trees can you name?
 
-🎈 What You'll Learn:
-• The surprising truth behind Can Trees Talk to Each Other Under the Ground?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-can trees talk to each other under the ground?, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `can trees talk to each other under the ground?, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `lush green forest sunbeams, tree roots underground, glowing mycelium fungi network, mushrooms growing forest floor, giant ancient trees, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `trees have an underground network, wood wide web, trees and fungi, nature for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-### Video #020 — How Fireflies Glow in the Dark
+### Video #020 — How Do Fireflies Glow?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Fireflies Glow in the Dark` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `fireflies glowing summer night, glowing bug hands child, magical forest firefly light, child holding glass jar night, starry night summer` |
+| **Video Subject** | `How Do Fireflies Glow?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `fireflies glowing night, firefly close up, light bulb, summer field night, child jar lights` |
+| **Thumbnail Title** | `GLOWING BUGS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 29s
 ```text
-Have you ever caught a glowing firefly on a warm summer evening? How do they light up without any batteries? Fireflies have special light organs in their bellies containing luciferin and oxygen. When they breathe in air, a chemical reaction creates one hundred percent cold light with zero heat—the most efficient light in the entire universe! Fireflies flash their glowing bellies to say hello to their friends! Did you know science could be this fun? Tell us below! Follow Wonder Vault! Did you know science could be this fun? Tell us below! Follow Wonder Vault!
+How do fireflies light up without any batteries? Inside their tummies, fireflies mix a special chemical called luciferin with oxygen from the air, and the mix makes light! It's called cold light because almost all the energy turns into glow, not heat. A light bulb gets hot. A firefly doesn't! Fireflies flash in patterns to find each other, like a secret code. Have you ever seen a firefly? What color was it?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Fireflies Glow in the Dark! 🪲 🌈 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (24 chars): `How Do Fireflies Glow? ✨`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🌈 How Fireflies Glow in the Dark — Fun Science & Animal Wonders for Curious Kids!
+Fireflies make "cold light" by mixing luciferin with oxygen — nearly all the energy becomes light, not heat!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Have you ever seen a firefly?
 
-🎈 What You'll Learn:
-• The surprising truth behind How Fireflies Glow in the Dark
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Did you know science could be this fun? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how fireflies glow in the dark, science experiments for kids, why things happen, nature facts for children, fun everyday science, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#ScienceForKids #KidsScience #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `how fireflies glow in the dark, science experiments for kids, why things happen, nature facts for children, fun everyday science, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `fireflies glowing summer night, glowing bug hands child, magical forest firefly light, child holding glass jar night, starry night summer, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how do fireflies glow, fireflies, bioluminescence for kids, insects for kids, science for kids, fun science, kids learning, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Everyday Science for Kids`
 
 ---
 
-## 🚀 Category 3: Cool Space & Solar System for Kids
+## 🚀 Category 3: Space & Solar System
+> **Playlist:** `Space for Kids`
 
-### Video #021 — Why Does Saturn Have Rings?
+### Video #021 — What Are Saturn's Rings Made Of?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Does Saturn Have Rings?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `saturn planet rings space, ice crystals floating space, glowing starry cosmos, planet orbiting sun, solar system animation` |
+| **Video Subject** | `What Are Saturn's Rings Made Of?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `saturn planet rings, ice chunks, sand grains, house, moon space` |
+| **Thumbnail Title** | `RINGS OF ICE!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 82 words ≈ 33s
 ```text
-Saturn is the most stylish planet in the solar system, wearing giant shimmering rings! But what are they made of? Not solid metal or rock! Saturn's rings are made of billions of chunks of ice, dust, and rock—ranging from tiny sugar-cube sizes to giant icebergs as big as houses! Scientists think an ancient icy moon got pulled too close and shattered into millions of sparkling pieces! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Saturn has the most beautiful rings in our solar system. But they aren't solid! Saturn's rings are made of billions of pieces of ice, with a little rock and dust. Some pieces are as small as sand, and some are as big as a house! The rings are super wide, but very thin, often only about as tall as a building. Some scientists think they might come from a moon that got too close and broke apart. Which planet is your favorite?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Are Saturn's Rings Made Of? 🪐 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `What Are Saturn's Rings Made Of? 🪐`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Why Does Saturn Have Rings? — Fun Science & Animal Wonders for Curious Kids!
+Saturn's rings are made of billions of ice chunks, from tiny grains to house-sized pieces — wide, but very thin!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Which planet is your favorite?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Does Saturn Have Rings?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why does saturn have rings?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `why does saturn have rings?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `saturn planet rings space, ice crystals floating space, glowing starry cosmos, planet orbiting sun, solar system animation, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what are saturn's rings made of, saturn rings, saturn facts, planets for kids, space for kids, solar system for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #022 — What Is a Shooting Star Really?
+### Video #022 — What Is a Shooting Star?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `What Is a Shooting Star Really?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `shooting star night sky, meteor streak night stars, kid looking telescope bedroom, starry milky way sky, smiling child making wish` |
+| **Video Subject** | `What Is a Shooting Star?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `shooting star night sky, space dust rock, rice grains, meteor shower, child looking stars` |
+| **Thumbnail Title** | `NOT A STAR!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 32s
 ```text
-When you look at the night sky and see a shooting star, you are not seeing a star at all! You are seeing a tiny space pebble or grain of dust, often no bigger than a single grain of sand, plunging into Earth's atmosphere at forty thousand miles per hour! Air friction burns it up in a blaze of glowing light. Make a wish! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Shooting stars aren't stars at all! They're tiny bits of space rock and dust, often smaller than a grain of rice. They zoom into Earth's air very, very fast, and the air in front of them gets so hot that it glows. That glowing streak is what we see. Scientists call it a meteor. Most burn up high in the sky, way before they reach the ground. If you saw a shooting star tonight, what would you wish for?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Is a Shooting Star Really? 🌠 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (26 chars): `What Is a Shooting Star? 🌠`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 What Is a Shooting Star Really? — Fun Science & Animal Wonders for Curious Kids!
+Shooting stars are tiny bits of space dust zooming into our air so fast they glow. Scientists call them meteors!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If you saw a shooting star tonight, what would you wish for?
 
-🎈 What You'll Learn:
-• The surprising truth behind What Is a Shooting Star Really?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-what is a shooting star really?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `what is a shooting star really?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `shooting star night sky, meteor streak night stars, kid looking telescope bedroom, starry milky way sky, smiling child making wish, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what is a shooting star, shooting stars, meteors, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #023 — The Giant Red Storm on Jupiter
+### Video #023 — The Giant Storm Bigger Than Earth!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Giant Red Storm on Jupiter` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `jupiter great red spot close, swirling clouds jupiter, planet earth comparison size, telescope viewing planet, solar system cosmic` |
+| **Video Subject** | `The Giant Storm Bigger Than Earth!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `jupiter great red spot, earth from space, storm clouds spinning, race car fast, telescope` |
+| **Thumbnail Title** | `A STORM BIGGER THAN EARTH` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 31s
 ```text
-Did you know that Jupiter has a giant storm so huge that the entire planet Earth could fit inside it with room to spare? It is called the Great Red Spot! Unlike storms on Earth that last a few days, Jupiter's mega-storm has been swirling non-stop for over three hundred and fifty years! Winds blow at over four hundred miles per hour inside. The universe is wild! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Jupiter has a giant storm called the Great Red Spot. It's wider than our whole planet Earth! On Earth, storms last a few days. But the Great Red Spot has been spinning for at least one hundred fifty years, and maybe much longer. Its winds blow faster than the fastest race cars. And guess what? It's slowly shrinking. Scientists are watching to see what happens next. Spin around like a storm! How many spins can you do?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Mega-Storm Bigger Than Earth! 🌪️ 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (37 chars): `The Giant Storm Bigger Than Earth! 🌪️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 The Giant Red Storm on Jupiter — Fun Science & Animal Wonders for Curious Kids!
+Jupiter's Great Red Spot is wider than Earth and has been raging for at least 150 years — but it's slowly shrinking!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How many times can you spin like a storm?
 
-🎈 What You'll Learn:
-• The surprising truth behind The Giant Red Storm on Jupiter
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the giant red storm on jupiter, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `the giant red storm on jupiter, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `jupiter great red spot close, swirling clouds jupiter, planet earth comparison size, telescope viewing planet, solar system cosmic, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the giant storm bigger than earth, great red spot, jupiter, planets for kids, space for kids, solar system for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #024 — Why Is Mars Called the Red Planet?
+### Video #024 — Why Is Mars Red?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Is Mars Called the Red Planet?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `mars red planet surface, rover vehicle mars rocks, rusty red dust storm, red desert landscape rocks, sunset on mars blue` |
+| **Video Subject** | `Why Is Mars Red?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `mars planet red, mars surface rover, rusty bicycle, red dust storm, astronaut` |
+| **Thumbnail Title** | `MARS IS RUSTY!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 85 words ≈ 34s
 ```text
-Mars looks like a glowing red ruby in our night sky! Why is it so bright red? Because Mars is covered in rusted iron! Millions of years ago, iron in Martian rocks reacted with trace moisture and oxygen, turning into iron oxide—the exact same rust you see on an old bicycle left out in the rain! So Mars is literally a giant, rusty red planet! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Mars is called the Red Planet. But why is it red? Because Mars is rusty! The ground on Mars has lots of iron. A long, long time ago, that iron mixed with water and air and turned into rust, just like an old bike left out in the rain. Then the wind spread tiny red dust all over the planet. Even the sky on Mars can look a little pink or orange during the day! If you went to Mars, what would you explore first?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Is Mars Bright Red? 🔴 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (18 chars): `Why Is Mars Red? 🔴`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Why Is Mars Called the Red Planet? — Fun Science & Animal Wonders for Curious Kids!
+Mars looks red because it's covered in rusty iron dust — the same stuff that forms on an old bike left in the rain!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If you went to Mars, what would you explore first?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Is Mars Called the Red Planet?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why is mars called the red planet?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `why is mars called the red planet?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `mars red planet surface, rover vehicle mars rocks, rusty red dust storm, red desert landscape rocks, sunset on mars blue, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why is mars red, mars facts, planets for kids, space for kids, solar system for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #025 — Could You Walk on the Sun?
+### Video #025 — Could You Ever Land on the Sun?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Could You Walk on the Sun?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `sun surface solar flares, boiling yellow plasma, sunny bright daylight meadow, spaceship flying stars, solar eclipse golden ring` |
+| **Video Subject** | `Could You Ever Land on the Sun?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `sun surface flares, hot glowing gas, spacecraft space, heat shield, sunny day kids playing` |
+| **Thumbnail Title** | `NO GROUND ON THE SUN!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-What would happen if you tried to walk on the Sun? First of all, the Sun doesn't even have a solid ground! The Sun is a gargantuan ball of boiling, churning plasma gas that burns at ten thousand degrees Fahrenheit on its surface and twenty-seven million degrees at its core! If you got within a million miles, even the toughest spaceship would vaporize like an ice cube. The Sun gives us warmth and life from a safe ninety three million miles away! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Could you land on the Sun? Nope! The Sun doesn't have any ground to stand on. It's a giant ball of super hot gas, so hot it glows. The surface is about ten thousand degrees Fahrenheit, and the center is millions of degrees! Even a spaceship called Parker Solar Probe, which flew closer to the Sun than anything ever, needs a special heat shield. Good thing the Sun keeps us warm from far away! Can you say Parker Solar Probe?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Could You Ever Land on the Sun? ☀️ 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `Could You Ever Land on the Sun? ☀️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Could You Walk on the Sun? — Fun Science & Animal Wonders for Curious Kids!
+You can't land on the Sun — it has no ground! The Parker Solar Probe flew closer than anything ever, using a special heat shield.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you say "Parker Solar Probe" three times fast?
 
-🎈 What You'll Learn:
-• The surprising truth behind Could You Walk on the Sun?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-could you walk on the sun?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `could you walk on the sun?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `sun surface solar flares, boiling yellow plasma, sunny bright daylight meadow, spaceship flying stars, solar eclipse golden ring, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `could you ever land on the sun, the sun, parker solar probe, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #026 — Which Planet Spins on Its Side Like a Rolling Ball?
+### Video #026 — The Planet That Rolls on Its Side!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Which Planet Spins on Its Side Like a Rolling Ball?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `uranus cyan blue planet, planet rolling space, solar system planets orbiting, celestial collision simulation, telescope observatory night` |
+| **Video Subject** | `The Planet That Rolls on Its Side!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `uranus planet, spinning top toy, rolling ball, planets orbit sun, night darkness` |
+| **Thumbnail Title** | `A SIDEWAYS PLANET!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-All the planets in our solar system spin like spinning tops, but planet Uranus does something totally silly: it rolls on its side like a bowling ball! Scientists believe billions of years ago, a giant protoplanet as big as Earth smashed into Uranus and knocked it completely sideways! Because of this, on Uranus, a single day-night cycle lasts forty-two years of sunlight followed by forty-two years of night! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Most planets spin like a spinning top. But Uranus is different. It's tipped over on its side, so it rolls around the Sun like a ball! Scientists think something huge crashed into it a very long time ago and knocked it over. Because it's tipped, each of its poles gets about forty two years of sunshine, and then forty two years of darkness! Imagine waiting forty two years for morning! Can you roll like Uranus? Try rolling on the floor!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Silly Planet That Rolls on Its Side! 🎳 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `The Planet That Rolls on Its Side! 🎳`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Which Planet Spins on Its Side Like a Rolling Ball? — Fun Science & Animal Wonders for Curious Kids!
+Uranus spins on its side, so each pole gets about 42 years of sunshine and then 42 years of darkness!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you roll like Uranus?
 
-🎈 What You'll Learn:
-• The surprising truth behind Which Planet Spins on Its Side Like a Rolling Ball?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-which planet spins on its side like a rolling ball?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `which planet spins on its side like a rolling ball?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `uranus cyan blue planet, planet rolling space, solar system planets orbiting, celestial collision simulation, telescope observatory night, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the planet that rolls on its side, uranus, uranus tilt, planets for kids, space for kids, solar system for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #027 — Is There Water on Mars?
+### Video #027 — Did Mars Have Water?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Is There Water on Mars?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `dried riverbed canyon aerial, frozen ice glacier poles, rover digging martian soil, flowing clean blue river, space explorer futuristic` |
+| **Video Subject** | `Did Mars Have Water?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `mars surface, mars rover, dry riverbed, river pebbles, mars ice cap` |
+| **Thumbnail Title** | `MARS HAD RIVERS?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Did Mars ever have water like Earth? Rovers and orbiters have discovered dried-up riverbeds, ancient lakes, and gigantic frozen ice caps at the north and south poles of Mars! Scientists believe billions of years ago, Mars was blue and warm with rushing rivers. Today, scientists are searching for underground saltwater lakes where microscopic Martian life could still be hiding! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Mars is dry and dusty today. But long, long ago, it might have looked very different! Rovers on Mars have found dry riverbeds, ancient lake beds, and smooth round pebbles, just like the ones rivers make on Earth. Mars also has ice at its north and south poles. So scientists are searching for clues. Did tiny living things ever live on Mars? Nobody knows yet. Maybe you'll be the one to find out! Would you want to be a space explorer?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Is There Real Water on Mars? 🌊 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (22 chars): `Did Mars Have Water? 🌊`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Is There Water on Mars? — Fun Science & Animal Wonders for Curious Kids!
+Rovers have found dry riverbeds, ancient lakes and smooth pebbles on Mars — clues that it once had flowing water.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Would you want to explore Mars one day?
 
-🎈 What You'll Learn:
-• The surprising truth behind Is There Water on Mars?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-is there water on mars?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `is there water on mars?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `dried riverbed canyon aerial, frozen ice glacier poles, rover digging martian soil, flowing clean blue river, space explorer futuristic, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `did mars have water, water on mars, mars rover, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #028 — The Sun Is Over 1 Million Times Bigger Than Earth!
+### Video #028 — How Big Is the Sun?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Sun Is Over 1 Million Times Bigger Than Earth!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `huge glowing sun lens flare, earth size comparison sun, solar system animation 3d, golden sunshine sunrise, astronaut floating sun` |
+| **Video Subject** | `How Big Is the Sun?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `sun in sky, sun close up flares, front door, coin, car driving road` |
+| **Thumbnail Title** | `THE SUN IS HUGE!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-When you look at the Sun in the sky, it looks about the size of a coin. But don't be fooled! The Sun is so gigantic that you could pack one point three million Earths inside it! If the Sun were a hollow basketball, Earth would be a tiny sesame seed! Even though it is ninety three million miles away, its immense gravity holds all eight planets, dwarf planets, and millions of asteroids safely in orbit! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+The Sun looks small in the sky, but it's gigantic! About one million three hundred thousand Earths could fit inside it. Here's another way to picture it. If the Sun were as big as a front door, Earth would be about the size of a coin! It looks small only because it's very far away, about ninety three million miles. A car driving there nonstop would need more than one hundred years! How long can you say the word sun?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Huge Is the Sun Really? ☀️ 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (22 chars): `How Big Is the Sun? ☀️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 The Sun Is Over 1 Million Times Bigger Than Earth! — Fun Science & Animal Wonders for Curious Kids!
+About 1.3 million Earths could fit inside the Sun! If the Sun were a door, Earth would be the size of a coin.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How long can you say "Suuuuun"?
 
-🎈 What You'll Learn:
-• The surprising truth behind The Sun Is Over 1 Million Times Bigger Than Earth!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the sun is over 1 million times bigger than earth!, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `the sun is over 1 million times bigger than earth!, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `huge glowing sun lens flare, earth size comparison sun, solar system animation 3d, golden sunshine sunrise, astronaut floating sun, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how big is the sun, the sun, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #029 — Why Do We Have Seasons: Summer and Winter?
+### Video #029 — Why Do We Have Summer and Winter?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Have Seasons: Summer and Winter?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `summer beach sunny waves, snowy winter trees wonderland, globe tilted axis spinning, autumn leaves falling park, spring flowers blooming` |
+| **Video Subject** | `Why Do We Have Summer and Winter?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `summer beach, snowy winter, earth tilted axis globe, sunlight rays, australia beach` |
+| **Thumbnail Title** | `IT'S THE TILT!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 31s
 ```text
-Why do we get warm summer holidays and cold snowy winters? It's NOT because Earth gets closer or farther from the Sun! It happens because Earth is tilted on its axis by twenty three point five degrees! When your hemisphere is tilted toward the Sun, you get longer, hotter days of summer! When it tilts away, sunlight strikes at an angle, giving you cool, cozy winter! Nature's tilt is pure genius! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+Why is summer hot and winter cold? It's not because Earth gets closer to the Sun. It's because Earth is tilted! As Earth goes around the Sun, sometimes your half of the world tips toward the Sun. The sunlight shines more directly, and days are longer. That's summer! When your half tips away, sunlight is weaker and days are shorter. That's winter! Fun fact: when it's summer in America, it's winter in Australia. Which season is your favorite?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do We Have Summer and Winter? ❄️ 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Why Do We Have Summer and Winter? ❄️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Why Do We Have Seasons: Summer and Winter? — Fun Science & Animal Wonders for Curious Kids!
+Seasons happen because Earth is tilted — not because it gets closer to the Sun. That's why Australia has summer when America has winter!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Which season is your favorite?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do We Have Seasons: Summer and Winter?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we have seasons: summer and winter?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `why do we have seasons: summer and winter?, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `summer beach sunny waves, snowy winter trees wonderland, globe tilted axis spinning, autumn leaves falling park, spring flowers blooming, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we have summer and winter, seasons for kids, earth tilt, why we have seasons, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-### Video #030 — Footprints on the Moon Will Last Millions of Years!
+### Video #030 — Moon Footprints Can Last Millions of Years
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Footprints on the Moon Will Last Millions of Years!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `astronaut boot print moon dust, apollo astronaut walking moon, american flag moon surface, earth rising over moon, full moon night sky` |
+| **Video Subject** | `Moon Footprints Can Last Millions of Years` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `moon footprint, astronaut walking moon, moon surface, rain on beach footprint, space rocks` |
+| **Thumbnail Title** | `FOOTPRINTS THAT STAY!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 32s
 ```text
-When astronauts walked on the Moon during the Apollo missions, their boot prints pressed into the lunar dust. Here is the mind-blowing truth: those boot prints will still be there a million years from today! Because the Moon has no atmosphere, no wind, no rain, and no weather to blow the dust away, those historic footprints are frozen in time forever! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault! Would you love to be an astronaut and visit this? Comment below! Follow Wonder Vault!
+When astronauts walked on the Moon, they left footprints in the gray dust. And those footprints are probably still there! On Earth, wind and rain would wipe them away. But the Moon has no wind and no rain. So the footprints just stay. Only tiny space rocks hitting the dust can slowly change them, which could take millions of years. Twelve astronauts have walked on the Moon. If you left a footprint there, what shape would your shoe make?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Moon Footprints Last Forever! 🌕 🚀 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (44 chars): `Moon Footprints Can Last Millions of Years 🌕`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🚀 Footprints on the Moon Will Last Millions of Years! — Fun Science & Animal Wonders for Curious Kids!
+Astronaut footprints on the Moon could last millions of years — there's no wind or rain to wipe them away!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If you walked on the Moon, what would your footprint look like?
 
-🎈 What You'll Learn:
-• The surprising truth behind Footprints on the Moon Will Last Millions of Years!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Would you love to be an astronaut and visit this? Comment below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-footprints on the moon will last millions of years!, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#SpaceForKids #KidsScience #SolarSystem #Shorts
 ```
-
-- **YouTube Tags**: `footprints on the moon will last millions of years!, space for kids, solar system facts, planets for children, moon facts, astronomy for kids, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `astronaut boot print moon dust, apollo astronaut walking moon, american flag moon surface, earth rising over moon, full moon night sky, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `moon footprints can last millions of years, moon footprints, apollo astronauts, space for kids, solar system for kids, planets for kids, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Space for Kids`
 
 ---
 
-## 🦖 Category 4: Dinosaurs & Prehistoric Giants for Kids
+## 🦖 Category 4: Dinosaurs & Prehistoric Giants
+> **Playlist:** `Dinosaurs for Kids`
 
-### Video #031 — Did T-Rex Have Feathers Like a Giant Chicken?
+### Video #031 — Did T. Rex Have Feathers?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Did T-Rex Have Feathers Like a Giant Chicken?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `t rex roaring jungle, fluffy bird feathers macro, chicken walking farm funny, dinosaur fossil museum, raptor dinosaur feathers` |
+| **Video Subject** | `Did T. Rex Have Feathers?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `t rex model, feathered dinosaur, fossil skin, baby chick fluffy, chicken walking` |
+| **Thumbnail Title** | `FLUFFY DINOSAURS?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-We all grew up picturing the ferocious Tyrannosaurus Rex with scaly green skin like a giant lizard. But modern paleontologists made a shocking discovery: many theropod dinosaurs were actually covered in colorful, fluffy feathers! In fact, birds—including the chicken and the eagle—are the direct living descendants of dinosaurs! So a T-Rex was basically a four-ton giant prehistoric rooster! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+We usually picture T. rex as a giant scaly lizard. But many dinosaurs had feathers! Some of T. rex's close cousins were covered in fluffy feathers. Fossils of grown-up T. rex show mostly scaly skin, but some scientists think baby T. rexes might have been a little fluffy. And here's the coolest part: birds are living dinosaurs! So every chicken and pigeon you see is a dinosaur relative. Can you walk like a dinosaur? Stomp, stomp!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Was T-Rex Actually Covered in Feathers? 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `Did T. Rex Have Feathers? 🦖`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 Did T-Rex Have Feathers Like a Giant Chicken? — Fun Science & Animal Wonders for Curious Kids!
+Many of T. rex's cousins had feathers, and baby T. rexes may have been fluffy. And birds are living dinosaurs!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you stomp like a T. rex?
 
-🎈 What You'll Learn:
-• The surprising truth behind Did T-Rex Have Feathers Like a Giant Chicken?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-did t-rex have feathers like a giant chicken?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `did t-rex have feathers like a giant chicken?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `t rex roaring jungle, fluffy bird feathers macro, chicken walking farm funny, dinosaur fossil museum, raptor dinosaur feathers, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `did t. rex have feathers, t rex, feathered dinosaurs, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #032 — The Dinosaur With a Neck Longer Than a School Bus!
+### Video #032 — The Dinosaur With a Super Long Neck!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Dinosaur With a Neck Longer Than a School Bus!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `long neck brachiosaurus treetops, yellow school bus driving, giant dinosaur footprint rock, prehistoric jungle trees, museum skeleton dinosaur` |
+| **Video Subject** | `The Dinosaur With a Super Long Neck!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `long neck dinosaur, school bus, giraffe eating tall tree, dinosaur egg, giant footprint` |
+| **Thumbnail Title** | `A 40-FOOT NECK!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 79 words ≈ 32s
 ```text
-Meet the Sauropods—the gentle, long-necked giants of the dinosaur world! Dinosaurs like Brachiosaurus and Argentinosaurus were so gigantic that their necks alone were forty feet long—longer than an entire yellow school bus! Their long necks allowed them to munch on the highest tree branches without moving their heavy bodies. Their footprints were so deep you could take a bath in them! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Some dinosaurs had super long necks! They're called sauropods. One of them, Mamenchisaurus, had a neck about as long as a school bus! A long neck let them munch leaves from tall trees, or sweep their heads across lots of plants without walking. These giants laid eggs, too, about the size of a soccer ball. Their footprints were so big that a child could sit inside one! How long is your neck? Stretch it up high like a sauropod!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Dinosaur With a 40-Foot Neck! 🦕 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (38 chars): `The Dinosaur With a Super Long Neck! 🦕`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 The Dinosaur With a Neck Longer Than a School Bus! — Fun Science & Animal Wonders for Curious Kids!
+Sauropods like Mamenchisaurus had necks about as long as a school bus — and footprints big enough for a child to sit in!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you stretch your neck up high like a sauropod?
 
-🎈 What You'll Learn:
-• The surprising truth behind The Dinosaur With a Neck Longer Than a School Bus!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the dinosaur with a neck longer than a school bus!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `the dinosaur with a neck longer than a school bus!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `long neck brachiosaurus treetops, yellow school bus driving, giant dinosaur footprint rock, prehistoric jungle trees, museum skeleton dinosaur, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the dinosaur with a super long neck, sauropods, long neck dinosaurs, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
 ### Video #033 — How Big Was the Megalodon Shark?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `How Big Was the Megalodon Shark?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `megalodon shark swimming ocean, great white shark swimming cage, giant shark tooth fossil, deep blue ocean predators, whale swimming surface` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `shark swimming, great white shark, fossil shark tooth, whale ocean, ocean deep blue` |
+| **Thumbnail Title** | `THE BIGGEST SHARK EVER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Think the Great White Shark is scary? Meet Megalodon—the largest predatory shark that ever ruled Earth's oceans! Megalodon was sixty feet long—as long as three Great Whites lined up snout-to-tail! Its jaws were over seven feet wide, lined with two hundred and seventy six razor-sharp teeth as big as a human hand! It could swallow a killer whale whole! Luckily for us, it went extinct millions of years ago! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Megalodon was the biggest shark that ever lived! It wasn't a dinosaur, it was a giant shark that lived long after the dinosaurs were gone. Scientists think it could grow around fifty to sixty feet long. That's about three great white sharks, nose to tail! Its teeth were as big as a grown-up's hand. Megalodon ate whales! But don't worry. It went extinct millions of years ago. How big do you think a megalodon tooth is? Show with your hands!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Big Was the Monster Megalodon Shark? 🦈 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `How Big Was the Megalodon Shark? 🦈`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 How Big Was the Megalodon Shark? — Fun Science & Animal Wonders for Curious Kids!
+Megalodon was the biggest shark ever — around 50–60 feet long, with teeth as big as a hand. It went extinct millions of years ago.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Show with your hands how big a megalodon tooth was!
 
-🎈 What You'll Learn:
-• The surprising truth behind How Big Was the Megalodon Shark?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how big was the megalodon shark?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `how big was the megalodon shark?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `megalodon shark swimming ocean, great white shark swimming cage, giant shark tooth fossil, deep blue ocean predators, whale swimming surface, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how big was the megalodon shark, megalodon, sharks for kids, prehistoric animals, dinosaurs for kids, dinosaur facts, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #034 — Could Pterodactyls Actually Fly?
+### Video #034 — The Flying Reptile as Big as a Plane!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Could Pterodactyls Actually Fly?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `pterodactyl flying prehistoric canyon, giraffe standing tall savanna, glider airplane soaring mountains, sunset cliff ocean flying, fossil wing bones` |
+| **Video Subject** | `The Flying Reptile as Big as a Plane!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `pterosaur flying, small airplane, giraffe standing, bird taking off, sky soaring` |
+| **Thumbnail Title** | `AS BIG AS A PLANE!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Pterodactyls and giant Quetzalcoatlus were not actually dinosaurs—they were flying reptiles! Quetzalcoatlus was as tall as a giraffe when standing on the ground, with a wingspan of thirty-six feet—as wide as a small fighter jet! To launch into the air, they didn't run; they used their powerful front wings like giant pole vaults to catapult their four-hundred-pound bodies into the sky! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Meet Quetzalcoatlus! It wasn't a dinosaur, it was a flying reptile called a pterosaur. Its wings stretched about thirty five feet, as wide as a small airplane! Standing on the ground, it was as tall as a giraffe. To take off, scientists think it pushed off the ground with its strong arms, like doing a big jump. Then it soared across the sky. Can you say its name? Ket-zal-co-at-lus! Now flap your arms like a pterosaur!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Flying Monster as Big as an Airplane! 🦅 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `The Flying Reptile as Big as a Plane! 🦅`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 Could Pterodactyls Actually Fly? — Fun Science & Animal Wonders for Curious Kids!
+Quetzalcoatlus was a flying reptile with wings about 35 feet wide — as tall as a giraffe on the ground!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you say "Quetzalcoatlus" and flap like a pterosaur?
 
-🎈 What You'll Learn:
-• The surprising truth behind Could Pterodactyls Actually Fly?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-could pterodactyls actually fly?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `could pterodactyls actually fly?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `pterodactyl flying prehistoric canyon, giraffe standing tall savanna, glider airplane soaring mountains, sunset cliff ocean flying, fossil wing bones, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the flying reptile as big as a plane, quetzalcoatlus, pterosaurs, prehistoric animals for kids, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #035 — The Armored Dinosaur With a Bone-Crushing Hammer Tail!
+### Video #035 — The Dinosaur Built Like a Tank!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Armored Dinosaur With a Bone-Crushing Hammer Tail!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `ankylosaurus dinosaur forest, armadillo armor shell close, blacksmith hammer smashing, t rex attacking defense, rocky canyon prehistoric` |
+| **Video Subject** | `The Dinosaur Built Like a Tank!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `ankylosaurus model, armadillo armor, knight armor, dinosaur tail club, dinosaur museum` |
+| **Thumbnail Title** | `A DINOSAUR TANK!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 78 words ≈ 31s
 ```text
-Meet Ankylosaurus—the living battle tank of the Cretaceous period! Ankylosaurus was covered from head to toe in thick bony armor plates, spikes, and even armored eyelids to protect its eyes from predators! Best of all, at the end of its tail was a massive solid bone club. If a hungry T-Rex attacked, Ankylosaurus swung its tail with enough force to shatter the T-Rex's leg bones! Don't mess with Ankylosaurus! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Meet Ankylosaurus, the tank of the dinosaur world! Its back was covered in thick bony plates and spikes, like a suit of armor. It even had bony eyelids to protect its eyes! At the end of its tail was a big bony club. Scientists think it could swing that club hard enough to hurt a hungry predator's legs. Not a dinosaur you'd want to bother! If you were a dinosaur, would you have armor, horns, or super speed?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Living Tank Dinosaur With a Hammer Tail! 🛡️ 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `The Dinosaur Built Like a Tank! 🛡️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 The Armored Dinosaur With a Bone-Crushing Hammer Tail! — Fun Science & Animal Wonders for Curious Kids!
+Ankylosaurus was covered in bony armor — even its eyelids! — and had a heavy club on its tail.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Would you pick armor, horns, or super speed?
 
-🎈 What You'll Learn:
-• The surprising truth behind The Armored Dinosaur With a Bone-Crushing Hammer Tail!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the armored dinosaur with a bone-crushing hammer tail!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `the armored dinosaur with a bone-crushing hammer tail!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `ankylosaurus dinosaur forest, armadillo armor shell close, blacksmith hammer smashing, t rex attacking defense, rocky canyon prehistoric, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the dinosaur built like a tank, ankylosaurus, armored dinosaurs, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #036 — How Do We Know What Color Dinosaurs Were?
+### Video #036 — How Scientists Found Real Dinosaur Colors
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Do We Know What Color Dinosaurs Were?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `electron microscope scientist lab, colorful bird feathers macro, orange striped raccoon tail, colorful dinosaur painting, fossil rock excavation` |
+| **Video Subject** | `How Scientists Found Real Dinosaur Colors` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `dinosaur fossil, microscope scientist, feather close up, raccoon tail, colorful dinosaur model` |
+| **Thumbnail Title** | `REAL DINOSAUR COLORS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 71 words ≈ 28s
 ```text
-How can scientists know what color dinosaurs were when fossils are millions of years old? Under ultra-powerful electron microscopes, paleontologists discovered fossilized pigment capsules called melanosomes preserved inside dinosaur feathers! By comparing these shapes to modern birds, they proved Sinosauropteryx had a striped orange and white tail like a bandit raccoon! Prehistoric colors are coming back to life! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+How can we know what color a dinosaur was? Scientists looked at fossil feathers with super powerful microscopes. They found tiny shapes called melanosomes. These little packets hold color in animals today, and their shapes are different for different colors! Using these clues, they found that a small dinosaur called Sinosauropteryx had an orange and white striped tail, a bit like a raccoon! What color do you think T. rex was?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Scientists Discovered Real Dinosaur Colors! 🎨 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (43 chars): `How Scientists Found Real Dinosaur Colors 🎨`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 How Do We Know What Color Dinosaurs Were? — Fun Science & Animal Wonders for Curious Kids!
+By studying tiny color packets in fossil feathers, scientists found Sinosauropteryx had an orange-and-white striped tail!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What color do you think T. rex was?
 
-🎈 What You'll Learn:
-• The surprising truth behind How Do We Know What Color Dinosaurs Were?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how do we know what color dinosaurs were?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `how do we know what color dinosaurs were?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `electron microscope scientist lab, colorful bird feathers macro, orange striped raccoon tail, colorful dinosaur painting, fossil rock excavation, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how scientists found real dinosaur colors, dinosaur colors, sinosauropteryx, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #037 — The Smallest Dinosaur Was as Tiny as a Hummingbird!
+### Video #037 — The Smallest Dinosaur Is Alive Today!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Smallest Dinosaur Was as Tiny as a Hummingbird!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `tiny hummingbird flower, miniature bird flying slow motion, dense rainforest canopy, ancient dragonfly flying, coin on palm hand` |
+| **Video Subject** | `The Smallest Dinosaur Is Alive Today!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `bee hummingbird, hummingbird flower, penny coin, crow bird, birds flying` |
+| **Thumbnail Title** | `STILL ALIVE TODAY!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 31s
 ```text
-Not all dinosaurs were colossal giants! The smallest dinosaur ever discovered was Microraptor, and avian dinosaur fossils show some were no larger than a modern bee hummingbird, weighing less than a single penny! It had four feathered wings—two on its arms and two on its legs—and glided between treetop branches hunting for dragonflies! Dinosaurs came in every size! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Want to know the smallest dinosaur ever? It's still alive today! Birds are dinosaurs, and the tiniest bird is the bee hummingbird. It's about two inches long and weighs less than a penny! Long ago, there were small dinosaurs too, like Microraptor, about the size of a crow, with feathery wings on its arms and its legs. Four wings! So next time you see a bird, say hello to a dinosaur! Can you buzz like a hummingbird?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Tiny Dinosaur as Small as a Hummingbird! 🐦 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `The Smallest Dinosaur Is Alive Today! 🐦`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 The Smallest Dinosaur Was as Tiny as a Hummingbird! — Fun Science & Animal Wonders for Curious Kids!
+The smallest dinosaur alive today is the bee hummingbird — birds are dinosaurs! Long ago, crow-sized Microraptor had four wings.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you buzz and flap like a hummingbird?
 
-🎈 What You'll Learn:
-• The surprising truth behind The Smallest Dinosaur Was as Tiny as a Hummingbird!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the smallest dinosaur was as tiny as a hummingbird!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `the smallest dinosaur was as tiny as a hummingbird!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `tiny hummingbird flower, miniature bird flying slow motion, dense rainforest canopy, ancient dragonfly flying, coin on palm hand, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the smallest dinosaur is alive today, smallest dinosaur, bee hummingbird, microraptor, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #038 — Why Did Dinosaurs Grow So Incredibly Huge?
+### Video #038 — Why Were Some Dinosaurs So Huge?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Did Dinosaurs Grow So Incredibly Huge?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `lush tropical rainforest jungle, gigantic trees ancient, elephant walking savanna, bird hollow bone skeleton, smiling kid looking dinosaur museum` |
+| **Video Subject** | `Why Were Some Dinosaurs So Huge?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `giant sauropod, elephants walking, bird bones skeleton, leaves eating, dinosaur eggs nest` |
+| **Thumbnail Title** | `WHY SO HUGE?` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 77 words ≈ 31s
 ```text
-Why were prehistoric animals so much bigger than modern animals? Millions of years ago, the Earth was much warmer, with higher carbon dioxide levels that created lush, overgrown mega-forests everywhere. Plant-eating dinosaurs had an endless buffet of leaves, so growing massive protected them from predators! Plus, having hollow air-sac bones like modern birds kept their gigantic skeletons lightweight! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Some dinosaurs were as heavy as ten elephants! How did they get so big? Scientists have some clues. Many giant dinosaurs had bones full of air pockets, like birds, which made them lighter. They had super-strong lungs, like birds, too. They didn't chew. They just swallowed leaves whole, so they could eat all day long. And they laid eggs, so they could have lots of babies. What would you name a giant dinosaur? Make up a name!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Were Dinosaurs So Super Huge? 🌴 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (34 chars): `Why Were Some Dinosaurs So Huge? 🌴`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 Why Did Dinosaurs Grow So Incredibly Huge? — Fun Science & Animal Wonders for Curious Kids!
+Giant dinosaurs had air-filled bones and bird-like lungs, swallowed food without chewing, and laid lots of eggs.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What would you name a brand-new giant dinosaur?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Did Dinosaurs Grow So Incredibly Huge?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why did dinosaurs grow so incredibly huge?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `why did dinosaurs grow so incredibly huge?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `lush tropical rainforest jungle, gigantic trees ancient, elephant walking savanna, bird hollow bone skeleton, smiling kid looking dinosaur museum, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why were some dinosaurs so huge, giant dinosaurs, sauropods, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #039 — The Dinosaur That Could Run 40 Miles Per Hour!
+### Video #039 — The Dinosaur That Ran Like an Ostrich!
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `The Dinosaur That Could Run 40 Miles Per Hour!` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `ostrich sprinting savanna fast, running dinosaur pack jungle, cheetah sprint slow motion, wide open desert plains, speedometer rising fast` |
+| **Video Subject** | `The Dinosaur That Ran Like an Ostrich!` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `ostrich running, dinosaur running, racehorse galloping, t rex model, child running` |
+| **Thumbnail Title** | `SUPER FAST DINO!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 29s
 ```text
-Meet Gallimimus—the ostrich-mimic dinosaur made famous in Jurassic Park! Gallimimus had long, slender bird-like legs, a hollow bone structure, and a long tail for balancing sharp turns. Paleontologists estimate it could sprint across prehistoric plains at over forty miles per hour—fast enough to easily outrun a hungry Carnotaurus and rival racehorses! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Meet Gallimimus! It looked a bit like a giant ostrich, with long legs, a long neck, and a beak with no teeth. Gallimimus was built for running. Scientists think it could run very fast, maybe around as fast as a racehorse! That speed helped it escape from big predators like Tarbosaurus, a cousin of T. rex that lived in the same place. Ready, set, go! Run in place as fast as you can!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `The Super-Fast Dinosaur That Outran Predators! 🏃 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (40 chars): `The Dinosaur That Ran Like an Ostrich! 🏃`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 The Dinosaur That Could Run 40 Miles Per Hour! — Fun Science & Animal Wonders for Curious Kids!
+Gallimimus looked like a giant ostrich and could run fast enough to escape predators like Tarbosaurus, a cousin of T. rex.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How fast can you run in place? Ready, set, go!
 
-🎈 What You'll Learn:
-• The surprising truth behind The Dinosaur That Could Run 40 Miles Per Hour!
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-the dinosaur that could run 40 miles per hour!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `the dinosaur that could run 40 miles per hour!, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `ostrich sprinting savanna fast, running dinosaur pack jungle, cheetah sprint slow motion, wide open desert plains, speedometer rising fast, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `the dinosaur that ran like an ostrich, gallimimus, fast dinosaurs, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-### Video #040 — Where Did the Dinosaur Asteroid Hit Earth?
+### Video #040 — Where Did the Dinosaur Asteroid Hit?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Where Did the Dinosaur Asteroid Hit Earth?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Christopher-Male` |
-| **Video Keywords (English)** | `mexico cenote turquoise water, aerial yucatan peninsula coast, asteroid impact explosion space, dinosaur looking up sky, fossil layers rock` |
+| **Video Subject** | `Where Did the Dinosaur Asteroid Hit?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `asteroid space, earth from space, mexico coast aerial, cenote swimming hole, dinosaur skeleton` |
+| **Thumbnail Title** | `THE GIANT CRATER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 30s
 ```text
-Sixty-six million years ago, a six-mile-wide space asteroid slammed into Earth and ended the age of dinosaurs. But where did it hit? Scientists discovered the giant impact crater, called Chicxulub, buried deep underneath the coastline of the Yucatan Peninsula in Mexico! The crater is over one hundred and ten miles wide! Today, beautiful natural sinkhole pools called cenotes ring the exact edge of that cosmic crater! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault! Which dinosaur would you love to see in real life? Tell us below! Follow Wonder Vault!
+Sixty six million years ago, a giant space rock hit Earth. It was about six miles wide, and it changed the world for the dinosaurs. But where did it land? In Mexico! Scientists found a huge buried crater called Chicxulub. It's about one hundred ten miles wide! Today, it's hidden under the ground and the sea. But a ring of beautiful swimming holes, called cenotes, traces the crater's edge. Can you say Chicxulub? Cheek-shoe-loob!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Where Did the Dinosaur Asteroid Hit Earth? ☄️ 🦖 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (39 chars): `Where Did the Dinosaur Asteroid Hit? ☄️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🦖 Where Did the Dinosaur Asteroid Hit Earth? — Fun Science & Animal Wonders for Curious Kids!
+The asteroid that ended the age of dinosaurs hit Mexico, leaving the 110-mile Chicxulub crater — traced today by a ring of cenotes.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you say "Chicxulub"? Cheek-shoe-loob!
 
-🎈 What You'll Learn:
-• The surprising truth behind Where Did the Dinosaur Asteroid Hit Earth?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Which dinosaur would you love to see in real life? Tell us below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-where did the dinosaur asteroid hit earth?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#Dinosaurs #KidsScience #DinosaursForKids #Shorts
 ```
-
-- **YouTube Tags**: `where did the dinosaur asteroid hit earth?, dinosaurs for kids, t rex facts, prehistoric animals, fossil facts for children, giant dinosaurs, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `mexico cenote turquoise water, aerial yucatan peninsula coast, asteroid impact explosion space, dinosaur looking up sky, fossil layers rock, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `where did the dinosaur asteroid hit, chicxulub crater, dinosaur asteroid, dinosaurs for kids, dinosaur facts, prehistoric animals, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Dinosaurs for Kids`
 
 ---
 
-## 🍎 Category 5: Fun Food & Body Wonders for Curious Kids
+## 🍎 Category 5: Food & Body Wonders
+> **Playlist:** `Body & Food Science for Kids`
 
-### Video #041 — Why Does Ice Cream Give You Brain Freeze?
+### Video #041 — Why Do We Get Brain Freeze?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Does Ice Cream Give You Brain Freeze?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `kid eating ice cream cone, cold delicious gelato scoops, laughing kid funny brain freeze face, tongue touching roof mouth, colorful ice cream parlor` |
+| **Video Subject** | `Why Do We Get Brain Freeze?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child eating ice cream, ice cream cone, brain illustration, child holding head, ice cream shop` |
+| **Thumbnail Title** | `BRAIN FREEZE!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Ouch! Why does taking a giant bite of cold ice cream give you that sharp headache called brain freeze? When something icy touches the roof of your mouth, the sudden cold shocks the capillaries and blood vessels, causing them to rapidly constrict and dilate. This sends an emergency alarm down your trigeminal nerve to your brain! Pro tip to cure brain freeze fast: press your warm tongue firmly against the roof of your mouth! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Ouch! Brain freeze! Why does cold ice cream make your head hurt? When something icy touches the roof of your mouth, the blood vessels there quickly squeeze and then open up again. A nerve sends a warning message to your brain, and your brain feels it like a headache in your forehead. Here's a trick: press your tongue to the roof of your mouth to warm it up. Or just eat a little slower! What's your favorite ice cream flavor?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How to Stop Brain Freeze Instantly! 🍦 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (29 chars): `Why Do We Get Brain Freeze? 🍦`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Does Ice Cream Give You Brain Freeze? — Fun Science & Animal Wonders for Curious Kids!
+Brain freeze happens when cold food chills blood vessels in your mouth. Warm it up by pressing your tongue to the roof of your mouth!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's your favorite ice cream flavor?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Does Ice Cream Give You Brain Freeze?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why does ice cream give you brain freeze?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why does ice cream give you brain freeze?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `kid eating ice cream cone, cold delicious gelato scoops, laughing kid funny brain freeze face, tongue touching roof mouth, colorful ice cream parlor, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we get brain freeze, brain freeze, ice cream headache, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #042 — Why Are Flamingos Pink? (It's Their Food!)
+### Video #042 — Why Are Baby Flamingos Gray?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Are Flamingos Pink? (It's Their Food!)` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `baby flamingo grey fluffy chick, bright pink flamingo flock, tiny shrimp swimming water, colorful feathers macro, zoo flamingos pond` |
+| **Video Subject** | `Why Are Baby Flamingos Gray?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `baby flamingo gray, flamingo flock pink, tiny shrimp, algae water, flamingo eating` |
+| **Thumbnail Title** | `PINK FROM FOOD!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-Did you know baby flamingos are actually born with dull grey and white feathers? They aren't pink at all! So how do they turn so bright pink? It comes entirely from their diet! Flamingos eat huge amounts of tiny brine shrimp and blue-green algae rich in red-orange carotenoid pigments. Over years of munching shrimp, their feathers gradually turn into that signature neon pink! You are what you eat! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Baby flamingos aren't pink! They hatch fluffy and gray or white. So how do they turn pink? From their food! Flamingos eat tiny shrimp and algae full of natural pink and orange colors. Over two or three years, those colors build up in their feathers until they're bright pink. If a flamingo stops eating that food, its feathers can fade. You really are what you eat! If you turned the color of your favorite food, what color would you be?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Are Flamingos Born Grey? 🦩 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (30 chars): `Why Are Baby Flamingos Gray? 🦩`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Are Flamingos Pink? (It's Their Food!) — Fun Science & Animal Wonders for Curious Kids!
+Baby flamingos are gray! They turn pink over 2–3 years from natural colors in the shrimp and algae they eat.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: If you turned the color of your favorite food, what color would you be?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Are Flamingos Pink? (It's Their Food!)
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why are flamingos pink? (it's their food!), human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why are flamingos pink? (it's their food!), human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `baby flamingo grey fluffy chick, bright pink flamingo flock, tiny shrimp swimming water, colorful feathers macro, zoo flamingos pond, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are baby flamingos gray, flamingos, why flamingos are pink, birds for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #043 — Why Do We Have Two Ears Instead of One?
+### Video #043 — Why Do You Have Two Ears?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Have Two Ears Instead of One?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `human ear close up, sound waves ripple visual, kid wearing colorful headphones, friend whispering secret ear, laughing child playing` |
+| **Video Subject** | `Why Do You Have Two Ears?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child ears close up, dog barking, sound waves, child pointing, family playing game` |
+| **Thumbnail Title** | `SURROUND SOUND!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 81 words ≈ 32s
 ```text
-Why do humans and animals have two ears on opposite sides of their heads? Having two ears gives you binaural hearing! When a sound happens—like a car honking or a friend whispering—the sound wave reaches the closer ear a fraction of a millisecond earlier than the farther ear. Your brain calculates that tiny time difference to pinpoint the exact three-dimensional direction of the sound! You have built-in surround sound! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Why do we have two ears instead of one? Two ears help you find where a sound is coming from! When a dog barks on your left, the sound reaches your left ear a tiny bit sooner, and a tiny bit louder. Your brain compares the two ears super fast, and figures out which way to look. It's like having built-in surround sound! Try this: close your eyes and have someone clap. Can you point to where the sound came from?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do You Have Two Ears? 👂 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `Why Do You Have Two Ears? 👂`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Do We Have Two Ears Instead of One? — Fun Science & Animal Wonders for Curious Kids!
+Two ears let your brain compare tiny differences in timing and loudness to find exactly where a sound is coming from.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Close your eyes — can you point to where a clap comes from?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do We Have Two Ears Instead of One?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we have two ears instead of one?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we have two ears instead of one?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `human ear close up, sound waves ripple visual, kid wearing colorful headphones, friend whispering secret ear, laughing child playing, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do you have two ears, hearing, why we have two ears, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #044 — Why Is Chocolate Toxic to Dogs?
+### Video #044 — Why Dogs Can't Eat Chocolate
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Is Chocolate Toxic to Dogs?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `chocolate candy bar breaking, cute dog looking puppy eyes, veterinarian examining dog clinic, healthy dog treat biscuit, happy puppy park` |
+| **Video Subject** | `Why Dogs Can't Eat Chocolate` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `chocolate bar, sad dog, dog looking food, dark chocolate, dog eating treat` |
+| **Thumbnail Title** | `NO CHOCOLATE FOR DOGS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 76 words ≈ 30s
 ```text
-Why can humans eat delicious chocolate candy, but dogs can never have even a tiny bite? Chocolate contains a bitter chemical called theobromine. While the human body digests theobromine quickly and safely, a dog's digestive system processes it much too slowly, allowing toxic levels to build up and harm their heart and nervous system. Always keep chocolate safely locked away from your furry best friends! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Chocolate is a yummy treat for people. But for dogs, it can be dangerous! Chocolate has something in it called theobromine. Our bodies break it down quickly. But a dog's body breaks it down very slowly, so it can build up and make the dog really sick. Dark chocolate is the most dangerous. So always keep chocolate up high where pets can't reach it. Give your dog a dog treat instead! What's your pet's favorite treat?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Dogs Can NEVER Eat Chocolate! 🍫 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (30 chars): `Why Dogs Can't Eat Chocolate 🍫`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Is Chocolate Toxic to Dogs? — Fun Science & Animal Wonders for Curious Kids!
+Chocolate contains theobromine, which dogs break down very slowly — so it can make them very sick. Keep chocolate away from pets!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's your pet's favorite treat?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Is Chocolate Toxic to Dogs?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why is chocolate toxic to dogs?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why is chocolate toxic to dogs?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `chocolate candy bar breaking, cute dog looking puppy eyes, veterinarian examining dog clinic, healthy dog treat biscuit, happy puppy park, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why dogs can't eat chocolate, dogs and chocolate, pet safety, pets for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #045 — How Do Bees Make Sweet Honey?
+### Video #045 — How Do Bees Make Honey?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `How Do Bees Make Sweet Honey?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `honeybee on flower macro, golden honeycomb dripping honey, honey bees buzzing hive, jar of raw honey sunlight, flowers field spring` |
+| **Video Subject** | `How Do Bees Make Honey?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `bee on flower, bee drinking nectar, beehive inside, honeycomb close up, honey dripping` |
+| **Thumbnail Title** | `BEE TEAMWORK!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 80 words ≈ 32s
 ```text
-How do tiny honeybees turn flower nectar into golden, delicious honey? Worker bees visit thousands of blooming flowers, drinking sweet nectar and storing it in a special honey stomach. Back at the hive, bees pass the nectar mouth-to-mouth, adding special enzymes. Then, thousands of worker bees flap their wings like tiny electric fans to evaporate water until it thickens into rich, sweet honey! Teamwork makes the honey! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+How do bees make honey? It's a team project! Worker bees fly from flower to flower, sipping sweet nectar and storing it in a special honey tummy. Back at the hive, they pass the nectar from bee to bee and add special helpers called enzymes. Then they put it into wax cells and fan it with their wings, buzz, buzz, buzz, to dry it out until it gets thick and sweet. That's honey! Can you buzz like a busy bee?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `How Bees Make Delicious Honey! 🐝 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (25 chars): `How Do Bees Make Honey? 🐝`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 How Do Bees Make Sweet Honey? — Fun Science & Animal Wonders for Curious Kids!
+Bees collect nectar, add enzymes, store it in wax cells and fan it with their wings until it thickens into honey!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you buzz like a busy bee?
 
-🎈 What You'll Learn:
-• The surprising truth behind How Do Bees Make Sweet Honey?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-how do bees make sweet honey?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `how do bees make sweet honey?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `honeybee on flower macro, golden honeycomb dripping honey, honey bees buzzing hive, jar of raw honey sunlight, flowers field spring, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `how do bees make honey, honey bees, how bees make honey, insects for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #046 — Why Do We Shiver When We Are Cold?
+### Video #046 — Why Do We Shiver When We're Cold?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do We Shiver When We Are Cold?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `person shivering cold snow, snow blizzard park, cozy warm hot cocoa mug, warm knitted winter gloves, fireplace burning logs` |
+| **Video Subject** | `Why Do We Shiver When We're Cold?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child shivering snow, snow falling, muscles moving, child warm blanket, hot cocoa` |
+| **Thumbnail Title** | `BRRR! SHIVER POWER!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 69 words ≈ 28s
 ```text
-BRRR! Why does your body start shaking and your teeth chatter when you step out into the freezing cold? Shivering is your body's automatic emergency furnace! When your core body temperature drops, your brain's hypothalamus sends rapid nerve signals ordering your skeletal muscles to tighten and relax dozens of times per second. This rapid muscle workout burns energy and produces life-saving heat to warm you right up! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Brrr! When you're cold, your body starts to shake. That's called shivering, and it's your body's own heater! When your body gets too cold, your brain sends a message to your muscles: wiggle, wiggle, wiggle! Your muscles tighten and relax really fast, over and over. All that tiny movement makes heat, and the heat helps warm you up. Pretty clever, right? Now pretend you're super cold and shiver! Brrrr!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Does Your Body Shiver When Cold? ❄️ 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `Why Do We Shiver When We're Cold? ❄️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Do We Shiver When We Are Cold? — Fun Science & Animal Wonders for Curious Kids!
+Shivering is your body's built-in heater — your muscles tighten and relax quickly to make heat.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you pretend to shiver? Brrrr!
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do We Shiver When We Are Cold?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do we shiver when we are cold?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do we shiver when we are cold?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `person shivering cold snow, snow blizzard park, cozy warm hot cocoa mug, warm knitted winter gloves, fireplace burning logs, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we shiver when we're cold, shivering, body temperature, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #047 — Why Is Your Tongue Bumpy?
+### Video #047 — What Are the Bumps on Your Tongue?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Is Your Tongue Bumpy?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `kid sticking tongue out funny, human tongue macro taste buds, colorful fruits strawberries lemon, smiling child eating watermelon, ice cream scoop` |
+| **Video Subject** | `What Are the Bumps on Your Tongue?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child sticking tongue out, tongue close up, mirror, fruit candy, lemon sour face` |
+| **Thumbnail Title** | `TONGUE BUMPS!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 74 words ≈ 30s
 ```text
-Stick your tongue out in the mirror—see all those tiny pink bumps? You might think those are your taste buds, but they are actually called papillae! Papillae act like tiny velcro grippers to help you chew food, and nestled inside each bump are dozens of microscopic taste buds! Humans have around ten thousand taste buds that tell you if food is sweet, salty, sour, bitter, or savory! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Stick out your tongue and look in a mirror. See all those tiny bumps? They're called papillae. Some help grip your food while you chew. And some of them hold your taste buds. You have thousands of taste buds! They tell you if food is sweet, salty, sour, bitter, or savory. And taste buds don't last forever. Your body makes new ones every couple of weeks! What's your favorite taste: sweet, salty, or sour?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `What Are the Bumps on Your Tongue? 👅 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (36 chars): `What Are the Bumps on Your Tongue? 👅`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Is Your Tongue Bumpy? — Fun Science & Animal Wonders for Curious Kids!
+The bumps on your tongue are papillae — some help grip food and some hold taste buds, which renew every couple of weeks!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: What's your favorite taste — sweet, salty, or sour?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Is Your Tongue Bumpy?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why is your tongue bumpy?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why is your tongue bumpy?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `kid sticking tongue out funny, human tongue macro taste buds, colorful fruits strawberries lemon, smiling child eating watermelon, ice cream scoop, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `what are the bumps on your tongue, taste buds, tongue, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #048 — Why Do Bananas Curve Like a Smile?
+### Video #048 — Why Are Bananas Curved?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Bananas Curve Like a Smile?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Guy-Male` |
-| **Video Keywords (English)** | `banana bunch tree sunshine, yellow banana peeling close up, tropical fruit plantation, sunny blue sky palm tree, smiling kid eating fruit` |
+| **Video Subject** | `Why Are Bananas Curved?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `banana bunch tree, banana plant, sunlight leaves, banana close up, child smiling` |
+| **Thumbnail Title** | `BANANAS GROW UP!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 72 words ≈ 29s
 ```text
-Why aren't bananas straight like cucumbers? Because bananas undergo a fascinating plant trick called negative geotropism! When bananas first sprout, they grow downward toward the ground. But as they grow, they crave bright sunshine and fight against gravity, turning and growing upward toward the sky! This upward bend toward the sun gives bananas their signature happy smile curve! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Why are bananas curved? It's because of how they grow! Bananas grow in big bunches on banana plants. At first, the baby bananas point down toward the ground. But then they start to turn and grow up, toward the sunlight. That bend makes their curved, smiley shape! Scientists call growing away from the ground negative geotropism. That's a big word! Can you smile like a banana? Show me your biggest banana smile!
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do Bananas Curve Like a Smile? 🍌 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (25 chars): `Why Are Bananas Curved? 🍌`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Do Bananas Curve Like a Smile? — Fun Science & Animal Wonders for Curious Kids!
+Bananas curve because they first point down, then turn to grow up toward the light — that's called negative geotropism!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Can you show your biggest banana smile?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Bananas Curve Like a Smile?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do bananas curve like a smile?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do bananas curve like a smile?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `banana bunch tree sunshine, yellow banana peeling close up, tropical fruit plantation, sunny blue sky palm tree, smiling kid eating fruit, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why are bananas curved, bananas, why bananas are curved, plant science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
 ### Video #049 — Why Can't You Tickle Yourself?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
 | **Video Subject** | `Why Can't You Tickle Yourself?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `kids tickling laughing bed, sibling playful laughing giggles, smiling child happy face, human brain cerebellum diagram, playful family morning` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child laughing tickle, hands tickling feet, brain illustration, family playing laughing, child surprised` |
+| **Thumbnail Title** | `TRY TICKLING YOURSELF!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 70 words ≈ 28s
 ```text
-Try tickling your own foot or ribs right now—nothing happens, right? But if someone else does it, you burst into uncontrollable laughter! Why? Because the back of your brain, called the cerebellum, predicts your exact hand movements before you make them, and cancels out the surprise sensation! Your brain knows your own touch and says: 'I did that, don't react!' Surprise is the secret to tickles! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Try tickling yourself. Nothing happens, right? But when someone else tickles you, you can't stop laughing! Why? Your brain always knows what your own hands are about to do. A part of your brain called the cerebellum predicts the feeling before it happens, so there's no surprise. And tickles need a surprise! When someone else tickles you, your brain can't predict it. Try it right now. Can you tickle yourself?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why You Can't Tickle Yourself! 😂 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (32 chars): `Why Can't You Tickle Yourself? 😂`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Can't You Tickle Yourself? — Fun Science & Animal Wonders for Curious Kids!
+You can't tickle yourself because your brain's cerebellum predicts your own touch — and tickles need surprise!
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: Try it now — can you tickle yourself?
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Can't You Tickle Yourself?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why can't you tickle yourself?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why can't you tickle yourself?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `kids tickling laughing bed, sibling playful laughing giggles, smiling child happy face, human brain cerebellum diagram, playful family morning, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why can't you tickle yourself, tickling, brain facts for kids, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
 
-### Video #050 — Why Do Your Eyes Blink Without You Thinking?
+### Video #050 — Why Do We Blink So Much?
 
-| UI Field (Screenshot) | Value to Enter / Paste |
+| WebUI field | Value |
 | :--- | :--- |
-| **Video Subject** | `Why Do Your Eyes Blink Without You Thinking?` |
-| **Script Language** | `en-US` |
-| **Video Source** | `Pexels` |
-| **Video Transition Mode** | `FadeIn` (Smooth clip transitions) |
-| **Aspect Ratio** | `Portrait 9:16` |
-| **Voiceover Service** | `Azure TTS V1 (Edge TTS)` |
-| **Voice (match language)** | `en-US-Jenny-Female` |
-| **Video Keywords (English)** | `eye blinking slow motion close up, human iris pupil sparkling, child smiling clear blue eyes, splashing clean fresh water, sunny outdoor park` |
+| **Video Subject** | `Why Do We Blink So Much?` |
+| **Voice** | `en-US-EmmaMultilingual-Female` |
+| **Video Keywords** (in script order) | `child eye blinking, eye close up, window wiper rain, dust particles, children staring contest` |
+| **Thumbnail Title** | `BLINK, BLINK!` |
 
-#### 📝 Video Script (Paste into 'Video Script (Optional)' box):
+#### 🎙️ Video Script (paste into 'Video Script (Optional)') — 73 words ≈ 29s
 ```text
-Did you know you blink about fifteen to twenty times every single minute—that's over fourteen thousand times every single day! Why do we blink so much? Every time your eyelids close, they spread a fresh layer of moisture, oils, and protective proteins across your eyes to wash away dust and keep your vision crystal clear! And each blink gives your brain a micro-rest of just a tenth of a second! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault! Has this ever happened to you? Tell us your funny story below! Follow Wonder Vault!
+Blink! You just did it again! Most people blink around fifteen times a minute. That's over ten thousand blinks every day! Why so many? Each blink spreads a thin layer of tears across your eyes, like a tiny window wiper, keeping them wet and washing away dust. Your eyelids also close fast to protect your eyes if something flies toward them. Let's have a staring contest! How long can you go without blinking?
 ```
 
-#### 🎯 YouTube Upload Metadata:
-- **YouTube Title**: `Why Do We Blink 14,000 Times a Day? 👁️ 🍎 #Shorts #KidsScience`
-
-- **YouTube Description**:
+#### 📤 Upload Kit
+- **Title** (27 chars): `Why Do We Blink So Much? 👁️`
+- **Audience**: `Yes, it's made for kids`
+- **Description**:
 ```text
-🍎 Why Do Your Eyes Blink Without You Thinking? — Fun Science & Animal Wonders for Curious Kids!
+You blink about 15 times a minute — over 10,000 times a day! Each blink cleans and wets your eyes like a tiny window wiper.
 
-🌟 Fun Facts for Curious Kids:
-Did you know our world is packed with delightful secrets? From animals that hold hands to giant space storms and dancing rainbows, learning science has never been this exciting!
+👨‍👩‍👧 Ask your child: How long can you go without blinking? Staring contest!
 
-🎈 What You'll Learn:
-• The surprising truth behind Why Do Your Eyes Blink Without You Thinking?
-• Fun, easy-to-understand science for children and families
-• Fascinating animal superpowers and nature marvels
+🔔 A new fun science short every day on @WonderVault-W.
 
-💬 Question for Kids & Parents:
-Has this ever happened to you? Tell us your funny story below! Share your thoughts in the comments below! 👇
-
-🔔 Subscribe to Wonder Vault (@WonderVault-W) for daily cheerful science discoveries, cute animal facts, and learning fun for curious minds!
-🌟 Learn • Explore • Discover 🌟
-
-🔍 Related Searches:
-why do your eyes blink without you thinking?, human body facts for kids, food science for children, human senses, fun anatomy facts, fun science for kids, educational facts for children, curious kids, animal facts for kids, bedtime science, wonder vault
-
-#Shorts #KidsScience #FunFacts #WonderVault #ScienceForKids #DidYouKnow #AnimalsForKids #CuriousKids
+#KidsScience #HumanBody #FunFacts #Shorts
 ```
-
-- **YouTube Tags**: `why do your eyes blink without you thinking?, human body facts for kids, food science for children, human senses, fun anatomy facts, kids science, fun facts for kids, science for children, educational shorts, wonder vault, animal facts for kids, amazing facts`
-- **Pexels Keywords**: `eye blinking slow motion close up, human iris pupil sparkling, child smiling clear blue eyes, splashing clean fresh water, sunny outdoor park, colorful 4k, cheerful bright hd`
-- **Channel**: `@WonderVault-W`
+- **Tags**: `why do we blink so much, blinking, eyes, body science for kids, body facts for kids, food science for kids, kids science, fun facts for kids, educational videos for kids, wonder vault`
+- **Playlist**: `Body & Food Science for Kids`
 
 ---
-

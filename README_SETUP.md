@@ -52,6 +52,10 @@ pexels_api_keys = ["YOUR_PEXELS_API_KEY"]
 
 ## 💡 Best Practices for @WonderVault-W Shorts
 1. **Aspect Ratio**: Select **9:16 (Portrait)** for YouTube Shorts.
-2. **Video Length**: Keep narration between 45–55 seconds for high retention.
-3. **Voice**: Select an expressive, engaging English narrator voice.
-4. **Music**: Choose an atmospheric or curious background music track with volume set around 15–20% so the voice is prominent.
+2. **Video Length**: Keep narration between 25–40 seconds — shorter Shorts get a higher percentage viewed and more replays.
+3. **Hook first**: The first sentence is the hook. No intros, no channel name, no "Did you know".
+4. **Visuals follow the script**: Turn on **Match Visuals to Script Order** and list keywords in the order the script mentions them.
+5. **Voice**: One consistent narrator per channel (e.g. `en-US-AndrewMultilingual-Male`, `te-IN-Mohan (Dynamic & High Energy)`), Voice Speed `1.1`.
+6. **Music**: Background music volume around 15–20% so the voice is prominent.
+7. **Ending**: End on the payoff plus one easy question — no long "please subscribe" outro.
+8. **Ready-made scripts**: See the full reach playbook and upload kits in `100_VIRAL_SCRIPTS_FOR_WONDERVAULT.md` (English), `100_TELUGU_SCIENCE_FACTS_WONDERVAULT.md` (Telugu) and `KIDS_FUN_SCIENCE_FACTS_WONDERVAULT.md` (Kids).

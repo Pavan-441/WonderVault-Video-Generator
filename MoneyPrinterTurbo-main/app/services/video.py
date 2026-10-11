@@ -707,10 +707,14 @@ def get_bgm_file(bgm_type: str = "random", bgm_file: str = ""):
         return resolved_bgm_file
 
     if bgm_type == "random":
-        files = bgm_service.list_bgm_files()
+        # 随机只使用用户上传的音乐：内置歌曲来自 YouTube，会被 Content ID 认领。
+        files = bgm_service.list_uploaded_bgm_files()
         # 当背景音乐目录为空时，直接回退为“不使用 BGM”，避免 random.choice([]) 抛异常。
         if not files:
-            logger.warning("no background music files found")
+            logger.warning(
+                "no uploaded background music found for random BGM; "
+                "upload your own tracks or use Sonilo / ElevenLabs original music"
+            )
             return ""
         return random.choice(files)
 
@@ -1306,6 +1310,63 @@ def subtitle_font_supports_text(font_path: str, text: str) -> bool:
     return _subtitle_font_supports_sample(font_path, sample)
 
 
+# Telugu + Latin in one font (resource/fonts/TenglishSans-NOTICE.md). Preferred
+# fallback for mixed Telugu/English subtitles, matched to the selected weight.
+TENGLISH_FONTS = {"bold": "TenglishSans-Bold.ttf", "regular": "TenglishSans-Regular.ttf"}
+_FONT_EXTENSIONS = (".ttf", ".otf", ".ttc")
+
+
+def _has_complex_script(text: str) -> bool:
+    """True for Indic and other scripts that need HarfBuzz shaping to render correctly."""
+    return any("ऀ" <= ch <= "෿" for ch in str(text or ""))
+
+
+def resolve_subtitle_font(font_path: str, text: str) -> str:
+    """Return ``font_path`` if it can draw ``text``, else a bundled font that can.
+
+    Single-script fonts such as Noto Sans Telugu draw English words in Tenglish
+    subtitles as empty boxes. In that case this switches to Tenglish Sans in the
+    selected weight, then to any bundled font covering every character. Returns
+    the original path when nothing covers the text.
+    """
+    if not font_path or subtitle_font_supports_text(font_path, text):
+        return font_path
+    font_dir = utils.font_dir()
+    weight = "bold" if "bold" in os.path.basename(font_path).lower() else "regular"
+    other = "regular" if weight == "bold" else "bold"
+    candidates = [TENGLISH_FONTS[weight], TENGLISH_FONTS[other]]
+    try:
+        candidates += sorted(f for f in os.listdir(font_dir) if f.lower().endswith(_FONT_EXTENSIONS))
+    except OSError:
+        pass
+    for name in dict.fromkeys(candidates):
+        candidate = os.path.join(font_dir, name)
+        if os.path.isfile(candidate) and subtitle_font_supports_text(candidate, text):
+            if os.name == "nt":
+                candidate = candidate.replace("\\", "/")
+            logger.warning(
+                f"subtitle font '{os.path.basename(font_path)}' cannot draw every character "
+                f"(e.g. English words in Telugu text); using '{name}' instead"
+            )
+            return candidate
+    logger.warning(f"no bundled font can draw every subtitle character; keeping {font_path}")
+    return font_path
+
+
+def warn_if_complex_text_unshaped(text: str) -> bool:
+    """Log a warning when Indic text will be drawn without HarfBuzz shaping."""
+    from PIL import features
+
+    if _has_complex_script(text) and not features.check("raqm"):
+        logger.warning(
+            "Pillow complex text shaping (raqm) is unavailable, so Telugu/Indic subtitles "
+            "will render with broken conjuncts and vowel signs. On Windows keep "
+            "resource/lib/libfribidi-0.dll; on Linux install libfribidi0."
+        )
+        return True
+    return False
+
+
 def generate_video(
     video_path: str,
     audio_path: str,
@@ -1549,6 +1610,12 @@ def generate_video(
             )
 
         if subtitle_path and os.path.exists(subtitle_path):
+            # Tenglish scripts mix Telugu and English; pick a font that covers both
+            # before any TextClip is created, so English words don't become boxes.
+            with open(subtitle_path, encoding="utf-8", errors="ignore") as f:
+                subtitle_text = f.read()
+            font_path = resolve_subtitle_font(font_path, subtitle_text)
+            warn_if_complex_text_unshaped(subtitle_text)
             sub = clip_stack.enter_context(
                 SubtitlesClip(
                     subtitles=subtitle_path,

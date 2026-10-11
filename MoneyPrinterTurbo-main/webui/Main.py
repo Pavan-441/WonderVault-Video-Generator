@@ -45,6 +45,7 @@ from app.models.schema import (
 )
 from app.services import bgm as bgm_service
 from app.services import (
+    ai_music,
     cache_manager,
     llm,
     loomloom,
@@ -54,6 +55,7 @@ from app.services import (
     ofox,
     subtitle,
     video,
+    video_transcript,
     volcengine_seedance,
     voice,
     webui_task,
@@ -7926,7 +7928,19 @@ def _render_subtitle_settings(panel, params):
                     selected_font_path, subtitle_preview_text
                 )
             ):
-                st.warning(tr("Subtitle Font Does Not Support Text"))
+                # 生成时会自动换用能覆盖全部字符的字体（如 Tenglish 文案改用
+                # Tenglish Sans）；只有找不到可用字体时才提示字幕可能缺失。
+                fallback_font = video.resolve_subtitle_font(
+                    selected_font_path, subtitle_preview_text
+                )
+                if fallback_font != selected_font_path:
+                    st.info(
+                        tr("Subtitle Font Auto Fallback").format(
+                            font=os.path.basename(fallback_font)
+                        )
+                    )
+                else:
+                    st.warning(tr("Subtitle Font Does Not Support Text"))
 
             if st.button(
                 tr("Restore Default Subtitle Settings"),
@@ -8381,6 +8395,12 @@ def _render_audio_generator_studio():
     """渲染独立的音频生成与下载工作室。"""
     st.subheader(f"🎙️ {tr('Audio Generator & Downloader')}")
     st.caption(tr("Audio Generator Subtitle"))
+
+    # 视频转文字页面的「发送到音频生成」会先写入 pending 值，这里必须在文本框实例化之前消费。
+    if "audio_studio_script_pending" in st.session_state:
+        st.session_state["audio_studio_script_area"] = st.session_state.pop(
+            "audio_studio_script_pending"
+        )
 
     with st.container(border=True):
         st.write(f"**{tr('Narration Script')}**")
@@ -8906,12 +8926,649 @@ def _render_audio_generator_studio():
                     st.rerun()
 
 
-def _render_thumbnail_studio():
-    """渲染缩略图工坊：支持 16:9 / 9:16、人物抠图叠加、泰卢固语/英语标题排版以及 Google Flow 提示词集成。"""
-    from app.services import thumbnail
+def _render_ai_music_studio():
+    """AI 原创音乐：按随机风格提示词生成纯音乐，保存后即可被随机背景音乐使用。"""
+    st.subheader(f"🎼 {tr('AI Music Studio')}")
+    st.caption(tr("AI Music Studio Subtitle"))
 
+    # 随机风格按钮会写入 pending 值，文本框实例化之前必须先消费。
+    if "ai_music_prompt_pending" in st.session_state:
+        st.session_state["ai_music_prompt"] = st.session_state.pop("ai_music_prompt_pending")
+    if "ai_music_prompt" not in st.session_state:
+        st.session_state["ai_music_prompt"] = ai_music.build_random_prompt()
+
+    key_ready = elevenlabs_music_service.is_enabled()
+    if not key_ready:
+        st.warning(tr("AI Music Key Missing"))
+
+    col_left, col_right = st.columns([1.0, 1.0])
+
+    with col_left:
+        with st.container(border=True):
+            prompt_text = st.text_area(
+                tr("Music Prompt"),
+                height=140,
+                key="ai_music_prompt",
+                help=tr("Music Prompt Help"),
+            )
+            if st.button(
+                f"🎲 {tr('Shuffle Music Style')}",
+                key="ai_music_shuffle_btn",
+                use_container_width=True,
+            ):
+                st.session_state["ai_music_prompt_pending"] = ai_music.build_random_prompt()
+                st.rerun()
+
+            seconds = st.slider(
+                tr("Track Length"),
+                min_value=ai_music.MIN_TRACK_SECONDS,
+                max_value=ai_music.MAX_TRACK_SECONDS,
+                value=ai_music.DEFAULT_TRACK_SECONDS,
+                step=10,
+                key="ai_music_length",
+            )
+            if st.button(
+                f"🎼 {tr('Generate Music')}",
+                type="primary",
+                use_container_width=True,
+                disabled=not key_ready or not prompt_text.strip(),
+                key="ai_music_generate_btn",
+            ):
+                with st.spinner(tr("Generating AI music... This can take a minute.")):
+                    try:
+                        audio_bytes = ai_music.generate_track(prompt_text, seconds)
+                    except ai_music.AiMusicError as exc:
+                        st.error(f"{tr('AI Music Generation Failed')} {exc}")
+                    except Exception:
+                        logger.exception("AI music generation failed")
+                        st.error(tr("AI Music Generation Failed"))
+                    else:
+                        st.session_state["ai_music_result"] = {
+                            "audio": audio_bytes,
+                            "prompt": prompt_text.strip(),
+                            "seconds": seconds,
+                        }
+
+    with col_right:
+        with st.container(border=True):
+            result = st.session_state.get("ai_music_result")
+            if not result:
+                st.info(tr("Generated music will appear here."))
+            else:
+                st.audio(result["audio"], format="audio/mp3")
+                st.caption(
+                    tr("Track Length (seconds)") + f": {result['seconds']}s"
+                )
+                act_cols = st.columns(2)
+                with act_cols[0]:
+                    st.download_button(
+                        f"⬇️ {tr('Download Music (MP3)')}",
+                        data=result["audio"],
+                        file_name="ai-background-music.mp3",
+                        mime="audio/mpeg",
+                        use_container_width=True,
+                        key="ai_music_download_btn",
+                    )
+                with act_cols[1]:
+                    if st.button(
+                        f"💾 {tr('Save to Video Music Library')}",
+                        type="primary",
+                        use_container_width=True,
+                        key="ai_music_save_btn",
+                    ):
+                        try:
+                            ai_music.save_to_bgm_library(
+                                result["audio"], result["prompt"], result["seconds"]
+                            )
+                        except (
+                            ai_music.AiMusicError,
+                            bgm_service.BgmUploadError,
+                            bgm_service.BgmServiceError,
+                        ) as exc:
+                            st.error(f"{tr('AI Music Save Failed')} {exc}")
+                        else:
+                            st.toast(tr("Music Saved To Library"), icon="💾")
+
+
+def _render_video_text_extractor():
+    """视频转文字：上传视频或音频，转写为可编辑文本，再一键送入音频生成与下载。"""
+    st.subheader(f"📝 {tr('Video to Text Extractor')}")
+    st.caption(tr("Video to Text Extractor Subtitle"))
+
+    # 转写结果先写入 pending 键，文本框实例化之后不能直接改它的 session_state。
+    if "video_text_output_pending" in st.session_state:
+        st.session_state["video_text_output"] = st.session_state.pop("video_text_output_pending")
+    if "video_text_output" not in st.session_state:
+        st.session_state["video_text_output"] = ""
+
+    language_options = [
+        (video_transcript.LANGUAGE_AUTO, tr("Video Text Language Auto")),
+        (video_transcript.LANGUAGE_TELUGU_ENGLISH, tr("Video Text Language Telugu English")),
+        (video_transcript.LANGUAGE_TELUGU, tr("Video Text Language Telugu")),
+        (video_transcript.LANGUAGE_ENGLISH, tr("Video Text Language English")),
+    ]
+
+    col_left, col_right = st.columns([1.0, 1.0])
+
+    with col_left:
+        with st.container(border=True):
+            source_file = st.file_uploader(
+                tr("Source Video or Audio"),
+                type=list(video_transcript.VIDEO_TEXT_SOURCE_TYPES),
+                key="video_text_source_uploader",
+                help=tr("Video Text Source Help").format(limit=video_transcript.MAX_VIDEO_TEXT_UPLOAD_MB),
+                # 与服务层 MAX_VIDEO_TEXT_UPLOAD_BYTES 保持一致，避免界面允许选择、提交时才被拒绝。
+                max_upload_size=video_transcript.MAX_VIDEO_TEXT_UPLOAD_MB,
+            )
+            selected_language = st.selectbox(
+                tr("Spoken Language"),
+                options=[opt[0] for opt in language_options],
+                format_func=lambda val: dict(language_options)[val],
+                key="video_text_language",
+                help=tr("Spoken Language Help"),
+            )
+            if st.button(
+                f"🧠 {tr('Extract Text')}",
+                type="primary",
+                use_container_width=True,
+                disabled=source_file is None,
+                key="video_text_extract_btn",
+            ) and source_file is not None:
+                with st.spinner(tr("Extracting speech to text...")):
+                    try:
+                        extracted = video_transcript.extract_text(
+                            source_file.getvalue(), source_file.name, selected_language
+                        )
+                    except video_transcript.VideoTranscriptError as exc:
+                        st.error(f"{tr('Video Text Extraction Failed')} {exc}")
+                    except Exception:
+                        logger.exception("video to text extraction failed")
+                        st.error(tr("Video Text Extraction Failed"))
+                    else:
+                        # 文本框在右列才渲染，这里仍处于本轮渲染前段，可以直接写入其 session_state。
+                        st.session_state["video_text_output"] = extracted
+                        if extracted:
+                            st.toast(tr("Text extracted"), icon="📝")
+                        else:
+                            st.warning(tr("No speech detected"))
+
+    with col_right:
+        with st.container(border=True):
+            st.write(f"**{tr('Extracted Text')}**")
+            extracted_text = st.text_area(
+                tr("Extracted Text"),
+                height=320,
+                key="video_text_output",
+                placeholder=tr("Extracted text will appear here..."),
+                label_visibility="collapsed",
+            )
+            text_value = extracted_text.strip()
+            est_duration = (
+                int(voice.estimate_no_voice_duration(text_value)) if text_value else 0
+            )
+            st.caption(
+                tr("Characters: {chars} | Estimated Duration: ~{duration}s").format(
+                    chars=len(text_value),
+                    duration=est_duration,
+                )
+            )
+
+            act_cols = st.columns(3)
+            with act_cols[0]:
+                if st.button(
+                    f"🎙️ {tr('Send to Audio Generator')}",
+                    type="primary",
+                    use_container_width=True,
+                    disabled=not text_value,
+                    key="video_text_send_audio_btn",
+                ):
+                    st.session_state["audio_studio_script_pending"] = text_value
+                    st.session_state["main_studio_target_tab"] = "audio"
+                    st.toast(tr("Text sent to Audio Generator"), icon="🎙️")
+                    st.rerun()
+            with act_cols[1]:
+                st.download_button(
+                    f"⬇️ {tr('Download Text (TXT)')}",
+                    data=text_value.encode("utf-8"),
+                    file_name="extracted_text.txt",
+                    mime="text/plain",
+                    use_container_width=True,
+                    disabled=not text_value,
+                    key="video_text_download_btn",
+                )
+            with act_cols[2]:
+                if st.button(
+                    f"🗑️ {tr('Clear Text')}",
+                    use_container_width=True,
+                    key="video_text_clear_btn",
+                ):
+                    st.session_state["video_text_output_pending"] = ""
+                    st.rerun()
+
+
+def _render_thumbnail_studio():
+    """渲染缩略图工坊：AI 一键生成成品缩略图（默认），或手动合成背景、抠图与标题。"""
     st.subheader(f"🎨 {tr('Thumbnail Studio')}")
     st.caption(tr("Thumbnail Studio Subtitle"))
+
+    mode_options = [("ai", tr("Thumbnail AI Mode")), ("manual", tr("Thumbnail Manual Mode"))]
+    mode = st.radio(
+        tr("Thumbnail Mode"),
+        options=[opt[0] for opt in mode_options],
+        format_func=lambda val: dict(mode_options)[val],
+        horizontal=True,
+        key="thumb_mode",
+        label_visibility="collapsed",
+    )
+    if mode == "ai":
+        _render_thumbnail_ai()
+    else:
+        _render_thumbnail_manual()
+
+
+GOOGLE_FLOW_URL = "https://labs.google/fx/tools/flow"
+
+
+def _render_thumbnail_ai():
+    """Flow 缩略图：生成可直接粘贴到 Google Flow 的完整提示词，再把 Flow 生成的图片上传回来完成成品。"""
+    from app.services import thumbnail, thumbnail_ai
+
+    col_left, col_right = st.columns([1.0, 1.0])
+
+    with col_left:
+        if "thumb_ai_script_pending" in st.session_state:
+            st.session_state["thumb_ai_script"] = st.session_state.pop("thumb_ai_script_pending")
+        if "thumb_ai_title_pending" in st.session_state:
+            st.session_state["thumb_ai_title"] = st.session_state.pop("thumb_ai_title_pending")
+
+        sync_cols = st.columns([0.75, 0.25])
+        with sync_cols[0]:
+            st.markdown(f"**{tr('Narration Script')}**")
+        with sync_cols[1]:
+            if st.button(
+                f"🔄 {tr('Sync')}",
+                key="thumb_ai_sync_btn",
+                help=tr("Sync Script from Video Studio"),
+            ):
+                vid_script = st.session_state.get("video_script", "")
+                if vid_script:
+                    st.session_state["thumb_ai_script_pending"] = vid_script
+                    st.toast(tr("Script synced from Video Studio"), icon="🔄")
+                    st.rerun()
+
+        ai_script = st.text_area(
+            label=tr("Narration Script"),
+            height=100,
+            key="thumb_ai_script",
+            placeholder=tr("Enter script or topic for thumbnail..."),
+            label_visibility="collapsed",
+        ).strip()
+
+        title_cols = st.columns([0.72, 0.28])
+        with title_cols[0]:
+            ai_title = st.text_input(
+                tr("Thumbnail Title"),
+                key="thumb_ai_title",
+                placeholder="e.g. షాకింగ్ నిజం! or MUST WATCH!",
+                help=tr("Thumbnail Title Help"),
+            ).strip()
+        with title_cols[1]:
+            st.write("")
+            if st.button(f"✨ {tr('Suggest')}", key="thumb_ai_suggest_btn", use_container_width=True):
+                if ai_script:
+                    st.session_state["thumb_ai_title_pending"] = thumbnail.generate_hook_title(ai_script)
+                    st.rerun()
+                else:
+                    st.warning(tr("Narration Script Required"))
+
+        extra_cols = st.columns(2)
+        with extra_cols[0]:
+            ai_subtitle = st.text_input(
+                tr("Thumbnail Secondary Text"),
+                key="thumb_ai_subtitle",
+                help=tr("Thumbnail Secondary Text Help"),
+            ).strip()
+        with extra_cols[1]:
+            ai_badge = st.text_input(
+                tr("Thumbnail Badge Text"),
+                key="thumb_ai_badge",
+                help=tr("Thumbnail Badge Text Help"),
+            ).strip()
+
+        opt_cols = st.columns(2)
+        with opt_cols[0]:
+            ratio_options = [
+                ("16:9", "16:9 (YouTube Landscape)"),
+                ("9:16", "9:16 (Shorts / Reels Vertical)"),
+            ]
+            ai_ratio = st.selectbox(
+                tr("Thumbnail Aspect Ratio"),
+                options=[opt[0] for opt in ratio_options],
+                format_func=lambda val: dict(ratio_options)[val],
+                key="thumb_ai_ratio",
+            )
+        with opt_cols[1]:
+            st.write("")
+            has_photo = st.checkbox(
+                tr("Thumbnail Photo In Flow"),
+                key="thumb_ai_has_photo",
+                help=tr("Thumbnail Photo In Flow Help"),
+            )
+
+        style_keys = list(thumbnail_ai.STYLE_VARIANTS)
+        ai_styles = st.multiselect(
+            tr("Thumbnail AI Styles"),
+            options=style_keys,
+            default=style_keys,
+            format_func=lambda key: tr(thumbnail_ai.STYLE_VARIANTS[key]["label"]),
+            key="thumb_ai_styles",
+        )
+
+        _render_thumbnail_concept_editor(thumbnail_ai, ai_script, ai_title, ai_subtitle, ai_styles)
+
+        planned_concepts = _collect_thumbnail_concepts(thumbnail_ai, ai_styles)
+        concept_texts = [t for c in planned_concepts for t in (c.headline, c.subtitle)]
+        uses_telugu = any(
+            thumbnail.is_telugu(t) for t in (ai_title, ai_subtitle, ai_badge, *concept_texts)
+        )
+        overlay_text = False
+        text_style = "yellow_black"
+        if uses_telugu:
+            text_mode_options = [
+                ("flow", tr("Thumbnail Telugu Text By Flow")),
+                ("overlay", tr("Thumbnail Telugu Text Overlay")),
+            ]
+            text_mode = st.radio(
+                tr("Thumbnail Telugu Text Mode"),
+                options=[opt[0] for opt in text_mode_options],
+                format_func=lambda val: dict(text_mode_options)[val],
+                key="thumb_ai_text_mode",
+                help=tr("Thumbnail Telugu Text Mode Help"),
+            )
+            overlay_text = text_mode == "overlay"
+            if overlay_text:
+                style_options = [
+                    ("yellow_black", "Vibrant Yellow"),
+                    ("fire_red", "Fire Red"),
+                    ("neon_cyan", "Neon Cyan"),
+                    ("crisp_white", "Crisp White"),
+                ]
+                text_style = st.selectbox(
+                    tr("Title Style"),
+                    options=[opt[0] for opt in style_options],
+                    format_func=lambda val: dict(style_options)[val],
+                    key="thumb_ai_text_style",
+                )
+
+        create_clicked = st.button(
+            f"📝 {tr('Create Flow Prompts')}",
+            key="thumb_ai_create_btn",
+            type="primary",
+            use_container_width=True,
+            disabled=not ai_styles,
+        )
+        with st.expander(f"📖 {tr('Thumbnail Flow How To')}"):
+            st.markdown(tr("Thumbnail Flow Steps"))
+
+    with col_right:
+        head_cols = st.columns([0.6, 0.4])
+        with head_cols[0]:
+            st.markdown(f"**{tr('Thumbnail Preview')}**")
+        with head_cols[1]:
+            st.link_button(f"🌊 {tr('Open Google Flow')}", GOOGLE_FLOW_URL, use_container_width=True)
+
+        if create_clicked:
+            if not ai_title and not planned_concepts:
+                st.error(tr("Thumbnail Title Required"))
+            elif not ai_script:
+                st.error(tr("Narration Script Required"))
+            else:
+                st.session_state["thumb_ai_variants"] = thumbnail_ai.plan_variants(
+                    script=ai_script,
+                    title=ai_title,
+                    aspect_ratio=ai_ratio,
+                    subtitle=ai_subtitle,
+                    badge_text=ai_badge,
+                    style_keys=ai_styles,
+                    concepts=planned_concepts or None,
+                    has_reference=has_photo,
+                    overlay_text=overlay_text,
+                    text_style=text_style,
+                )
+                st.session_state["thumb_ai_run_id"] = st.session_state.get("thumb_ai_run_id", 0) + 1
+
+        variants = st.session_state.get("thumb_ai_variants") or []
+        if not variants:
+            st.info(tr("Thumbnail AI Empty State"))
+        for idx, variant in enumerate(variants):
+            _render_thumbnail_variant_card(thumbnail_ai, idx, variant)
+
+
+# 快捷修改：按钮标签走 i18n，写入 Flow 编辑提示词的指令固定为英文，模型理解最稳定。
+THUMBNAIL_QUICK_EDITS = {
+    "Thumbnail Quick Bigger Text": "Make the headline text much bigger and bolder so it reads instantly on a phone.",
+    "Thumbnail Quick Brighter Colors": "Make the colors brighter and more saturated with stronger contrast.",
+    "Thumbnail Quick Add Arrow": "Add one bold red arrow pointing at the most important object.",
+    "Thumbnail Quick New Background": "Replace the background with a different, more dramatic one that fits the topic.",
+    "Thumbnail Quick Stronger Expression": "Make the person's facial expression more surprised and expressive.",
+}
+
+
+def _thumbnail_concept_key(style_key, field):
+    return f"thumb_ai_concept_{style_key}_{field}"
+
+
+def _render_thumbnail_concept_editor(thumbnail_ai, ai_script, ai_title, ai_subtitle, ai_styles):
+    """创意方案：由 LLM 为每种风格规划标题、副标题与画面，生成前可逐项修改。"""
+    pending = st.session_state.pop("thumb_ai_concepts_pending", None)
+    if pending is not None:
+        for concept in pending:
+            for field in ("headline", "subtitle", "scene"):
+                st.session_state[_thumbnail_concept_key(concept.style_key, field)] = getattr(concept, field)
+        st.session_state["thumb_ai_concept_keys"] = [c.style_key for c in pending]
+
+    plan_cols = st.columns([0.6, 0.4])
+    with plan_cols[0]:
+        plan_clicked = st.button(
+            f"🧠 {tr('Plan Thumbnail Concepts')}",
+            key="thumb_ai_plan_btn",
+            use_container_width=True,
+            disabled=not ai_styles,
+            help=tr("Plan Thumbnail Concepts Help"),
+        )
+    with plan_cols[1]:
+        if st.session_state.get("thumb_ai_concept_keys") and st.button(
+            tr("Clear Thumbnail Concepts"), key="thumb_ai_clear_concepts_btn", use_container_width=True
+        ):
+            st.session_state["thumb_ai_concept_keys"] = []
+            st.rerun()
+
+    if plan_clicked:
+        if not ai_script:
+            st.warning(tr("Narration Script Required"))
+        else:
+            with st.spinner(tr("Planning Thumbnail Concepts...")):
+                st.session_state["thumb_ai_concepts_pending"] = thumbnail_ai.generate_concepts(
+                    ai_script, title=ai_title, subtitle=ai_subtitle, style_keys=ai_styles
+                )
+            st.rerun()
+
+    planned_keys = [k for k in st.session_state.get("thumb_ai_concept_keys", []) if k in ai_styles]
+    if planned_keys:
+        st.caption(tr("Thumbnail Concepts Edit Help"))
+    for style_key in planned_keys:
+        label = tr(thumbnail_ai.STYLE_VARIANTS[style_key]["label"])
+        with st.expander(f"🎯 {label}", expanded=False):
+            st.text_input(tr("Thumbnail Concept Headline"), key=_thumbnail_concept_key(style_key, "headline"))
+            st.text_input(tr("Thumbnail Secondary Text"), key=_thumbnail_concept_key(style_key, "subtitle"))
+            st.text_area(
+                tr("Thumbnail Concept Scene"),
+                key=_thumbnail_concept_key(style_key, "scene"),
+                height=90,
+            )
+
+
+def _collect_thumbnail_concepts(thumbnail_ai, ai_styles):
+    """读取已规划并编辑过的方案；没有规划时返回空列表（使用手动标题）。"""
+    concepts = []
+    for style_key in st.session_state.get("thumb_ai_concept_keys", []):
+        if style_key not in ai_styles:
+            continue
+        headline = str(st.session_state.get(_thumbnail_concept_key(style_key, "headline"), "")).strip()
+        if not headline:
+            continue
+        concepts.append(
+            thumbnail_ai.Concept(
+                style_key=style_key,
+                headline=headline,
+                subtitle=str(st.session_state.get(_thumbnail_concept_key(style_key, "subtitle"), "")).strip(),
+                scene=str(st.session_state.get(_thumbnail_concept_key(style_key, "scene"), "")).strip(),
+            )
+        )
+    return concepts
+
+
+def _render_thumbnail_variant_card(thumbnail_ai, idx, variant):
+    """单个风格卡片：① Flow 提示词 ② 上传 Flow 图片 ③ 版本、下载与修改提示词。"""
+    run_id = st.session_state.get("thumb_ai_run_id", 0)
+    base = f"{run_id}_{idx}"
+    version_key = f"thumb_ai_version_{base}"
+    edit_key = f"thumb_ai_edit_{base}"
+    quick_key = f"thumb_ai_quick_{base}"
+    edit_prompt_key = f"thumb_ai_edit_prompt_{base}"
+    edit_instruction_key = f"thumb_ai_edit_instruction_{base}"
+
+    if f"{version_key}_pending" in st.session_state:
+        st.session_state[version_key] = st.session_state.pop(f"{version_key}_pending")
+
+    title = tr(variant.label)
+    if variant.concept and variant.concept.headline:
+        title = f"{title} — “{variant.concept.headline}”"
+    st.markdown(f"### {title}")
+
+    st.markdown(f"**① {tr('Thumbnail Step Copy Prompt')}**")
+    st.caption(
+        tr("Thumbnail Step Copy Prompt Help").format(ratio=variant.aspect_ratio)
+        + (f" {tr('Thumbnail Attach Photo Note')}" if variant.has_reference else "")
+    )
+    st.code(variant.prompt, language=None, wrap_lines=True)
+
+    st.markdown(f"**② {tr('Thumbnail Step Upload')}**")
+    pending_instruction = st.session_state.get(edit_instruction_key, "")
+    upload = st.file_uploader(
+        tr("Thumbnail Upload From Flow"),
+        type=["png", "jpg", "jpeg", "webp"],
+        # 每加入一个版本就换一个 key，上传框清空后可以继续上传下一张。
+        key=f"thumb_ai_upload_{base}_{len(variant.versions)}",
+        help=tr("Thumbnail Upload From Flow Help"),
+        label_visibility="collapsed",
+    )
+    if upload is not None:
+        try:
+            added = thumbnail_ai.add_flow_image(variant, upload.getvalue(), instruction=pending_instruction)
+        except Exception as exc:
+            st.error(f"{tr('Thumbnail Upload Failed')} {exc}")
+        else:
+            if added is not None:
+                st.session_state[f"{version_key}_pending"] = len(variant.versions) - 1
+                st.session_state.pop(edit_instruction_key, None)
+                st.session_state.pop(edit_prompt_key, None)
+                st.rerun()
+
+    if not variant.versions:
+        st.divider()
+        return
+
+    version_options = list(range(len(variant.versions)))
+    selected = len(version_options) - 1
+    if len(version_options) > 1:
+
+        def _version_label(i):
+            instruction = variant.versions[i].instruction
+            if not instruction:
+                return f"v{i + 1}"
+            short = instruction if len(instruction) <= 28 else instruction[:27] + "…"
+            return f"v{i + 1} · {short}"
+
+        if st.session_state.get(version_key) not in version_options:
+            st.session_state[version_key] = selected
+        selected = st.radio(
+            tr("Thumbnail Version"),
+            options=version_options,
+            format_func=_version_label,
+            horizontal=True,
+            key=version_key,
+        )
+    version = variant.versions[selected]
+
+    st.image(version.image_bytes, use_container_width=True)
+    # 以接近 YouTube 信息流的尺寸预览，检查小图下标题是否仍清晰。
+    with st.expander(tr("Thumbnail Feed Size Preview")):
+        st.image(version.image_bytes, width=168 if variant.aspect_ratio == "16:9" else 120)
+    st.download_button(
+        f"⬇️ {tr('Download Thumbnail')} ({version.file_ext.upper()})",
+        data=version.image_bytes,
+        file_name=os.path.basename(version.file_path) or f"thumbnail_{idx + 1}.{version.file_ext}",
+        mime="image/png" if version.file_ext == "png" else "image/jpeg",
+        use_container_width=True,
+        key=f"thumb_ai_download_{base}_{selected}",
+    )
+    st.caption(f"{tr('Thumbnail Saved To')} `{version.file_path}`")
+
+    st.markdown(f"**③ {tr('Thumbnail Step Edit')}**")
+
+    def _apply_quick_edit():
+        choice = st.session_state.get(quick_key)
+        if choice:
+            st.session_state[edit_key] = THUMBNAIL_QUICK_EDITS[choice]
+        st.session_state[quick_key] = None
+
+    st.pills(
+        tr("Thumbnail Quick Edits"),
+        options=list(THUMBNAIL_QUICK_EDITS),
+        format_func=tr,
+        key=quick_key,
+        on_change=_apply_quick_edit,
+    )
+    edit_cols = st.columns([0.68, 0.32])
+    with edit_cols[0]:
+        instruction = st.text_input(
+            tr("Thumbnail Refine Instruction"),
+            key=edit_key,
+            placeholder=tr("Thumbnail Refine Placeholder"),
+            label_visibility="collapsed",
+        ).strip()
+    with edit_cols[1]:
+        if st.button(
+            f"🪄 {tr('Write Flow Edit Prompt')}",
+            key=f"thumb_ai_edit_btn_{base}",
+            use_container_width=True,
+            disabled=not instruction,
+        ):
+            st.session_state[edit_prompt_key] = thumbnail_ai.edit_prompt(variant, instruction)
+            st.session_state[edit_instruction_key] = instruction
+
+    if st.session_state.get(edit_prompt_key):
+        attach_note = tr("Thumbnail Edit Attach Note").format(version=f"v{selected + 1}")
+        if variant.overlay_text:
+            attach_note = tr("Thumbnail Edit Attach Original Note").format(version=f"v{selected + 1}")
+        st.caption(attach_note)
+        st.code(st.session_state[edit_prompt_key], language=None, wrap_lines=True)
+        if variant.overlay_text:
+            st.download_button(
+                f"⬇️ {tr('Download Flow Original')}",
+                data=version.source_bytes,
+                file_name=f"{variant.style_key}_v{selected + 1}_flow_original.png",
+                mime="image/png",
+                use_container_width=True,
+                key=f"thumb_ai_download_source_{base}_{selected}",
+            )
+    st.divider()
+
+
+def _render_thumbnail_manual():
+    """手动合成：上传背景、可选人物抠图，并叠加泰卢固语/英语标题。"""
+    from app.services import thumbnail
 
     col_left, col_right = st.columns([1.1, 0.9])
 
@@ -9147,6 +9804,8 @@ def _render_application():
         f"🎬 {tr('Video Generator')}",
         f"🎙️ {tr('Audio Generator & Downloader')}",
         f"🎨 {tr('Thumbnail Studio')}",
+        f"📝 {tr('Video to Text Extractor')}",
+        f"🎼 {tr('AI Music Studio')}",
     ]
     main_tabs_key = localized_widget_key("main_studio_tabs")
     target_tab = st.session_state.pop("main_studio_target_tab", None)
@@ -9157,7 +9816,9 @@ def _render_application():
     elif target_tab == "thumbnail":
         st.session_state[main_tabs_key] = main_tab_labels[2]
 
-    video_tab, audio_tab, thumb_tab = st.tabs(main_tab_labels, key=main_tabs_key)
+    video_tab, audio_tab, thumb_tab, text_tab, music_tab = st.tabs(
+        main_tab_labels, key=main_tabs_key
+    )
 
     with video_tab:
         _render_video_generator_studio()
@@ -9167,6 +9828,12 @@ def _render_application():
 
     with thumb_tab:
         _render_thumbnail_studio()
+
+    with text_tab:
+        _render_video_text_extractor()
+
+    with music_tab:
+        _render_ai_music_studio()
 
 
 _render_application()
