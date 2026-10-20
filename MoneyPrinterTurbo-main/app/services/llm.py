@@ -1022,6 +1022,84 @@ Please note that you must use English for generating video search terms; Chinese
     return search_terms
 
 
+def generate_visual_alternatives(
+    search_terms: List[str], alternatives_per_term: int = 2
+) -> dict[str, List[str]]:
+    """
+    把库存素材里拍不到的关键词改写成可拍到的近似画面。
+
+    例如 "megalodon open mouth" 在 Pexels 上没有真实素材，改写成
+    "great white shark open mouth" 才能找到相关片段。一次请求处理全部关键词；
+    任何失败都返回空字典，调用方按“没有替代词”处理，不影响视频生成。
+    """
+    terms = [str(term).strip() for term in search_terms if str(term).strip()]
+    if not terms:
+        return {}
+
+    prompt = f"""
+# Role: Stock Footage Search Assistant
+
+## Goal:
+For each keyword below, give {alternatives_per_term} alternative search terms that a stock video
+site like Pexels really has footage of, showing the same idea.
+
+## Rules:
+1. each alternative is 1-3 English words describing something a camera can film: a real animal,
+   object, person, place or action.
+2. replace extinct, microscopic, abstract or invented subjects with the closest real visual,
+   e.g. "megalodon" -> "great white shark", "neurons firing" -> "brain scan",
+   "hypnic jerk" -> "person waking suddenly".
+3. keep the main subject when it is filmable; do not drift to a different topic.
+4. stay in the same setting as the other keywords of this video: if they are about the ocean,
+   alternatives stay underwater (e.g. "green glowing eyes" -> "deep sea fish eyes", never "cat eyes").
+5. avoid ambiguous words that match unrelated footage (say "field mouse animal", not "mouse").
+6. return ONLY a JSON object mapping each original keyword to an array of strings.
+
+## Output Example:
+{{"megalodon open mouth": ["great white shark mouth", "shark teeth closeup"]}}
+
+## Keywords:
+{json.dumps(terms, ensure_ascii=False)}
+""".strip()
+
+    try:
+        response = _generate_response(prompt)
+    except Exception as exc:
+        logger.warning(f"failed to generate visual alternatives: {exc}")
+        return {}
+    if not response or response.startswith("Error:"):
+        logger.warning(f"failed to generate visual alternatives: {response}")
+        return {}
+
+    match = re.search(r"\{.*\}", _strip_code_fence(response), re.DOTALL)
+    if not match:
+        logger.warning("visual alternatives response was not a JSON object")
+        return {}
+    try:
+        payload = json.loads(match.group(0))
+    except ValueError as exc:
+        logger.warning(f"visual alternatives response was not valid JSON: {exc}")
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+
+    alternatives: dict[str, List[str]] = {}
+    lowered = {term.lower(): term for term in terms}
+    for key, values in payload.items():
+        original = lowered.get(str(key).strip().lower())
+        if original is None or not isinstance(values, list):
+            continue
+        cleaned = []
+        for value in values:
+            value = str(value).strip()
+            if value and value.lower() != original.lower() and value not in cleaned:
+                cleaned.append(value)
+        if cleaned:
+            alternatives[original] = cleaned[:alternatives_per_term]
+    logger.info(f"visual alternatives for stock search: {alternatives}")
+    return alternatives
+
+
 # =============================================================================
 # Social publishing metadata
 #

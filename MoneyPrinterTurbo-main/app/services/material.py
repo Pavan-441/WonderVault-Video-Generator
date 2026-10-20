@@ -425,6 +425,101 @@ def _score_pexels_video_relevance(video_dict: dict, search_term: str) -> float:
     return max(score, 1.0)
 
 
+def _stem_word(word: str) -> str:
+    """把简单英文复数还原为单数，让 "hearts"/"heart"、"nerves"/"nerve" 视为同一个词。"""
+    if len(word) > 4 and word.endswith("ies"):
+        return word[:-3] + "y"
+    if len(word) > 3 and word.endswith("s") and not word.endswith("ss"):
+        return word[:-1]
+    return word
+
+
+def _stemmed_anchors(search_term: str) -> set[str]:
+    return {_stem_word(word) for word in _extract_anchor_words(search_term)}
+
+
+def _slug_words_from_url(url: str) -> set[str]:
+    """从 Pexels 页面地址（如 /video/a-woman-eating-ice-cream-123/）提取标题词。"""
+    url_path = str(url or "").lower().split("?")[0].rstrip("/")
+    slug = re.sub(r"-\d+$", "", url_path.split("/")[-1])
+    return {_stem_word(word) for word in re.findall(r"[a-z0-9]+", slug)}
+
+
+def primary_subject_words(search_terms: List[str]) -> frozenset[str]:
+    """
+    找出整组关键词共同的主体词（出现在最多关键词里的词，至少出现两次）。
+
+    例如 "octopus three hearts"、"octopus gills blood"、"deep sea octopus" 的主体
+    是 octopus。只按单个关键词匹配时，"blood" 会拉来吸血鬼片段；有了主体词，
+    含主体词的关键词必须在素材标题里出现主体词。
+    """
+    counts: dict[str, int] = {}
+    for term in search_terms:
+        for word in _stemmed_anchors(term):
+            counts[word] = counts.get(word, 0) + 1
+    if not counts:
+        return frozenset()
+    highest = max(counts.values())
+    if highest < 2:
+        return frozenset()
+    return frozenset(word for word, count in counts.items() if count == highest)
+
+
+def _matches_keyword_subject(
+    item: MaterialInfo, search_term: str, subject_words: frozenset[str]
+) -> bool:
+    """
+    严格判断素材是否真的符合关键词，避免只因一个次要词相同就入选。
+
+    - 关键词含主体词时，素材标题必须出现主体词；
+    - 多词关键词至少命中两个词，或命中的唯一一个词正好是主体词；
+    - 单词关键词命中该词即可。
+    无法取得标题（测试替身或旧缓存）时保留素材，交给原有评分结果。
+    """
+    source_info = item.source_info if isinstance(item.source_info, dict) else {}
+    slug_words = _slug_words_from_url(source_info.get("source_page") or "")
+    mock_slug_keywords = {"example", "video", "portrait", "landscape", "test", "mp4", "pexel"}
+    if not slug_words or slug_words.issubset(mock_slug_keywords):
+        return True
+
+    anchors = _stemmed_anchors(search_term)
+    if not anchors:
+        return True
+
+    def is_hit(anchor: str) -> bool:
+        if anchor in slug_words:
+            return True
+        synonyms = {_stem_word(word) for word in DOMAIN_SYNONYMS.get(anchor, set())}
+        return bool(synonyms & slug_words)
+
+    matched = {anchor for anchor in anchors if is_hit(anchor)}
+    term_subjects = anchors & subject_words
+    if term_subjects and not (matched & term_subjects):
+        return False
+    if len(anchors) == 1:
+        return len(matched) == 1
+    if len(matched) >= 2:
+        return True
+    # 只命中主体词这一种例外，仅限两词关键词。三词以上的关键词若只命中一个词，
+    # 常常是 "night"、"cup" 这类重复出现的泛词，会把夜景街道当成萤火虫画面。
+    return len(anchors) == 2 and len(matched) == 1 and bool(matched & subject_words)
+
+
+# 单个关键词严格匹配到的片段少于这个数时，用可拍摄的替代词补足素材。
+MIN_CLIPS_PER_KEYWORD = 2
+
+
+def _suggest_visual_alternatives(search_terms: List[str]) -> dict[str, List[str]]:
+    """请求 LLM 为关键词给出可拍摄的替代搜索词；任何失败都按没有替代词处理。"""
+    try:
+        from app.services import llm
+
+        return llm.generate_visual_alternatives(list(search_terms))
+    except Exception as exc:
+        logger.warning(f"visual alternative lookup failed, continue without it: {exc}")
+        return {}
+
+
 def search_videos_pexels(
     search_term: str,
     minimum_duration: int,
@@ -1875,6 +1970,43 @@ def download_videos(
     match_script_order: bool = False,
     stock_material_concurrency: int = 1,
 ) -> List[str]:
+    """
+    下载素材。Pexels 先按关键词主体严格筛选；若严格筛选后一个片段都没有，
+    再退回原有的宽松匹配，避免任务因为关键词太冷门而直接失败。
+    """
+    options = dict(
+        task_id=task_id,
+        search_terms=search_terms,
+        source=source,
+        video_aspect=video_aspect,
+        video_concat_mode=video_concat_mode,
+        audio_duration=audio_duration,
+        max_clip_duration=max_clip_duration,
+        match_script_order=match_script_order,
+        stock_material_concurrency=stock_material_concurrency,
+    )
+    video_paths = _download_videos(**options, subject_filter=True)
+    if not video_paths and source == "pexels":
+        logger.warning(
+            "no pexels clips matched the keywords' main subject; "
+            "retrying with the looser keyword match"
+        )
+        video_paths = _download_videos(**options, subject_filter=False)
+    return video_paths
+
+
+def _download_videos(
+    task_id: str,
+    search_terms: List[str],
+    source: str = "pexels",
+    video_aspect: VideoAspect = VideoAspect.portrait,
+    video_concat_mode: VideoConcatMode = VideoConcatMode.random,
+    audio_duration: float = 0.0,
+    max_clip_duration: int = 5,
+    match_script_order: bool = False,
+    stock_material_concurrency: int = 1,
+    subject_filter: bool = True,
+) -> List[str]:
     provider = "pexels"
     remote_search_videos = search_videos_pexels
     if source == "pixabay":
@@ -1884,18 +2016,69 @@ def download_videos(
         provider = "coverr"
         remote_search_videos = search_videos_coverr
 
+    subject_words = primary_subject_words(search_terms)
+    alternatives_cache: dict[str, List[str]] | None = None
+
+    def visual_alternatives(search_term: str) -> List[str]:
+        """首次需要时才请求一次 LLM，为整组关键词生成可拍摄的替代词。"""
+        nonlocal alternatives_cache
+        if alternatives_cache is None:
+            alternatives_cache = _suggest_visual_alternatives(search_terms)
+        return alternatives_cache.get(search_term, [])
+
     def search_videos(
         search_term: str,
         minimum_duration: int,
         video_aspect: VideoAspect,
     ) -> List[MaterialInfo]:
-        return _search_videos_with_cache(
+        items = _search_videos_with_cache(
             provider=provider,
             search_videos=remote_search_videos,
             search_term=search_term,
             minimum_duration=minimum_duration,
             video_aspect=video_aspect,
         )
+        if not subject_filter or provider != "pexels":
+            return items
+        # 在缓存之后筛选：24 小时缓存里按旧规则存下的片段同样会被重新检查。
+        kept = [
+            item
+            for item in items
+            if _matches_keyword_subject(item, search_term, subject_words)
+        ]
+        safe_term = str(search_term).encode("ascii", "backslashreplace").decode("ascii")
+        if len(kept) < len(items):
+            logger.info(
+                f"dropped {len(items) - len(kept)} off-topic pexels clips for '{safe_term}'"
+            )
+        if len(kept) >= MIN_CLIPS_PER_KEYWORD:
+            return kept
+
+        # 关键词在 Pexels 上拍不到（灭绝动物、抽象概念等）时，用 LLM 给出的可拍摄
+        # 近似画面补足素材，替代词同样按严格规则筛选，避免片段太少被循环重复。
+        seen_urls = {item.url for item in kept}
+        for alternative in visual_alternatives(search_term):
+            alt_items = _search_videos_with_cache(
+                provider=provider,
+                search_videos=remote_search_videos,
+                search_term=alternative,
+                minimum_duration=minimum_duration,
+                video_aspect=video_aspect,
+            )
+            rescued = [
+                item
+                for item in alt_items
+                if item.url not in seen_urls
+                and _matches_keyword_subject(item, alternative, frozenset())
+            ]
+            seen_urls.update(item.url for item in rescued)
+            kept.extend(rescued)
+            if rescued:
+                logger.info(
+                    f"rescued {len(rescued)} pexels clips for '{safe_term}' "
+                    f"via alternative '{alternative}'"
+                )
+        return kept
 
     material_directory = config.app.get("material_directory", "").strip()
     if material_directory == "task":

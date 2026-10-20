@@ -20,6 +20,15 @@ initial_prompt = config.whisper.get("initial_prompt", "") or None
 model = None
 
 
+def resolve_model_path() -> str:
+    """优先使用 models/whisper-{size} 本地目录，否则交给 faster-whisper 按名称下载。"""
+    model_path = f"{utils.root_dir()}/models/whisper-{model_size}"
+    model_bin_file = f"{model_path}/model.bin"
+    if not os.path.isdir(model_path) or not os.path.isfile(model_bin_file):
+        model_path = model_size
+    return model_path
+
+
 def get_model():
     """懒加载 Whisper 模型；依赖缺失或加载失败时返回 None。"""
     global model
@@ -27,10 +36,7 @@ def get_model():
         logger.warning("faster_whisper not available, skipping whisper subtitle generation")
         return None
     if not model:
-        model_path = f"{utils.root_dir()}/models/whisper-{model_size}"
-        model_bin_file = f"{model_path}/model.bin"
-        if not os.path.isdir(model_path) or not os.path.isfile(model_bin_file):
-            model_path = model_size
+        model_path = resolve_model_path()
 
         logger.info(
             f"loading model: {model_path}, device: {device}, compute_type: {compute_type}"

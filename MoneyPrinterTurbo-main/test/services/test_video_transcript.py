@@ -30,6 +30,7 @@ class VideoTranscriptTests(unittest.TestCase):
     def _extract(self, whisper, mode, *, filename="clip.mp4"):
         with (
             mock.patch.object(video_transcript, "_extract_audio", side_effect=_fake_extract_audio),
+            mock.patch.object(video_transcript, "_get_gpu_model", return_value=None),
             mock.patch.object(subtitle, "get_model", return_value=whisper),
         ):
             return video_transcript.extract_text(b"video-bytes", filename, mode)
@@ -106,6 +107,7 @@ class VideoTranscriptTests(unittest.TestCase):
     def test_missing_whisper_model_raises_readable_error(self):
         with (
             mock.patch.object(video_transcript, "_extract_audio", side_effect=_fake_extract_audio),
+            mock.patch.object(video_transcript, "_get_gpu_model", return_value=None),
             mock.patch.object(subtitle, "get_model", return_value=None),
         ):
             with self.assertRaises(video_transcript.VideoTranscriptError) as ctx:
@@ -137,6 +139,7 @@ class VideoTranscriptTests(unittest.TestCase):
 
         with (
             mock.patch.object(video_transcript, "_extract_audio", side_effect=_record_extract),
+            mock.patch.object(video_transcript, "_get_gpu_model", return_value=None),
             mock.patch.object(subtitle, "get_model", return_value=whisper),
         ):
             video_transcript.extract_text(b"video", "clip.mp4", video_transcript.LANGUAGE_AUTO)
@@ -144,6 +147,63 @@ class VideoTranscriptTests(unittest.TestCase):
         self.assertEqual(len(seen_paths), 2)
         for path in seen_paths:
             self.assertFalse(os.path.exists(path))
+
+
+class _FailingWhisper:
+    """模拟 CUDA 运行库缺失：加载或转写时抛出 RuntimeError。"""
+
+    def transcribe(self, *_args, **_kwargs):
+        raise RuntimeError("Library cublas64_12.dll is not found or cannot be loaded")
+
+
+class GpuTranscriptionTests(unittest.TestCase):
+    def setUp(self):
+        for name, value in (("_gpu_model", None), ("_gpu_unavailable", False)):
+            patcher = mock.patch.object(video_transcript, name, value)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+    def test_gpu_model_is_used_without_context_carryover(self):
+        gpu = _FakeWhisper(["On the GPU."])
+        cpu = _FakeWhisper(["On the CPU."])
+
+        with (
+            mock.patch.object(video_transcript, "_extract_audio", side_effect=_fake_extract_audio),
+            mock.patch.object(video_transcript, "_get_gpu_model", return_value=gpu),
+            mock.patch.object(subtitle, "get_model", return_value=cpu) as cpu_loader,
+        ):
+            text = video_transcript.extract_text(b"video", "clip.mp4", video_transcript.LANGUAGE_AUTO)
+
+        self.assertEqual(text, "On the GPU.")
+        cpu_loader.assert_not_called()
+        kwargs = gpu.calls[0][1]
+        self.assertEqual(kwargs["beam_size"], 5)
+        self.assertIs(kwargs["condition_on_previous_text"], False)
+
+    def test_gpu_runtime_error_retries_on_cpu(self):
+        cpu = _FakeWhisper(["Recovered on the CPU."])
+
+        with (
+            mock.patch.object(video_transcript, "_extract_audio", side_effect=_fake_extract_audio),
+            mock.patch.object(video_transcript, "_get_gpu_model", return_value=_FailingWhisper()),
+            mock.patch.object(subtitle, "get_model", return_value=cpu),
+        ):
+            text = video_transcript.extract_text(b"video", "clip.mp4", video_transcript.LANGUAGE_AUTO)
+
+        self.assertEqual(text, "Recovered on the CPU.")
+        self.assertIsNone(video_transcript._gpu_model)
+        self.assertTrue(video_transcript._gpu_unavailable)
+
+    def test_gpu_load_failure_is_remembered_and_skipped(self):
+        with (
+            mock.patch.object(video_transcript, "_register_cuda_dll_dirs"),
+            mock.patch.object(video_transcript, "WhisperModel", side_effect=OSError("no CUDA")) as loader,
+        ):
+            self.assertIsNone(video_transcript._get_gpu_model())
+            self.assertIsNone(video_transcript._get_gpu_model())
+
+        self.assertEqual(loader.call_count, 1)
+        self.assertTrue(video_transcript._gpu_unavailable)
 
 
 if __name__ == "__main__":

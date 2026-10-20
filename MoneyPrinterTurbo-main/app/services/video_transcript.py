@@ -3,14 +3,26 @@
 输出的文本用于「音频生成与下载」里的旁白文案，因此保留标点，不做字幕式切分。
 """
 
+import glob
 import os
 import subprocess
+import sys
 import tempfile
 
 from loguru import logger
 
 from app.services import subtitle
 from app.utils import utils
+
+try:
+    from faster_whisper import WhisperModel
+except ImportError:
+    WhisperModel = None
+
+# GPU 上使用 float16 权重与 int8 计算，显存占用远低于 float16，适合 4GB 显存的显卡。
+GPU_COMPUTE_TYPE = "int8_float16"
+_gpu_model = None
+_gpu_unavailable = False
 
 LANGUAGE_AUTO = "auto"
 LANGUAGE_TELUGU_ENGLISH = "te_en"
@@ -97,6 +109,67 @@ def _extract_audio(media_path: str, wav_path: str) -> None:
         raise VideoTranscriptError("No readable audio track was found in this file")
 
 
+def _register_cuda_dll_dirs() -> None:
+    """Windows 上让 CTranslate2 找到 pip 安装的 CUDA 运行库（cuBLAS、cuDNN）。"""
+    if not hasattr(os, "add_dll_directory"):
+        return
+    for entry in sys.path:
+        for bin_dir in glob.glob(os.path.join(entry, "nvidia", "*", "bin")):
+            os.add_dll_directory(bin_dir)
+            os.environ["PATH"] = bin_dir + os.pathsep + os.environ.get("PATH", "")
+
+
+def _get_gpu_model():
+    """加载 GPU 版 Whisper 模型并缓存；CUDA 不可用时返回 None，之后不再重试。"""
+    global _gpu_model, _gpu_unavailable
+    if _gpu_unavailable:
+        return None
+    if _gpu_model is None:
+        try:
+            _register_cuda_dll_dirs()
+            _gpu_model = WhisperModel(
+                subtitle.resolve_model_path(),
+                device="cuda",
+                compute_type=GPU_COMPUTE_TYPE,
+            )
+            logger.info("video text transcription uses the GPU")
+        except Exception as exc:
+            logger.warning(f"GPU transcription unavailable, falling back to CPU: {exc}")
+            _gpu_unavailable = True
+            return None
+    return _gpu_model
+
+
+def _transcribe(wav_path: str, language: str | None, prompt: str | None):
+    """优先用 GPU 转写；GPU 运行失败时自动改用 CPU 重试，结果始终返回分段列表。"""
+    global _gpu_model, _gpu_unavailable
+    options = dict(
+        beam_size=5,
+        vad_filter=True,
+        vad_parameters=dict(min_silence_duration_ms=500),
+        language=language,
+        # 关闭上下文续写：否则长音频中容易重复同一句，导致文字循环。
+        condition_on_previous_text=False,
+        **({"initial_prompt": prompt} if prompt else {}),
+    )
+
+    gpu_model = _get_gpu_model()
+    if gpu_model is not None:
+        try:
+            segments, info = gpu_model.transcribe(wav_path, **options)
+            return list(segments), info
+        except RuntimeError as exc:
+            logger.warning(f"GPU transcription failed, retrying on CPU: {exc}")
+            _gpu_model = None
+            _gpu_unavailable = True
+
+    cpu_model = subtitle.get_model()
+    if cpu_model is None:
+        raise VideoTranscriptError("Speech recognition is unavailable. Check the Whisper setup.")
+    segments, info = cpu_model.transcribe(wav_path, **options)
+    return list(segments), info
+
+
 def extract_text(media_bytes: bytes, filename: str, language_mode: str = LANGUAGE_AUTO) -> str:
     """把视频或音频里的语音转写为一段文本；没有可识别语音时返回空字符串。"""
     if not isinstance(media_bytes, bytes) or not media_bytes:
@@ -119,22 +192,9 @@ def extract_text(media_bytes: bytes, filename: str, language_mode: str = LANGUAG
 
         _extract_audio(media_path, wav_path)
 
-        whisper_model = subtitle.get_model()
-        if whisper_model is None:
-            raise VideoTranscriptError(
-                "Speech recognition is unavailable. Check the Whisper setup."
-            )
-
         # 混合语言模式使用自己的提示词；其它模式沿用 config.toml 里的 whisper.initial_prompt。
         effective_prompt = prompt or subtitle.initial_prompt
-        segments, info = whisper_model.transcribe(
-            wav_path,
-            beam_size=5,
-            vad_filter=True,
-            vad_parameters=dict(min_silence_duration_ms=500),
-            language=language,
-            **({"initial_prompt": effective_prompt} if effective_prompt else {}),
-        )
+        segments, info = _transcribe(wav_path, language, effective_prompt)
         # 复用 Whisper 原始分段文本，保留句号、问号等标点，适合直接作为旁白文案。
         parts = [segment.text.strip() for segment in segments if segment.text.strip()]
 

@@ -18,6 +18,12 @@ class TestMaterialTlsVerification(unittest.TestCase):
     def setUp(self):
         self.original_app_config = dict(config.app)
         self.original_proxy_config = dict(config.proxy)
+        # 片段不足时会请求 LLM 生成替代关键词；单元测试不能访问真实 LLM。
+        alternatives_patcher = patch.object(
+            material, "_suggest_visual_alternatives", return_value={}
+        )
+        alternatives_patcher.start()
+        self.addCleanup(alternatives_patcher.stop)
 
     def tearDown(self):
         config.app.clear()
