@@ -332,6 +332,14 @@ ENGLISH_FALLBACK_KEYS = frozenset(
         "YouTube Kit Pinned Comment",
         "YouTube Kit Kids Note",
         "Download YouTube Kit",
+        "Voiceover Settings",
+        "Enable Voiceover",
+        "Enable Voiceover Help",
+        "Voiceover Disabled Notice",
+        "Background Music Settings",
+        "Enable Background Music",
+        "Enable Background Music Help",
+        "Background Music Disabled Notice",
     }
 )
 FORMAT_PLACEHOLDER_PATTERN = re.compile(r"(?<!\{)\{([a-zA-Z_][a-zA-Z0-9_]*)\}(?!\})")

@@ -399,6 +399,29 @@ def _saved_ui_bool(key, default):
     return default
 
 
+def _saved_voiceover_enabled():
+    """Voiceover toggle. Older configs had one "Enable Audio" switch plus a "none" voiceover mode."""
+    if "voiceover_enabled" in config.ui:
+        return _saved_ui_bool("voiceover_enabled", True)
+    if not _saved_ui_bool("audio_enabled", True):
+        return False
+    saved_voice_mode = config.ui.get("voice_mode")
+    if saved_voice_mode in {VOICE_MODE_TTS, VOICE_MODE_UPLOAD}:
+        return True
+    if saved_voice_mode == VOICE_MODE_NONE:
+        return False
+    return config.ui.get("tts_server") != voice.NO_VOICE_NAME
+
+
+def _saved_bgm_enabled():
+    """Background music toggle. Older configs used an empty music source for "no music"."""
+    if "bgm_enabled" in config.ui:
+        return _saved_ui_bool("bgm_enabled", True)
+    if not _saved_ui_bool("audio_enabled", True):
+        return False
+    return bool(config.ui.get("bgm_type", "random"))
+
+
 def _saved_ui_color(key, default):
     """只把标准六位十六进制颜色传给 Streamlit color picker。"""
     value = str(config.ui.get(key, default) or "").strip()
@@ -666,7 +689,8 @@ def _initialize_session_state():
             "elevenlabs_music_prompt",
             max_length=elevenlabs_music_service.MAX_PROMPT_LENGTH,
         ),
-        "audio_enabled_toggle": _saved_ui_bool("audio_enabled", True),
+        "voiceover_enabled_toggle": _saved_voiceover_enabled(),
+        "bgm_enabled_toggle": _saved_bgm_enabled(),
         "subtitle_enabled_checkbox": _saved_ui_bool("subtitle_enabled", True),
         "stroke_color_picker": _saved_ui_color("stroke_color", "#000000"),
         "stroke_width_slider": _saved_ui_number(
@@ -1554,14 +1578,21 @@ def _apply_restored_params(params):
         voice_mode = VOICE_MODE_NONE
     else:
         voice_mode = VOICE_MODE_TTS
-    _set_stable_widget_value("voice_mode_control", voice_mode)
+    audio_enabled = params.get("audio_enabled", True) is not False
+    st.session_state["voiceover_enabled_toggle"] = (
+        audio_enabled and voice_mode != VOICE_MODE_NONE
+    )
+    if voice_mode != VOICE_MODE_NONE:
+        _set_stable_widget_value("voice_mode_control", voice_mode)
     if tts_server != voice.NO_VOICE_NAME:
         _set_stable_widget_value("tts_server_select", tts_server)
         _set_stable_widget_value(f"speech_synthesis_select_{tts_server}", voice_name)
     _set_stable_widget_value("voice_volume_select", params.get("voice_volume", 1.0))
     _set_stable_widget_value("voice_rate_select", params.get("voice_rate", 1.0))
     bgm_type = params.get("bgm_type") or ""
-    _set_stable_widget_value("bgm_type_select", bgm_type)
+    st.session_state["bgm_enabled_toggle"] = audio_enabled and bool(bgm_type)
+    if bgm_type:
+        _set_stable_widget_value("bgm_type_select", bgm_type)
     _set_stable_widget_value("bgm_volume_select", params.get("bgm_volume", 0.2))
     if bgm_type == "preset" and params.get("bgm_file"):
         # 预设歌曲控件使用文件名作为稳定业务值。历史任务可能保存绝对路径或
@@ -5608,6 +5639,8 @@ def _render_metaso_minimax_video_settings(params):
         localized_widget_key("voice_mode_control"),
         config.ui.get("voice_mode"),
     )
+    if not st.session_state.get("voiceover_enabled_toggle", True):
+        voice_mode = VOICE_MODE_NONE
     if voice_mode == VOICE_MODE_UPLOAD:
         # 视频设置渲染在音频设置之前，此时无法可靠读取本轮新上传文件的实际
         # 时长。上传模式不再展示按脚本文字推算的数字，避免用户误以为一个
@@ -6590,9 +6623,7 @@ def _render_background_music_settings(params, elevenlabs_api_key_rendered=False)
     """渲染背景音乐来源与音量设置，并返回本次待保存的上传文件。"""
     uploaded_bgm_file = None
     previous_bgm_type = st.session_state.get("last_rendered_bgm_type")
-    st.divider()
     bgm_options = [
-        (tr("No Background Music"), ""),
         (tr("Random Background Music"), "random"),
         (tr("Preset Song"), "preset"),
         (tr("Custom Background Music"), "custom"),
@@ -6894,35 +6925,20 @@ def _render_background_music_settings(params, elevenlabs_api_key_rendered=False)
 
 
 def _render_audio_settings(panel, params):
-    """渲染音频设置并返回上传音频与当前配音模式。"""
+    """渲染配音和背景音乐两个独立卡片，返回上传音频与当前配音模式。"""
     with panel:
         with st.container(border=True):
-            st.write(tr("Audio Settings"))
+            st.write(tr("Voiceover Settings"))
 
             st.session_state.setdefault(
-                "audio_enabled_toggle",
-                _saved_ui_bool("audio_enabled", True),
+                "voiceover_enabled_toggle", _saved_voiceover_enabled()
             )
-            audio_enabled = st.toggle(
-                tr("Enable Audio"),
-                key="audio_enabled_toggle",
-                help=tr("Enable Audio Help"),
+            voiceover_enabled = st.toggle(
+                tr("Enable Voiceover"),
+                key="voiceover_enabled_toggle",
+                help=tr("Enable Voiceover Help"),
             )
-            _set_runtime_config("ui", "audio_enabled", audio_enabled)
-            params.audio_enabled = audio_enabled
-
-            if not audio_enabled:
-                st.info(
-                    tr(
-                        "Audio generation is disabled. Video will be generated with visual footage only."
-                    )
-                )
-                params.voice_name = voice.NO_VOICE_NAME
-                params.voice_volume = 0.0
-                params.voice_rate = 1.0
-                params.bgm_type = "none"
-                params.bgm_volume = 0.0
-                return None, None, VOICE_MODE_NONE
+            _set_runtime_config("ui", "voiceover_enabled", voiceover_enabled)
 
             # 配音方式是音频设置的一级状态，负责明确区分自动配音、用户上传和无配音。
             # 旧配置没有 voice_mode 时，根据原 tts_server 的无配音哨兵保持兼容。
@@ -6938,21 +6954,25 @@ def _render_audio_settings(panel, params):
                     if saved_tts_server == voice.NO_VOICE_NAME
                     else VOICE_MODE_TTS
                 )
-            voice_mode_options = [VOICE_MODE_TTS, VOICE_MODE_UPLOAD, VOICE_MODE_NONE]
-            voice_mode_labels = {
-                VOICE_MODE_TTS: tr("Automatic Voiceover"),
-                VOICE_MODE_UPLOAD: tr("Upload Voiceover"),
-                VOICE_MODE_NONE: tr("No Voiceover"),
-            }
-            voice_mode = stable_segmented_control(
-                tr("Voiceover Mode"),
-                options=voice_mode_options,
-                default_value=saved_voice_mode,
-                key="voice_mode_control",
-                format_func=lambda value: voice_mode_labels[value],
-                width="stretch",
-            )
-            _set_runtime_config("ui", "voice_mode", voice_mode)
+            # "No voiceover" is the toggle above; the mode only picks how the voice is made.
+            if voiceover_enabled:
+                voice_mode_options = [VOICE_MODE_TTS, VOICE_MODE_UPLOAD]
+                voice_mode_labels = {
+                    VOICE_MODE_TTS: tr("Automatic Voiceover"),
+                    VOICE_MODE_UPLOAD: tr("Upload Voiceover"),
+                }
+                voice_mode = stable_segmented_control(
+                    tr("Voiceover Mode"),
+                    options=voice_mode_options,
+                    default_value=saved_voice_mode,
+                    key="voice_mode_control",
+                    format_func=lambda value: voice_mode_labels[value],
+                    width="stretch",
+                )
+                _set_runtime_config("ui", "voice_mode", voice_mode)
+            else:
+                voice_mode = VOICE_MODE_NONE
+                st.caption(tr("Voiceover Disabled Notice"))
             tts_mode_enabled = voice_mode == VOICE_MODE_TTS
 
             # Provider 下拉只负责选择自动配音服务；无配音已经由上方模式控制，
@@ -7645,9 +7665,37 @@ def _render_audio_settings(panel, params):
                         ):
                             st.session_state.pop("staged_custom_audio_file", None)
                             st.rerun()
-            uploaded_bgm_file = _render_background_music_settings(
-                params,
-                elevenlabs_api_key_rendered=elevenlabs_api_key_rendered,
+
+        with st.container(border=True):
+            st.write(tr("Background Music Settings"))
+            st.session_state.setdefault("bgm_enabled_toggle", _saved_bgm_enabled())
+            bgm_enabled = st.toggle(
+                tr("Enable Background Music"),
+                key="bgm_enabled_toggle",
+                help=tr("Enable Background Music Help"),
+            )
+            _set_runtime_config("ui", "bgm_enabled", bgm_enabled)
+            uploaded_bgm_file = None
+            if bgm_enabled:
+                uploaded_bgm_file = _render_background_music_settings(
+                    params,
+                    elevenlabs_api_key_rendered=elevenlabs_api_key_rendered,
+                )
+            else:
+                # 关闭时只影响本次任务，配置里保留上次的音乐来源和音量。
+                params.bgm_type = ""
+                params.bgm_volume = 0.0
+                st.session_state["last_rendered_bgm_type"] = ""
+                st.caption(tr("Background Music Disabled Notice"))
+
+        # 两者都关闭时输出无音轨的视频；任一开启都保留音轨。
+        params.audio_enabled = voiceover_enabled or bgm_enabled
+        _set_runtime_config("ui", "audio_enabled", params.audio_enabled)
+        if not params.audio_enabled:
+            st.info(
+                tr(
+                    "Audio generation is disabled. Video will be generated with visual footage only."
+                )
             )
     return uploaded_audio_file, uploaded_bgm_file, voice_mode
 
@@ -8944,7 +8992,8 @@ def _render_audio_generator_studio():
                 ):
                     st.session_state["staged_custom_audio_file"] = generated_data["file_path"]
                     _set_runtime_config("ui", "audio_enabled", True)
-                    st.session_state["audio_enabled_toggle"] = True
+                    _set_runtime_config("ui", "voiceover_enabled", True)
+                    st.session_state["voiceover_enabled_toggle"] = True
                     _set_runtime_config("ui", "voice_mode", VOICE_MODE_UPLOAD)
                     st.session_state["voice_mode_control"] = VOICE_MODE_UPLOAD
                     st.session_state[localized_widget_key("voice_mode_control")] = VOICE_MODE_UPLOAD

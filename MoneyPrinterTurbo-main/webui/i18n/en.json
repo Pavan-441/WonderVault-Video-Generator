@@ -773,6 +773,14 @@
     "YouTube Kit Playlist Suggestion": "Playlist",
     "YouTube Kit Pinned Comment": "Pinned Comment",
     "YouTube Kit Kids Note": "For kids' videos, set \"Made for kids\" in YouTube Studio. Comments are turned off on those videos, so there is no pinned comment.",
-    "Download YouTube Kit": "Download Kit (.md)"
+    "Download YouTube Kit": "Download Kit (.md)",
+    "Voiceover Settings": "**Voiceover**",
+    "Enable Voiceover": "Enable Voiceover",
+    "Enable Voiceover Help": "Turn off for a video without narration. Background music still plays if it is on.",
+    "Voiceover Disabled Notice": "No voiceover. The video length follows the script's estimated reading time, and subtitles still follow the script.",
+    "Background Music Settings": "**Background Music**",
+    "Enable Background Music": "Enable Background Music",
+    "Enable Background Music Help": "Turn off for a video without music. The voiceover is not affected.",
+    "Background Music Disabled Notice": "No background music. Your music source and volume are kept for next time."
   }
 }

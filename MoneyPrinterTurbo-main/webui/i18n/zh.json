@@ -773,6 +773,14 @@
     "YouTube Kit Playlist Suggestion": "播放列表",
     "YouTube Kit Pinned Comment": "置顶评论",
     "YouTube Kit Kids Note": "儿童视频请在 YouTube Studio 中设置为“面向儿童”。此类视频会关闭评论，因此没有置顶评论。",
-    "Download YouTube Kit": "下载发布素材 (.md)"
+    "Download YouTube Kit": "下载发布素材 (.md)",
+    "Voiceover Settings": "**配音**",
+    "Enable Voiceover": "启用配音",
+    "Enable Voiceover Help": "关闭后视频没有旁白；若背景音乐开启，仍会播放音乐。",
+    "Voiceover Disabled Notice": "无配音。视频时长按文案预计朗读时间计算，字幕仍按文案生成。",
+    "Background Music Settings": "**背景音乐**",
+    "Enable Background Music": "启用背景音乐",
+    "Enable Background Music Help": "关闭后视频没有背景音乐，配音不受影响。",
+    "Background Music Disabled Notice": "无背景音乐。音乐来源和音量会保留，下次开启时继续使用。"
   }
 }

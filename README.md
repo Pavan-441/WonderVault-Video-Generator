@@ -22,6 +22,7 @@ The WebUI has six studios, each in its own tab:
 Other highlights:
 
 - **Telugu & Tenglish support** — Telugu fonts, Tenglish subtitles, and spoken-number normalisation (years and numbers read out as words). Subtitle wrapping keeps Telugu vowel signs attached to their letters, and `---` / `***` separator lines in a script don't throw off subtitle timing.
+- **Separate voiceover and music switches** — make music-only, voice-only or silent videos.
 - **Image Motion** — for local or AI-generated images, choose **Slow Zoom** (default) or **Static** in Video Settings. Also available as `--image-motion static|zoom` in the CLI and `image_motion` in the API. Transparent PNGs, rotated phone photos, CMYK and grayscale images render correctly.
 - **Viral script tuning** — hook-first scripts, audience engagement lines and dynamic calls to action.
 - **Concurrency controls** — tune parallel downloads and rendering to match your PC.

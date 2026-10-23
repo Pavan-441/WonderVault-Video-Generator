@@ -63,6 +63,7 @@ To use your own Google Flow images instead, set **Video Source** to **Local file
 ### 3. Voiceover
 - **Edge TTS** (free, no key): human-like voices such as `en-US-ChristopherNeural`, `en-US-JennyNeural` or `te-IN-MohanNeural`.
 - **Gemini TTS**: uses your Gemini API key. Pick it under **Voiceover Service** in the WebUI.
+- **Voiceover** and **Background Music** have separate on/off switches in the WebUI: turn the voiceover off for a music-only video, the music off for a voice-only video, or both off for a silent one.
 
 ### 4. Subtitles
 Subtitles are generated locally on your PC. By default they are timed from the voiceover and the script:
