@@ -36,6 +36,7 @@ from app.models.llm_provider import (
     normalize_provider_override,
 )
 from app.models.schema import (
+    ImageMotion,
     MaterialInfo,
     VideoAspect,
     VideoConcatMode,
@@ -340,10 +341,11 @@ def _save_runtime_config():
     return saved
 
 
-def _saved_ui_choice(key, options, default):
+def _saved_ui_choice(key, options, default, section=None):
     """读取一个持久化选择，并把旧配置或手工编辑的非法值降级为默认值。"""
     options = list(options)
-    saved = config.ui.get(key, default)
+    section = config.ui if section is None else section
+    saved = section.get(key, default)
     numeric_default = isinstance(default, (int, float)) and not isinstance(
         default, bool
     )
@@ -1518,6 +1520,9 @@ def _apply_restored_params(params):
     _set_stable_widget_value(
         "video_fit_mode_select",
         params.get("video_fit_mode") or VideoFitMode.cover.value,
+    )
+    _set_stable_widget_value(
+        "image_motion_select", params.get("image_motion") or ImageMotion.zoom.value
     )
     _set_stable_widget_value(
         "video_clip_duration_select", params.get("video_clip_duration", 3)
@@ -5348,6 +5353,28 @@ def _render_video_settings(panel, params):
             _set_runtime_config(
                 "ui", "video_fit_mode", params.video_fit_mode.value
             )
+
+            if params.video_source in {"local", "openai_image"}:
+                image_motion_labels = {
+                    ImageMotion.static.value: tr("Static Image"),
+                    ImageMotion.zoom.value: tr("Slow Zoom"),
+                }
+                params.image_motion = ImageMotion(
+                    stable_selectbox(
+                        tr("Image Motion"),
+                        options=list(image_motion_labels),
+                        default_value=_saved_ui_choice(
+                            "image_motion", list(image_motion_labels), ImageMotion.zoom.value,
+                            # 生成任务持锁时，切换语言或素材来源会重建控件；
+                            # 此时必须恢复尚未落盘的最新选择，不能写回旧配置值。
+                            section=config.snapshot_config_with_pending(config.ui),
+                        ),
+                        key="image_motion_select",
+                        format_func=image_motion_labels.get,
+                        help=tr("Image Motion Help"),
+                    )
+                )
+                _set_runtime_config("ui", "image_motion", params.image_motion.value)
 
             # MiniMax H3 的远端时长范围是 4～15 秒。选择秘塔时使用完整能力
             # 范围，既避免 2/3 秒被按 4 秒计费，也让 WebUI 与 CLI、服务层一致。
@@ -9746,6 +9773,192 @@ def _render_thumbnail_manual():
             st.info(tr("Upload a background image and click Generate Thumbnail to see the result."))
 
 
+def _render_youtube_kit_studio():
+    """YouTube Kit：根据脚本生成可直接粘贴的标题、完整描述、标签、关键词和话题标签。"""
+    from app.services import youtube_kit
+
+    st.subheader(f"📺 {tr('YouTube Kit')}")
+    st.caption(tr("YouTube Kit Subtitle"))
+
+    # 同步按钮先写入 pending 键：文本框实例化之后不能直接改它的 session_state。
+    for key in ("yt_kit_script", "yt_kit_subject"):
+        pending_key = f"{key}_pending"
+        if pending_key in st.session_state:
+            st.session_state[key] = st.session_state.pop(pending_key)
+    if "yt_kit_channel" not in st.session_state:
+        st.session_state["yt_kit_channel"] = (
+            config.ui.get("youtube_kit_channel") or youtube_kit.DEFAULT_CHANNEL
+        )
+
+    col_left, col_right = st.columns([1.0, 1.25])
+
+    with col_left:
+        header_cols = st.columns([0.75, 0.25])
+        with header_cols[0]:
+            st.markdown(f"**{tr('Narration Script')}**")
+        with header_cols[1]:
+            if st.button(
+                f"🔄 {tr('Sync')}",
+                key="yt_kit_sync_btn",
+                help=tr("Sync Script from Video Studio"),
+            ):
+                video_script = st.session_state.get("video_script", "")
+                video_subject = st.session_state.get("video_subject", "")
+                if video_script or video_subject:
+                    st.session_state["yt_kit_script_pending"] = video_script
+                    st.session_state["yt_kit_subject_pending"] = video_subject
+                    st.toast(tr("Script synced from Video Studio"), icon="🔄")
+                    st.rerun()
+                else:
+                    st.warning(tr("No script found in Video Studio"))
+
+        script = st.text_area(
+            label=tr("Narration Script"),
+            height=220,
+            key="yt_kit_script",
+            placeholder=tr("YouTube Kit Script Placeholder"),
+            label_visibility="collapsed",
+        ).strip()
+        subject = st.text_input(tr("Video Subject"), key="yt_kit_subject").strip()
+
+        language_labels = {
+            "auto": tr("YouTube Kit Language Auto"),
+            "english": "English",
+            "telugu": tr("YouTube Kit Language Telugu"),
+        }
+        format_labels = {
+            "shorts": tr("YouTube Kit Format Shorts"),
+            "long": tr("YouTube Kit Format Long"),
+        }
+        audience_labels = {
+            "general": tr("YouTube Kit Audience General"),
+            "kids": tr("YouTube Kit Audience Kids"),
+        }
+        option_cols = st.columns(3)
+        with option_cols[0]:
+            language = st.selectbox(
+                tr("YouTube Kit Language"),
+                options=list(language_labels),
+                format_func=language_labels.get,
+                key="yt_kit_language",
+            )
+        with option_cols[1]:
+            video_format = st.selectbox(
+                tr("YouTube Kit Format"),
+                options=list(format_labels),
+                format_func=format_labels.get,
+                key="yt_kit_format",
+            )
+        with option_cols[2]:
+            audience = st.selectbox(
+                tr("YouTube Kit Audience"),
+                options=list(audience_labels),
+                format_func=audience_labels.get,
+                key="yt_kit_audience",
+            )
+
+        channel_cols = st.columns(2)
+        with channel_cols[0]:
+            channel = st.text_input(tr("YouTube Kit Channel"), key="yt_kit_channel").strip()
+        with channel_cols[1]:
+            playlist = st.text_input(
+                tr("YouTube Kit Playlist"),
+                key="yt_kit_playlist",
+                help=tr("YouTube Kit Playlist Help"),
+            ).strip()
+        focus_keyword = st.text_input(
+            tr("YouTube Kit Focus Keyword"),
+            key="yt_kit_focus_keyword",
+            help=tr("YouTube Kit Focus Keyword Help"),
+        ).strip()
+
+        if st.button(
+            f"✨ {tr('Generate YouTube Kit')}",
+            key="yt_kit_generate_btn",
+            type="primary",
+            use_container_width=True,
+        ):
+            if not script and not subject:
+                st.warning(tr("YouTube Kit Script Required"))
+            else:
+                with st.spinner(tr("Generating YouTube Kit")):
+                    st.session_state["yt_kit_result"] = youtube_kit.generate_kit(
+                        script,
+                        subject=subject,
+                        language=language,
+                        video_format=video_format,
+                        audience=audience,
+                        channel=channel,
+                        playlist=playlist,
+                        focus_keyword=focus_keyword,
+                    )
+                    st.session_state["yt_kit_result_audience"] = audience
+                if channel:
+                    _set_runtime_config("ui", "youtube_kit_channel", channel)
+
+    with col_right:
+        kit = st.session_state.get("yt_kit_result")
+        if kit is None:
+            st.info(tr("YouTube Kit Empty"))
+        else:
+            _render_youtube_kit_result(youtube_kit, kit)
+
+
+def _render_youtube_kit_result(youtube_kit, kit):
+    """逐项展示生成结果；st.code 自带复制按钮，便于逐项粘贴到 YouTube Studio。"""
+    if kit.used_fallback:
+        st.warning(tr("YouTube Kit Fallback"))
+    st.caption(tr("YouTube Kit Copy Hint"))
+
+    target = youtube_kit.title_target(kit.video_format, kit.language)
+    st.markdown(f"**{tr('YouTube Kit Titles')}**")
+    for index, title in enumerate(kit.titles, start=1):
+        marker = "⚠️ " if len(title) > target else ""
+        st.caption(f"{marker}{index}. {len(title)}/{youtube_kit.TITLE_MAX_CHARS}")
+        st.code(title, language=None, wrap_lines=True)
+    if any(len(title) > target for title in kit.titles):
+        st.caption(tr("YouTube Kit Title Too Long").format(target))
+
+    st.markdown(
+        f"**{tr('YouTube Kit Description')}** · "
+        f"{len(kit.description)}/{youtube_kit.DESCRIPTION_MAX_CHARS}"
+    )
+    st.code(kit.description, language=None, wrap_lines=True, height=360)
+
+    st.markdown(
+        f"**{tr('YouTube Kit Tags')}** · "
+        f"{youtube_kit.tags_character_count(kit.tags)}/{youtube_kit.TAGS_MAX_CHARS}"
+    )
+    st.code(kit.tags_text, language=None, wrap_lines=True)
+
+    st.markdown(f"**{tr('YouTube Kit Keywords')}**")
+    st.caption(tr("YouTube Kit Keywords Help"))
+    st.code(", ".join(kit.keywords), language=None, wrap_lines=True)
+
+    extra_cols = st.columns(2)
+    with extra_cols[0]:
+        st.markdown(f"**{tr('YouTube Kit Hashtags')}**")
+        st.code(" ".join(kit.hashtags), language=None, wrap_lines=True)
+    with extra_cols[1]:
+        st.markdown(f"**{tr('YouTube Kit Playlist Suggestion')}**")
+        st.code(kit.playlist or "-", language=None, wrap_lines=True)
+
+    if st.session_state.get("yt_kit_result_audience") == "kids":
+        st.info(tr("YouTube Kit Kids Note"))
+    else:
+        st.markdown(f"**{tr('YouTube Kit Pinned Comment')}**")
+        st.code(kit.pinned_comment or "-", language=None, wrap_lines=True)
+
+    st.download_button(
+        f"⬇️ {tr('Download YouTube Kit')}",
+        data=kit.to_markdown(),
+        file_name="youtube_kit.md",
+        mime="text/markdown",
+        key="yt_kit_download_btn",
+        use_container_width=True,
+    )
+
+
 def _render_video_generator_studio():
     """渲染四栏视频生成工作室。"""
     with st.container(key="main_settings_grid"):
@@ -9804,6 +10017,7 @@ def _render_application():
         f"🎬 {tr('Video Generator')}",
         f"🎙️ {tr('Audio Generator & Downloader')}",
         f"🎨 {tr('Thumbnail Studio')}",
+        f"📺 {tr('YouTube Kit')}",
         f"📝 {tr('Video to Text Extractor')}",
         f"🎼 {tr('AI Music Studio')}",
     ]
@@ -9816,7 +10030,7 @@ def _render_application():
     elif target_tab == "thumbnail":
         st.session_state[main_tabs_key] = main_tab_labels[2]
 
-    video_tab, audio_tab, thumb_tab, text_tab, music_tab = st.tabs(
+    video_tab, audio_tab, thumb_tab, youtube_kit_tab, text_tab, music_tab = st.tabs(
         main_tab_labels, key=main_tabs_key
     )
 
@@ -9828,6 +10042,9 @@ def _render_application():
 
     with thumb_tab:
         _render_thumbnail_studio()
+
+    with youtube_kit_tab:
+        _render_youtube_kit_studio()
 
     with text_tab:
         _render_video_text_extractor()

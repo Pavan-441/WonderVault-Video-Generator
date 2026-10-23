@@ -14,6 +14,23 @@ from app.config import config
 from app.services import material
 
 
+class _FakeVideoDownloadResponse:
+    def __init__(self, content: bytes):
+        self.content_bytes = content
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        pass
+
+    def raise_for_status(self):
+        pass
+
+    def iter_content(self, chunk_size):
+        yield self.content_bytes
+
+
 class TestMaterialTlsVerification(unittest.TestCase):
     def setUp(self):
         self.original_app_config = dict(config.app)
@@ -565,7 +582,7 @@ class TestMaterialTlsVerification(unittest.TestCase):
         config.app.pop("tls_verify", None)
         config.proxy.clear()
 
-        fake_response = SimpleNamespace(content=b"fake-video")
+        fake_response = _FakeVideoDownloadResponse(b"fake-video")
 
         class FakeVideoFileClip:
             duration = 1

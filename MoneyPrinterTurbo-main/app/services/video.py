@@ -6,13 +6,14 @@ import random
 import gc
 import subprocess
 import sys
+import hashlib
 import tempfile
 import threading
 import time
 import unicodedata
-from contextlib import ExitStack, redirect_stdout
+from contextlib import ExitStack, contextmanager, redirect_stdout
 from functools import lru_cache
-from typing import List, Optional
+from typing import Callable, List, Optional
 from loguru import logger
 import numpy as np
 from moviepy import (
@@ -26,11 +27,12 @@ from moviepy import (
     afx,
 )
 from moviepy.video.tools.subtitles import SubtitlesClip
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 from app.config import config
 from app.models import const
 from app.models.schema import (
+    ImageMotion,
     MaterialInfo,
     VideoAspect,
     VideoConcatMode,
@@ -87,6 +89,9 @@ _DEFAULT_VIDEO_CODEC = "libx264"
 # ffmpeg 串联片段期间没有阶段日志，`subprocess.run` 又阻塞到进程退出，耗时拼接在
 # 日志上表现为“无输出”。这里按间隔记录存活信息，便于区分编码中与已经卡死。
 _FFMPEG_CONCAT_HEARTBEAT_SECONDS = 30.0
+# MoviePy 写出最终成片时同样没有任何日志，一分钟的竖屏视频在 CPU 上要编码数
+# 分钟。沿用拼接阶段的做法，按间隔记录存活信息。
+_STAGE_HEARTBEAT_SECONDS = 30.0
 _SUBTITLE_SPRING_DURATION_SECONDS = 0.18
 _MIN_SUBTITLE_SPRING_SCALE = 0.05
 _MAX_SUBTITLE_SPRING_SCALE = 1.35
@@ -490,6 +495,71 @@ def _describe_concat_output_progress(output_file: str) -> str:
     return f"output size: {size / (1024 * 1024):.2f} MB"
 
 
+@contextmanager
+def _stage_heartbeat(description: str):
+    """
+    在一个没有自身日志的耗时阶段期间，按间隔记录存活日志。
+
+    阶段结束或抛出异常时停止并等待心跳线程退出，避免阶段已经结束后仍然
+    写出“still running”。
+    """
+    started_at = time.monotonic()
+    stop_event = threading.Event()
+
+    def log_heartbeat() -> None:
+        while not stop_event.wait(_STAGE_HEARTBEAT_SECONDS):
+            logger.info(
+                f"{description} still running: "
+                f"elapsed={time.monotonic() - started_at:.0f}s"
+            )
+
+    reporter = threading.Thread(target=log_heartbeat, daemon=True)
+    reporter.start()
+    try:
+        yield
+    finally:
+        stop_event.set()
+        reporter.join(timeout=1)
+
+
+def _report_clip_progress(
+    progress_callback: Callable[[float], None] | None,
+    covered_duration: float,
+    required_duration: float,
+) -> None:
+    """把已覆盖的成片时长换算成 0~1 的比例并通知调用方。"""
+    if progress_callback is None:
+        return
+    fraction = 1.0
+    if required_duration > 0:
+        fraction = min(1.0, covered_duration / required_duration)
+    try:
+        progress_callback(fraction)
+    except Exception as exc:
+        # 进度只是展示信息。回调失败（例如状态后端暂时不可用）不能让已经
+        # 处理好的片段作废。
+        logger.warning(
+            "failed to report clip processing progress: "
+            f"error={type(exc).__name__}, detail={exc}"
+        )
+
+
+def _log_clip_processed(
+    processed_count: int,
+    total: int,
+    covered_duration: float,
+    required_duration: float,
+    progress_callback: Callable[[float], None] | None,
+) -> None:
+    # 每段 4K 素材要处理十几秒，逐段报告覆盖时长，日志和进度条才能反映
+    # 这一阶段仍在推进。
+    logger.info(
+        f"processed clip {processed_count}/{total}: "
+        f"{covered_duration:.1f} of {required_duration:.1f}s covered"
+    )
+    _report_clip_progress(progress_callback, covered_duration, required_duration)
+
+
 def _run_concat_with_heartbeat(command: list[str], output_file: str):
     """
     阻塞等待 ffmpeg 完成，期间按间隔记录存活日志。
@@ -577,20 +647,67 @@ def concat_video_clips_with_ffmpeg(
 def _sanitize_image_file(image_path: str) -> str:
     # 某些本地图片虽然能被 Pillow 打开，但会因为损坏的 EXIF/eXIf 元数据导致
     # ImageClip 在解析阶段直接抛异常。这里重新导出一份“干净图片”，把坏元数据剥离掉。
-    image_root, _ = os.path.splitext(image_path)
-    sanitized_path = f"{image_root}.sanitized.png"
+    # Bound the intermediate basename while retaining complete source identity.
+    # Different extensions must not overwrite pixels, and valid long filenames
+    # must not exceed the filesystem's component limit after adding a suffix.
+    source_digest = hashlib.sha256(os.fsencode(os.path.abspath(image_path)))
 
-    with Image.open(image_path) as image:
-        image.load()
-        # 统一导出为 PNG，避免 JPEG/PNG 不同元数据路径继续把坏块带过去。
-        cleaned_image = Image.new(image.mode, image.size)
-        cleaned_image.putdata(list(image.getdata()))
-        cleaned_image.save(sanitized_path)
+    temp_path = ""
+    try:
+        with Image.open(image_path) as image:
+            with ImageOps.exif_transpose(image) as upright:
+                upright.load()
+                # Strip metadata after applying the camera's orientation.
+                # Palette transparency belongs to pixels, not removable metadata.
+                mode = "RGBA" if "A" in upright.getbands() or "transparency" in upright.info else "RGB"
+                if upright.mode == "I;16":
+                    # PNG grayscale samples span0..65535; an RGB cast either
+                    # clips them to white or wraps when MoviePy encodes them.
+                    with upright.point(lambda value: value / 257 + 0.5) as byte_range:
+                        cleaned_image = byte_range.convert(mode)
+                else:
+                    cleaned_image = upright.convert(mode)
+                cleaned_image.info.clear()
+                source_digest.update(str(cleaned_image.size).encode())
+                source_digest.update(cleaned_image.mode.encode())
+                source_digest.update(cleaned_image.tobytes())
+                sanitized_path = os.path.join(
+                    os.path.dirname(image_path),
+                    f"{source_digest.hexdigest()}.sanitized.png",
+                )
+                descriptor, temp_path = tempfile.mkstemp(
+                    prefix=".image-sanitize-", suffix=".png",
+                    dir=os.path.dirname(os.path.abspath(sanitized_path)),
+                )
+                os.close(descriptor)
+                cleaned_image.save(temp_path)
+                cleaned_image.close()
+        os.replace(temp_path, sanitized_path)
+        temp_path = ""
+    finally:
+        if temp_path:
+            delete_files(temp_path)
 
     return sanitized_path
 
 
 def _open_image_clip_with_fallback(image_path: str):
+    # MoviePy does not apply camera EXIF orientation while decoding an image.
+    # CMYK JPEG channels must become RGB; LA must become RGBA so MoviePy
+    # creates a proper opacity mask rather than treating alpha as a color band.
+    # Bilevel pixels must become byte-range RGB rather than bool values0/1.
+    # Ordinary RGB inputs retain the direct path.
+    try:
+        with Image.open(image_path) as image:
+            orientation = image.getexif().get(274, 1)
+            image_mode = image.mode
+    except Exception:
+        orientation = 1
+        image_mode = None
+    if orientation in range(2, 9) or image_mode in {"CMYK", "LA", "1", "I;16"}:
+        sanitized_path = _sanitize_image_file(image_path)
+        return ImageClip(sanitized_path), sanitized_path
+
     # 优先直接打开原始图片；如果因为损坏元数据失败，再尝试生成无元数据副本。
     try:
         return ImageClip(image_path), image_path
@@ -888,6 +1005,7 @@ def combine_videos(
     source_groups: dict[str, str] | None = None,
     used_video_paths: List[str] | None = None,
     clip_rendering_concurrency: int = 1,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> str:
     audio_clip = AudioFileClip(audio_file)
     try:
@@ -1005,11 +1123,21 @@ def combine_videos(
                 for i, item in needed_items
             }
             results_by_idx = {}
+            covered_duration = 0.0
             for future in concurrent.futures.as_completed(future_to_idx):
                 idx = future_to_idx[future]
                 res = future.result()
                 if res is not None:
                     results_by_idx[idx] = res
+                    # 在调用线程里按完成顺序汇报，日志与进度不受渲染并发数影响。
+                    covered_duration += res.duration
+                    _log_clip_processed(
+                        len(results_by_idx),
+                        len(needed_items),
+                        covered_duration,
+                        required_video_duration,
+                        progress_callback,
+                    )
 
         for i, _ in needed_items:
             if i in results_by_idx:
@@ -1034,6 +1162,13 @@ def combine_videos(
             if sc is not None:
                 processed_clips.append(sc)
                 video_duration += sc.duration
+                _log_clip_processed(
+                    len(processed_clips),
+                    len(needed_items),
+                    video_duration,
+                    required_video_duration,
+                    progress_callback,
+                )
     
     # loop processed clips until the video duration covers the audio duration and the small safety margin.
     if video_duration < required_video_duration:
@@ -1088,6 +1223,18 @@ def wrap_text(text, max_width, font="Arial", fontsize=60):
     # 字幕换行必须在真正创建 TextClip 前完成，否则 MoviePy 只会按原始文本
     # 计算渲染区域。这里用 PIL 按当前字体和字号测量宽度，确保每一行都尽量
     # 控制在视频可用宽度内，避免大字号或中文长句直接溢出画面。
+    if "\n" in text:
+        # Hard breaks in SRT text are separate layout lines. Measuring a token
+        # across a newline makes Pillow count both lines as one wide string,
+        # then character wrapping can split an otherwise fitting word.
+        wrapped_lines = [
+            wrap_text(line, max_width, font=font, fontsize=fontsize)
+            for line in text.split("\n")
+        ]
+        return "\n".join(line for line, _ in wrapped_lines), sum(
+            height for _, height in wrapped_lines
+        )
+
     font = ImageFont.truetype(font, fontsize)
     max_width = int(max_width)
 
@@ -1120,13 +1267,22 @@ def wrap_text(text, max_width, font="Arial", fontsize=60):
         # 画布高度仍必须按现有行数计算，否则第二行及后续行会被裁掉。
         return text, (text.count("\n") + 1) * line_height
 
+    def attached_text_units(token):
+        units = []
+        for char in token:
+            if units and unicodedata.category(char).startswith("M"):
+                units[-1] += char
+            else:
+                units.append(char)
+        return units
+
     def split_long_token(token):
         # 当一个 token 本身就超宽时（常见于中文无空格长句，或英文超长单词），
         # 退化为字符级拆分。关键点是：检测到 candidate 超宽时，先提交上一个
         # 仍然合法的 current，再把当前字符放入下一行，不能把超宽字符塞回上一行。
         lines = []
         current = ""
-        for char in token:
+        for char in attached_text_units(token):
             candidate = f"{current}{char}"
             candidate_width, _ = get_text_size(candidate)
             if candidate_width <= max_width or not current:
@@ -1155,8 +1311,11 @@ def wrap_text(text, max_width, font="Arial", fontsize=60):
         if word_width <= max_width:
             current = word
         else:
-            lines.extend(split_long_token(word))
-            current = ""
+            # 最后一段仍未占满整行，后续单词应继续尝试接在它后面，
+            # 否则每个超长词之后都会多出一行。
+            pieces = split_long_token(word)
+            lines.extend(pieces[:-1])
+            current = pieces[-1] if pieces else ""
 
     if current:
         lines.append(current)
@@ -1172,11 +1331,15 @@ def wrap_text(text, max_width, font="Arial", fontsize=60):
         if len(lines[index - 1]) <= 1:
             continue
 
-        candidate = f"{lines[index - 1][-1]}{lines[index]}"
+        previous_units = attached_text_units(lines[index - 1])
+        if len(previous_units) <= 1:
+            continue
+        last_unit = previous_units[-1]
+        candidate = f"{last_unit}{lines[index]}"
         candidate_width, _ = get_text_size(candidate)
         if candidate_width <= max_width:
             lines[index] = candidate
-            lines[index - 1] = lines[index - 1][:-1]
+            lines[index - 1] = lines[index - 1][:-len(last_unit)]
 
     result = "\n".join(line.strip() for line in lines if line.strip()).strip()
     # 高度以最终结果为准。原文本中的显式换行可能保留在某个 token 内，
@@ -1609,7 +1772,7 @@ def generate_video(
                 font_size=params.font_size,
             )
 
-        if subtitle_path and os.path.exists(subtitle_path):
+        if params.subtitle_enabled and subtitle_path and os.path.exists(subtitle_path):
             # Tenglish scripts mix Telugu and English; pick a font that covers both
             # before any TextClip is created, so English words don't become boxes.
             with open(subtitle_path, encoding="utf-8", errors="ignore") as f:
@@ -1686,56 +1849,84 @@ def generate_video(
         # 显式沿用输入音频的采样率；如果取不到，再回退 MoviePy 默认的 44100Hz。
         # 这样可以减少不同环境，尤其 Docker 中再次重采样带来的音质波动。
         output_audio_fps = int(getattr(audio_clip, "fps", 0) or 44100)
-        _write_videofile_with_codec_fallback(
-            final_video_clip,
-            output_file=output_file,
-            codec=_get_configured_video_codec(),
-            audio_codec=audio_codec,
-            audio_fps=output_audio_fps,
-            audio_bitrate=audio_bitrate,
-            temp_audiofile_path=_get_temp_audio_dir(output_dir),
-            threads=params.n_threads or 2,
-            logger=None,
-            fps=fps,
-        )
+        with _stage_heartbeat("final video render"):
+            _write_videofile_with_codec_fallback(
+                final_video_clip,
+                output_file=output_file,
+                codec=_get_configured_video_codec(),
+                audio_codec=audio_codec,
+                audio_fps=output_audio_fps,
+                audio_bitrate=audio_bitrate,
+                temp_audiofile_path=_get_temp_audio_dir(output_dir),
+                threads=params.n_threads or 2,
+                logger=None,
+                fps=fps,
+            )
         return bgm_mix_succeeded
 
 
-def render_image_zoom_video(image_path: str, clip_duration: int = 5) -> str:
+def render_image_zoom_video(
+    image_path: str, clip_duration: int = 5, image_motion: ImageMotion = ImageMotion.zoom
+) -> str:
     """
-    将单张本地图片渲染为带缓慢放大效果的 mp4 片段，返回输出文件路径。
+    将单张图片渲染为静止或缓慢放大的 mp4 片段，返回输出文件路径。
 
     local 素材预处理和 OpenAI 兼容文生图素材共用这段"图片 → 片段"渲染
-    逻辑：ImageClip 按 clip_duration 固定时长播放，并叠加每秒约 3% 的
-    动态放大，避免静态画面在成片中显得呆板。渲染异常由调用方按各自
-    素材源的失败约定处理。
+    逻辑：默认保留每秒约 3% 的动态放大，静止模式只固定播放时长。
+    此设置与片段转场独立。渲染异常由调用方按各自素材源的失败约定处理。
     """
-    clip = ImageClip(image_path).with_duration(clip_duration).with_position("center")
+    motion = ImageMotion(image_motion)
+    clip, _ = _open_image_clip_with_fallback(image_path)
+    clip = clip.with_duration(clip_duration).with_position("center")
+    temp_path = ""
     try:
-        # Apply a zoom effect using the resize method.
-        # A lambda function is used to make the zoom effect dynamic over time.
-        # The zoom effect starts from the original size and gradually scales up to 120%.
-        # t represents the current time, and clip.duration is the total duration of the clip.
-        # Note: 1 represents 100% size, so 1.2 represents 120%.
-        zoom_clip = clip.resized(
-            lambda t: 1 + (clip_duration * 0.03) * (t / clip.duration)
+        # 只有放大模式改变画面尺寸，静止模式保留原始构图及透明背景处理。
+        image_clip = (
+            clip.resized(lambda t: 1 + (clip_duration * 0.03) * (t / clip.duration))
+            if motion == ImageMotion.zoom
+            else clip
         )
 
         # Optionally, create a composite video clip containing the zoomed clip.
         # This is useful if you want to add other elements to the video.
-        final_clip = CompositeVideoClip([zoom_clip])
+        final_clip = CompositeVideoClip([image_clip], bg_color=(0, 0, 0))
         try:
-            # Output the video to a file.
-            video_file = f"{image_path}.mp4"
-            final_clip.write_videofile(video_file, fps=30, logger=None)
-            return video_file
+            # The duration changes the rendered content, so it must be part of
+            # the output identity. Different tasks may render the same image
+            # concurrently; only publish a complete MP4 after MoviePy closes it.
+            source_digest = hashlib.sha256(os.fsencode(os.path.abspath(image_path)))
+            source_frame = clip.get_frame(0)
+            source_digest.update(str(source_frame.shape).encode())
+            source_digest.update(source_frame.tobytes())
+            if clip.mask is not None:
+                source_digest.update(clip.mask.get_frame(0).tobytes())
+            source_identity = source_digest.hexdigest()
+            duration_identity = hashlib.sha256(str(clip_duration).encode()).hexdigest()[:16]
+            video_file = os.path.join(
+                os.path.dirname(image_path),
+                f"{source_identity}.{motion.value}-{duration_identity}.mp4",
+            )
+            descriptor, temp_path = tempfile.mkstemp(
+                prefix=".image-zoom-",
+                suffix=".mp4",
+                dir=os.path.dirname(os.path.abspath(video_file)),
+            )
+            os.close(descriptor)
+            final_clip.write_videofile(temp_path, fps=30, logger=None)
         finally:
             close_clip(final_clip)
+        os.replace(temp_path, video_file)
+        temp_path = ""
+        return video_file
     finally:
         close_clip(clip)
+        if temp_path:
+            delete_files(temp_path)
 
 
-def preprocess_video(materials: List[MaterialInfo], clip_duration=4):
+def preprocess_video(
+    materials: List[MaterialInfo], clip_duration=4, image_motion: ImageMotion = ImageMotion.zoom
+):
     # WebUI 在某些二次生成场景下可能传入空素材列表，这里直接返回空结果，避免抛出 NoneType 异常。
     if not materials:
         return []
@@ -1763,9 +1954,10 @@ def preprocess_video(materials: List[MaterialInfo], clip_duration=4):
             continue
 
         ext = utils.parse_extension(material_source_path)
+        is_image = ext in const.FILE_TYPE_IMAGES
         try:
             # 图片素材直接按图片方式读取，避免先走 VideoFileClip 误判后触发不稳定的回退分支。
-            if ext in const.FILE_TYPE_IMAGES:
+            if is_image:
                 clip, material_source_path = _open_image_clip_with_fallback(
                     material_source_path
                 )
@@ -1777,6 +1969,9 @@ def preprocess_video(materials: List[MaterialInfo], clip_duration=4):
                 clip, material_source_path = _open_image_clip_with_fallback(
                     material_source_path
                 )
+                # The successful decoder determines the material kind, even
+                # when the uploaded filename has a video or unknown suffix.
+                is_image = True
             except Exception as exc:
                 logger.warning(
                     f"skip unreadable local material: {material.url}, error: {str(exc)}"
@@ -1795,13 +1990,13 @@ def preprocess_video(materials: List[MaterialInfo], clip_duration=4):
                 close_clip(clip)
                 continue
 
-            if ext in const.FILE_TYPE_IMAGES:
+            if is_image:
                 logger.info(f"processing image: {material_source_path}")
                 # 探测尺寸时已经打开过一次素材，这里先释放探测句柄，再渲染
                 # 用于导出的图片片段。
                 close_clip(clip)
                 video_file = render_image_zoom_video(
-                    material_source_path, clip_duration
+                    material_source_path, clip_duration, image_motion=image_motion
                 )
                 material.url = video_file
                 logger.success(f"image processed: {video_file}")

@@ -11,6 +11,7 @@ except ImportError:
 from loguru import logger
 
 from app.config import config
+from app.models import const
 from app.utils import utils
 
 model_size = config.whisper.get("model_size", "large-v3")
@@ -105,7 +106,14 @@ def create(
         )
 
     for segment in segments:
-        if word_level and segment.words:
+        if not segment.words:
+            # Faster Whisper exposes words as Optional[List[Word]]. A segment
+            # can still have usable text and timestamps when alignment yields
+            # no words; keep that subtitle in both sentence and word modes.
+            recognized(segment.text, segment.start, segment.end)
+            continue
+
+        if word_level:
             for word in segment.words:
                 cleaned_word = word.word.strip()
                 if cleaned_word:
@@ -127,15 +135,13 @@ def create(
                     is_segmented = True
 
                 seg_end = word.end
-                # If it contains punctuation, then break the sentence.
+                # Accumulate words; only trailing punctuation ends a sentence.
                 seg_text += word.word
 
-                if utils.str_contains_punctuation(word.word):
-                    # remove last char
-                    seg_text = seg_text[:-1]
-                    if not seg_text:
-                        continue
-
+                if word.word.rstrip().endswith(tuple(const.PUNCTUATIONS)):
+                    # Punctuation inside a word (3.14, 1,000, 12:30) is not a
+                    # sentence boundary. Remove only actual trailing delimiters.
+                    seg_text = seg_text.rstrip().rstrip("".join(const.PUNCTUATIONS))
                     recognized(seg_text, seg_start, seg_end)
 
                     is_segmented = False
@@ -335,6 +341,13 @@ def correct(subtitle_file, video_script):
                 )
             )
         script_index += 1
+        corrected = True
+
+    if subtitle_index < len(subtitle_items):
+        logger.warning(
+            f"Dropping {len(subtitle_items) - subtitle_index} transcription cue(s) "
+            "after the script ends"
+        )
         corrected = True
 
     if corrected:

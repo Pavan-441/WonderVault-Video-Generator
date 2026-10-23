@@ -18,7 +18,7 @@ from moviepy.video.io.VideoFileClip import VideoFileClip
 from PIL import Image, UnidentifiedImageError
 
 from app.config import config
-from app.models.schema import MaterialInfo, VideoAspect, VideoConcatMode
+from app.models.schema import ImageMotion, MaterialInfo, VideoAspect, VideoConcatMode
 from app.services import (
     material_cache,
     metaso_minimax,
@@ -1308,6 +1308,36 @@ def _get_downloaded_video_duration(video_path: str) -> float:
     return duration
 
 
+# requests 流式下载期间不产生任何日志。慢速网络下单个 4K 素材要下载数分钟，
+# 任务看起来像卡死。超过这个间隔仍未下完时记录已下载大小和速度；间隔内
+# 完成的小文件不产生额外日志，避免刷屏。
+_DOWNLOAD_HEARTBEAT_SECONDS = 15.0
+_BYTES_PER_MEGABYTE = 1024 * 1024
+
+
+def _describe_download_progress(
+    downloaded_bytes: int, declared_size: int, elapsed_seconds: float
+) -> str:
+    """把下载进度整理成一段日志文字；服务器未声明大小时不给百分比。"""
+    downloaded_mb = downloaded_bytes / _BYTES_PER_MEGABYTE
+    speed = downloaded_mb / elapsed_seconds if elapsed_seconds > 0 else 0.0
+    if declared_size > 0:
+        percent = min(100, round(downloaded_bytes * 100 / declared_size))
+        return (
+            f"{downloaded_mb:.1f} of {declared_size / _BYTES_PER_MEGABYTE:.1f} MB "
+            f"({percent}%), {speed:.2f} MB/s"
+        )
+    return f"{downloaded_mb:.1f} MB, {speed:.2f} MB/s"
+
+
+def _declared_content_length(response) -> int:
+    try:
+        headers = getattr(response, "headers", None) or {}
+        return max(0, int(headers.get("Content-Length") or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
 def save_video(video_url: str, save_dir: str = "") -> str:
     if not save_dir:
         save_dir = utils.storage_dir("cache_videos")
@@ -1330,16 +1360,48 @@ def save_video(video_url: str, save_dir: str = "") -> str:
     }
 
     # if video does not exist, download it
-    with open(video_path, "wb") as f:
-        f.write(
-            requests.get(
-                video_url,
-                headers=headers,
-                proxies=config.proxy,
-                verify=_get_tls_verify(),
-                timeout=(60, 240),
-            ).content
-        )
+    # 流式写入同目录临时文件，完整下载后再改名：既不把整个素材读进内存，
+    # 也不会在下载中断时留下被当作缓存命中的半截文件。
+    temp_path = f"{video_path}.{uuid.uuid4().hex}.part"
+    try:
+        with requests.get(
+            video_url,
+            headers=headers,
+            proxies=config.proxy,
+            verify=_get_tls_verify(),
+            timeout=(60, 240),
+            stream=True,
+        ) as response:
+            declared_size = _declared_content_length(response)
+            downloaded_bytes = 0
+            started_at = time.monotonic()
+            last_report_at = started_at
+            with open(temp_path, "wb") as f:
+                for chunk in response.iter_content(chunk_size=_BYTES_PER_MEGABYTE):
+                    if not chunk:
+                        continue
+                    f.write(chunk)
+                    downloaded_bytes += len(chunk)
+                    now = time.monotonic()
+                    if now - last_report_at >= _DOWNLOAD_HEARTBEAT_SECONDS:
+                        last_report_at = now
+                        # 只记录缓存文件名：下载地址可能带签名或密钥。
+                        logger.info(
+                            f"downloading video {video_id}.mp4: "
+                            + _describe_download_progress(
+                                downloaded_bytes, declared_size, now - started_at
+                            )
+                        )
+        os.replace(temp_path, video_path)
+    finally:
+        if os.path.exists(temp_path):
+            try:
+                os.remove(temp_path)
+            except OSError as remove_error:
+                logger.warning(
+                    f"failed to remove partial video download: {temp_path}, "
+                    f"error: {remove_error}"
+                )
 
     if os.path.exists(video_path) and os.path.getsize(video_path) > 0:
         clip = None
@@ -1770,14 +1832,18 @@ def generate_images_openai(
     return [item]
 
 
-def _render_openai_image_video(image_path: str, clip_duration: int) -> str:
+def _render_openai_image_video(
+    image_path: str, clip_duration: int, image_motion: ImageMotion = ImageMotion.zoom
+) -> str:
     """
     把生成的图片渲染成 mp4 片段，复用 local 素材的"图片 → 动态片段"管线。
 
     渲染失败按素材源约定返回空字符串，由调用方跳过该图片继续。
     """
     try:
-        return video.render_image_zoom_video(image_path, clip_duration)
+        return video.render_image_zoom_video(
+            image_path, clip_duration, image_motion=image_motion
+        )
     except Exception as e:
         logger.error(
             "failed to render generated image as a video clip: "
@@ -1794,6 +1860,7 @@ def _download_videos_openai_image_on_demand(
     audio_duration: float,
     max_clip_duration: int,
     material_directory: str,
+    image_motion: ImageMotion = ImageMotion.zoom,
 ) -> List[str]:
     """
     按脚本片段顺序逐张生成 OpenAI 兼容文生图素材，凑够所需总时长立即停止。
@@ -1803,6 +1870,8 @@ def _download_videos_openai_image_on_demand(
     有效时长（与库存流程一致，按片段时长封顶），累计达到所需配音时长后
     不再发起新的付费请求。单张失败按素材源约定跳过并继续下一个关键词。
     """
+    # 直接调用素材服务也要在付费请求前校验，不能生成后才发现效果参数无效。
+    image_motion = ImageMotion(image_motion)
     if not material_directory:
         # 生成图片按任务计费且不可复用，默认落在任务目录便于追溯。
         material_directory = utils.task_dir(task_id)
@@ -1833,7 +1902,9 @@ def _download_videos_openai_image_on_demand(
             save_dir=material_directory,
         )
         for item in items:
-            video_file = _render_openai_image_video(item.url, max_clip_duration)
+            video_file = _render_openai_image_video(
+                item.url, max_clip_duration, image_motion=image_motion
+            )
             if not video_file:
                 continue
             logger.info(f"image material rendered: {video_file}")
@@ -1969,6 +2040,8 @@ def download_videos(
     max_clip_duration: int = 5,
     match_script_order: bool = False,
     stock_material_concurrency: int = 1,
+    image_motion: ImageMotion = ImageMotion.zoom,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> List[str]:
     """
     下载素材。Pexels 先按关键词主体严格筛选；若严格筛选后一个片段都没有，
@@ -1984,6 +2057,8 @@ def download_videos(
         max_clip_duration=max_clip_duration,
         match_script_order=match_script_order,
         stock_material_concurrency=stock_material_concurrency,
+        image_motion=image_motion,
+        progress_callback=progress_callback,
     )
     video_paths = _download_videos(**options, subject_filter=True)
     if not video_paths and source == "pexels":
@@ -2006,6 +2081,8 @@ def _download_videos(
     match_script_order: bool = False,
     stock_material_concurrency: int = 1,
     subject_filter: bool = True,
+    image_motion: ImageMotion = ImageMotion.zoom,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> List[str]:
     provider = "pexels"
     remote_search_videos = search_videos_pexels
@@ -2156,6 +2233,7 @@ def _download_videos(
             audio_duration=audio_duration,
             max_clip_duration=max_clip_duration,
             material_directory=material_directory,
+            image_motion=image_motion,
         )
 
     if match_script_order:
@@ -2168,6 +2246,7 @@ def _download_videos(
             max_clip_duration=max_clip_duration,
             material_directory=material_directory,
             stock_material_concurrency=stock_material_concurrency,
+            progress_callback=progress_callback,
         )
 
     term_candidates: list[list[MaterialInfo]] = []
@@ -2248,7 +2327,6 @@ def _download_videos(
                 video_url=item.url, save_dir=material_directory
             )
             if saved_video_path:
-                logger.info(f"video saved: {saved_video_path}")
                 source_record = None
                 try:
                     source_record = _material_source_record(item, saved_video_path)
@@ -2267,9 +2345,14 @@ def _download_videos(
             )
         return i, None, None
 
+    total = len(selected_items)
+    on_downloaded = _covered_duration_reporter(
+        progress_callback, audio_duration, max_clip_duration
+    )
     if concurrency > 1 and len(selected_items) > 1:
         logger.info(f"downloading {len(selected_items)} videos concurrently (concurrency={concurrency})")
         results = [None] * len(selected_items)
+        completed = 0
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
             future_to_idx = {
                 executor.submit(_download_one, (i, item)): i
@@ -2278,6 +2361,11 @@ def _download_videos(
             for future in as_completed(future_to_idx):
                 i, saved_path, record = future.result()
                 results[i] = (saved_path, record)
+                if saved_path:
+                    completed += 1
+                    _report_material_downloaded(
+                        completed, total, selected_items[i], saved_path, on_downloaded
+                    )
 
         for res in results:
             if res and res[0]:
@@ -2288,6 +2376,9 @@ def _download_videos(
         for i, item in enumerate(selected_items):
             _, saved_path, record = _download_one((i, item))
             if saved_path:
+                _report_material_downloaded(
+                    i + 1, total, item, saved_path, on_downloaded
+                )
                 video_paths.append(saved_path)
                 if record:
                     material_sources.append(record)
@@ -2295,6 +2386,65 @@ def _download_videos(
     logger.success(f"downloaded {len(video_paths)} videos")
     _persist_material_sources(task_id, material_sources)
     return video_paths
+
+
+def _report_material_downloaded(
+    position: int,
+    total: int,
+    item: MaterialInfo,
+    saved_video_path: str,
+    on_downloaded: Callable[[MaterialInfo], None] | None,
+) -> None:
+    """
+    记录一个素材已下载完成，并通知调用方更新进度。
+
+    始终在发起下载的线程里调用，逐文件日志和进度更新不依赖下载并发数。
+    """
+    description = os.path.basename(saved_video_path)
+    try:
+        size_mb = os.path.getsize(saved_video_path) / _BYTES_PER_MEGABYTE
+        description += f" ({size_mb:.1f} MB)"
+    except OSError:
+        # 文件大小只是辅助信息，读不到时不影响下载结果。
+        pass
+    logger.info(f"downloaded material {position}/{total}: {description}")
+    if on_downloaded is None:
+        return
+    try:
+        on_downloaded(item)
+    except Exception as exc:
+        # 进度只是展示信息。回调失败（例如状态后端暂时不可用）不能让已经
+        # 成功下载的素材作废，更不能中断整个任务。
+        logger.warning(
+            "failed to report material download progress: "
+            f"error={type(exc).__name__}, detail={exc}"
+        )
+
+
+def _covered_duration_reporter(
+    progress_callback: Callable[[float], None] | None,
+    required_duration: float,
+    max_clip_duration: int,
+) -> Callable[[MaterialInfo], None] | None:
+    """
+    生成逐素材回调：把已覆盖的配音时长换算成 0~1 的下载进度。
+
+    每个素材最多贡献一个片段时长，覆盖到所需时长即完成，因此超出部分
+    封顶为 1.0。没有进度回调时返回 None。
+    """
+    if progress_callback is None:
+        return None
+    covered_duration = 0.0
+
+    def report(item: MaterialInfo) -> None:
+        nonlocal covered_duration
+        covered_duration += min(max_clip_duration, item.duration)
+        fraction = 1.0
+        if required_duration > 0:
+            fraction = min(1.0, covered_duration / required_duration)
+        progress_callback(fraction)
+
+    return report
 
 
 def _download_videos_wavespeed_on_demand(
@@ -2830,6 +2980,7 @@ def _download_videos_by_script_order(
     max_clip_duration: int,
     material_directory: str,
     stock_material_concurrency: int = 1,
+    progress_callback: Callable[[float], None] | None = None,
 ) -> List[str]:
     """
     按脚本文案顺序下载素材。
@@ -2908,7 +3059,6 @@ def _download_videos_by_script_order(
                 video_url=item.url, save_dir=material_directory
             )
             if saved_video_path:
-                logger.info(f"video saved: {saved_video_path}")
                 source_record = None
                 try:
                     source_record = _material_source_record(item, saved_video_path)
@@ -2928,9 +3078,14 @@ def _download_videos_by_script_order(
             )
         return i, None, None
 
+    total = len(ordered_selected_items)
+    on_downloaded = _covered_duration_reporter(
+        progress_callback, audio_duration, max_clip_duration
+    )
     if concurrency > 1 and len(ordered_selected_items) > 1:
         logger.info(f"downloading {len(ordered_selected_items)} ordered videos concurrently (concurrency={concurrency})")
         results = [None] * len(ordered_selected_items)
+        completed = 0
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
             future_to_idx = {
                 executor.submit(_download_ordered_one, (i, entry)): i
@@ -2939,6 +3094,15 @@ def _download_videos_by_script_order(
             for future in as_completed(future_to_idx):
                 i, saved_path, record = future.result()
                 results[i] = (saved_path, record)
+                if saved_path:
+                    completed += 1
+                    _report_material_downloaded(
+                        completed,
+                        total,
+                        ordered_selected_items[i][1],
+                        saved_path,
+                        on_downloaded,
+                    )
 
         for res in results:
             if res and res[0]:
@@ -2949,6 +3113,9 @@ def _download_videos_by_script_order(
         for i, entry in enumerate(ordered_selected_items):
             _, saved_path, record = _download_ordered_one((i, entry))
             if saved_path:
+                _report_material_downloaded(
+                    i + 1, total, entry[1], saved_path, on_downloaded
+                )
                 video_paths.append(saved_path)
                 if record:
                     material_sources.append(record)
