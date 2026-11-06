@@ -8,14 +8,16 @@ Built on top of [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTur
 
 ## What's inside
 
-The WebUI has six studios, each in its own tab:
+The WebUI has eight studios, each in its own tab:
 
 | Studio | What it does |
 | --- | --- |
-| 🎬 **Video Generator** | Topic or script → narration, search keywords, stock clips (Pexels/Pixabay), voiceover, subtitles, BGM → finished 9:16 or 16:9 video. Clips are filtered to match the subject of each keyword and can follow the script order. |
+| 🎬 **Video Generator** | Topic or script → narration, search keywords, stock clips (Pexels/Pixabay), voiceover, subtitles, BGM → finished 9:16 or 16:9 video. Clips are filtered to match the subject of each keyword and can follow the script order. **Make Telugu/English version** rewrites the script in the other language and switches to the voice saved for it; **Check hook** tests the script against the Shorts playbook and suggests stronger first lines. |
+| 🎞️ **Scene Planner** | Splits the script into scenes and writes one **Google Flow** image prompt per scene. Add each image to its scene, and they play in order in the video, each for as long as its part of the narration. |
+| 🗂️ **Batch Videos** | Tick scripts from the script libraries and make them all, one after another — in the script's language, the other language or both. Each video gets a folder with the video, its upload kit, a Flow thumbnail prompt and the script; done scripts are marked. |
 | 🎙️ **Audio Generator & Downloader** | Turns a narration script into a voiceover MP3 with full voice control and download. **Voice Preview** reads your script's first lines in the chosen voice, speed and volume, and keeps the last 4 previews side by side so you can pick a voice before generating the full audio. Send the audio straight to the Video Generator. |
 | 🎨 **Thumbnail Studio** | Generates ready-to-paste **Google Flow** prompts for YouTube and Shorts thumbnails, then post-processes the image you upload back into an upload-ready file. A manual compose mode is also available. Supports Telugu and English titles. |
-| 📺 **YouTube Kit** | Turns a script into upload-ready metadata: 3 title options, a complete description in the upload-kit format, tags (kept under YouTube's 500-character limit), search keywords, 5 hashtags, a pinned comment and a playlist name. Supports English and Telugu/Tenglish (with English and Romanized-Telugu search lines), Shorts or long videos, and general or kids audiences. Sync pulls the script from the Video Generator; download the kit as Markdown. |
+| 📺 **YouTube Kit** | Turns a script into upload-ready metadata: 3 title options, a complete description in the upload-kit format, tags (kept under YouTube's 500-character limit), search keywords, 5 hashtags, a pinned comment and a playlist name. Supports English and Telugu/Tenglish (with English and Romanized-Telugu search lines), Shorts or long videos, and general or kids audiences. Sync pulls the script from the Video Generator; download the kit as Markdown. **Upload to YouTube** sends a finished video with this metadata — private, unlisted, public or scheduled — using your own free YouTube Data API access. |
 | 📝 **Video to Text Extractor** | Transcribes a video or audio file (English, Telugu, or mixed) with Whisper. Edit the text, download it, or send it to the Audio Generator. Files up to 500 MB. |
 | 🎼 **AI Music Studio** | Generates original instrumental background music from random style prompts (ElevenLabs). Saved tracks join the random BGM library, so videos don't use third-party songs. |
 
@@ -23,6 +25,9 @@ Other highlights:
 
 - **Telugu & Tenglish support** — Telugu fonts, Tenglish subtitles, and spoken-number normalisation (years and numbers read out as words). Subtitle wrapping keeps Telugu vowel signs attached to their letters, and `---` / `***` separator lines in a script don't throw off subtitle timing.
 - **Separate voiceover and music switches** — make music-only, voice-only or silent videos.
+- **Pronunciation fixes** — list words the voice says wrong and how to say them (e.g. `DNA → డీ ఎన్ ఏ`); applied to every voiceover while subtitles keep your spelling.
+- **Shorts captions** — subtitle Display Mode *Shorts captions (word highlight)*: big captions, a few words at a time, with the spoken word highlighted; optional precise Whisper timing.
+- **Move to another computer** — Settings › *Move to Another Computer* makes one backup file with your settings, music, pronunciation fixes and batch progress (API keys optional) and imports it on the other PC.
 - **Image Motion** — for local or AI-generated images, choose **Slow Zoom** (default) or **Static** in Video Settings. Also available as `--image-motion static|zoom` in the CLI and `image_motion` in the API. Transparent PNGs, rotated phone photos, CMYK and grayscale images render correctly.
 - **Viral script tuning** — hook-first scripts, audience engagement lines and dynamic calls to action.
 - **Concurrency controls** — tune parallel downloads and rendering to match your PC.
@@ -103,6 +108,8 @@ A free setup that works well:
 6. **Music:** background volume around 15–20% so the voice stays clear.
 7. **Ending:** finish on the payoff plus one easy question — skip the long "please subscribe" outro.
 
+Click **Check hook** under the script to test these rules before you render.
+
 ---
 
 ## Script libraries
@@ -124,7 +131,7 @@ Ready-to-use scripts with upload kits (titles, descriptions, tags):
 ├── *_WONDERVAULT.md                 # Script libraries
 ├── download/                        # Exported videos (git-ignored)
 └── MoneyPrinterTurbo-main/
-    ├── webui/Main.py                # Streamlit WebUI (all six studios)
+    ├── webui/Main.py                # Streamlit WebUI (all eight studios)
     ├── webui/i18n/                  # UI translations
     ├── app/services/                # LLM, footage, voice, subtitles, video, thumbnails, music
     ├── app/controllers/             # REST API

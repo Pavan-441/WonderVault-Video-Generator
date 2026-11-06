@@ -63,6 +63,8 @@ To use your own Google Flow images instead, set **Video Source** to **Local file
 ### 3. Voiceover
 - **Edge TTS** (free, no key): human-like voices such as `en-US-ChristopherNeural`, `en-US-JennyNeural` or `te-IN-MohanNeural`.
 - **Gemini TTS**: uses your Gemini API key. Pick it under **Voiceover Service** in the WebUI.
+- **Pronunciation Fixes** (Audio Generator tab): add words the voice says wrong and how to say them. They apply to every voiceover and preview; subtitles keep your spelling.
+- **Language Voices** (below the Video Generator settings): set up the Telugu voice, speed, subtitle font and script language once and click *Use current settings for Telugu*; do the same for English. **Make Telugu/English version** and **Batch Videos** then switch automatically.
 - **Voiceover** and **Background Music** have separate on/off switches in the WebUI: turn the voiceover off for a music-only video, the music off for a voice-only video, or both off for a silent one.
 
 ### 4. Subtitles
@@ -72,6 +74,19 @@ subtitle_provider = "edge"     # default: timed from the voiceover and script
 # subtitle_provider = "whisper"  # optional: transcribe the audio with Whisper instead
 ```
 Separator lines such as `---` or `***` in a script are not spoken and don't affect subtitle timing.
+
+For Shorts-style captions, set **Display Mode** to **Shorts captions (word highlight)** and pick the highlight colour and words per caption. *Precise word timing* uses Whisper (slower; downloads the model on first use).
+
+### 5. Upload to YouTube (optional, free)
+1. In [Google Cloud Console](https://console.cloud.google.com/) create a project and enable **YouTube Data API v3**.
+2. **OAuth consent screen**: choose *External* and add your Google account as a test user.
+3. **Credentials**: create an **OAuth client ID** of type **Desktop app** and download the JSON.
+4. In the WebUI, open **📺 YouTube Kit → Upload to YouTube**, add the JSON and click **Sign in with Google** (use the account that owns @WonderVault-W).
+
+The sign-in token stays in `storage\youtube` on this PC. Uploads use your free daily API quota (about 6 uploads a day by default).
+
+### 6. Moving to another computer
+Open **Settings → Move to Another Computer**, click **Prepare backup file** and download it. On the other PC, install the app, open the same tab and import the file. It brings your settings, Language Voices, music library, pronunciation fixes and batch progress. API keys are included only if you tick the box (or use the *Key Backup* tab); sign in to YouTube again on the new PC.
 
 ---
 
@@ -83,5 +98,7 @@ Separator lines such as `---` or `***` in a script are not spoken and don't affe
 5. **Voice**: One consistent narrator per channel (e.g. `en-US-AndrewMultilingual-Male`, `te-IN-Mohan (Dynamic & High Energy)`), Voice Speed `1.1`.
 6. **Music**: Background music volume around 15–20% so the voice is prominent.
 7. **Ending**: End on the payoff plus one easy question — no long "please subscribe" outro.
-8. **Upload metadata**: After generating a video, open the **📺 YouTube Kit** tab, click **Sync**, then **Generate YouTube Kit** to get the title options, description, tags, keywords and hashtags.
-9. **Ready-made scripts**: See the full reach playbook and upload kits in `100_VIRAL_SCRIPTS_FOR_WONDERVAULT.md` (English), `100_TELUGU_SCIENCE_FACTS_WONDERVAULT.md` (Telugu) and `KIDS_FUN_SCIENCE_FACTS_WONDERVAULT.md` (Kids).
+8. **Upload metadata**: After generating a video, open the **📺 YouTube Kit** tab, click **Sync**, then **Generate YouTube Kit** to get the title options, description, tags, keywords and hashtags. **Upload to YouTube** at the bottom of that tab sends the video with them.
+9. **Flow images**: Use **🎞️ Scene Planner** to get one Flow prompt per scene, add the images, then **Use these images in the Video Generator**.
+10. **Many videos at once**: **🗂️ Batch Videos** makes ticked library scripts one after another (each with its own folder in `download\Batch`).
+11. **Ready-made scripts**: See the full reach playbook and upload kits in `100_VIRAL_SCRIPTS_FOR_WONDERVAULT.md` (English), `100_TELUGU_SCIENCE_FACTS_WONDERVAULT.md` (Telugu) and `KIDS_FUN_SCIENCE_FACTS_WONDERVAULT.md` (Kids).
