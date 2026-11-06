@@ -919,6 +919,17 @@
     "Uploading Video": "Uploading...",
     "YouTube Upload Failed": "Upload failed: {error}",
     "YouTube Uploaded": "Uploaded: {url}",
-    "YouTube Thumbnail Failed": "The video is up, but the thumbnail was not set: {error}"
+    "YouTube Thumbnail Failed": "The video is up, but the thumbnail was not set: {error}",
+    "Device Backup Tab": "Move to Another Computer",
+    "Device Backup Help": "One backup file with your settings (including Language Voices and caption settings), your music library, pronunciation fixes, batch progress and, if you choose, your API keys and YouTube app file. On the other computer, open this tab and import it. YouTube sign-in is not included: sign in again there.",
+    "Device Backup Include Music": "Include the music library ({count} tracks, {size} MB)",
+    "Device Backup Include Keys": "Include API keys and the YouTube app file",
+    "Prepare Device Backup": "Prepare backup file",
+    "Preparing Device Backup": "Packing settings and music...",
+    "Download Device Backup": "Download backup ({size} MB)",
+    "Import Device Backup": "Import a backup from another computer",
+    "Apply Device Backup": "Import backup",
+    "Device Backup Import Failed": "Could not import the backup: {error}",
+    "Device Backup Imported": "Backup imported: {settings} settings updated, {music} music tracks added, {pronunciation} pronunciation fixes, {batch} batch marks. Your previous config.toml was saved in storage/backups."
   }
 }

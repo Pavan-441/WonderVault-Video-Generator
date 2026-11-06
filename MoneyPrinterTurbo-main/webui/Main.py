@@ -58,6 +58,7 @@ from app.services import (
     batch,
     bilingual,
     captions,
+    device_transfer,
     hook_checker,
     youtube_kit,
     youtube_upload,
@@ -3132,6 +3133,83 @@ def _render_settings_transfer(params):
         st.rerun()
 
 
+def _render_device_backup_settings(panel):
+    """One backup file to move settings, music and fixes to another computer."""
+    with panel:
+        st.caption(tr("Device Backup Help"))
+        music = [
+            path for path in bgm_service.list_uploaded_bgm_files() if os.path.getsize(path) > 0
+        ]
+        music_mb = sum(os.path.getsize(path) for path in music) / (1024 * 1024)
+        include_music = st.checkbox(
+            tr("Device Backup Include Music").format(count=len(music), size=f"{music_mb:.0f}"),
+            value=True,
+            key="device_backup_music",
+        )
+        include_keys = st.checkbox(
+            tr("Device Backup Include Keys"), value=False, key="device_backup_keys"
+        )
+        if include_keys:
+            st.warning(tr("Key Backup Warning"))
+
+        if st.button(
+            tr("Prepare Device Backup"),
+            key="device_backup_prepare_btn",
+            icon=":material/inventory_2:",
+            use_container_width=True,
+        ):
+            target = os.path.join(
+                utils.storage_dir("temp", create=True),
+                f"wondervault-backup-{datetime.now():%Y%m%d-%H%M}.zip",
+            )
+            with st.spinner(tr("Preparing Device Backup")):
+                device_transfer.export_backup(target, include_keys, include_music)
+            st.session_state["device_backup_path"] = target
+
+        prepared = st.session_state.get("device_backup_path")
+        if prepared and os.path.exists(prepared):
+            with open(prepared, "rb") as file:
+                st.download_button(
+                    tr("Download Device Backup").format(
+                        size=f"{os.path.getsize(prepared) / (1024 * 1024):.1f}"
+                    ),
+                    data=file,
+                    file_name=os.path.basename(prepared),
+                    mime="application/zip",
+                    type="primary",
+                    use_container_width=True,
+                    key="device_backup_download_btn",
+                    icon=":material/download:",
+                )
+
+        st.divider()
+        backup_file = st.file_uploader(
+            tr("Import Device Backup"), type=["zip"], key="device_backup_uploader"
+        )
+        if backup_file is not None and st.button(
+            tr("Apply Device Backup"),
+            key="device_backup_apply_btn",
+            icon=":material/upload:",
+            use_container_width=True,
+        ):
+            try:
+                summary = device_transfer.import_backup(backup_file.getvalue())
+            except device_transfer.BackupError as exc:
+                st.error(tr("Device Backup Import Failed").format(error=exc))
+                return
+            # Start the page fresh, so the widgets read the imported settings instead
+            # of writing the old on-screen values back over them.
+            for key in list(st.session_state.keys()):
+                del st.session_state[key]
+            st.session_state["device_import_message"] = tr("Device Backup Imported").format(
+                settings=summary["settings"],
+                music=summary["music"],
+                pronunciation=summary["pronunciation"],
+                batch=summary["batch"],
+            )
+            st.rerun()
+
+
 def _render_key_backup_settings(panel):
     """渲染密钥备份的导出与恢复入口。"""
     with panel:
@@ -3223,6 +3301,7 @@ def _render_settings_dialog():
             tr("Auto-Publish Settings"),
             tr("Interface Settings Tab"),
             tr("Key Backup Tab"),
+            tr("Device Backup Tab"),
             tr("Cache Management Tab"),
         ]
         settings_tab_targets = {
@@ -3242,6 +3321,7 @@ def _render_settings_dialog():
             publish_config_panel,
             left_config_panel,
             key_backup_panel,
+            device_backup_panel,
             cache_config_panel,
         ) = st.tabs(
             settings_tab_labels,
@@ -3355,6 +3435,7 @@ def _render_settings_dialog():
         _render_cache_management_settings(cache_config_panel)
         # 密钥恢复会写回配置并清除密码控件状态，必须在下面渲染这些控件之前执行。
         _render_key_backup_settings(key_backup_panel)
+        _render_device_backup_settings(device_backup_panel)
 
         # 中间面板 - LLM 设置
 
@@ -11175,6 +11256,10 @@ def _render_application():
 
     if _apply_pending_settings_preset():
         st.success(tr("Settings Preset Imported"))
+
+    device_import_message = st.session_state.pop("device_import_message", None)
+    if device_import_message:
+        st.success(device_import_message)
 
     restore_applied = _apply_pending_task_restore()
     restore_candidate_id = st.session_state.get("task_restore_candidate_id")

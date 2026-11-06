@@ -919,6 +919,17 @@
     "Uploading Video": "正在上传……",
     "YouTube Upload Failed": "上传失败：{error}",
     "YouTube Uploaded": "已上传：{url}",
-    "YouTube Thumbnail Failed": "视频已上传，但封面未设置：{error}"
+    "YouTube Thumbnail Failed": "视频已上传，但封面未设置：{error}",
+    "Device Backup Tab": "迁移到另一台电脑",
+    "Device Backup Help": "一个备份文件，包含设置（含语言配音和字幕设置）、音乐库、发音修正、批量进度，并可选包含 API 密钥和 YouTube 应用文件。在另一台电脑上打开此页并导入即可。不包含 YouTube 登录状态，请在新电脑上重新登录。",
+    "Device Backup Include Music": "包含音乐库（{count} 首，{size} MB）",
+    "Device Backup Include Keys": "包含 API 密钥和 YouTube 应用文件",
+    "Prepare Device Backup": "生成备份文件",
+    "Preparing Device Backup": "正在打包设置和音乐……",
+    "Download Device Backup": "下载备份（{size} MB）",
+    "Import Device Backup": "导入来自另一台电脑的备份",
+    "Apply Device Backup": "导入备份",
+    "Device Backup Import Failed": "无法导入备份：{error}",
+    "Device Backup Imported": "备份已导入：更新 {settings} 项设置，新增 {music} 首音乐，{pronunciation} 条发音修正，{batch} 个批量标记。原 config.toml 已保存到 storage/backups。"
   }
 }

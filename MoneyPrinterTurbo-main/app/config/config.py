@@ -473,6 +473,30 @@ def load_config():
     return _load_toml_config(config_file)
 
 
+def sections() -> dict:
+    """The live config sections that save_config writes, by name."""
+    return {
+        "app": app,
+        "azure": azure,
+        "siliconflow": siliconflow,
+        "minimax_tts": minimax_tts,
+        "elevenlabs": elevenlabs,
+        "chatterbox": chatterbox,
+        "kokoro": kokoro,
+        "fish_audio": fish_audio,
+        "voxcpm": voxcpm,
+        "ui": ui,
+    }
+
+
+def as_dict() -> dict:
+    """The whole current configuration, as save_config would write it."""
+    result = dict(_cfg)
+    for name, section in sections().items():
+        result[name] = dict(section)
+    return result
+
+
 def save_config():
     """
     原子保存运行时配置。
@@ -490,17 +514,7 @@ def save_config():
     主要用于避免多标签页或快速 rerun 时损坏配置文件。
     """
     with _config_save_lock:
-        config_to_save = dict(_cfg)
-        config_to_save["app"] = dict(app)
-        config_to_save["azure"] = dict(azure)
-        config_to_save["siliconflow"] = dict(siliconflow)
-        config_to_save["minimax_tts"] = dict(minimax_tts)
-        config_to_save["elevenlabs"] = dict(elevenlabs)
-        config_to_save["chatterbox"] = dict(chatterbox)
-        config_to_save["kokoro"] = dict(kokoro)
-        config_to_save["fish_audio"] = dict(fish_audio)
-        config_to_save["voxcpm"] = dict(voxcpm)
-        config_to_save["ui"] = dict(ui)
+        config_to_save = as_dict()
         serialized_config = toml.dumps(config_to_save)
 
         # WebUI 完整 rerun 结束时会调用保存。内容没有变化时直接返回，避免每次
