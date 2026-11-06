@@ -24,6 +24,7 @@ from app.services import (
     metaso_minimax,
     muapi,
     ofox,
+    scene_planner,
     sonilo,
     subtitle,
     task_artifacts,
@@ -728,11 +729,36 @@ def get_video_materials(
 ):
     if params.video_source == "local":
         logger.info("\n\n## preprocess local materials")
-        materials = video.preprocess_video(
-            materials=params.video_materials,
-            clip_duration=params.video_clip_duration,
-            image_motion=params.image_motion,
-        )
+        weights = params.material_weights or []
+        if (
+            weights
+            and params.video_materials
+            and len(weights) == len(params.video_materials)
+            and audio_duration
+        ):
+            durations = scene_planner.scene_durations(
+                weights, video._get_required_video_duration(audio_duration)
+            )
+            logger.info(
+                "timing scene images to the narration: "
+                + ", ".join(f"{d:.1f}s" for d in durations)
+            )
+            materials = []
+            for material_info, duration in zip(params.video_materials, durations):
+                materials += video.preprocess_video(
+                    materials=[material_info],
+                    clip_duration=duration,
+                    image_motion=params.image_motion,
+                )
+            # Each scene clip is used once, in order, at its full length.
+            params.video_concat_mode = VideoConcatMode.sequential
+            params.video_clip_duration = math.ceil(max(durations)) + 1
+        else:
+            materials = video.preprocess_video(
+                materials=params.video_materials,
+                clip_duration=params.video_clip_duration,
+                image_motion=params.image_motion,
+            )
         if not materials:
             _mark_task_failed(
                 task_id,
@@ -984,7 +1010,7 @@ def generate_final_videos(
         and bgm_service.should_use_bgm(params.bgm_type, params.bgm_volume)
     )
     # Matching preserves keyword order; batch allocation varies each keyword's candidates.
-    if params.match_materials_to_script:
+    if params.match_materials_to_script or params.material_weights:
         video_concat_mode = VideoConcatMode.sequential
     elif params.video_count == 1:
         video_concat_mode = params.video_concat_mode

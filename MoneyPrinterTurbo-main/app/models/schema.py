@@ -125,6 +125,9 @@ class VideoParams(BaseModel):
     video_materials: Optional[List[MaterialInfo]] = (
         None  # Materials used to generate the video
     )
+    # Scene Planner: one weight per local material (its scene's narration length).
+    # Each image then stays on screen for that share of the voiceover, in order.
+    material_weights: Optional[List[float]] = None
 
     custom_audio_file: Optional[str] = (
         None  # Custom audio file path, will ignore TTS and can still use Whisper subtitles

@@ -57,6 +57,7 @@ from app.services import (
     ofox,
     bilingual,
     pronunciation,
+    scene_planner,
     subtitle,
     video,
     video_transcript,
@@ -5411,6 +5412,11 @@ def _render_video_settings(panel, params):
                     accept_multiple_files=True,
                     key="local_video_materials_uploader",
                 )
+                scene_weights = st.session_state.get("local_material_weights")
+                if not uploaded_files and scene_weights:
+                    st.caption(
+                        tr("Scene Images In Use").format(count=len(scene_weights))
+                    )
 
             # 文案顺序匹配会从关键词生成到最终合成全程保持叙事顺序，因此开启时
             # 顺序拼接是唯一符合实际执行逻辑的选项。同步控件值可避免界面仍显示
@@ -8561,6 +8567,7 @@ def _render_generation_controls(
                     )
             # 将已上传并保存到本地的视频素材写入会话，供后续只改文案时直接复用。
             st.session_state["local_video_materials"] = persisted_local_materials
+            st.session_state.pop("local_material_weights", None)
         elif (
             params.video_source == "local" and st.session_state["local_video_materials"]
         ):
@@ -8573,6 +8580,9 @@ def _render_generation_controls(
                 m.duration = material_entry.get("duration", 0)
                 if m.url:
                     params.video_materials.append(m)
+            scene_weights = st.session_state.get("local_material_weights")
+            if scene_weights and len(scene_weights) == len(params.video_materials):
+                params.material_weights = list(scene_weights)
 
         reusable_voice_preview = _get_reusable_full_voice_preview(
             params,
@@ -10397,6 +10407,207 @@ def _render_youtube_kit_result(youtube_kit, kit):
     )
 
 
+SCENE_IMAGE_TYPES = ["jpg", "jpeg", "png"]
+
+
+def _apply_pending_scene_handoff():
+    """Loads Scene Planner images, script and subject before the Video Generator renders."""
+    handoff = st.session_state.pop("scene_planner_handoff", None)
+    if not handoff:
+        return
+    st.session_state["video_script"] = handoff["script"]
+    if handoff.get("subject"):
+        st.session_state["video_subject"] = handoff["subject"]
+    _set_stable_widget_value("video_source_select", "local")
+    st.session_state.pop("local_video_materials_uploader", None)
+    st.session_state["local_video_materials"] = handoff["materials"]
+    st.session_state["local_material_weights"] = handoff["weights"]
+
+
+def _render_scene_planner_studio():
+    """Script -> scenes -> one Google Flow prompt per scene -> images placed in order."""
+    st.subheader(f"🎞️ {tr('Scene Planner')}")
+    st.caption(tr("Scene Planner Subtitle"))
+
+    for key in ("scene_script", "scene_subject"):
+        pending = st.session_state.pop(f"{key}_pending", None)
+        if pending is not None:
+            st.session_state[key] = pending
+
+    with st.container(border=True):
+        if st.button(
+            f"📋 {tr('Sync Script from Video Studio')}",
+            key="scene_sync_btn",
+        ):
+            st.session_state["scene_script_pending"] = str(
+                st.session_state.get("video_script", "") or ""
+            ).strip()
+            st.session_state["scene_subject_pending"] = str(
+                st.session_state.get("video_subject", "") or ""
+            ).strip()
+            st.rerun()
+        script = st.text_area(
+            tr("Video Script"),
+            key="scene_script",
+            height=150,
+            placeholder=tr("Scene Planner Script Placeholder"),
+        ).strip()
+        subject = st.text_input(tr("Video Subject"), key="scene_subject").strip()
+
+        style_labels = {
+            "photo": tr("Scene Style Photo"),
+            "cinematic_3d": tr("Scene Style 3D"),
+            "illustration": tr("Scene Style Illustration"),
+            "kids_cartoon": tr("Scene Style Kids"),
+        }
+        option_cols = st.columns(3)
+        with option_cols[0]:
+            style = stable_selectbox(
+                tr("Scene Style"),
+                options=list(style_labels),
+                default_value="photo",
+                key="scene_style",
+                format_func=style_labels.get,
+            )
+        with option_cols[1]:
+            aspect = stable_selectbox(
+                tr("Scene Shape"),
+                options=["portrait", "landscape"],
+                default_value="portrait",
+                key="scene_aspect",
+                format_func={
+                    "portrait": tr("Scene Shape Portrait"),
+                    "landscape": tr("Scene Shape Landscape"),
+                }.get,
+            )
+        with option_cols[2]:
+            audience = stable_selectbox(
+                tr("YouTube Kit Audience"),
+                options=["general", "kids"],
+                default_value="general",
+                key="scene_audience",
+                format_func={
+                    "general": tr("YouTube Kit Audience General"),
+                    "kids": tr("YouTube Kit Audience Kids"),
+                }.get,
+            )
+
+        if st.button(
+            tr("Plan Scenes"),
+            key="scene_plan_btn",
+            type="primary",
+            icon=":material/view_carousel:",
+            use_container_width=True,
+        ):
+            if not script:
+                st.warning(tr("Scene Planner Script Required"))
+            else:
+                with st.spinner(tr("Planning Scenes")):
+                    plan = _run_llm_read_operation(
+                        "plan_scenes",
+                        lambda app_config_snapshot: scene_planner.plan_scenes(
+                            script,
+                            subject=subject,
+                            style=style,
+                            aspect=aspect,
+                            audience=audience,
+                            app_config=app_config_snapshot,
+                        ),
+                    )
+                st.session_state["scene_plan"] = {
+                    "plan": plan,
+                    "script": script,
+                    "subject": subject,
+                }
+                # New upload slots, so images from an older plan never land in the wrong scene.
+                st.session_state["scene_plan_version"] = (
+                    st.session_state.get("scene_plan_version", 0) + 1
+                )
+
+    stored = st.session_state.get("scene_plan")
+    if not stored:
+        st.info(tr("Scene Planner Empty"))
+        return
+    plan = stored["plan"]
+    version = st.session_state.get("scene_plan_version", 0)
+
+    if plan.used_fallback:
+        st.warning(tr("Scene Planner Fallback"))
+    if script and script != stored["script"]:
+        st.warning(tr("Scene Planner Script Changed"))
+
+    st.write(f"**{tr('Scene Prompts')}**")
+    st.caption(tr("Scene Prompts Help").format(count=len(plan.scenes)))
+    st.code(
+        "\n\n".join(
+            f"{n}. {scene.prompt}" for n, scene in enumerate(plan.scenes, start=1)
+        ),
+        language=None,
+        wrap_lines=True,
+    )
+    st.download_button(
+        tr("Download Scene Prompts"),
+        data=plan.to_markdown(stored["subject"]),
+        file_name="flow_scene_prompts.md",
+        mime="text/markdown",
+        key="scene_prompts_download_btn",
+    )
+
+    uploads = []
+    for number, scene in enumerate(plan.scenes, start=1):
+        with st.container(border=True):
+            text_col, image_col = st.columns([3, 1])
+            with text_col:
+                st.write(
+                    f"**{tr('Scene Label').format(number=number)}** · ~{scene.seconds:.1f}s"
+                )
+                st.caption(scene.text)
+                st.code(scene.prompt, language=None, wrap_lines=True)
+            with image_col:
+                upload = st.file_uploader(
+                    tr("Scene Image"),
+                    type=SCENE_IMAGE_TYPES + [t.upper() for t in SCENE_IMAGE_TYPES],
+                    key=f"scene_image_{version}_{number}",
+                    label_visibility="collapsed",
+                )
+                if upload is not None:
+                    st.image(upload, use_container_width=True)
+            uploads.append(upload)
+
+    ready = sum(upload is not None for upload in uploads)
+    st.caption(tr("Scene Images Ready").format(ready=ready, total=len(uploads)))
+    if st.button(
+        tr("Use Scene Images"),
+        key="scene_use_btn",
+        type="primary",
+        icon=":material/movie:",
+        use_container_width=True,
+        disabled=ready < len(uploads),
+    ):
+        target_dir = utils.storage_dir("local_videos", create=True)
+        materials = []
+        for upload in uploads:
+            try:
+                file_path = _build_uploaded_file_path(
+                    upload, target_dir, LOCAL_MATERIAL_EXTENSIONS, "scene"
+                )
+            except ValueError:
+                st.error(tr("Unsupported Upload File Type"))
+                return
+            with open(file_path, "wb") as file:
+                file.write(upload.getbuffer())
+            materials.append({"provider": "local", "url": file_path, "duration": 0})
+        st.session_state["scene_planner_handoff"] = {
+            "script": stored["script"],
+            "subject": stored["subject"],
+            "materials": materials,
+            "weights": [scene.seconds for scene in plan.scenes],
+        }
+        st.session_state["main_studio_target_tab"] = "video"
+        st.toast(tr("Scene Images Sent"), icon="🎬")
+        st.rerun()
+
+
 def _render_video_generator_studio():
     """渲染四栏视频生成工作室。"""
     with st.container(key="main_settings_grid"):
@@ -10407,6 +10618,7 @@ def _render_video_generator_studio():
     right_panel = panel[3]
 
     _apply_pending_language_switch()
+    _apply_pending_scene_handoff()
     params = VideoParams(video_subject="")
     params.match_materials_to_script = bool(
         st.session_state.get("match_materials_to_script", False)
@@ -10453,29 +10665,36 @@ def _render_application():
     if restore_applied or restore_succeeded:
         st.success(tr("Task Configuration Loaded"))
 
-    main_tab_labels = [
-        f"🎬 {tr('Video Generator')}",
-        f"🎙️ {tr('Audio Generator & Downloader')}",
-        f"🎨 {tr('Thumbnail Studio')}",
-        f"📺 {tr('YouTube Kit')}",
-        f"📝 {tr('Video to Text Extractor')}",
-        f"🎼 {tr('AI Music Studio')}",
-    ]
+    tab_labels = {
+        "video": f"🎬 {tr('Video Generator')}",
+        "scenes": f"🎞️ {tr('Scene Planner')}",
+        "audio": f"🎙️ {tr('Audio Generator & Downloader')}",
+        "thumbnail": f"🎨 {tr('Thumbnail Studio')}",
+        "youtube_kit": f"📺 {tr('YouTube Kit')}",
+        "text": f"📝 {tr('Video to Text Extractor')}",
+        "music": f"🎼 {tr('AI Music Studio')}",
+    }
+    main_tab_labels = list(tab_labels.values())
     main_tabs_key = localized_widget_key("main_studio_tabs")
     target_tab = st.session_state.pop("main_studio_target_tab", None)
-    if target_tab == "video":
-        st.session_state[main_tabs_key] = main_tab_labels[0]
-    elif target_tab == "audio":
-        st.session_state[main_tabs_key] = main_tab_labels[1]
-    elif target_tab == "thumbnail":
-        st.session_state[main_tabs_key] = main_tab_labels[2]
+    if target_tab in tab_labels:
+        st.session_state[main_tabs_key] = tab_labels[target_tab]
 
-    video_tab, audio_tab, thumb_tab, youtube_kit_tab, text_tab, music_tab = st.tabs(
-        main_tab_labels, key=main_tabs_key
-    )
+    (
+        video_tab,
+        scene_tab,
+        audio_tab,
+        thumb_tab,
+        youtube_kit_tab,
+        text_tab,
+        music_tab,
+    ) = st.tabs(main_tab_labels, key=main_tabs_key)
 
     with video_tab:
         _render_video_generator_studio()
+
+    with scene_tab:
+        _render_scene_planner_studio()
 
     with audio_tab:
         _render_audio_generator_studio()
