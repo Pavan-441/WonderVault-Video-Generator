@@ -786,6 +786,19 @@
     "Preview Voice": "Preview Voice",
     "Clear Previews": "Clear",
     "Audio Studio Preview Script Help": "Plays the first lines of your script with the current voice, speed and volume. Try a few voices, compare them below, then generate the full audio.",
-    "Audio Studio Preview Sample Help": "Plays a short sample with the current voice, speed and volume. Add a script to hear its first lines instead."
+    "Audio Studio Preview Sample Help": "Plays a short sample with the current voice, speed and volume. Add a script to hear its first lines instead.",
+    "Pronunciation Fixes": "Pronunciation Fixes",
+    "Pronunciation Fixes Help": "Words the voice says wrong and how it should say them, e.g. DNA → డీ ఎన్ ఏ. Fixes apply to every voiceover and preview (Video Generator too). Subtitles keep your original spelling.",
+    "Pronunciation Word": "Word in script",
+    "Pronunciation Say": "Say it as",
+    "Pronunciation Scope": "Applies to",
+    "Pronunciation Scope Telugu": "Telugu scripts",
+    "Pronunciation Scope All": "All scripts",
+    "Pronunciation Try": "Try a sentence",
+    "Pronunciation Try Placeholder": "Type a line from your script to see what the voice will read",
+    "Pronunciation Try Result": "The voice will read: {text}",
+    "Save Pronunciation Fixes": "Save Fixes",
+    "Pronunciation Fixes Saved": "Saved {count} pronunciation fixes",
+    "Pronunciation Fixes Active": "🗣️ {count} pronunciation fixes are on (edit them in the Audio Generator tab)."
   }
 }

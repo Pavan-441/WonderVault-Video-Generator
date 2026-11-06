@@ -29,6 +29,7 @@ from moviepy.audio.io.AudioFileClip import AudioFileClip
 from openai import OpenAI
 
 from app.config import config
+from app.services import pronunciation
 from app.utils import utils
 
 _DEFAULT_EDGE_TTS_TIMEOUT_SECONDS = 30.0
@@ -1129,6 +1130,10 @@ def tts(
     voxcpm_prompt_audio: bytes | None = None,
     voxcpm_prompt_text: str = "",
 ) -> Union[SubMaker, None]:
+    # 发音修正只改变送给配音服务的文字；无配音模式的字幕时间轴仍用原文。
+    if not is_no_voice(voice_name):
+        text = pronunciation.apply(text)
+
     # 无停顿标签时，原样直通原始文本，避免无意义的正则处理或空白截断
     if not utils.has_pause_tags(text):
         return _single_tts(
@@ -3098,6 +3103,19 @@ def _match_script_line(script_lines: list[str], current_text: str, sub_index: in
         )
         if current_text_normalized == target_te_normalized:
             return target_line.strip()
+
+    # 发音修正：配音读的是替换后的词（如 DNA → డీ ఎన్ ఏ），字幕仍返回脚本原句。
+    for spoken_line in pronunciation.spoken_variants(target_line):
+        for candidate in {
+            spoken_line,
+            normalize_years_for_tts(spoken_line, "en-US"),
+            normalize_years_for_tts(spoken_line, "te-IN"),
+        }:
+            candidate_normalized = re.sub(
+                r"[_\W]+", "", unicodedata.normalize("NFC", candidate)
+            )
+            if current_text_normalized == candidate_normalized:
+                return target_line.strip()
 
     # 最后一层阿拉伯语容错：edge-tts 返回的字母形态、变音符号或 Tatweel
     # 可能和脚本不同。只在常规匹配失败后归一化比较，非阿拉伯语文本不会受影响。

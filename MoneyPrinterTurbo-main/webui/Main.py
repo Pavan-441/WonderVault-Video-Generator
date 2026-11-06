@@ -15,6 +15,7 @@ from datetime import datetime
 from pathlib import Path
 from uuid import UUID, uuid4
 
+import pandas as pd
 import requests
 import streamlit as st
 from loguru import logger
@@ -54,6 +55,7 @@ from app.services import (
     metaso_minimax,
     muapi,
     ofox,
+    pronunciation,
     subtitle,
     video,
     video_transcript,
@@ -6974,6 +6976,11 @@ def _render_audio_settings(panel, params):
                 voice_mode = VOICE_MODE_NONE
                 st.caption(tr("Voiceover Disabled Notice"))
             tts_mode_enabled = voice_mode == VOICE_MODE_TTS
+            pronunciation_rule_count = len(pronunciation.load_rules())
+            if tts_mode_enabled and pronunciation_rule_count:
+                st.caption(
+                    tr("Pronunciation Fixes Active").format(count=pronunciation_rule_count)
+                )
 
             # Provider 下拉只负责选择自动配音服务；无配音已经由上方模式控制，
             # 不再作为 TTS Provider 混入列表，避免两个入口表达同一状态。
@@ -8497,6 +8504,76 @@ def _audio_studio_preview_text(script: str) -> str:
     return preview.strip()
 
 
+def _render_pronunciation_fixes():
+    """Editor for words the voice says wrong; applies to every voiceover and preview."""
+    rules = pronunciation.load_rules()
+    scope_labels = {
+        pronunciation.SCOPE_TELUGU: tr("Pronunciation Scope Telugu"),
+        pronunciation.SCOPE_ALL: tr("Pronunciation Scope All"),
+    }
+    label_to_scope = {label: scope for scope, label in scope_labels.items()}
+    with st.expander(f"🗣️ {tr('Pronunciation Fixes')} ({len(rules)})"):
+        st.caption(tr("Pronunciation Fixes Help"))
+        # A new key after each save gives the editor fresh rows instead of
+        # replaying the old edits on top of the saved list.
+        version = st.session_state.setdefault("pronunciation_editor_version", 0)
+        table = pd.DataFrame(
+            [{"word": r.word, "say": r.say, "scope": scope_labels[r.scope]} for r in rules],
+            columns=["word", "say", "scope"],
+        )
+        edited = st.data_editor(
+            table,
+            num_rows="dynamic",
+            use_container_width=True,
+            hide_index=True,
+            key=f"pronunciation_editor_{version}",
+            column_config={
+                "word": st.column_config.TextColumn(
+                    tr("Pronunciation Word"), max_chars=pronunciation.MAX_WORD_CHARS
+                ),
+                "say": st.column_config.TextColumn(
+                    tr("Pronunciation Say"), max_chars=pronunciation.MAX_SAY_CHARS
+                ),
+                "scope": st.column_config.SelectboxColumn(
+                    tr("Pronunciation Scope"),
+                    options=list(label_to_scope),
+                    default=scope_labels[pronunciation.SCOPE_TELUGU],
+                ),
+            },
+        )
+        edited_rules = pronunciation.clean_rules(
+            {
+                "word": row.get("word"),
+                "say": row.get("say"),
+                "scope": label_to_scope.get(row.get("scope"), pronunciation.SCOPE_TELUGU),
+            }
+            for row in edited.fillna("").to_dict("records")
+        )
+
+        sample = st.text_input(
+            tr("Pronunciation Try"),
+            key="pronunciation_try_input",
+            placeholder=tr("Pronunciation Try Placeholder"),
+        ).strip()
+        if sample:
+            st.caption(
+                tr("Pronunciation Try Result").format(
+                    text=pronunciation.apply(sample, rules=edited_rules)
+                )
+            )
+
+        if st.button(
+            tr("Save Pronunciation Fixes"),
+            key="save_pronunciation_btn",
+            icon=":material/save:",
+            disabled=edited_rules == rules,
+        ):
+            saved = pronunciation.save_rules(edited_rules)
+            st.session_state["pronunciation_editor_version"] = version + 1
+            st.toast(tr("Pronunciation Fixes Saved").format(count=len(saved)), icon="✅")
+            st.rerun()
+
+
 def _render_audio_studio_voice_preview(
     script_text, selected_tts, selected_voice, selected_rate, selected_volume, friendly
 ):
@@ -8997,6 +9074,8 @@ def _render_audio_generator_studio():
                     step=0.05,
                     key="audio_studio_bgm_volume",
                 )
+
+    _render_pronunciation_fixes()
 
     _render_audio_studio_voice_preview(
         script_text,

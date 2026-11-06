@@ -786,6 +786,19 @@
     "Preview Voice": "试听音色",
     "Clear Previews": "清空",
     "Audio Studio Preview Script Help": "用当前音色、语速和音量朗读文案开头几句。可以多试几个音色并在下方对比，再生成完整音频。",
-    "Audio Studio Preview Sample Help": "用当前音色、语速和音量播放一段简短样例。输入文案后将改为朗读文案开头。"
+    "Audio Studio Preview Sample Help": "用当前音色、语速和音量播放一段简短样例。输入文案后将改为朗读文案开头。",
+    "Pronunciation Fixes": "发音修正",
+    "Pronunciation Fixes Help": "配音读错的词以及正确读法，例如 DNA → డీ ఎన్ ఏ。修正会用于所有配音和试听（包括视频生成器），字幕仍保留原文写法。",
+    "Pronunciation Word": "文案中的词",
+    "Pronunciation Say": "读作",
+    "Pronunciation Scope": "适用范围",
+    "Pronunciation Scope Telugu": "泰卢固语文案",
+    "Pronunciation Scope All": "所有文案",
+    "Pronunciation Try": "试一句",
+    "Pronunciation Try Placeholder": "输入文案中的一句话，查看配音实际朗读的内容",
+    "Pronunciation Try Result": "配音将朗读：{text}",
+    "Save Pronunciation Fixes": "保存修正",
+    "Pronunciation Fixes Saved": "已保存 {count} 条发音修正",
+    "Pronunciation Fixes Active": "🗣️ 已启用 {count} 条发音修正（在音频生成页编辑）。"
   }
 }
