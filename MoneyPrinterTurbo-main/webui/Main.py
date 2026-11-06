@@ -55,6 +55,7 @@ from app.services import (
     metaso_minimax,
     muapi,
     ofox,
+    bilingual,
     pronunciation,
     subtitle,
     video,
@@ -5147,6 +5148,7 @@ def _render_script_settings(panel, params):
                 height=180,
                 key="video_script",
             )
+            _render_language_switch(params)
             if _effective_script_generation_backend() == "loomloom":
                 st.caption(tr("LoomLoom Video Terms Reuse Help"))
             elif st.button(
@@ -5182,6 +5184,158 @@ def _render_script_settings(panel, params):
                 help=tr("Video Keywords Help"),
                 key="video_terms",
             )
+
+
+def _language_label(language):
+    return tr("Language Telugu") if language == bilingual.TELUGU else tr("Language English")
+
+
+def _current_voice_profile():
+    """The voice settings currently saved for the Video Generator."""
+    return {
+        "tts_server": config.ui.get("tts_server", "azure-tts-v1"),
+        "voice_name": config.ui.get("voice_name", ""),
+        "voice_rate": config.ui.get("voice_rate", 1.0),
+        "font_name": config.ui.get("font_name", ""),
+        "video_language": config.ui.get("video_language", ""),
+    }
+
+
+def _apply_pending_language_switch():
+    """Loads a translated (or restored) script and its voice before the widgets render."""
+    pending = st.session_state.pop("bilingual_pending", None)
+    if not pending:
+        return
+    st.session_state["video_script"] = pending["script"]
+    st.session_state["video_subject"] = pending["subject"]
+    _set_stable_widget_value("script_language_select", pending["video_language"])
+    profile = pending.get("profile")
+    if profile:
+        st.session_state["voiceover_enabled_toggle"] = True
+        _set_stable_widget_value("voice_mode_control", VOICE_MODE_TTS)
+        _set_stable_widget_value("tts_server_select", profile["tts_server"])
+        _set_stable_widget_value(
+            f"speech_synthesis_select_{profile['tts_server']}", profile["voice_name"]
+        )
+        _set_stable_widget_value("voice_rate_select", profile["voice_rate"])
+        if profile.get("font_name"):
+            _set_stable_widget_value("font_name_select", profile["font_name"])
+    st.session_state["bilingual_notice"] = pending.get("notice")
+
+
+def _render_language_switch(params):
+    """One button that rewrites the script in the other language and switches the voice."""
+    notice = st.session_state.pop("bilingual_notice", None)
+    if notice:
+        kind, message = notice
+        (st.success if kind == "success" else st.warning)(message)
+
+    script = (params.video_script or "").strip()
+    target = bilingual.other(bilingual.detect(script))
+    previous = st.session_state.get("bilingual_previous")
+    columns = st.columns([3, 2]) if previous else [st.container()]
+    switch_clicked = columns[0].button(
+        tr("Make Language Version").format(language=_language_label(target)),
+        key="bilingual_switch_btn",
+        icon=":material/translate:",
+        use_container_width=True,
+        disabled=not script,
+        help=tr("Make Language Version Help"),
+    )
+    undo_clicked = previous and columns[1].button(
+        tr("Undo Language Version"),
+        key="bilingual_undo_btn",
+        icon=":material/undo:",
+        use_container_width=True,
+    )
+
+    if switch_clicked:
+        try:
+            with st.spinner(tr("Translating Script")):
+                result = _run_llm_read_operation(
+                    "translate_script",
+                    lambda app_config_snapshot: bilingual.translate(
+                        script,
+                        params.video_subject,
+                        target,
+                        app_config=app_config_snapshot,
+                    ),
+                )
+        except (bilingual.TranslationError, ValueError) as exc:
+            st.error(tr("Translation Failed").format(error=exc))
+            return
+        profile = bilingual.get_profile(config.ui, target)
+        language = _language_label(target)
+        st.session_state["bilingual_previous"] = {
+            "script": script,
+            "subject": params.video_subject,
+            "video_language": params.video_language,
+            "profile": bilingual.clean_profile(_current_voice_profile()),
+        }
+        st.session_state["bilingual_pending"] = {
+            "script": result["script"],
+            "subject": result["subject"],
+            "video_language": (profile or {}).get("video_language")
+            or bilingual.VIDEO_LANGUAGE[target],
+            "profile": profile,
+            "notice": (
+                ("success", tr("Language Version Ready").format(language=language))
+                if profile
+                else ("warning", tr("Language Version Ready No Voice").format(language=language))
+            ),
+        }
+        st.rerun()
+
+    if undo_clicked:
+        restored = st.session_state.pop("bilingual_previous")
+        restored["notice"] = ("success", tr("Language Version Undone"))
+        st.session_state["bilingual_pending"] = restored
+        st.rerun()
+
+
+def _render_language_voices(params):
+    """Saves the current voice, speed, font and script language for English or Telugu."""
+    with st.expander(f"🌐 {tr('Language Voices')}"):
+        st.caption(tr("Language Voices Help"))
+        tts_server = config.ui.get("tts_server", "azure-tts-v1")
+        current = {
+            "tts_server": tts_server,
+            "voice_name": params.voice_name,
+            "voice_rate": params.voice_rate,
+            "font_name": params.font_name,
+            "video_language": params.video_language,
+        }
+        for column, language in zip(st.columns(2), bilingual.LANGUAGES):
+            with column:
+                st.write(f"**{_language_label(language)}**")
+                saved = bilingual.get_profile(config.ui, language)
+                if saved:
+                    st.caption(
+                        tr("Language Voice Summary").format(
+                            voice=saved["voice_name"],
+                            rate=f"{saved['voice_rate']:.1f}",
+                            font=saved.get("font_name") or "-",
+                        )
+                    )
+                else:
+                    st.caption(tr("Language Voice Not Saved"))
+                can_save = bool(params.voice_name) and not voice.is_no_voice(params.voice_name)
+                if st.button(
+                    tr("Save Language Voice").format(language=_language_label(language)),
+                    key=f"save_language_voice_{language}",
+                    use_container_width=True,
+                    disabled=not can_save,
+                ):
+                    _set_runtime_config(
+                        "ui",
+                        "language_profiles",
+                        bilingual.set_profile(config.ui, language, current),
+                    )
+                    st.toast(
+                        tr("Language Voice Saved").format(language=_language_label(language)),
+                        icon="✅",
+                    )
+                    st.rerun()
 
 
 def _render_video_settings(panel, params):
@@ -10252,6 +10406,7 @@ def _render_video_generator_studio():
     audio_panel = panel[2]
     right_panel = panel[3]
 
+    _apply_pending_language_switch()
     params = VideoParams(video_subject="")
     params.match_materials_to_script = bool(
         st.session_state.get("match_materials_to_script", False)
@@ -10264,6 +10419,7 @@ def _render_video_generator_studio():
     )
 
     _render_subtitle_settings(right_panel, params)
+    _render_language_voices(params)
 
     generation_submitted = _render_generation_controls(
         params,

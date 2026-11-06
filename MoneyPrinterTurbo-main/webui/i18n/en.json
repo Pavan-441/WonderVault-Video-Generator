@@ -799,6 +799,22 @@
     "Pronunciation Try Result": "The voice will read: {text}",
     "Save Pronunciation Fixes": "Save Fixes",
     "Pronunciation Fixes Saved": "Saved {count} pronunciation fixes",
-    "Pronunciation Fixes Active": "🗣️ {count} pronunciation fixes are on (edit them in the Audio Generator tab)."
+    "Pronunciation Fixes Active": "🗣️ {count} pronunciation fixes are on (edit them in the Audio Generator tab).",
+    "Language English": "English",
+    "Language Telugu": "Telugu",
+    "Make Language Version": "Make {language} version",
+    "Make Language Version Help": "Rewrites the script and subject in the other language with the AI, and switches to the voice you saved for that language. Your current script can be restored with Undo.",
+    "Undo Language Version": "Undo",
+    "Translating Script": "Rewriting the script...",
+    "Translation Failed": "Could not make the other-language version: {error}",
+    "Language Version Ready": "{language} version ready, with your saved {language} voice. Check the script, then click Generate.",
+    "Language Version Ready No Voice": "{language} version ready. No {language} voice is saved yet: pick the voice, speed and font, then save them under Language Voices (below the settings) so it switches automatically next time.",
+    "Language Version Undone": "Your previous script and voice are back.",
+    "Language Voices": "Language Voices",
+    "Language Voices Help": "Save the current voice, speed, subtitle font and script language for each language. Make version and batch videos use them.",
+    "Language Voice Summary": "{voice} · {rate}× · {font}",
+    "Language Voice Not Saved": "Not saved yet",
+    "Save Language Voice": "Use current settings for {language}",
+    "Language Voice Saved": "Saved the {language} voice settings"
   }
 }

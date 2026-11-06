@@ -799,6 +799,22 @@
     "Pronunciation Try Result": "配音将朗读：{text}",
     "Save Pronunciation Fixes": "保存修正",
     "Pronunciation Fixes Saved": "已保存 {count} 条发音修正",
-    "Pronunciation Fixes Active": "🗣️ 已启用 {count} 条发音修正（在音频生成页编辑）。"
+    "Pronunciation Fixes Active": "🗣️ 已启用 {count} 条发音修正（在音频生成页编辑）。",
+    "Language English": "英语",
+    "Language Telugu": "泰卢固语",
+    "Make Language Version": "生成{language}版本",
+    "Make Language Version Help": "用 AI 把文案和主题改写为另一种语言，并切换到为该语言保存的配音。可用“撤销”恢复当前文案。",
+    "Undo Language Version": "撤销",
+    "Translating Script": "正在改写文案……",
+    "Translation Failed": "无法生成另一语言版本：{error}",
+    "Language Version Ready": "{language}版本已就绪，并已切换到保存的{language}配音。检查文案后点击生成。",
+    "Language Version Ready No Voice": "{language}版本已就绪。尚未保存{language}配音：请选择音色、语速和字体，并在设置下方的“语言配音”中保存，下次即可自动切换。",
+    "Language Version Undone": "已恢复之前的文案和配音。",
+    "Language Voices": "语言配音",
+    "Language Voices Help": "为每种语言保存当前的音色、语速、字幕字体和文案语言。生成语言版本和批量视频会使用这些设置。",
+    "Language Voice Summary": "{voice} · {rate}× · {font}",
+    "Language Voice Not Saved": "尚未保存",
+    "Save Language Voice": "将当前设置用于{language}",
+    "Language Voice Saved": "已保存{language}配音设置"
   }
 }
