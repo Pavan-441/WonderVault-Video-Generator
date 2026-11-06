@@ -59,6 +59,8 @@ from app.services import (
     bilingual,
     captions,
     hook_checker,
+    youtube_kit,
+    youtube_upload,
     pronunciation,
     scene_planner,
     script_library,
@@ -10458,6 +10460,221 @@ def _render_youtube_kit_studio():
             st.info(tr("YouTube Kit Empty"))
         else:
             _render_youtube_kit_result(youtube_kit, kit)
+
+    _render_youtube_upload()
+
+
+@st.fragment(run_every=2)
+def _poll_youtube_sign_in():
+    sign_in = st.session_state.get("yt_sign_in")
+    if sign_in and sign_in.status != "waiting":
+        st.rerun()
+
+
+def _youtube_account_ready():
+    """Setup, sign-in and account line. True when uploads can start."""
+    if not youtube_upload.is_configured():
+        st.markdown(tr("YouTube Setup Steps"))
+        client = st.file_uploader(
+            tr("YouTube Client File"), type=["json"], key="yt_client_uploader"
+        )
+        if client is not None:
+            try:
+                youtube_upload.save_client(client.getvalue())
+            except youtube_upload.YouTubeError as exc:
+                st.error(tr("YouTube Client Invalid").format(error=exc))
+                return False
+            st.session_state.pop("yt_client_uploader", None)
+            st.rerun()
+        return False
+
+    if not youtube_upload.is_signed_in():
+        sign_in = st.session_state.get("yt_sign_in")
+        if sign_in and sign_in.status == "waiting":
+            st.info(tr("YouTube Sign In Waiting"))
+            st.link_button(tr("Open Google Sign-in"), sign_in.url)
+            _poll_youtube_sign_in()
+            return False
+        if sign_in and sign_in.status == "failed":
+            st.error(tr("YouTube Sign In Failed").format(error=sign_in.error))
+        if st.button(
+            tr("Sign In With Google"), key="yt_sign_in_btn", icon=":material/login:"
+        ):
+            sign_in = youtube_upload.SignIn().start()
+            st.session_state["yt_sign_in"] = sign_in
+            try:
+                webbrowser.open(sign_in.url)
+            except Exception as exc:
+                logger.warning(f"could not open the browser for YouTube sign-in: {exc}")
+            st.rerun()
+        return False
+
+    if "yt_channel" not in st.session_state:
+        try:
+            st.session_state["yt_channel"] = youtube_upload.channel_title()
+        except (youtube_upload.YouTubeError, requests.RequestException) as exc:
+            st.error(tr("YouTube Account Error").format(error=exc))
+            return False
+    account_col, sign_out_col = st.columns([4, 1])
+    account_col.caption(
+        f"✅ {tr('YouTube Signed In As').format(channel=st.session_state['yt_channel'] or '?')}"
+    )
+    if sign_out_col.button(tr("YouTube Sign Out"), key="yt_sign_out_btn"):
+        youtube_upload.sign_out()
+        for key in ("yt_channel", "yt_sign_in"):
+            st.session_state.pop(key, None)
+        st.rerun()
+    return True
+
+
+def _prefill_upload_fields(video):
+    """Loads title, description and tags for a newly picked video."""
+    if st.session_state.get("yt_upload_prefilled_for") == video:
+        return
+    metadata = youtube_upload.kit_beside(video)
+    kit = st.session_state.get("yt_kit_result")
+    if metadata is None and kit is not None:
+        metadata = {
+            "title": kit.titles[0] if kit.titles else "",
+            "description": kit.description,
+            "tags": list(kit.tags),
+        }
+    metadata = metadata or {"title": "", "description": "", "tags": []}
+    st.session_state["yt_upload_title"] = metadata["title"][: youtube_kit.TITLE_MAX_CHARS]
+    st.session_state["yt_upload_description"] = metadata["description"]
+    st.session_state["yt_upload_tags"] = ", ".join(metadata["tags"])
+    st.session_state["yt_upload_kids"] = (
+        "kids" in video.lower()
+        or st.session_state.get("yt_kit_result_audience") == "kids"
+    )
+    st.session_state["yt_upload_prefilled_for"] = video
+
+
+def _render_youtube_upload():
+    """Uploads a finished video with its title, description and tags."""
+    with st.expander(f"🚀 {tr('Upload to YouTube')}"):
+        if not _youtube_account_ready():
+            return
+        videos = youtube_upload.recent_videos()
+        if not videos:
+            st.info(tr("YouTube No Videos"))
+            return
+        root = utils.download_dir()
+        labels = {
+            path: f"{os.path.relpath(path, root)} · "
+            f"{datetime.fromtimestamp(os.path.getmtime(path)):%d %b %H:%M}"
+            for path in videos
+        }
+        video = stable_selectbox(
+            tr("YouTube Video File"),
+            options=videos,
+            default_value=videos[0],
+            key="yt_upload_video",
+            format_func=labels.get,
+        )
+        _prefill_upload_fields(video)
+        st.caption(
+            tr("YouTube Kit Beside Video")
+            if youtube_upload.kit_beside(video)
+            else tr("YouTube Kit From Tab")
+        )
+
+        title = st.text_input(
+            tr("YouTube Upload Title"),
+            key="yt_upload_title",
+            max_chars=youtube_kit.TITLE_MAX_CHARS,
+        ).strip()
+        description = st.text_area(
+            tr("YouTube Kit Description"), key="yt_upload_description", height=220
+        )
+        tags = [
+            t.strip()
+            for t in st.text_area(tr("YouTube Kit Tags"), key="yt_upload_tags", height=90).split(",")
+            if t.strip()
+        ]
+        st.caption(
+            f"{youtube_kit.tags_character_count(tags)}/{youtube_kit.TAGS_MAX_CHARS}"
+        )
+
+        privacy_labels = {
+            "private": tr("YouTube Privacy Private"),
+            "unlisted": tr("YouTube Privacy Unlisted"),
+            "public": tr("YouTube Privacy Public"),
+            "schedule": tr("YouTube Privacy Schedule"),
+        }
+        option_cols = st.columns(2)
+        with option_cols[0]:
+            privacy = stable_selectbox(
+                tr("YouTube Privacy"),
+                options=list(privacy_labels),
+                default_value="private",
+                key="yt_upload_privacy",
+                format_func=privacy_labels.get,
+            )
+        with option_cols[1]:
+            made_for_kids = st.checkbox(
+                tr("YouTube Made For Kids"), key="yt_upload_kids"
+            )
+        publish_at = None
+        if privacy == "schedule":
+            local_zone = datetime.now().astimezone().tzinfo
+            date_col, time_col = st.columns(2)
+            day = date_col.date_input(tr("YouTube Publish Date"), key="yt_upload_date")
+            moment = time_col.time_input(
+                tr("YouTube Publish Time"), key="yt_upload_time", step=900
+            )
+            publish_at = datetime.combine(day, moment).replace(tzinfo=local_zone)
+        thumbnail_upload = st.file_uploader(
+            tr("YouTube Thumbnail"),
+            type=["jpg", "jpeg", "png"],
+            key="yt_upload_thumbnail",
+            help=tr("YouTube Thumbnail Help"),
+        )
+
+        metadata = youtube_upload.UploadMetadata(
+            title=title,
+            description=description,
+            tags=tags,
+            privacy="private" if privacy == "schedule" else privacy,
+            publish_at=publish_at,
+            made_for_kids=made_for_kids,
+            language="te" if bilingual.detect(title + description) == bilingual.TELUGU else "en",
+        )
+        problems = metadata.validate()
+        for problem in problems:
+            st.warning(problem)
+
+        if st.button(
+            tr("Upload Video"),
+            key="yt_upload_btn",
+            type="primary",
+            icon=":material/upload:",
+            use_container_width=True,
+            disabled=bool(problems),
+        ):
+            bar = st.progress(0.0, text=tr("Uploading Video"))
+            try:
+                video_id = youtube_upload.upload(
+                    video,
+                    metadata,
+                    progress=lambda done: bar.progress(min(done, 1.0), text=tr("Uploading Video")),
+                )
+            except (youtube_upload.YouTubeError, requests.RequestException, OSError) as exc:
+                st.error(tr("YouTube Upload Failed").format(error=exc))
+                return
+            url = youtube_upload.video_url(video_id)
+            st.success(tr("YouTube Uploaded").format(url=url))
+            if thumbnail_upload is not None:
+                thumb_path = os.path.join(
+                    utils.storage_dir("youtube", create=True),
+                    f"thumbnail{os.path.splitext(thumbnail_upload.name)[1].lower()}",
+                )
+                with open(thumb_path, "wb") as file:
+                    file.write(thumbnail_upload.getbuffer())
+                try:
+                    youtube_upload.set_thumbnail(video_id, thumb_path)
+                except (youtube_upload.YouTubeError, requests.RequestException) as exc:
+                    st.warning(tr("YouTube Thumbnail Failed").format(error=exc))
 
 
 def _render_youtube_kit_result(youtube_kit, kit):
