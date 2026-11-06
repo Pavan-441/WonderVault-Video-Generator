@@ -58,9 +58,9 @@ class ImageMotion(str, Enum):
     zoom = "zoom"
 
 
-SubtitleDisplayMode = Literal["sentence", "word_by_word"]
+SubtitleDisplayMode = Literal["sentence", "word_by_word", "word_highlight"]
 SubtitleAnimation = Literal["none", "pop_spring"]
-_SUBTITLE_DISPLAY_MODES = ("sentence", "word_by_word")
+_SUBTITLE_DISPLAY_MODES = ("sentence", "word_by_word", "word_highlight")
 _SUBTITLE_ANIMATIONS = ("none", "pop_spring")
 
 
@@ -157,6 +157,10 @@ class VideoParams(BaseModel):
         "subtitle_animation", _SUBTITLE_ANIMATIONS, "none"
     )
     custom_position: float = config.ui.get("custom_position", 70.0)
+    # Shorts captions (subtitle_display_mode "word_highlight").
+    caption_highlight_color: str = "#FFE600"
+    caption_max_words: int = Field(default=3, ge=1, le=6)
+    caption_precise_timing: bool = False
     font_name: Optional[str] = "STHeitiMedium.ttc"
     text_fore_color: Optional[str] = "#FFFFFF"
     text_background_color: Union[bool, str] = False

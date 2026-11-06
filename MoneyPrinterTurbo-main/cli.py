@@ -198,7 +198,7 @@ _SUBTITLE_POSITION_VALUES = (
 # 字幕展示模式与入场动画由 WebUI 保存进 [ui]。两者随「逐词字幕 + 弹跳动画」
 # 加入时只改了 WebUI 与模型字段默认值，命令行一直缺少开关。取值需与
 # app/models/schema.py 的 _SUBTITLE_DISPLAY_MODES / _SUBTITLE_ANIMATIONS 一致。
-_SUBTITLE_DISPLAY_MODE_VALUES = ("sentence", "word_by_word")
+_SUBTITLE_DISPLAY_MODE_VALUES = ("sentence", "word_by_word", "word_highlight")
 _SUBTITLE_ANIMATION_VALUES = ("none", "pop_spring")
 
 

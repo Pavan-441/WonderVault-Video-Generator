@@ -17,6 +17,7 @@ from app.models import const
 from app.models.schema import VideoConcatMode, VideoParams
 from app.services import bgm as bgm_service
 from app.services import (
+    captions,
     elevenlabs_music,
     llm,
     loomloom,
@@ -716,6 +717,18 @@ def generate_subtitle(task_id, params, video_script, sub_maker, audio_file):
     if not subtitle_lines:
         logger.warning(f"subtitle file is invalid: {subtitle_path}")
         return ""
+
+    if (
+        getattr(params, "subtitle_display_mode", "sentence") == "word_highlight"
+        and getattr(params, "caption_precise_timing", False)
+    ):
+        logger.info("\n\n## timing caption words with Whisper")
+        word_timeline = captions.transcribe_word_timeline(audio_file)
+        if word_timeline:
+            captions.save_word_timeline(captions.words_path(subtitle_path), word_timeline)
+            logger.info(f"caption word timings: {len(word_timeline)} words")
+        else:
+            logger.warning("no Whisper word timings, captions use estimated timing")
 
     return subtitle_path
 

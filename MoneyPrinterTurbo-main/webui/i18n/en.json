@@ -864,6 +864,12 @@
     "Batch Running Note": "A batch is running. You can keep using the app; videos are made one at a time and wait while another video is being generated.",
     "Batch Progress": "Batch: {done} of {total} done",
     "Batch Stopping": "stopping after the current video",
-    "Stop Batch": "Stop after this video"
+    "Stop Batch": "Stop after this video",
+    "Shorts Captions (Word Highlight)": "Shorts captions (word highlight)",
+    "Shorts Captions Help": "Big captions, a few words at a time, with the spoken word highlighted. Uses the font, size, text colour, outline and position above; background and animation don't apply.",
+    "Caption Highlight Color": "Highlight colour",
+    "Caption Words": "Words per caption",
+    "Caption Precise Timing": "Precise word timing (Whisper, slower)",
+    "Caption Precise Timing Help": "Listens to the finished voiceover with Whisper to time each word exactly. Adds a minute or more per video and downloads the Whisper model on first use. Off: words are timed by their length inside each sentence, which is usually close."
   }
 }

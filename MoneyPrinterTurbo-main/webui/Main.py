@@ -57,6 +57,7 @@ from app.services import (
     ofox,
     batch,
     bilingual,
+    captions,
     pronunciation,
     scene_planner,
     script_library,
@@ -7869,6 +7870,47 @@ def _render_audio_settings(panel, params):
     return uploaded_audio_file, uploaded_bgm_file, voice_mode
 
 
+def _render_shorts_caption_settings(params, disabled):
+    """Highlight colour, words per caption and optional Whisper timing."""
+    st.caption(tr("Shorts Captions Help"))
+    color_col, words_col = st.columns(2)
+    with color_col:
+        st.session_state.setdefault(
+            "caption_highlight_color_picker",
+            config.ui.get("caption_highlight_color", captions.DEFAULT_HIGHLIGHT),
+        )
+        params.caption_highlight_color = st.color_picker(
+            tr("Caption Highlight Color"),
+            key="caption_highlight_color_picker",
+            disabled=disabled,
+        )
+    with words_col:
+        word_options = [1, 2, 3, 4, 5]
+        params.caption_max_words = stable_selectbox(
+            tr("Caption Words"),
+            options=word_options,
+            default_value=_saved_ui_choice(
+                "caption_max_words", word_options, captions.DEFAULT_MAX_WORDS
+            ),
+            key="caption_max_words_select",
+            format_func=str,
+            disabled=disabled,
+        )
+    st.session_state.setdefault(
+        "caption_precise_timing_checkbox",
+        _saved_ui_bool("caption_precise_timing", False),
+    )
+    params.caption_precise_timing = st.checkbox(
+        tr("Caption Precise Timing"),
+        key="caption_precise_timing_checkbox",
+        help=tr("Caption Precise Timing Help"),
+        disabled=disabled,
+    )
+    _set_runtime_config("ui", "caption_highlight_color", params.caption_highlight_color)
+    _set_runtime_config("ui", "caption_max_words", params.caption_max_words)
+    _set_runtime_config("ui", "caption_precise_timing", params.caption_precise_timing)
+
+
 def _render_subtitle_settings(panel, params):
     """渲染字幕设置并更新生成参数。"""
     with panel:
@@ -7935,6 +7977,7 @@ def _render_subtitle_settings(panel, params):
             subtitle_display_modes = [
                 (tr("Sentence by Sentence"), "sentence"),
                 (tr("Single Word (Word by Word)"), "word_by_word"),
+                (tr("Shorts Captions (Word Highlight)"), "word_highlight"),
             ]
             saved_display_mode = config.ui.get(
                 "subtitle_display_mode",
@@ -7960,6 +8003,8 @@ def _render_subtitle_settings(panel, params):
             _set_runtime_config(
                 "ui", "subtitle_display_mode", params.subtitle_display_mode
             )
+            if params.subtitle_display_mode == "word_highlight":
+                _render_shorts_caption_settings(params, subtitle_settings_disabled)
 
             # Subtitle Animation (None vs Pop Spring)
             subtitle_animations = [

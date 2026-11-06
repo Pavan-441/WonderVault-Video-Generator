@@ -864,6 +864,12 @@
     "Batch Running Note": "批量任务正在运行。可以继续使用应用；视频逐个生成，其他视频生成时会等待。",
     "Batch Progress": "批量：已完成 {done}/{total}",
     "Batch Stopping": "当前视频完成后停止",
-    "Stop Batch": "当前视频完成后停止"
+    "Stop Batch": "当前视频完成后停止",
+    "Shorts Captions (Word Highlight)": "Shorts 字幕（逐词高亮）",
+    "Shorts Captions Help": "大号字幕，每次显示几个词，正在朗读的词高亮。使用上方的字体、字号、文字颜色、描边和位置；背景和动画不适用。",
+    "Caption Highlight Color": "高亮颜色",
+    "Caption Words": "每条字幕词数",
+    "Caption Precise Timing": "精确逐词时间（Whisper，较慢）",
+    "Caption Precise Timing Help": "用 Whisper 识别成品配音，精确定位每个词。每个视频增加一分钟或更久，首次使用会下载 Whisper 模型。关闭时按词长在每句内分配时间，通常已足够接近。"
   }
 }

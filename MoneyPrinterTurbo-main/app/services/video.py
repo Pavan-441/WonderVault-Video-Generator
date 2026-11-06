@@ -41,6 +41,7 @@ from app.models.schema import (
     VideoTransitionMode,
 )
 from app.services import bgm as bgm_service
+from app.services import captions
 from app.services.utils import video_effects
 from app.utils import file_security, utils
 
@@ -1530,6 +1531,36 @@ def warn_if_complex_text_unshaped(text: str) -> bool:
     return False
 
 
+def _shorts_caption_clips(subtitle_items, subtitle_path, params, font_path, video_width, place):
+    """Word-highlight captions: one image per spoken word, placed like the subtitles."""
+    renderer = captions.CaptionRenderer(
+        font_path=font_path,
+        font_size=int(params.font_size),
+        text_color=params.text_fore_color,
+        highlight_color=getattr(params, "caption_highlight_color", captions.DEFAULT_HIGHLIGHT),
+        stroke_color=params.stroke_color,
+        stroke_width=params.stroke_width,
+        max_width=int(video_width * 0.86),
+    )
+    timeline = captions.load_word_timeline(subtitle_path)
+    frames = captions.build_frames(
+        subtitle_items,
+        getattr(params, "caption_max_words", captions.DEFAULT_MAX_WORDS),
+        renderer.fits,
+        timeline,
+    )
+    logger.info(
+        f"shorts captions: {len(frames)} word frames"
+        + (" (Whisper timing)" if timeline else " (estimated timing)")
+    )
+    clips = []
+    for frame in frames:
+        clip = ImageClip(renderer.render(frame.words, frame.active), transparent=True)
+        clip = clip.with_start(frame.start).with_duration(frame.end - frame.start)
+        clips.append(place(clip))
+    return clips
+
+
 def generate_video(
     video_path: str,
     audio_path: str,
@@ -1729,7 +1760,9 @@ def generate_video(
         anim_type = getattr(params, "subtitle_animation", "none")
         if anim_type in ("pop_spring", "spring", "pop"):
             _clip = _apply_subtitle_spring_animation(_clip, duration)
+        return place_subtitle_clip(_clip)
 
+    def place_subtitle_clip(_clip):
         if params.subtitle_position == "bottom":
             _clip = _clip.with_position(("center", video_height * 0.95 - _clip.h))
         elif params.subtitle_position == "top":
@@ -1786,10 +1819,15 @@ def generate_video(
                     make_textclip=make_textclip,
                 )
             )
-            text_clips = []
-            for item in sub.subtitles:
-                clip = create_text_clip(subtitle_item=item)
-                text_clips.append(clip)
+            if getattr(params, "subtitle_display_mode", "sentence") == "word_highlight":
+                text_clips = _shorts_caption_clips(
+                    sub.subtitles, subtitle_path, params, font_path, video_width, place_subtitle_clip
+                )
+            else:
+                text_clips = []
+                for item in sub.subtitles:
+                    clip = create_text_clip(subtitle_item=item)
+                    text_clips.append(clip)
             video_clip = CompositeVideoClip([video_clip, *text_clips])
             clip_stack.callback(video_clip.close)
 
