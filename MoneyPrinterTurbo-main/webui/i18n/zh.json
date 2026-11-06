@@ -870,6 +870,24 @@
     "Caption Highlight Color": "高亮颜色",
     "Caption Words": "每条字幕词数",
     "Caption Precise Timing": "精确逐词时间（Whisper，较慢）",
-    "Caption Precise Timing Help": "用 Whisper 识别成品配音，精确定位每个词。每个视频增加一分钟或更久，首次使用会下载 Whisper 模型。关闭时按词长在每句内分配时间，通常已足够接近。"
+    "Caption Precise Timing Help": "用 Whisper 识别成品配音，精确定位每个词。每个视频增加一分钟或更久，首次使用会下载 Whisper 模型。关闭时按词长在每句内分配时间，通常已足够接近。",
+    "Check Hook": "检查开头",
+    "Check Hook Help": "按 Shorts 规则检查文案（时长、第一句、结尾提问），并让 AI 给开头打分、写出更有力的第一句。",
+    "Checking Hook": "正在检查开头……",
+    "Hook Report Outdated": "文案已修改，请重新检查开头以更新结果。",
+    "Hook Score": "开头评分：{score}/10",
+    "Hook AI Unavailable": "无法连接 AI 模型，仅显示规则检查结果。",
+    "Use Hook": "使用",
+    "Hook Check length_short": "旁白约 {seconds} 秒：偏短。Shorts 以 25–40 秒效果最好。",
+    "Hook Check length_ideal": "旁白约 {seconds} 秒：处于 25–40 秒的最佳区间。",
+    "Hook Check length_long": "旁白约 {seconds} 秒：超过 40 秒。更短的 Shorts 重播更多。",
+    "Hook Check length_too_long": "旁白约 {seconds} 秒：超过 60 秒，YouTube 不会将其视为 Short。",
+    "Hook Check hook_weak_opening": "以“{phrase}”开头。请直接以最惊人的事实开场。",
+    "Hook Check hook_channel_name": "第一句提到了 Wonder Vault。频道名请放到后面。",
+    "Hook Check hook_long": "第一句大约需要 {seconds} 秒读完。建议控制在 4 秒以内。",
+    "Hook Check hook_ok": "第一句开门见山。",
+    "Hook Check question_ok": "以观众可以在评论中回答的问题结尾。",
+    "Hook Check question_missing": "结尾没有提问。用一个简单的问题结尾以带动评论。",
+    "Hook Check outro": "以订阅语结尾。规则建议以结论和提问结尾。"
   }
 }

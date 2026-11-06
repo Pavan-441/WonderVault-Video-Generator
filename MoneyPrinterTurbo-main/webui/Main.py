@@ -58,6 +58,7 @@ from app.services import (
     batch,
     bilingual,
     captions,
+    hook_checker,
     pronunciation,
     scene_planner,
     script_library,
@@ -5153,6 +5154,7 @@ def _render_script_settings(panel, params):
                 key="video_script",
             )
             _render_language_switch(params)
+            _render_hook_checker(params)
             if _effective_script_generation_backend() == "loomloom":
                 st.caption(tr("LoomLoom Video Terms Reuse Help"))
             elif st.button(
@@ -5295,6 +5297,65 @@ def _render_language_switch(params):
         restored["notice"] = ("success", tr("Language Version Undone"))
         st.session_state["bilingual_pending"] = restored
         st.rerun()
+
+
+def _apply_pending_hook():
+    script = st.session_state.pop("hook_pending_script", None)
+    if script is not None:
+        st.session_state["video_script"] = script
+
+
+def _render_hook_checker(params):
+    """Playbook checks for the script, an AI hook score and stronger first lines."""
+    script = (params.video_script or "").strip()
+    if st.button(
+        tr("Check Hook"),
+        key="hook_check_btn",
+        icon=":material/target:",
+        use_container_width=True,
+        disabled=not script,
+        help=tr("Check Hook Help"),
+    ):
+        with st.spinner(tr("Checking Hook")):
+            report = _run_llm_read_operation(
+                "check_hook",
+                lambda app_config_snapshot: hook_checker.check(
+                    script,
+                    params.video_subject,
+                    params.voice_rate or 1.0,
+                    app_config=app_config_snapshot,
+                ),
+            )
+        st.session_state["hook_report"] = {"script": script, "report": report}
+
+    stored = st.session_state.get("hook_report")
+    if not stored or not script:
+        return
+    if stored["script"] != script:
+        st.caption(tr("Hook Report Outdated"))
+        return
+    report = stored["report"]
+    with st.container(border=True):
+        for item in report.checks:
+            icon = "✅" if item.level == hook_checker.OK else "⚠️"
+            st.markdown(f"{icon} {tr('Hook Check ' + item.key).format(**item.values)}")
+        if report.score is not None:
+            st.markdown(
+                f"**{tr('Hook Score').format(score=report.score)}** — {report.reason}"
+            )
+        elif report.ai_error:
+            st.caption(tr("Hook AI Unavailable"))
+        for index, hook in enumerate(report.hooks):
+            hook_col, use_col = st.columns([5, 1])
+            hook_col.markdown(f"💡 {hook}")
+            if use_col.button(
+                tr("Use Hook"), key=f"hook_use_{index}", use_container_width=True
+            ):
+                st.session_state["hook_pending_script"] = hook_checker.replace_hook(
+                    script, hook
+                )
+                st.session_state.pop("hook_report", None)
+                st.rerun()
 
 
 def _render_language_voices(params):
@@ -10858,6 +10919,7 @@ def _render_video_generator_studio():
 
     _apply_pending_language_switch()
     _apply_pending_scene_handoff()
+    _apply_pending_hook()
     params = VideoParams(video_subject="")
     params.match_materials_to_script = bool(
         st.session_state.get("match_materials_to_script", False)

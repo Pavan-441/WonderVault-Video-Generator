@@ -870,6 +870,24 @@
     "Caption Highlight Color": "Highlight colour",
     "Caption Words": "Words per caption",
     "Caption Precise Timing": "Precise word timing (Whisper, slower)",
-    "Caption Precise Timing Help": "Listens to the finished voiceover with Whisper to time each word exactly. Adds a minute or more per video and downloads the Whisper model on first use. Off: words are timed by their length inside each sentence, which is usually close."
+    "Caption Precise Timing Help": "Listens to the finished voiceover with Whisper to time each word exactly. Adds a minute or more per video and downloads the Whisper model on first use. Off: words are timed by their length inside each sentence, which is usually close.",
+    "Check Hook": "Check hook",
+    "Check Hook Help": "Checks the script against the Shorts playbook (length, first sentence, closing question) and asks the AI for a hook score and stronger first lines.",
+    "Checking Hook": "Checking the hook...",
+    "Hook Report Outdated": "The script changed. Check the hook again to update the results.",
+    "Hook Score": "Hook score: {score}/10",
+    "Hook AI Unavailable": "The AI model could not be reached, so only the playbook checks are shown.",
+    "Use Hook": "Use",
+    "Hook Check length_short": "About {seconds}s of narration: short. 25–40 s works best for Shorts.",
+    "Hook Check length_ideal": "About {seconds}s of narration: in the 25–40 s sweet spot.",
+    "Hook Check length_long": "About {seconds}s of narration: longer than 40 s. Shorter Shorts get more replays.",
+    "Hook Check length_too_long": "About {seconds}s of narration: over 60 s, so YouTube won't treat it as a Short.",
+    "Hook Check hook_weak_opening": "Opens with \"{phrase}\". Start with the surprising fact itself.",
+    "Hook Check hook_channel_name": "The first sentence mentions Wonder Vault. Save the channel name for later.",
+    "Hook Check hook_long": "The first sentence takes about {seconds}s to say. Aim for under 4 s.",
+    "Hook Check hook_ok": "The first sentence gets straight to the point.",
+    "Hook Check question_ok": "Ends on a question viewers can answer in the comments.",
+    "Hook Check question_missing": "No closing question. End on one easy question to get comments.",
+    "Hook Check outro": "Ends with a subscribe line. The playbook ends on the payoff and a question."
   }
 }
