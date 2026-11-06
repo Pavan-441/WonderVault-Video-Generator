@@ -55,9 +55,11 @@ from app.services import (
     metaso_minimax,
     muapi,
     ofox,
+    batch,
     bilingual,
     pronunciation,
     scene_planner,
+    script_library,
     subtitle,
     video,
     video_transcript,
@@ -10608,6 +10610,198 @@ def _render_scene_planner_studio():
         st.rerun()
 
 
+@st.cache_data(show_spinner=False)
+def _load_script_libraries(signature):
+    """Parsed library entries; the signature (paths and change times) refreshes the cache."""
+    return script_library.load_all()
+
+
+def _library_signature():
+    return tuple(
+        (str(path), path.stat().st_mtime) for path in script_library.find_libraries()
+    )
+
+
+def _library_label(library):
+    words = library.replace("_", " ").replace("WONDERVAULT", "").split()
+    return " ".join(words).title()
+
+
+@st.fragment(run_every=5)
+def _render_batch_progress():
+    rows = batch.runner.snapshot()
+    if not rows:
+        return
+    running = batch.runner.is_running()
+    done = sum(row["state"] == batch.STATE_DONE for row in rows)
+    st.write(
+        f"**{tr('Batch Progress').format(done=done, total=len(rows))}**"
+        + (f" · {tr('Batch Stopping')}" if batch.runner.stopping() else "")
+    )
+    icons = {
+        batch.STATE_QUEUED: "⏳",
+        batch.STATE_RUNNING: "🎬",
+        batch.STATE_DONE: "✅",
+        batch.STATE_FAILED: "⚠️",
+        batch.STATE_SKIPPED: "⏭️",
+    }
+    for row in rows:
+        line = f"{icons[row['state']]} {row['title']} · {_language_label(row['language'])}"
+        if row["state"] == batch.STATE_RUNNING:
+            st.progress(row.get("progress", 0) / 100, text=line)
+        elif row["state"] == batch.STATE_FAILED:
+            st.caption(f"{line} — {row['error']}")
+        elif row["state"] == batch.STATE_DONE:
+            st.caption(f"{line} — 📁 {row['folder']}")
+        else:
+            st.caption(line)
+    if running and not batch.runner.stopping():
+        if st.button(tr("Stop Batch"), key="batch_stop_btn", icon=":material/stop:"):
+            batch.runner.stop()
+            st.rerun(scope="fragment")
+
+
+def _render_batch_studio():
+    """Pick scripts from the libraries and render them one after another."""
+    st.subheader(f"🗂️ {tr('Batch Videos')}")
+    st.caption(tr("Batch Videos Subtitle"))
+
+    entries = _load_script_libraries(_library_signature())
+    if not entries:
+        st.info(tr("Batch No Libraries"))
+        return
+    status = batch.load_status()
+    libraries = sorted({entry.library for entry in entries})
+
+    with st.container(border=True):
+        option_cols = st.columns(4)
+        with option_cols[0]:
+            library = stable_selectbox(
+                tr("Batch Library"),
+                options=libraries,
+                default_value=libraries[0],
+                key="batch_library",
+                format_func={name: _library_label(name) for name in libraries}.get,
+            )
+        with option_cols[1]:
+            language_labels = {
+                "as_written": tr("Batch Language As Written"),
+                "other": tr("Batch Language Other"),
+                "both": tr("Batch Language Both"),
+            }
+            languages = stable_selectbox(
+                tr("Batch Languages"),
+                options=list(language_labels),
+                default_value="as_written",
+                key="batch_languages",
+                format_func=language_labels.get,
+            )
+        with option_cols[2]:
+            source_labels = {"pexels": "Pexels", "pixabay": "Pixabay"}
+            video_source = stable_selectbox(
+                tr("Video Source"),
+                options=list(source_labels),
+                default_value="pexels",
+                key="batch_video_source",
+                format_func=source_labels.get,
+            )
+        with option_cols[3]:
+            search = st.text_input(tr("Batch Search"), key="batch_search").strip().lower()
+            hide_done = st.checkbox(tr("Batch Hide Done"), key="batch_hide_done")
+
+        def mark(entry, language):
+            state = status.get(batch.status_key(entry.id, language), {}).get("state")
+            return {batch.STATE_DONE: "✅", batch.STATE_FAILED: "⚠️"}.get(state, "")
+
+        shown = [
+            entry
+            for entry in entries
+            if entry.library == library
+            and (not search or search in f"{entry.number:03d} {entry.title}".lower())
+            and not (hide_done and mark(entry, entry.language) == "✅")
+        ]
+        table = pd.DataFrame(
+            [
+                {
+                    "pick": False,
+                    "number": f"#{entry.number:03d}",
+                    "title": entry.title,
+                    "language": _language_label(entry.language),
+                    "telugu": mark(entry, bilingual.TELUGU),
+                    "english": mark(entry, bilingual.ENGLISH),
+                }
+                for entry in shown
+            ],
+            columns=["pick", "number", "title", "language", "telugu", "english"],
+        )
+        version = st.session_state.get("batch_table_version", 0)
+        edited = st.data_editor(
+            table,
+            hide_index=True,
+            use_container_width=True,
+            height=360,
+            key=f"batch_table_{library}_{version}",
+            disabled=["number", "title", "language", "telugu", "english"],
+            column_config={
+                "pick": st.column_config.CheckboxColumn(tr("Batch Pick"), width="small"),
+                "number": st.column_config.TextColumn("#", width="small"),
+                "title": st.column_config.TextColumn(tr("Batch Title")),
+                "language": st.column_config.TextColumn(tr("Batch Written In"), width="small"),
+                "telugu": st.column_config.TextColumn(_language_label(bilingual.TELUGU), width="small"),
+                "english": st.column_config.TextColumn(_language_label(bilingual.ENGLISH), width="small"),
+            },
+        )
+        picked = [entry for entry, pick in zip(shown, edited["pick"].tolist()) if pick]
+        jobs = batch.plan_jobs(picked, languages)
+
+        template = st.session_state.get("video_generator_params")
+        missing = sorted(
+            {job.language for job in jobs}
+            - {lang for lang in bilingual.LANGUAGES if bilingual.get_profile(config.ui, lang)}
+        )
+        if missing:
+            st.warning(
+                tr("Batch Voice Missing").format(
+                    languages=", ".join(_language_label(lang) for lang in missing)
+                )
+            )
+        st.caption(
+            tr("Batch Settings Note").format(source=source_labels[video_source])
+        )
+
+        action_cols = st.columns([2, 1, 1])
+        running = batch.runner.is_running()
+        if action_cols[0].button(
+            tr("Start Batch").format(count=len(jobs)),
+            key="batch_start_btn",
+            type="primary",
+            icon=":material/play_arrow:",
+            use_container_width=True,
+            disabled=running or not jobs or template is None,
+        ):
+            batch.runner.start(jobs, template, video_source)
+            st.toast(tr("Batch Started").format(count=len(jobs)), icon="🗂️")
+            st.rerun()
+        for column, done, label in (
+            (action_cols[1], True, tr("Batch Mark Done")),
+            (action_cols[2], False, tr("Batch Mark Not Done")),
+        ):
+            if column.button(
+                label,
+                key=f"batch_mark_{'done' if done else 'open'}_btn",
+                use_container_width=True,
+                disabled=not jobs,
+            ):
+                for job in jobs:
+                    batch.set_done(job.entry.id, job.language, done)
+                st.session_state["batch_table_version"] = version + 1
+                st.rerun()
+        if running:
+            st.info(tr("Batch Running Note"))
+
+    _render_batch_progress()
+
+
 def _render_video_generator_studio():
     """渲染四栏视频生成工作室。"""
     with st.container(key="main_settings_grid"):
@@ -10632,6 +10826,7 @@ def _render_video_generator_studio():
 
     _render_subtitle_settings(right_panel, params)
     _render_language_voices(params)
+    st.session_state["video_generator_params"] = params.model_copy(deep=True)
 
     generation_submitted = _render_generation_controls(
         params,
@@ -10668,6 +10863,7 @@ def _render_application():
     tab_labels = {
         "video": f"🎬 {tr('Video Generator')}",
         "scenes": f"🎞️ {tr('Scene Planner')}",
+        "batch": f"🗂️ {tr('Batch Videos')}",
         "audio": f"🎙️ {tr('Audio Generator & Downloader')}",
         "thumbnail": f"🎨 {tr('Thumbnail Studio')}",
         "youtube_kit": f"📺 {tr('YouTube Kit')}",
@@ -10683,6 +10879,7 @@ def _render_application():
     (
         video_tab,
         scene_tab,
+        batch_tab,
         audio_tab,
         thumb_tab,
         youtube_kit_tab,
@@ -10695,6 +10892,9 @@ def _render_application():
 
     with scene_tab:
         _render_scene_planner_studio()
+
+    with batch_tab:
+        _render_batch_studio()
 
     with audio_tab:
         _render_audio_generator_studio()
