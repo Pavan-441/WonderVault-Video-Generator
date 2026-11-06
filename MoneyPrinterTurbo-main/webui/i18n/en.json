@@ -781,6 +781,11 @@
     "Background Music Settings": "**Background Music**",
     "Enable Background Music": "Enable Background Music",
     "Enable Background Music Help": "Turn off for a video without music. The voiceover is not affected.",
-    "Background Music Disabled Notice": "No background music. Your music source and volume are kept for next time."
+    "Background Music Disabled Notice": "No background music. Your music source and volume are kept for next time.",
+    "Voice Preview": "Voice Preview",
+    "Preview Voice": "Preview Voice",
+    "Clear Previews": "Clear",
+    "Audio Studio Preview Script Help": "Plays the first lines of your script with the current voice, speed and volume. Try a few voices, compare them below, then generate the full audio.",
+    "Audio Studio Preview Sample Help": "Plays a short sample with the current voice, speed and volume. Add a script to hear its first lines instead."
   }
 }

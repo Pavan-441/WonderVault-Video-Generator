@@ -781,6 +781,11 @@
     "Background Music Settings": "**背景音乐**",
     "Enable Background Music": "启用背景音乐",
     "Enable Background Music Help": "关闭后视频没有背景音乐，配音不受影响。",
-    "Background Music Disabled Notice": "无背景音乐。音乐来源和音量会保留，下次开启时继续使用。"
+    "Background Music Disabled Notice": "无背景音乐。音乐来源和音量会保留，下次开启时继续使用。",
+    "Voice Preview": "试听",
+    "Preview Voice": "试听音色",
+    "Clear Previews": "清空",
+    "Audio Studio Preview Script Help": "用当前音色、语速和音量朗读文案开头几句。可以多试几个音色并在下方对比，再生成完整音频。",
+    "Audio Studio Preview Sample Help": "用当前音色、语速和音量播放一段简短样例。输入文案后将改为朗读文案开头。"
   }
 }

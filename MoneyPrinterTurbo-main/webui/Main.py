@@ -8466,6 +8466,153 @@ def _render_generation_controls(
     return start_button
 
 
+AUDIO_STUDIO_PREVIEW_MAX_CHARS = 220
+AUDIO_STUDIO_PREVIEW_TARGET_CHARS = 120
+AUDIO_STUDIO_PREVIEW_HISTORY = 4
+_AUDIO_STUDIO_SEPARATOR_LINE = re.compile(r"^[\s\-*_=~#]+$")
+_AUDIO_STUDIO_SENTENCE_END = re.compile(r"(?<=[.!?।॥。！？])\s+")
+
+
+def _audio_studio_preview_text(script: str) -> str:
+    """Opening sentence(s) of the script, so the preview uses the script's real language."""
+    lines = [
+        line.strip()
+        for line in str(script or "").splitlines()
+        if line.strip() and not _AUDIO_STUDIO_SEPARATOR_LINE.match(line.strip())
+    ]
+    text = " ".join(lines)
+    if not text:
+        return ""
+    preview = ""
+    for sentence in _AUDIO_STUDIO_SENTENCE_END.split(text):
+        candidate = f"{preview} {sentence}".strip()
+        if preview and len(candidate) > AUDIO_STUDIO_PREVIEW_MAX_CHARS:
+            break
+        preview = candidate
+        if len(preview) >= AUDIO_STUDIO_PREVIEW_TARGET_CHARS:
+            break
+    if len(preview) > AUDIO_STUDIO_PREVIEW_MAX_CHARS:
+        cut = preview[:AUDIO_STUDIO_PREVIEW_MAX_CHARS]
+        preview = cut[: cut.rfind(" ")] if " " in cut else cut
+    return preview.strip()
+
+
+def _render_audio_studio_voice_preview(
+    script_text, selected_tts, selected_voice, selected_rate, selected_volume, friendly
+):
+    """Short previews of the current voice settings, kept side by side for comparison."""
+    with st.container(border=True):
+        st.write(f"**{tr('Voice Preview')}**")
+        script_sample = _audio_studio_preview_text(script_text)
+        preview_text = script_sample or _get_voice_preview_sample(selected_voice)
+        st.caption(
+            tr("Audio Studio Preview Script Help")
+            if script_sample
+            else tr("Audio Studio Preview Sample Help")
+        )
+
+        voice_name = voice.parse_voice_name(selected_voice)
+        validation_error = _get_voxcpm_preview_validation_error(selected_tts, voice_name)
+        if validation_error:
+            st.warning(validation_error)
+
+        previews = st.session_state.setdefault("audio_studio_previews", [])
+        btn_cols = st.columns([2, 1, 3])
+        preview_clicked = btn_cols[0].button(
+            tr("Preview Voice"),
+            key="audio_studio_preview_btn",
+            icon=":material/graphic_eq:",
+            use_container_width=True,
+            disabled=bool(validation_error),
+        )
+        if previews and btn_cols[1].button(
+            tr("Clear Previews"),
+            key="audio_studio_clear_previews_btn",
+            use_container_width=True,
+        ):
+            previews.clear()
+
+        new_fingerprint = ""
+        if preview_clicked:
+            new_fingerprint = _voice_preview_fingerprint(
+                preview_type="audio_studio",
+                content=preview_text,
+                tts_server=selected_tts,
+                voice_name=voice_name,
+                voice_rate=selected_rate,
+                voice_volume=selected_volume,
+                provider_signature=_get_voice_preview_provider_signature(selected_tts),
+            )
+            # The same settings play the saved clip again instead of paying for new speech.
+            existing = next(
+                (p for p in previews if p["fingerprint"] == new_fingerprint), None
+            )
+            if existing:
+                previews.remove(existing)
+                previews.insert(0, existing)
+            else:
+                result = None
+                try:
+                    with st.spinner(tr("Synthesizing Voice")):
+                        result = _synthesize_voice_preview(
+                            content=preview_text,
+                            preview_type="audio_studio",
+                            selected_tts_server=selected_tts,
+                            voice_name=voice_name,
+                            voice_rate=selected_rate,
+                            voice_volume=selected_volume,
+                            voxcpm_reference_audio=(
+                                _get_voxcpm_reference_audio()
+                                if selected_tts == "voxcpm"
+                                else None
+                            ),
+                            voxcpm_prompt_audio=(
+                                _get_voxcpm_effective_prompt_audio()
+                                if selected_tts == "voxcpm"
+                                else None
+                            ),
+                            voxcpm_prompt_text=(
+                                _get_voxcpm_prompt_text()
+                                if selected_tts == "voxcpm"
+                                else ""
+                            ),
+                        )
+                except Exception as exc:
+                    logger.exception("failed to generate audio studio voice preview")
+                    st.error(tr("Voice Preview Failed").format(error=str(exc)))
+                else:
+                    if result and result.get("busy"):
+                        st.warning(tr("Voice Preview Busy"))
+                    elif result:
+                        previews.insert(
+                            0,
+                            {
+                                "fingerprint": new_fingerprint,
+                                "audio_bytes": result["audio_bytes"],
+                                "mime_type": result.get("mime_type", "audio/mp3"),
+                                "label": (
+                                    f"{friendly(selected_voice)} · {selected_rate:.1f}× · "
+                                    f"{int(selected_volume * 100)}%"
+                                ),
+                            },
+                        )
+                        del previews[AUDIO_STUDIO_PREVIEW_HISTORY:]
+                    else:
+                        st.error(tr("Voice Preview No Audio"))
+
+        for index, item in enumerate(previews):
+            marker = "▶️" if index == 0 else "🕘"
+            st.caption(f"{marker} {item['label']}")
+            st.audio(
+                item["audio_bytes"],
+                format=item["mime_type"],
+                # Only the clip made or replayed by this click starts playing on its own.
+                autoplay=bool(
+                    index == 0 and new_fingerprint and item["fingerprint"] == new_fingerprint
+                ),
+            )
+
+
 def _render_audio_generator_studio():
     """渲染独立的音频生成与下载工作室。"""
     st.subheader(f"🎙️ {tr('Audio Generator & Downloader')}")
@@ -8850,6 +8997,15 @@ def _render_audio_generator_studio():
                     step=0.05,
                     key="audio_studio_bgm_volume",
                 )
+
+    _render_audio_studio_voice_preview(
+        script_text,
+        selected_tts,
+        selected_voice,
+        selected_rate,
+        selected_volume,
+        _audio_studio_friendly,
+    )
 
     # Generate button
     generate_clicked = st.button(
